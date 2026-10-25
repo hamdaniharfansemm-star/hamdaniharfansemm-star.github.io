@@ -2,6 +2,7 @@ import { MotionConfig } from "framer-motion";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import ProfessionalBanner from "./components/ProfessionalBanner.jsx";
+import Stats from "./components/Stats.jsx";
 import About from "./components/About.jsx";
 import Works from "./components/Works.jsx";
 import Skills from "./components/Skills.jsx";
@@ -19,6 +20,7 @@ export default function App() {
       <main>
         <Hero />
         <ProfessionalBanner />
+        <Stats />
         <About />
         <Works />
         <Skills />

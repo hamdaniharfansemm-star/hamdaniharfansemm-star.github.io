@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { projects, workCategories } from "../data/portfolio.js";
+import { projects, workCategories, works } from "../data/portfolio.js";
 import { softSpring, spring } from "../lib/motion.js";
 import { ArrowUpRight, Close } from "./Icons.jsx";
 import SectionHeading from "./SectionHeading.jsx";
+import { ReleaseAction, StatusBadge } from "./ReleaseStatus.jsx";
 
 export default function Works() {
   const [filter, setFilter] = useState("All");
@@ -15,8 +16,8 @@ export default function Works() {
     <section id="works" className="relative bg-night py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="flex flex-col gap-8">
-          <SectionHeading index="02" kicker="Featured works" title="Products I’ve designed & built">
-            Seven products, one standard: thoughtful design backed by solid engineering.
+          <SectionHeading index="02" kicker="Featured works" title={works.title}>
+            {projects.length} products — {works.intro}
           </SectionHeading>
 
           {/* Filter tabs */}
@@ -71,22 +72,27 @@ function ProjectCard({ project: p, index, onOpen }) {
       transition={spring}
       className="group"
     >
+      <article className="flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-slate-900/50 transition-colors duration-300 hover:border-white/25 hover:bg-slate-900">
       <button
         type="button"
         onClick={onOpen}
-        className="flex h-full w-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-slate-900/50 text-left transition-colors duration-300 hover:border-white/25 hover:bg-slate-900 focus-visible:outline-2 focus-visible:outline-cream"
+        className="flex w-full flex-1 flex-col text-left focus-visible:outline-2 focus-visible:outline-cream"
         aria-label={`Open details for ${p.title}`}
       >
         <div className="relative aspect-[1024/500] overflow-hidden bg-slate-800">
-          <img
-            src={p.image}
-            alt={`${p.title} preview`}
-            loading="lazy"
-            decoding="async"
-            width="1024"
-            height="500"
-            className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-          />
+          {p.image ? (
+            <img
+              src={p.image}
+              alt={`${p.title} preview`}
+              loading="lazy"
+              decoding="async"
+              width="1024"
+              height="500"
+              className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            />
+          ) : (
+            <Placeholder project={p} />
+          )}
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent" />
           <span className="absolute left-4 top-4 rounded-full bg-slate-950/70 px-2.5 py-1 font-mono text-[11px] text-white backdrop-blur">
             {String(index + 1).padStart(2, "0")}
@@ -107,6 +113,7 @@ function ProjectCard({ project: p, index, onOpen }) {
             </div>
           </div>
           <p className="mt-4 flex-1 text-sm leading-relaxed text-slate-400">{p.desc}</p>
+          {p.packageId && <p className="mt-4 truncate font-mono text-[11px] text-slate-500">{p.packageId}</p>}
           <ul className="mt-5 flex flex-wrap gap-1.5">
             {p.tech.map((t) => (
               <li key={t} className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 font-mono text-[11px] text-slate-300">
@@ -116,7 +123,23 @@ function ProjectCard({ project: p, index, onOpen }) {
           </ul>
         </div>
       </button>
+      <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/10 px-6 py-4">
+        <StatusBadge status={p.status} />
+        <ReleaseAction project={p} />
+      </div>
+      </article>
     </motion.li>
+  );
+}
+
+function Placeholder({ project: p }) {
+  return (
+    <div
+      className="grid h-full w-full place-items-center"
+      style={{ background: `radial-gradient(circle at 30% 20%, ${p.accent || "#38bdf8"}55, transparent 60%), #0f172a` }}
+    >
+      <span className="font-display text-5xl font-black text-white/90">{p.title?.[0] || "?"}</span>
+    </div>
   );
 }
 
@@ -169,7 +192,13 @@ function ProjectModal({ project: p, onClose }) {
         >
           <Close />
         </button>
-        <img src={p.image} alt={`${p.title} preview`} width="1024" height="500" className="aspect-[1024/500] w-full object-cover" />
+        {p.image ? (
+          <img src={p.image} alt={`${p.title} preview`} width="1024" height="500" className="aspect-[1024/500] w-full object-cover" />
+        ) : (
+          <div className="aspect-[1024/500] w-full">
+            <Placeholder project={p} />
+          </div>
+        )}
         <div className="p-6 sm:p-8">
           <div className="flex items-center gap-4">
             <Logo project={p} size="h-14 w-14" />
@@ -182,7 +211,11 @@ function ProjectModal({ project: p, onClose }) {
               </p>
             </div>
           </div>
-          <p className="mt-5 text-base leading-relaxed text-slate-300">{p.desc}</p>
+          <div className="mt-5 flex flex-wrap items-center gap-3">
+            <StatusBadge status={p.status} />
+            {p.packageId && <span className="font-mono text-xs text-slate-500">{p.packageId}</span>}
+          </div>
+          <p className="mt-4 text-base leading-relaxed text-slate-300">{p.desc}</p>
 
           <h4 className="mt-7 font-mono text-xs uppercase tracking-[0.2em] text-slate-500">Highlights</h4>
           <ul className="mt-3 grid gap-2.5">
@@ -202,6 +235,10 @@ function ProjectModal({ project: p, onClose }) {
               </li>
             ))}
           </ul>
+
+          <div className="mt-8">
+            <ReleaseAction project={p} size="lg" onNavigate={onClose} />
+          </div>
         </div>
       </motion.div>
     </motion.div>

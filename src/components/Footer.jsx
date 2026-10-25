@@ -22,9 +22,9 @@ export default function Footer() {
             ))}
           </nav>
 
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             {contact.socials.map((s) => {
-              const Icon = socialIcon[s.id];
+              const Icon = socialIcon[s.id] || socialIcon.website;
               return (
                 <a
                   key={s.id}

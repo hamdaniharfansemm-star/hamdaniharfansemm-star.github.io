@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { about, profile } from "../data/portfolio.js";
 import { fadeUp, spring } from "../lib/motion.js";
 import SectionHeading from "./SectionHeading.jsx";
+import { GradCap } from "./Icons.jsx";
 
 export default function About({ photoSrc = profile.photo }) {
   const ref = useRef(null);
@@ -75,6 +76,25 @@ export default function About({ photoSrc = profile.photo }) {
               </motion.li>
             ))}
           </ol>
+
+          <motion.div {...fadeUp(0.25)} className="mt-10">
+            <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-amberline">Education</h3>
+            <ul className="mt-3 grid gap-3">
+              {about.education.map((e) => (
+                <li key={e.degree} className="flex items-start gap-4 rounded-3xl border border-ink/10 bg-white/60 p-5 backdrop-blur">
+                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-ink text-cream">
+                    <GradCap width={20} height={20} />
+                  </span>
+                  <div>
+                    <p className="font-display text-lg font-bold leading-snug">{e.degree}</p>
+                    <p className="text-sm text-ink/70">
+                      {e.field} · {e.school}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
 
           <motion.dl {...fadeUp(0.3)} className="mt-10 flex flex-wrap gap-10 border-t border-ink/15 pt-8">
             {about.facts.map((f) => (

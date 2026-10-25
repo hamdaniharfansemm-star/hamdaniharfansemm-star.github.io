@@ -66,4 +66,40 @@ export const YouTube = (p) => (
   </svg>
 );
 
-export const socialIcon = { linkedin: LinkedIn, instagram: Instagram, youtube: YouTube };
+export const TikTok = (p) => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden {...p}>
+    <path d="M16.6 2h-3.4v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.1a6.4 6.4 0 1 0 5.4 6.3V8.6a8 8 0 0 0 4.6 1.5V6.7A4.6 4.6 0 0 1 16.6 2z" />
+  </svg>
+);
+export const Facebook = (p) => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden {...p}>
+    <path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z" />
+  </svg>
+);
+export const GradCap = (p) => (
+  <svg {...base} {...p}><path d="M22 9 12 4 2 9l10 5 10-5z" /><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5" /><path d="M22 9v6" /></svg>
+);
+export const BookOpen = (p) => (
+  <svg {...base} {...p}><path d="M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2z" /><path d="M22 5h-6a4 4 0 0 0-4 4v11a3 3 0 0 1 3-3h7z" /></svg>
+);
+
+export const GitHub = (p) => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden {...p}>
+    <path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z" />
+  </svg>
+);
+
+export const Globe = (p) => (
+  <svg {...base} {...p}><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" /></svg>
+);
+
+export const socialIcon = {
+  website: Globe,
+  github: GitHub,
+  linkedin: LinkedIn,
+  instagram: Instagram,
+  youtube: YouTube,
+  tiktok: TikTok,
+  facebook: Facebook,
+  academia: BookOpen,
+};

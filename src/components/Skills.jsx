@@ -1,9 +1,17 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { skills } from "../data/portfolio.js";
+import { services, skills, techStack } from "../data/portfolio.js";
 import { fadeUp, spring } from "../lib/motion.js";
-import { Code, Palette, Plus } from "./Icons.jsx";
+import { Check, Code, Palette, Plus } from "./Icons.jsx";
 import SectionHeading from "./SectionHeading.jsx";
+
+const pill = {
+  sky: "border-sky-400/30 bg-sky-400/5 text-sky-300",
+  amber: "border-amber-400/30 bg-amber-400/5 text-amber-300",
+  violet: "border-violet-400/30 bg-violet-400/5 text-violet-300",
+  emerald: "border-emerald-400/30 bg-emerald-400/5 text-emerald-300",
+  orange: "border-orange-400/30 bg-orange-400/5 text-orange-300",
+};
 
 export default function Skills() {
   return (
@@ -14,7 +22,36 @@ export default function Skills() {
           The same split you saw in the hero — tap any skill to see what it means in practice.
         </SectionHeading>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-2">
+        <motion.div
+          {...fadeUp(0.1)}
+          className="mt-14 grid gap-6 rounded-[2rem] border border-white/10 bg-slate-900/40 p-6 sm:p-8 lg:grid-cols-[1.1fr_1fr]"
+        >
+          <div>
+            <h3 className="font-mono text-[11px] uppercase tracking-[0.2em] text-slate-500">Tech stack</h3>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {techStack.map((t) => (
+                <li key={t.name} className={`rounded-full border px-3.5 py-1.5 text-xs font-semibold ${pill[t.tone]}`}>
+                  {t.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-mono text-[11px] uppercase tracking-[0.2em] text-slate-500">Services & solutions</h3>
+            <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+              {services.map((t) => (
+                <li key={t} className="flex items-start gap-2.5 rounded-2xl border border-white/5 bg-slate-950/50 p-3 text-sm text-slate-300">
+                  <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-cyan-400/15 text-cyan-300">
+                    <Check width={12} height={12} />
+                  </span>
+                  {t}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </motion.div>
+
+        <div className="mt-6 grid gap-6 lg:grid-cols-2">
           <SkillColumn data={skills.design} theme="design" />
           <SkillColumn data={skills.engineering} theme="dev" />
         </div>

@@ -75,26 +75,25 @@ export default function Contact() {
             />
           </div>
 
-          <div className="mt-6 grid grid-cols-3 gap-3">
+          <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
             {contact.socials.map((s, i) => {
-              const Icon = socialIcon[s.id];
+              const Icon = socialIcon[s.id] || socialIcon.website;
               return (
                 <motion.a
                   key={s.id}
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  title={`${s.label} — ${s.handle}`}
+                  aria-label={`${s.label}: ${s.handle}`}
                   {...fadeUp(0.15 + i * 0.05)}
                   whileHover={{ y: -4 }}
-                  className="group flex flex-col items-start gap-3 rounded-2xl border border-white/10 bg-slate-900/50 p-4 transition-colors hover:border-cream/40 hover:bg-slate-900"
+                  className="group flex min-w-0 flex-col items-start gap-2.5 rounded-2xl border border-white/10 bg-slate-900/50 p-4 transition-colors hover:border-cream/40 hover:bg-slate-900"
                 >
                   <span className="grid h-10 w-10 place-items-center rounded-xl bg-white/5 text-white transition-colors group-hover:bg-cream group-hover:text-ink">
                     <Icon />
                   </span>
-                  <span>
-                    <span className="block text-sm font-semibold text-white">{s.label}</span>
-                    <span className="block truncate text-xs text-slate-500">{s.handle}</span>
-                  </span>
+                  <span className="block w-full truncate text-sm font-semibold text-white">{s.label}</span>
                 </motion.a>
               );
             })}

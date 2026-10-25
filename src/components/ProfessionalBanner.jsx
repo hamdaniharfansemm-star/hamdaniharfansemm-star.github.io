@@ -41,7 +41,7 @@ export default function ProfessionalBanner({ bgSrc = profile.bannerBg }) {
             </motion.h2>
 
             <motion.p {...fadeUp(0.2)} className="mt-4 max-w-xl text-sm text-slate-400 sm:text-base">
-              {profile.role} — currently at {profile.company}
+              {banner.tagline} Currently at {profile.company}
             </motion.p>
 
             <motion.a
