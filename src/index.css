@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-cream: #f4e8d1;
+  --color-cream-deep: #e9d6b0;
+  --color-ink: #0f172a;
+  --color-night: #020617;
+  --color-amberline: #c2410c;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  @apply bg-night font-sans text-slate-300 antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
+
+/* ---------- Hero mask (desktop cursor reveal) ---------- */
+.hero-mask {
+  clip-path: circle(var(--r, 380px) at var(--mx, 25%) var(--my, 50%));
+  will-change: clip-path;
+}
+
+/* ---------- Decorative backgrounds ---------- */
+.bg-code-grid {
+  background-image:
+    linear-gradient(to right, rgb(34 211 238 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(34 211 238 / 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.bg-paper-dots {
+  background-image: radial-gradient(rgb(15 23 42 / 0.13) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.text-outline-cyan {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(34 211 238 / 0.35);
+}
+
+.text-outline-ink {
+  color: transparent;
+  -webkit-text-stroke: 1.25px rgb(15 23 42 / 0.35);
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
