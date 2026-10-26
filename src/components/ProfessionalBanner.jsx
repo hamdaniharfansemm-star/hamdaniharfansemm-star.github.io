@@ -35,13 +35,13 @@ export default function ProfessionalBanner({ bgSrc = profile.bannerBg }) {
 
             <motion.h2
               {...fadeUp(0.15)}
-              className="mt-5 max-w-2xl font-display text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl"
+              className="mt-5 max-w-3xl text-balance font-display text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl"
             >
               {banner.title}
             </motion.h2>
 
-            <motion.p {...fadeUp(0.2)} className="mt-4 max-w-xl text-sm text-slate-400 sm:text-base">
-              {banner.tagline} Currently at {profile.company}
+            <motion.p {...fadeUp(0.2)} className="mt-5 max-w-2xl text-sm leading-relaxed text-slate-300 sm:text-base md:text-lg">
+              {banner.tagline}
             </motion.p>
 
             <motion.a

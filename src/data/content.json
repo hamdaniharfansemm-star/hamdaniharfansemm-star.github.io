@@ -6,7 +6,7 @@
     "email": "hamdaniharfansemm@gmail.com",
     "phoneDisplay": "+62 852-6556-2860",
     "whatsapp": "6285265562860",
-    "photo": "/assets/uploads/mvnyjlrb-create-formal-photo-for-character-2k-202.jpg",
+    "photo": "/assets/profile-photo.jpg",
     "bannerBg": "/assets/banner-bg.png"
   },
   "hero": {
@@ -32,9 +32,9 @@
     }
   },
   "banner": {
-    "title": "Available for Project Collaboration & Large-Scale Product Development",
+    "title": "Let’s Build Solutions That Elevate Your Business and Outpace the Competition.",
     "status": "Ready for Projects & Institutional Consulting",
-    "tagline": "Mobile App Developer & Software Engineer — building smart solutions like Dagangku AI and DScan.",
+    "tagline": "You bring the vision, I'll engineer the execution. Partner with a dedicated software expert to turn your complex challenges into seamless, scalable, and high-performing digital applications. Let’s create something extraordinary together.",
     "cta": "Let's Talk"
   },
   "stats": {
@@ -408,14 +408,10 @@
     }
   ],
   "contact": {
-    "intro": "Let's build something extraordinary together. Have a project in mind or want to discuss enterprise solutions?",
+    "title": "Hire Me",
+    "intro": "Let's discuss your custom software development or application project.",
+    "formEmail": "hamdaniharfansemm@gmail.com",
     "socials": [
-      {
-        "id": "github",
-        "label": "GitHub",
-        "handle": "hamdaniharfansemm-star",
-        "href": "https://github.com/hamdaniharfansemm-star"
-      },
       {
         "id": "linkedin",
         "label": "LinkedIn",

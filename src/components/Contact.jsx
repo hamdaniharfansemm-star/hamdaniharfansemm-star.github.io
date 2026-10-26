@@ -5,47 +5,94 @@ import { fadeUp, spring } from "../lib/motion.js";
 import { ArrowUpRight, Check, Mail, WhatsApp, socialIcon } from "./Icons.jsx";
 import SectionHeading from "./SectionHeading.jsx";
 
-const EMPTY = { name: "", email: "", type: contact.projectTypes[0], message: "" };
+// Form submissions are delivered by FormSubmit (https://formsubmit.co) straight to this inbox.
+// The very first submission sends an activation email to this address — click "Activate Form" once.
+const FORM_EMAIL = contact.formEmail || profile.email;
+const ENDPOINT = `https://formsubmit.co/ajax/${FORM_EMAIL}`;
+
+const CURRENCIES = {
+  IDR: { label: "IDR (Rp)", placeholder: "e.g. 15.000.000" },
+  USD: { label: "USD ($)", placeholder: "e.g. 1,000 – 2,500" },
+};
+
+const EMPTY = { name: "", reply: "", type: contact.projectTypes?.[0] || "", details: "", currency: "IDR", budget: "", website: "" };
+
+const isEmail = (s) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(s.trim());
+const isPhone = (s) => s.replace(/\D/g, "").length >= 8 && /^[+\d\s().-]+$/.test(s.trim());
 
 function validate(v) {
   const e = {};
-  if (v.name.trim().length < 2) e.name = "Please enter your name.";
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.email.trim())) e.email = "Please enter a valid email address.";
-  if (v.message.trim().length < 20) e.message = "Tell me a bit more (at least 20 characters).";
+  if (v.name.trim().length < 2) e.name = "Please enter your name or company.";
+  if (!isEmail(v.reply) && !isPhone(v.reply)) e.reply = "Enter a valid email address or WhatsApp number.";
+  if (v.details.trim().length < 20) e.details = "Please describe your project (at least 20 characters).";
   return e;
 }
 
 export default function Contact() {
   const [values, setValues] = useState(EMPTY);
   const [touched, setTouched] = useState({});
-  const [status, setStatus] = useState("idle"); // idle | sending | sent
+  const [status, setStatus] = useState("idle"); // idle | sending | sent | error
   const errors = validate(values);
 
   const set = (k) => (e) => setValues((v) => ({ ...v, [k]: e.target.value }));
   const blur = (k) => () => setTouched((t) => ({ ...t, [k]: true }));
   const show = (k) => touched[k] && errors[k];
 
-  const composed = () => {
-    const subject = `[Portfolio] ${values.type} — ${values.name}`;
-    const body = `${values.message}\n\n— ${values.name}\n${values.email}`;
-    return { subject, body };
-  };
+  const budgetText = () => (values.budget.trim() ? `${values.currency} ${values.budget.trim()}` : "Not specified");
 
-  const onSubmit = (e) => {
+  const plainText = () =>
+    [
+      `Name / Company: ${values.name.trim()}`,
+      `Contact: ${values.reply.trim()}`,
+      values.type && `Project type: ${values.type}`,
+      `Estimated budget: ${budgetText()}`,
+      "",
+      "Project details & specifications:",
+      values.details.trim(),
+    ]
+      .filter((l) => l !== false && l !== undefined)
+      .join("\n");
+
+  const subject = () => `New project request — ${values.name.trim()}${values.type ? ` (${values.type})` : ""}`;
+
+  const onSubmit = async (e) => {
     e.preventDefault();
-    setTouched({ name: true, email: true, message: true });
-    if (Object.keys(errors).length) return;
+    setTouched({ name: true, reply: true, details: true });
+    if (Object.keys(errors).length || status === "sending") return;
+    if (values.website) return setStatus("sent"); // honeypot: bots fill hidden fields
+
     setStatus("sending");
-    const { subject, body } = composed();
-    // No backend needed: hand the message to the visitor's email app.
-    window.location.href = `mailto:${profile.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    setTimeout(() => setStatus("sent"), 700);
+    try {
+      const res = await fetch(ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          "Full Name / Company": values.name.trim(),
+          "Email or WhatsApp": values.reply.trim(),
+          "Project Type": values.type,
+          "Estimated Budget": budgetText(),
+          "Project Details & Specifications": values.details.trim(),
+          _subject: subject(),
+          _template: "table",
+          _captcha: "false",
+          ...(isEmail(values.reply) ? { _replyto: values.reply.trim() } : {}),
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || String(data.success) === "false") throw new Error(data.message || "Send failed");
+      setStatus("sent");
+    } catch {
+      setStatus("error");
+    }
   };
 
-  const sendWhatsApp = () => {
-    const { subject, body } = composed();
-    const text = `${subject}\n\n${body}`;
-    window.open(`https://wa.me/${profile.whatsapp}?text=${encodeURIComponent(text)}`, "_blank", "noopener");
+  const mailtoHref = () => `mailto:${FORM_EMAIL}?subject=${encodeURIComponent(subject())}&body=${encodeURIComponent(plainText())}`;
+  const whatsappHref = () => `https://wa.me/${profile.whatsapp}?text=${encodeURIComponent(`${subject()}\n\n${plainText()}`)}`;
+
+  const reset = () => {
+    setValues(EMPTY);
+    setTouched({});
+    setStatus("idle");
   };
 
   const field =
@@ -56,14 +103,17 @@ export default function Contact() {
       <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-cyan-500/10 blur-[120px]" aria-hidden />
       <div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-amber-200/10 blur-[120px]" aria-hidden />
 
-      <div className="relative mx-auto grid max-w-6xl gap-12 px-5 sm:px-8 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
+      <div className="relative mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)] gap-12 px-5 sm:px-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:gap-16">
         {/* Left: intro + direct channels */}
         <div>
-          <SectionHeading index="05" kicker="Contact" title="Let’s work together">
+          <SectionHeading index="05" kicker="Hire me" title={contact.title || "Hire Me"}>
             {contact.intro}
           </SectionHeading>
 
-          <div className="mt-10 grid gap-3">
+          <p className="mt-10 font-mono text-[11px] uppercase tracking-[0.2em] text-slate-500">
+            Or reach out directly via
+          </p>
+          <div className="mt-3 grid grid-cols-[minmax(0,1fr)] gap-3">
             <ChannelCard href={`mailto:${profile.email}`} icon={<Mail />} label="Email" value={profile.email} delay={0.05} />
             <ChannelCard
               href={`https://wa.me/${profile.whatsapp}`}
@@ -75,12 +125,12 @@ export default function Contact() {
             />
           </div>
 
-          <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <div className="mt-6 grid grid-cols-3 gap-3">
             {contact.socials.map((s, i) => {
               const Icon = socialIcon[s.id] || socialIcon.website;
               return (
                 <motion.a
-                  key={s.id}
+                  key={`${s.id}-${i}`}
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -100,7 +150,7 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Right: form */}
+        {/* Right: project request form */}
         <motion.div {...fadeUp(0.1)} className="relative rounded-[2rem] border border-white/10 bg-slate-900/60 p-6 backdrop-blur sm:p-8">
           <AnimatePresence mode="wait">
             {status === "sent" ? (
@@ -110,7 +160,7 @@ export default function Contact() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0 }}
                 transition={spring}
-                className="flex min-h-[420px] flex-col items-center justify-center text-center"
+                className="flex min-h-[460px] flex-col items-center justify-center text-center"
                 role="status"
               >
                 <motion.span
@@ -121,88 +171,168 @@ export default function Contact() {
                 >
                   <Check width={30} height={30} />
                 </motion.span>
-                <h3 className="mt-6 font-display text-2xl font-bold text-white">Your message is ready!</h3>
+                <h3 className="mt-6 font-display text-2xl font-bold text-white">Project request sent!</h3>
                 <p className="mt-2 max-w-sm text-sm text-slate-400">
-                  Your email app should have opened with everything filled in — just press send. Prefer chat? Send it via WhatsApp instead.
+                  Thank you{values.name.trim() ? `, ${values.name.trim().split(" ")[0]}` : ""}. I’ll review your project and get back to you within 1–2 business days.
                 </p>
-                <div className="mt-6 flex flex-wrap justify-center gap-3">
-                  <button onClick={sendWhatsApp} className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-400">
-                    <WhatsApp width={16} height={16} /> Send via WhatsApp
-                  </button>
-                  <button
-                    onClick={() => {
-                      setValues(EMPTY);
-                      setTouched({});
-                      setStatus("idle");
-                    }}
-                    className="rounded-full border border-white/15 px-5 py-2.5 text-sm font-semibold text-slate-200 hover:bg-white/5"
-                  >
-                    New message
-                  </button>
-                </div>
+                <button onClick={reset} className="mt-6 rounded-full border border-white/15 px-5 py-2.5 text-sm font-semibold text-slate-200 hover:bg-white/5">
+                  Submit another request
+                </button>
               </motion.div>
             ) : (
-              <motion.form key="form" onSubmit={onSubmit} noValidate initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="grid gap-5">
+              <motion.form
+                key="form"
+                onSubmit={onSubmit}
+                noValidate
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="grid gap-5"
+                aria-label="Project request form"
+              >
+                <div>
+                  <h3 className="font-display text-xl font-bold text-white">Project request</h3>
+                  <p className="mt-1 text-sm text-slate-400">Fields marked * are required. Requests go straight to my inbox.</p>
+                </div>
+
+                {/* Honeypot (hidden from people, catches spam bots) */}
+                <input type="text" name="website" value={values.website} onChange={set("website")} tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
+
                 <div className="grid gap-5 sm:grid-cols-2">
-                  <Field label="Your name" error={show("name")} id="name">
-                    <input id="name" autoComplete="name" value={values.name} onChange={set("name")} onBlur={blur("name")} placeholder="Jane Doe"
-                      aria-invalid={!!show("name")} aria-describedby={show("name") ? "name-err" : undefined}
-                      className={`${field} ${show("name") ? "border-rose-400/70" : "border-white/10"}`} />
+                  <Field label="Full Name / Company *" error={show("name")} id="name">
+                    <input
+                      id="name"
+                      autoComplete="name"
+                      value={values.name}
+                      onChange={set("name")}
+                      onBlur={blur("name")}
+                      placeholder="Enter your name"
+                      aria-invalid={!!show("name")}
+                      aria-describedby={show("name") ? "name-err" : undefined}
+                      className={`${field} ${show("name") ? "border-rose-400/70" : "border-white/10"}`}
+                    />
                   </Field>
-                  <Field label="Email" error={show("email")} id="email">
-                    <input id="email" type="email" autoComplete="email" value={values.email} onChange={set("email")} onBlur={blur("email")} placeholder="jane@company.com"
-                      aria-invalid={!!show("email")} aria-describedby={show("email") ? "email-err" : undefined}
-                      className={`${field} ${show("email") ? "border-rose-400/70" : "border-white/10"}`} />
+                  <Field label="Email or WhatsApp Number *" error={show("reply")} id="reply">
+                    <input
+                      id="reply"
+                      autoComplete="email"
+                      value={values.reply}
+                      onChange={set("reply")}
+                      onBlur={blur("reply")}
+                      placeholder="email@domain.com or +62…"
+                      aria-invalid={!!show("reply")}
+                      aria-describedby={show("reply") ? "reply-err" : undefined}
+                      className={`${field} ${show("reply") ? "border-rose-400/70" : "border-white/10"}`}
+                    />
                   </Field>
                 </div>
 
-                <fieldset>
-                  <legend className="mb-2 text-sm font-medium text-slate-300">Project type</legend>
-                  <div className="flex flex-wrap gap-2">
-                    {contact.projectTypes.map((t) => (
-                      <label
-                        key={t}
-                        className={`cursor-pointer rounded-full border px-3.5 py-2 text-xs font-medium transition-colors has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-cream ${
-                          values.type === t ? "border-cream bg-cream text-ink" : "border-white/10 text-slate-300 hover:border-white/30"
-                        }`}
-                      >
-                        <input type="radio" name="type" value={t} checked={values.type === t} onChange={set("type")} className="sr-only" />
-                        {t}
-                      </label>
-                    ))}
-                  </div>
-                </fieldset>
+                {contact.projectTypes?.length > 0 && (
+                  <fieldset>
+                    <legend className="mb-2 text-sm font-medium text-slate-300">Project type</legend>
+                    <div className="flex flex-wrap gap-2">
+                      {contact.projectTypes.map((t) => (
+                        <label
+                          key={t}
+                          className={`cursor-pointer rounded-full border px-3.5 py-2 text-xs font-medium transition-colors has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-cream ${
+                            values.type === t ? "border-cream bg-cream text-ink" : "border-white/10 text-slate-300 hover:border-white/30"
+                          }`}
+                        >
+                          <input type="radio" name="type" value={t} checked={values.type === t} onChange={set("type")} className="sr-only" />
+                          {t}
+                        </label>
+                      ))}
+                    </div>
+                  </fieldset>
+                )}
 
-                <Field label="Message" error={show("message")} id="message">
-                  <textarea id="message" rows={5} value={values.message} onChange={set("message")} onBlur={blur("message")}
-                    placeholder="Tell me about your project, timeline and goals…"
-                    aria-invalid={!!show("message")} aria-describedby={show("message") ? "message-err" : undefined}
-                    className={`${field} resize-none ${show("message") ? "border-rose-400/70" : "border-white/10"}`} />
-                  <span className="mt-1 block text-right font-mono text-[11px] text-slate-500">{values.message.trim().length} chars</span>
+                <Field label="Project Details & Specifications *" error={show("details")} id="details">
+                  <textarea
+                    id="details"
+                    rows={5}
+                    value={values.details}
+                    onChange={set("details")}
+                    onBlur={blur("details")}
+                    placeholder="Explain the core features, target users, or application idea you want to build..."
+                    aria-invalid={!!show("details")}
+                    aria-describedby={show("details") ? "details-err" : undefined}
+                    className={`${field} resize-y ${show("details") ? "border-rose-400/70" : "border-white/10"}`}
+                  />
+                  <span className="mt-1 block text-right font-mono text-[11px] text-slate-500">{values.details.trim().length} chars</span>
                 </Field>
 
-                <div className="flex flex-col gap-3 sm:flex-row">
-                  <motion.button
-                    type="submit"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    disabled={status === "sending"}
-                    className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-cream px-6 py-3.5 text-sm font-bold text-ink disabled:opacity-60"
-                  >
-                    {status === "sending" ? "Opening your email app…" : "Send message"}
-                    <ArrowUpRight width={16} height={16} />
-                  </motion.button>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setTouched({ name: true, email: true, message: true });
-                      if (!Object.keys(errors).length) sendWhatsApp();
-                    }}
-                    className="inline-flex items-center justify-center gap-2 rounded-full border border-emerald-400/40 px-6 py-3.5 text-sm font-semibold text-emerald-300 hover:bg-emerald-400/10"
-                  >
-                    <WhatsApp width={16} height={16} /> WhatsApp
-                  </button>
+                <div>
+                  <label htmlFor="budget" className="mb-2 block text-sm font-medium text-slate-300">
+                    Estimated Budget <span className="font-normal text-slate-500">(optional)</span>
+                  </label>
+                  <div className="flex gap-2">
+                    <select
+                      aria-label="Currency"
+                      value={values.currency}
+                      onChange={set("currency")}
+                      className="w-[7.5rem] shrink-0 rounded-2xl border border-white/10 bg-slate-950/60 px-3 py-3.5 text-sm font-semibold text-white outline-none transition focus:border-cream focus:ring-4 focus:ring-cream/10 sm:w-32"
+                    >
+                      {Object.entries(CURRENCIES).map(([code, c]) => (
+                        <option key={code} value={code}>
+                          {c.label}
+                        </option>
+                      ))}
+                    </select>
+                    <input
+                      id="budget"
+                      inputMode="text"
+                      value={values.budget}
+                      onChange={set("budget")}
+                      placeholder={CURRENCIES[values.currency].placeholder}
+                      className={`${field} w-auto min-w-0 flex-1 border-white/10`}
+                    />
+                  </div>
                 </div>
+
+                <AnimatePresence>
+                  {status === "error" && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -6 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0 }}
+                      role="alert"
+                      className="rounded-2xl border border-rose-400/30 bg-rose-500/10 p-4 text-sm text-rose-100"
+                    >
+                      The form couldn’t be sent right now. Your details are still here — send them another way:
+                      <div className="mt-3 flex flex-wrap gap-2">
+                        <a href={mailtoHref()} className="inline-flex items-center gap-2 rounded-full bg-cream px-4 py-2 text-xs font-bold text-ink">
+                          <Mail width={14} height={14} /> Send by email
+                        </a>
+                        <a
+                          href={whatsappHref()}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-4 py-2 text-xs font-bold text-white"
+                        >
+                          <WhatsApp width={14} height={14} /> Send via WhatsApp
+                        </a>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+
+                <motion.button
+                  type="submit"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  disabled={status === "sending"}
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-cream px-6 py-4 text-sm font-bold text-ink disabled:opacity-60"
+                >
+                  {status === "sending" ? (
+                    <>
+                      <span className="h-4 w-4 animate-spin rounded-full border-2 border-ink border-t-transparent" /> Sending…
+                    </>
+                  ) : (
+                    <>
+                      Submit Project Request <ArrowUpRight width={16} height={16} />
+                    </>
+                  )}
+                </motion.button>
               </motion.form>
             )}
           </AnimatePresence>
@@ -221,13 +351,7 @@ function Field({ label, id, error, children }) {
       {children}
       <AnimatePresence>
         {error && (
-          <motion.p
-            id={`${id}-err`}
-            initial={{ opacity: 0, y: -4 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0 }}
-            className="mt-1.5 text-xs text-rose-300"
-          >
+          <motion.p id={`${id}-err`} initial={{ opacity: 0, y: -4 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="mt-1.5 text-xs text-rose-300">
             {error}
           </motion.p>
         )}
@@ -243,12 +367,12 @@ function ChannelCard({ href, icon, label, value, external, delay }) {
       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       {...fadeUp(delay)}
       whileHover={{ x: 6 }}
-      className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-slate-900/50 p-4 transition-colors hover:border-cream/40 hover:bg-slate-900"
+      className="group flex items-center gap-3 rounded-2xl border border-white/10 bg-slate-900/50 p-3.5 sm:gap-4 sm:p-4 transition-colors hover:border-cream/40 hover:bg-slate-900"
     >
-      <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-cream text-ink">{icon}</span>
+      <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-cream text-ink sm:h-12 sm:w-12">{icon}</span>
       <span className="min-w-0 flex-1">
         <span className="block font-mono text-[11px] uppercase tracking-[0.2em] text-slate-500">{label}</span>
-        <span className="block truncate text-base font-semibold text-white">{value}</span>
+        <span className="block truncate text-sm font-semibold text-white sm:text-base">{value}</span>
       </span>
       <ArrowUpRight className="text-slate-500 transition-colors group-hover:text-cream" />
     </motion.a>

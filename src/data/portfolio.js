@@ -27,7 +27,7 @@ export const navLinks = [
   { id: "works", label: "Works" },
   { id: "skills", label: "Skills" },
   { id: "experience", label: "Experience" },
-  { id: "contact", label: "Contact" },
+  { id: "contact", label: "Hire Me" },
 ];
 
 // Google Play release stage of each app (see `status` on each project).

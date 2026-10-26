@@ -253,9 +253,17 @@ export const tabs = [
   },
   {
     id: "contact",
-    label: "Kontak & Sosmed",
+    label: "Hire Me & Sosmed",
     fields: [
+      { key: "contact.title", type: "text", label: "Judul bagian", placeholder: "Hire Me" },
       { key: "contact.intro", type: "textarea", label: "Kalimat pembuka", rows: 2 },
+      {
+        key: "contact.formEmail",
+        type: "text",
+        inputType: "email",
+        label: "Email penerima form proyek",
+        help: "Permintaan proyek dari form dikirim ke email ini. Jika diganti, kiriman pertama akan meminta aktivasi lewat email baru tersebut.",
+      },
       {
         key: "contact.socials",
         type: "list",
@@ -270,7 +278,7 @@ export const tabs = [
           { key: "href", type: "text", label: "Link lengkap", inputType: "url", placeholder: "https://…" },
         ],
       },
-      { key: "contact.projectTypes", type: "lines", label: "Pilihan jenis proyek di form", help: "Satu per baris" },
+      { key: "contact.projectTypes", type: "lines", label: "Pilihan jenis proyek di form", help: "Satu per baris. Kosongkan untuk menyembunyikan." },
     ],
   },
 ];
