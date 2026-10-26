@@ -1,14 +1,60 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { contact, profile } from "../data/portfolio.js";
 import { fadeUp, spring } from "../lib/motion.js";
 import { ArrowUpRight, Check, Mail, WhatsApp, socialIcon } from "./Icons.jsx";
 import SectionHeading from "./SectionHeading.jsx";
 
-// Form submissions are delivered by FormSubmit (https://formsubmit.co) straight to this inbox.
-// The very first submission sends an activation email to this address — click "Activate Form" once.
-const FORM_EMAIL = contact.formEmail || profile.email;
-const ENDPOINT = `https://formsubmit.co/ajax/${FORM_EMAIL}`;
+// Form submissions are delivered by FormSubmit (https://formsubmit.co) straight to the owner's inbox.
+// FormSubmit needs a one-time activation PER WEBSITE ADDRESS: the first submission from a new domain
+// sends an "Activate Form" email to the inbox below. Until that link is clicked, requests are rejected.
+// `formEmail` may be the email itself or the private alias code FormSubmit gives after activation.
+const FORM_TARGET = (contact.formEmail || profile.email).trim();
+const ENDPOINT = `https://formsubmit.co/ajax/${encodeURIComponent(FORM_TARGET)}`;
+const TIMEOUT_MS = 15000;
+const SLOW_MS = 5000;
+
+class SendError extends Error {
+  constructor(kind, message) {
+    super(message);
+    this.kind = kind; // "activation" | "timeout" | "network" | "rejected"
+  }
+}
+
+async function postOnce(payload) {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
+  try {
+    const res = await fetch(ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(payload),
+      signal: ctrl.signal,
+    });
+    const data = await res.json().catch(() => ({}));
+    const msg = String(data.message || "");
+    if (/activat/i.test(msg)) throw new SendError("activation", msg);
+    if (!res.ok || String(data.success) === "false") throw new SendError("rejected", msg || `HTTP ${res.status}`);
+    return data;
+  } catch (err) {
+    if (err instanceof SendError) throw err;
+    if (err?.name === "AbortError") throw new SendError("timeout", "Request timed out");
+    throw new SendError("network", err?.message || "Network error");
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+/** Sends the request; retries once on a dropped connection (not on timeouts or rejections). */
+async function sendRequest(payload) {
+  try {
+    return await postOnce(payload);
+  } catch (err) {
+    if (err.kind !== "network") throw err;
+    await new Promise((r) => setTimeout(r, 800));
+    return postOnce(payload);
+  }
+}
 
 const CURRENCIES = {
   IDR: { label: "IDR (Rp)", placeholder: "e.g. 15.000.000" },
@@ -32,7 +78,26 @@ export default function Contact() {
   const [values, setValues] = useState(EMPTY);
   const [touched, setTouched] = useState({});
   const [status, setStatus] = useState("idle"); // idle | sending | sent | error
+  const [slow, setSlow] = useState(false);
+  const fallbackRef = useRef(null);
   const errors = validate(values);
+
+  // Reassure the visitor when the mail service is slow
+  useEffect(() => {
+    if (status !== "sending") return setSlow(false);
+    const t = setTimeout(() => setSlow(true), SLOW_MS);
+    return () => clearTimeout(t);
+  }, [status]);
+
+  // Bring the alternative send options into view when the online form fails
+  useEffect(() => {
+    if (status !== "error" || !fallbackRef.current) return;
+    // Vertical-only scroll (scrollIntoView can also shift overflow-hidden sections sideways)
+    const r = fallbackRef.current.getBoundingClientRect();
+    if (r.top < 90 || r.bottom > window.innerHeight) {
+      window.scrollTo({ top: window.scrollY + r.top - window.innerHeight / 2 + r.height / 2, behavior: "smooth" });
+    }
+  }, [status]);
 
   const set = (k) => (e) => setValues((v) => ({ ...v, [k]: e.target.value }));
   const blur = (k) => () => setTouched((t) => ({ ...t, [k]: true }));
@@ -63,30 +128,31 @@ export default function Contact() {
 
     setStatus("sending");
     try {
-      const res = await fetch(ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({
-          "Full Name / Company": values.name.trim(),
-          "Email or WhatsApp": values.reply.trim(),
-          "Project Type": values.type,
-          "Estimated Budget": budgetText(),
-          "Project Details & Specifications": values.details.trim(),
-          _subject: subject(),
-          _template: "table",
-          _captcha: "false",
-          ...(isEmail(values.reply) ? { _replyto: values.reply.trim() } : {}),
-        }),
+      await sendRequest({
+        "Full Name / Company": values.name.trim(),
+        "Email or WhatsApp": values.reply.trim(),
+        "Project Type": values.type,
+        "Estimated Budget": budgetText(),
+        "Project Details & Specifications": values.details.trim(),
+        _subject: subject(),
+        _template: "table",
+        _captcha: "false",
+        ...(isEmail(values.reply) ? { _replyto: values.reply.trim() } : {}),
       });
-      const data = await res.json().catch(() => ({}));
-      if (!res.ok || String(data.success) === "false") throw new Error(data.message || "Send failed");
       setStatus("sent");
-    } catch {
+    } catch (err) {
+      if (err.kind === "activation") {
+        // For the site owner (visible in the browser console only)
+        console.warn(
+          `[Hire Me form] FormSubmit is not activated for ${window.location.host}. ` +
+            `Open the "Activate FormSubmit" email sent to the form inbox and click "Activate Form".`
+        );
+      }
       setStatus("error");
     }
   };
 
-  const mailtoHref = () => `mailto:${FORM_EMAIL}?subject=${encodeURIComponent(subject())}&body=${encodeURIComponent(plainText())}`;
+  const mailtoHref = () => `mailto:${profile.email}?subject=${encodeURIComponent(subject())}&body=${encodeURIComponent(plainText())}`;
   const whatsappHref = () => `https://wa.me/${profile.whatsapp}?text=${encodeURIComponent(`${subject()}\n\n${plainText()}`)}`;
 
   const reset = () => {
@@ -292,24 +358,31 @@ export default function Contact() {
                 <AnimatePresence>
                   {status === "error" && (
                     <motion.div
+                      ref={fallbackRef}
                       initial={{ opacity: 0, y: -6 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0 }}
                       role="alert"
-                      className="rounded-2xl border border-rose-400/30 bg-rose-500/10 p-4 text-sm text-rose-100"
+                      className="rounded-2xl border border-amber-300/30 bg-amber-300/10 p-5 text-sm text-amber-50"
                     >
-                      The form couldn’t be sent right now. Your details are still here — send them another way:
-                      <div className="mt-3 flex flex-wrap gap-2">
-                        <a href={mailtoHref()} className="inline-flex items-center gap-2 rounded-full bg-cream px-4 py-2 text-xs font-bold text-ink">
-                          <Mail width={14} height={14} /> Send by email
-                        </a>
+                      <p className="font-semibold text-white">Almost there — please send it with one tap.</p>
+                      <p className="mt-1 text-amber-100/80">
+                        The online form is temporarily unavailable. Your request is already written below — choose WhatsApp or email and just press send.
+                      </p>
+                      <div className="mt-4 grid gap-2 sm:grid-cols-2">
                         <a
                           href={whatsappHref()}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-4 py-2 text-xs font-bold text-white"
+                          className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-500 px-4 py-3 text-sm font-bold text-white transition-colors hover:bg-emerald-400"
                         >
-                          <WhatsApp width={14} height={14} /> Send via WhatsApp
+                          <WhatsApp width={16} height={16} /> Send via WhatsApp
+                        </a>
+                        <a
+                          href={mailtoHref()}
+                          className="inline-flex items-center justify-center gap-2 rounded-full bg-cream px-4 py-3 text-sm font-bold text-ink transition-opacity hover:opacity-90"
+                        >
+                          <Mail width={16} height={16} /> Send by email
                         </a>
                       </div>
                     </motion.div>
@@ -325,8 +398,11 @@ export default function Contact() {
                 >
                   {status === "sending" ? (
                     <>
-                      <span className="h-4 w-4 animate-spin rounded-full border-2 border-ink border-t-transparent" /> Sending…
+                      <span className="h-4 w-4 animate-spin rounded-full border-2 border-ink border-t-transparent" />
+                      {slow ? "Still sending — almost done…" : "Sending…"}
                     </>
+                  ) : status === "error" ? (
+                    <>Try the online form again</>
                   ) : (
                     <>
                       Submit Project Request <ArrowUpRight width={16} height={16} />

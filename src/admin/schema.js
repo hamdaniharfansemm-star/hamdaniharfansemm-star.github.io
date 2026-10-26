@@ -260,9 +260,8 @@ export const tabs = [
       {
         key: "contact.formEmail",
         type: "text",
-        inputType: "email",
         label: "Email penerima form proyek",
-        help: "Permintaan proyek dari form dikirim ke email ini. Jika diganti, kiriman pertama akan meminta aktivasi lewat email baru tersebut.",
+        help: "Permintaan proyek dikirim ke email ini lewat FormSubmit. Wajib aktivasi sekali per alamat website (cek email 'Activate FormSubmit'). Setelah aktif, boleh diganti dengan kode alias dari FormSubmit agar email tidak terlihat.",
       },
       {
         key: "contact.socials",

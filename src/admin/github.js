@@ -139,7 +139,7 @@ export async function deployRunFor(token, commitSha) {
 export const links = {
   repo: `https://github.com/${REPO.owner}/${REPO.repo}`,
   actions: `https://github.com/${REPO.owner}/${REPO.repo}/actions`,
-  site: `https://${REPO.owner}.github.io/`,
+  site: "https://hamdaniharfan.com/",
   newToken: "https://github.com/settings/personal-access-tokens/new",
   history: `https://github.com/${REPO.owner}/${REPO.repo}/commits/${REPO.branch}/${CONTENT_PATH}`,
 };
