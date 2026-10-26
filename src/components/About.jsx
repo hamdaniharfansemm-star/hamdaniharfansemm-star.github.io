@@ -11,7 +11,7 @@ export default function About({ photoSrc = profile.photo }) {
   const photoY = useTransform(scrollYProgress, [0, 1], [40, -40]);
 
   return (
-    <section id="about" ref={ref} className="relative overflow-hidden bg-cream py-24 text-ink md:py-32">
+    <section id="about" ref={ref} className="relative overflow-clip bg-cream py-24 text-ink md:py-32">
       <div className="bg-paper-dots pointer-events-none absolute inset-0 opacity-60" aria-hidden />
 
       <div className="relative mx-auto grid max-w-6xl gap-14 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">

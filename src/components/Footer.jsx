@@ -45,7 +45,7 @@ export default function Footer() {
           <div className="space-y-1">
             <p>© 2026 Hamdani Harfan. All rights reserved.</p>
             <p className="text-slate-600">
-              Personal portfolio. Professional affiliation: {profile.company}. Views and independent projects shown here are my own.
+              Personal portfolio. Professional affiliation: {profile.company.replace(/\.$/, "")}. Views and independent projects shown here are my own.
             </p>
           </div>
           <a href="#home" className="inline-flex items-center gap-2 self-start rounded-full border border-white/10 px-4 py-2 text-slate-300 hover:border-white/30 hover:text-white md:self-auto">

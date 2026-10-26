@@ -10,7 +10,7 @@ export default function Experience() {
   const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 20 });
 
   return (
-    <section id="experience" className="relative overflow-hidden bg-cream py-24 text-ink md:py-32">
+    <section id="experience" className="relative overflow-clip bg-cream py-24 text-ink md:py-32">
       <div className="bg-paper-dots pointer-events-none absolute inset-0 opacity-60" aria-hidden />
       <div className="relative mx-auto max-w-5xl px-5 sm:px-8">
         <SectionHeading index="04" kicker="Experience" title="Where reliability meets creativity" tone="dark">

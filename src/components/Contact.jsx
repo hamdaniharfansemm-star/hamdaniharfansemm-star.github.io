@@ -25,11 +25,14 @@ async function postOnce(payload) {
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
   try {
+    // URL-encoded body = a "simple" CORS request: no extra preflight round-trip before sending.
+    // keepalive lets the request finish even if the visitor closes or leaves the page.
     const res = await fetch(ENDPOINT, {
       method: "POST",
-      headers: { "Content-Type": "application/json", Accept: "application/json" },
-      body: JSON.stringify(payload),
+      headers: { Accept: "application/json" },
+      body: new URLSearchParams(payload),
       signal: ctrl.signal,
+      keepalive: true,
     });
     const data = await res.json().catch(() => ({}));
     const msg = String(data.message || "");
@@ -77,17 +80,19 @@ function validate(v) {
 export default function Contact() {
   const [values, setValues] = useState(EMPTY);
   const [touched, setTouched] = useState({});
-  const [status, setStatus] = useState("idle"); // idle | sending | sent | error
+  // idle → sent (shown instantly) → delivered in the background; error = fall back to WhatsApp/email
+  const [status, setStatus] = useState("idle"); // idle | sent | error
+  const [delivery, setDelivery] = useState("pending"); // pending | done
   const [slow, setSlow] = useState(false);
   const fallbackRef = useRef(null);
+  const requestId = useRef(0);
   const errors = validate(values);
 
-  // Reassure the visitor when the mail service is slow
   useEffect(() => {
-    if (status !== "sending") return setSlow(false);
+    if (status !== "sent" || delivery !== "pending") return setSlow(false);
     const t = setTimeout(() => setSlow(true), SLOW_MS);
     return () => clearTimeout(t);
-  }, [status]);
+  }, [status, delivery]);
 
   // Bring the alternative send options into view when the online form fails
   useEffect(() => {
@@ -123,10 +128,17 @@ export default function Contact() {
   const onSubmit = async (e) => {
     e.preventDefault();
     setTouched({ name: true, reply: true, details: true });
-    if (Object.keys(errors).length || status === "sending") return;
-    if (values.website) return setStatus("sent"); // honeypot: bots fill hidden fields
+    if (Object.keys(errors).length) return;
+    if (values.website) {
+      // honeypot: bots fill hidden fields — pretend success, send nothing
+      setDelivery("done");
+      return setStatus("sent");
+    }
 
-    setStatus("sending");
+    // Show the confirmation immediately; delivery finishes in the background.
+    const id = ++requestId.current;
+    setDelivery("pending");
+    setStatus("sent");
     try {
       await sendRequest({
         "Full Name / Company": values.name.trim(),
@@ -139,8 +151,9 @@ export default function Contact() {
         _captcha: "false",
         ...(isEmail(values.reply) ? { _replyto: values.reply.trim() } : {}),
       });
-      setStatus("sent");
+      if (id === requestId.current) setDelivery("done");
     } catch (err) {
+      if (id !== requestId.current) return;
       if (err.kind === "activation") {
         // For the site owner (visible in the browser console only)
         console.warn(
@@ -156,6 +169,7 @@ export default function Contact() {
   const whatsappHref = () => `https://wa.me/${profile.whatsapp}?text=${encodeURIComponent(`${subject()}\n\n${plainText()}`)}`;
 
   const reset = () => {
+    requestId.current++;
     setValues(EMPTY);
     setTouched({});
     setStatus("idle");
@@ -165,7 +179,7 @@ export default function Contact() {
     "w-full rounded-2xl border bg-slate-950/60 px-4 py-3.5 text-sm text-white placeholder:text-slate-500 outline-none transition focus:border-cream focus:ring-4 focus:ring-cream/10";
 
   return (
-    <section id="contact" className="relative overflow-hidden bg-night py-24 md:py-32">
+    <section id="contact" className="relative overflow-clip bg-night py-24 md:py-32">
       <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-cyan-500/10 blur-[120px]" aria-hidden />
       <div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-amber-200/10 blur-[120px]" aria-hidden />
 
@@ -241,7 +255,23 @@ export default function Contact() {
                 <p className="mt-2 max-w-sm text-sm text-slate-400">
                   Thank you{values.name.trim() ? `, ${values.name.trim().split(" ")[0]}` : ""}. I’ll review your project and get back to you within 1–2 business days.
                 </p>
-                <button onClick={reset} className="mt-6 rounded-full border border-white/15 px-5 py-2.5 text-sm font-semibold text-slate-200 hover:bg-white/5">
+                <p className="mt-5 flex min-h-5 items-center gap-2 text-xs font-medium" aria-live="polite">
+                  {delivery === "done" ? (
+                    <span className="flex items-center gap-1.5 text-emerald-300">
+                      <Check width={14} height={14} /> Delivered to my inbox
+                    </span>
+                  ) : (
+                    <span className="flex items-center gap-2 text-slate-400">
+                      <span className="h-3 w-3 animate-spin rounded-full border-2 border-slate-400 border-t-transparent" />
+                      {slow ? "Finishing delivery — you can keep browsing" : "Delivering to my inbox…"}
+                    </span>
+                  )}
+                </p>
+                <button
+                  onClick={reset}
+                  disabled={delivery !== "done"}
+                  className="mt-5 rounded-full border border-white/15 px-5 py-2.5 text-sm font-semibold text-slate-200 transition-opacity hover:bg-white/5 disabled:opacity-40"
+                >
                   Submit another request
                 </button>
               </motion.div>
@@ -252,7 +282,7 @@ export default function Contact() {
                 noValidate
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
+                exit={{ opacity: 0, transition: { duration: 0.12 } }}
                 className="grid gap-5"
                 aria-label="Project request form"
               >
@@ -393,15 +423,9 @@ export default function Contact() {
                   type="submit"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  disabled={status === "sending"}
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-cream px-6 py-4 text-sm font-bold text-ink disabled:opacity-60"
                 >
-                  {status === "sending" ? (
-                    <>
-                      <span className="h-4 w-4 animate-spin rounded-full border-2 border-ink border-t-transparent" />
-                      {slow ? "Still sending — almost done…" : "Sending…"}
-                    </>
-                  ) : status === "error" ? (
+                  {status === "error" ? (
                     <>Try the online form again</>
                   ) : (
                     <>

@@ -15,7 +15,7 @@ const pill = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative overflow-hidden bg-night py-24 md:py-32">
+    <section id="skills" className="relative overflow-clip bg-night py-24 md:py-32">
       <div className="pointer-events-none absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-white/15 to-transparent" aria-hidden />
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading index="03" kicker="Skills & expertise" title="Two disciplines. One workflow." align="center">
