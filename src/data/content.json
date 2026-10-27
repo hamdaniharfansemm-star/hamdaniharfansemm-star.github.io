@@ -32,9 +32,9 @@
     }
   },
   "banner": {
-    "title": "Let’s Build Solutions That Elevate Your Business and Outpace the Competition.",
+    "title": "\"Engineering Smart Solutions. Driving Real Business Growth.\"",
     "status": "Ready for Projects & Institutional Consulting",
-    "tagline": "You bring the vision, I'll engineer the execution. Partner with a dedicated software expert to turn your complex challenges into seamless, scalable, and high-performing digital applications. Let’s create something extraordinary together.",
+    "tagline": "Y\"You bring the vision, I engineer the execution. Partnering to build scalable, high-performance digital products that accelerate your business.\". ",
     "cta": "Let's Talk"
   },
   "stats": {
@@ -88,47 +88,6 @@
   ],
   "projects": [
     {
-      "id": "dagangku",
-      "status": "internal",
-      "packageId": "id.dagangku.app",
-      "title": "Dagangku AI",
-      "category": "UI/UX & Products",
-      "tech": [
-        "Flutter",
-        "AI Prompt",
-        "Play Console"
-      ],
-      "desc": "Inventory management, smart cashier, and automated sales reporting application.",
-      "image": "/assets/projects/dagangku.png",
-      "logo": "/assets/logos/dagangku.png",
-      "accent": "#eab308",
-      "highlights": [
-        "Smart cashier (POS) flow designed for fast daily transactions",
-        "Real-time stock & inventory tracking for small businesses",
-        "Automated sales reports generated with AI assistance"
-      ]
-    },
-    {
-      "id": "dfin",
-      "status": "internal",
-      "title": "D-Fin",
-      "category": "UI/UX & Products",
-      "tech": [
-        "Figma",
-        "Visual Branding",
-        "Fintech Architecture"
-      ],
-      "desc": "Financial platform featuring modern visual branding and advanced security architecture.",
-      "image": "/assets/projects/dfin.png",
-      "logo": "/assets/logos/dfin.png",
-      "accent": "#38bdf8",
-      "highlights": [
-        "Voice-based transaction logging & digital envelope budgeting",
-        "Automated savings goals and family account sync",
-        "MoneyMind insights, challenges and story-style reports"
-      ]
-    },
-    {
       "id": "dscan",
       "status": "live",
       "packageId": "com.hamdaniharfan.dscan",
@@ -150,24 +109,24 @@
       ]
     },
     {
-      "id": "dictedoc",
-      "status": "internal",
-      "packageId": "com.dictedoc.dictedoc",
-      "title": "DicteDoc",
-      "category": "UI/UX & Products",
+      "id": "dnotes",
+      "status": "closed",
+      "packageId": "com.hamdaniharfan.dnotes",
+      "title": "DNotes",
+      "category": "Mobile & Web Dev",
       "tech": [
-        "Speech-to-Text",
-        "Text-to-Speech",
-        "AI Engine"
+        "Voice Command",
+        "NLP",
+        "Reminder System"
       ],
-      "desc": "High-accuracy speech-to-text and text-to-speech conversion solution.",
-      "image": "/assets/projects/dictedoc.png",
-      "logo": "/assets/logos/dictedoc.png",
-      "accent": "#facc15",
+      "desc": "Smart reminder application driven by interactive voice commands.",
+      "image": "/assets/projects/dnotes.png",
+      "logo": "/assets/logos/dnotes.png",
+      "accent": "#94a3b8",
       "highlights": [
-        "Turns documents into natural speech with auto summaries",
-        "Records meetings into transcripts and structured minutes",
-        "AI engine tuned for Bahasa Indonesia & English"
+        "Capture notes by voice in five languages",
+        "Automatic agenda extraction from spoken notes",
+        "Task alarms that never get missed"
       ]
     },
     {
@@ -192,24 +151,65 @@
       ]
     },
     {
-      "id": "dnotes",
-      "status": "closed",
-      "packageId": "com.hamdaniharfan.dnotes",
-      "title": "DNotes",
-      "category": "Mobile & Web Dev",
+      "id": "dictedoc",
+      "status": "internal",
+      "packageId": "com.dictedoc.dictedoc",
+      "title": "DicteDoc",
+      "category": "UI/UX & Products",
       "tech": [
-        "Voice Command",
-        "NLP",
-        "Reminder System"
+        "Speech-to-Text",
+        "Text-to-Speech",
+        "AI Engine"
       ],
-      "desc": "Smart reminder application driven by interactive voice commands.",
-      "image": "/assets/projects/dnotes.png",
-      "logo": "/assets/logos/dnotes.png",
-      "accent": "#94a3b8",
+      "desc": "High-accuracy speech-to-text and text-to-speech conversion solution.",
+      "image": "/assets/projects/dictedoc.png",
+      "logo": "/assets/logos/dictedoc.png",
+      "accent": "#facc15",
       "highlights": [
-        "Capture notes by voice in five languages",
-        "Automatic agenda extraction from spoken notes",
-        "Task alarms that never get missed"
+        "Turns documents into natural speech with auto summaries",
+        "Records meetings into transcripts and structured minutes",
+        "AI engine tuned for Bahasa Indonesia & English"
+      ]
+    },
+    {
+      "id": "dfin",
+      "status": "internal",
+      "title": "D-Fin",
+      "category": "UI/UX & Products",
+      "tech": [
+        "Figma",
+        "Visual Branding",
+        "Fintech Architecture"
+      ],
+      "desc": "Financial platform featuring modern visual branding and advanced security architecture.",
+      "image": "/assets/projects/dfin.png",
+      "logo": "/assets/logos/dfin.png",
+      "accent": "#38bdf8",
+      "highlights": [
+        "Voice-based transaction logging & digital envelope budgeting",
+        "Automated savings goals and family account sync",
+        "MoneyMind insights, challenges and story-style reports"
+      ]
+    },
+    {
+      "id": "dagangku",
+      "status": "internal",
+      "packageId": "id.dagangku.app",
+      "title": "Dagangku AI",
+      "category": "UI/UX & Products",
+      "tech": [
+        "Flutter",
+        "AI Prompt",
+        "Play Console"
+      ],
+      "desc": "Inventory management, smart cashier, and automated sales reporting application.",
+      "image": "/assets/projects/dagangku.png",
+      "logo": "/assets/logos/dagangku.png",
+      "accent": "#eab308",
+      "highlights": [
+        "Smart cashier (POS) flow designed for fast daily transactions",
+        "Real-time stock & inventory tracking for small businesses",
+        "Automated sales reports generated with AI assistance"
       ]
     },
     {
