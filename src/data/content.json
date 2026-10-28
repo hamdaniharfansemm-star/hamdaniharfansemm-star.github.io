@@ -110,7 +110,7 @@
     },
     {
       "id": "dnotes",
-      "status": "closed",
+      "status": "live",
       "packageId": "com.hamdaniharfan.dnotes",
       "title": "DNotes",
       "category": "Mobile & Web Dev",
