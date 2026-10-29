@@ -2,7 +2,7 @@
   "profile": {
     "name": "Hamdani Harfan S.E., M.M.",
     "role": "Designer · Software Engineer · Banking Professional",
-    "company": "PT Bank Mandiri (Persero) Tbk.",
+    "company": "",
     "email": "hamdaniharfansemm@gmail.com",
     "phoneDisplay": "+62 852-6556-2860",
     "whatsapp": "6285265562860",
@@ -369,19 +369,6 @@
     }
   },
   "experience": [
-    {
-      "role": "Branch Operations Manager",
-      "org": "PT Bank Mandiri (Persero) Tbk.",
-      "period": "Present",
-      "current": true,
-      "summary": "Handling core operational, technical, and governance workflows, maintaining high standards of data security, institutional governance, and financial system reliability.",
-      "tags": [
-        "Operations",
-        "Governance",
-        "Risk & Compliance",
-        "Data Security"
-      ]
-    },
     {
       "role": "Lead Product Designer & Software Engineer",
       "org": "Independent Ecosystem — Dagangku, D-Fin, DScan, DStudio",
