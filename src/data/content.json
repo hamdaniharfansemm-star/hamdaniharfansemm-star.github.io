@@ -131,7 +131,7 @@
     },
     {
       "id": "dts",
-      "status": "closed",
+      "status": "live",
       "packageId": "com.hamdaniharfan.dts",
       "title": "DTS (Digital Timestamp Solution)",
       "category": "Mobile & Web Dev",
