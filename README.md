@@ -80,3 +80,57 @@ Pointer coordinates are stored in plain variables (no React state), eased inside
 properties (`--mx`, `--my`, `--r`) consumed by `clip-path: circle(var(--r) at var(--mx) var(--my))`.
 Zero React re-renders on mouse move. Touch devices (no fine pointer) get a
 "🎨 Designer View / 💻 Developer View" pill with a spring-animated reveal instead.
+
+---
+
+## Digital Store (`/products/`)
+
+Katalog produk digital di **hamdaniharfan.com/products/**. Website hanya etalase; pembayaran terjadi di **Mayar**.
+
+### Menambah produk (cara mudah: admin)
+1. Buka `hamdaniharfan.com/admin/` → tab **Digital Store** → **+ Tambah produk**.
+2. Isi nama, kategori, deskripsi, harga, mata uang, gambar sampul (rasio 4:3, mis. 1600×1200).
+3. Tempel **Link checkout Mayar** (dashboard Mayar → produk → Bagikan / salin link).
+4. Ubah **Status** ke **Dipublikasi**, lalu **Simpan perubahan**. Halaman produk otomatis tersedia di
+   `hamdaniharfan.com/products/<slug>/` dalam 1–2 menit (termasuk SEO & sitemap).
+
+### Status produk
+| Status | Tampil di toko publik | Bisa dibeli |
+| --- | --- | --- |
+| `published` | Ya | Ya, jika `checkoutUrl` berisi link https Mayar |
+| `draft` | Tidak (hanya `?preview=1`) | Tidak |
+| `demo` | Tidak (hanya `?preview=1`) | Tidak — label "Demo — not for sale" |
+
+Pratinjau semua produk (termasuk demo/draft): `hamdaniharfan.com/products/?preview=1`.
+5 produk contoh bawaan berstatus **demo** — hapus atau ganti dengan produk asli.
+
+### Field data (`src/data/content.json` → `store.products[]`)
+`id, slug, name, status, category (ebooks|blueprints|apps|courses|templates), shortDescription, description,
+price, currency (IDR|USD), coverImage, gallery[{image}], features[], problems[], audience[], curriculum[],
+specifications[{label,value}], faq[{q,a}], checkoutUrl, featured, releaseDate (YYYY-MM-DD)`
+
+- Label **New** otomatis 45 hari sejak `releaseDate`. Label **Featured** hanya jika `featured: true`.
+- Bagian "Featured" & "Recently released" baru muncul jika produk lebih dari 3.
+- Tanpa `coverImage` → sampul placeholder rapi per kategori (bukan gambar palsu).
+
+### Keamanan
+- Tidak ada API key / secret Mayar di website. Tombol hanya membuka link checkout Mayar di tab baru.
+- Website tidak pernah menandai pembayaran "berhasil"; konfirmasi transaksi ada di Mayar.
+
+### File terkait
+- `products/index.html` — halaman toko · `src/store/StoreApp.jsx` — katalog & detail
+- `src/store/ProductParts.jsx` — kartu, sampul, tombol beli · `src/store/catalog.js` — kategori, harga, aturan
+- `vite.config.js` — membuat halaman statis per produk + `sitemap.xml` saat build
+- `public/404.html` — halaman tidak ditemukan
+
+### Keranjang & efek (Digital Store v2)
+- **Keranjang** (ikon tas di navbar): pengunjung bisa mengumpulkan beberapa produk. Tersimpan di browser pengunjung.
+- **Sejalan dengan Mayar:** setiap produk dibayar lewat link checkout Mayar-nya sendiri (tombol *Pay for this item*).
+  Satu item → tombol besar *Checkout securely on Mayar*. Pembayaran gabungan butuh API key Mayar di server,
+  jadi sengaja tidak dibuat di website statis. Alternatif resmi: buat produk **Bundling** di Mayar lalu jual sebagai satu produk.
+- Hanya produk **Dipublikasi + punya link Mayar** yang bisa masuk keranjang.
+- **Badge berdasarkan data** (tidak ada klaim palsu): *Bestseller* (centang di admin), *Sale −x%* (isi Harga coret),
+  *New* (45 hari sejak tanggal rilis), *Featured*.
+- Efek: latar mesh gradient bergerak, kartu kaca (glassmorphism), 3D tilt (hanya mouse), ripple pada tombol,
+  shimmer badge, animasi masuk bertahap saat ganti kategori. Semua mati otomatis bila pengunjung memilih "reduce motion".
+- File baru: `src/store/cart.jsx`, `src/store/CartDrawer.jsx`, `src/store/effects.js`; gaya di `src/index.css` (bagian "Digital Store — premium motion system").

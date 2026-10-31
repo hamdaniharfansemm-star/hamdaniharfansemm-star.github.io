@@ -34,6 +34,20 @@ const skillItem = [
   { key: "tools", type: "lines", label: "Tools / label kecil", help: "Satu per baris" },
 ];
 
+const productStatus = [
+  { value: "published", label: "Dipublikasi (tampil di toko)" },
+  { value: "draft", label: "Draft (tersembunyi)" },
+  { value: "demo", label: "Demo (hanya mode pratinjau)" },
+];
+
+const storeCategories = [
+  { value: "ebooks", label: "Modules & E-books" },
+  { value: "blueprints", label: "Blueprints" },
+  { value: "apps", label: "Apps" },
+  { value: "courses", label: "Online Courses" },
+  { value: "templates", label: "Templates & Source Code" },
+];
+
 export const tabs = [
   {
     id: "profile",
@@ -278,6 +292,105 @@ export const tabs = [
         ],
       },
       { key: "contact.projectTypes", type: "lines", label: "Pilihan jenis proyek di form", help: "Satu per baris. Kosongkan untuk menyembunyikan." },
+    ],
+  },
+  {
+    id: "store",
+    label: "Digital Store",
+    fields: [
+      {
+        key: "store.hero",
+        type: "group",
+        title: "Hero toko (/products/)",
+        help: "Pratinjau produk Demo/Draft: buka hamdaniharfan.com/products/?preview=1",
+        fields: [
+          { key: "eyebrow", type: "text", label: "Label kecil", placeholder: "Digital Products & Innovation" },
+          { key: "title", type: "text", label: "Judul besar" },
+          { key: "intro", type: "textarea", label: "Deskripsi", rows: 2 },
+        ],
+      },
+      {
+        key: "store.products",
+        type: "list",
+        label: "Produk",
+        itemTitle: (it) => it.name || "Produk baru",
+        itemSubtitle: (it) => [productStatus.find((s) => s.value === it.status)?.label, it.checkoutUrl ? "Mayar ✓" : "belum ada link Mayar"].filter(Boolean).join(" · "),
+        itemImage: (it) => it.coverImage,
+        newItem: { status: "draft", currency: "IDR", featured: false, problems: [], features: [], audience: [], curriculum: [], specifications: [], faq: [], gallery: [] },
+        fields: [
+          { key: "name", type: "text", label: "Nama produk" },
+          { key: "status", type: "select", label: "Status", options: () => productStatus },
+          { key: "category", type: "select", label: "Kategori", options: () => storeCategories },
+          {
+            key: "slug",
+            type: "text",
+            label: "Slug (alamat halaman)",
+            placeholder: "otomatis dari nama jika kosong",
+            help: "Alamat produk: hamdaniharfan.com/products/<slug>/ — huruf kecil & tanda minus. Jangan diubah setelah dipublikasi.",
+          },
+          { key: "shortDescription", type: "textarea", label: "Deskripsi singkat (kartu & Google)", rows: 2 },
+          { key: "description", type: "textarea", label: "Deskripsi lengkap & manfaat", rows: 5 },
+          { key: "price", type: "text", label: "Harga jual", placeholder: "149000 — isi 0 untuk gratis", help: "Angka saja. Harus sama dengan harga di Mayar." },
+          {
+            key: "originalPrice",
+            type: "text",
+            label: "Harga coret (opsional)",
+            placeholder: "199000",
+            help: "Isi jika sedang diskon — badge 'Sale −x%' muncul otomatis. Samakan dengan 'harga coret' di Mayar.",
+          },
+          { key: "currency", type: "select", label: "Mata uang", options: () => [{ value: "IDR", label: "IDR (Rp)" }, { value: "USD", label: "USD ($)" }] },
+          {
+            key: "checkoutUrl",
+            type: "text",
+            inputType: "url",
+            label: "Link checkout Mayar",
+            placeholder: "https://…mayar.link/…",
+            help: "Salin dari dashboard Mayar (halaman produk → Bagikan/Link). Kosong = tombol beli tampil 'Not available yet'.",
+          },
+          { key: "coverImage", type: "image", label: "Gambar sampul (rasio 4:3, mis. 1600×1200)" },
+          { key: "gallery", type: "list", label: "Galeri tambahan", compact: true, itemTitle: (it) => it.image?.split("/").pop() || "Gambar", fields: [{ key: "image", type: "image", label: "Gambar" }] },
+          { key: "featured", type: "checkbox", label: "Tampilkan sebagai produk unggulan (Featured)" },
+          { key: "bestseller", type: "checkbox", label: "Tandai 'Bestseller' (hanya jika memang terlaris menurut data penjualan Mayar)" },
+          { key: "releaseDate", type: "text", inputType: "date", label: "Tanggal rilis", help: "Label 'New' otomatis tampil 45 hari sejak tanggal ini." },
+          { key: "problems", type: "lines", label: "Masalah yang diselesaikan", help: "Satu per baris" },
+          { key: "features", type: "lines", label: "Isi / fitur produk", help: "Satu per baris" },
+          { key: "audience", type: "lines", label: "Target pengguna", help: "Satu per baris" },
+          { key: "curriculum", type: "lines", label: "Kurikulum (untuk kursus)", help: "Satu modul per baris" },
+          {
+            key: "specifications",
+            type: "list",
+            label: "Spesifikasi",
+            compact: true,
+            itemTitle: (it) => (it.label ? `${it.label}: ${it.value || ""}` : "Spesifikasi baru"),
+            fields: [
+              { key: "label", type: "text", label: "Nama", placeholder: "Format / Versi / Kompatibilitas / Lisensi / Akses" },
+              { key: "value", type: "text", label: "Nilai", placeholder: "PDF, 120 halaman" },
+            ],
+          },
+          {
+            key: "faq",
+            type: "list",
+            label: "FAQ",
+            itemTitle: (it) => it.q || "Pertanyaan baru",
+            fields: [
+              { key: "q", type: "text", label: "Pertanyaan" },
+              { key: "a", type: "textarea", label: "Jawaban", rows: 3 },
+            ],
+          },
+        ],
+      },
+      {
+        key: "store.trust",
+        type: "list",
+        label: "Nilai & pendekatan (bagian krem)",
+        itemTitle: (it) => it.title || "Poin baru",
+        fields: [
+          { key: "title", type: "text", label: "Judul" },
+          { key: "text", type: "textarea", label: "Penjelasan", rows: 2 },
+        ],
+      },
+      { key: "store.emptyTitle", type: "text", label: "Judul saat belum ada produk" },
+      { key: "store.emptyText", type: "textarea", label: "Teks saat belum ada produk", rows: 2 },
     ],
   },
 ];

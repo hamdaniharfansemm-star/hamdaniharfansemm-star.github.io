@@ -31,6 +31,7 @@ export default function About({ photoSrc = profile.photo }) {
             />
           </div>
 
+          {profile.company?.trim() && (
           <motion.div
             initial={{ opacity: 0, scale: 0.8, rotate: -6 }}
             whileInView={{ opacity: 1, scale: 1, rotate: -4 }}
@@ -39,8 +40,9 @@ export default function About({ photoSrc = profile.photo }) {
             className="absolute -bottom-6 -left-2 rounded-2xl bg-ink px-5 py-4 text-cream shadow-xl sm:-left-6"
           >
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-cream/60">Currently at</p>
-            <p className="font-display text-lg font-bold">PT Bank Mandiri</p>
+            <p className="font-display text-lg font-bold">{profile.company.replace(/\s*\(Persero\)\s*Tbk\.?$/i, "")}</p>
           </motion.div>
+          )}
 
           <motion.div
             initial={{ opacity: 0, scale: 0.8, rotate: 8 }}

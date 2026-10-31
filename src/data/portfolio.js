@@ -27,6 +27,7 @@ export const navLinks = [
   { id: "works", label: "Works" },
   { id: "skills", label: "Skills" },
   { id: "experience", label: "Experience" },
+  { id: "store", label: "Digital Store", href: "/products/" },
   { id: "contact", label: "Hire Me" },
 ];
 

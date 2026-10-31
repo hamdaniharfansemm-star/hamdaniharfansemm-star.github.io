@@ -230,6 +230,25 @@ function prepareForSave(data) {
     if (p.packageId === "") delete p.packageId;
     if (p.status === "live" && !p.packageId) warnings.push(`"${p.title}" berstatus Live tapi belum ada Package ID — tombol Google Play tidak akan muncul.`);
   });
+  // Digital Store products
+  const slugs = new Set();
+  (d.store?.products || []).forEach((p) => {
+    p.slug = slugify(p.slug || p.name);
+    let slug = p.slug;
+    let n = 2;
+    while (slugs.has(slug)) slug = `${p.slug}-${n++}`;
+    p.slug = slug;
+    slugs.add(slug);
+    if (!p.id) p.id = slug;
+    p.checkoutUrl = String(p.checkoutUrl || "").trim();
+    if (p.status !== "published") return;
+    const name = p.name || p.slug;
+    if (!p.checkoutUrl) warnings.push(`Produk "${name}" dipublikasi tanpa link Mayar — tombol beli akan tampil "Not available yet".`);
+    else if (!/^https:\/\//i.test(p.checkoutUrl)) warnings.push(`Link checkout "${name}" harus diawali https:// — tombol beli tidak akan aktif.`);
+    else if (!/mayar|myr\.id/i.test(p.checkoutUrl)) warnings.push(`Link checkout "${name}" sepertinya bukan link Mayar. Pastikan sudah benar.`);
+    if (p.price === "" || p.price === undefined) warnings.push(`Produk "${name}" belum punya harga.`);
+    if (!p.category) warnings.push(`Produk "${name}" belum punya kategori.`);
+  });
   if (!d.profile?.name?.trim()) warnings.push("Nama di Profil kosong.");
   return { data: d, warnings };
 }

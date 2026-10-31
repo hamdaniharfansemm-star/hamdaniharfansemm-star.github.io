@@ -32,9 +32,9 @@
     }
   },
   "banner": {
-    "title": "\"Engineering Smart Solutions. Driving Real Business Growth.\"",
+    "title": "Engineering Smart Solutions. Driving Real Business Growth.",
     "status": "Ready for Projects & Institutional Consulting",
-    "tagline": "\"You bring the vision, I engineer the execution. Partnering to build scalable, high-performance digital products that accelerate your business.\". ",
+    "tagline": "You bring the vision, I engineer the execution. Partnering to build scalable, high-performance digital products that accelerate your business.",
     "cta": "Let's Talk"
   },
   "stats": {
@@ -442,6 +442,215 @@
       "UI/UX & Design System",
       "Enterprise / Institutional Consulting",
       "Other"
+    ]
+  },
+  "store": {
+    "hero": {
+      "eyebrow": "Digital Products & Innovation",
+      "title": "Build Your Ideas Into Digital Products.",
+      "intro": "Explore practical guides, application blueprints, digital tools, and resources designed to help you learn, build, and create."
+    },
+    "emptyTitle": "The first products are being prepared.",
+    "emptyText": "Guides, blueprints and templates drawn from my own app releases are on the way. Want to know when they launch, or need something tailored now?",
+    "trust": [
+      {
+        "title": "Built from shipped work",
+        "text": "Products are drawn from apps I have designed, built and released — including DScan and DNotes on Google Play."
+      },
+      {
+        "title": "Secure checkout by Mayar",
+        "text": "Payments are completed on Mayar’s checkout page. This website never sees or stores your payment details."
+      },
+      {
+        "title": "Clear before you buy",
+        "text": "Each product page lists what is inside, the format, requirements and license before you decide."
+      },
+      {
+        "title": "Direct support",
+        "text": "Questions before or after purchase? Reach me directly by WhatsApp or email."
+      }
+    ],
+    "products": [
+      {
+        "id": "demo-launch-playbook",
+        "slug": "demo-android-launch-playbook",
+        "status": "demo",
+        "featured": true,
+        "releaseDate": "2026-10-20",
+        "category": "ebooks",
+        "name": "Android App Launch Playbook (Demo)",
+        "shortDescription": "A step-by-step guide from closed testing to a public Google Play release.",
+        "description": "Demo product — shown only in preview mode to test the store layout. Not for sale.",
+        "problems": [
+          "Not sure which Play Console steps come first",
+          "Release rejected for missing policy items"
+        ],
+        "features": [
+          "Release checklist",
+          "Store listing worksheet",
+          "Testing track timeline"
+        ],
+        "audience": [
+          "First-time Android publishers",
+          "Solo developers"
+        ],
+        "specifications": [
+          {
+            "label": "Format",
+            "value": "PDF"
+          },
+          {
+            "label": "Language",
+            "value": "Bahasa Indonesia"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Is this a real product?",
+            "a": "No — this is demo data for previewing the store layout."
+          }
+        ],
+        "price": "149000",
+        "currency": "IDR",
+        "coverImage": "",
+        "gallery": [],
+        "checkoutUrl": ""
+      },
+      {
+        "id": "demo-pos-blueprint",
+        "slug": "demo-pos-app-blueprint",
+        "status": "demo",
+        "featured": true,
+        "releaseDate": "2026-09-15",
+        "category": "blueprints",
+        "name": "POS & Inventory App Blueprint (Demo)",
+        "shortDescription": "Screens, data model and feature specification for a small-business cashier app.",
+        "description": "Demo product — shown only in preview mode to test the store layout. Not for sale.",
+        "problems": [],
+        "features": [
+          "Feature specification",
+          "Database schema",
+          "User flow diagrams"
+        ],
+        "audience": [
+          "Founders planning a POS app"
+        ],
+        "specifications": [
+          {
+            "label": "Format",
+            "value": "PDF + Figma"
+          }
+        ],
+        "faq": [],
+        "price": "249000",
+        "currency": "IDR",
+        "coverImage": "",
+        "gallery": [],
+        "checkoutUrl": ""
+      },
+      {
+        "id": "demo-scanner-app",
+        "slug": "demo-document-scanner-app",
+        "status": "demo",
+        "featured": false,
+        "releaseDate": "2026-08-01",
+        "category": "apps",
+        "name": "Document Scanner Toolkit (Demo)",
+        "shortDescription": "A ready-to-use utility app package for scanning and exporting documents.",
+        "description": "Demo product — shown only in preview mode to test the store layout. Not for sale.",
+        "problems": [],
+        "features": [
+          "PDF export",
+          "Background removal"
+        ],
+        "audience": [],
+        "specifications": [
+          {
+            "label": "Platform",
+            "value": "Android 8.0+"
+          },
+          {
+            "label": "License",
+            "value": "Single user"
+          }
+        ],
+        "faq": [],
+        "price": "99000",
+        "currency": "IDR",
+        "coverImage": "",
+        "gallery": [],
+        "checkoutUrl": ""
+      },
+      {
+        "id": "demo-course",
+        "slug": "demo-ai-app-builder-course",
+        "status": "demo",
+        "featured": false,
+        "releaseDate": "2026-10-25",
+        "category": "courses",
+        "name": "Build Your First AI-Assisted App (Demo)",
+        "shortDescription": "An online course that walks through building and publishing an app with AI tools.",
+        "description": "Demo product — shown only in preview mode to test the store layout. Not for sale.",
+        "problems": [],
+        "features": [],
+        "audience": [
+          "Beginners with no coding background"
+        ],
+        "curriculum": [
+          "Module 1 — Planning the app",
+          "Module 2 — Building with AI",
+          "Module 3 — Publishing"
+        ],
+        "specifications": [
+          {
+            "label": "Format",
+            "value": "Video lessons"
+          },
+          {
+            "label": "Access",
+            "value": "Lifetime"
+          }
+        ],
+        "faq": [],
+        "price": "39",
+        "currency": "USD",
+        "coverImage": "",
+        "gallery": [],
+        "checkoutUrl": ""
+      },
+      {
+        "id": "demo-template",
+        "slug": "demo-portfolio-template",
+        "status": "demo",
+        "featured": false,
+        "releaseDate": "2026-07-10",
+        "category": "templates",
+        "name": "Developer Portfolio Template (Demo)",
+        "shortDescription": "React + Tailwind portfolio source code with an editable admin page.",
+        "description": "Demo product — shown only in preview mode to test the store layout. Not for sale.",
+        "problems": [],
+        "features": [
+          "React 19 + Vite",
+          "Tailwind CSS v4"
+        ],
+        "audience": [],
+        "specifications": [
+          {
+            "label": "Stack",
+            "value": "React, Vite, Tailwind"
+          },
+          {
+            "label": "License",
+            "value": "Personal use"
+          }
+        ],
+        "faq": [],
+        "price": "0",
+        "currency": "IDR",
+        "coverImage": "",
+        "gallery": [],
+        "checkoutUrl": ""
+      }
     ]
   }
 }

@@ -1,13 +1,16 @@
 import { contact, navLinks, profile } from "../data/portfolio.js";
 import { ArrowUp, socialIcon } from "./Icons.jsx";
 
-export default function Footer() {
+export default function Footer({ page = "home" }) {
+  const onHome = page === "home";
+  const hrefFor = (l) => (l.href ? l.href : onHome ? `#${l.id}` : `/#${l.id}`);
+  const company = profile.company?.trim().replace(/\.$/, "");
   return (
     <footer className="border-t border-white/10 bg-night">
       <div className="mx-auto max-w-6xl px-5 py-12 sm:px-8">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="max-w-sm">
-            <a href="#home" className="flex items-center gap-2.5">
+            <a href={onHome ? "#home" : "/"} className="flex items-center gap-2.5">
               <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-emerald-400" />
               <span className="font-display text-xl font-bold text-white">{profile.name}</span>
             </a>
@@ -16,7 +19,7 @@ export default function Footer() {
 
           <nav aria-label="Footer" className="grid grid-cols-2 gap-x-12 gap-y-2 text-sm sm:grid-cols-3">
             {navLinks.map((l) => (
-              <a key={l.id} href={`#${l.id}`} className="text-slate-400 transition-colors hover:text-white">
+              <a key={l.id} href={hrefFor(l)} className="text-slate-400 transition-colors hover:text-white">
                 {l.label}
               </a>
             ))}
@@ -45,10 +48,10 @@ export default function Footer() {
           <div className="space-y-1">
             <p>© 2026 Hamdani Harfan. All rights reserved.</p>
             <p className="text-slate-600">
-              Personal portfolio. Professional affiliation: {profile.company.replace(/\.$/, "")}. Views and independent projects shown here are my own.
+              Personal portfolio{company ? `. Professional affiliation: ${company}` : ""}. Views and independent projects shown here are my own.
             </p>
           </div>
-          <a href="#home" className="inline-flex items-center gap-2 self-start rounded-full border border-white/10 px-4 py-2 text-slate-300 hover:border-white/30 hover:text-white md:self-auto">
+          <a href="#top" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="inline-flex items-center gap-2 self-start rounded-full border border-white/10 px-4 py-2 text-slate-300 hover:border-white/30 hover:text-white md:self-auto">
             Back to top <ArrowUp width={14} height={14} />
           </a>
         </div>
