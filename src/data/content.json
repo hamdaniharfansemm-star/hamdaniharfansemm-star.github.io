@@ -779,6 +779,18 @@
         "slug": "the-master-of-cards-cinematic-portrait",
         "date": "2026-11-01",
         "id": "the-master-of-cards-cinematic-portrait"
+      },
+      {
+        "title": "From Photo to Collectible: The Ultimate AI Figure Studio",
+        "status": "published",
+        "image": "/assets/uploads/mvxzvnt8-sculptor-with-collectible-figure-and-box.jpg",
+        "prompt": "Create an ultra-realistic image of one of the people from the reference photo sitting at a computer desk in a real-world environment. The person is holding a 1/7 scale figurine of themselves that looks highly similar to them, crafted in a realistic style. The figurine is placed on a round, transparent acrylic base with no text or markings. On the computer screen in front of them, display the ZBrush modeling process of that same figurine, as if it is actively being sculpted in 3D. With their left hand, the person is also holding a toy packaging box styled like BANDAI products, printed with the original artwork of the character.\n\nThe overall scene should emphasize photorealistic textures: realistic skin details, reflections on the acrylic base, natural desk lighting, and authentic materials of the packaging box. The environment should look like a real modern workspace with accurate shadows, depth, and lighting, reinforcing the realism. The mood should feel professional yet creative, as if documenting the production of a high-quality collectible figure.",
+        "category": "AI Art / Action Figure / 3D Sculpting / Character Design / Collectible Toys / Photorealistic",
+        "tool": "ChatGPT Images / Gemini / AI Image Generator",
+        "note": "Ubah foto diri menjadi collectible action figure premium dengan detail wajah realistis, alas akrilik transparan, kemasan eksklusif, dan tampilan proses sculpting 3D di monitor. Gunakan foto referensi dengan wajah yang jelas untuk hasil yang lebih konsisten. Cocok untuk konten personal branding, kreator AI, kolektor figurine, dan portofolio digital.",
+        "slug": "ai-figure-studio-action-figure-koleksi-premium",
+        "date": "2026-11-01",
+        "id": "ai-figure-studio-action-figure-koleksi-premium"
       }
     ]
   }
