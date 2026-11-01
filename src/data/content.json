@@ -875,6 +875,18 @@
         "slug": "ai-figure-studio-action-figure-koleksi-premium",
         "date": "2026-11-01",
         "id": "ai-figure-studio-action-figure-koleksi-premium"
+      },
+      {
+        "title": "3D Anime Best Friends Group Selfie – Pixar Style",
+        "status": "published",
+        "image": "/assets/uploads/mvy1hwdd-anime-multiverse-room-selfie.jpg",
+        "prompt": "Pixar-style, ultra-realistic 3D rendering in a 9:16 vertical format. A chaotic fisheye selfie featuring the provided man in the center, surrounded closely by Naruto, Luffy, Goku, Tanjiro, Levi, Gojo, Deku, Light Yagami, Denji, and Anya from Spy x Family. All characters are fully visible, leaning into the camera as if best friends taking a fun group photo. Everyone is making exaggerated silly expressions — tongues out, peace signs, winks, and goofy faces — radiating playful, chaotic energy.\n\nThe setting is a small, bright living room with minimalist white décor and anime posters on the walls. The camera angle is high, with extreme fisheye distortion that stretches the scene, emphasizing closeness and comedy. Render with hyper-detailed skin and fabric textures, subsurface scattering for realistic skin tones, stylized Pixar-inspired 3D realism, vibrant saturated colors, and volumetric cinematic lighting for a polished, animated yet believable look. Ensure all characters are included in the frame, tightly packed together like a true chaotic group selfie.",
+        "category": "AI Art / Anime / 3D Rendering / Group Selfie / Karakter Anime",
+        "tool": "ChatGPT / AI Image Generation",
+        "note": "Buat foto grup selfie bergaya 3D sinematik dengan wajah referensi tetap konsisten. Gabungkan karakter anime populer dalam satu frame, gunakan efek kamera fisheye, ekspresi lucu, warna cerah, pencahayaan sinematik, dan detail tekstur realistis. Cocok untuk foto profil kreatif, konten media sosial, dan fan art.",
+        "slug": "3d-anime-best-friends-selfie",
+        "date": "2026-11-01",
+        "id": "3d-anime-best-friends-selfie"
       }
     ]
   }
