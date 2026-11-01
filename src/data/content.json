@@ -767,6 +767,18 @@
         "note": "Prompt khusus untuk membuat figur action skala 1/7 dengan detail tekstur kulit yang hiper-realistis, lengkap dengan kotak kemasan dan latar studio ZBrush",
         "date": "2026-11-01",
         "prompt": "Generate a 1/7 scale collectible figurine of the characters from the provided image, designed in a realistic style and displayed within a real-life setting. The figurine should be positioned on a computer desk and mounted on a clear round acrylic base without any text or markings. On the computer screen, show the ZBrush sculpting process of this same figurine. Beside the monitor, place a toy packaging box in the style of BANDAI, printed with the original artwork. The packaging design should feature flat two-dimensional illustrations. Ensure all details remain consistent with the reference image."
+      },
+      {
+        "title": "The Poker Legend — Ultra-Realistic Cinematic Photography",
+        "status": "published",
+        "image": "/assets/uploads/mvxzor7w-cinematic-cardshark-in-a-warm-poker-room.jpg",
+        "prompt": "A dramatic cinematic portrait of a man sitting at a wooden table inside a dimly lit poker room with rustic wooden walls. Don't change the face of the man. His right hand extended forward as if commanding or tossing playing cards, while his left hand rests under his chin in a thoughtful gesture. Around him, dozens of playing cards float mid-air in dynamic motion blur, frozen in time, creating a sense of magic and mystery.\n\nThe background shows warm brown wooden panels, with a framed vintage photo slightly blurred behind him, enhancing the moody atmosphere. Lighting is warm, golden, and low-key, creating sharp contrast and shadows across his face, emphasizing his intense and focused expression.\n\nThe overall mood is dark, mysterious, and cinematic, with dramatic composition and shallow depth of field. The image is shot in hyper-realistic style, ultra-detailed textures on skin, hair, wood, and playing cards. The aesthetic is inspired by gritty poker-room vibes, like a mix of magician and gambler, captured with cinematic lighting, bokeh effect, and suspended motion.",
+        "category": "Cinematic Portrait / AI Photo Editing / Fantasy / Playing Cards",
+        "tool": "ChatGPT / Gemini / AI Image Generator",
+        "note": "Gunakan foto referensi dengan wajah yang terlihat jelas. Pertahankan identitas wajah, gaya rambut, dan proporsi asli. Hasil terbaik diperoleh dengan pencahayaan sinematik keemasan, kartu remi melayang yang realistis, serta latar ruangan kayu bernuansa misterius. Cocok untuk foto profil kreatif, konten media sosial, dan karya AI cinematic portrait.",
+        "slug": "the-master-of-cards-cinematic-portrait",
+        "date": "2026-11-01",
+        "id": "the-master-of-cards-cinematic-portrait"
       }
     ]
   }
