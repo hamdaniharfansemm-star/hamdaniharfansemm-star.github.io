@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { fadeUp, spring } from "../lib/motion.js";
 import { checkoutUrlOf, isPublished } from "./catalog.js";
-import { useTilt } from "./effects.js";
+import { smooth, useTilt } from "./effects.js";
 import { BuyButton, Cover, Price } from "./ProductParts.jsx";
 
 export { tFor } from "./i18n.js";
@@ -77,16 +77,16 @@ export function Glyph({ name, size = 22, className = "", filled = false }) {
 /* ───────── 3D tablet mockup for the product cover ───────── */
 export function DeviceMockup({ product: p, src = "", className = "" }) {
   const ref = useRef(null);
-  useTilt(ref, 9);
+  useTilt(ref, 3, 0);
   return (
     <div className={`relative ${className}`} style={{ perspective: "1400px" }}>
       {/* glow */}
       <div aria-hidden className="absolute inset-x-[8%] bottom-[-6%] top-[12%] rounded-[3rem] bg-[radial-gradient(closest-side,rgba(245,196,81,0.28),rgba(59,130,246,0.18),transparent)] blur-2xl" />
       <motion.div
-        initial={{ opacity: 0, y: 40, rotateX: 14, rotateY: -16 }}
-        animate={{ opacity: 1, y: 0, rotateX: 6, rotateY: -10 }}
-        transition={{ type: "spring", stiffness: 70, damping: 16, delay: 0.1 }}
-        style={{ transformStyle: "preserve-3d" }}
+        initial={{ opacity: 0, y: 32, scale: 0.98 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={smooth(0.15, 1.1)}
+        className="float-soft"
       >
         <div ref={ref} className="tilt relative rounded-[2.2rem] border border-white/15 bg-gradient-to-br from-slate-700 via-slate-900 to-black p-3 shadow-[0_50px_100px_-30px_rgba(0,0,0,0.85)] sm:p-3.5">
           <span className="tilt-glare" aria-hidden />
@@ -232,7 +232,7 @@ export function StickyBuyBar({ product: p, watchRef }) {
           initial={{ y: "120%" }}
           animate={{ y: 0 }}
           exit={{ y: "120%" }}
-          transition={spring}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="glass-strong fixed inset-x-3 bottom-3 z-40 flex items-center justify-between gap-3 rounded-2xl px-4 py-3 shadow-2xl shadow-black/60 lg:hidden"
         >
           <span className="min-w-0">

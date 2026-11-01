@@ -22,7 +22,7 @@ export function CartButton({ className = "", floating = false }) {
       onClick={() => setOpen(true)}
       onPointerDown={ripple}
       aria-label={`Open cart, ${count} item${count === 1 ? "" : "s"}`}
-      className={`ripple relative grid place-items-center rounded-full text-white transition-transform active:scale-95 ${
+      className={`ripple relative grid place-items-center rounded-full text-white transition-transform [@media(pointer:fine)]:active:scale-95 ${
         floating ? "glass-strong h-14 w-14 shadow-2xl shadow-black/50" : "h-9 w-9 hover:bg-white/10"
       } ${className}`}
     >
@@ -113,7 +113,7 @@ export default function CartDrawer() {
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
-            transition={{ type: "spring", stiffness: 260, damping: 32 }}
+            transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
             className="glass-strong absolute right-0 top-0 flex h-full w-full max-w-md flex-col shadow-[-30px_0_80px_-20px_rgba(0,0,0,0.7)] sm:rounded-l-[2rem]"
           >
             {/* Header */}
@@ -166,7 +166,7 @@ export default function CartDrawer() {
                         key={p.slug}
                         layout
                         initial={{ opacity: 0, x: 30 }}
-                        animate={{ opacity: 1, x: 0, transition: { delay: i * 0.05, type: "spring", stiffness: 260, damping: 26 } }}
+                        animate={{ opacity: 1, x: 0, transition: { delay: 0.1 + i * 0.05, duration: 0.5, ease: [0.22, 1, 0.36, 1] } }}
                         exit={{ opacity: 0, x: 60, transition: { duration: 0.2 } }}
                         className="glass rounded-2xl p-3"
                       >

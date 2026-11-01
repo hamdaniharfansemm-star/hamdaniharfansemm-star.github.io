@@ -271,3 +271,114 @@ body {
 /* Hide the browser's native clear (×) on search inputs — the store has its own. */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; appearance: none; display: none; }
+
+/* ═════════════ Digital Store v6 — calm, professional motion ═════════════
+   Principles: one easing curve (expo-out), slow ambient motion, no constant
+   blinking/shimmering, no backdrop-blur on moving elements (that caused jank). */
+:root { --ease-pro: cubic-bezier(.22, 1, .36, 1); }
+
+/* Cards & mockups: JS glides --rx/--ry/--lift; CSS never fights it with transitions */
+.tilt {
+  transform: perspective(1200px) rotateX(var(--rx)) rotateY(var(--ry)) translate3d(0, var(--lift), 0);
+  transition: box-shadow .6s var(--ease-pro), border-color .6s var(--ease-pro);
+  backface-visibility: hidden;
+}
+.tilt.is-active { transition: box-shadow .6s var(--ease-pro), border-color .6s var(--ease-pro); }
+.tilt:not(.tilt-js):hover, .tilt:not(.tilt-js):focus-within { --lift: 0px; }
+.tilt-glare { transition: opacity .6s var(--ease-pro); background: radial-gradient(420px circle at var(--gx) var(--gy), rgba(255,255,255,.07), transparent 50%); }
+
+/* Product cards: solid navy glass (no live blur) = smooth 60fps scrolling & hover */
+.card-navy {
+  backdrop-filter: none; -webkit-backdrop-filter: none;
+  background: linear-gradient(165deg, rgba(23,37,84,.72) 0%, rgba(11,18,36,.92) 45%, rgba(6,10,25,.97) 100%);
+}
+.tilt.card-navy:hover, .tilt.card-navy:focus-within {
+  border-color: rgba(245,196,81,.28);
+  box-shadow: 0 28px 60px -32px rgba(0,0,0,.9), 0 18px 50px -30px rgba(245,196,81,.35);
+}
+
+/* Glow border: static gradient that fades in — no spinning */
+.glow-border::before { animation: none; --glow-angle: 135deg; transition: opacity .6s var(--ease-pro); }
+.glow-border:not(.glow-on-hover)::before { opacity: .55; }
+
+/* Mockups on cards: gentle lean, slow settle on hover */
+.device-3d { transform: perspective(1100px) rotateX(6deg) rotateY(-9deg); transition: transform 1.1s var(--ease-pro); will-change: transform; }
+.device-book { transform: perspective(1100px) rotateY(-18deg) rotateX(4deg); }
+.group:hover .device-3d { transform: perspective(1100px) rotateX(2deg) rotateY(-3deg) translateY(-4px) scale(1.025); }
+
+/* Hero / detail mockup: soft idle float */
+@keyframes float-soft { 0%, 100% { transform: translate3d(0, 0, 0); } 50% { transform: translate3d(0, -10px, 0); } }
+.float-soft { animation: float-soft 7s ease-in-out infinite; will-change: transform; }
+
+/* Ambient background: slower, smaller drift */
+.store-mesh i { animation-duration: 48s !important; animation-timing-function: ease-in-out; }
+@keyframes mesh-float {
+  0%, 100% { transform: translate3d(0,0,0) scale(1); }
+  50% { transform: translate3d(3%, 2%, 0) scale(1.04); }
+}
+.aurora-ribbon { animation-duration: 90s; }
+.star { animation: twinkle-soft 7s ease-in-out infinite; }
+@keyframes twinkle-soft { 0%, 100% { opacity: .15; } 50% { opacity: .6; } }
+.orbit, .orbit-counter { animation-duration: 70s; }
+.core-pulse { animation: core-breathe 6s ease-in-out infinite; }
+@keyframes core-breathe { 0%, 100% { box-shadow: 0 0 0 0 rgba(245,196,81,.18); } 50% { box-shadow: 0 0 0 18px rgba(245,196,81,0); } }
+
+/* Badges: no blinking */
+.badge-pulse { animation: none; }
+.badge-shimmer::after { animation: none; opacity: 0; }
+
+/* Gold CTA: one elegant light sweep on hover only */
+.cta-gold::after { animation: none; transition: transform 1s var(--ease-pro); }
+.cta-gold:hover::after { transform: translateX(130%); }
+.cta-gold { transition: transform .4s var(--ease-pro), box-shadow .5s var(--ease-pro), filter .4s var(--ease-pro); }
+.cta-gold:hover { transform: translateY(-2px); }
+
+/* Micro-interactions: calmer */
+.icon-pop { transition: transform .5s var(--ease-pro); }
+.group:hover .icon-pop, .icon-pop:hover { transform: translateY(-2px) scale(1.06); }
+.cta-glow { transition: transform .4s var(--ease-pro), box-shadow .5s var(--ease-pro); }
+
+@media (prefers-reduced-motion: reduce) {
+  .float-soft, .star, .core-pulse { animation: none !important; }
+  .device-3d, .group:hover .device-3d, .cta-gold:hover::after { transition: none; }
+}
+
+/* v6: static page mesh (a moving full-screen layer forced a repaint of every glass panel),
+   and hero ambience pauses once scrolled away. */
+.store-mesh i { animation: none !important; }
+.is-paused .aurora-ribbon, .is-paused .star, .is-paused .orbit, .is-paused .orbit-counter, .is-paused .core-pulse { animation-play-state: paused !important; }
+.tilt { transform-style: flat; }
+
+/* ═════════════ v6.1 — touch-safe buttons ═════════════
+   On phones, :hover "sticks" after a tap and :active fires when a scroll starts on a
+   button, so the gold button looked like it grew/stretched while scrolling.
+   Hover/press motion now runs only on real mouse pointers; touch gets a calm opacity press. */
+.cta-gold, .cta-glow, .ripple { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+@media (hover: none), (pointer: coarse) {
+  .cta-gold:hover, .cta-gold:active,
+  .cta-glow:hover, .cta-glow:active {
+    transform: none !important;
+    filter: none !important;
+  }
+  .cta-gold:hover { box-shadow: 0 10px 30px -12px rgba(212,160,23,.55), inset 0 1px 0 rgba(255,255,255,.55); }
+  .cta-glow:hover { box-shadow: none; }
+  .cta-gold:hover::after { transform: translateX(-130%); }
+  .cta-gold:active, .cta-glow:active { opacity: .85; transition: opacity .1s; }
+  .group:hover .device-3d { transform: perspective(1100px) rotateX(6deg) rotateY(-9deg); }
+  .device-book, .group:hover .device-book { transform: perspective(1100px) rotateY(-18deg) rotateX(4deg); }
+  .group:hover .icon-pop { transform: none; }
+  /* Cards are not tilted on touch: keep them as flat, non-3D layers for crisp scrolling */
+  .tilt { transform: none !important; will-change: auto; }
+  .tilt:hover, .tilt.card-navy:hover { border-color: rgba(147,197,253,.12); box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 24px 60px -30px rgba(0,0,0,.7); }
+  .glow-on-hover:hover::before { opacity: 0; }
+  .tilt-glare { display: none; }
+}
+
+/* Prompt Library — card opened from a ManyChat / shared link gets a soft gold highlight */
+.prompt-focus { border-color: rgba(245,196,81,.55) !important; animation: prompt-focus 2.4s cubic-bezier(.22,1,.36,1) .5s both; }
+@keyframes prompt-focus {
+  0% { box-shadow: 0 0 0 0 rgba(245,196,81,.55), 0 24px 60px -30px rgba(0,0,0,.7); }
+  60% { box-shadow: 0 0 0 10px rgba(245,196,81,0), 0 24px 60px -30px rgba(0,0,0,.7); }
+  100% { box-shadow: 0 0 0 1px rgba(245,196,81,.35), 0 30px 70px -30px rgba(245,196,81,.35); }
+}
+@media (prefers-reduced-motion: reduce) { .prompt-focus { animation: none; box-shadow: 0 0 0 1px rgba(245,196,81,.45); } }

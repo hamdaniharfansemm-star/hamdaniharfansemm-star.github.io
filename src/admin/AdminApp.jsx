@@ -236,6 +236,7 @@ function prepareForSave(data) {
     p.slug = slugify(p.slug || p.name);
     let slug = p.slug;
     let n = 2;
+    slugs.add("prompts"); // reserved for /products/prompts/
     while (slugs.has(slug)) slug = `${p.slug}-${n++}`;
     p.slug = slug;
     slugs.add(slug);
@@ -249,6 +250,23 @@ function prepareForSave(data) {
     if (p.price === "" || p.price === undefined) warnings.push(`Produk "${name}" belum punya harga.`);
     if (!p.category) warnings.push(`Produk "${name}" belum punya kategori.`);
     if (JSON.stringify(p).includes("[ISI")) warnings.push(`Produk "${name}" masih berisi teks [ISI: …] yang perlu dilengkapi sebelum tampil ke publik.`);
+  });
+  // Prompt Library
+  const pslugs = new Set();
+  (d.store?.prompts || []).forEach((p) => {
+    p.slug = slugify(p.slug || p.title);
+    let slug = p.slug || "prompt";
+    let n = 2;
+    while (pslugs.has(slug)) slug = `${p.slug}-${n++}`;
+    p.slug = slug;
+    pslugs.add(slug);
+    if (!p.id) p.id = slug;
+    if (!p.date) p.date = new Date().toISOString().slice(0, 10);
+    if (p.status !== "published") return;
+    const t = p.title || p.slug;
+    if (!String(p.prompt || "").trim()) warnings.push(`Prompt "${t}" dipublikasi tanpa isi prompt — tidak akan tampil.`);
+    if (!p.image) warnings.push(`Prompt "${t}" belum punya gambar contoh.`);
+    if (JSON.stringify(p).includes("[ISI")) warnings.push(`Prompt "${t}" masih berisi teks [ISI: …].`);
   });
   if (!d.profile?.name?.trim()) warnings.push("Nama di Profil kosong.");
   return { data: d, warnings };

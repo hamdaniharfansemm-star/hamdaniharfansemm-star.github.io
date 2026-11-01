@@ -4,22 +4,28 @@ import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
 import { profile } from "../data/portfolio.js";
 import content from "../data/content.json";
-import { fadeUp, softSpring, spring } from "../lib/motion.js";
+import { EASE_OUT, ease, fadeUp, softSpring, spring } from "../lib/motion.js";
 import { CATEGORIES, SORTS, categoryById, checkoutUrlOf, discountPercent, isPublished, matchesQuery, relatedProducts, sortProducts, visibleProducts } from "./catalog.js";
 import { DeviceMockup, Glyph, GuaranteeStrip, StickyBuyBar, Testimonials, ValueProps, tFor } from "./SalesParts.jsx";
 import { AddToCartButton, AskLink, Badges, BuyButton, Cover, Price, ProductCard } from "./ProductParts.jsx";
 import { CartProvider, canAddToCart } from "./cart.jsx";
 import CartDrawer, { CartButton } from "./CartDrawer.jsx";
 import { ripple } from "./effects.js";
+import { PromptLibraryPage, PromptTeaser } from "./PromptLibrary.jsx";
+import { PROMPTS_BASE, visiblePrompts } from "./prompts.js";
 import { ChevronIcon, CloseSmall, SearchIcon, ShieldIcon, categoryIcon, trustIcons } from "./StoreIcons.jsx";
 
 const store = content.store || { hero: {}, trust: [], products: [] };
 
 function readRoute() {
   const params = new URLSearchParams(window.location.search);
-  const m = window.location.pathname.match(/^\/products\/([^/]+)\/?$/);
+  // Prompt Library: /products/prompts/ and /products/prompts/<slug>/ (or ?p=<slug>)
+  const pm = window.location.pathname.match(/^\/products\/prompts(?:\/([^/]+))?\/?$/);
+  const m = pm ? null : window.location.pathname.match(/^\/products\/([^/]+)\/?$/);
   const fromPath = m && m[1] !== "index.html" ? decodeURIComponent(m[1]) : "";
   return {
+    prompts: !!pm || params.get("view") === "prompts",
+    promptSlug: (pm && pm[1] && pm[1] !== "index.html" ? decodeURIComponent(pm[1]) : "") || params.get("p") || "",
     preview: params.has("preview"),
     slug: fromPath || params.get("item") || "",
     q: params.get("q") || "",
@@ -40,13 +46,15 @@ export default function StoreApp() {
       <div className="store-mesh" aria-hidden>
         <i /><i /><i /><i />
       </div>
-      <CursorGlow />
+      {/* cursor glow removed in v6 — it forced every glass panel to re-blur on mouse move */}
       <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-cream focus:px-4 focus:py-2 focus:text-ink">
         Skip to content
       </a>
       <Navbar page="store" actions={<CartButton />} />
       <main id="main" className="min-h-svh">
-        {route.slug ? (
+        {route.prompts ? (
+          <PromptLibraryPage preview={route.preview} focusSlug={route.promptSlug} source={route.source} />
+        ) : route.slug ? (
           product ? (
             <ProductDetail product={product} all={products} preview={route.preview} />
           ) : (
@@ -259,7 +267,7 @@ function Catalog({ products, route }) {
               </button>
             </motion.div>
           ) : (
-            <motion.ul key={`${category}-${sort}`} layout className={`mt-6 grid gap-6 ${gridCls}`}>
+            <motion.ul key={`${category}-${sort}`} className={`mt-6 grid gap-6 ${gridCls}`}>
               <AnimatePresence mode="popLayout">
                 {results.map((p, i) => (
                   <ProductCard key={p.slug} product={p} index={i} preview={route.preview} inView={!switched.current} />
@@ -271,6 +279,8 @@ function Catalog({ products, route }) {
       </section>
 
       {showShowcase && latest.length > 0 && <Showcase id="latest" kicker="Latest" title="Recently released" items={latest} preview={route.preview} />}
+
+      <PromptTeaser preview={route.preview} />
 
       <Trust />
       <ClosingCta />
@@ -287,15 +297,28 @@ const STARS = Array.from({ length: 34 }, (_, i) => ({
   dur: 3 + ((i * 11) % 5),
 }));
 
+/** Pause the hero's ambient animations while it is scrolled out of view (saves GPU, keeps scrolling smooth). */
+function usePauseOffscreen(ref) {
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || !("IntersectionObserver" in window)) return;
+    const io = new IntersectionObserver(([e]) => el.classList.toggle("is-paused", !e.isIntersecting), { rootMargin: "80px" });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [ref]);
+}
+
 function StoreHero({ hasProducts, onSearch, onPick, counts }) {
   const h = store.hero || {};
   const [term, setTerm] = useState("");
+  const heroRef = useRef(null);
+  usePauseOffscreen(heroRef);
   const submit = (e) => {
     e.preventDefault();
     onSearch(term.trim());
   };
   return (
-    <section aria-labelledby="store-title" className="relative overflow-clip px-5 pb-16 pt-32 sm:px-8 md:pb-24 md:pt-40">
+    <section ref={heroRef} aria-labelledby="store-title" className="relative overflow-clip px-5 pb-16 pt-32 sm:px-8 md:pb-24 md:pt-40">
       {/* Background: aurora ribbon + stars + grid (static under reduced motion) */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <div className="aurora-ribbon absolute left-1/2 top-[-30%] h-[60rem] w-[60rem] -translate-x-1/2" />
@@ -314,7 +337,7 @@ function StoreHero({ hasProducts, onSearch, onPick, counts }) {
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ ...spring, delay: 0.05 }}
+            transition={{ ...ease, delay: 0.05 }}
             className="inline-flex items-center gap-2 rounded-full border border-violet-300/25 bg-violet-400/10 px-3.5 py-1.5 text-xs font-semibold text-violet-100 backdrop-blur"
           >
             <span className="relative flex h-2 w-2">
@@ -327,7 +350,7 @@ function StoreHero({ hasProducts, onSearch, onPick, counts }) {
             id="store-title"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ ...spring, delay: 0.12 }}
+            transition={{ ...ease, delay: 0.12 }}
             className="text-gradient-store mt-6 max-w-3xl text-balance pb-1 font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl"
           >
             {h.title || "Build Your Ideas Into Digital Products."}
@@ -335,7 +358,7 @@ function StoreHero({ hasProducts, onSearch, onPick, counts }) {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ ...spring, delay: 0.2 }}
+            transition={{ ...ease, delay: 0.2 }}
             className="mt-6 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg"
           >
             {h.intro}
@@ -348,7 +371,7 @@ function StoreHero({ hasProducts, onSearch, onPick, counts }) {
               role="search"
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ ...spring, delay: 0.28 }}
+              transition={{ ...ease, delay: 0.28 }}
               className="glow-border glass mt-8 flex max-w-xl items-center gap-2 rounded-full p-1.5 pl-5"
             >
               <SearchIcon className="shrink-0 text-slate-400" width={18} height={18} />
@@ -396,8 +419,20 @@ function StoreHero({ hasProducts, onSearch, onPick, counts }) {
             })}
           </motion.ul>
 
+          {visiblePrompts(store.prompts).length > 0 && (
+            <motion.a
+              href={PROMPTS_BASE}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ ...ease, delay: 0.5 }}
+              className="mt-4 inline-flex items-center gap-2 rounded-full border border-amber-300/40 bg-amber-300/10 px-4 py-2 text-xs font-bold text-amber-100 transition-colors hover:bg-amber-300/20"
+            >
+              ✨ Prompt AI gratis — lihat & salin →
+            </motion.a>
+          )}
+
           {!hasProducts && (
-            <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ ...spring, delay: 0.3 }} className="mt-8 flex flex-wrap gap-3">
+            <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ ...ease, delay: 0.3 }} className="mt-8 flex flex-wrap gap-3">
               <a href="#catalog" onPointerDown={ripple} className="ripple cta-gold inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-bold text-slate-950">
                 <span className="relative z-10">See what’s coming</span>
               </a>
@@ -423,7 +458,7 @@ function ProductOrbit() {
       aria-hidden
       initial={{ opacity: 0, scale: 0.85 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ type: "spring", stiffness: 60, damping: 16, delay: 0.2 }}
+      transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
       className="relative mx-auto hidden aspect-square w-full max-w-[26rem] sm:block"
     >
       {/* rings */}
@@ -482,33 +517,6 @@ function ProductOrbit() {
 }
 
 /** Soft light that follows the cursor across the store (desktop only, rAF, no re-renders). */
-function CursorGlow() {
-  const ref = useRef(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el || !window.matchMedia("(hover: hover) and (pointer: fine)").matches || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    let raf = 0;
-    let x = 0;
-    let y = 0;
-    const move = (e) => {
-      x = e.clientX;
-      y = e.clientY;
-      if (!raf)
-        raf = requestAnimationFrame(() => {
-          raf = 0;
-          el.style.transform = `translate3d(${x - 300}px, ${y - 300}px, 0)`;
-          el.style.opacity = "1";
-        });
-    };
-    window.addEventListener("pointermove", move, { passive: true });
-    return () => {
-      cancelAnimationFrame(raf);
-      window.removeEventListener("pointermove", move);
-    };
-  }, []);
-  return <div ref={ref} aria-hidden className="pointer-events-none fixed left-0 top-0 z-0 h-[600px] w-[600px] rounded-full opacity-0 transition-opacity duration-700 [background:radial-gradient(circle,rgba(139,92,246,0.13),rgba(34,211,238,0.06)_40%,transparent_70%)]" />;
-}
-
 function Spotlight({ product: p, preview }) {
   const t = tFor(p);
   const off = discountPercent(p);
@@ -806,7 +814,7 @@ function ProductDetail({ product: p, all, preview }) {
             </div>
 
             {/* Copy + purchase */}
-            <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ ...spring, delay: 0.05 }} className="lg:order-1">
+            <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ ...ease, delay: 0.05 }} className="lg:order-1">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-300">{cat?.label || "Product"}</p>
               <h1 className="text-gradient-store mt-3 text-balance pb-1 font-display text-3xl font-bold leading-[1.1] tracking-tight sm:text-4xl lg:text-[2.75rem]">{p.name}</h1>
               {p.shortDescription && <p className="mt-4 text-base leading-relaxed text-slate-300 sm:text-lg">{p.shortDescription}</p>}
@@ -1000,7 +1008,7 @@ function Faq({ items }) {
             </button>
             <AnimatePresence initial={false}>
               {on && (
-                <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={spring} className="overflow-hidden">
+                <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.45, ease: EASE_OUT }} className="overflow-hidden">
                   <p className="px-4 pb-4 text-sm leading-relaxed text-slate-400">{f.a}</p>
                 </motion.div>
               )}

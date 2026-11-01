@@ -450,4 +450,63 @@ export const tabs = [
       { key: "store.emptyText", type: "textarea", label: "Teks saat belum ada produk", rows: 2 },
     ],
   },
+  {
+    id: "prompts",
+    label: "Prompt AI",
+    fields: [
+      {
+        key: "store.promptLibrary",
+        type: "group",
+        title: "Halaman Prompt AI (/products/prompts/)",
+        help: "Link untuk ManyChat: hamdaniharfan.com/products/prompts/<slug>/?utm_source=manychat — langsung membuka prompt tersebut. Pratinjau draft: /products/prompts/?preview=1",
+        fields: [
+          { key: "eyebrow", type: "text", label: "Label kecil", placeholder: "Gratis · Free AI Prompts" },
+          { key: "title", type: "text", label: "Judul halaman", placeholder: "Prompt AI Siap Pakai" },
+          { key: "intro", type: "textarea", label: "Deskripsi singkat", rows: 2 },
+          {
+            key: "ctaProduct",
+            type: "select",
+            label: "Produk yang ditawarkan di bawah daftar prompt",
+            help: "Opsional. Hanya tampil jika produknya berstatus Dipublikasi.",
+            options: (data) => [{ value: "", label: "— Tidak ada —" }, ...((data?.store?.products || []).map((p) => ({ value: p.slug, label: p.name || p.slug })))],
+          },
+          { key: "ctaKicker", type: "text", label: "Teks kecil di atas produk", placeholder: "Mau hasil yang lebih tajam?" },
+        ],
+      },
+      {
+        key: "store.prompts",
+        type: "list",
+        label: "Daftar prompt",
+        itemTitle: (it) => it.title || "Prompt baru",
+        itemSubtitle: (it) => [it.status === "published" ? "Dipublikasi" : "Draft", it.slug ? `/products/prompts/${it.slug}/` : "", it.image ? "" : "belum ada gambar"].filter(Boolean).join(" · "),
+        itemImage: (it) => it.image,
+        newItem: { status: "draft" },
+        fields: [
+          { key: "title", type: "text", label: "Judul prompt / topik", placeholder: "Bhinneka Tunggal Ika: Bersatu di Bawah Merah Putih" },
+          {
+            key: "status",
+            type: "select",
+            label: "Status",
+            options: () => [
+              { value: "draft", label: "Draft (tersembunyi)" },
+              { value: "published", label: "Dipublikasi" },
+            ],
+          },
+          { key: "image", type: "image", label: "Gambar contoh hasil (PNG/JPG)", help: "Ditampilkan persegi (1:1) di kartu; ketuk untuk melihat utuh. Ideal 1080×1080 atau 1080×1350." },
+          { key: "prompt", type: "textarea", label: "Isi prompt lengkap", rows: 10, help: "Teks persis yang akan disalin pengunjung lewat tombol Copy Prompt." },
+          { key: "category", type: "text", label: "Topik / kategori (untuk filter)", placeholder: "Hari Nasional / Poster / Logo / Bisnis" },
+          { key: "tool", type: "text", label: "Dipakai di (label di gambar)", placeholder: "ChatGPT / Gemini / Midjourney" },
+          { key: "note", type: "textarea", label: "Catatan / tips singkat (opsional)", rows: 2 },
+          {
+            key: "slug",
+            type: "text",
+            label: "Slug (alamat & kata kunci ManyChat)",
+            placeholder: "otomatis dari judul jika kosong",
+            help: "Alamat: hamdaniharfan.com/products/prompts/<slug>/ — jangan diubah setelah dibagikan.",
+          },
+          { key: "date", type: "text", label: "Tanggal (YYYY-MM-DD)", placeholder: "2026-11-01", help: "Prompt terbaru tampil paling atas." },
+        ],
+      },
+    ],
+  },
 ];

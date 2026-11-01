@@ -4,6 +4,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { SITE_URL, categoryById, checkoutUrlOf, formatPrice, isPublished, parsePrice } from "./src/store/catalog.js";
+import { isPromptPublished } from "./src/store/prompts.js";
 
 const root = import.meta.dirname;
 
@@ -22,7 +23,7 @@ const absUrl = (p) => (!p ? `${SITE_URL}/assets/banner-bg.png` : /^https?:\/\//.
 function digitalStorePages() {
   const rewrite = (req, _res, next) => {
     const url = req.url || "";
-    if (/^\/products\/[^/?#.]+\/?(\?.*)?$/.test(url)) req.url = "/products/index.html" + (url.includes("?") ? url.slice(url.indexOf("?")) : "");
+    if (/^\/products\/prompts\/[^/?#.]+\/?(\?.*)?$/.test(url) || /^\/products\/[^/?#.]+\/?(\?.*)?$/.test(url)) req.url = "/products/index.html" + (url.includes("?") ? url.slice(url.indexOf("?")) : "");
     next();
   };
   return {
@@ -32,7 +33,8 @@ function digitalStorePages() {
     },
     configurePreviewServer(server) {
       server.middlewares.use((req, res, next) => {
-        const m = (req.url || "").match(/^\/products\/([^/?#.]+)\/?/);
+        const u = (req.url || "").split("?")[0];
+        const m = u.match(/^\/products\/((?:prompts\/)?[^/?#.]+)\/?$/);
         if (m && existsSync(resolve(root, "dist/products", m[1], "index.html"))) return next();
         rewrite(req, res, next);
       });
@@ -85,15 +87,69 @@ function digitalStorePages() {
         writeFileSync(resolve(dir, "index.html"), html);
       }
 
+      // ── Prompt Library: /products/prompts/ (always) + one share-friendly page per published prompt
+      const lib = content.store?.promptLibrary || {};
+      const prompts = (content.store?.prompts || []).filter(isPromptPublished);
+      const page = ({ url, title, desc, img, ld, noscript }) =>
+        tpl
+          .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(title)}</title>`)
+          .replace(/(<meta name="description" content=")[^"]*(")/, `$1${esc(desc)}$2`)
+          .replace(/(<link rel="canonical" href=")[^"]*(")/, `$1${url}$2`)
+          .replace(/(<meta property="og:url" content=")[^"]*(")/, `$1${url}$2`)
+          .replace(/(<meta property="og:title" content=")[^"]*(")/, `$1${esc(title)}$2`)
+          .replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${esc(desc)}$2`)
+          .replace(/(<meta property="og:image" content=")[^"]*(")/, `$1${esc(img)}$2`)
+          .replace(/<html lang="[^"]*"/, '<html lang="id"')
+          .replace("<!--store-seo-->", `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, "\\u003c")}</script>`)
+          .replace(/<noscript>[\s\S]*?<\/noscript>/, `<noscript><div style="font-family:system-ui,sans-serif;background:#020617;color:#e2e8f0;padding:6rem 1.5rem;max-width:46rem;margin:auto">${noscript}</div></noscript>`);
+      const libTitle = lib.title || "Prompt AI Siap Pakai";
+      const libDesc = lib.intro || "Lihat contoh hasilnya, salin prompt-nya dengan satu ketukan, lalu tempel di aplikasi AI favorit Anda.";
+      const libUrl = `${SITE_URL}/products/prompts/`;
+      mkdirSync(resolve(dist, "products/prompts"), { recursive: true });
+      writeFileSync(
+        resolve(dist, "products/prompts/index.html"),
+        page({
+          url: libUrl,
+          title: `${libTitle} · Hamdani Harfan`,
+          desc: libDesc,
+          img: absUrl(prompts[0]?.image),
+          ld: { "@context": "https://schema.org", "@type": "CollectionPage", name: libTitle, description: libDesc, url: libUrl },
+          noscript: `<h1>${esc(libTitle)}</h1><p>${esc(libDesc)}</p><ul>${prompts.map((p) => `<li><a style="color:#f4e8d1" href="/products/prompts/${p.slug}/">${esc(p.title)}</a></li>`).join("")}</ul>`,
+        })
+      );
+      for (const p of prompts) {
+        const url = `${SITE_URL}/products/prompts/${p.slug}/`;
+        const desc = (p.note || `Prompt AI siap pakai: ${p.title}. Salin dengan satu ketukan.`).slice(0, 180);
+        const dir = resolve(dist, "products/prompts", p.slug);
+        mkdirSync(dir, { recursive: true });
+        writeFileSync(
+          resolve(dir, "index.html"),
+          page({
+            url,
+            title: `${p.title} · Prompt AI · Hamdani Harfan`,
+            desc,
+            img: absUrl(p.image),
+            ld: { "@context": "https://schema.org", "@type": "CreativeWork", name: p.title, description: desc, image: absUrl(p.image), url, inLanguage: "id", author: { "@type": "Person", name: "Hamdani Harfan" } },
+            noscript: `<h1>${esc(p.title)}</h1>${p.image ? `<img src="${esc(p.image)}" alt="" style="max-width:100%;border-radius:16px">` : ""}<pre style="white-space:pre-wrap;background:#0b1224;padding:1rem;border-radius:12px">${esc(p.prompt)}</pre>`,
+          })
+        );
+      }
+
       const today = new Date().toISOString().slice(0, 10);
-      const urls = [`${SITE_URL}/`, `${SITE_URL}/products/`, ...products.map((p) => `${SITE_URL}/products/${p.slug}/`)];
+      const urls = [
+        `${SITE_URL}/`,
+        `${SITE_URL}/products/`,
+        ...products.map((p) => `${SITE_URL}/products/${p.slug}/`),
+        libUrl,
+        ...prompts.map((p) => `${SITE_URL}/products/prompts/${p.slug}/`),
+      ];
       writeFileSync(
         resolve(dist, "sitemap.xml"),
         `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
           .map((u) => `  <url><loc>${u}</loc><lastmod>${today}</lastmod></url>`)
           .join("\n")}\n</urlset>\n`
       );
-      console.log(`  digital-store: ${products.length} product page(s) + sitemap.xml`);
+      console.log(`  digital-store: ${products.length} product page(s), ${prompts.length} prompt page(s) + sitemap.xml`);
     },
   };
 }

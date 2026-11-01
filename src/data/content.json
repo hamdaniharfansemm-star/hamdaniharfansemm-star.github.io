@@ -747,6 +747,27 @@
         "gallery": [],
         "checkoutUrl": ""
       }
+    ],
+    "promptLibrary": {
+      "eyebrow": "Gratis · Free AI Prompts",
+      "title": "Prompt AI Siap Pakai",
+      "intro": "Lihat contoh hasilnya, salin prompt-nya dengan satu ketukan, lalu tempel di ChatGPT, Gemini, atau aplikasi AI favorit Anda.",
+      "ctaProduct": "blueprint-prompt-kelas-dunia",
+      "ctaKicker": "Mau hasil AI yang lebih tajam untuk kerja & bisnis?"
+    },
+    "prompts": [
+      {
+        "id": "bhinneka-tunggal-ika-bersatu-di-bawah-merah-putih",
+        "slug": "bhinneka-tunggal-ika-bersatu-di-bawah-merah-putih",
+        "status": "draft",
+        "title": "Bhinneka Tunggal Ika: Bersatu di Bawah Merah Putih",
+        "category": "Hari Nasional",
+        "tool": "ChatGPT / Gemini",
+        "image": "",
+        "note": "Cocok untuk poster atau unggahan Instagram bertema persatuan dan hari kemerdekaan.",
+        "date": "2026-11-01",
+        "prompt": "Buat ilustrasi digital sinematik dengan rasio 4:5 bertema \"Bhinneka Tunggal Ika: Bersatu di Bawah Merah Putih\".\n\nAdegan: sekelompok anak muda Indonesia dari berbagai suku berdiri berdampingan dan saling merangkul, mengenakan pakaian adat yang berbeda-beda (Minangkabau, Jawa, Bali, Dayak, Papua, dan Bugis). Di belakang mereka, bendera Merah Putih raksasa berkibar gagah ditiup angin.\n\nLatar: langit senja keemasan dengan siluet gugusan pulau Nusantara di cakrawala, burung Garuda samar di antara awan.\n\nGaya: semi-realistis, pencahayaan hangat golden hour, detail kain dan tekstur pakaian adat yang tajam, kedalaman bidang sinematik, warna dominan merah, putih, dan emas.\n\nTeks di bagian bawah dengan huruf tebal elegan: \"BHINNEKA TUNGGAL IKA\".\n\nKualitas: sangat detail, resolusi tinggi, komposisi seimbang, tanpa watermark."
+      }
     ]
   }
 }

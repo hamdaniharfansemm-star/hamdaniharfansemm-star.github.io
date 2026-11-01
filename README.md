@@ -161,3 +161,23 @@ specifications[{label,value}], faq[{q,a}], checkoutUrl, featured, releaseDate (Y
 | Urut termurah | `https://hamdaniharfan.com/products/?sort=price-asc` |
 
 ID kategori: `ebooks`, `blueprints`, `apps`, `ai-tools`, `templates`, `courses`.
+
+### Prompt AI Library (`/products/prompts/`) — untuk kampanye Instagram / ManyChat
+Daftar prompt gratis: gambar contoh hasil, kotak teks prompt, tombol **Copy Prompt**, dan tombol bagikan.
+
+**Menambah prompt (admin):** `hamdaniharfan.com/admin/` → tab **Prompt AI** → **+ Tambah**:
+judul, gambar contoh (PNG/JPG, ideal 1080×1080 atau 1080×1350), isi prompt lengkap, topik (untuk filter),
+"Dipakai di" (ChatGPT/Gemini/…), lalu Status **Dipublikasi** → **Simpan perubahan**.
+
+**Link untuk ManyChat** (kirim di DM otomatis saat orang komentar kata kunci):
+| Tujuan | Link |
+| --- | --- |
+| Langsung ke 1 prompt (disorot emas & di-scroll otomatis) | `https://hamdaniharfan.com/products/prompts/<slug>/?utm_source=manychat` |
+| Semua prompt | `https://hamdaniharfan.com/products/prompts/?utm_source=instagram` |
+| Pratinjau draft | `https://hamdaniharfan.com/products/prompts/?preview=1` |
+
+- Tiap prompt yang dipublikasi otomatis mendapat halaman sendiri dengan judul & gambar sebagai pratinjau link (Open Graph) — tampil rapi saat dikirim di DM/WhatsApp.
+- Tombol Copy bekerja juga di browser bawaan Instagram/Facebook/TikTok (ada cadangan otomatis; jika tetap diblokir, teks prompt ditandai agar bisa ditekan lama → Salin).
+- Di bawah daftar prompt bisa ditampilkan 1 produk berbayar (atur "Produk yang ditawarkan" di tab Prompt AI).
+- 3 prompt terbaru juga tampil di halaman `/products/`.
+- File: `src/store/PromptLibrary.jsx`, `src/store/prompts.js`; halaman statis dibuat di `vite.config.js`.

@@ -207,8 +207,8 @@ export function AskLink({ product: p, className = "" }) {
 }
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 28, scale: 0.97 },
-  show: (i) => ({ opacity: 1, y: 0, scale: 1, transition: { type: "spring", stiffness: 140, damping: 20, delay: Math.min(i, 8) * 0.06 } }),
+  hidden: { opacity: 0, y: 24 },
+  show: (i) => ({ opacity: 1, y: 0, transition: { duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: Math.min(i, 8) * 0.07 } }),
 };
 
 /** 3D device mockup for a card, chosen by category: book · phone · laptop · tablet. */
@@ -291,7 +291,7 @@ export function GoldPrice({ product: p, className = "" }) {
 export function ProductCard({ product: p, index = 0, preview = false, inView = true }) {
   const href = productPath(p) + (preview ? "?preview=1" : "");
   const tiltRef = useRef(null);
-  useTilt(tiltRef, 6);
+  useTilt(tiltRef, 0, 5);
   const cart = useCart();
   const t = tFor(p);
   const canCart = cart && canAddToCart(p);
@@ -300,7 +300,7 @@ export function ProductCard({ product: p, index = 0, preview = false, inView = t
   const anim = inView ? { initial: "hidden", whileInView: "show", viewport: { once: true, amount: 0.12 } } : { initial: "hidden", animate: "show" };
 
   return (
-    <motion.li layout custom={index} variants={cardVariants} {...anim} exit={{ opacity: 0, scale: 0.95, transition: { duration: 0.15 } }} className="group h-full">
+    <motion.li layout="position" transition={{ layout: { duration: 0.5, ease: [0.22, 1, 0.36, 1] } }} custom={index} variants={cardVariants} {...anim} exit={{ opacity: 0, scale: 0.95, transition: { duration: 0.15 } }} className="group h-full">
       <article ref={tiltRef} lang={p.lang === "id" ? "id" : undefined} className="tilt card-navy glow-border glow-on-hover relative flex h-full flex-col rounded-[1.75rem]">
         <span className="tilt-glare" aria-hidden />
 
@@ -322,7 +322,7 @@ export function ProductCard({ product: p, index = 0, preview = false, inView = t
               onPointerDown={ripple}
               aria-label={inCart ? `${p.name} — ${t.inCart}` : `${t.addToCart}: ${p.name}`}
               title={inCart ? t.inCart : t.addToCart}
-              className={`ripple absolute bottom-3 right-3 z-20 grid h-11 w-11 place-items-center rounded-full border shadow-xl shadow-black/40 backdrop-blur-md transition-[color,background-color,border-color,transform] hover:scale-110 active:scale-95 ${
+              className={`ripple absolute bottom-3 right-3 z-20 grid h-11 w-11 place-items-center rounded-full border shadow-xl shadow-black/40 backdrop-blur-md transition-[color,background-color,border-color,transform] hover:scale-110 [@media(pointer:fine)]:active:scale-95 ${
                 inCart ? "border-emerald-300/50 bg-emerald-400/25 text-emerald-100" : "border-white/20 bg-slate-950/70 text-white hover:border-amber-200/70 hover:text-amber-100"
               }`}
             >
