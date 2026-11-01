@@ -1031,6 +1031,18 @@
         "slug": "dream-above-the-clouds",
         "date": "2026-11-01",
         "id": "dream-above-the-clouds"
+      },
+      {
+        "title": "Padel Court Action – Ultra-Realistic Sports Photography",
+        "status": "draft",
+        "image": "/assets/uploads/mvy3kwc7-padel-player-in-mid-lunge.jpg",
+        "prompt": "A man with a serious expression, wearing glasses, a navy blue polo shirt, black athletic shorts, white socks, and black and white athletic shoes, is in motion on a blue padel court. He is holding a black padel racket with a yellow tennis ball just in front of it, as if he is about to hit it. The court has white lines. In the background, there's a fence made of wire mesh and glass panels, and green trees under a bright sky. Don't change the man's original face and hair.",
+        "category": "Olahraga / Padel / Sport Photography / AI Portrait",
+        "tool": "ChatGPT / AI Image Editing",
+        "note": "Pertahankan wajah, gaya rambut, dan proporsi tubuh asli. Gunakan jersey polo biru navy, celana olahraga hitam, kaus kaki putih, dan sepatu olahraga hitam-putih. Tampilkan aksi bermain padel secara realistis dengan raket hitam dan bola kuning, lapangan biru, pencahayaan alami, serta detail wajah dan tekstur pakaian yang tajam.",
+        "slug": "padel-court-action-ultra-realistic",
+        "date": "2026-11-01",
+        "id": "padel-court-action-ultra-realistic"
       }
     ]
   }
