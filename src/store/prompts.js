@@ -7,9 +7,23 @@ export const promptPath = (p) => `${PROMPTS_BASE}${encodeURIComponent(p.slug)}/`
 
 export const isPromptPublished = (p) => p?.status === "published" && !!p.slug && !!p.title && !!String(p.prompt || "").trim();
 
-/** Published prompts (or every prompt in ?preview=1), newest first. */
+/** URL-safe, length-capped slug (a pasted paragraph must never break the build). */
+export function safeSlug(s = "") {
+  const clean = String(s)
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  if (clean.length <= 70) return clean;
+  const cut = clean.slice(0, 70);
+  return (cut.includes("-") ? cut.slice(0, cut.lastIndexOf("-")) : cut).replace(/-+$/g, "");
+}
+
+/** Published prompts (or every prompt in ?preview=1), newest first. Slugs are normalised. */
 export function visiblePrompts(list = [], preview = false) {
   return (Array.isArray(list) ? list : [])
+    .map((p) => (p && (p.slug || p.title) ? { ...p, slug: safeSlug(p.slug || p.title) } : p))
     .filter((p) => p && p.slug && p.title && (preview || isPromptPublished(p)))
     .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")));
 }

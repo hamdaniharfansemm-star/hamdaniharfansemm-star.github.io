@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { SITE_URL, categoryById, checkoutUrlOf, formatPrice, isPublished, parsePrice } from "./src/store/catalog.js";
-import { isPromptPublished } from "./src/store/prompts.js";
+import { visiblePrompts } from "./src/store/prompts.js";
 
 const root = import.meta.dirname;
 
@@ -89,7 +89,7 @@ function digitalStorePages() {
 
       // ── Prompt Library: /products/prompts/ (always) + one share-friendly page per published prompt
       const lib = content.store?.promptLibrary || {};
-      const prompts = (content.store?.prompts || []).filter(isPromptPublished);
+      const prompts = visiblePrompts(content.store?.prompts || []);
       const page = ({ url, title, desc, img, ld, noscript }) =>
         tpl
           .replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(title)}</title>`)
@@ -121,7 +121,12 @@ function digitalStorePages() {
         const url = `${SITE_URL}/products/prompts/${p.slug}/`;
         const desc = (p.note || `Prompt AI siap pakai: ${p.title}. Salin dengan satu ketukan.`).slice(0, 180);
         const dir = resolve(dist, "products/prompts", p.slug);
-        mkdirSync(dir, { recursive: true });
+        try {
+          mkdirSync(dir, { recursive: true });
+        } catch (e) {
+          console.warn(`  ! prompt page skipped (${p.slug.slice(0, 40)}…): ${e.code || e.message}`);
+          continue;
+        }
         writeFileSync(
           resolve(dir, "index.html"),
           page({

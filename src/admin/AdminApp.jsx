@@ -208,12 +208,17 @@ function setAt(obj, path, value) {
   return next;
 }
 
-const slugify = (s) =>
-  (s || "")
+const slugify = (s) => {
+  const clean = (s || "")
     .toLowerCase()
     .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "") || "app";
+    .replace(/^-+|-+$/g, "");
+  if (clean.length <= 70) return clean || "app";
+  const cut = clean.slice(0, 70); // long text pasted into a slug field would break the website build
+  return (cut.includes("-") ? cut.slice(0, cut.lastIndexOf("-")) : cut).replace(/-+$/g, "") || "app";
+};
 
 /** Small clean-ups before saving (project ids, trimming). Returns { data, warnings }. */
 function prepareForSave(data) {
@@ -254,7 +259,9 @@ function prepareForSave(data) {
   // Prompt Library
   const pslugs = new Set();
   (d.store?.prompts || []).forEach((p) => {
-    p.slug = slugify(p.slug || p.title);
+    const raw = String(p.slug || "").trim();
+    // a slug that looks like a sentence was almost certainly pasted by mistake → rebuild it from the title
+    p.slug = slugify(raw.length > 70 || /\s{1}\S+\s\S+\s\S+\s\S+\s/.test(raw) ? p.title : raw || p.title);
     let slug = p.slug || "prompt";
     let n = 2;
     while (pslugs.has(slug)) slug = `${p.slug}-${n++}`;
