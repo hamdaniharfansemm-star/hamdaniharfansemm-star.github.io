@@ -995,6 +995,18 @@
         "slug": "potret-sinematik-dark-red-aura",
         "date": "2026-11-01",
         "id": "potret-sinematik-dark-red-aura"
+      },
+      {
+        "title": "Cinematic Neon Noir Portrait — Night Drive in a Classic Black Car",
+        "status": "published",
+        "image": "/assets/uploads/mvy38feg-neon-night-drive-in-a-classic-car.jpg",
+        "prompt": "Cinematic night shot of the same man (keep his real face) sitting in a sleek black vintage car, viewed from front-left window. He wears sunglasses, gripping the wheel calmly with an intense look. Dark leather interior reflects neon lights in blue, red, and pink from the city outside. Blurred downtown background, moody lighting, glossy reflections, filmic tone, ultra-realistic texture, soft bokeh, high contrast, cyber-noir style —ar 3:4 —v 6 —s 1000.",
+        "category": "AI Portrait / Cinematic Photography / Cyber Noir / Night City",
+        "tool": "ChatGPT / AI Image Generation",
+        "note": "Buat potret sinematik ultra-realistis seorang pria di dalam mobil klasik hitam pada malam hari. Pertahankan identitas wajah, struktur wajah, dan proporsi tubuh dari foto referensi. Gunakan kacamata hitam, jaket kulit hitam, pantulan lampu neon biru-merah-pink, suasana kota malam yang dramatis, efek bokeh, serta pencahayaan bergaya film noir. Cocok untuk personal branding, konten media sosial, dan foto profil premium.",
+        "slug": "cinematic-neon-noir-night-drive",
+        "date": "2026-11-01",
+        "id": "cinematic-neon-noir-night-drive"
       }
     ]
   }
