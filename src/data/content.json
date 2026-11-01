@@ -45,7 +45,7 @@
   },
   "about": {
     "headline": "Bridging Vision, Design, and Engineering",
-    "body": "Hi, I’m Hamdani Harfan—a multidisciplinary Designer, Software Engineer, and banking professional currently contributing at PT Bank Mandiri. I operate at the intersection of enterprise-grade reliability, creative problem-solving, and technical execution, transforming complex requirements into seamless, user-centric applications. My expertise spans end-to-end product development: from conceptualizing intuitive UI/UX designs and feature specifications to engineering reliable architectures and managing Google Play Console deployment lifecycles. Whether managing financial systems at PT Bank Mandiri or building tools like D-Fin, Dagangku AI, DScan, DStudio, DicteDoc, DTS, and DNotes, my goal is delivering polished digital experiences that solve real-world problems efficiently.",
+    "body": "Hi, I’m Hamdani Harfan—a multidisciplinary Designer, Software Engineer, and banking professional with hands-on experience in the banking industry. I work at the intersection of enterprise-grade reliability, creative problem-solving, and technical execution, transforming complex requirements into seamless, user-centric applications. My expertise spans end-to-end product development: from intuitive UI/UX design and feature specifications to reliable architecture and Google Play Console release management. Whether supporting financial operations in banking or building tools like D-Fin, Dagangku AI, DScan, DStudio, DicteDoc, DTS, and DNotes, my goal is to deliver polished digital experiences that solve real-world problems efficiently.",
     "philosophy": [
       {
         "title": "User-Centric First",
@@ -339,8 +339,8 @@
           ]
         },
         {
-          "name": "Enterprise Banking Standards & Compliance (PT Bank Mandiri)",
-          "detail": "Security, governance and reliability habits carried from banking into every product.",
+          "name": "Enterprise Banking Standards & Compliance",
+          "detail": "Security, governance and reliability habits from my banking experience, built into every product.",
           "tools": [
             "Governance",
             "Data Security",
