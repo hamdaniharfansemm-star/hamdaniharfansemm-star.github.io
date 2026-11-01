@@ -815,6 +815,18 @@
         "slug": "poster-sepak-bola-dani-86-real-madrid",
         "date": "2026-11-01",
         "id": "poster-sepak-bola-dani-86-real-madrid"
+      },
+      {
+        "title": "Monochrome Elevator Portrait: Cinematic Black & White Fashion Editorial",
+        "status": "published",
+        "image": "/assets/uploads/mvy0ku3r-monochrome-elevator-portrait-1.jpg",
+        "prompt": "I will edit the photo so that I am standing inside an elevator with a black and white (monochrome) aesthetic. Utilize dramatic, high-contrast lighting to create an artistic vibe, reminiscent of a fashion editorial photoshoot. I am wearing a classic black suit, a white shirt, and a tie.",
+        "category": "AI Portrait / Fashion Editorial / Monochrome / Black and White / Professional Portrait",
+        "tool": "ChatGPT Images / AI Photo Editing",
+        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan identitas asli. Pilih pencahayaan dramatis dengan kontras hitam-putih yang seimbang agar hasil terlihat elegan, profesional, dan sinematik. Cocok untuk foto profil profesional, personal branding, LinkedIn, dan konten fashion editorial.",
+        "slug": "monochrome-elevator-fashion-portrait",
+        "date": "2026-11-01",
+        "id": "monochrome-elevator-fashion-portrait"
       }
     ]
   }
