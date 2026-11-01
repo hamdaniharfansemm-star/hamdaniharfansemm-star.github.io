@@ -1,0 +1,752 @@
+{
+  "profile": {
+    "name": "Hamdani Harfan S.E., M.M.",
+    "role": "Designer · Software Engineer · Banking Professional",
+    "company": "",
+    "email": "hamdaniharfansemm@gmail.com",
+    "phoneDisplay": "+62 852-6556-2860",
+    "whatsapp": "6285265562860",
+    "photo": "/assets/profile-photo.jpg",
+    "bannerBg": "/assets/banner-bg.png"
+  },
+  "hero": {
+    "designer": {
+      "eyebrow": "01 — Product & Visual",
+      "title": "designer",
+      "body": "UI/UX designer crafting design systems, product strategy and visual brands that feel effortless to use.",
+      "tags": [
+        "Design Systems",
+        "Product Strategy",
+        "Branding"
+      ]
+    },
+    "developer": {
+      "eyebrow": "02 — Systems & Code",
+      "title": "<developer>",
+      "body": "Software engineer building scalable architectures, mobile apps and reliable release workflows.",
+      "tags": [
+        "Architecture",
+        "Mobile Apps",
+        "Play Console"
+      ]
+    }
+  },
+  "banner": {
+    "title": "Engineering Smart Solutions. Driving Real Business Growth.",
+    "status": "Ready for Projects & Institutional Consulting",
+    "tagline": "You bring the vision, I engineer the execution. Partnering to build scalable, high-performance digital products that accelerate your business.",
+    "cta": "Let's Talk"
+  },
+  "stats": {
+    "secure": {
+      "value": "100%",
+      "label": "Secure & Tested"
+    }
+  },
+  "about": {
+    "headline": "Bridging Vision, Design, and Engineering",
+    "body": "Hi, I’m Hamdani Harfan—a multidisciplinary Designer, Software Engineer, and banking professional currently contributing at PT Bank Mandiri. I operate at the intersection of enterprise-grade reliability, creative problem-solving, and technical execution, transforming complex requirements into seamless, user-centric applications. My expertise spans end-to-end product development: from conceptualizing intuitive UI/UX designs and feature specifications to engineering reliable architectures and managing Google Play Console deployment lifecycles. Whether managing financial systems at PT Bank Mandiri or building tools like D-Fin, Dagangku AI, DScan, DStudio, DicteDoc, DTS, and DNotes, my goal is delivering polished digital experiences that solve real-world problems efficiently.",
+    "philosophy": [
+      {
+        "title": "User-Centric First",
+        "text": "Every screen starts from a real person’s task, not from a feature list."
+      },
+      {
+        "title": "Scalable Architecture",
+        "text": "Foundations built to grow — clean structure, secure data, predictable releases."
+      },
+      {
+        "title": "End-to-End Ownership",
+        "text": "From the first wireframe to the Play Console rollout, I own the whole journey."
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master of Management (M.M.)",
+        "field": "Financial Management",
+        "school": "Universitas Andalas"
+      }
+    ],
+    "facts": [
+      {
+        "value": "7",
+        "label": "Products designed & built"
+      },
+      {
+        "value": "2",
+        "label": "Disciplines, one workflow"
+      }
+    ]
+  },
+  "works": {
+    "title": "Products I’ve designed & built",
+    "intro": "Thoughtful design backed by solid engineering."
+  },
+  "workCategories": [
+    "UI/UX & Products",
+    "Mobile & Web Dev"
+  ],
+  "projects": [
+    {
+      "id": "dscan",
+      "status": "live",
+      "packageId": "com.hamdaniharfan.dscan",
+      "title": "DScan",
+      "category": "Mobile & Web Dev",
+      "tech": [
+        "React",
+        "Document Scanning",
+        "Release Management"
+      ],
+      "desc": "Document scanner that turns paper into clean PDFs and background-free PNGs — fully offline.",
+      "image": "/assets/projects/dscan.png",
+      "logo": "/assets/logos/dscan.png",
+      "accent": "#3b82f6",
+      "highlights": [
+        "Document scanning to PDF & transparent-background PNG",
+        "Fully offline — no ads, no account required",
+        "Auto-enhance and one-tap sharing via WhatsApp & Email"
+      ]
+    },
+    {
+      "id": "dnotes",
+      "status": "live",
+      "packageId": "com.hamdaniharfan.dnotes",
+      "title": "DNotes",
+      "category": "Mobile & Web Dev",
+      "tech": [
+        "Voice Command",
+        "NLP",
+        "Reminder System"
+      ],
+      "desc": "Smart reminder application driven by interactive voice commands.",
+      "image": "/assets/projects/dnotes.png",
+      "logo": "/assets/logos/dnotes.png",
+      "accent": "#94a3b8",
+      "highlights": [
+        "Capture notes by voice in five languages",
+        "Automatic agenda extraction from spoken notes",
+        "Task alarms that never get missed"
+      ]
+    },
+    {
+      "id": "dts",
+      "status": "live",
+      "packageId": "com.hamdaniharfan.dts",
+      "title": "DTS (Digital Timestamp Solution)",
+      "category": "Mobile & Web Dev",
+      "tech": [
+        "Timestamp API",
+        "Security",
+        "Proof Verification"
+      ],
+      "desc": "Work timestamp validation and authentic digital proof verification solution.",
+      "image": "/assets/projects/dts.png",
+      "logo": "/assets/logos/dts.png",
+      "accent": "#d4a648",
+      "highlights": [
+        "Time, location, map & weather stamped on photos and video",
+        "Tamper-evident hashing for authentic proof of work",
+        "Audit-ready templates for field reports"
+      ]
+    },
+    {
+      "id": "dictedoc",
+      "status": "internal",
+      "packageId": "com.dictedoc.dictedoc",
+      "title": "DicteDoc",
+      "category": "UI/UX & Products",
+      "tech": [
+        "Speech-to-Text",
+        "Text-to-Speech",
+        "AI Engine"
+      ],
+      "desc": "High-accuracy speech-to-text and text-to-speech conversion solution.",
+      "image": "/assets/projects/dictedoc.png",
+      "logo": "/assets/logos/dictedoc.png",
+      "accent": "#facc15",
+      "highlights": [
+        "Turns documents into natural speech with auto summaries",
+        "Records meetings into transcripts and structured minutes",
+        "AI engine tuned for Bahasa Indonesia & English"
+      ]
+    },
+    {
+      "id": "dfin",
+      "status": "internal",
+      "title": "D-Fin",
+      "category": "UI/UX & Products",
+      "tech": [
+        "Figma",
+        "Visual Branding",
+        "Fintech Architecture"
+      ],
+      "desc": "Financial platform featuring modern visual branding and advanced security architecture.",
+      "image": "/assets/projects/dfin.png",
+      "logo": "/assets/logos/dfin.png",
+      "accent": "#38bdf8",
+      "highlights": [
+        "Voice-based transaction logging & digital envelope budgeting",
+        "Automated savings goals and family account sync",
+        "MoneyMind insights, challenges and story-style reports"
+      ]
+    },
+    {
+      "id": "dagangku",
+      "status": "internal",
+      "packageId": "id.dagangku.app",
+      "title": "Dagangku AI",
+      "category": "UI/UX & Products",
+      "tech": [
+        "Flutter",
+        "AI Prompt",
+        "Play Console"
+      ],
+      "desc": "Inventory management, smart cashier, and automated sales reporting application.",
+      "image": "/assets/projects/dagangku.png",
+      "logo": "/assets/logos/dagangku.png",
+      "accent": "#eab308",
+      "highlights": [
+        "Smart cashier (POS) flow designed for fast daily transactions",
+        "Real-time stock & inventory tracking for small businesses",
+        "Automated sales reports generated with AI assistance"
+      ]
+    },
+    {
+      "id": "dstudio",
+      "status": "closed",
+      "title": "DStudio (Video Edition Suite)",
+      "category": "UI/UX & Products",
+      "tech": [
+        "Video Processing UI",
+        "Media Architecture"
+      ],
+      "desc": "Integrated creative solution for digital video editing and production.",
+      "image": "/assets/projects/dstudio.png",
+      "logo": "/assets/logos/dstudio.png",
+      "accent": "#eab308",
+      "highlights": [
+        "Trim, merge and speed control on a mobile timeline",
+        "AI auto-subtitles, text animation and background music",
+        "HD 60fps screen recording with internal audio"
+      ]
+    }
+  ],
+  "techStack": [
+    {
+      "name": "Android SDK",
+      "tone": "sky"
+    },
+    {
+      "name": "Kotlin / Java",
+      "tone": "sky"
+    },
+    {
+      "name": "Flutter / React",
+      "tone": "amber"
+    },
+    {
+      "name": "AI Prompt Engineering",
+      "tone": "violet"
+    },
+    {
+      "name": "UI/UX Design",
+      "tone": "emerald"
+    },
+    {
+      "name": "Play Console Management",
+      "tone": "orange"
+    }
+  ],
+  "services": [
+    "Mobile App Development & Architecture",
+    "Business Automation & POS Systems",
+    "UI/UX & Design Systems",
+    "Enterprise & Institutional Consulting"
+  ],
+  "skills": {
+    "design": {
+      "title": "Design & Strategy",
+      "kicker": "The designer",
+      "items": [
+        {
+          "name": "UI/UX Design & Wireframing",
+          "detail": "Low-to-high fidelity flows that validate ideas before a single line of code.",
+          "tools": [
+            "Wireframes",
+            "Prototypes",
+            "Usability"
+          ]
+        },
+        {
+          "name": "Figma & Advanced Design Systems",
+          "detail": "Tokens, components and variants that keep seven products visually consistent.",
+          "tools": [
+            "Figma",
+            "Auto Layout",
+            "Tokens"
+          ]
+        },
+        {
+          "name": "Product Strategy & Feature Specs",
+          "detail": "Turning business goals into clear, buildable feature specifications.",
+          "tools": [
+            "PRD",
+            "Roadmaps",
+            "Prioritisation"
+          ]
+        },
+        {
+          "name": "User Journey & Information Architecture",
+          "detail": "Mapping how people move through an app so nothing feels lost.",
+          "tools": [
+            "Journey Maps",
+            "Sitemaps",
+            "Card Sorting"
+          ]
+        },
+        {
+          "name": "Visual Branding & UI Layouts",
+          "detail": "Logos, store graphics and layouts that give each product a distinct identity.",
+          "tools": [
+            "Branding",
+            "Store Assets",
+            "Layout"
+          ]
+        }
+      ]
+    },
+    "engineering": {
+      "title": "Engineering & Platforms",
+      "kicker": "The developer",
+      "items": [
+        {
+          "name": "Frontend/Backend Architecture (React, Node)",
+          "detail": "Component-driven frontends on top of clean, well-structured APIs.",
+          "tools": [
+            "React",
+            "Node.js",
+            "REST"
+          ]
+        },
+        {
+          "name": "Mobile App Development (Flutter, React Native)",
+          "detail": "Cross-platform apps shipped as native Android builds.",
+          "tools": [
+            "Flutter",
+            "React Native",
+            "Android"
+          ]
+        },
+        {
+          "name": "Enterprise Banking Standards & Compliance (PT Bank Mandiri)",
+          "detail": "Security, governance and reliability habits carried from banking into every product.",
+          "tools": [
+            "Governance",
+            "Data Security",
+            "Risk"
+          ]
+        },
+        {
+          "name": "Google Play Console Release Management",
+          "detail": "Testing tracks, staged rollouts and store listings handled end to end.",
+          "tools": [
+            "Play Console",
+            "AAB",
+            "Staged Rollout"
+          ]
+        },
+        {
+          "name": "Scalable Systems & In-App Purchases",
+          "detail": "Architectures ready for growth, with monetisation built in.",
+          "tools": [
+            "Billing",
+            "Scalability",
+            "Analytics"
+          ]
+        }
+      ]
+    }
+  },
+  "experience": [
+    {
+      "role": "Lead Product Designer & Software Engineer",
+      "org": "Independent Ecosystem — Dagangku, D-Fin, DScan, DStudio",
+      "period": "2024 — Present",
+      "current": true,
+      "summary": "Designing product architecture, formulating feature specifications, and managing regular application releases on the Google Play Console.",
+      "tags": [
+        "Product Architecture",
+        "Feature Specs",
+        "Play Console"
+      ]
+    },
+    {
+      "role": "UI/UX & Full-Stack Developer",
+      "org": "Freelance & Product Projects",
+      "period": "2022 — 2024",
+      "current": false,
+      "summary": "Developing large-scale mobile and web applications, optimizing user journeys, and integrating digital payment systems.",
+      "tags": [
+        "Mobile & Web",
+        "User Journeys",
+        "Digital Payments"
+      ]
+    }
+  ],
+  "contact": {
+    "title": "Hire Me",
+    "intro": "Let's discuss your custom software development or application project.",
+    "formEmail": "hamdaniharfansemm@gmail.com",
+    "socials": [
+      {
+        "id": "linkedin",
+        "label": "LinkedIn",
+        "handle": "Hamdani Harfan",
+        "href": "https://www.linkedin.com/in/hamdani-harfan-19479a362/?isSelfProfile=true"
+      },
+      {
+        "id": "instagram",
+        "label": "Instagram",
+        "handle": "@hamdaniharfan",
+        "href": "https://www.instagram.com/hamdaniharfan/"
+      },
+      {
+        "id": "youtube",
+        "label": "YouTube",
+        "handle": "@hamdaniharfan",
+        "href": "https://youtube.com/@hamdaniharfan?si=ee6Mf7BQPF6gbaYH"
+      },
+      {
+        "id": "tiktok",
+        "label": "TikTok",
+        "handle": "@hamdani.harfan",
+        "href": "https://www.tiktok.com/@hamdani.harfan"
+      },
+      {
+        "id": "facebook",
+        "label": "Facebook",
+        "handle": "hamdani.harfan",
+        "href": "https://www.facebook.com/hamdani.harfan"
+      },
+      {
+        "id": "academia",
+        "label": "Research",
+        "handle": "Academia.edu",
+        "href": "https://ffarmasi.academia.edu/HamdaniHarfan"
+      }
+    ],
+    "projectTypes": [
+      "Mobile App",
+      "Web Platform",
+      "UI/UX & Design System",
+      "Enterprise / Institutional Consulting",
+      "Other"
+    ]
+  },
+  "store": {
+    "hero": {
+      "eyebrow": "Digital Products & Innovation",
+      "title": "Build Your Ideas Into Digital Products.",
+      "intro": "Explore practical guides, application blueprints, digital tools, and resources designed to help you learn, build, and create."
+    },
+    "emptyTitle": "The first products are being prepared.",
+    "emptyText": "Guides, blueprints and templates drawn from my own app releases are on the way. Want to know when they launch, or need something tailored now?",
+    "trust": [
+      {
+        "title": "Built from shipped work",
+        "text": "Products are drawn from apps I have designed, built and released — including DScan and DNotes on Google Play."
+      },
+      {
+        "title": "Secure, encrypted checkout",
+        "text": "Pay with QRIS, bank transfer or e-wallet on an encrypted checkout page. This website never sees or stores your payment details."
+      },
+      {
+        "title": "Clear before you buy",
+        "text": "Each product page lists what is inside, the format, requirements and license before you decide."
+      },
+      {
+        "title": "Direct support",
+        "text": "Questions before or after purchase? Reach me directly by WhatsApp or email."
+      }
+    ],
+    "products": [
+      {
+        "id": "blueprint-prompt-kelas-dunia",
+        "slug": "blueprint-prompt-kelas-dunia",
+        "status": "published",
+        "lang": "id",
+        "spotlight": true,
+        "featured": true,
+        "bestseller": false,
+        "releaseDate": "2026-10-31",
+        "category": "blueprints",
+        "name": "Blueprint Prompt yang Mengubah Pertanyaan Biasa Menjadi Jawaban Kelas Dunia",
+        "shortDescription": "Kerangka prompt siap pakai untuk mengubah pertanyaan sederhana menjadi jawaban AI yang tajam, terstruktur, dan berkualitas profesional.",
+        "description": "Kualitas jawaban AI sangat ditentukan oleh cara Anda bertanya. Blueprint ini memberi Anda kerangka prompt yang tinggal disalin dan disesuaikan, sehingga pertanyaan sehari-hari berubah menjadi instruksi yang jelas — dan jawaban yang Anda dapat menjadi jauh lebih berguna.",
+        "price": "98000",
+        "originalPrice": "2800000",
+        "currency": "IDR",
+        "checkoutUrl": "https://hamdaniharfan.myr.id/pl/blueprint-prompt-yang-mengubah-pertanyaan-biasa-menjadi-jawaban-kelas-dunia-78513",
+        "coverImage": "",
+        "gallery": [],
+        "highlights": [
+          {
+            "icon": "bolt",
+            "title": "Akses Instan",
+            "text": "Produk langsung bisa diakses begitu pembayaran berhasil."
+          },
+          {
+            "icon": "target",
+            "title": "100% Praktis",
+            "text": "Kerangka yang tinggal disalin, disesuaikan, dan dipakai untuk kebutuhan Anda."
+          },
+          {
+            "icon": "file",
+            "title": "Format Siap Pakai",
+            "text": "Tersusun rapi sehingga bisa langsung digunakan tanpa perlu menyusun ulang."
+          }
+        ],
+        "guarantees": [
+          {
+            "icon": "shield",
+            "title": "Pembayaran aman & terenkripsi",
+            "text": "Transaksi diproses di halaman pembayaran terenkripsi. Website ini tidak menyimpan data pembayaran Anda."
+          },
+          {
+            "icon": "qr",
+            "title": "QRIS, VA bank & e-wallet",
+            "text": "Bayar dengan metode yang paling nyaman untuk Anda."
+          },
+          {
+            "icon": "bolt",
+            "title": "Akses instan",
+            "text": "Akses produk diberikan otomatis setelah pembayaran terkonfirmasi."
+          },
+          {
+            "icon": "infinity",
+            "title": "Akses seumur hidup",
+            "text": "Sekali beli, produk bisa Anda akses kapan saja."
+          }
+        ],
+        "problems": [],
+        "features": [],
+        "audience": [],
+        "curriculum": [],
+        "specifications": [
+          {
+            "label": "Format",
+            "value": "E-book digital (PDF)"
+          },
+          {
+            "label": "Bahasa",
+            "value": "Bahasa Indonesia"
+          },
+          {
+            "label": "Akses",
+            "value": "Seumur hidup"
+          }
+        ],
+        "testimonials": [],
+        "faq": [
+          {
+            "q": "Bagaimana cara akses file setelah pembayaran?",
+            "a": "Setelah pembayaran berhasil, akses produk diberikan otomatis. Pastikan email yang Anda isi saat checkout aktif agar detail akses bisa diterima. Jika ada kendala, hubungi saya lewat WhatsApp."
+          },
+          {
+            "q": "Format file apa yang didapat?",
+            "a": "E-book digital (PDF) yang bisa dibuka di HP, tablet, maupun laptop."
+          },
+          {
+            "q": "Metode pembayaran apa saja yang tersedia?",
+            "a": "Pembayaran mendukung QRIS, transfer Virtual Account bank, serta e-wallet."
+          },
+          {
+            "q": "Apakah aksesnya berlaku selamanya?",
+            "a": "Ya. Sekali beli, Anda bisa mengakses produk ini kapan saja tanpa biaya tambahan."
+          }
+        ]
+      },
+      {
+        "id": "demo-launch-playbook",
+        "slug": "demo-android-launch-playbook",
+        "status": "demo",
+        "featured": true,
+        "releaseDate": "2026-10-20",
+        "category": "ebooks",
+        "name": "Android App Launch Playbook (Demo)",
+        "shortDescription": "A step-by-step guide from closed testing to a public Google Play release.",
+        "description": "Demo product — shown only in preview mode to test the store layout. Not for sale.",
+        "problems": [
+          "Not sure which Play Console steps come first",
+          "Release rejected for missing policy items"
+        ],
+        "features": [
+          "Release checklist",
+          "Store listing worksheet",
+          "Testing track timeline"
+        ],
+        "audience": [
+          "First-time Android publishers",
+          "Solo developers"
+        ],
+        "specifications": [
+          {
+            "label": "Format",
+            "value": "PDF"
+          },
+          {
+            "label": "Language",
+            "value": "Bahasa Indonesia"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Is this a real product?",
+            "a": "No — this is demo data for previewing the store layout."
+          }
+        ],
+        "price": "149000",
+        "currency": "IDR",
+        "coverImage": "",
+        "gallery": [],
+        "checkoutUrl": ""
+      },
+      {
+        "id": "demo-pos-blueprint",
+        "slug": "demo-pos-app-blueprint",
+        "status": "demo",
+        "featured": true,
+        "releaseDate": "2026-09-15",
+        "category": "blueprints",
+        "name": "POS & Inventory App Blueprint (Demo)",
+        "shortDescription": "Screens, data model and feature specification for a small-business cashier app.",
+        "description": "Demo product — shown only in preview mode to test the store layout. Not for sale.",
+        "problems": [],
+        "features": [
+          "Feature specification",
+          "Database schema",
+          "User flow diagrams"
+        ],
+        "audience": [
+          "Founders planning a POS app"
+        ],
+        "specifications": [
+          {
+            "label": "Format",
+            "value": "PDF + Figma"
+          }
+        ],
+        "faq": [],
+        "price": "249000",
+        "currency": "IDR",
+        "coverImage": "",
+        "gallery": [],
+        "checkoutUrl": ""
+      },
+      {
+        "id": "demo-scanner-app",
+        "slug": "demo-document-scanner-app",
+        "status": "demo",
+        "featured": false,
+        "releaseDate": "2026-08-01",
+        "category": "apps",
+        "name": "Document Scanner Toolkit (Demo)",
+        "shortDescription": "A ready-to-use utility app package for scanning and exporting documents.",
+        "description": "Demo product — shown only in preview mode to test the store layout. Not for sale.",
+        "problems": [],
+        "features": [
+          "PDF export",
+          "Background removal"
+        ],
+        "audience": [],
+        "specifications": [
+          {
+            "label": "Platform",
+            "value": "Android 8.0+"
+          },
+          {
+            "label": "License",
+            "value": "Single user"
+          }
+        ],
+        "faq": [],
+        "price": "99000",
+        "currency": "IDR",
+        "coverImage": "",
+        "gallery": [],
+        "checkoutUrl": ""
+      },
+      {
+        "id": "demo-course",
+        "slug": "demo-ai-app-builder-course",
+        "status": "demo",
+        "featured": false,
+        "releaseDate": "2026-10-25",
+        "category": "courses",
+        "name": "Build Your First AI-Assisted App (Demo)",
+        "shortDescription": "An online course that walks through building and publishing an app with AI tools.",
+        "description": "Demo product — shown only in preview mode to test the store layout. Not for sale.",
+        "problems": [],
+        "features": [],
+        "audience": [
+          "Beginners with no coding background"
+        ],
+        "curriculum": [
+          "Module 1 — Planning the app",
+          "Module 2 — Building with AI",
+          "Module 3 — Publishing"
+        ],
+        "specifications": [
+          {
+            "label": "Format",
+            "value": "Video lessons"
+          },
+          {
+            "label": "Access",
+            "value": "Lifetime"
+          }
+        ],
+        "faq": [],
+        "price": "39",
+        "currency": "USD",
+        "coverImage": "",
+        "gallery": [],
+        "checkoutUrl": ""
+      },
+      {
+        "id": "demo-template",
+        "slug": "demo-portfolio-template",
+        "status": "demo",
+        "featured": false,
+        "releaseDate": "2026-07-10",
+        "category": "templates",
+        "name": "Developer Portfolio Template (Demo)",
+        "shortDescription": "React + Tailwind portfolio source code with an editable admin page.",
+        "description": "Demo product — shown only in preview mode to test the store layout. Not for sale.",
+        "problems": [],
+        "features": [
+          "React 19 + Vite",
+          "Tailwind CSS v4"
+        ],
+        "audience": [],
+        "specifications": [
+          {
+            "label": "Stack",
+            "value": "React, Vite, Tailwind"
+          },
+          {
+            "label": "License",
+            "value": "Personal use"
+          }
+        ],
+        "faq": [],
+        "price": "0",
+        "currency": "IDR",
+        "coverImage": "",
+        "gallery": [],
+        "checkoutUrl": ""
+      }
+    ]
+  }
+}
