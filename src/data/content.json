@@ -853,14 +853,14 @@
         "id": "yakuza-boss-cinematic-kabukicho"
       },
       {
-        "title": "",
+        "title": "Cinematic Vintage Portrait: Pria Elegan dengan Motor Yamaha RX100",
         "status": "draft",
-        "image": "",
-        "prompt": "",
-        "category": "",
-        "tool": "",
-        "note": "",
-        "slug": "app",
+        "image": "/assets/uploads/mvy13z6m-vintage-yamaha-portrait-by-weathered-wal.jpg",
+        "prompt": "Generate a cinematic outdoor portrait of a fashionable young man posed confidently beside a black Yamaha RX100 motorcycle. He is dressed in a dark brown button-up shirt paired with light brown trousers and black loafers, complemented by a wristwatch, bracelet, and sunglasses. The setting should include wild greenery and an aged concrete wall to enhance a rustic urban feel. Use moody, warm vintage tones to evoke a retro aesthetic. His facial expression should remain serious and composed, suggesting mystery and rugged sophistication. Ensure the face exactly matches the provided reference selfie—keep the same eyes, nose, cheeks, and skin texture.",
+        "category": "Portrait Pria / Motorcycle Photography / Vintage Aesthetic / Fashion Editorial",
+        "tool": "ChatGPT / AI Photo Editing",
+        "note": "Gunakan foto referensi wajah untuk mempertahankan identitas subjek, termasuk bentuk mata, hidung, pipi, tekstur kulit, dan gaya rambut. Hasil terbaik menggunakan pencahayaan natural, pose santai tetapi percaya diri, serta nuansa vintage sinematik. Cocok untuk personal branding, foto profil profesional, dan konten media sosial. Gunakan foto motor klasik hitam sebagai referensi tambahan jika tersedia.",
+        "slug": "portrait-pria-motor-yamaha-rx100-vintage",
         "date": "2026-11-01",
         "id": "app"
       }
