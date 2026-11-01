@@ -926,7 +926,7 @@
       },
       {
         "title": "Foto Pria di Kafe Modern Minimalis — Edit Foto AI Realistis",
-        "status": "draft",
+        "status": "published",
         "image": "/assets/uploads/mvy2f6ih-relaxed-caf-portrait-with-red-velvet-cak.jpg",
         "prompt": "Transformasikan foto ini menjadi seseorang yang sedang duduk santai di kursi kafe bergaya modern minimalis. Di meja depannya, ada segelas iced americano dan sepotong kue red velvet. Latar belakang menampilkan suasana kafe hangat dengan interior dominan kayu gelap, pencahayaan alami yang lembut, dan beberapa pengunjung lain di dalam ruangan. Angle pengambilan gambar setinggi mata (eye-level), menekankan ekspresi wajah sebagai fokus utama. Nuansa foto terasa natural seolah diambil dengan kamera smartphone. Pastikan detail wajah tetap sama tanpa perubahan.",
         "category": "Edit Foto AI, Portrait Photography, Cafe Aesthetic, Lifestyle, Realistic Photo",
@@ -947,6 +947,18 @@
         "slug": "foto-profil-3d-instagram-hamdani-harfan",
         "date": "2026-11-01",
         "id": "foto-profil-3d-instagram-hamdani-harfan"
+      },
+      {
+        "title": "Foto Lucu Pria dan Kucing Oren — Ekspresi Kocak AI",
+        "status": "published",
+        "image": "/assets/uploads/mvy2qfuk-playful-tabby-paws-and-laughter.jpg",
+        "prompt": "A fun, photorealistic portrait of the man in the photo. Don't change the face structure of the man. A cheeky orange tabby cat perches on his shoulder, covering his eyes with both paws like playing peekaboo. The man’s face shows a squinting smile, caught between surprise and laughter. The cat winks with one eye and sticks its tongue out in a silly, mischievous way, stealing the spotlight. Shot against a clean black studio backdrop with crisp lighting and ultra-detailed textures on skin and fur. The overall mood is humorous, lighthearted, and perfect for a playful, comedic scene.",
+        "category": "AI Photo Editing / Funny Portrait / Cat Photography / Animal Interaction",
+        "tool": "ChatGPT / Midjourney / AI Image Generator",
+        "note": "Ubah foto referensi menjadi potret fotorealistis yang lucu dengan mempertahankan struktur wajah, ciri khas, dan gaya rambut pria. Tambahkan kucing oren berbulu tebal di bahu yang menutupi kedua mata pria dengan cakarnya, seolah sedang bermain cilukba. Buat pria tersenyum lebar dengan ekspresi terkejut sekaligus tertawa, sementara kucing mengedipkan satu mata dan menjulurkan lidah secara jenaka. Gunakan latar studio hitam, pencahayaan profesional, detail bulu dan kulit yang tajam, serta komposisi sinematik. Cocok untuk konten hiburan, foto profil kreatif, dan media sosial.",
+        "slug": "foto-lucu-pria-kucing-oren-ai",
+        "date": "2026-11-01",
+        "id": "foto-lucu-pria-kucing-oren-ai"
       }
     ]
   }
