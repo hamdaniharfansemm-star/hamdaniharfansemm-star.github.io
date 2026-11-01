@@ -474,7 +474,7 @@
       {
         "id": "blueprint-prompt-kelas-dunia",
         "slug": "blueprint-prompt-kelas-dunia",
-        "status": "draft",
+        "status": "published",
         "lang": "id",
         "spotlight": true,
         "featured": true,
@@ -484,10 +484,10 @@
         "name": "Blueprint Prompt yang Mengubah Pertanyaan Biasa Menjadi Jawaban Kelas Dunia",
         "shortDescription": "Kerangka prompt siap pakai untuk mengubah pertanyaan sederhana menjadi jawaban AI yang tajam, terstruktur, dan berkualitas profesional.",
         "description": "Kualitas jawaban AI sangat ditentukan oleh cara Anda bertanya. Blueprint ini memberi Anda kerangka prompt yang tinggal disalin dan disesuaikan, sehingga pertanyaan sehari-hari berubah menjadi instruksi yang jelas — dan jawaban yang Anda dapat menjadi jauh lebih berguna.",
-        "price": "99000",
+        "price": "98000",
         "originalPrice": "2800000",
         "currency": "IDR",
-        "checkoutUrl": "",
+        "checkoutUrl": "https://hamdaniharfan.myr.id/pl/blueprint-prompt-yang-mengubah-pertanyaan-biasa-menjadi-jawaban-kelas-dunia-78513",
         "coverImage": "",
         "gallery": [],
         "highlights": [
@@ -536,7 +536,7 @@
         "specifications": [
           {
             "label": "Format",
-            "value": "[ISI: format file, mis. PDF]"
+            "value": "E-book digital (PDF)"
           },
           {
             "label": "Bahasa",
@@ -555,7 +555,7 @@
           },
           {
             "q": "Format file apa yang didapat?",
-            "a": "[ISI: format file yang Anda berikan, mis. PDF yang bisa dibuka di HP & laptop]"
+            "a": "E-book digital (PDF) yang bisa dibuka di HP, tablet, maupun laptop."
           },
           {
             "q": "Metode pembayaran apa saja yang tersedia?",
