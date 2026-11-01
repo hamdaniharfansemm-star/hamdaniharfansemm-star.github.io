@@ -757,52 +757,16 @@
     },
     "prompts": [
       {
-        "id": "bhinneka-tunggal-ika-bersatu-di-bawah-merah-putih",
-        "slug": "realistic-1-7-scale-action-figure",
+        "title": "Cinematic Ferrari F1 Racing Poster — Custom Driver #69",
         "status": "published",
-        "title": "AI FIGURE STUDIO",
-        "category": "Realistic 1/7 Scale Action Figure Studio",
-        "tool": "Midjourney / DALL-E 3, Chat GPT",
-        "image": "/assets/uploads/mvxzeds6-zbrush-sculpting-studio-figure-showcase.jpg",
-        "note": "Prompt khusus untuk membuat figur action skala 1/7 dengan detail tekstur kulit yang hiper-realistis, lengkap dengan kotak kemasan dan latar studio ZBrush",
+        "image": "/assets/uploads/mvy19nt5-ferrari-69-smoke-and-speed.jpg",
+        "prompt": "Buat poster sinematik formula 1 dengan menampilkan [refer image]. Pertahankan wajah, rambur, bentuk dan sudut asli persis seperti pada gambar. Tampilkan orang tersebut dalam tiga perspektif : potret close-up tanpa helm mengenakan racing suit Ferrari berwarna merah dengan logo sponsor, tampak samping dengan helm balap bergaya Ferrari, dan tampilan tubuh penuh mengenakan racing suit Ferrari berwarna merah dengan logo sponsor.\nDi bagian bawah, letakkan mobil Ferrari yang sedang melakukan burnout dengan asap sekitar ban. Mobil harus menampilkan nomor balap \"69\" dengan jelas di bagian hidung dan sisi. Gunakan latar belakang merah tegas dengan nomor balap besar \"69\" di belakang karakter. Gaya keseluruhan harus ultra-realistis, resolusi tinggi, sinematik, dengan nuansa poster olahraga propesional.",
+        "category": "AI Portrait / Formula 1 / Motorsport / Racing Poster / Ferrari / Cinematic",
+        "tool": "ChatGPT Image Generation",
+        "note": "Buat poster balap Formula 1 bergaya sinematik dengan mempertahankan karakter wajah dari foto referensi. Gunakan tiga perspektif karakter, racing suit Ferrari merah, helm balap, dan mobil balap bernomor 69. Untuk hasil terbaik, unggah foto referensi dengan wajah yang jelas. Cocok untuk poster personal, wallpaper, konten media sosial, dan desain bertema motorsport. Logo dan sponsor dapat disesuaikan.",
+        "slug": "cinematic-ferrari-f1-racing-poster-driver-69",
         "date": "2026-11-01",
-        "prompt": "Generate a 1/7 scale collectible figurine of the characters from the provided image, designed in a realistic style and displayed within a real-life setting. The figurine should be positioned on a computer desk and mounted on a clear round acrylic base without any text or markings. On the computer screen, show the ZBrush sculpting process of this same figurine. Beside the monitor, place a toy packaging box in the style of BANDAI, printed with the original artwork. The packaging design should feature flat two-dimensional illustrations. Ensure all details remain consistent with the reference image."
-      },
-      {
-        "title": "The Poker Legend — Ultra-Realistic Cinematic Photography",
-        "status": "published",
-        "image": "/assets/uploads/mvxzor7w-cinematic-cardshark-in-a-warm-poker-room.jpg",
-        "prompt": "A dramatic cinematic portrait of a man sitting at a wooden table inside a dimly lit poker room with rustic wooden walls. Don't change the face of the man. His right hand extended forward as if commanding or tossing playing cards, while his left hand rests under his chin in a thoughtful gesture. Around him, dozens of playing cards float mid-air in dynamic motion blur, frozen in time, creating a sense of magic and mystery.\n\nThe background shows warm brown wooden panels, with a framed vintage photo slightly blurred behind him, enhancing the moody atmosphere. Lighting is warm, golden, and low-key, creating sharp contrast and shadows across his face, emphasizing his intense and focused expression.\n\nThe overall mood is dark, mysterious, and cinematic, with dramatic composition and shallow depth of field. The image is shot in hyper-realistic style, ultra-detailed textures on skin, hair, wood, and playing cards. The aesthetic is inspired by gritty poker-room vibes, like a mix of magician and gambler, captured with cinematic lighting, bokeh effect, and suspended motion.",
-        "category": "Cinematic Portrait / AI Photo Editing / Fantasy / Playing Cards",
-        "tool": "ChatGPT / Gemini / AI Image Generator",
-        "note": "Gunakan foto referensi dengan wajah yang terlihat jelas. Pertahankan identitas wajah, gaya rambut, dan proporsi asli. Hasil terbaik diperoleh dengan pencahayaan sinematik keemasan, kartu remi melayang yang realistis, serta latar ruangan kayu bernuansa misterius. Cocok untuk foto profil kreatif, konten media sosial, dan karya AI cinematic portrait.",
-        "slug": "the-master-of-cards-cinematic-portrait",
-        "date": "2026-11-01",
-        "id": "the-master-of-cards-cinematic-portrait"
-      },
-      {
-        "title": "From Photo to Collectible: The Ultimate AI Figure Studio",
-        "status": "published",
-        "image": "/assets/uploads/mvxzvnt8-sculptor-with-collectible-figure-and-box.jpg",
-        "prompt": "Create an ultra-realistic image of one of the people from the reference photo sitting at a computer desk in a real-world environment. The person is holding a 1/7 scale figurine of themselves that looks highly similar to them, crafted in a realistic style. The figurine is placed on a round, transparent acrylic base with no text or markings. On the computer screen in front of them, display the ZBrush modeling process of that same figurine, as if it is actively being sculpted in 3D. With their left hand, the person is also holding a toy packaging box styled like BANDAI products, printed with the original artwork of the character.\n\nThe overall scene should emphasize photorealistic textures: realistic skin details, reflections on the acrylic base, natural desk lighting, and authentic materials of the packaging box. The environment should look like a real modern workspace with accurate shadows, depth, and lighting, reinforcing the realism. The mood should feel professional yet creative, as if documenting the production of a high-quality collectible figure.",
-        "category": "AI Art / Action Figure / 3D Sculpting / Character Design / Collectible Toys / Photorealistic",
-        "tool": "ChatGPT Images / Gemini / AI Image Generator",
-        "note": "Ubah foto diri menjadi collectible action figure premium dengan detail wajah realistis, alas akrilik transparan, kemasan eksklusif, dan tampilan proses sculpting 3D di monitor. Gunakan foto referensi dengan wajah yang jelas untuk hasil yang lebih konsisten. Cocok untuk konten personal branding, kreator AI, kolektor figurine, dan portofolio digital.",
-        "slug": "ai-figure-studio-action-figure-koleksi-premium",
-        "date": "2026-11-01",
-        "id": "ai-figure-studio-action-figure-koleksi-premium"
-      },
-      {
-        "title": "Lunar Coffee Experience: Menikmati Kopi di Bulan dengan Pemandangan Bumi",
-        "status": "published",
-        "image": "/assets/uploads/mvy012q0-lunar-coffee-under-earthrise.jpg",
-        "prompt": "A cinematic, ultra-realistic image of a man (use the uploaded face photo and don't change the original face) sitting relaxed on a folding chair placed on the Moon’s rocky surface. He’s dressed in casual streetwear — white shirt, dark pants, and sneakers — holding a cup of hot coffee, steam rising gently into the air. Next to him is an empty folding chair with a small hand coffee grinder resting on it, adding a playful, surreal vibe.\n\nThe background reveals a stunning view of Earth rising over the horizon, glowing with vivid blue oceans, green continents, and twinkling city lights visible against the darkness of space. Stars fill the sky, enhancing the otherworldly atmosphere.\n\nLighting is soft yet dramatic, highlighting the man’s calm expression and the textures of the lunar surface. The scene balances realism with dreamlike qualities — everyday coffee ritual meets cosmic scale. Shot in hyper-detailed, photorealistic style with cinematic depth, sharp textures, and HDR clarity.",
-        "category": "AI Art / Cinematic Portrait / Surreal Photography / Space",
-        "tool": "ChatGPT / AI Image Generation",
-        "note": "Ubah foto diri menjadi potret sinematik di permukaan Bulan dengan secangkir kopi dan pemandangan Bumi yang spektakuler. Unggah foto referensi wajah untuk menjaga kemiripan karakter. Cocok untuk konten AI kreatif, personal branding, dan Instagram.",
-        "slug": "ai-portrait-pria-di-bulan-sambil-minum-kopi",
-        "date": "2026-11-01",
-        "id": "ai-portrait-pria-di-bulan-sambil-minum-kopi"
+        "id": "cinematic-ferrari-f1-racing-poster-driver-69"
       },
       {
         "title": "DANI #86 — Real Madrid Cinematic Football Poster",
@@ -829,6 +793,42 @@
         "id": "monochrome-elevator-fashion-portrait"
       },
       {
+        "title": "The Poker Legend — Ultra-Realistic Cinematic Photography",
+        "status": "published",
+        "image": "/assets/uploads/mvxzor7w-cinematic-cardshark-in-a-warm-poker-room.jpg",
+        "prompt": "A dramatic cinematic portrait of a man sitting at a wooden table inside a dimly lit poker room with rustic wooden walls. Don't change the face of the man. His right hand extended forward as if commanding or tossing playing cards, while his left hand rests under his chin in a thoughtful gesture. Around him, dozens of playing cards float mid-air in dynamic motion blur, frozen in time, creating a sense of magic and mystery.\n\nThe background shows warm brown wooden panels, with a framed vintage photo slightly blurred behind him, enhancing the moody atmosphere. Lighting is warm, golden, and low-key, creating sharp contrast and shadows across his face, emphasizing his intense and focused expression.\n\nThe overall mood is dark, mysterious, and cinematic, with dramatic composition and shallow depth of field. The image is shot in hyper-realistic style, ultra-detailed textures on skin, hair, wood, and playing cards. The aesthetic is inspired by gritty poker-room vibes, like a mix of magician and gambler, captured with cinematic lighting, bokeh effect, and suspended motion.",
+        "category": "Cinematic Portrait / AI Photo Editing / Fantasy / Playing Cards",
+        "tool": "ChatGPT / Gemini / AI Image Generator",
+        "note": "Gunakan foto referensi dengan wajah yang terlihat jelas. Pertahankan identitas wajah, gaya rambut, dan proporsi asli. Hasil terbaik diperoleh dengan pencahayaan sinematik keemasan, kartu remi melayang yang realistis, serta latar ruangan kayu bernuansa misterius. Cocok untuk foto profil kreatif, konten media sosial, dan karya AI cinematic portrait.",
+        "slug": "the-master-of-cards-cinematic-portrait",
+        "date": "2026-11-01",
+        "id": "the-master-of-cards-cinematic-portrait"
+      },
+      {
+        "title": "Cinematic Vintage Portrait: Pria Elegan dengan Motor Yamaha RX100",
+        "status": "published",
+        "image": "/assets/uploads/mvy13z6m-vintage-yamaha-portrait-by-weathered-wal.jpg",
+        "prompt": "Generate a cinematic outdoor portrait of a fashionable young man posed confidently beside a black Yamaha RX100 motorcycle. He is dressed in a dark brown button-up shirt paired with light brown trousers and black loafers, complemented by a wristwatch, bracelet, and sunglasses. The setting should include wild greenery and an aged concrete wall to enhance a rustic urban feel. Use moody, warm vintage tones to evoke a retro aesthetic. His facial expression should remain serious and composed, suggesting mystery and rugged sophistication. Ensure the face exactly matches the provided reference selfie—keep the same eyes, nose, cheeks, and skin texture.",
+        "category": "Portrait Pria / Motorcycle Photography / Vintage Aesthetic / Fashion Editorial",
+        "tool": "ChatGPT / AI Photo Editing",
+        "note": "Gunakan foto referensi wajah untuk mempertahankan identitas subjek, termasuk bentuk mata, hidung, pipi, tekstur kulit, dan gaya rambut. Hasil terbaik menggunakan pencahayaan natural, pose santai tetapi percaya diri, serta nuansa vintage sinematik. Cocok untuk personal branding, foto profil profesional, dan konten media sosial. Gunakan foto motor klasik hitam sebagai referensi tambahan jika tersedia.",
+        "slug": "portrait-pria-motor-yamaha-rx100-vintage",
+        "date": "2026-11-01",
+        "id": "app"
+      },
+      {
+        "id": "bhinneka-tunggal-ika-bersatu-di-bawah-merah-putih",
+        "slug": "realistic-1-7-scale-action-figure",
+        "status": "published",
+        "title": "AI FIGURE STUDIO",
+        "category": "Realistic 1/7 Scale Action Figure Studio",
+        "tool": "Midjourney / DALL-E 3, Chat GPT",
+        "image": "/assets/uploads/mvxzeds6-zbrush-sculpting-studio-figure-showcase.jpg",
+        "note": "Prompt khusus untuk membuat figur action skala 1/7 dengan detail tekstur kulit yang hiper-realistis, lengkap dengan kotak kemasan dan latar studio ZBrush",
+        "date": "2026-11-01",
+        "prompt": "Generate a 1/7 scale collectible figurine of the characters from the provided image, designed in a realistic style and displayed within a real-life setting. The figurine should be positioned on a computer desk and mounted on a clear round acrylic base without any text or markings. On the computer screen, show the ZBrush sculpting process of this same figurine. Beside the monitor, place a toy packaging box in the style of BANDAI, printed with the original artwork. The packaging design should feature flat two-dimensional illustrations. Ensure all details remain consistent with the reference image."
+      },
+      {
         "title": "Ultra-Realistic Jet Ski Adventure — Tropical Ocean Portrait",
         "status": "published",
         "image": "/assets/uploads/mvy0ripk-jet-ski-adventure-along-tropical-shores.jpg",
@@ -853,28 +853,28 @@
         "id": "yakuza-boss-cinematic-kabukicho"
       },
       {
-        "title": "Cinematic Vintage Portrait: Pria Elegan dengan Motor Yamaha RX100",
+        "title": "Lunar Coffee Experience: Menikmati Kopi di Bulan dengan Pemandangan Bumi",
         "status": "published",
-        "image": "/assets/uploads/mvy13z6m-vintage-yamaha-portrait-by-weathered-wal.jpg",
-        "prompt": "Generate a cinematic outdoor portrait of a fashionable young man posed confidently beside a black Yamaha RX100 motorcycle. He is dressed in a dark brown button-up shirt paired with light brown trousers and black loafers, complemented by a wristwatch, bracelet, and sunglasses. The setting should include wild greenery and an aged concrete wall to enhance a rustic urban feel. Use moody, warm vintage tones to evoke a retro aesthetic. His facial expression should remain serious and composed, suggesting mystery and rugged sophistication. Ensure the face exactly matches the provided reference selfie—keep the same eyes, nose, cheeks, and skin texture.",
-        "category": "Portrait Pria / Motorcycle Photography / Vintage Aesthetic / Fashion Editorial",
-        "tool": "ChatGPT / AI Photo Editing",
-        "note": "Gunakan foto referensi wajah untuk mempertahankan identitas subjek, termasuk bentuk mata, hidung, pipi, tekstur kulit, dan gaya rambut. Hasil terbaik menggunakan pencahayaan natural, pose santai tetapi percaya diri, serta nuansa vintage sinematik. Cocok untuk personal branding, foto profil profesional, dan konten media sosial. Gunakan foto motor klasik hitam sebagai referensi tambahan jika tersedia.",
-        "slug": "portrait-pria-motor-yamaha-rx100-vintage",
+        "image": "/assets/uploads/mvy012q0-lunar-coffee-under-earthrise.jpg",
+        "prompt": "A cinematic, ultra-realistic image of a man (use the uploaded face photo and don't change the original face) sitting relaxed on a folding chair placed on the Moon’s rocky surface. He’s dressed in casual streetwear — white shirt, dark pants, and sneakers — holding a cup of hot coffee, steam rising gently into the air. Next to him is an empty folding chair with a small hand coffee grinder resting on it, adding a playful, surreal vibe.\n\nThe background reveals a stunning view of Earth rising over the horizon, glowing with vivid blue oceans, green continents, and twinkling city lights visible against the darkness of space. Stars fill the sky, enhancing the otherworldly atmosphere.\n\nLighting is soft yet dramatic, highlighting the man’s calm expression and the textures of the lunar surface. The scene balances realism with dreamlike qualities — everyday coffee ritual meets cosmic scale. Shot in hyper-detailed, photorealistic style with cinematic depth, sharp textures, and HDR clarity.",
+        "category": "AI Art / Cinematic Portrait / Surreal Photography / Space",
+        "tool": "ChatGPT / AI Image Generation",
+        "note": "Ubah foto diri menjadi potret sinematik di permukaan Bulan dengan secangkir kopi dan pemandangan Bumi yang spektakuler. Unggah foto referensi wajah untuk menjaga kemiripan karakter. Cocok untuk konten AI kreatif, personal branding, dan Instagram.",
+        "slug": "ai-portrait-pria-di-bulan-sambil-minum-kopi",
         "date": "2026-11-01",
-        "id": "app"
+        "id": "ai-portrait-pria-di-bulan-sambil-minum-kopi"
       },
       {
-        "title": "Cinematic Ferrari F1 Racing Poster — Custom Driver #69",
+        "title": "From Photo to Collectible: The Ultimate AI Figure Studio",
         "status": "published",
-        "image": "/assets/uploads/mvy19nt5-ferrari-69-smoke-and-speed.jpg",
-        "prompt": "Buat poster sinematik formula 1 dengan menampilkan [refer image]. Pertahankan wajah, rambur, bentuk dan sudut asli persis seperti pada gambar. Tampilkan orang tersebut dalam tiga perspektif : potret close-up tanpa helm mengenakan racing suit Ferrari berwarna merah dengan logo sponsor, tampak samping dengan helm balap bergaya Ferrari, dan tampilan tubuh penuh mengenakan racing suit Ferrari berwarna merah dengan logo sponsor.\nDi bagian bawah, letakkan mobil Ferrari yang sedang melakukan burnout dengan asap sekitar ban. Mobil harus menampilkan nomor balap \"69\" dengan jelas di bagian hidung dan sisi. Gunakan latar belakang merah tegas dengan nomor balap besar \"69\" di belakang karakter. Gaya keseluruhan harus ultra-realistis, resolusi tinggi, sinematik, dengan nuansa poster olahraga propesional.",
-        "category": "AI Portrait / Formula 1 / Motorsport / Racing Poster / Ferrari / Cinematic",
-        "tool": "ChatGPT Image Generation",
-        "note": "Buat poster balap Formula 1 bergaya sinematik dengan mempertahankan karakter wajah dari foto referensi. Gunakan tiga perspektif karakter, racing suit Ferrari merah, helm balap, dan mobil balap bernomor 69. Untuk hasil terbaik, unggah foto referensi dengan wajah yang jelas. Cocok untuk poster personal, wallpaper, konten media sosial, dan desain bertema motorsport. Logo dan sponsor dapat disesuaikan.",
-        "slug": "cinematic-ferrari-f1-racing-poster-driver-69",
+        "image": "/assets/uploads/mvxzvnt8-sculptor-with-collectible-figure-and-box.jpg",
+        "prompt": "Create an ultra-realistic image of one of the people from the reference photo sitting at a computer desk in a real-world environment. The person is holding a 1/7 scale figurine of themselves that looks highly similar to them, crafted in a realistic style. The figurine is placed on a round, transparent acrylic base with no text or markings. On the computer screen in front of them, display the ZBrush modeling process of that same figurine, as if it is actively being sculpted in 3D. With their left hand, the person is also holding a toy packaging box styled like BANDAI products, printed with the original artwork of the character.\n\nThe overall scene should emphasize photorealistic textures: realistic skin details, reflections on the acrylic base, natural desk lighting, and authentic materials of the packaging box. The environment should look like a real modern workspace with accurate shadows, depth, and lighting, reinforcing the realism. The mood should feel professional yet creative, as if documenting the production of a high-quality collectible figure.",
+        "category": "AI Art / Action Figure / 3D Sculpting / Character Design / Collectible Toys / Photorealistic",
+        "tool": "ChatGPT Images / Gemini / AI Image Generator",
+        "note": "Ubah foto diri menjadi collectible action figure premium dengan detail wajah realistis, alas akrilik transparan, kemasan eksklusif, dan tampilan proses sculpting 3D di monitor. Gunakan foto referensi dengan wajah yang jelas untuk hasil yang lebih konsisten. Cocok untuk konten personal branding, kreator AI, kolektor figurine, dan portofolio digital.",
+        "slug": "ai-figure-studio-action-figure-koleksi-premium",
         "date": "2026-11-01",
-        "id": "cinematic-ferrari-f1-racing-poster-driver-69"
+        "id": "ai-figure-studio-action-figure-koleksi-premium"
       }
     ]
   }
