@@ -803,6 +803,18 @@
         "slug": "ai-portrait-pria-di-bulan-sambil-minum-kopi",
         "date": "2026-11-01",
         "id": "ai-portrait-pria-di-bulan-sambil-minum-kopi"
+      },
+      {
+        "title": "DANI #86 — Real Madrid Cinematic Football Poster",
+        "status": "published",
+        "image": "/assets/uploads/mvy08sk4-dani-86-real-madrid-storm-poster.jpg",
+        "prompt": "Buatlah sebuah poster sepak bola profesional bergaya sinematik yang menampilkan [gambar referensi].Pertahankan wajah, rambut, bentuk, dan sudut asli persis seperti pada gambar. Tampilkan orang tersebut dalam tiga perspektif:\n\nPotret close-up dengan jersey Real madrid 2025.\n\nTampak samping memakai jersey real madrid 2025 dengan nama punggung DANI.\n\nFoto tubuh penuh dengan perlengkapan sepak bola lengkap (jersey Real madrid 2025, celana pendek, kaus kaki, dan sepatu bola) beserta logo sponsor.\nTambahkan logo Real madrid di pojok kanan atas.\nDi bagian bawah, tampilkan adegan dinamis saat pemain melakukan aksi bicycle kick lompat tinggi dengan efek motion blur dan rumput beterbangan. Jersey harus jelas menampilkan nomor 86 di bagian depan, belakang, dan celana pendek.\n\nGunakan latar belakang stadion Old Trafford biru gelap navy dengan nomor besar 86 dan nama “DANI” yang menyala di belakang karakter.\n\nGaya keseluruhan harus ultra-realistis, resolusi tinggi, sinematik, dan bernuansa poster olahraga profesional.\nTambahkan logo Real Madrid di pojok kanan atas.",
+        "category": "Sepak Bola / Olahraga / Poster Pemain / Real Madrid / AI Art",
+        "tool": "ChatGPT Images / Gemini / AI Image Generator",
+        "note": "Unggah foto referensi wajah dengan pencahayaan jelas agar identitas karakter lebih konsisten. Gunakan rasio 4:5 untuk poster profesional. Periksa kembali nomor 86, nama DANI, dan logo klub karena teks serta lambang pada gambar AI mungkin perlu diperbaiki secara manual.",
+        "slug": "poster-sepak-bola-dani-86-real-madrid",
+        "date": "2026-11-01",
+        "id": "poster-sepak-bola-dani-86-real-madrid"
       }
     ]
   }
