@@ -791,6 +791,18 @@
         "slug": "ai-figure-studio-action-figure-koleksi-premium",
         "date": "2026-11-01",
         "id": "ai-figure-studio-action-figure-koleksi-premium"
+      },
+      {
+        "title": "Lunar Coffee Experience: Menikmati Kopi di Bulan dengan Pemandangan Bumi",
+        "status": "published",
+        "image": "/assets/uploads/mvy012q0-lunar-coffee-under-earthrise.jpg",
+        "prompt": "A cinematic, ultra-realistic image of a man (use the uploaded face photo and don't change the original face) sitting relaxed on a folding chair placed on the Moon’s rocky surface. He’s dressed in casual streetwear — white shirt, dark pants, and sneakers — holding a cup of hot coffee, steam rising gently into the air. Next to him is an empty folding chair with a small hand coffee grinder resting on it, adding a playful, surreal vibe.\n\nThe background reveals a stunning view of Earth rising over the horizon, glowing with vivid blue oceans, green continents, and twinkling city lights visible against the darkness of space. Stars fill the sky, enhancing the otherworldly atmosphere.\n\nLighting is soft yet dramatic, highlighting the man’s calm expression and the textures of the lunar surface. The scene balances realism with dreamlike qualities — everyday coffee ritual meets cosmic scale. Shot in hyper-detailed, photorealistic style with cinematic depth, sharp textures, and HDR clarity.",
+        "category": "AI Art / Cinematic Portrait / Surreal Photography / Space",
+        "tool": "ChatGPT / AI Image Generation",
+        "note": "Ubah foto diri menjadi potret sinematik di permukaan Bulan dengan secangkir kopi dan pemandangan Bumi yang spektakuler. Unggah foto referensi wajah untuk menjaga kemiripan karakter. Cocok untuk konten AI kreatif, personal branding, dan Instagram.",
+        "slug": "ai-portrait-pria-di-bulan-sambil-minum-kopi",
+        "date": "2026-11-01",
+        "id": "ai-portrait-pria-di-bulan-sambil-minum-kopi"
       }
     ]
   }
