@@ -911,6 +911,18 @@
         "slug": "cinematic-black-fashion-portrait-golden-hour-studio",
         "date": "2026-11-01",
         "id": "cinematic-black-fashion-portrait-golden-hour-studio"
+      },
+      {
+        "title": "Figurine 3D Premium PlayStation — Custom Collector Edition",
+        "status": "published",
+        "image": "/assets/uploads/mvy28bni-playstation-6-gaming-diorama-1.jpg",
+        "prompt": "Create a hyper-detailed 3D cartoon-style figurine displayed inside a premium glass showcase box. The figurine is modeled after the person in the reference photo (keep the same face features). He holds a realistic PlayStation 6 DualSense controller with both hands in front of him. Inside the display case, include a background setup inspired by PlayStation aesthetics: a glowing PlayStation 6 console standing vertically, illuminated with blue LED light; a stone pillar engraved with the iconic PlayStation symbols (△ ○ × □); a small futuristic robot mascot resembling Astro Bot standing on moss-covered rocks; and decorative gaming elements such as a glowing mushroom, wooden crate, and scattered stones with green plants growing around them.\n\nThe floor is designed like a mini diorama with natural moss, rocks, and soil textures, lit with subtle ambient lighting. The entire showcase base is sleek black with a glowing neon “PlayStation” logo on the front. Render with cinematic lighting, glowing reflections on the glass, soft blue navy LED highlights, and ultra-realistic 3D toy/collectible figurine style. Ensure the overall look is polished, vibrant, and stylized like a premium PlayStation collector’s edition display.",
+        "category": "PlayStation, Gaming, 3D Figurine, Collectible, AI Art, Diorama",
+        "tool": "ChatGPT Image Generation, AI Image Editing",
+        "note": "Ubah foto referensi menjadi figurine 3D bergaya collectible premium di dalam kotak kaca dengan pencahayaan neon biru khas PlayStation. Pertahankan ciri wajah, gaya rambut, dan identitas visual subjek. Tambahkan konsol PlayStation, controller DualSense, robot futuristik, pilar simbol PlayStation, batu berlumut, tanaman mini, dan alas hitam dengan logo bercahaya. Gunakan pencahayaan sinematik, tekstur realistis, refleksi kaca, detail tajam, serta komposisi profesional seperti produk koleksi eksklusif.",
+        "slug": "figurine-3d-playstation-collector-edition",
+        "date": "2026-11-01",
+        "id": "figurine-3d-playstation-collector-edition"
       }
     ]
   }
