@@ -180,4 +180,9 @@ judul, gambar contoh (PNG/JPG, ideal 1080×1080 atau 1080×1350), isi prompt len
 - Tombol Copy bekerja juga di browser bawaan Instagram/Facebook/TikTok (ada cadangan otomatis; jika tetap diblokir, teks prompt ditandai agar bisa ditekan lama → Salin).
 - Di bawah daftar prompt bisa ditampilkan 1 produk berbayar (atur "Produk yang ditawarkan" di tab Prompt AI).
 - 3 prompt terbaru juga tampil di halaman `/products/`.
+**Tampilan slider (v8):** kartu ringkas 4 per baris di desktop (3 di tablet, ±2 di HP) dalam slider — geser dengan jari,
+drag mouse, atau tombol panah. Ketuk kartu → panel detail berisi prompt lengkap, info "Dipakai di" & panjang prompt,
+Copy Prompt, Bagikan; geser gambar ke kiri/kanan untuk pindah prompt. Tombol **Grid** menampilkan semua prompt 4 kolom.
+Topik ditulis dipisah " / " atau koma (mis. `AI Art / Cinematic Portrait`) — muncul sebagai filter. Mulai 9 prompt,
+slider tambahan per topik muncul otomatis.
 - File: `src/store/PromptLibrary.jsx`, `src/store/prompts.js`; halaman statis dibuat di `vite.config.js`.

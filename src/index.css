@@ -382,3 +382,10 @@ input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; appe
   100% { box-shadow: 0 0 0 1px rgba(245,196,81,.35), 0 30px 70px -30px rgba(245,196,81,.35); }
 }
 @media (prefers-reduced-motion: reduce) { .prompt-focus { animation: none; box-shadow: 0 0 0 1px rgba(245,196,81,.45); } }
+
+/* Prompt carousel: native swipe on touch, drag-to-swipe with the mouse */
+.prompt-track { scroll-behavior: smooth; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; }
+@media (hover: hover) and (pointer: fine) { .prompt-track { cursor: grab; } }
+.prompt-track.is-dragging { cursor: grabbing; scroll-snap-type: none; scroll-behavior: auto; user-select: none; }
+.prompt-track.is-dragging * { pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { .prompt-track { scroll-behavior: auto; } }

@@ -14,14 +14,29 @@ export function visiblePrompts(list = [], preview = false) {
     .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")));
 }
 
+/** "AI Art / Cinematic Portrait, Space" → ["AI Art", "Cinematic Portrait", "Space"]; "1/7 Scale" stays whole */
+export const splitList = (v) =>
+  String(v || "")
+    .split(/\s+\/\s+|\s*[,|;]\s*/) // "A / B" or "A, B" — but keep "1/7" intact
+    .map((x) => x.trim())
+    .filter(Boolean);
+
+/** Unique topic tags across prompts, most used first. */
 export function promptTags(list = []) {
-  const seen = new Map();
-  for (const p of list) {
-    const t = String(p.category || "").trim();
-    if (t) seen.set(t.toLowerCase(), t);
-  }
-  return [...seen.values()];
+  const count = new Map();
+  for (const p of list)
+    for (const t of splitList(p.category)) {
+      const k = t.toLowerCase();
+      const cur = count.get(k) || { label: t, n: 0 };
+      cur.n += 1;
+      count.set(k, cur);
+    }
+  return [...count.values()].sort((a, b) => b.n - a.n || a.label.localeCompare(b.label)).map((x) => x.label);
 }
+
+export const hasTag = (p, tag) => !tag || splitList(p.category).some((t) => t.toLowerCase() === tag.toLowerCase());
+
+export const wordCount = (s) => (String(s || "").trim().match(/\S+/g) || []).length;
 
 export function matchesPrompt(p, q) {
   const s = q.trim().toLowerCase();
