@@ -827,6 +827,18 @@
         "slug": "monochrome-elevator-fashion-portrait",
         "date": "2026-11-01",
         "id": "monochrome-elevator-fashion-portrait"
+      },
+      {
+        "title": "Ultra-Realistic Jet Ski Adventure — Tropical Ocean Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mvy0ripk-jet-ski-adventure-along-tropical-shores.jpg",
+        "prompt": "Create a hyper-realistic photo of me riding a jet ski. I must appear exactly the same: sitting on a sleek black-and-orange jet ski, moving fast across the ocean. I’m dressed in a simple long-sleeved black shirt, black shorts, and an orange life vest. A watch is visible on my right wrist. My short black hair is slightly windblown, and I’m smiling naturally (not too wide) while looking toward the camera.\n\nMy left hand grips the handlebar, steering the jet ski, while my right hand stretches outward as if playfully reaching toward the seawater — capturing both energy and relaxation. The modern jet ski cuts powerfully through the waves, sending up dramatic splashes as it speeds over the surface.\n\nThe shot is taken from a medium-to-distant angle, showing my full body and the entire jet ski clearly. The backdrop is a wide expanse of sea with rolling waves, under a bright blue sky. In the distance, a tropical shoreline is faintly visible.\n\nThe style must be ultra-photorealistic, as if shot with a professional DSLR in 4K: crisp textures, realistic skin, natural sunlight, strong shadows, vivid ocean colors, and lifelike proportions. The atmosphere should feel bright, energetic, and immersive, filled with motion and vibrant tropical tones. Output in portrait orientation, 9:16 ratio.",
+        "category": "AI Portrait / Jet Ski / Adventure / Ocean / Lifestyle / Photorealistic",
+        "tool": "ChatGPT Image Generation / AI Photo Editing",
+        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan identitas, bentuk wajah, gaya rambut, dan proporsi tubuh. Untuk hasil terbaik, gunakan foto referensi berkualitas tinggi. Pastikan seluruh tubuh dan jet ski terlihat jelas, percikan air tampak realistis, serta tangan dan jari terbentuk secara natural. Format vertikal 9:16, cocok untuk Instagram Reels, TikTok, dan YouTube Shorts.",
+        "slug": "ultra-realistic-jet-ski-adventure-tropical-ocean-portrait",
+        "date": "2026-11-01",
+        "id": "ultra-realistic-jet-ski-adventure-tropical-ocean-portrait"
       }
     ]
   }
