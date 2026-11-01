@@ -146,7 +146,7 @@ export default function CartDrawer() {
                     <BagIcon width={28} height={28} />
                   </span>
                   <p className="mt-5 font-display text-xl font-bold text-white">Your cart is empty</p>
-                  <p className="mt-2 max-w-xs text-sm text-slate-400">Add products you’re interested in and pay for them securely on Mayar.</p>
+                  <p className="mt-2 max-w-xs text-sm text-slate-400">Save the products you like here, then check out in a few taps.</p>
                   <button
                     type="button"
                     onClick={() => {
@@ -199,7 +199,7 @@ export default function CartDrawer() {
                             className="ripple mt-3 flex items-center justify-center gap-2 rounded-xl border border-cream/30 bg-cream/10 px-4 py-2.5 text-xs font-bold text-cream transition-colors hover:bg-cream hover:text-ink"
                           >
                             <LockIcon className="relative z-10" width={14} height={14} />
-                            <span className="relative z-10">Pay for this item on Mayar</span>
+                            <span className="relative z-10">Buy this item</span>
                             <ExternalIcon className="relative z-10 opacity-70" width={13} height={13} />
                           </a>
                         )}
@@ -228,21 +228,21 @@ export default function CartDrawer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onPointerDown={ripple}
-                    className="ripple cta-glow mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-cream px-6 py-4 text-sm font-bold text-ink"
+                    className="ripple cta-gold mt-5 flex w-full items-center justify-center gap-2 rounded-full px-6 py-4 text-sm font-bold text-slate-950"
                   >
                     <LockIcon className="relative z-10" width={16} height={16} />
-                    <span className="relative z-10">Checkout securely on Mayar</span>
+                    <span className="relative z-10">Buy now</span>
                     <ExternalIcon className="relative z-10 opacity-60" width={14} height={14} />
                   </a>
                 ) : (
                   <p className="mt-4 rounded-2xl border border-cyan-300/20 bg-cyan-300/5 px-4 py-3 text-xs leading-relaxed text-cyan-100/90">
-                    Each digital product has its own secure Mayar checkout, so you pay for items one by one using the
-                    <b className="text-cream"> Pay for this item</b> buttons above. Your cart stays saved on this device.
+                    Each product has its own quick, secure checkout — tap
+                    <b className="text-amber-200"> Buy this item</b> on any product above. Your cart stays saved on this device.
                   </p>
                 )}
 
                 <p className="mt-4 flex items-center justify-center gap-1.5 text-center text-[11px] text-slate-500">
-                  <ShieldIcon width={13} height={13} /> Payments are processed by Mayar. This site never sees your payment details.
+                  <ShieldIcon width={13} height={13} /> Encrypted, secure payment · QRIS, bank transfer & e-wallet
                 </p>
                 <button type="button" onClick={clear} className="mx-auto mt-3 block text-xs text-slate-500 underline-offset-4 hover:text-slate-300 hover:underline">
                   Clear cart

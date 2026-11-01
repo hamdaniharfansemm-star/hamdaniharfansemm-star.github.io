@@ -41,11 +41,25 @@ const productStatus = [
 ];
 
 const storeCategories = [
-  { value: "ebooks", label: "Modules & E-books" },
-  { value: "blueprints", label: "Blueprints" },
-  { value: "apps", label: "Apps" },
-  { value: "courses", label: "Online Courses" },
-  { value: "templates", label: "Templates & Source Code" },
+  { value: "ebooks", label: "Modules & E-books (mockup buku 3D)" },
+  { value: "blueprints", label: "Blueprints (mockup tablet)" },
+  { value: "apps", label: "Mobile Apps (mockup ponsel)" },
+  { value: "ai-tools", label: "AI Tools (mockup tablet)" },
+  { value: "templates", label: "Source Code & Templates (mockup laptop)" },
+  { value: "courses", label: "Online Courses (mockup tablet)" },
+]
+
+const glyphOptions = [
+  { value: "bolt", label: "Petir (instan)" },
+  { value: "target", label: "Target (praktis)" },
+  { value: "file", label: "Dokumen (format)" },
+  { value: "shield", label: "Perisai (aman)" },
+  { value: "qr", label: "QRIS" },
+  { value: "infinity", label: "Tak terbatas (seumur hidup)" },
+  { value: "lock", label: "Gembok" },
+  { value: "mail", label: "Email" },
+  { value: "star", label: "Bintang" },
+  { value: "check", label: "Centang" },
 ];
 
 export const tabs = [
@@ -320,6 +334,8 @@ export const tabs = [
         fields: [
           { key: "name", type: "text", label: "Nama produk" },
           { key: "status", type: "select", label: "Status", options: () => productStatus },
+          { key: "lang", type: "select", label: "Bahasa halaman produk", options: () => [{ value: "id", label: "Bahasa Indonesia (tombol 'Beli Sekarang')" }, { value: "en", label: "English" }] },
+          { key: "spotlight", type: "checkbox", label: "Tampilkan besar di atas katalog (Spotlight dengan mockup tablet)" },
           { key: "category", type: "select", label: "Kategori", options: () => storeCategories },
           {
             key: "slug",
@@ -352,6 +368,47 @@ export const tabs = [
           { key: "featured", type: "checkbox", label: "Tampilkan sebagai produk unggulan (Featured)" },
           { key: "bestseller", type: "checkbox", label: "Tandai 'Bestseller' (hanya jika memang terlaris menurut data penjualan Mayar)" },
           { key: "releaseDate", type: "text", inputType: "date", label: "Tanggal rilis", help: "Label 'New' otomatis tampil 45 hari sejak tanggal ini." },
+          {
+            key: "highlights",
+            type: "list",
+            label: "Keunggulan utama (3 poin)",
+            compact: true,
+            itemTitle: (it) => it.title || "Keunggulan baru",
+            newItem: { icon: "check" },
+            fields: [
+              { key: "icon", type: "select", label: "Ikon", options: () => glyphOptions },
+              { key: "title", type: "text", label: "Judul", placeholder: "Akses Instan" },
+              { key: "text", type: "textarea", label: "Penjelasan singkat", rows: 2 },
+            ],
+          },
+          {
+            key: "guarantees",
+            type: "list",
+            label: "Jaminan pembayaran & akses",
+            compact: true,
+            itemTitle: (it) => it.title || "Jaminan baru",
+            newItem: { icon: "shield" },
+            fields: [
+              { key: "icon", type: "select", label: "Ikon", options: () => glyphOptions },
+              { key: "title", type: "text", label: "Judul", placeholder: "Pembayaran aman via Mayar" },
+              { key: "text", type: "textarea", label: "Penjelasan singkat", rows: 2 },
+            ],
+          },
+          {
+            key: "testimonials",
+            type: "list",
+            label: "Testimoni pembeli",
+            help: "Hanya testimoni ASLI dari pembeli, dengan izin mereka. Bagian ini otomatis tersembunyi selama kosong.",
+            itemTitle: (it) => (it.name ? `${it.name}${it.rating ? ` · ${it.rating}★` : ""}` : "Testimoni baru"),
+            newItem: { rating: "5" },
+            fields: [
+              { key: "name", type: "text", label: "Nama pembeli" },
+              { key: "role", type: "text", label: "Profesi / peran", placeholder: "Content Creator" },
+              { key: "rating", type: "select", label: "Bintang", options: () => ["5", "4", "3", "2", "1"].map((v) => ({ value: v, label: `${v} ★` })) },
+              { key: "text", type: "textarea", label: "Isi testimoni", rows: 3 },
+              { key: "photo", type: "image", label: "Foto (opsional, dengan izin)" },
+            ],
+          },
           { key: "problems", type: "lines", label: "Masalah yang diselesaikan", help: "Satu per baris" },
           { key: "features", type: "lines", label: "Isi / fitur produk", help: "Satu per baris" },
           { key: "audience", type: "lines", label: "Target pengguna", help: "Satu per baris" },

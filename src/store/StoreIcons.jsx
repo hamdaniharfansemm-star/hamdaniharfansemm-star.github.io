@@ -94,7 +94,33 @@ export const CloseSmall = (p) => (
   </svg>
 );
 
+export const SparkIcon = (p) => (
+  <svg {...base} {...p}>
+    <path d="M12 3v3M12 18v3M3 12h3M18 12h3" />
+    <path d="m12 7 1.6 3.4L17 12l-3.4 1.6L12 17l-1.6-3.4L7 12l3.4-1.6z" />
+  </svg>
+);
+export const EyeIcon = (p) => (
+  <svg {...base} width={16} height={16} {...p}>
+    <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" />
+    <circle cx="12" cy="12" r="3" />
+  </svg>
+);
+export const BagIcon = (p) => (
+  <svg {...base} width={16} height={16} {...p}>
+    <path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z" />
+    <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+  </svg>
+);
+export const BagPlusIcon = (p) => (
+  <svg {...base} width={18} height={18} {...p}>
+    <path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z" />
+    <path d="M9 8V6a3 3 0 0 1 6 0v2M12 12v5M9.5 14.5h5" />
+  </svg>
+);
+
 export const categoryIcon = {
+  "ai-tools": SparkIcon,
   ebooks: BookIcon,
   blueprints: BlueprintIcon,
   apps: AppIcon,

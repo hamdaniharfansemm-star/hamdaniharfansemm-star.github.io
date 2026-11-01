@@ -458,8 +458,8 @@
         "text": "Products are drawn from apps I have designed, built and released — including DScan and DNotes on Google Play."
       },
       {
-        "title": "Secure checkout by Mayar",
-        "text": "Payments are completed on Mayar’s checkout page. This website never sees or stores your payment details."
+        "title": "Secure, encrypted checkout",
+        "text": "Pay with QRIS, bank transfer or e-wallet on an encrypted checkout page. This website never sees or stores your payment details."
       },
       {
         "title": "Clear before you buy",
@@ -471,6 +471,102 @@
       }
     ],
     "products": [
+      {
+        "id": "blueprint-prompt-kelas-dunia",
+        "slug": "blueprint-prompt-kelas-dunia",
+        "status": "draft",
+        "lang": "id",
+        "spotlight": true,
+        "featured": true,
+        "bestseller": false,
+        "releaseDate": "2026-10-31",
+        "category": "blueprints",
+        "name": "Blueprint Prompt yang Mengubah Pertanyaan Biasa Menjadi Jawaban Kelas Dunia",
+        "shortDescription": "Kerangka prompt siap pakai untuk mengubah pertanyaan sederhana menjadi jawaban AI yang tajam, terstruktur, dan berkualitas profesional.",
+        "description": "Kualitas jawaban AI sangat ditentukan oleh cara Anda bertanya. Blueprint ini memberi Anda kerangka prompt yang tinggal disalin dan disesuaikan, sehingga pertanyaan sehari-hari berubah menjadi instruksi yang jelas — dan jawaban yang Anda dapat menjadi jauh lebih berguna.",
+        "price": "99000",
+        "originalPrice": "2800000",
+        "currency": "IDR",
+        "checkoutUrl": "",
+        "coverImage": "",
+        "gallery": [],
+        "highlights": [
+          {
+            "icon": "bolt",
+            "title": "Akses Instan",
+            "text": "Produk langsung bisa diakses begitu pembayaran berhasil."
+          },
+          {
+            "icon": "target",
+            "title": "100% Praktis",
+            "text": "Kerangka yang tinggal disalin, disesuaikan, dan dipakai untuk kebutuhan Anda."
+          },
+          {
+            "icon": "file",
+            "title": "Format Siap Pakai",
+            "text": "Tersusun rapi sehingga bisa langsung digunakan tanpa perlu menyusun ulang."
+          }
+        ],
+        "guarantees": [
+          {
+            "icon": "shield",
+            "title": "Pembayaran aman & terenkripsi",
+            "text": "Transaksi diproses di halaman pembayaran terenkripsi. Website ini tidak menyimpan data pembayaran Anda."
+          },
+          {
+            "icon": "qr",
+            "title": "QRIS, VA bank & e-wallet",
+            "text": "Bayar dengan metode yang paling nyaman untuk Anda."
+          },
+          {
+            "icon": "bolt",
+            "title": "Akses instan",
+            "text": "Akses produk diberikan otomatis setelah pembayaran terkonfirmasi."
+          },
+          {
+            "icon": "infinity",
+            "title": "Akses seumur hidup",
+            "text": "Sekali beli, produk bisa Anda akses kapan saja."
+          }
+        ],
+        "problems": [],
+        "features": [],
+        "audience": [],
+        "curriculum": [],
+        "specifications": [
+          {
+            "label": "Format",
+            "value": "[ISI: format file, mis. PDF]"
+          },
+          {
+            "label": "Bahasa",
+            "value": "Bahasa Indonesia"
+          },
+          {
+            "label": "Akses",
+            "value": "Seumur hidup"
+          }
+        ],
+        "testimonials": [],
+        "faq": [
+          {
+            "q": "Bagaimana cara akses file setelah pembayaran?",
+            "a": "Setelah pembayaran berhasil, akses produk diberikan otomatis. Pastikan email yang Anda isi saat checkout aktif agar detail akses bisa diterima. Jika ada kendala, hubungi saya lewat WhatsApp."
+          },
+          {
+            "q": "Format file apa yang didapat?",
+            "a": "[ISI: format file yang Anda berikan, mis. PDF yang bisa dibuka di HP & laptop]"
+          },
+          {
+            "q": "Metode pembayaran apa saja yang tersedia?",
+            "a": "Pembayaran mendukung QRIS, transfer Virtual Account bank, serta e-wallet."
+          },
+          {
+            "q": "Apakah aksesnya berlaku selamanya?",
+            "a": "Ya. Sekali beli, Anda bisa mengakses produk ini kapan saja tanpa biaya tambahan."
+          }
+        ]
+      },
       {
         "id": "demo-launch-playbook",
         "slug": "demo-android-launch-playbook",

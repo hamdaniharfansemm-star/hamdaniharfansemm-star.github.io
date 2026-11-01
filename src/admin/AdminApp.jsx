@@ -248,6 +248,7 @@ function prepareForSave(data) {
     else if (!/mayar|myr\.id/i.test(p.checkoutUrl)) warnings.push(`Link checkout "${name}" sepertinya bukan link Mayar. Pastikan sudah benar.`);
     if (p.price === "" || p.price === undefined) warnings.push(`Produk "${name}" belum punya harga.`);
     if (!p.category) warnings.push(`Produk "${name}" belum punya kategori.`);
+    if (JSON.stringify(p).includes("[ISI")) warnings.push(`Produk "${name}" masih berisi teks [ISI: …] yang perlu dilengkapi sebelum tampil ke publik.`);
   });
   if (!d.profile?.name?.trim()) warnings.push("Nama di Profil kosong.");
   return { data: d, warnings };

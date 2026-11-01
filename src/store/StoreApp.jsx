@@ -5,7 +5,8 @@ import Footer from "../components/Footer.jsx";
 import { profile } from "../data/portfolio.js";
 import content from "../data/content.json";
 import { fadeUp, softSpring, spring } from "../lib/motion.js";
-import { CATEGORIES, categoryById, checkoutUrlOf, isPublished, matchesQuery, relatedProducts, visibleProducts } from "./catalog.js";
+import { CATEGORIES, SORTS, categoryById, checkoutUrlOf, discountPercent, isPublished, matchesQuery, relatedProducts, sortProducts, visibleProducts } from "./catalog.js";
+import { DeviceMockup, Glyph, GuaranteeStrip, StickyBuyBar, Testimonials, ValueProps, tFor } from "./SalesParts.jsx";
 import { AddToCartButton, AskLink, Badges, BuyButton, Cover, Price, ProductCard } from "./ProductParts.jsx";
 import { CartProvider, canAddToCart } from "./cart.jsx";
 import CartDrawer, { CartButton } from "./CartDrawer.jsx";
@@ -23,6 +24,8 @@ function readRoute() {
     slug: fromPath || params.get("item") || "",
     q: params.get("q") || "",
     category: params.get("category") || "all",
+    sort: params.get("sort") || "featured",
+    source: (params.get("utm_source") || params.get("ref") || params.get("from") || "").toLowerCase(),
   };
 }
 
@@ -37,6 +40,7 @@ export default function StoreApp() {
       <div className="store-mesh" aria-hidden>
         <i /><i /><i /><i />
       </div>
+      <CursorGlow />
       <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-cream focus:px-4 focus:py-2 focus:text-ink">
         Skip to content
       </a>
@@ -66,31 +70,54 @@ function Catalog({ products, route }) {
   const [q, setQ] = useState(route.q);
   const [category, setCategory] = useState(CATEGORIES.some((c) => c.id === route.category) ? route.category : "all");
   const catalogRef = useRef(null);
+  const searchRef = useRef(null);
+  const [sort, setSort] = useState(SORTS.some((x) => x.id === route.sort) ? route.sort : "featured");
   const switched = useRef(false); // after the first category switch, cards animate immediately (staggered)
   useEffect(() => {
-    if (category !== (route.category || "all")) switched.current = true;
-  }, [category, route.category]);
+    if (category !== (route.category || "all") || sort !== (route.sort || "featured")) switched.current = true;
+  }, [category, route.category, sort, route.sort]);
 
   // Keep filters in the URL (shareable, no reload)
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     q ? params.set("q", q) : params.delete("q");
     category !== "all" ? params.set("category", category) : params.delete("category");
+    sort !== "featured" ? params.set("sort", sort) : params.delete("sort");
     const qs = params.toString();
     window.history.replaceState(null, "", `${window.location.pathname}${qs ? `?${qs}` : ""}${window.location.hash}`);
-  }, [q, category]);
+  }, [q, category, sort]);
 
   const counts = useMemo(() => Object.fromEntries(CATEGORIES.map((c) => [c.id, products.filter((p) => p.category === c.id).length])), [products]);
   const results = useMemo(
-    () => products.filter((p) => (category === "all" || p.category === category) && matchesQuery(p, q.trim())),
-    [products, category, q]
+    () => sortProducts(products.filter((p) => (category === "all" || p.category === category) && matchesQuery(p, q.trim())), sort),
+    [products, category, q, sort]
   );
+
+  // "/" focuses the catalog search (power users & desktop visitors)
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key !== "/" || e.metaKey || e.ctrlKey || /input|textarea|select/i.test(document.activeElement?.tagName || "")) return;
+      e.preventDefault();
+      searchRef.current?.focus();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
+  // Grid adapts to how many products there are
+  const gridCls =
+    results.length === 1
+      ? "mx-auto max-w-md grid-cols-[minmax(0,1fr)]"
+      : results.length === 2
+        ? "mx-auto max-w-4xl grid-cols-[minmax(0,1fr)] sm:grid-cols-2"
+        : "grid-cols-[minmax(0,1fr)] sm:grid-cols-2 lg:grid-cols-3";
   const featured = products.filter((p) => p.featured).slice(0, 3);
   const latest = [...products]
     .filter((p) => Number.isFinite(Date.parse(p.releaseDate || "")))
     .sort((a, b) => Date.parse(b.releaseDate) - Date.parse(a.releaseDate))
     .slice(0, 3);
   const showShowcase = products.length > 3;
+  const spotlight = products.find((p) => p.spotlight) || null;
 
   const pickCategory = (id) => {
     setCategory(id);
@@ -100,51 +127,27 @@ function Catalog({ products, route }) {
 
   return (
     <>
-      <StoreHero hasProducts={products.length > 0} />
+      <StoreHero
+        hasProducts={products.length > 0}
+        counts={counts}
+        onSearch={(term) => {
+          setQ(term);
+          setCategory("all");
+          const top = (catalogRef.current?.getBoundingClientRect().top ?? 0) + window.scrollY - 96;
+          window.scrollTo({ top, behavior: "smooth" });
+        }}
+        onPick={(id) => pickCategory(id)}
+      />
+      {spotlight && <Spotlight product={spotlight} preview={route.preview} />}
 
-      {/* Categories */}
-      <section aria-labelledby="cat-title" className="relative px-5 pb-6 pt-4 sm:px-8">
-        <div className="mx-auto max-w-6xl">
-          <h2 id="cat-title" className="sr-only">
-            Product categories
-          </h2>
-          <ul className="grid grid-cols-2 gap-3 md:grid-cols-5">
-            {CATEGORIES.map((c, i) => {
-              const Icon = categoryIcon[c.id];
-              const on = category === c.id;
-              return (
-                <motion.li key={c.id} {...fadeUp(i * 0.05)} className={i === 4 ? "col-span-2 md:col-span-1" : ""}>
-                  <button
-                    type="button"
-                    onClick={() => pickCategory(on ? "all" : c.id)}
-                    onPointerDown={ripple}
-                    aria-pressed={on}
-                    className={`ripple group flex h-full w-full flex-col items-start gap-3 rounded-3xl border p-4 text-left transition-[border-color,background-color,transform] duration-300 hover:-translate-y-1 motion-reduce:hover:translate-y-0 sm:p-5 ${
-                      on ? "border-cream/60 bg-cream/10 shadow-[0_0_40px_-12px_rgba(244,232,209,0.45)]" : "glass hover:border-cyan-300/30 hover:shadow-[0_20px_50px_-25px_rgba(34,211,238,0.5)]"
-                    }`}
-                  >
-                    <span className={`icon-pop relative z-10 grid h-11 w-11 place-items-center rounded-2xl transition-colors ${on ? "bg-cream text-ink" : "bg-cyan-400/10 text-cyan-300 group-hover:bg-cyan-400/15"}`}>
-                      <Icon />
-                    </span>
-                    <span className="relative z-10">
-                      <span className="block text-sm font-semibold leading-snug text-white"><span className="sm:hidden">{c.short}</span><span className="hidden sm:inline">{c.label}</span></span>
-                      <span className="mt-1 block font-mono text-[11px] text-slate-500">
-                        {counts[c.id] ? `${counts[c.id]} product${counts[c.id] > 1 ? "s" : ""}` : "Coming soon"}
-                      </span>
-                    </span>
-                  </button>
-                </motion.li>
-              );
-            })}
-          </ul>
-        </div>
-      </section>
+
 
       {showShowcase && featured.length > 0 && <Showcase id="featured" kicker="Featured" title="Hand-picked products" items={featured} preview={route.preview} />}
 
       {/* Catalog */}
       <section id="catalog" ref={catalogRef} aria-labelledby="catalog-title" className="relative scroll-mt-24 px-5 py-16 sm:px-8 md:py-20">
         <div className="mx-auto max-w-6xl">
+          <FunnelWelcome source={route.source} q={q} category={category} />
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <motion.p {...fadeUp()} className="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.25em] text-cyan-300">
@@ -165,12 +168,16 @@ function Catalog({ products, route }) {
                   <SearchIcon className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-slate-500" width={18} height={18} />
                   <input
                     id="store-search"
+                    ref={searchRef}
                     type="search"
                     value={q}
                     onChange={(e) => setQ(e.target.value)}
-                    placeholder="Search guides, blueprints, apps…"
-                    className="glass w-full rounded-full py-3 pl-11 pr-11 text-sm text-white placeholder:text-slate-500 outline-none transition focus:border-cream/60 focus:ring-4 focus:ring-cream/10"
+                    placeholder="Search e-books, blueprints, apps, AI tools…"
+                    className="glass glow-border w-full rounded-full py-3.5 pl-11 pr-11 text-sm text-white placeholder:text-slate-500 outline-none transition focus:border-cream/60 focus:ring-4 focus:ring-cream/10"
                   />
+                  {!q && (
+                    <kbd className="pointer-events-none absolute right-4 top-1/2 hidden -translate-y-1/2 rounded-md border border-white/15 bg-white/5 px-1.5 py-0.5 font-mono text-[11px] text-slate-400 lg:block">/</kbd>
+                  )}
                   {q && (
                     <button type="button" onClick={() => setQ("")} aria-label="Clear search" className="absolute right-3 top-1/2 grid h-7 w-7 -translate-y-1/2 place-items-center rounded-full text-slate-400 hover:bg-white/10 hover:text-white">
                       <CloseSmall />
@@ -182,8 +189,8 @@ function Catalog({ products, route }) {
           </div>
 
           {products.length > 0 && (
-            <div role="group" aria-label="Filter by category" className="no-scrollbar -mx-5 mt-6 flex gap-2 overflow-x-auto px-5 pb-1 sm:mx-0 sm:flex-wrap sm:px-0">
-              {[{ id: "all", label: "All" }, ...CATEGORIES].map((c) => {
+            <div role="group" aria-label="Filter by category" className="glass-strong no-scrollbar sticky top-[5.25rem] z-20 !bg-[#060a19]/95 mt-6 flex max-w-full gap-1 overflow-x-auto rounded-full p-1.5 shadow-2xl shadow-black/40 sm:w-fit">
+              {[{ id: "all", label: "All products" }, ...CATEGORIES].map((c) => {
                 const on = category === c.id;
                 const n = c.id === "all" ? products.length : counts[c.id];
                 return (
@@ -193,10 +200,10 @@ function Catalog({ products, route }) {
                     onClick={() => setCategory(c.id)}
                     aria-pressed={on}
                     className={`relative shrink-0 whitespace-nowrap rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
-                      on ? "border-cream text-ink" : "border-white/10 text-slate-300 hover:border-white/30 hover:text-white"
+                      on ? "border-transparent text-slate-950" : "border-transparent text-slate-300 hover:bg-white/5 hover:text-white"
                     }`}
                   >
-                    {on && <motion.span layoutId="store-filter" transition={softSpring} className="absolute inset-0 rounded-full bg-cream" />}
+                    {on && <motion.span layoutId="store-filter" transition={softSpring} className="absolute inset-0 rounded-full bg-gradient-to-r from-amber-200 to-amber-400 shadow-[0_0_24px_-4px_rgba(245,196,81,0.6)]" />}
                     <span className="relative">
                       {c.label} <span className="font-mono text-xs opacity-60">{n}</span>
                     </span>
@@ -206,9 +213,33 @@ function Catalog({ products, route }) {
             </div>
           )}
 
-          <p className="sr-only" aria-live="polite">
-            {products.length ? `${results.length} product${results.length === 1 ? "" : "s"} found` : ""}
-          </p>
+          {products.length > 0 && (
+            <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+              <p className="text-sm text-slate-400" aria-live="polite">
+                Showing <b className="text-white">{results.length}</b> of {products.length} product{products.length === 1 ? "" : "s"}
+                {q.trim() && (
+                  <>
+                    {" "}for “<span className="text-amber-200">{q.trim()}</span>”
+                  </>
+                )}
+              </p>
+              <label className="flex items-center gap-2 text-sm text-slate-400">
+                <span className="hidden sm:inline">Sort by</span>
+                <select
+                  value={sort}
+                  onChange={(e) => setSort(e.target.value)}
+                  className="glass cursor-pointer rounded-full px-4 py-2 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-amber-300/40"
+                  aria-label="Sort products"
+                >
+                  {SORTS.map((o) => (
+                    <option key={o.id} value={o.id} className="bg-slate-900">
+                      {o.label}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            </div>
+          )}
 
           {products.length === 0 ? (
             <LaunchingSoon />
@@ -228,7 +259,7 @@ function Catalog({ products, route }) {
               </button>
             </motion.div>
           ) : (
-            <motion.ul key={category} layout className="mt-8 grid grid-cols-[minmax(0,1fr)] gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <motion.ul key={`${category}-${sort}`} layout className={`mt-6 grid gap-6 ${gridCls}`}>
               <AnimatePresence mode="popLayout">
                 {results.map((p, i) => (
                   <ProductCard key={p.slug} product={p} index={i} preview={route.preview} inView={!switched.current} />
@@ -247,26 +278,49 @@ function Catalog({ products, route }) {
   );
 }
 
-function StoreHero({ hasProducts }) {
+// Deterministic star field (no Math.random → stable between renders)
+const STARS = Array.from({ length: 34 }, (_, i) => ({
+  left: (i * 37.7) % 100,
+  top: (i * 53.3) % 100,
+  size: 1 + ((i * 7) % 3),
+  delay: (i * 0.37) % 5,
+  dur: 3 + ((i * 11) % 5),
+}));
+
+function StoreHero({ hasProducts, onSearch, onPick, counts }) {
   const h = store.hero || {};
+  const [term, setTerm] = useState("");
+  const submit = (e) => {
+    e.preventDefault();
+    onSearch(term.trim());
+  };
   return (
-    <section aria-labelledby="store-title" className="relative overflow-clip px-5 pb-14 pt-32 sm:px-8 md:pb-20 md:pt-40">
-      {/* Background: soft drifting aurora + grid (static under reduced motion) */}
+    <section aria-labelledby="store-title" className="relative overflow-clip px-5 pb-16 pt-32 sm:px-8 md:pb-24 md:pt-40">
+      {/* Background: aurora ribbon + stars + grid (static under reduced motion) */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="store-aurora absolute -left-1/4 -top-1/3 h-[42rem] w-[42rem] rounded-full bg-[radial-gradient(circle,rgba(34,211,238,0.22),transparent_62%)]" />
-        <div className="store-aurora store-aurora--slow absolute -right-1/4 top-0 h-[38rem] w-[38rem] rounded-full bg-[radial-gradient(circle,rgba(59,130,246,0.22),transparent_62%)]" />
-        <div className="bg-code-grid absolute inset-0 [mask-image:radial-gradient(ellipse_at_top,black_15%,transparent_70%)]" />
+        <div className="aurora-ribbon absolute left-1/2 top-[-30%] h-[60rem] w-[60rem] -translate-x-1/2" />
+        {STARS.map((st, i) => (
+          <span
+            key={i}
+            className="star absolute rounded-full bg-white"
+            style={{ left: `${st.left}%`, top: `${st.top}%`, width: st.size, height: st.size, animationDelay: `${st.delay}s`, animationDuration: `${st.dur}s` }}
+          />
+        ))}
+        <div className="bg-code-grid absolute inset-0 opacity-70 [mask-image:radial-gradient(ellipse_at_top,black_10%,transparent_65%)]" />
       </div>
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
+      <div className="relative mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)] items-center gap-14 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
         <div>
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ...spring, delay: 0.05 }}
-            className="inline-flex items-center gap-2 rounded-full border border-cyan-300/25 bg-cyan-300/10 px-3.5 py-1.5 text-xs font-semibold text-cyan-200"
+            className="inline-flex items-center gap-2 rounded-full border border-violet-300/25 bg-violet-400/10 px-3.5 py-1.5 text-xs font-semibold text-violet-100 backdrop-blur"
           >
-            <span className="h-1.5 w-1.5 rounded-full bg-cyan-300" />
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-amber-300 opacity-60" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-amber-300" />
+            </span>
             {profile.name.replace(/,.*$/, "").replace(/\s+[A-Z]\.[A-Z]\.?$/, "")} · {h.eyebrow || "Digital Products & Innovation"}
           </motion.p>
           <motion.h1
@@ -286,53 +340,277 @@ function StoreHero({ hasProducts }) {
           >
             {h.intro}
           </motion.p>
-          <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ ...spring, delay: 0.28 }} className="mt-8 flex flex-wrap gap-3">
-            <motion.a
-              href="#catalog"
-              onPointerDown={ripple}
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.97 }}
-              className="ripple cta-glow group relative inline-flex items-center gap-3 rounded-full bg-cream px-6 py-3.5 text-sm font-bold text-ink shadow-lg shadow-black/30"
+
+          {/* Quick search right in the hero */}
+          {hasProducts && (
+            <motion.form
+              onSubmit={submit}
+              role="search"
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ ...spring, delay: 0.28 }}
+              className="glow-border glass mt-8 flex max-w-xl items-center gap-2 rounded-full p-1.5 pl-5"
             >
-              {hasProducts ? "Browse the catalog" : "See what's coming"}
-              <span className="grid h-7 w-7 place-items-center rounded-full bg-ink text-cream transition-transform duration-300 group-hover:translate-y-0.5">
-                <ChevronIcon className="rotate-90" width={14} height={14} />
-              </span>
-            </motion.a>
-            <a href="/#contact" className="inline-flex items-center rounded-full border border-white/15 px-6 py-3.5 text-sm font-semibold text-slate-200 transition-colors hover:border-white/40 hover:text-white">
-              Request a custom build
-            </a>
-          </motion.div>
+              <SearchIcon className="shrink-0 text-slate-400" width={18} height={18} />
+              <label htmlFor="hero-search" className="sr-only">
+                Search products
+              </label>
+              <input
+                id="hero-search"
+                type="search"
+                value={term}
+                onChange={(e) => setTerm(e.target.value)}
+                placeholder="What do you want to build?"
+                className="min-w-0 flex-1 bg-transparent py-2.5 text-sm text-white placeholder:text-slate-500 outline-none"
+              />
+              <button type="submit" onPointerDown={ripple} className="ripple cta-gold shrink-0 rounded-full px-5 py-2.5 text-sm font-bold text-slate-950">
+                <span className="relative z-10">Search</span>
+              </button>
+            </motion.form>
+          )}
+
+          {/* Category quick picks */}
+          <motion.ul
+            initial="hidden"
+            animate="show"
+            variants={{ show: { transition: { staggerChildren: 0.05, delayChildren: 0.35 } } }}
+            className="mt-5 flex flex-wrap gap-2"
+            aria-label="Browse by category"
+          >
+            {CATEGORIES.map((c) => {
+              const Icon = categoryIcon[c.id];
+              return (
+                <motion.li key={c.id} variants={{ hidden: { opacity: 0, y: 10 }, show: { opacity: 1, y: 0, transition: spring } }}>
+                  <button
+                    type="button"
+                    onClick={() => onPick(c.id)}
+                    onPointerDown={ripple}
+                    className="ripple group inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-2 text-xs font-semibold text-slate-200 backdrop-blur transition-colors hover:border-amber-200/50 hover:text-white"
+                  >
+                    <Icon className="icon-pop relative z-10 text-amber-300" width={15} height={15} />
+                    <span className="relative z-10">{c.short}</span>
+                    {counts[c.id] > 0 && <span className="relative z-10 font-mono text-[10px] text-slate-500">{counts[c.id]}</span>}
+                  </button>
+                </motion.li>
+              );
+            })}
+          </motion.ul>
+
+          {!hasProducts && (
+            <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ ...spring, delay: 0.3 }} className="mt-8 flex flex-wrap gap-3">
+              <a href="#catalog" onPointerDown={ripple} className="ripple cta-gold inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-bold text-slate-950">
+                <span className="relative z-10">See what’s coming</span>
+              </a>
+              <a href="/#contact" className="inline-flex items-center rounded-full border border-white/15 px-6 py-3.5 text-sm font-semibold text-slate-200 transition-colors hover:border-white/40 hover:text-white">
+                Request a custom build
+              </a>
+            </motion.div>
+          )}
         </div>
 
-        {/* Visual: stacked category tiles (desktop) */}
-        <div aria-hidden className="relative hidden h-[22rem] lg:block">
-          {CATEGORIES.slice(0, 3).map((c, i) => {
-            const Icon = categoryIcon[c.id];
-            const pos = [
-              "left-6 top-2 -rotate-6",
-              "right-2 top-16 rotate-3",
-              "left-16 bottom-0 -rotate-2",
-            ][i];
-            return (
-              <motion.div
-                key={c.id}
-                initial={{ opacity: 0, y: 40, scale: 0.94 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                transition={{ ...spring, delay: 0.25 + i * 0.1 }}
-                className={`glass absolute w-64 rounded-3xl p-5 shadow-2xl shadow-black/50 ${pos}`}
-              >
-                <span className="grid h-11 w-11 place-items-center rounded-2xl bg-cyan-400/10 text-cyan-300">
-                  <Icon />
-                </span>
-                <p className="mt-4 font-display text-lg font-bold text-white">{c.label}</p>
-                <p className="mt-1 text-xs leading-relaxed text-slate-400">{c.blurb}</p>
-              </motion.div>
-            );
-          })}
-        </div>
+        <ProductOrbit />
       </div>
     </section>
+  );
+}
+
+/** Imaginative hero visual: a glowing core with category icons orbiting on glass rings. */
+function ProductOrbit() {
+  const inner = CATEGORIES.slice(0, 2);
+  const outer = CATEGORIES.slice(2);
+  return (
+    <motion.div
+      aria-hidden
+      initial={{ opacity: 0, scale: 0.85 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ type: "spring", stiffness: 60, damping: 16, delay: 0.2 }}
+      className="relative mx-auto hidden aspect-square w-full max-w-[26rem] sm:block"
+    >
+      {/* rings */}
+      <div className="absolute inset-0 rounded-full border border-white/10" />
+      <div className="absolute inset-[18%] rounded-full border border-violet-300/15" />
+      <div className="absolute inset-[36%] rounded-full bg-[radial-gradient(circle_at_35%_30%,#fde68a_0%,#f5c451_22%,#7c3aed_58%,#1e1b4b_100%)] shadow-[0_0_80px_10px_rgba(124,58,237,0.45),0_0_140px_30px_rgba(245,196,81,0.18)]">
+        <div className="core-pulse absolute inset-0 rounded-full" />
+        <div className="absolute inset-0 grid place-items-center">
+          <span className="font-display text-3xl font-black tracking-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">HH</span>
+        </div>
+      </div>
+
+      {/* outer orbit */}
+      <div className="orbit absolute inset-0" style={{ animationDuration: "48s" }}>
+        {outer.map((c, i) => {
+          const Icon = categoryIcon[c.id];
+          const angle = (360 / outer.length) * i;
+          return (
+            <div key={c.id} className="absolute left-1/2 top-1/2 h-0 w-0" style={{ transform: `rotate(${angle}deg) translateY(-13rem) rotate(-${angle}deg)` }}>
+              <div className="orbit-counter" style={{ animationDuration: "48s" }}>
+                <span className="glass -ml-7 -mt-7 grid h-14 w-14 place-items-center rounded-2xl text-cyan-200 shadow-xl shadow-black/40">
+                  <Icon width={24} height={24} />
+                </span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* inner orbit (reverse) */}
+      <div className="orbit orbit--reverse absolute inset-[18%]" style={{ animationDuration: "32s" }}>
+        {inner.map((c, i) => {
+          const Icon = categoryIcon[c.id];
+          const angle = 180 * i + 40;
+          return (
+            <div key={c.id} className="absolute left-1/2 top-1/2 h-0 w-0" style={{ transform: `rotate(${angle}deg) translateY(-8.5rem) rotate(-${angle}deg)` }}>
+              <div className="orbit-counter orbit-counter--reverse" style={{ animationDuration: "32s" }}>
+                <span className="-ml-6 -mt-6 grid h-12 w-12 place-items-center rounded-2xl border border-amber-200/30 bg-gradient-to-br from-amber-300/25 to-violet-500/20 text-amber-100 shadow-xl shadow-black/40 backdrop-blur">
+                  <Icon width={20} height={20} />
+                </span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* sparkle dots on rings */}
+      <span className="orbit absolute inset-0" style={{ animationDuration: "20s" }}>
+        <span className="absolute left-1/2 top-0 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-amber-300 shadow-[0_0_14px_4px_rgba(245,196,81,0.7)]" />
+      </span>
+      <span className="orbit orbit--reverse absolute inset-[18%]" style={{ animationDuration: "14s" }}>
+        <span className="absolute bottom-0 left-1/2 h-1.5 w-1.5 -translate-x-1/2 translate-y-1/2 rounded-full bg-cyan-300 shadow-[0_0_12px_4px_rgba(103,232,249,0.7)]" />
+      </span>
+    </motion.div>
+  );
+}
+
+/** Soft light that follows the cursor across the store (desktop only, rAF, no re-renders). */
+function CursorGlow() {
+  const ref = useRef(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || !window.matchMedia("(hover: hover) and (pointer: fine)").matches || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    let raf = 0;
+    let x = 0;
+    let y = 0;
+    const move = (e) => {
+      x = e.clientX;
+      y = e.clientY;
+      if (!raf)
+        raf = requestAnimationFrame(() => {
+          raf = 0;
+          el.style.transform = `translate3d(${x - 300}px, ${y - 300}px, 0)`;
+          el.style.opacity = "1";
+        });
+    };
+    window.addEventListener("pointermove", move, { passive: true });
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("pointermove", move);
+    };
+  }, []);
+  return <div ref={ref} aria-hidden className="pointer-events-none fixed left-0 top-0 z-0 h-[600px] w-[600px] rounded-full opacity-0 transition-opacity duration-700 [background:radial-gradient(circle,rgba(139,92,246,0.13),rgba(34,211,238,0.06)_40%,transparent_70%)]" />;
+}
+
+function Spotlight({ product: p, preview }) {
+  const t = tFor(p);
+  const off = discountPercent(p);
+  const href = `/products/${p.slug}/${preview ? "?preview=1" : ""}`;
+  const highlights = list(p.highlights).filter((h) => h.title).slice(0, 3);
+  const guarantees = list(p.guarantees).filter((g) => g.title).slice(0, 4);
+  return (
+    <section aria-labelledby="spotlight-title" lang={p.lang === "id" ? "id" : undefined} className="px-5 pb-14 sm:px-8">
+      <motion.div
+        {...fadeUp()}
+        className="relative mx-auto max-w-6xl overflow-hidden rounded-[2.25rem] border border-amber-300/20 bg-[linear-gradient(140deg,rgba(11,18,36,0.92)_0%,rgba(21,32,67,0.85)_55%,rgba(11,18,36,0.92)_100%)] p-6 shadow-[0_40px_120px_-40px_rgba(245,196,81,0.25)] sm:p-10 lg:p-14"
+      >
+        <div aria-hidden className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-amber-300/15 blur-3xl" />
+        <div aria-hidden className="pointer-events-none absolute -bottom-32 -left-20 h-80 w-80 rounded-full bg-cyan-400/10 blur-3xl" />
+
+        <div className="relative grid grid-cols-[minmax(0,1fr)] items-center gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-14">
+          <div className="lg:order-2">
+            <DeviceMockup product={p} className="mx-auto max-w-lg" />
+          </div>
+
+          <div className="lg:order-1">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="badge-shimmer rounded-full border border-amber-200/50 bg-gradient-to-r from-amber-400/30 to-orange-400/20 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-amber-100">
+                {p.lang === "id" ? "Produk Unggulan" : "Featured product"}
+              </span>
+              <Badges product={{ ...p, featured: false, bestseller: p.bestseller }} />
+            </div>
+            <h2 id="spotlight-title" className="text-gradient-store mt-5 text-balance pb-1 font-display text-3xl font-bold leading-[1.1] tracking-tight sm:text-4xl lg:text-[2.6rem]">
+              {p.name}
+            </h2>
+            {p.shortDescription && <p className="mt-4 max-w-xl text-base leading-relaxed text-slate-300">{p.shortDescription}</p>}
+
+            {highlights.length > 0 && (
+              <ul className="mt-6 grid gap-2.5 sm:grid-cols-3">
+                {highlights.map((h) => (
+                  <li key={h.title} className="flex items-center gap-2.5 rounded-2xl border border-white/10 bg-white/[0.03] px-3 py-2.5 text-sm font-semibold text-white">
+                    <span className="grid h-8 w-8 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-amber-300 to-amber-500 text-slate-950">
+                      <Glyph name={h.icon || "check"} size={16} />
+                    </span>
+                    <span className="leading-tight">{h.title}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            <div className="mt-7 flex flex-wrap items-end gap-x-4 gap-y-2">
+              <Price product={p} size="lg" className="text-4xl" />
+            </div>
+
+            <div className="mt-6 grid gap-3 sm:flex sm:flex-wrap">
+              <BuyButton product={p} size="lg" />
+              <a
+                href={href}
+                onPointerDown={ripple}
+                className="ripple inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-4 text-sm font-semibold text-slate-100 transition-colors hover:border-amber-200/60 hover:text-amber-100"
+              >
+                <span className="relative z-10 inline-flex items-center gap-1.5">
+                  {p.lang === "id" ? "Lihat detail produk" : "View product details"} <ChevronIcon width={14} height={14} />
+                </span>
+              </a>
+            </div>
+
+            {guarantees.length > 0 && (
+              <div className="mt-6 max-w-xl">
+                <GuaranteeStrip items={guarantees} title={t.guarantee} compact />
+              </div>
+            )}
+          </div>
+        </div>
+      </motion.div>
+    </section>
+  );
+}
+
+/** Friendly greeting for visitors arriving from Instagram / ManyChat links (?utm_source=instagram|manychat). */
+function FunnelWelcome({ source, q, category }) {
+  const [hidden, setHidden] = useState(false);
+  const from = /manychat/.test(source) ? "ManyChat" : /instagram|ig\b|^ig/.test(source) ? "Instagram" : /tiktok/.test(source) ? "TikTok" : /whatsapp|wa\b/.test(source) ? "WhatsApp" : "";
+  if (!from || hidden) return null;
+  const cat = categoryById(category);
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="glass glow-border mb-8 flex items-start justify-between gap-4 rounded-2xl px-5 py-4"
+      role="status"
+    >
+      <p className="text-sm text-slate-200">
+        <span className="mr-1.5" aria-hidden>👋</span>
+        Welcome from <b className="text-amber-200">{from}</b>!{" "}
+        {q ? (
+          <>Here are the products matching “{q}”.</>
+        ) : cat ? (
+          <>Here’s everything in {cat.label}.</>
+        ) : (
+          <>Browse the products below — tap <b className="text-white">Details</b> to learn more or <b className="text-white">Buy</b> to get instant access.</>
+        )}
+      </p>
+      <button type="button" onClick={() => setHidden(true)} aria-label="Dismiss" className="grid h-7 w-7 shrink-0 place-items-center rounded-full text-slate-400 hover:bg-white/10 hover:text-white">
+        <CloseSmall width={14} height={14} />
+      </button>
+    </motion.div>
   );
 }
 
@@ -446,6 +724,7 @@ function ClosingCta() {
 const list = (v) => (Array.isArray(v) ? v.map((x) => (typeof x === "string" ? x.trim() : x)).filter(Boolean) : []);
 
 function ProductDetail({ product: p, all, preview }) {
+  const t = tFor(p);
   const cat = categoryById(p.category);
   const gallery = list(p.gallery).map((g) => (typeof g === "string" ? g : g?.image)).filter(Boolean);
   const images = [p.coverImage, ...gallery].filter(Boolean);
@@ -457,18 +736,23 @@ function ProductDetail({ product: p, all, preview }) {
   const problems = list(p.problems);
   const features = list(p.features);
   const audience = list(p.audience);
+  const highlights = list(p.highlights).filter((h) => h.title);
+  const guarantees = list(p.guarantees).filter((g) => g.title);
+  const off = discountPercent(p);
+  const buyRef = useRef(null);
   const q = preview ? "?preview=1" : "";
 
   useEffect(() => {
     document.title = `${p.name} · Digital Store · Hamdani Harfan`;
-  }, [p.name]);
+    document.documentElement.lang = p.lang === "id" ? "id" : "en";
+  }, [p.name, p.lang]);
 
   return (
     <>
-      <section className="relative overflow-clip px-5 pb-12 pt-28 sm:px-8 md:pt-36">
+      <section className="relative overflow-clip px-5 pb-10 pt-28 sm:px-8 md:pt-36">
         <div aria-hidden className="pointer-events-none absolute inset-0">
-          <div className="absolute -left-40 -top-40 h-[34rem] w-[34rem] rounded-full bg-[radial-gradient(circle,rgba(34,211,238,0.16),transparent_62%)]" />
-          <div className="absolute -right-40 top-20 h-[30rem] w-[30rem] rounded-full bg-[radial-gradient(circle,rgba(59,130,246,0.14),transparent_62%)]" />
+          <div className="absolute -left-40 -top-40 h-[34rem] w-[34rem] rounded-full bg-[radial-gradient(circle,rgba(34,211,238,0.14),transparent_62%)]" />
+          <div className="absolute -right-40 top-20 h-[34rem] w-[34rem] rounded-full bg-[radial-gradient(circle,rgba(245,196,81,0.12),transparent_62%)]" />
         </div>
 
         <div className="relative mx-auto max-w-6xl">
@@ -495,23 +779,15 @@ function ProductDetail({ product: p, all, preview }) {
             </ol>
           </nav>
 
-          <div className="mt-8 grid grid-cols-[minmax(0,1fr)] gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-14">
-            {/* Media */}
-            <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={spring}>
-              <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900 shadow-2xl shadow-black/40">
-                <AnimatePresence mode="wait">
-                  <motion.div key={active} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }} className="h-full w-full">
-                    {images.length ? (
-                      <img src={images[active]} alt={active === 0 && p.coverImage ? `${p.name} cover` : `${p.name} preview ${active + 1}`} className="h-full w-full object-cover" decoding="async" />
-                    ) : (
-                      <Cover product={p} />
-                    )}
-                  </motion.div>
-                </AnimatePresence>
-                <Badges product={p} className="absolute left-5 top-5" />
+          <div className="mt-8 grid grid-cols-[minmax(0,1fr)] items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-14">
+            {/* Mockup (first on mobile) */}
+            <div className="lg:order-2">
+              <div className="relative mx-auto max-w-xl">
+                <DeviceMockup product={p} src={images[active] || ""} />
+                <Badges product={p} className="absolute -top-3 left-4 z-10" />
               </div>
               {images.length > 1 && (
-                <ul className="mt-3 flex gap-3 overflow-x-auto pb-1" aria-label="Product images">
+                <ul className="mx-auto mt-6 flex max-w-xl justify-center gap-3 overflow-x-auto pb-1" aria-label="Product images">
                   {images.map((src, i) => (
                     <li key={src + i}>
                       <button
@@ -519,7 +795,7 @@ function ProductDetail({ product: p, all, preview }) {
                         onClick={() => setActive(i)}
                         aria-label={`Show image ${i + 1}`}
                         aria-current={i === active}
-                        className={`block h-16 w-20 overflow-hidden rounded-xl border-2 transition-colors ${i === active ? "border-cream" : "border-transparent opacity-70 hover:opacity-100"}`}
+                        className={`block h-14 w-[4.5rem] overflow-hidden rounded-xl border-2 transition-all ${i === active ? "border-amber-300" : "border-transparent opacity-60 hover:opacity-100"}`}
                       >
                         <img src={src} alt="" loading="lazy" className="h-full w-full object-cover" />
                       </button>
@@ -527,92 +803,93 @@ function ProductDetail({ product: p, all, preview }) {
                   ))}
                 </ul>
               )}
-            </motion.div>
+            </div>
 
-            {/* Purchase panel */}
-            <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ ...spring, delay: 0.08 }} className="lg:sticky lg:top-28 lg:self-start">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">{cat?.label || "Product"}</p>
-              <h1 className="mt-3 text-balance font-display text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl">{p.name}</h1>
-              {p.shortDescription && <p className="mt-4 text-base leading-relaxed text-slate-300">{p.shortDescription}</p>}
+            {/* Copy + purchase */}
+            <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ ...spring, delay: 0.05 }} className="lg:order-1">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-300">{cat?.label || "Product"}</p>
+              <h1 className="text-gradient-store mt-3 text-balance pb-1 font-display text-3xl font-bold leading-[1.1] tracking-tight sm:text-4xl lg:text-[2.75rem]">{p.name}</h1>
+              {p.shortDescription && <p className="mt-4 text-base leading-relaxed text-slate-300 sm:text-lg">{p.shortDescription}</p>}
 
-              <div className="glass mt-8 rounded-3xl p-6">
-                <p className="text-xs font-medium uppercase tracking-[0.18em] text-slate-500">Price</p>
-                <Price product={p} size="lg" className="mt-1 text-3xl" />
+              <div ref={buyRef} className="glass mt-8 rounded-3xl p-5 sm:p-6">
+                <div className="flex flex-wrap items-end justify-between gap-3">
+                  <div>
+                    <p className="text-xs font-medium uppercase tracking-[0.18em] text-slate-500">{t.price}</p>
+                    <Price product={p} size="lg" className="mt-1 text-3xl sm:text-4xl" />
+                  </div>
+                  {off > 0 && (
+                    <span className="badge-shimmer rounded-full border border-amber-200/50 bg-gradient-to-r from-amber-400/30 to-orange-400/25 px-3 py-1.5 text-xs font-bold text-amber-100">
+                      {t.save} {off}%
+                    </span>
+                  )}
+                </div>
                 <div className="mt-5 grid gap-2.5">
                   <BuyButton product={p} size="lg" full />
                   {canAddToCart(p) && <AddToCartButton product={p} size="lg" full />}
                 </div>
                 {isPublished(p) && checkoutUrlOf(p) ? (
                   <p className="mt-3 flex items-center justify-center gap-1.5 text-center text-xs text-slate-500">
-                    <ShieldIcon width={14} height={14} /> Secure checkout on Mayar · opens in a new tab
+                    <ShieldIcon width={14} height={14} /> {t.secure}
                   </p>
                 ) : null}
+                {guarantees.length > 0 && (
+                  <div className="mt-5">
+                    <GuaranteeStrip items={guarantees.slice(0, 4)} title={t.guarantee} compact />
+                  </div>
+                )}
                 <div className="mt-4 flex justify-center">
                   <AskLink product={p} />
                 </div>
               </div>
-
-              {specs.length > 0 && (
-                <dl className="mt-6 grid grid-cols-2 gap-3">
-                  {specs.slice(0, 4).map((s) => (
-                    <div key={s.label} className="rounded-2xl border border-white/10 bg-slate-900/40 px-4 py-3">
-                      <dt className="text-[11px] uppercase tracking-wider text-slate-500">{s.label}</dt>
-                      <dd className="mt-0.5 text-sm font-semibold text-white">{s.value}</dd>
-                    </div>
-                  ))}
-                </dl>
-              )}
             </motion.div>
           </div>
         </div>
       </section>
 
+      <ValueProps items={highlights} title={t.why} />
+      {guarantees.length > 0 && <GuaranteeStrip items={guarantees} title={t.guarantee} />}
+
       {/* Body */}
-      <section className="px-5 pb-20 sm:px-8">
-        <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)] gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-14">
-          <div className="grid gap-6">
+      <section className="px-5 py-12 sm:px-8">
+        <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)] gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-10">
+          <div className="grid content-start gap-6">
             {p.description && (
-              <Block title="About this product">
+              <Block title={t.about}>
                 <p className="whitespace-pre-line text-base leading-relaxed text-slate-300">{p.description}</p>
               </Block>
             )}
             {problems.length > 0 && (
-              <Block title="What it solves">
+              <Block title={t.solves}>
                 <Bullets items={problems} tone="cream" />
               </Block>
             )}
             {features.length > 0 && (
-              <Block title={p.category === "apps" || p.category === "templates" ? "Features" : "What’s inside"}>
+              <Block title={p.category === "apps" || p.category === "templates" ? t.features : t.inside}>
                 <Bullets items={features} check />
               </Block>
             )}
             {curriculum.length > 0 && (
-              <Block title="Curriculum">
+              <Block title={t.curriculum}>
                 <ol className="grid gap-2">
                   {curriculum.map((c, i) => (
                     <li key={c} className="flex gap-4 rounded-2xl border border-white/10 bg-slate-950/40 px-4 py-3 text-sm text-slate-200">
-                      <span className="font-mono text-xs text-cyan-300">{String(i + 1).padStart(2, "0")}</span>
+                      <span className="font-mono text-xs text-amber-300">{String(i + 1).padStart(2, "0")}</span>
                       {c}
                     </li>
                   ))}
                 </ol>
               </Block>
             )}
-            {faq.length > 0 && (
-              <Block title="FAQ">
-                <Faq items={faq} />
-              </Block>
-            )}
           </div>
 
           <div className="grid content-start gap-6">
             {audience.length > 0 && (
-              <Block title="Who it’s for">
+              <Block title={t.audience}>
                 <Bullets items={audience} />
               </Block>
             )}
             {specs.length > 0 && (
-              <Block title="Specifications">
+              <Block title={t.specs}>
                 <dl className="divide-y divide-white/10">
                   {specs.map((s) => (
                     <div key={s.label} className="flex items-baseline justify-between gap-4 py-3 text-sm">
@@ -627,11 +904,42 @@ function ProductDetail({ product: p, all, preview }) {
         </div>
       </section>
 
+      <Testimonials items={p.testimonials} title={t.reviews} />
+
+      {faq.length > 0 && (
+        <section aria-labelledby="faq-title" className="px-5 py-12 sm:px-8 md:py-16">
+          <div className="mx-auto max-w-3xl">
+            <motion.h2 {...fadeUp()} id="faq-title" className="text-center font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              {t.faq}
+            </motion.h2>
+            <motion.div {...fadeUp(0.08)} className="mt-8">
+              <Faq items={faq} />
+            </motion.div>
+          </div>
+        </section>
+      )}
+
+      {/* Final product CTA */}
+      {isPublished(p) && checkoutUrlOf(p) && (
+        <section className="px-5 pb-6 pt-8 sm:px-8">
+          <motion.div {...fadeUp()} className="relative mx-auto max-w-4xl overflow-hidden rounded-[2rem] border border-amber-300/25 bg-[linear-gradient(135deg,#0b1224_0%,#152043_55%,#0b1224_100%)] px-6 py-10 text-center sm:px-12 sm:py-14">
+            <div aria-hidden className="pointer-events-none absolute -top-24 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-amber-300/15 blur-3xl" />
+            <h2 className="relative text-balance font-display text-2xl font-bold text-white sm:text-3xl">{p.name}</h2>
+            <div className="relative mt-4 flex justify-center">
+              <Price product={p} size="lg" className="text-3xl" />
+            </div>
+            <div className="relative mx-auto mt-6 max-w-sm">
+              <BuyButton product={p} size="lg" full />
+            </div>
+          </motion.div>
+        </section>
+      )}
+
       {related.length > 0 && (
-        <section aria-labelledby="related-title" className="border-t border-white/10 px-5 py-16 sm:px-8 md:py-20">
+        <section aria-labelledby="related-title" className="px-5 py-16 sm:px-8 md:py-20">
           <div className="mx-auto max-w-6xl">
             <h2 id="related-title" className="font-display text-3xl font-bold tracking-tight text-white">
-              You may also like
+              {t.related}
             </h2>
             <ul className="mt-8 grid grid-cols-[minmax(0,1fr)] gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {related.map((r, i) => (
@@ -643,6 +951,7 @@ function ProductDetail({ product: p, all, preview }) {
       )}
 
       <ClosingCta />
+      <StickyBuyBar product={p} watchRef={buyRef} />
     </>
   );
 }

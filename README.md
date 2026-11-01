@@ -134,3 +134,30 @@ specifications[{label,value}], faq[{q,a}], checkoutUrl, featured, releaseDate (Y
 - Efek: latar mesh gradient bergerak, kartu kaca (glassmorphism), 3D tilt (hanya mouse), ripple pada tombol,
   shimmer badge, animasi masuk bertahap saat ganti kategori. Semua mati otomatis bila pengunjung memilih "reduce motion".
 - File baru: `src/store/cart.jsx`, `src/store/CartDrawer.jsx`, `src/store/effects.js`; gaya di `src/index.css` (bagian "Digital Store — premium motion system").
+
+### Digital Store v4 (tampilan imajinatif)
+- Hero: orbit kategori berputar di sekitar inti bercahaya, bintang berkedip, pita aurora, cahaya mengikuti kursor (desktop).
+- Pencarian langsung di hero + tombol kategori cepat. Bar filter kategori menempel saat scroll.
+- Kartu: border gradien berputar saat hover, 3D tilt, tombol **Beli/Buy** emas dengan kilau.
+- Teks untuk pembeli tidak menyebut nama penyedia pembayaran ("Beli", "Pembayaran aman"); tombol tetap membuka link checkout Mayar.
+
+### Digital Store v5 (katalog skala besar + funnel Instagram/ManyChat)
+- **6 kategori:** Modules & E-books · Blueprints · Mobile Apps · AI Tools · Source Code & Templates · Online Courses.
+  Pilih kategori di admin; mockup 3D otomatis menyesuaikan (buku, tablet, ponsel, laptop).
+- **Filter tab tanpa reload** (sticky saat scroll, angka jumlah produk per kategori) + **Sort**: Recommended, Terbaru, Harga termurah/termahal.
+- **Pencarian instan** di atas katalog — tekan `/` untuk fokus. Cari nama, deskripsi, fitur, kategori.
+- **Kartu produk:** kaca navy, glow border saat hover, badge kategori di pojok kanan atas, mockup 3D,
+  harga emas + harga coret + persentase hemat, tombol **Detail** dan **Beli Sekarang** (ikon tas → link Mayar),
+  tombol kecil tambah ke keranjang di pojok mockup.
+- **Grid adaptif:** 1 produk → kartu tunggal di tengah, 2 produk → 2 kolom, 3+ → 3 kolom (mobile 1 kolom).
+- **Sapaan funnel:** pengunjung dengan `utm_source` / `ref` / `from` = instagram, manychat, tiktok, whatsapp mendapat bar sambutan.
+
+#### Link siap pakai untuk ManyChat / bio Instagram
+| Tujuan | Link |
+| --- | --- |
+| Langsung ke 1 produk | `https://hamdaniharfan.com/products/<slug>/?utm_source=manychat` |
+| Hasil pencarian | `https://hamdaniharfan.com/products/?q=prompt&utm_source=manychat` |
+| Satu kategori | `https://hamdaniharfan.com/products/?category=ai-tools&utm_source=instagram` |
+| Urut termurah | `https://hamdaniharfan.com/products/?sort=price-asc` |
+
+ID kategori: `ebooks`, `blueprints`, `apps`, `ai-tools`, `templates`, `courses`.

@@ -5,12 +5,13 @@
 // ─────────────────────────────────────────────────────────────
 
 export const CATEGORIES = [
-  { id: "ebooks", label: "Modules & E-books", short: "E-books", blurb: "Practical guides and learning modules you can read at your own pace." },
-  { id: "blueprints", label: "Blueprints", short: "Blueprints", blurb: "Feature specs, user flows and architecture plans for real products." },
-  { id: "apps", label: "Apps", short: "Apps", blurb: "Ready-to-use applications and digital tools." },
-  { id: "courses", label: "Online Courses", short: "Courses", blurb: "Structured lessons that take you from idea to a working result." },
-  { id: "templates", label: "Templates & Source Code", short: "Templates", blurb: "Production-ready starting points you can customise and ship." },
-];
+  { id: "ebooks", label: "Modules & E-books", short: "E-books", device: "book", blurb: "Practical guides and learning modules you can read at your own pace." },
+  { id: "blueprints", label: "Blueprints", short: "Blueprints", device: "tablet", blurb: "Feature specs, user flows and architecture plans for real products." },
+  { id: "apps", label: "Mobile Apps", short: "Apps", device: "phone", blurb: "Ready-to-use mobile applications." },
+  { id: "ai-tools", label: "AI Tools", short: "AI Tools", device: "tablet", blurb: "Prompt kits, automations and AI-powered tools that save you hours." },
+  { id: "templates", label: "Source Code & Templates", short: "Source Code", device: "laptop", blurb: "Production-ready starting points you can customise and ship." },
+  { id: "courses", label: "Online Courses", short: "Courses", device: "tablet", blurb: "Structured lessons that take you from idea to a working result." },
+]
 
 export const categoryById = (id) => CATEGORIES.find((c) => c.id === id);
 
@@ -107,4 +108,29 @@ export function discountPercent(p) {
   const was = parsePrice(p?.originalPrice, p?.currency);
   if (now === null || was === null || was <= now || now <= 0) return 0;
   return Math.round(((was - now) / was) * 100);
+}
+
+export const SORTS = [
+  { id: "featured", label: "Recommended" },
+  { id: "newest", label: "Newest" },
+  { id: "price-asc", label: "Price: low to high" },
+  { id: "price-desc", label: "Price: high to low" },
+];
+
+/** Comparable price in IDR (USD × rough rate only for ordering, never shown). */
+const sortPrice = (p) => {
+  const n = parsePrice(p.price, p.currency);
+  if (n === null) return Infinity;
+  return p.currency === "USD" ? n * 16000 : n;
+};
+
+export function sortProducts(list, sort) {
+  const arr = [...list];
+  const date = (p) => Date.parse(p.releaseDate || "") || 0;
+  if (sort === "newest") return arr.sort((a, b) => date(b) - date(a));
+  if (sort === "price-asc") return arr.sort((a, b) => sortPrice(a) - sortPrice(b));
+  if (sort === "price-desc") return arr.sort((a, b) => sortPrice(b) - sortPrice(a));
+  // recommended: spotlight → featured → bestseller → newest
+  const score = (p) => (p.spotlight ? 8 : 0) + (p.featured ? 4 : 0) + (p.bestseller ? 2 : 0);
+  return arr.sort((a, b) => score(b) - score(a) || date(b) - date(a));
 }
