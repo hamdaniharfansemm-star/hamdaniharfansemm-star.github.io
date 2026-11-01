@@ -758,15 +758,15 @@
     "prompts": [
       {
         "id": "bhinneka-tunggal-ika-bersatu-di-bawah-merah-putih",
-        "slug": "bhinneka-tunggal-ika-bersatu-di-bawah-merah-putih",
-        "status": "draft",
-        "title": "Bhinneka Tunggal Ika: Bersatu di Bawah Merah Putih",
-        "category": "Hari Nasional",
-        "tool": "ChatGPT / Gemini",
-        "image": "",
-        "note": "Cocok untuk poster atau unggahan Instagram bertema persatuan dan hari kemerdekaan.",
+        "slug": "realistic-1-7-scale-action-figure",
+        "status": "published",
+        "title": "AI FIGURE STUDIO",
+        "category": "Realistic 1/7 Scale Action Figure Studio",
+        "tool": "Midjourney / DALL-E 3, Chat GPT",
+        "image": "/assets/uploads/mvxzeds6-zbrush-sculpting-studio-figure-showcase.jpg",
+        "note": "Prompt khusus untuk membuat figur action skala 1/7 dengan detail tekstur kulit yang hiper-realistis, lengkap dengan kotak kemasan dan latar studio ZBrush",
         "date": "2026-11-01",
-        "prompt": "Buat ilustrasi digital sinematik dengan rasio 4:5 bertema \"Bhinneka Tunggal Ika: Bersatu di Bawah Merah Putih\".\n\nAdegan: sekelompok anak muda Indonesia dari berbagai suku berdiri berdampingan dan saling merangkul, mengenakan pakaian adat yang berbeda-beda (Minangkabau, Jawa, Bali, Dayak, Papua, dan Bugis). Di belakang mereka, bendera Merah Putih raksasa berkibar gagah ditiup angin.\n\nLatar: langit senja keemasan dengan siluet gugusan pulau Nusantara di cakrawala, burung Garuda samar di antara awan.\n\nGaya: semi-realistis, pencahayaan hangat golden hour, detail kain dan tekstur pakaian adat yang tajam, kedalaman bidang sinematik, warna dominan merah, putih, dan emas.\n\nTeks di bagian bawah dengan huruf tebal elegan: \"BHINNEKA TUNGGAL IKA\".\n\nKualitas: sangat detail, resolusi tinggi, komposisi seimbang, tanpa watermark."
+        "prompt": "Generate a 1/7 scale collectible figurine of the characters from the provided image, designed in a realistic style and displayed within a real-life setting. The figurine should be positioned on a computer desk and mounted on a clear round acrylic base without any text or markings. On the computer screen, show the ZBrush sculpting process of this same figurine. Beside the monitor, place a toy packaging box in the style of BANDAI, printed with the original artwork. The packaging design should feature flat two-dimensional illustrations. Ensure all details remain consistent with the reference image."
       }
     ]
   }
