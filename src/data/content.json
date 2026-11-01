@@ -854,7 +854,7 @@
       },
       {
         "title": "Cinematic Vintage Portrait: Pria Elegan dengan Motor Yamaha RX100",
-        "status": "draft",
+        "status": "published",
         "image": "/assets/uploads/mvy13z6m-vintage-yamaha-portrait-by-weathered-wal.jpg",
         "prompt": "Generate a cinematic outdoor portrait of a fashionable young man posed confidently beside a black Yamaha RX100 motorcycle. He is dressed in a dark brown button-up shirt paired with light brown trousers and black loafers, complemented by a wristwatch, bracelet, and sunglasses. The setting should include wild greenery and an aged concrete wall to enhance a rustic urban feel. Use moody, warm vintage tones to evoke a retro aesthetic. His facial expression should remain serious and composed, suggesting mystery and rugged sophistication. Ensure the face exactly matches the provided reference selfie—keep the same eyes, nose, cheeks, and skin texture.",
         "category": "Portrait Pria / Motorcycle Photography / Vintage Aesthetic / Fashion Editorial",
@@ -863,6 +863,18 @@
         "slug": "portrait-pria-motor-yamaha-rx100-vintage",
         "date": "2026-11-01",
         "id": "app"
+      },
+      {
+        "title": "Cinematic Ferrari F1 Racing Poster — Custom Driver #69",
+        "status": "published",
+        "image": "/assets/uploads/mvy19nt5-ferrari-69-smoke-and-speed.jpg",
+        "prompt": "Buat poster sinematik formula 1 dengan menampilkan [refer image]. Pertahankan wajah, rambur, bentuk dan sudut asli persis seperti pada gambar. Tampilkan orang tersebut dalam tiga perspektif : potret close-up tanpa helm mengenakan racing suit Ferrari berwarna merah dengan logo sponsor, tampak samping dengan helm balap bergaya Ferrari, dan tampilan tubuh penuh mengenakan racing suit Ferrari berwarna merah dengan logo sponsor.\nDi bagian bawah, letakkan mobil Ferrari yang sedang melakukan burnout dengan asap sekitar ban. Mobil harus menampilkan nomor balap \"69\" dengan jelas di bagian hidung dan sisi. Gunakan latar belakang merah tegas dengan nomor balap besar \"69\" di belakang karakter. Gaya keseluruhan harus ultra-realistis, resolusi tinggi, sinematik, dengan nuansa poster olahraga propesional.",
+        "category": "AI Portrait / Formula 1 / Motorsport / Racing Poster / Ferrari / Cinematic",
+        "tool": "ChatGPT Image Generation",
+        "note": "Buat poster balap Formula 1 bergaya sinematik dengan mempertahankan karakter wajah dari foto referensi. Gunakan tiga perspektif karakter, racing suit Ferrari merah, helm balap, dan mobil balap bernomor 69. Untuk hasil terbaik, unggah foto referensi dengan wajah yang jelas. Cocok untuk poster personal, wallpaper, konten media sosial, dan desain bertema motorsport. Logo dan sponsor dapat disesuaikan.",
+        "slug": "cinematic-ferrari-f1-racing-poster-driver-69",
+        "date": "2026-11-01",
+        "id": "cinematic-ferrari-f1-racing-poster-driver-69"
       }
     ]
   }
