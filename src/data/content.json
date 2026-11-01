@@ -890,7 +890,7 @@
       },
       {
         "title": "Cinematic Black Fashion Portrait – Golden Hour Studio",
-        "status": "draft",
+        "status": "published",
         "image": "/assets/uploads/mvy1ndh4-cinematic-coffee-armchair-portrait.jpg",
         "prompt": "Turn the uploaded photo into a high-quality, cinematic studio portrait. The subject is seated in a relaxed, casual position, captured from a side angle. The setting is a professional photo studio illuminated with warm, soft light that reflects the golden glow of sunset, creating dramatic highlights and shadows across the scene.\n\nThe subject wears an all-black outfit: an oversized black blazer paired with sleek black trousers. In one hand, they hold a takeaway coffee cup, which adds a modern, lifestyle element to the composition.\n\nThe overall mood should be elegant, edgy, and slightly mysterious, blending fashion-editorial aesthetics with cinematic tones. The environment must look realistic, with high detail in textures, lighting, and reflections.\n\n⚠️ Important: The face must remain exactly the same as in the reference photo. Do not change or alter the facial structure, skin, expression, or features in any way. Only adjust pose, clothing, and environment while keeping the original face intact.",
         "category": "Cinematic Black Fashion Portrait – Golden Hour Studio",
@@ -899,6 +899,18 @@
         "slug": "ubah-foto-referensi-menjadi-potret-fashion-sinematik-profesional-dengan-outfit-serba-hitam-blazer-oversized-celana-hitam-elegan-dan-gelas-kopi-takeaway-gunakan-pencahayaan-hangat-bernuansa-golden-hour-bayangan-dramatis-sudut-pengambilan-gambar-dari-samping-serta-detail-tekstur-kulit-dan-kain-yang-realistis-pertahankan-identitas-wajah-bentuk-mata-hidung-bibir-struktur-wajah-dan-tekstur-kulit-semirip-mungkin-dengan-foto-referensi-cocok-untuk-personal-branding-foto-profil-profesional-dan-konten-fashion-media-sosial",
         "date": "2026-11-01",
         "id": "ubah-foto-referensi-menjadi-potret-fashion-sinematik-profesional-dengan-outfit-serba-hitam-blazer-oversized-celana-hitam-elegan-dan-gelas-kopi-takeaway-gunakan-pencahayaan-hangat-bernuansa-golden-hour-bayangan-dramatis-sudut-pengambilan-gambar-dari-samping-serta-detail-tekstur-kulit-dan-kain-yang-realistis-pertahankan-identitas-wajah-bentuk-mata-hidung-bibir-struktur-wajah-dan-tekstur-kulit-semirip-mungkin-dengan-foto-referensi-cocok-untuk-personal-branding-foto-profil-profesional-dan-konten-fashion-media-sosial"
+      },
+      {
+        "title": "Manchester City Football Star – Cinematic Locker Room Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mvy1whxe-manchester-city-locker-room-portrait.jpg",
+        "prompt": "Depict this man as a professional soccer player inside a locker room setting. He is dressed in the full Manchester City home kit—jersey, shorts, socks, and boots. A jersey with the name “HAMDANI HARFAN” and the number 86 should appear on a shirt hanging behind him on the locker wall. He sits with a UEFA Champions League ball placed on his lap, exuding a confident expression. The atmosphere should resemble a dramatic locker room scene, enhanced with cinematic lighting and rendered in an ultra-realistic, highly detailed photographic style.",
+        "category": "AI Portrait / Football / Manchester City / Sports Photography",
+        "tool": "ChatGPT / AI Image Generation",
+        "note": "Create an ultra-realistic cinematic portrait of a professional football player wearing the full Manchester City home kit, including jersey, shorts, socks, and football boots. Preserve the subject’s original facial identity and hairstyle. The player sits confidently in a dramatic professional locker room with a UEFA Champions League-style football resting on his lap. Behind him, display a Manchester City jersey with the name “HAMDANI HARFAN” and the number “86” clearly visible. Use premium cinematic lighting, realistic fabric textures, detailed locker room elements, dramatic shadows, and professional sports photography aesthetics. High resolution, sharp focus, realistic proportions, premium editorial quality.",
+        "slug": "manchester-city-football-star-86",
+        "date": "2026-11-01",
+        "id": "manchester-city-football-star-86"
       }
     ]
   }
