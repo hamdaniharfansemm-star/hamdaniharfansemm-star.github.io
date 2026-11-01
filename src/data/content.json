@@ -839,6 +839,30 @@
         "slug": "ultra-realistic-jet-ski-adventure-tropical-ocean-portrait",
         "date": "2026-11-01",
         "id": "ultra-realistic-jet-ski-adventure-tropical-ocean-portrait"
+      },
+      {
+        "title": "Yakuza Boss — Cinematic Kabukicho Night Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mvy0xl1f-neon-nights-in-kabukich.jpg",
+        "prompt": "Convert the uploaded full-body photo into a cinematic Yakuza-themed portrait. The subject should embody the aura of a formidable Japanese crime boss, dressed in a sleek black tailored suit with an open-neck white shirt (no tie). Allow faint glimpses of traditional irezumi tattoos—dragon and koi patterns—emerging naturally from the chest and collar, detailed yet understated. Polished black leather shoes complete the look. The stance should project confidence and quiet menace, with hands resting casually at the sides.\n\nSetting: The backdrop is a Kabukicho alley at night, drenched in neon light from kanji signs, lanterns, and muted streetlamps. Pavement appears wet, mirroring the vibrant colors. In the distance, nightlife patrons (blurred, smoking, talking, strolling) add authenticity without distracting focus.\n\nAtmosphere: Stylish, raw, and intimidating yet elegant—echoing the cinematic aesthetic of Japanese gangster films and video games.\n\nCamera Specs: Full-body perspective at eye level, captured with a full-frame camera using a 35mm prime lens at f/2.0. Subject is tack-sharp in focus, while the background remains softly blurred to create cinematic depth.\n\nPost-Processing: Apply filmic color grading with neon accents, subtle grain, and high contrast to emphasize the texture of the suit. Enhance reflections on the wet ground, sharpen facial details, and keep skin tone and body proportions true to the source photo.\n\nOutput: 4:3 ratio, 8K resolution, with a glossy cinematic finish.",
+        "category": "AI Portrait / Yakuza Style / Japanese Street / Cinematic / Fashion Editorial",
+        "tool": "ChatGPT Image Generation / AI Photo Editing",
+        "note": "Gunakan foto referensi dengan wajah yang jelas untuk menjaga kemiripan identitas. Ciptakan penampilan bos Yakuza bergaya film Jepang dengan setelan hitam elegan, kemeja putih terbuka tanpa dasi, tato irezumi naga dan koi yang terlihat samar, serta sepatu kulit hitam mengilap. Latar gang Kabukicho pada malam hari dengan lampu neon Jepang, jalanan basah, pantulan cahaya sinematik, dan latar belakang blur. Pertahankan anatomi realistis dan ekspresi wajah natural. Rasio 4:3, kualitas ultra-realistis.",
+        "slug": "yakuza-boss-cinematic-kabukicho",
+        "date": "2026-11-01",
+        "id": "yakuza-boss-cinematic-kabukicho"
+      },
+      {
+        "title": "",
+        "status": "draft",
+        "image": "",
+        "prompt": "",
+        "category": "",
+        "tool": "",
+        "note": "",
+        "slug": "app",
+        "date": "2026-11-01",
+        "id": "app"
       }
     ]
   }
