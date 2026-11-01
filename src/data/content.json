@@ -1019,6 +1019,18 @@
         "slug": "cinematic-prehistoric-adventure-trex",
         "date": "2026-11-01",
         "id": "cinematic-prehistoric-adventure-trex"
+      },
+      {
+        "title": "Dream Above the Clouds – Cinematic Coffee & Reading",
+        "status": "published",
+        "image": "/assets/uploads/mvy3gs1q-golden-hour-cloudside-explorer.jpg",
+        "prompt": "A cinematic photo of a this man in this picture lounging on a fluffy white cloud high above the sky, holding a cup of coffee in one hand and a book in the other. He wears casual clothes with sunglasses, reclining comfortably with warm sunlight hitting his face. The sky around him is clear with golden hour tones, creating a dreamy, peaceful atmosphere above the clouds. Ultra-realistic lighting, soft textures, cozy vibe, surreal realism. Don't change his original face.\n\n—ar 3:4 —style cinematic —lighting warm sunset —render ultra-realistic —v 6 —s 1000",
+        "category": "AI Photo Editing / Surreal Realism / Cinematic Portrait / Fantasy / Lifestyle",
+        "tool": "ChatGPT / Midjourney / AI Image Generator",
+        "note": "Gunakan foto referensi wajah asli untuk menjaga konsistensi karakter. Pilih pencahayaan golden hour, awan yang lembut dan realistis, serta pose santai yang natural. Cocok untuk konten media sosial, potret fantasi, dan fotografi kreatif. Gunakan rasio vertikal 3:4 untuk hasil optimal.",
+        "slug": "dream-above-the-clouds",
+        "date": "2026-11-01",
+        "id": "dream-above-the-clouds"
       }
     ]
   }
