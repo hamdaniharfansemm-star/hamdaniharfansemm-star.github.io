@@ -1055,6 +1055,18 @@
         "slug": "prompt-cinematic-pria-pasar-asia-pesawat",
         "date": "2026-11-02",
         "id": "prompt-cinematic-pria-pasar-asia-pesawat"
+      },
+      {
+        "title": "AI Photo Transformation: Formal Portrait to Waterbending Kung Fu Master | Cinematic Fantasy",
+        "status": "published",
+        "image": "/assets/uploads/mvzbvnx0-martial-artist-in-a-spiraling-water-vort.jpg",
+        "prompt": "A martial artist performing a powerful waterbending move in the middle of a shallow forest river. Use the provided man’s face and physique exactly. He wears a deep blue kung fu uniform with a red belt, striking a strong defensive stance with both arms extended. A circular ring of swirling water energy forms around him, dynamic and semi-transparent, glowing slightly with reflected light. The scene is surrounded by misty green forest trees in the background, soft natural lighting, cinematic realism, and gentle water splashes beneath his feet. Capture motion and energy with ultra-realistic textures — smooth water arc, detailed fabric folds, droplets in midair, and reflections on the water surface. Shot in 85mm lens, f/1.8, shallow depth of field, balanced lighting, hyper-realistic detail — keep the man’s original face —ar 2:3 —v 6 —s 900 —style raw.",
+        "category": "AI Photo Editing, Martial Arts, Waterbending, Fantasy Portrait, Cinematic Photography",
+        "tool": "ChatGPT, Gemini, Midjourney",
+        "note": "Transformasikan foto formal menjadi potret master kung fu sinematik dengan mempertahankan kemiripan wajah dari foto referensi. Kenakan seragam bela diri biru tua dengan ikat pinggang merah, pose kuda-kuda yang kuat, dan kedua tangan mengendalikan lingkaran air yang berputar. Tambahkan hutan hijau berkabut, percikan air realistis, tetesan air di udara, pantulan cahaya alami, detail kain, serta depth of field yang dramatis. Gunakan komposisi vertikal 2:3 dan hasil akhir fotorealistis. Unggah foto referensi yang jelas untuk membantu menjaga konsistensi wajah. Hasil kemiripan dapat berbeda tergantung platform AI.",
+        "slug": "formal-photo-to-waterbending-kung-fu-master",
+        "date": "2026-11-02",
+        "id": "formal-photo-to-waterbending-kung-fu-master"
       }
     ]
   }
