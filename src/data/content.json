@@ -1151,6 +1151,18 @@
         "slug": "ai-barista-futuristic-cafe",
         "date": "2026-11-02",
         "id": "ai-barista-futuristic-cafe"
+      },
+      {
+        "title": "Cinematic Vampire Portrait – Dark Gothic Halloween",
+        "status": "published",
+        "image": "/assets/uploads/mvzczip4-gothic-vampire-beneath-the-blood-moon.jpg",
+        "prompt": "A cinematic Halloween portrait featuring a person wearing an elegant vampire costume, based on the uploaded photo. The person’s face and appearance should clearly resemble the uploaded photo. The outfit includes a dark crimson cloak with a high collar, black vest, and subtle gothic details. The lighting is moody and dramatic, with soft candlelight glow and hints of mist in the background. Add faint bats, jack-o’-lanterns, and gothic castle silhouettes to enhance the Halloween atmosphere. The person’s expression is confident yet mysterious, with a charming vampire aura — pale skin, slightly glowing eyes, and refined fangs. Realistic fantasy style, ultra-detailed textures, cinematic composition, 8k render, depth of field, sharp focus, warm and cool lighting contrast.",
+        "category": "Halloween / Fantasy / Vampire / Gothic / Cinematic Portrait / Character Transformation",
+        "tool": "Halloween / Fantasy / Vampire / Gothic / Cinematic Portrait / Character Transformation",
+        "note": "Unggah foto wajah sebagai referensi utama untuk mempertahankan kemiripan karakter. Ubah penampilan menjadi vampir elegan dengan jubah beludru merah marun, kerah tinggi, rompi hitam bergaya gothic, mata merah samar, dan taring halus. Tambahkan kastel gothic, bulan purnama, kelelawar, labu Halloween, lilin, serta kabut tipis. Gunakan pencahayaan sinematik dengan perpaduan warna merah, hitam, dan cahaya bulan untuk menghasilkan potret fantasi yang realistis, dramatis, dan detail.",
+        "slug": "cinematic-vampire-halloween",
+        "date": "2026-11-02",
+        "id": "cinematic-vampire-halloween"
       }
     ]
   }
