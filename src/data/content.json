@@ -1235,6 +1235,18 @@
         "slug": "red-luxury-fashion-portrait",
         "date": "2026-11-02",
         "id": "red-luxury-fashion-portrait"
+      },
+      {
+        "title": "Trapped Inside Spotify — Immersive Music Experience",
+        "status": "published",
+        "image": "/assets/uploads/mvzdvqap-neon-green-music-experience.jpg",
+        "prompt": "A man (in the photo) with closed eyes and headphones sitting on a glowing green Spotify logo in a dark, slightly green-lit room. Don't change his original face. Behind him, a large curved screen displays a futuristic Spotify interface with album art and artist names. Musical notes and abstract glowing green lines emanate from the man and around the Spotify logo, creating a dynamic and immersive feel. The overall aesthetic is dark, moody, and highlights the green brand colors of Spotify.",
+        "category": "AI Art, Futuristic Portrait, Music & Technology",
+        "tool": "SPOTIFY IMMERSIVE",
+        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan karakter asli. Tambahkan headphone, platform neon hijau, panel musik futuristik, gelombang suara holografis, dan pencahayaan sinematik bernuansa hijau. Cocok untuk konten kreatif bertema musik dan teknologi masa depan.",
+        "slug": "trapped-inside-spotify",
+        "date": "2026-11-02",
+        "id": "trapped-inside-spotify"
       }
     ]
   }
