@@ -1187,6 +1187,18 @@
         "slug": "luxury-kingpin-cheetah",
         "date": "2026-11-02",
         "id": "luxury-kingpin-cheetah"
+      },
+      {
+        "title": "Cinematic Snow Mountain Portrait with Black Horse",
+        "status": "published",
+        "image": "/assets/uploads/mvzdb9oq-stylish-rider-and-black-horse-in-snowy-m.jpg",
+        "prompt": "Create an ultra-realistic, 8K cinematic portrait of a man crouching beside a majestic black horse in a serene, snow-covered mountain landscape. The man’s face should perfectly match the uploaded photo, preserving every facial feature and expression. He has slightly wavy hair and wears dark sunglasses, a warm black sweater, grey cargo pants, and black boots.\n\nHe crouches with one knee bent, holding the horse’s reins in a relaxed but confident stance. The horse stands tall and powerful, its sleek jet-black coat glistening under natural light, with a flowing mane and intelligent, expressive eyes. It wears a simple leather halter for a refined, minimal look.\n\nThe ground is blanketed in snow with subtle footprints and scattered rocks adding realism. Behind them, softly blurred pine trees and distant snow-capped peaks stretch under a clear blue sky. Gentle snowfall adds depth and motion, while soft, natural lighting accentuates the textures of the snow, fabric, and hair. The overall atmosphere feels calm, majestic, and adventurous — evoking freedom and a deep bond between human and nature.",
+        "category": "AI Image Editing, Cinematic Portrait, Animal Photography, Winter Landscape, Adventure, Fashion Editorial",
+        "tool": "WINTER HORSE PORTRAIT",
+        "note": "Gunakan foto referensi wajah yang tajam dan menghadap kamera untuk menjaga kemiripan karakter. Prompt ini mengubah pakaian menjadi sweater hitam, celana cargo abu-abu, sepatu boots, dan kacamata hitam, dengan kuda hitam gagah di lanskap pegunungan bersalju. Gunakan komposisi vertikal agar seluruh pose jongkok dan tubuh kuda terlihat proporsional.",
+        "slug": "winter-horse-portrait",
+        "date": "2026-11-02",
+        "id": "winter-horse-portrait"
       }
     ]
   }
