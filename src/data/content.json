@@ -1271,6 +1271,18 @@
         "slug": "portrait-hamdani-harfan",
         "date": "2026-11-02",
         "id": "portrait-hamdani-harfan"
+      },
+      {
+        "title": "HOT NEWS — Cinematic Burning Newspaper Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mvzegj9r-man-holding-flaming-hot-news-newspaper.jpg",
+        "prompt": "A cinematic, ultra-realistic portrait of a person (based on the uploaded photo) holding an open newspaper titled “HOT NEWS” printed clearly across both pages. The newspaper is on fire from the edges, with vivid orange and yellow flames spreading along the top and sides. Sparks and ashes float through the air while the paper edges curl and burn. The warm light from the fire illuminates the person’s face dramatically, casting soft shadows on one side. Their expression is calm, confident, and slightly intense, symbolizing power and revelation. The background is dark and cinematic, with subtle smoke and glowing embers drifting around. The composition feels like a movie poster — powerful, mysterious, and modern. Ultra-detailed cinematic portrait, HDR lighting, volumetric smoke, realistic fire glow, 8k render, photo-realistic textures, dramatic contrast, color palette of orange, amber, and deep black.\n\n\"A hyper-realistic raw portrait of an Asian man, detailed natural skin texture, visible skin pores, subtle imperfections, vellus hairs, natural skin oils, no airbrushing. Soft natural window lighting, gentle shadows, depth of field. Shot on 85mm lens, f/2.8, professional photography, candid expression, sharp focus, 8k resolution, photorealistic masterpiece.",
+        "category": "Cinematic Portrait, AI Photo Editing, Dramatic Effects",
+        "tool": "HOT NEWS 🔥",
+        "note": "Gunakan foto referensi wajah agar identitas tetap konsisten. Tambahkan efek api realistis di tepi koran, bara beterbangan, asap dramatis, serta pencahayaan oranye dari api. Pertahankan tekstur kulit alami dan detail wajah. Pastikan tulisan “HOT NEWS” terlihat jelas.",
+        "slug": "hot-news-burning-newspaper",
+        "date": "2026-11-02",
+        "id": "hot-news-burning-newspaper"
       }
     ]
   }
