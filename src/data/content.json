@@ -1091,6 +1091,18 @@
         "slug": "ai-pokemon-trainer-charizard",
         "date": "2026-11-02",
         "id": "ai-pokemon-trainer-charizard"
+      },
+      {
+        "title": "Potret Psychedelic Neon – Seni Digital Abstrak Ultra-Realistis",
+        "status": "published",
+        "image": "/assets/uploads/mvzc67cd-psychedelic-portrait-in-swirling-neon-pa.jpg",
+        "prompt": "A vibrant, psychedelic portrait of a human based on the uploaded photo. The person’s face and features should be clearly recognizable, surrounded by a colorful, abstract background with fluid, swirling patterns in neon hues of blue, orange, pink, green, and yellow. The lighting is bright and glowing, with soft reflections on the skin and hair. The artwork style is detailed, vivid, and surreal — resembling an oil painting blended with digital neon art. The expression is calm and confident, with dreamy eyes and gentle lighting on the face. Ultra-detailed, high quality, 8k render, sharp focus, vivid saturation, intricate textures, fantasy style.",
+        "category": "Psychedelic Portrait, Neon Art, Digital Painting, Abstract Art, Fantasy Portrait, AI Image Editing",
+        "tool": "ChatGPT, Gemini, Midjourney",
+        "note": "Ubah foto asli menjadi potret psychedelic yang artistik dengan pola abstrak berputar dan warna neon biru, oranye, merah muda, hijau, dan kuning. Pertahankan identitas wajah, bentuk mata, hidung, bibir, gaya rambut, dan karakteristik utama subjek. Gunakan pencahayaan bercahaya, tekstur menyerupai lukisan minyak, detail digital art yang kompleks, saturasi warna tinggi, dan komposisi sinematik. Cocok untuk foto profil kreatif, poster seni, personal branding, dan konten media sosial. Unggah foto referensi terlebih dahulu agar hasil lebih konsisten.",
+        "slug": "potret-psychedelic-neon-digital-art",
+        "date": "2026-11-02",
+        "id": "potret-psychedelic-neon-digital-art"
       }
     ]
   }
