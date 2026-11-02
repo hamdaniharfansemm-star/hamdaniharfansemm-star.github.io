@@ -1223,6 +1223,18 @@
         "slug": "winter-campfire-serenade",
         "date": "2026-11-02",
         "id": "app"
+      },
+      {
+        "title": "Red Luxury Fashion Portrait — Potret Pria dengan Jas Merah Elegan",
+        "status": "published",
+        "image": "/assets/uploads/mvzdsa92-confident-man-amid-flowing-red-silk.jpg",
+        "prompt": "Create a high-fashion, ultra-realistic portrait of the uploaded man (keep his facial features and identity exactly the same). He stands confidently in front of a dynamic, flowing fabric backdrop in rich red and white tones, resembling elegant waves of silk.\n\nThe man wears a sharp, modern red suit with a white shirt underneath, styled with a slim fit and clean lines for a luxury editorial look. He also wears black sunglasses and polished black dress shoes, exuding charisma and confidence.\n\nThe background should have a minimalist studio setting with soft lighting that enhances the texture of the fabric and the smooth finish of the suit. The overall tone is cinematic and elegant, combining high-end fashion photography aesthetics with bold color contrast and stylish composition.\n\nStyle keywords: ultra-realistic portrait, fashion editorial, cinematic lighting, elegant composition, red and white color palette, luxury aesthetic, 8K resolution, studio photography.",
+        "category": "Fashion & Style, Portrait Photography, Luxury Editorial",
+        "tool": "RED LUXURY LOOK",
+        "note": "Gunakan foto referensi wajah yang jelas untuk menjaga konsistensi karakter. Jas merah dipadukan dengan kemeja putih, kacamata hitam, sepatu formal hitam, dan latar kain merah-putih yang dramatis. Cocok untuk portrait premium, personal branding, dan editorial fashion",
+        "slug": "red-luxury-fashion-portrait",
+        "date": "2026-11-02",
+        "id": "red-luxury-fashion-portrait"
       }
     ]
   }
