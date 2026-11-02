@@ -1175,6 +1175,18 @@
         "slug": "virtual-fashion-try-on-ar-experience",
         "date": "2026-11-02",
         "id": "virtual-fashion-try-on-ar-experience"
+      },
+      {
+        "title": "Kingpin Luxury Portrait — Raja Modern Bersama Cheetah",
+        "status": "published",
+        "image": "/assets/uploads/mvzd6if7-sunglasses-gold-chains-and-spotted-majes.jpg",
+        "prompt": "Create a striking and stylish portrait of the uploaded man, keeping his face completely accurate. He exudes the confident, dominant energy of a modern kingpin. Seated on a plush velvet sofa, he leans back in a relaxed yet commanding posture.\n\nAcross his lap rests a majestic cheetah draped in gold chains, its sleek form positioned naturally over him. The man looks slightly downward toward the animal with a calm, assertive expression, dark sunglasses amplifying his cool, powerful aura.\n\nOne hand rests confidently on the cheetah’s back while the other casually grips the sofa arm, blending elegance with authority. He wears luxurious dark fashion — either a tailored pinstripe suit or an open silk shirt complemented by bold gold accessories. The cheetah’s fierce, half-snarl expression mirrors the man’s energy, capturing a perfect balance of dominance, style, and raw power.",
+        "category": "AI Image Editing, Luxury Portrait, Cinematic, Animal Fantasy, Fashion Editorial",
+        "tool": "LUXURY KINGPIN",
+        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan kemiripan karakter. AI akan mengubah pakaian menjadi busana mewah, menambahkan kacamata hitam, sofa beludru, aksesori emas, dan cheetah dengan gaya sinematik. Hasil terbaik diperoleh menggunakan foto potret beresolusi tinggi dengan wajah terlihat jelas.",
+        "slug": "luxury-kingpin-cheetah",
+        "date": "2026-11-02",
+        "id": "luxury-kingpin-cheetah"
       }
     ]
   }
