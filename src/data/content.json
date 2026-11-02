@@ -1331,6 +1331,30 @@
         "slug": "fire-water-dual-element-portrait",
         "date": "2026-11-02",
         "id": "fire-water-dual-element-portrait"
+      },
+      {
+        "title": "Giant Stone Statue — Patung Monumental di Tengah Kota",
+        "status": "published",
+        "image": "/assets/uploads/mvzfez9e-monumental-bust-under-construction.jpg",
+        "prompt": "A hyper-realistic scene of construction workers sculpting a giant stone statue in the middle of a city street. The statue is a massive bust of a person whose face is based on the uploaded photo, carved in rough stone with visible chisel marks and unfinished textures. The workers, wearing safety helmets and construction uniforms, stand on scaffolding around the giant sculpture, chiseling, smoothing, and shaping the stone surface. Crumbled rock and dust scatter on the ground below. The statue wears a suit and tie, appearing monumental and authoritative, but still partly incomplete and rough. The background shows urban buildings, traffic, and a hazy city atmosphere. The overall mood is realistic, gritty, and documentary-style. Ultra-detailed textures, soft overcast lighting, natural colors, 8k render, dramatic realism.",
+        "category": "Cinematic Photography, Surreal Realism, Monumental Art, Construction Scene",
+        "tool": "Giant Stone Sculpture",
+        "note": "Gunakan foto referensi untuk mempertahankan ciri wajah karakter. Buat patung berukuran raksasa dengan tekstur batu kasar, bekas pahatan yang realistis, dan bagian yang belum selesai. Tambahkan pekerja berskala kecil di atas perancah, serpihan batu, debu, serta latar gedung perkotaan untuk memperkuat kesan monumental. Gunakan pencahayaan mendung dan komposisi dokumenter agar hasil terlihat realistis",
+        "slug": "giant-stone-statue-konstruksi-kota",
+        "date": "2026-11-02",
+        "id": "giant-stone-statue-konstruksi-kota"
+      },
+      {
+        "title": "",
+        "status": "draft",
+        "image": "",
+        "prompt": "",
+        "category": "",
+        "tool": "",
+        "note": "",
+        "slug": "app",
+        "date": "2026-11-02",
+        "id": "app"
       }
     ]
   }
