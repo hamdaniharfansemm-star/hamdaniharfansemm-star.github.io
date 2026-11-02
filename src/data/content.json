@@ -1295,6 +1295,18 @@
         "slug": "creative-workspace-laptop",
         "date": "2026-11-02",
         "id": "creative-workspace-laptop"
+      },
+      {
+        "title": "Potret Cyberpunk Glitch Futuristik",
+        "status": "published",
+        "image": "/assets/uploads/mvzeuep4-cyberpunk-glitch-portrait-with-neon-echo.jpg",
+        "prompt": "A cinematic portrait of a person in a cool, stylish, dynamic pose, but with the face based on the uploaded photo. The body, stance, and lighting are dramatic and confident, like a futuristic movie poster. The image is heavily corrupted with intense glitch effects: extreme RGB separation, pixel fragmentation, horizontal tearing, frame skipping, duplicated ghost frames, CD/VHS error lines, blocky compression artifacts, digital noise bursts, and shredded data streaks. Parts of the hair, edges, and background appear broken into glitch shards as if the digital world is collapsing. The face remains recognizable but surrounded by violent distortion waves and chromatic distortion. The background is dark, minimal, and filled with flickering glitch particles and static. The overall mood is chaotic, stylish, and futuristic. Ultra-detailed glitch textures, heavy data-mosh aesthetic, dramatic lighting, 8k render, no text or captions.",
+        "category": "Digital Art, Cyberpunk, Glitch Effect, Portrait, Futuristic",
+        "tool": "CYBERPUNK GLITCH",
+        "note": "Gunakan foto referensi untuk mempertahankan wajah asli. Tambahkan efek RGB separation, digital distortion, scanlines, dan pixel fragmentation pada latar serta tepi tubuh. Pertahankan detail kulit alami agar wajah tetap realistis dan mudah dikenali.",
+        "slug": "cyberpunk-glitch",
+        "date": "2026-11-02",
+        "id": "cyberpunk-glitch"
       }
     ]
   }
