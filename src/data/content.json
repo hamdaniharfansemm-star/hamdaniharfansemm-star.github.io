@@ -1367,6 +1367,18 @@
         "slug": "smartphone-breakthrough",
         "date": "2026-11-02",
         "id": "smartphone-breakthrough"
+      },
+      {
+        "title": "Pop Art Comic — Ekspresi Karakter dalam Panel Komik",
+        "status": "published",
+        "image": "/assets/uploads/mvzgo5ha-vibrant-comic-hero-action-collage.jpg",
+        "prompt": "A vibrant pop art comic-style illustration featuring multiple panels of the same person, with the face accurately based on the uploaded reference photo, preserving facial identity, skin tone, and natural features without distortion.\n\nThe main central panel shows the person in a confident pose with arms crossed, looking directly at the viewer. Surrounding panels display the same person with different expressions and gestures (smiling, laughing, pointing, winking), creating a dynamic comic layout.\n\nBright, bold pop-art colors with halftone textures, thick black outlines, clean vector-style shading, and high contrast. Comic-style speech bubbles (empty or minimal), and classic onomatopoeia text like “WOW!”, “COOL!”, “ACTION!”, “SLASH!” integrated naturally into the panels.\n\nBackgrounds use colorful radial bursts and dotted comic patterns. Lighting is clean and stylized, illustration-based (not photorealistic).\n\nUltra-detailed comic illustration, sharp lines, smooth gradients, high resolution, vibrant color palette, professional pop-art comic book style, no realism blur, no watermark.",
+        "category": "Pop Art, Comic Illustration, Cartoon, Character Design, Ekspresi Wajah, AI Photo Editing",
+        "tool": "POP ART COMIC",
+        "note": "Gunakan foto referensi wajah yang jelas agar identitas karakter tetap konsisten di setiap panel. Variasikan ekspresi dan pose tanpa mengubah bentuk wajah, warna kulit, atau gaya rambut. Gunakan garis hitam tebal, pola halftone, warna kontras, dan efek ledakan komik. Periksa kembali teks seperti “WOW!”, “COOL!”, dan “ACTION!” agar terbaca dengan benar.",
+        "slug": "pop-art-comic-ekspresi-karakter",
+        "date": "2026-11-02",
+        "id": "pop-art-comic-ekspresi-karakter"
       }
     ]
   }
