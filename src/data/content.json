@@ -1115,6 +1115,18 @@
         "slug": "potret-sinematik-pemain-biliar",
         "date": "2026-11-02",
         "id": "potret-sinematik-pemain-biliar"
+      },
+      {
+        "title": "Forbes 30 Under 30 — AI-Driven Creativity Magazine Cover",
+        "status": "published",
+        "image": "/assets/uploads/mvzckgz7-visionary-ai-s-next-innovator.jpg",
+        "prompt": "Transform the uploaded photo into a professional Forbes 30 Under 30 magazine cover portrait.\n\nThe person in the reference image should look confident, successful, and visionary — like a young entrepreneur or innovator featured in Forbes.\n\nPlace the subject in the center with professional studio lighting, soft shadows, and a clean neutral background (white, gray, or dark gradient).\n\nAdd realistic Forbes magazine layout details:\n\n“Forbes” logo on top (white or black depending on background)\n\nLarge headline text: “30 UNDER 30”\n\nSubtexts like “The Future of AI-Driven Creativity”, “Innovators Redefining Digital Media”\n\nMinimalist side text in fine sans-serif typography\n\nIn the bottom-left corner, vertically aligned text: “Innovation. Influence. Impact.”\n\nOptional barcode and edition text at the bottom corner\n\nThe image should look ultra-detailed, cinematic, elegant, and glossy — as if professionally shot for a Forbes cover.\n\nStyle keywords: ultra-realistic portrait photography, magazine cover, high-end editorial lighting, elegant composition, luxury aesthetic, 8K resolution.\n\nInstruction: adjust outfit and lighting to match Forbes 30 Under 30 vibe (business casual, blazer, confident posture). Maintain the person’s facial identity and likeness from the uploaded photo.",
+        "category": "AI Art / Portrait / Magazine Cover / Personal Branding / Business",
+        "tool": "ChatGPT Image Generation",
+        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan kemiripan karakter. Ubah pakaian menjadi blazer navy premium dengan kemeja putih, pencahayaan editorial profesional, dan latar abu-abu elegan. Tambahkan tipografi majalah bergaya Forbes, headline “30 UNDER 30”, serta teks “The Future of AI-Driven Creativity” dan “Innovators Redefining Digital Media”. Cocok untuk personal branding, profil entrepreneur, dan konten AI kreatif. Hasil ini merupakan konsep cover bergaya editorial, bukan sampul Forbes resmi atau pengakuan bahwa subjek benar-benar terpilih dalam Forbes 30 Under 30.",
+        "slug": "forbes-30-under-30-ai-creativity",
+        "date": "2026-11-02",
+        "id": "forbes-30-under-30-ai-creativity"
       }
     ]
   }
