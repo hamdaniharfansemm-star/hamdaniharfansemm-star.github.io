@@ -1127,6 +1127,18 @@
         "slug": "forbes-30-under-30-ai-creativity",
         "date": "2026-11-02",
         "id": "forbes-30-under-30-ai-creativity"
+      },
+      {
+        "title": "Digital Oil Painting Portrait — Cinematic Executive Style",
+        "status": "published",
+        "image": "/assets/uploads/mvzcp9nd-confident-gentleman-in-a-leather-armchai.jpg",
+        "prompt": "A full-body portrait of a man sitting confidently on a chair, based on the uploaded photo. The person wears a black suit, white shirt, and sunglasses, sitting with legs crossed and a calm, confident posture. The background is an expressive, abstract painting with bold brushstrokes of orange, blue, and beige tones, blending in an artistic painterly style. The image should look like a digital oil painting — textured, emotional, and cinematic. Use dramatic lighting and shadow to enhance depth and personality. The overall mood is stylish, modern, and mysterious. Ultra-detailed digital painting, expressive brushwork, 8k render, artistic composition, rich color palette, museum art style.",
+        "category": "AI Art / Digital Painting / Portrait / Fine Art / Personal Branding",
+        "tool": "ChatGPT Image Generation",
+        "note": "Gunakan foto referensi dengan wajah yang jelas untuk mempertahankan kemiripan karakter. Ubah potret menjadi lukisan cat minyak digital dengan pria mengenakan setelan hitam, kemeja putih, kacamata hitam, dan pose duduk bersilang kaki di kursi kulit klasik. Gunakan latar abstrak dengan sapuan kuas tebal berwarna oranye, biru kobalt, krem, dan hitam. Tambahkan pencahayaan sinematik, tekstur kanvas yang kaya, bayangan dramatis, serta detail artistik yang elegan. Cocok untuk potret personal, avatar premium, dan konten seni AI.",
+        "slug": "digital-oil-painting-executive-portrait",
+        "date": "2026-11-02",
+        "id": "digital-oil-painting-executive-portrait"
       }
     ]
   }
