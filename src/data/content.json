@@ -1067,6 +1067,18 @@
         "slug": "formal-photo-to-waterbending-kung-fu-master",
         "date": "2026-11-02",
         "id": "formal-photo-to-waterbending-kung-fu-master"
+      },
+      {
+        "title": "AI Photo Transformation: Professional Portrait to Futuristic Cyberpunk | Cinematic 8K",
+        "status": "published",
+        "image": "/assets/uploads/mvzbz4x1-cyberpunk-portrait-with-neon-circuits.jpg",
+        "prompt": "A close-up portrait of a man inspired by the provided reference photo — don't change his original face. The lighting is cinematic with warm orange and cool blue tones highlighting the contours of his face. His jacket has a textured, futuristic design, and subtle digital circuitry patterns merge into his skin and surroundings, symbolizing the fusion between human and technology. The background features abstract geometric grids and data streams in glowing hues of red, blue, and orange, creating a cyberpunk-techno aesthetic. Render in ultra-realistic detail with smooth skin texture, soft depth of field, and high dynamic range — 8K resolution, Unreal Engine 5 realism, cinematic lighting, sharp focus on eyes, bokeh background.\n\n--ar 2:3 --v 6 --s 750 --style raw --q 2 --hd --uplight",
+        "category": "AI Photo Editing, Cyberpunk, Futuristic Portrait, Sci-Fi, Digital Art, Cinematic Photography",
+        "tool": "ChatGPT, Gemini, Midjourney",
+        "note": "Ubah foto formal menjadi potret futuristik bergaya cyberpunk dengan mempertahankan kemiripan wajah, gaya rambut, dan karakter utama dari foto referensi. Gunakan jaket teknologi futuristik bertekstur dengan detail sirkuit bercahaya, perpaduan pencahayaan oranye hangat dan biru elektrik, efek digital pada kulit yang halus, latar belakang berupa jaringan data, grid geometris, serta elemen holografik. Terapkan pencahayaan sinematik, fokus tajam pada mata, tekstur kulit realistis, depth of field lembut, dan kontras HDR. Cocok untuk foto profil AI, personal branding teknologi, avatar digital, dan konten media sosial. Gunakan foto referensi yang jelas untuk membantu menjaga konsistensi wajah.",
+        "slug": "professional-portrait-cyberpunk-ai",
+        "date": "2026-11-02",
+        "id": "professional-portrait-cyberpunk-ai"
       }
     ]
   }
