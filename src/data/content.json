@@ -1247,6 +1247,18 @@
         "slug": "trapped-inside-spotify",
         "date": "2026-11-02",
         "id": "trapped-inside-spotify"
+      },
+      {
+        "title": "Low-Poly Geometric Portrait — Seni Potret 3D Futuristik",
+        "status": "published",
+        "image": "/assets/uploads/mvzdz7uk-faceted-geometric-portrait-in-blue.jpg",
+        "prompt": "A highly detailed low-poly geometric portrait based on Image 1. The face, hair, and body are recreated using sharp polygonal shapes and faceted surfaces in shades of blue, gray, and purple, similar to digital sculpture art. Lighting is dramatic, with strong contrast and cinematic highlights emphasizing the 3D geometry. The background features abstract angular patterns that complement the low-poly style. Ultra-detailed 3D low-poly illustration, digital painting, cinematic lighting, polygonal textures, 8k render.",
+        "category": "Digital Art, 3D Illustration, Portrait & Avatar",
+        "tool": "LOW-POLY 3D ART",
+        "note": "Gunakan foto referensi wajah yang jelas agar karakter utama tetap mudah dikenali. Ubah wajah, rambut, pakaian, dan latar menjadi bidang-bidang geometris berbentuk segitiga dengan gradasi biru, ungu, dan abu-abu. Tambahkan pencahayaan sinematik untuk menghasilkan efek pahatan digital 3D yang premium.",
+        "slug": "low-poly-geometric-portrait",
+        "date": "2026-11-02",
+        "id": "low-poly-geometric-portrait"
       }
     ]
   }
