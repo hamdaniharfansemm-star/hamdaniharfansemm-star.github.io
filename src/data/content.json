@@ -1259,6 +1259,18 @@
         "slug": "low-poly-geometric-portrait",
         "date": "2026-11-02",
         "id": "low-poly-geometric-portrait"
+      },
+      {
+        "title": "Hamdani Harfan — Premium Editorial Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mvzeblip-modern-editorial-portrait-with-vertical-.jpg",
+        "prompt": "Create a full-body, fashion-style portrait of the man from the provided photo. Position him standing in a confident pose, slightly turned to the side, looking toward the camera. Use a clean studio background with smooth grey gradients. Add large, bold vertical typography “HAMDANI HARFAN” behind him in a striking red color, similar to a modern magazine or poster design. Dress him in stylish casual wear: a bomber jacket, slim-fit pants, and clean sneakers, matched to the color palette of warm browns, beige, and white. Make the lighting soft, even, and professional, with crisp shadows and a polished editorial finish.\n\nhighly detailed skin texture, natural pores, subsurface scattering, soft studio lighting",
+        "category": "Personal Branding",
+        "tool": "Personal Branding, Portrait, Fashion Editorial",
+        "note": "Gunakan foto referensi untuk menjaga kemiripan wajah. Padukan outfit cokelat premium, latar abu-abu, dan tipografi merah vertikal agar terlihat profesional.",
+        "slug": "portrait-hamdani-harfan",
+        "date": "2026-11-02",
+        "id": "portrait-hamdani-harfan"
       }
     ]
   }
