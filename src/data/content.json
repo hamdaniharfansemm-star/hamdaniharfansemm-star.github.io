@@ -1043,6 +1043,18 @@
         "slug": "padel-court-action-ultra-realistic",
         "date": "2026-11-01",
         "id": "padel-court-action-ultra-realistic"
+      },
+      {
+        "title": "Cinematic AI Photo Prompt — Pria Berjalan di Pasar Asia dengan Pesawat Terbang Rendah",
+        "status": "draft",
+        "image": "/assets/uploads/mvzb8vkl-market-street-beneath-a-low-flying-plane.jpg",
+        "prompt": "A cinematic, hyper-realistic photo of a young man confidently walking down a narrow Asian street market while a large airplane flies very low overhead, captured from a slightly low front angle. The man wears a khaki green hoodie, beige cargo pants, and white-black sneakers. The background shows crowded market stalls, old buildings with colorful vertical Chinese signboards, and a bright clear blue sky. The plane dominates the top frame, with dramatic scale contrast between the aircraft and the street. Golden-hour daylight with soft shadows, realistic lighting reflections on metal and glass surfaces, sharp focus on the subject, slightly blurred depth for background, ultra-detailed textures on clothes and pavement. Shot on 35mm lens, f/2.8, realistic skin tone, cinematic tone mapping, high dynamic range, —ar 9:16 —v 6 —s 800 —style raw.",
+        "category": "AI Photography, Cinematic, Street Photography, Travel, Surrealism",
+        "tool": "ChatGPT, Gemini, Midjourney",
+        "note": "Gunakan prompt ini untuk menghasilkan foto sinematik hiperrealistis dengan komposisi vertikal 9:16. Fokus pada karakter pria yang berjalan percaya diri di pasar Asia, pesawat penumpang yang terbang sangat rendah, pencahayaan golden hour, tekstur realistis, serta perspektif kamera low angle. Untuk hasil konsisten, gunakan foto referensi karakter sebagai acuan wajah. Sesuaikan prompt dengan kemampuan platform AI yang digunakan. Parameter Midjourney dapat dihapus jika digunakan di ChatGPT atau Gemini.",
+        "slug": "prompt-cinematic-pria-pasar-asia-pesawat",
+        "date": "2026-11-02",
+        "id": "prompt-cinematic-pria-pasar-asia-pesawat"
       }
     ]
   }
