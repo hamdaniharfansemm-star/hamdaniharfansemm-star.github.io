@@ -1163,6 +1163,18 @@
         "slug": "cinematic-vampire-halloween",
         "date": "2026-11-02",
         "id": "cinematic-vampire-halloween"
+      },
+      {
+        "title": "Virtual Fashion Try-On – Futuristic AR Experience",
+        "status": "published",
+        "image": "/assets/uploads/mvzd36j3-holographic-suit-try-on-studio.jpg",
+        "prompt": "A cinematic, ultra-realistic image showing a person (based on the uploaded photo) standing in front of a futuristic holographic display while trying on virtual clothes in augmented reality. The person’s body is surrounded by a glowing 3D hologram projection of fashionable outfits that shift and change in real time. Transparent holographic panels float around, showing fabric textures, colors, and size options. The environment looks like a modern smart home or minimalist shopping studio with neon-blue lighting and glass surfaces. The person’s expression shows curiosity and amazement as the holographic clothing fits perfectly on their digital reflection. The atmosphere is sleek, futuristic, and optimistic — symbolizing the future of online fashion. Ultra-detailed sci-fi lighting, volumetric glow, HDR reflections, realistic human skin tone, 8k render, cinematic composition, soft depth of field, high-tech retail aesthetic.",
+        "category": "AI / Fashion / Teknologi Futuristik / Augmented Reality",
+        "tool": "ChatGPT / Gemini / Midjourney",
+        "note": "Gunakan foto referensi untuk mempertahankan kemiripan wajah dan karakter. Buat adegan sinematik seseorang mencoba pakaian virtual menggunakan teknologi augmented reality (AR). Tambahkan hologram pakaian 3D, pilihan warna dan tekstur kain, panel ukuran, serta antarmuka belanja futuristik dengan pencahayaan neon biru. Gunakan latar studio modern dengan permukaan kaca, refleksi realistis, pencahayaan HDR, dan detail ultra-realistis. Pastikan wajah tetap natural, pakaian holografik menyatu dengan tubuh, dan komposisi terlihat profesional. Cocok untuk konten AI, promosi fashion digital, dan konsep e-commerce masa depan.",
+        "slug": "virtual-fashion-try-on-ar-experience",
+        "date": "2026-11-02",
+        "id": "virtual-fashion-try-on-ar-experience"
       }
     ]
   }
