@@ -1199,6 +1199,30 @@
         "slug": "winter-horse-portrait",
         "date": "2026-11-02",
         "id": "winter-horse-portrait"
+      },
+      {
+        "title": "Transformasi Manusia Menjadi Dark Symbiote",
+        "status": "published",
+        "image": "/assets/uploads/mvzdeu5l-half-human-symbiote-in-a-warm-restaurant.jpg",
+        "prompt": "Create an ultra-realistic cinematic image of a man transforming into a dark symbiotic creature, inspired by the concept of Venom. Use the uploaded man’s face and preserve his exact facial structure and expression. Half of his body remains human wearing a fitted white dress shirt, black pants, and dark shoes, while the other half is covered in sleek, black alien symbiote texture with tendrils spreading outward.\n\nThe symbiote side should appear dynamic and organic, with a glossy, liquid-like surface, sharp teeth, and glowing white eyes emerging from the dark form. The man walks confidently through a dimly lit urban interior (like a modern restaurant or warehouse), illuminated by warm ambient lights that contrast with the dark tones of the symbiote.\n\nThe composition should feel cinematic, powerful, and slightly eerie, blending realism with supernatural energy. Include subtle reflections and shadows on the floor for a grounded, photorealistic look.\n\nStyle keywords: ultra-realistic, cinematic lighting, 8K detail, dynamic contrast, dark sci-fi tone, Venom-inspired transformation, photoreal texture, dramatic atmosphere.",
+        "category": "AI Image Editing, Fantasy & Sci-Fi, Superhero, Cinematic Portrait",
+        "tool": "DARK SYMBIOTE TRANSFORMATION",
+        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan kemiripan karakter. Pastikan perpaduan tubuh manusia dan symbiote terlihat realistis, dengan tekstur hitam mengilap, tentakel organik, mata putih bercahaya, serta pencahayaan sinematik yang kontras. Cocok untuk edit foto bertema superhero dan fantasi gelap.",
+        "slug": "dark-symbiote-transformatio",
+        "date": "2026-11-02",
+        "id": "dark-symbiote-transformatio"
+      },
+      {
+        "title": "",
+        "status": "draft",
+        "image": "",
+        "prompt": "",
+        "category": "",
+        "tool": "",
+        "note": "",
+        "slug": "app",
+        "date": "2026-11-02",
+        "id": "app"
       }
     ]
   }
