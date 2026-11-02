@@ -1283,6 +1283,18 @@
         "slug": "hot-news-burning-newspaper",
         "date": "2026-11-02",
         "id": "hot-news-burning-newspaper"
+      },
+      {
+        "title": "Creative Workspace — Melayang Sambil Bekerja dengan Laptop",
+        "status": "published",
+        "image": "/assets/uploads/mvzepazz-levitating-creative-workspace.jpg",
+        "prompt": "A stylish man (in the photo) floating in mid-air inside a minimal modern studio. Don't change his original face. He sits in a relaxed seated position while typing on a laptop, completely focused. Around him, various creative objects float realistically: notebooks, sketch papers, glasses, a DSLR camera, headphones, and pens. Soft natural lighting from the left creates gentle shadows and a calm atmosphere. The color palette is muted and professional—grey, black, and white tones. High-detail photorealism, shallow depth of field, crisp edges, dynamic levitation effect, clean background, creative workspace aesthetic, 8K, studio photography, cinematic composition.\n\n\"A hyper-realistic raw portrait of an Asian man, detailed natural skin texture, visible skin pores, subtle imperfections, vellus hairs, natural skin oils, no airbrushing. Soft natural window lighting, gentle shadows, depth of field. Shot on 85mm lens, f/2.8, professional photography, candid expression, sharp focus, 8k resolution, photorealistic masterpiece.",
+        "category": "AI Photography, Portrait, Cinematic, Creative Workspace, Professional",
+        "tool": "Creative Workspace",
+        "note": "Gunakan foto referensi untuk mempertahankan identitas wajah. Kenakan setelan navy profesional dengan kemeja putih dan dasi merah marun. Atur posisi tubuh duduk melayang secara natural sambil mengetik di laptop. Tambahkan kamera, headphone, buku, kacamata, pena, dan sketsa yang mengambang dengan perspektif realistis. Gunakan pencahayaan jendela yang lembut, latar abu-abu minimalis, tekstur kulit alami, dan bayangan sinematik.",
+        "slug": "creative-workspace-laptop",
+        "date": "2026-11-02",
+        "id": "creative-workspace-laptop"
       }
     ]
   }
