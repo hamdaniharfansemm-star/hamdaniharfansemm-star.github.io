@@ -1213,14 +1213,14 @@
         "id": "dark-symbiote-transformatio"
       },
       {
-        "title": "",
-        "status": "draft",
-        "image": "",
-        "prompt": "",
-        "category": "",
-        "tool": "",
-        "note": "",
-        "slug": "app",
+        "title": "Winter Campfire Serenade — Potret Musisi di Hutan Bersalju",
+        "status": "published",
+        "image": "/assets/uploads/mvzdj7fx-winter-guitarist-by-the-frozen-lake.jpg",
+        "prompt": "Create a realistic winter scene featuring the man from the uploaded photo (keep his facial features exactly the same). He’s sitting on a wooden log in a peaceful snowy forest near a frozen lake surrounded by tall pine trees. He wears a stylish winter coat, a wool scarf, comfortable pants, and warm boots.\n\nIn front of him, a small campfire burns softly, casting a warm orange glow on the snow. The man is smiling as he strums an acoustic guitar, creating a cozy, heartwarming atmosphere. The overall scene should feel cinematic and tranquil, with gentle winter light, soft snowflakes, and a thin layer of mist rising from the lake in the background — evoking warmth, joy, and calm in the cold.",
+        "category": "AI Image Editing, Cinematic Portrait, Winter Photography, Nature & Adventure",
+        "tool": "WINTER CAMPFIRE SERENADE",
+        "note": "Create a realistic winter scene featuring the man from the uploaded photo (keep his facial features exactly the same). He’s sitting on a wooden log in a peaceful snowy forest near a frozen lake surrounded by tall pine trees. He wears a stylish winter coat, a wool scarf, comfortable pants, and warm boots.\n\nIn front of him, a small campfire burns softly, casting a warm orange glow on the snow. The man is smiling as he strums an acoustic guitar, creating a cozy, heartwarming atmosphere. The overall scene should feel cinematic and tranquil, with gentle winter light, soft snowflakes, and a thin layer of mist rising from the lake in the background — evoking warmth, joy, and calm in the cold.",
+        "slug": "winter-campfire-serenade",
         "date": "2026-11-02",
         "id": "app"
       }
