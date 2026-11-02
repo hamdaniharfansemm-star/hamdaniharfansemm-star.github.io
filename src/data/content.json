@@ -1139,6 +1139,18 @@
         "slug": "digital-oil-painting-executive-portrait",
         "date": "2026-11-02",
         "id": "digital-oil-painting-executive-portrait"
+      },
+      {
+        "title": "AI Barista Futuristik – Cinematic Sci-Fi Café",
+        "status": "published",
+        "image": "/assets/uploads/mvzct0j5-futuristic-barista-serving-latte-in-caf.jpg",
+        "prompt": "A cinematic, ultra-realistic sci-fi café scene focusing on the barista counter. The barista’s face and appearance should accurately match the uploaded photo. The person stands behind a sleek futuristic barista counter made of transparent glass and polished metal, illuminated by neon blue and amber lighting. The counter displays holographic menus, glowing coffee cups, and robotic arms assisting in drink preparation. Steam rises softly from a brewing machine, while reflections of holographic lights dance across the countertop. The atmosphere feels calm, elegant, and futuristic — blending human warmth with advanced AI technology. The scene captures both the barista and the full counter area in view, showing details of cups, tools, and the modern café interior. Ultra-detailed sci-fi environment, cinematic lighting, HDR reflections, volumetric glow, 8k render, vivid neon tones, photo-realistic materials, balanced composition.",
+        "category": "AI Art / Sci-Fi / Futuristic Café / Cinematic Portrait / Teknologi Masa Depan",
+        "tool": "ChatGPT / AI Image Generator",
+        "note": "Gunakan foto referensi wajah untuk mempertahankan kemiripan karakter. Buat suasana kafe futuristik dengan perpaduan neon biru dan amber, meja kaca reflektif, mesin kopi otomatis, lengan robotik, hologram menu, serta pencahayaan sinematik. Pastikan karakter dan area konter terlihat jelas, dengan detail realistis dan komposisi profesional.",
+        "slug": "ai-barista-futuristic-cafe",
+        "date": "2026-11-02",
+        "id": "ai-barista-futuristic-cafe"
       }
     ]
   }
