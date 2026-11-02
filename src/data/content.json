@@ -1321,18 +1321,6 @@
         "id": "giant-smartphone-tech-portrait"
       },
       {
-        "title": "Fire & Water — Portrait Dua Elemen Sinematik",
-        "status": "published",
-        "image": "/assets/uploads/mvzf74pi-fire-and-water-suit-portrait.jpg",
-        "prompt": "Create a hyper-realistic portrait of the same man from the reference photo. Show him in a dramatic split-element scene: the left side surrounded by blazing orange flames and glowing embers, and the right side surrounded by cool blue water splashes and mist. His face should be wet from water on one side and illuminated by firelight on the other. Keep his curly hair, facial structure, and expression consistent with the reference. He wears a sharp suit and tie, partially soaked and partially singed. Use cinematic lighting, ultra-detailed textures, and high contrast for a powerful dual-element look.",
-        "category": "AI Image Editing, Cinematic Portrait, Fantasy, Fire & Water Effects",
-        "tool": "Instagram Feed, Poster Film, Personal Branding, Digital Art, Konten AI",
-        "note": "Gunakan foto referensi untuk mempertahankan identitas wajah, bentuk mata, hidung, bibir, dan gaya rambut. Padukan api oranye di sisi kiri dengan percikan air biru di sisi kanan. Gunakan pencahayaan kontras tinggi, tekstur kulit realistis, tetesan air, bara api, dan detail pakaian yang basah serta sedikit hangus untuk menghasilkan efek sinematik yang dramatis.",
-        "slug": "fire-water-dual-element-portrait",
-        "date": "2026-11-02",
-        "id": "fire-water-dual-element-portrait"
-      },
-      {
         "title": "Giant Stone Statue — Patung Monumental di Tengah Kota",
         "status": "published",
         "image": "/assets/uploads/mvzfez9e-monumental-bust-under-construction.jpg",
@@ -1345,16 +1333,28 @@
         "id": "giant-stone-statue-konstruksi-kota"
       },
       {
-        "title": "",
-        "status": "draft",
-        "image": "",
-        "prompt": "",
-        "category": "",
-        "tool": "",
-        "note": "",
-        "slug": "app",
+        "title": "Fire & Water — Portrait Dua Elemen Sinematik",
+        "status": "published",
+        "image": "/assets/uploads/mvzf74pi-fire-and-water-suit-portrait.jpg",
+        "prompt": "Create a hyper-realistic portrait of the same man from the reference photo. Show him in a dramatic split-element scene: the left side surrounded by blazing orange flames and glowing embers, and the right side surrounded by cool blue water splashes and mist. His face should be wet from water on one side and illuminated by firelight on the other. Keep his curly hair, facial structure, and expression consistent with the reference. He wears a sharp suit and tie, partially soaked and partially singed. Use cinematic lighting, ultra-detailed textures, and high contrast for a powerful dual-element look.",
+        "category": "AI Image Editing, Cinematic Portrait, Fantasy, Fire & Water Effects",
+        "tool": "Instagram Feed, Poster Film, Personal Branding, Digital Art, Konten AI",
+        "note": "Gunakan foto referensi untuk mempertahankan identitas wajah, bentuk mata, hidung, bibir, dan gaya rambut. Padukan api oranye di sisi kiri dengan percikan air biru di sisi kanan. Gunakan pencahayaan kontras tinggi, tekstur kulit realistis, tetesan air, bara api, dan detail pakaian yang basah serta sedikit hangus untuk menghasilkan efek sinematik yang dramatis.",
+        "slug": "fire-water-dual-element-portrait",
         "date": "2026-11-02",
-        "id": "app"
+        "id": "fire-water-dual-element-portrait"
+      },
+      {
+        "title": "Ksatria Legendaris Penakluk Badai",
+        "status": "published",
+        "image": "/assets/uploads/mvzg4ly3-stormbound-knight-and-warhorse.jpg",
+        "prompt": "A cinematic, ultra-realistic fantasy scene of a powerful armored knight riding a majestic war horse. The knight’s face is based on the uploaded photo, wearing a full medieval steel armor with intricate engravings and a flowing cape. The knight raises a shining sword high into the sky, with intense light rays reflecting off the blade. The horse rears up dramatically on its hind legs, adding motion and power to the scene. The sky is stormy with dramatic clouds, lightning bolts flashing behind the knight, and glowing embers and sparks swirling through the wind. Dust and debris blow across the battlefield, enhancing the epic mood. The atmosphere is heroic, legendary, and triumphant: like the climax of a medieval war film. Ultra-detailed armor reflections, realistic lighting, volumetric fog, HDR highlights, high contrast, 8k render, dynamic composition, fantasy energy effects, no text or captions.",
+        "category": "Fantasy Epic Portrait Medieval Character Transformation Cinematic AI Art",
+        "tool": "EPIC FANTASY KNIGHT",
+        "note": "Gunakan foto referensi wajah yang jelas agar identitas karakter tetap konsisten. Pertahankan bentuk wajah, gaya rambut, dan warna kulit, lalu ubah kostum menjadi armor ksatria dengan jubah merah, pedang bercahaya, serta kuda perang putih. Tambahkan petir dan pencahayaan sinematik untuk menghasilkan kesan heroik dan dramatis.",
+        "slug": "ksatria-legendaris",
+        "date": "2026-11-02",
+        "id": "ksatria-legendaris"
       }
     ]
   }
