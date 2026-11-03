@@ -1451,6 +1451,18 @@
         "slug": "surreal-eggshell-digital-lifestyle",
         "date": "2026-11-03",
         "id": "surreal-eggshell-digital-lifestyle"
+      },
+      {
+        "title": "Cinematic Anime Noir — Cyberpunk Elevator Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw0oxugf-cyberpunk-elevator-noir-portrait.jpg",
+        "prompt": "Create a stylized cinematic anime illustration of a man based on the provided reference photo.\nThe man is depicted as a cool, confident character standing inside a dimly lit elevator, viewed from a slightly high, dramatic angle.\nHe wears a dark suit jacket over a light shirt, hands in pockets, calm but intimidating expression.\nHis facial features, hairstyle, glasses, and body proportions closely resemble the reference photo, but rendered in high-quality anime realism.\n\nLighting: moody neon lighting, teal and green tones, strong overhead light casting shadows.\nAtmosphere: cinematic, noir, intense, with subtle smoke drifting from a cigarette or glowing ember near his face.\nEnvironment: metal elevator interior, worn textures, reflections on steel walls, floor littered with small details (shells, debris, or light reflections).\nStyle: anime cinematic realism, dramatic contrast, sharp focus, film-grain look, cyberpunk noir vibe.\nColor grading: teal & orange, high contrast.\nQuality: ultra-detailed, 4K illustration, sharp, polished, poster-worthy.",
+        "category": "Anime Realism, Cyberpunk, Cinematic Portrait, Dark Aesthetic, Neon Lighting, Character Consistency",
+        "tool": "ChatGPT Images / Gemini / Midjourney",
+        "note": "Unggah foto referensi yang jelas. Pertahankan ciri wajah, bentuk mata, warna kulit, dan gaya rambut agar karakter tetap konsisten. Gunakan sudut kamera high-angle, pencahayaan neon teal, aksen oranye, serta detail interior lift metal untuk hasil sinematik. Kacamata hanya ditambahkan jika ada pada foto referensi.",
+        "slug": "cinematic-anime-noir-cyberpunk-elevator",
+        "date": "2026-11-03",
+        "id": "cinematic-anime-noir-cyberpunk-elevator"
       }
     ]
   }
