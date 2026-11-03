@@ -865,18 +865,6 @@
         "prompt": "Generate a 1/7 scale collectible figurine of the characters from the provided image, designed in a realistic style and displayed within a real-life setting. The figurine should be positioned on a computer desk and mounted on a clear round acrylic base without any text or markings. On the computer screen, show the ZBrush sculpting process of this same figurine. Beside the monitor, place a toy packaging box in the style of BANDAI, printed with the original artwork. The packaging design should feature flat two-dimensional illustrations. Ensure all details remain consistent with the reference image."
       },
       {
-        "title": "Yakuza Boss — Cinematic Kabukicho Night Portrait",
-        "status": "published",
-        "image": "/assets/uploads/mvy0xl1f-neon-nights-in-kabukich.jpg",
-        "prompt": "Convert the uploaded full-body photo into a cinematic Yakuza-themed portrait. The subject should embody the aura of a formidable Japanese crime boss, dressed in a sleek black tailored suit with an open-neck white shirt (no tie). Allow faint glimpses of traditional irezumi tattoos—dragon and koi patterns—emerging naturally from the chest and collar, detailed yet understated. Polished black leather shoes complete the look. The stance should project confidence and quiet menace, with hands resting casually at the sides.\n\nSetting: The backdrop is a Kabukicho alley at night, drenched in neon light from kanji signs, lanterns, and muted streetlamps. Pavement appears wet, mirroring the vibrant colors. In the distance, nightlife patrons (blurred, smoking, talking, strolling) add authenticity without distracting focus.\n\nAtmosphere: Stylish, raw, and intimidating yet elegant—echoing the cinematic aesthetic of Japanese gangster films and video games.\n\nCamera Specs: Full-body perspective at eye level, captured with a full-frame camera using a 35mm prime lens at f/2.0. Subject is tack-sharp in focus, while the background remains softly blurred to create cinematic depth.\n\nPost-Processing: Apply filmic color grading with neon accents, subtle grain, and high contrast to emphasize the texture of the suit. Enhance reflections on the wet ground, sharpen facial details, and keep skin tone and body proportions true to the source photo.\n\nOutput: 4:3 ratio, 8K resolution, with a glossy cinematic finish.",
-        "category": "AI Portrait / Yakuza Style / Japanese Street / Cinematic / Fashion Editorial",
-        "tool": "ChatGPT Image Generation / AI Photo Editing",
-        "note": "Gunakan foto referensi dengan wajah yang jelas untuk menjaga kemiripan identitas. Ciptakan penampilan bos Yakuza bergaya film Jepang dengan setelan hitam elegan, kemeja putih terbuka tanpa dasi, tato irezumi naga dan koi yang terlihat samar, serta sepatu kulit hitam mengilap. Latar gang Kabukicho pada malam hari dengan lampu neon Jepang, jalanan basah, pantulan cahaya sinematik, dan latar belakang blur. Pertahankan anatomi realistis dan ekspresi wajah natural. Rasio 4:3, kualitas ultra-realistis.",
-        "slug": "yakuza-boss-cinematic-kabukicho",
-        "date": "2026-11-01",
-        "id": "yakuza-boss-cinematic-kabukicho"
-      },
-      {
         "title": "Lunar Coffee Experience: Menikmati Kopi di Bulan dengan Pemandangan Bumi",
         "status": "published",
         "image": "/assets/uploads/mvy012q0-lunar-coffee-under-earthrise.jpg",
@@ -899,18 +887,6 @@
         "slug": "ai-figure-studio-action-figure-koleksi-premium",
         "date": "2026-11-01",
         "id": "ai-figure-studio-action-figure-koleksi-premium"
-      },
-      {
-        "title": "3D Anime Best Friends Group Selfie – Pixar Style",
-        "status": "published",
-        "image": "/assets/uploads/mvy1hwdd-anime-multiverse-room-selfie.jpg",
-        "prompt": "Pixar-style, ultra-realistic 3D rendering in a 9:16 vertical format. A chaotic fisheye selfie featuring the provided man in the center, surrounded closely by Naruto, Luffy, Goku, Tanjiro, Levi, Gojo, Deku, Light Yagami, Denji, and Anya from Spy x Family. All characters are fully visible, leaning into the camera as if best friends taking a fun group photo. Everyone is making exaggerated silly expressions — tongues out, peace signs, winks, and goofy faces — radiating playful, chaotic energy.\n\nThe setting is a small, bright living room with minimalist white décor and anime posters on the walls. The camera angle is high, with extreme fisheye distortion that stretches the scene, emphasizing closeness and comedy. Render with hyper-detailed skin and fabric textures, subsurface scattering for realistic skin tones, stylized Pixar-inspired 3D realism, vibrant saturated colors, and volumetric cinematic lighting for a polished, animated yet believable look. Ensure all characters are included in the frame, tightly packed together like a true chaotic group selfie.",
-        "category": "AI Art / Anime / 3D Rendering / Group Selfie / Karakter Anime",
-        "tool": "ChatGPT / AI Image Generation",
-        "note": "Buat foto grup selfie bergaya 3D sinematik dengan wajah referensi tetap konsisten. Gabungkan karakter anime populer dalam satu frame, gunakan efek kamera fisheye, ekspresi lucu, warna cerah, pencahayaan sinematik, dan detail tekstur realistis. Cocok untuk foto profil kreatif, konten media sosial, dan fan art.",
-        "slug": "3d-anime-best-friends-selfie",
-        "date": "2026-11-01",
-        "id": "3d-anime-best-friends-selfie"
       },
       {
         "title": "Cinematic Black Fashion Portrait – Golden Hour Studio",
@@ -1069,18 +1045,6 @@
         "id": "prompt-cinematic-pria-pasar-asia-pesawat"
       },
       {
-        "title": "AI Photo Transformation: Formal Portrait to Waterbending Kung Fu Master | Cinematic Fantasy",
-        "status": "published",
-        "image": "/assets/uploads/mvzbvnx0-martial-artist-in-a-spiraling-water-vort.jpg",
-        "prompt": "A martial artist performing a powerful waterbending move in the middle of a shallow forest river. Use the provided man’s face and physique exactly. He wears a deep blue kung fu uniform with a red belt, striking a strong defensive stance with both arms extended. A circular ring of swirling water energy forms around him, dynamic and semi-transparent, glowing slightly with reflected light. The scene is surrounded by misty green forest trees in the background, soft natural lighting, cinematic realism, and gentle water splashes beneath his feet. Capture motion and energy with ultra-realistic textures — smooth water arc, detailed fabric folds, droplets in midair, and reflections on the water surface. Shot in 85mm lens, f/1.8, shallow depth of field, balanced lighting, hyper-realistic detail — keep the man’s original face —ar 2:3 —v 6 —s 900 —style raw.",
-        "category": "AI Photo Editing, Martial Arts, Waterbending, Fantasy Portrait, Cinematic Photography",
-        "tool": "ChatGPT, Gemini, Midjourney",
-        "note": "Transformasikan foto formal menjadi potret master kung fu sinematik dengan mempertahankan kemiripan wajah dari foto referensi. Kenakan seragam bela diri biru tua dengan ikat pinggang merah, pose kuda-kuda yang kuat, dan kedua tangan mengendalikan lingkaran air yang berputar. Tambahkan hutan hijau berkabut, percikan air realistis, tetesan air di udara, pantulan cahaya alami, detail kain, serta depth of field yang dramatis. Gunakan komposisi vertikal 2:3 dan hasil akhir fotorealistis. Unggah foto referensi yang jelas untuk membantu menjaga konsistensi wajah. Hasil kemiripan dapat berbeda tergantung platform AI.",
-        "slug": "formal-photo-to-waterbending-kung-fu-master",
-        "date": "2026-11-02",
-        "id": "formal-photo-to-waterbending-kung-fu-master"
-      },
-      {
         "title": "AI Photo Transformation: Professional Portrait to Futuristic Cyberpunk | Cinematic 8K",
         "status": "published",
         "image": "/assets/uploads/mvzbz4x1-cyberpunk-portrait-with-neon-circuits.jpg",
@@ -1091,18 +1055,6 @@
         "slug": "professional-portrait-cyberpunk-ai",
         "date": "2026-11-02",
         "id": "professional-portrait-cyberpunk-ai"
-      },
-      {
-        "title": "AI Photo Transformation: Become a Pokémon Trainer with Charizard | Epic Cinematic Fantasy",
-        "status": "published",
-        "image": "/assets/uploads/mvzc34ac-pok-mon-trainer-and-roaring-charizard-at.jpg",
-        "prompt": "A dynamic and cinematic scene featuring Charizard and its trainer standing side by side in a powerful battle-ready pose. The trainer’s face and appearance should be accurately based on the uploaded photo, wearing a modern Pokémon trainer outfit and holding a Pokéball in one hand. Charizard appears massive and lifelike, with realistic orange scales, glowing blue eyes, detailed wings, and vivid fire emanating from its tail. The lighting is dramatic and warm, with sunset tones, sparks, and glowing embers drifting through the air, creating an epic Pokémon battle atmosphere. Realistic anime-fantasy hybrid style, ultra-detailed textures, depth of field, 8k render quality, sharp focus, cinematic composition, volumetric lighting, hyper-realistic rendering of Charizard.",
-        "category": "AI Photo Editing, Pokémon, Charizard, Fantasy Art, Anime Realism, Cinematic Portrait",
-        "tool": "ChatGPT, Gemini, Midjourney",
-        "note": "Transformasikan foto pribadi menjadi Pokémon Trainer yang berdiri gagah bersama Charizard dalam adegan pertarungan sinematik. Pertahankan kemiripan wajah dari foto referensi, kenakan kostum trainer modern bernuansa merah, putih, dan hitam, serta tampilkan Poké Ball di tangan. Hadirkan Charizard raksasa dengan sisik oranye realistis, mata biru bercahaya, sayap terbentang, dan ekor berapi. Tambahkan langit senja keemasan, percikan api, bara beterbangan, pencahayaan volumetrik, tekstur detail, dan komposisi vertikal dramatis. Gunakan foto referensi yang jelas untuk membantu menjaga konsistensi wajah. Hasil akhir cocok untuk avatar AI, konten Pokémon, dan media sosial.",
-        "slug": "ai-pokemon-trainer-charizard",
-        "date": "2026-11-02",
-        "id": "ai-pokemon-trainer-charizard"
       },
       {
         "title": "Potret Sinematik Pemain Biliar – Elegant Black Suit",
@@ -1141,42 +1093,6 @@
         "id": "digital-oil-painting-executive-portrait"
       },
       {
-        "title": "AI Barista Futuristik – Cinematic Sci-Fi Café",
-        "status": "published",
-        "image": "/assets/uploads/mvzct0j5-futuristic-barista-serving-latte-in-caf.jpg",
-        "prompt": "A cinematic, ultra-realistic sci-fi café scene focusing on the barista counter. The barista’s face and appearance should accurately match the uploaded photo. The person stands behind a sleek futuristic barista counter made of transparent glass and polished metal, illuminated by neon blue and amber lighting. The counter displays holographic menus, glowing coffee cups, and robotic arms assisting in drink preparation. Steam rises softly from a brewing machine, while reflections of holographic lights dance across the countertop. The atmosphere feels calm, elegant, and futuristic — blending human warmth with advanced AI technology. The scene captures both the barista and the full counter area in view, showing details of cups, tools, and the modern café interior. Ultra-detailed sci-fi environment, cinematic lighting, HDR reflections, volumetric glow, 8k render, vivid neon tones, photo-realistic materials, balanced composition.",
-        "category": "AI Art / Sci-Fi / Futuristic Café / Cinematic Portrait / Teknologi Masa Depan",
-        "tool": "ChatGPT / AI Image Generator",
-        "note": "Gunakan foto referensi wajah untuk mempertahankan kemiripan karakter. Buat suasana kafe futuristik dengan perpaduan neon biru dan amber, meja kaca reflektif, mesin kopi otomatis, lengan robotik, hologram menu, serta pencahayaan sinematik. Pastikan karakter dan area konter terlihat jelas, dengan detail realistis dan komposisi profesional.",
-        "slug": "ai-barista-futuristic-cafe",
-        "date": "2026-11-02",
-        "id": "ai-barista-futuristic-cafe"
-      },
-      {
-        "title": "Cinematic Vampire Portrait – Dark Gothic Halloween",
-        "status": "published",
-        "image": "/assets/uploads/mvzczip4-gothic-vampire-beneath-the-blood-moon.jpg",
-        "prompt": "A cinematic Halloween portrait featuring a person wearing an elegant vampire costume, based on the uploaded photo. The person’s face and appearance should clearly resemble the uploaded photo. The outfit includes a dark crimson cloak with a high collar, black vest, and subtle gothic details. The lighting is moody and dramatic, with soft candlelight glow and hints of mist in the background. Add faint bats, jack-o’-lanterns, and gothic castle silhouettes to enhance the Halloween atmosphere. The person’s expression is confident yet mysterious, with a charming vampire aura — pale skin, slightly glowing eyes, and refined fangs. Realistic fantasy style, ultra-detailed textures, cinematic composition, 8k render, depth of field, sharp focus, warm and cool lighting contrast.",
-        "category": "Halloween / Fantasy / Vampire / Gothic / Cinematic Portrait / Character Transformation",
-        "tool": "Halloween / Fantasy / Vampire / Gothic / Cinematic Portrait / Character Transformation",
-        "note": "Unggah foto wajah sebagai referensi utama untuk mempertahankan kemiripan karakter. Ubah penampilan menjadi vampir elegan dengan jubah beludru merah marun, kerah tinggi, rompi hitam bergaya gothic, mata merah samar, dan taring halus. Tambahkan kastel gothic, bulan purnama, kelelawar, labu Halloween, lilin, serta kabut tipis. Gunakan pencahayaan sinematik dengan perpaduan warna merah, hitam, dan cahaya bulan untuk menghasilkan potret fantasi yang realistis, dramatis, dan detail.",
-        "slug": "cinematic-vampire-halloween",
-        "date": "2026-11-02",
-        "id": "cinematic-vampire-halloween"
-      },
-      {
-        "title": "Virtual Fashion Try-On – Futuristic AR Experience",
-        "status": "published",
-        "image": "/assets/uploads/mvzd36j3-holographic-suit-try-on-studio.jpg",
-        "prompt": "A cinematic, ultra-realistic image showing a person (based on the uploaded photo) standing in front of a futuristic holographic display while trying on virtual clothes in augmented reality. The person’s body is surrounded by a glowing 3D hologram projection of fashionable outfits that shift and change in real time. Transparent holographic panels float around, showing fabric textures, colors, and size options. The environment looks like a modern smart home or minimalist shopping studio with neon-blue lighting and glass surfaces. The person’s expression shows curiosity and amazement as the holographic clothing fits perfectly on their digital reflection. The atmosphere is sleek, futuristic, and optimistic — symbolizing the future of online fashion. Ultra-detailed sci-fi lighting, volumetric glow, HDR reflections, realistic human skin tone, 8k render, cinematic composition, soft depth of field, high-tech retail aesthetic.",
-        "category": "AI / Fashion / Teknologi Futuristik / Augmented Reality",
-        "tool": "ChatGPT / Gemini / Midjourney",
-        "note": "Gunakan foto referensi untuk mempertahankan kemiripan wajah dan karakter. Buat adegan sinematik seseorang mencoba pakaian virtual menggunakan teknologi augmented reality (AR). Tambahkan hologram pakaian 3D, pilihan warna dan tekstur kain, panel ukuran, serta antarmuka belanja futuristik dengan pencahayaan neon biru. Gunakan latar studio modern dengan permukaan kaca, refleksi realistis, pencahayaan HDR, dan detail ultra-realistis. Pastikan wajah tetap natural, pakaian holografik menyatu dengan tubuh, dan komposisi terlihat profesional. Cocok untuk konten AI, promosi fashion digital, dan konsep e-commerce masa depan.",
-        "slug": "virtual-fashion-try-on-ar-experience",
-        "date": "2026-11-02",
-        "id": "virtual-fashion-try-on-ar-experience"
-      },
-      {
         "title": "Kingpin Luxury Portrait — Raja Modern Bersama Cheetah",
         "status": "published",
         "image": "/assets/uploads/mvzd6if7-sunglasses-gold-chains-and-spotted-majes.jpg",
@@ -1199,30 +1115,6 @@
         "slug": "winter-horse-portrait",
         "date": "2026-11-02",
         "id": "winter-horse-portrait"
-      },
-      {
-        "title": "Transformasi Manusia Menjadi Dark Symbiote",
-        "status": "published",
-        "image": "/assets/uploads/mvzdeu5l-half-human-symbiote-in-a-warm-restaurant.jpg",
-        "prompt": "Create an ultra-realistic cinematic image of a man transforming into a dark symbiotic creature, inspired by the concept of Venom. Use the uploaded man’s face and preserve his exact facial structure and expression. Half of his body remains human wearing a fitted white dress shirt, black pants, and dark shoes, while the other half is covered in sleek, black alien symbiote texture with tendrils spreading outward.\n\nThe symbiote side should appear dynamic and organic, with a glossy, liquid-like surface, sharp teeth, and glowing white eyes emerging from the dark form. The man walks confidently through a dimly lit urban interior (like a modern restaurant or warehouse), illuminated by warm ambient lights that contrast with the dark tones of the symbiote.\n\nThe composition should feel cinematic, powerful, and slightly eerie, blending realism with supernatural energy. Include subtle reflections and shadows on the floor for a grounded, photorealistic look.\n\nStyle keywords: ultra-realistic, cinematic lighting, 8K detail, dynamic contrast, dark sci-fi tone, Venom-inspired transformation, photoreal texture, dramatic atmosphere.",
-        "category": "AI Image Editing, Fantasy & Sci-Fi, Superhero, Cinematic Portrait",
-        "tool": "DARK SYMBIOTE TRANSFORMATION",
-        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan kemiripan karakter. Pastikan perpaduan tubuh manusia dan symbiote terlihat realistis, dengan tekstur hitam mengilap, tentakel organik, mata putih bercahaya, serta pencahayaan sinematik yang kontras. Cocok untuk edit foto bertema superhero dan fantasi gelap.",
-        "slug": "dark-symbiote-transformatio",
-        "date": "2026-11-02",
-        "id": "dark-symbiote-transformatio"
-      },
-      {
-        "title": "Winter Campfire Serenade — Potret Musisi di Hutan Bersalju",
-        "status": "published",
-        "image": "/assets/uploads/mvzdj7fx-winter-guitarist-by-the-frozen-lake.jpg",
-        "prompt": "Create a realistic winter scene featuring the man from the uploaded photo (keep his facial features exactly the same). He’s sitting on a wooden log in a peaceful snowy forest near a frozen lake surrounded by tall pine trees. He wears a stylish winter coat, a wool scarf, comfortable pants, and warm boots.\n\nIn front of him, a small campfire burns softly, casting a warm orange glow on the snow. The man is smiling as he strums an acoustic guitar, creating a cozy, heartwarming atmosphere. The overall scene should feel cinematic and tranquil, with gentle winter light, soft snowflakes, and a thin layer of mist rising from the lake in the background — evoking warmth, joy, and calm in the cold.",
-        "category": "AI Image Editing, Cinematic Portrait, Winter Photography, Nature & Adventure",
-        "tool": "WINTER CAMPFIRE SERENADE",
-        "note": "Create a realistic winter scene featuring the man from the uploaded photo (keep his facial features exactly the same). He’s sitting on a wooden log in a peaceful snowy forest near a frozen lake surrounded by tall pine trees. He wears a stylish winter coat, a wool scarf, comfortable pants, and warm boots.\n\nIn front of him, a small campfire burns softly, casting a warm orange glow on the snow. The man is smiling as he strums an acoustic guitar, creating a cozy, heartwarming atmosphere. The overall scene should feel cinematic and tranquil, with gentle winter light, soft snowflakes, and a thin layer of mist rising from the lake in the background — evoking warmth, joy, and calm in the cold.",
-        "slug": "winter-campfire-serenade",
-        "date": "2026-11-02",
-        "id": "app"
       },
       {
         "title": "Red Luxury Fashion Portrait — Potret Pria dengan Jas Merah Elegan",
@@ -1343,18 +1235,6 @@
         "slug": "fire-water-dual-element-portrait",
         "date": "2026-11-02",
         "id": "fire-water-dual-element-portrait"
-      },
-      {
-        "title": "Ksatria Legendaris Penakluk Badai",
-        "status": "published",
-        "image": "/assets/uploads/mvzg4ly3-stormbound-knight-and-warhorse.jpg",
-        "prompt": "A cinematic, ultra-realistic fantasy scene of a powerful armored knight riding a majestic war horse. The knight’s face is based on the uploaded photo, wearing a full medieval steel armor with intricate engravings and a flowing cape. The knight raises a shining sword high into the sky, with intense light rays reflecting off the blade. The horse rears up dramatically on its hind legs, adding motion and power to the scene. The sky is stormy with dramatic clouds, lightning bolts flashing behind the knight, and glowing embers and sparks swirling through the wind. Dust and debris blow across the battlefield, enhancing the epic mood. The atmosphere is heroic, legendary, and triumphant: like the climax of a medieval war film. Ultra-detailed armor reflections, realistic lighting, volumetric fog, HDR highlights, high contrast, 8k render, dynamic composition, fantasy energy effects, no text or captions.",
-        "category": "Fantasy Epic Portrait Medieval Character Transformation Cinematic AI Art",
-        "tool": "EPIC FANTASY KNIGHT",
-        "note": "Gunakan foto referensi wajah yang jelas agar identitas karakter tetap konsisten. Pertahankan bentuk wajah, gaya rambut, dan warna kulit, lalu ubah kostum menjadi armor ksatria dengan jubah merah, pedang bercahaya, serta kuda perang putih. Tambahkan petir dan pencahayaan sinematik untuk menghasilkan kesan heroik dan dramatis.",
-        "slug": "ksatria-legendaris",
-        "date": "2026-11-02",
-        "id": "ksatria-legendaris"
       },
       {
         "title": "Break Through the Digital World — Keluar dari Layar Smartphone",
