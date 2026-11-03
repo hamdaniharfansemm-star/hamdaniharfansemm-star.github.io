@@ -1319,6 +1319,18 @@
         "slug": "cinematic-night-camping-friendly-sun-bear",
         "date": "2026-11-03",
         "id": "cinematic-night-camping-friendly-sun-bear"
+      },
+      {
+        "title": "AI Action Figure Starter Pack — Personal Edition",
+        "status": "published",
+        "image": "/assets/uploads/mw0n2fzx-tech-traveler-starter-kit.jpg",
+        "prompt": "A highly detailed, ultra-realistic human starter pack / action figure packaging concept. A full-body person is displayed inside a molded product box, lying flat in a custom-fit tray. The face is accurately taken from the uploaded reference photo, preserving natural facial features, skin texture, and identity without distortion. Neutral expression, clean hairstyle, realistic proportions.\n\nThe person wears simple modern casual clothing (oversized t-shirt, cargo shorts or pants, sneakers). The t-shirt contain short custom text \"AI Creator Labs\". Surrounding the person inside the box are neatly arranged personal items and accessories in separate molded compartments (headphones, smartphone, camera, smartwatch, jacket, water bottle, tech gadgets).\n\nThe packaging tray is a bold solid color (red or customizable), with soft studio lighting, minimal shadows, and perfectly aligned composition. Shot from a top-down flat lay angle, symmetrical layout, clean background. Hyper-realistic product photography style, sharp focus, cinematic clarity, 8K detail, no blur, no watermark, no extra text outside the packaging.",
+        "category": "AI Image Editing, Action Figure, Starter Pack, Character Design, Product Packaging, Personal Branding",
+        "tool": "ChatGPT Images, Gemini, AI Image Generator",
+        "note": "Unggah foto wajah sebagai referensi utama. Gunakan foto yang jelas dan menghadap kamera agar kemiripan wajah lebih akurat. Pertahankan identitas karakter, gunakan rasio vertikal 3:4, dan periksa ejaan teks “Hamdani Harfan” pada kaus. Hasil teks pada gambar AI mungkin perlu diperbaiki secara manual.",
+        "slug": "ai-action-figure-starter-pack-personal-edition",
+        "date": "2026-11-03",
+        "id": "ai-action-figure-starter-pack-personal-edition"
       }
     ]
   }
