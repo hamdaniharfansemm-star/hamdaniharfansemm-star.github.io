@@ -1475,6 +1475,18 @@
         "slug": "premium-monochrome-3d-character-sculpt",
         "date": "2026-11-03",
         "id": "premium-monochrome-3d-character-sculpt"
+      },
+      {
+        "title": "",
+        "status": "published",
+        "image": "/assets/uploads/mw0p83c7-shattered-king-of-spades.jpg",
+        "prompt": "Create a hyper-realistic, ultra-detailed cinematic image using the uploaded reference photo as the main subject.\n\nThe face, facial features, skin tone, hairstyle, age, and identity must remain 100% accurate to the uploaded photo, with no stylization or alteration to the face.\n\nThe person is depicted as a royal king character emerging dramatically from a cracked and shattered playing card (King card).\n\nThe playing card is breaking apart realistically, with cracks, debris, dust, and stone-like fragments flying forward in slow-motion, creating a powerful breakthrough effect.\n\nThe subject wears luxurious royal attire, richly embroidered fabric, detailed textures, regal colors, and a realistic golden crown with intricate details.\n\nThe pose is strong and commanding, one hand reaching forward toward the camera, fingers extended as if asserting dominance or control, intense confident gaze.\n\nLighting is dark cinematic lighting with dramatic contrast, rim light outlining the crown and shoulders, volumetric dust and particles in the air.\n\nDepth of field is shallow, focus on the face and hand, background fading into darkness.\n\nThe playing card design is classic, realistic, and elegant, with visible suit symbols and worn texture, slightly aged paper look.\n\nStyle: cinematic realism, ultra-high detail, dramatic composition, movie poster quality, 8K realism, photorealistic textures.\n\nNo text overlays, no logos, no watermark, no extra characters, no distortion.",
+        "category": "",
+        "tool": "",
+        "note": "",
+        "slug": "app",
+        "date": "2026-11-03",
+        "id": "app"
       }
     ]
   }
