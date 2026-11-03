@@ -1429,14 +1429,14 @@
         "id": "custom-enamel-pin-portrait"
       },
       {
-        "title": "",
-        "status": "draft",
-        "image": "",
-        "prompt": "",
-        "category": "",
-        "tool": "",
-        "note": "",
-        "slug": "app",
+        "title": "Miniature Me – Surreal Denim Jacket Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw0orvws-miniature-clones-in-a-denim-jacket.jpg",
+        "prompt": "Use the provided photo of the man as the main reference. Create a surreal, playful portrait where the man appears multiple times at miniature scale, emerging from and interacting with the pockets of an oversized light-blue denim jacket worn by a larger version of himself. The main figure is centered, wearing a light blue denim jacket, white button-down shirt, and dark striped tie, hands gently clasped. The smaller versions of the man are peeking out of the jacket pockets and standing in front of the jacket, each with expressive gestures (looking surprised, questioning, or curious), maintaining the same face, hairstyle, glasses, and outfit as the original man. Style: photorealistic with a surreal twist, sharp focus, natural daylight, high detail fabric texture, realistic skin tones. Mood: whimsical, introspective, slightly humorous. Camera: medium close-up, straight-on angle, shallow depth of field. Background: soft, neutral, minimal distractions.",
+        "category": "ChatGPT / Gemini / Midjourney",
+        "tool": "ChatGPT / Gemini / Midjourney",
+        "note": "Gunakan foto referensi sebagai identitas karakter utama. Pertahankan wajah, bentuk mata, hidung, bibir, warna kulit, dan gaya rambut agar tetap konsisten. Buat beberapa versi miniatur dari karakter yang sama, muncul dari saku dan bahu jaket denim biru muda dengan ekspresi penasaran, terkejut, berpikir, dan tersenyum. Pertahankan pakaian yang serasi, tekstur denim realistis, pencahayaan alami, dan latar minimalis. Pastikan ukuran miniatur proporsional serta menyatu secara realistis dengan pakaian.",
+        "slug": "miniature-me-denim-jacket",
         "date": "2026-11-03",
         "id": "app"
       }
