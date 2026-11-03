@@ -1463,6 +1463,18 @@
         "slug": "cinematic-anime-noir-cyberpunk-elevator",
         "date": "2026-11-03",
         "id": "cinematic-anime-noir-cyberpunk-elevator"
+      },
+      {
+        "title": "Premium Monochrome 3D Character Sculpt — ZBrush Style",
+        "status": "published",
+        "image": "/assets/uploads/mw0p34ur-monochrome-clay-bust-in-hoodie.jpg",
+        "prompt": "Create a cinematic, fashion-forward 3D bust derived from the provided reference photo. Interpret the subject using a refined, ZBrush-inspired sculpting style with smooth, matte surfaces and gently enhanced proportions. Present the model in a single neutral material (such as clay gray, warm stone, or slate), avoiding surface textures or color so the focus remains entirely on form, volume, and silhouette.\n\nFacial anatomy should stay true to the subject while being subtly idealized: highlighting the jawline, cheekbones, brow structure, and lips without drifting into caricature. Outfit the character in contemporary streetwear, such as a structured hoodie with thick fabric, clean construction, and believable seams and folds. Minimal accessories may be included, like a beanie or raised hood, if they support the look.\n\nIlluminate the sculpt with soft, neutral studio lighting around 6000K, using directional light to gently define planes and geometry through controlled shadows. Place the bust against a light, neutral background with a delicate gradient.\n\nFrame the shot using an 85mm lens at eye level or slightly below, with an f/4.5 aperture and shallow depth of field. The overall aesthetic should align with premium sculpt passes seen in cinematic character design for animated films and AAA games—minimal, polished, and editorial in tone. The final mood should feel confident, composed, modern, and digitally pristine.",
+        "category": "AI Portrait / 3D Sculpt / ZBrush Style / Character Design / Monochrome Art",
+        "tool": "ChatGPT / Gemini / Midjourney",
+        "note": "Upload foto referensi wajah yang jelas. Pertahankan identitas wajah, bentuk mata, hidung, bibir, dan gaya rambut. Gunakan material clay monokrom, pencahayaan studio lembut, serta detail hoodie yang realistis. Hasil akhir harus terlihat seperti sculpt karakter profesional, bukan foto berwarna.",
+        "slug": "premium-monochrome-3d-character-sculpt",
+        "date": "2026-11-03",
+        "id": "premium-monochrome-3d-character-sculpt"
       }
     ]
   }
