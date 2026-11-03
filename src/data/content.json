@@ -1283,6 +1283,18 @@
         "slug": "3d-cartoon-avatar-ekspresif",
         "date": "2026-11-03",
         "id": "3d-cartoon-avatar-ekspresif"
+      },
+      {
+        "title": "Prompt Edit Foto Menjadi Karakter 3D Kartun Premium",
+        "status": "published",
+        "image": "/assets/uploads/mw0mo7jb-cozy-yellow-portrait-with-headphones.jpg",
+        "prompt": "Transform the uploaded photo into a cute 3D stylized character illustration. Keep the person’s facial features and pose recognizable, but render them in a soft Pixar-style 3D look.\n\nBig expressive eyes, smooth skin, rounded face, slightly oversized head, and simplified proportions. Clean pastel color palette with dominant warm yellow tones. Outfit in cozy casual style: striped sweater, relaxed pants, minimal details. Add cute oversized headphones and round glasses.\n\nSoft studio lighting with gentle shadows, bright cheerful mood. Minimalist solid background (warm yellow), smooth textures, high detail, ultra-clean render, high quality, 4K.",
+        "category": "AI Image Editing, 3D Cartoon, Character Design, Portrait, Digital Art",
+        "tool": "ChatGPT Image Generator, Gemini, AI Image Editor",
+        "note": "Unggah foto sumber terlebih dahulu. Gunakan prompt untuk mengubah foto menjadi karakter 3D kartun dengan mata ekspresif, kepala sedikit lebih besar, tekstur halus, dan pencahayaan studio. Pertahankan ciri wajah, gaya rambut, warna kulit, dan identitas visual dari foto referensi semirip mungkin. Hasil dapat berbeda tergantung model AI yang digunakan.",
+        "slug": "prompt-edit-foto-karakter-3d-kartun-premium",
+        "date": "2026-11-03",
+        "id": "prompt-edit-foto-karakter-3d-kartun-premium"
       }
     ]
   }
