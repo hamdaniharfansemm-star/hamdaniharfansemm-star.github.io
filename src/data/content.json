@@ -1403,6 +1403,18 @@
         "slug": "abstract-scribble-ink-portrait",
         "date": "2026-11-03",
         "id": "abstract-scribble-ink-portrait"
+      },
+      {
+        "title": "The Last Echo — Golden Energy Dissolution Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw0okb0b-golden-halo-disintegration.jpg",
+        "prompt": "Create an ultra-realistic cinematic image using the uploaded reference photo as the main subject.\n\nThe face, facial structure, skin tone, hairstyle, and identity must remain 100% accurate to the uploaded photo, no changes or stylization to the face.\n\nThe person is shown in a full-body side profile, standing still with a calm yet emotional posture, head slightly bowed, eyes looking downward, hands relaxed at the sides, conveying deep introspection and melancholy.\n\nThe subject wears simple modern casual clothing in neutral tones.\n\nNearly half of the body is dissolving into thick cinematic smoke, breaking apart into fine particles, dust, and mist, gradually fading into the surrounding air. Parts of the body appear semi-transparent as they disintegrate.\n\nBehind the subject is a massive glowing circular energy ring, shaped like a crescent or halo, emitting golden-white plasma light, acting as a powerful rim light and backlight that outlines the silhouette.\n\nSmoke particles are illuminated by the glowing aura, creating dramatic contrast and depth.\n\nThe environment is minimal and atmospheric: an empty ground with a cloudy, overcast sky, muted grey tones, monochrome color palette contrasted by warm golden highlights.\n\nCinematic lighting, volumetric smoke, shallow depth of field, ultra-detailed textures, high contrast, dramatic mood, emotional storytelling.\n\nNo text, no logo, no watermark, no extra people, no distortion of the face.",
+        "category": "Cinematic portrait, surreal photography, smoke disintegration, golden energy ring, fantasy effects, emotional storytelling, photorealistic art.",
+        "tool": "ChatGPT / Gemini / Midjourney",
+        "note": "Pertahankan identitas wajah, struktur wajah, warna kulit, dan gaya rambut dari foto referensi. Gunakan pose profil samping dengan kepala sedikit tertunduk. Buat separuh tubuh terurai menjadi asap, partikel, dan debu, dengan lingkaran energi emas bercahaya di belakang subjek. Gunakan pencahayaan sinematik, latar abu-abu berkabut, serta kontras emas dan abu-abu untuk menciptakan suasana dramatis dan emosional.",
+        "slug": "last-echo-golden-energy-dissolution",
+        "date": "2026-11-03",
+        "id": "last-echo-golden-energy-dissolution"
       }
     ]
   }
