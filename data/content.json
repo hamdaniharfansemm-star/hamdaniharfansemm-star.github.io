@@ -1,0 +1,1585 @@
+{
+  "profile": {
+    "name": "Hamdani Harfan S.E., M.M.",
+    "role": "Designer · Software Engineer · Banking Professional",
+    "company": "",
+    "email": "hamdaniharfansemm@gmail.com",
+    "phoneDisplay": "+62 852-6556-2860",
+    "whatsapp": "6285265562860",
+    "photo": "/assets/profile-photo.jpg",
+    "bannerBg": "/assets/banner-bg.png"
+  },
+  "hero": {
+    "designer": {
+      "eyebrow": "01 — Product & Visual",
+      "title": "designer",
+      "body": "UI/UX designer crafting design systems, product strategy and visual brands that feel effortless to use.",
+      "tags": [
+        "Design Systems",
+        "Product Strategy",
+        "Branding"
+      ]
+    },
+    "developer": {
+      "eyebrow": "02 — Systems & Code",
+      "title": "<developer>",
+      "body": "Software engineer building scalable architectures, mobile apps and reliable release workflows.",
+      "tags": [
+        "Architecture",
+        "Mobile Apps",
+        "Play Console"
+      ]
+    }
+  },
+  "banner": {
+    "title": "Engineering Smart Solutions. Driving Real Business Growth.",
+    "status": "Ready for Projects & Institutional Consulting",
+    "tagline": "You bring the vision, I engineer the execution. Partnering to build scalable, high-performance digital products that accelerate your business.",
+    "cta": "Let's Talk"
+  },
+  "stats": {
+    "secure": {
+      "value": "100%",
+      "label": "Secure & Tested"
+    }
+  },
+  "about": {
+    "headline": "Bridging Vision, Design, and Engineering",
+    "body": "Hi, I’m Hamdani Harfan—a multidisciplinary Designer, Software Engineer, and banking professional with hands-on experience in the banking industry. I work at the intersection of enterprise-grade reliability, creative problem-solving, and technical execution, transforming complex requirements into seamless, user-centric applications. My expertise spans end-to-end product development: from intuitive UI/UX design and feature specifications to reliable architecture and Google Play Console release management. Whether supporting financial operations in banking or building tools like D-Fin, Dagangku AI, DScan, DStudio, DicteDoc, DTS, and DNotes, my goal is to deliver polished digital experiences that solve real-world problems efficiently.",
+    "philosophy": [
+      {
+        "title": "User-Centric First",
+        "text": "Every screen starts from a real person’s task, not from a feature list."
+      },
+      {
+        "title": "Scalable Architecture",
+        "text": "Foundations built to grow — clean structure, secure data, predictable releases."
+      },
+      {
+        "title": "End-to-End Ownership",
+        "text": "From the first wireframe to the Play Console rollout, I own the whole journey."
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master of Management (M.M.)",
+        "field": "Financial Management",
+        "school": "Universitas Andalas"
+      }
+    ],
+    "facts": [
+      {
+        "value": "7",
+        "label": "Products designed & built"
+      },
+      {
+        "value": "2",
+        "label": "Disciplines, one workflow"
+      }
+    ]
+  },
+  "works": {
+    "title": "Products I’ve designed & built",
+    "intro": "Thoughtful design backed by solid engineering."
+  },
+  "workCategories": [
+    "UI/UX & Products",
+    "Mobile & Web Dev"
+  ],
+  "projects": [
+    {
+      "id": "dscan",
+      "status": "live",
+      "packageId": "com.hamdaniharfan.dscan",
+      "title": "DScan",
+      "category": "Mobile & Web Dev",
+      "tech": [
+        "React",
+        "Document Scanning",
+        "Release Management"
+      ],
+      "desc": "Document scanner that turns paper into clean PDFs and background-free PNGs — fully offline.",
+      "image": "/assets/projects/dscan.png",
+      "logo": "/assets/logos/dscan.png",
+      "accent": "#3b82f6",
+      "highlights": [
+        "Document scanning to PDF & transparent-background PNG",
+        "Fully offline — no ads, no account required",
+        "Auto-enhance and one-tap sharing via WhatsApp & Email"
+      ]
+    },
+    {
+      "id": "dnotes",
+      "status": "live",
+      "packageId": "com.hamdaniharfan.dnotes",
+      "title": "DNotes",
+      "category": "Mobile & Web Dev",
+      "tech": [
+        "Voice Command",
+        "NLP",
+        "Reminder System"
+      ],
+      "desc": "Smart reminder application driven by interactive voice commands.",
+      "image": "/assets/projects/dnotes.png",
+      "logo": "/assets/logos/dnotes.png",
+      "accent": "#94a3b8",
+      "highlights": [
+        "Capture notes by voice in five languages",
+        "Automatic agenda extraction from spoken notes",
+        "Task alarms that never get missed"
+      ]
+    },
+    {
+      "id": "dts",
+      "status": "live",
+      "packageId": "com.hamdaniharfan.dts",
+      "title": "DTS (Digital Timestamp Solution)",
+      "category": "Mobile & Web Dev",
+      "tech": [
+        "Timestamp API",
+        "Security",
+        "Proof Verification"
+      ],
+      "desc": "Work timestamp validation and authentic digital proof verification solution.",
+      "image": "/assets/projects/dts.png",
+      "logo": "/assets/logos/dts.png",
+      "accent": "#d4a648",
+      "highlights": [
+        "Time, location, map & weather stamped on photos and video",
+        "Tamper-evident hashing for authentic proof of work",
+        "Audit-ready templates for field reports"
+      ]
+    },
+    {
+      "id": "dictedoc",
+      "status": "internal",
+      "packageId": "com.dictedoc.dictedoc",
+      "title": "DicteDoc",
+      "category": "UI/UX & Products",
+      "tech": [
+        "Speech-to-Text",
+        "Text-to-Speech",
+        "AI Engine"
+      ],
+      "desc": "High-accuracy speech-to-text and text-to-speech conversion solution.",
+      "image": "/assets/projects/dictedoc.png",
+      "logo": "/assets/logos/dictedoc.png",
+      "accent": "#facc15",
+      "highlights": [
+        "Turns documents into natural speech with auto summaries",
+        "Records meetings into transcripts and structured minutes",
+        "AI engine tuned for Bahasa Indonesia & English"
+      ]
+    },
+    {
+      "id": "dfin",
+      "status": "internal",
+      "title": "D-Fin",
+      "category": "UI/UX & Products",
+      "tech": [
+        "Figma",
+        "Visual Branding",
+        "Fintech Architecture"
+      ],
+      "desc": "Financial platform featuring modern visual branding and advanced security architecture.",
+      "image": "/assets/projects/dfin.png",
+      "logo": "/assets/logos/dfin.png",
+      "accent": "#38bdf8",
+      "highlights": [
+        "Voice-based transaction logging & digital envelope budgeting",
+        "Automated savings goals and family account sync",
+        "MoneyMind insights, challenges and story-style reports"
+      ]
+    },
+    {
+      "id": "dagangku",
+      "status": "internal",
+      "packageId": "id.dagangku.app",
+      "title": "Dagangku AI",
+      "category": "UI/UX & Products",
+      "tech": [
+        "Flutter",
+        "AI Prompt",
+        "Play Console"
+      ],
+      "desc": "Inventory management, smart cashier, and automated sales reporting application.",
+      "image": "/assets/projects/dagangku.png",
+      "logo": "/assets/logos/dagangku.png",
+      "accent": "#eab308",
+      "highlights": [
+        "Smart cashier (POS) flow designed for fast daily transactions",
+        "Real-time stock & inventory tracking for small businesses",
+        "Automated sales reports generated with AI assistance"
+      ]
+    },
+    {
+      "id": "dstudio",
+      "status": "closed",
+      "title": "DStudio (Video Edition Suite)",
+      "category": "UI/UX & Products",
+      "tech": [
+        "Video Processing UI",
+        "Media Architecture"
+      ],
+      "desc": "Integrated creative solution for digital video editing and production.",
+      "image": "/assets/projects/dstudio.png",
+      "logo": "/assets/logos/dstudio.png",
+      "accent": "#eab308",
+      "highlights": [
+        "Trim, merge and speed control on a mobile timeline",
+        "AI auto-subtitles, text animation and background music",
+        "HD 60fps screen recording with internal audio"
+      ]
+    }
+  ],
+  "techStack": [
+    {
+      "name": "Android SDK",
+      "tone": "sky"
+    },
+    {
+      "name": "Kotlin / Java",
+      "tone": "sky"
+    },
+    {
+      "name": "Flutter / React",
+      "tone": "amber"
+    },
+    {
+      "name": "AI Prompt Engineering",
+      "tone": "violet"
+    },
+    {
+      "name": "UI/UX Design",
+      "tone": "emerald"
+    },
+    {
+      "name": "Play Console Management",
+      "tone": "orange"
+    }
+  ],
+  "services": [
+    "Mobile App Development & Architecture",
+    "Business Automation & POS Systems",
+    "UI/UX & Design Systems",
+    "Enterprise & Institutional Consulting"
+  ],
+  "skills": {
+    "design": {
+      "title": "Design & Strategy",
+      "kicker": "The designer",
+      "items": [
+        {
+          "name": "UI/UX Design & Wireframing",
+          "detail": "Low-to-high fidelity flows that validate ideas before a single line of code.",
+          "tools": [
+            "Wireframes",
+            "Prototypes",
+            "Usability"
+          ]
+        },
+        {
+          "name": "Figma & Advanced Design Systems",
+          "detail": "Tokens, components and variants that keep seven products visually consistent.",
+          "tools": [
+            "Figma",
+            "Auto Layout",
+            "Tokens"
+          ]
+        },
+        {
+          "name": "Product Strategy & Feature Specs",
+          "detail": "Turning business goals into clear, buildable feature specifications.",
+          "tools": [
+            "PRD",
+            "Roadmaps",
+            "Prioritisation"
+          ]
+        },
+        {
+          "name": "User Journey & Information Architecture",
+          "detail": "Mapping how people move through an app so nothing feels lost.",
+          "tools": [
+            "Journey Maps",
+            "Sitemaps",
+            "Card Sorting"
+          ]
+        },
+        {
+          "name": "Visual Branding & UI Layouts",
+          "detail": "Logos, store graphics and layouts that give each product a distinct identity.",
+          "tools": [
+            "Branding",
+            "Store Assets",
+            "Layout"
+          ]
+        }
+      ]
+    },
+    "engineering": {
+      "title": "Engineering & Platforms",
+      "kicker": "The developer",
+      "items": [
+        {
+          "name": "Frontend/Backend Architecture (React, Node)",
+          "detail": "Component-driven frontends on top of clean, well-structured APIs.",
+          "tools": [
+            "React",
+            "Node.js",
+            "REST"
+          ]
+        },
+        {
+          "name": "Mobile App Development (Flutter, React Native)",
+          "detail": "Cross-platform apps shipped as native Android builds.",
+          "tools": [
+            "Flutter",
+            "React Native",
+            "Android"
+          ]
+        },
+        {
+          "name": "Enterprise Banking Standards & Compliance",
+          "detail": "Security, governance and reliability habits from my banking experience, built into every product.",
+          "tools": [
+            "Governance",
+            "Data Security",
+            "Risk"
+          ]
+        },
+        {
+          "name": "Google Play Console Release Management",
+          "detail": "Testing tracks, staged rollouts and store listings handled end to end.",
+          "tools": [
+            "Play Console",
+            "AAB",
+            "Staged Rollout"
+          ]
+        },
+        {
+          "name": "Scalable Systems & In-App Purchases",
+          "detail": "Architectures ready for growth, with monetisation built in.",
+          "tools": [
+            "Billing",
+            "Scalability",
+            "Analytics"
+          ]
+        }
+      ]
+    }
+  },
+  "experience": [
+    {
+      "role": "Lead Product Designer & Software Engineer",
+      "org": "Independent Ecosystem — Dagangku, D-Fin, DScan, DStudio",
+      "period": "2024 — Present",
+      "current": true,
+      "summary": "Designing product architecture, formulating feature specifications, and managing regular application releases on the Google Play Console.",
+      "tags": [
+        "Product Architecture",
+        "Feature Specs",
+        "Play Console"
+      ]
+    },
+    {
+      "role": "UI/UX & Full-Stack Developer",
+      "org": "Freelance & Product Projects",
+      "period": "2022 — 2024",
+      "current": false,
+      "summary": "Developing large-scale mobile and web applications, optimizing user journeys, and integrating digital payment systems.",
+      "tags": [
+        "Mobile & Web",
+        "User Journeys",
+        "Digital Payments"
+      ]
+    }
+  ],
+  "contact": {
+    "title": "Hire Me",
+    "intro": "Let's discuss your custom software development or application project.",
+    "formEmail": "hamdaniharfansemm@gmail.com",
+    "socials": [
+      {
+        "id": "linkedin",
+        "label": "LinkedIn",
+        "handle": "Hamdani Harfan",
+        "href": "https://www.linkedin.com/in/hamdani-harfan-19479a362/?isSelfProfile=true"
+      },
+      {
+        "id": "instagram",
+        "label": "Instagram",
+        "handle": "@hamdaniharfan",
+        "href": "https://www.instagram.com/hamdaniharfan/"
+      },
+      {
+        "id": "youtube",
+        "label": "YouTube",
+        "handle": "@hamdaniharfan",
+        "href": "https://youtube.com/@hamdaniharfan?si=ee6Mf7BQPF6gbaYH"
+      },
+      {
+        "id": "tiktok",
+        "label": "TikTok",
+        "handle": "@hamdani.harfan",
+        "href": "https://www.tiktok.com/@hamdani.harfan"
+      },
+      {
+        "id": "facebook",
+        "label": "Facebook",
+        "handle": "hamdani.harfan",
+        "href": "https://www.facebook.com/hamdani.harfan"
+      },
+      {
+        "id": "academia",
+        "label": "Research",
+        "handle": "Academia.edu",
+        "href": "https://ffarmasi.academia.edu/HamdaniHarfan"
+      }
+    ],
+    "projectTypes": [
+      "Mobile App",
+      "Web Platform",
+      "UI/UX & Design System",
+      "Enterprise / Institutional Consulting",
+      "Other"
+    ]
+  },
+  "store": {
+    "hero": {
+      "eyebrow": "Digital Products & Innovation",
+      "title": "Build Your Ideas Into Digital Products.",
+      "intro": "Explore practical guides, application blueprints, digital tools, and resources designed to help you learn, build, and create."
+    },
+    "emptyTitle": "The first products are being prepared.",
+    "emptyText": "Guides, blueprints and templates drawn from my own app releases are on the way. Want to know when they launch, or need something tailored now?",
+    "trust": [
+      {
+        "title": "Built from shipped work",
+        "text": "Products are drawn from apps I have designed, built and released — including DScan and DNotes on Google Play."
+      },
+      {
+        "title": "Secure, encrypted checkout",
+        "text": "Pay with QRIS, bank transfer or e-wallet on an encrypted checkout page. This website never sees or stores your payment details."
+      },
+      {
+        "title": "Clear before you buy",
+        "text": "Each product page lists what is inside, the format, requirements and license before you decide."
+      },
+      {
+        "title": "Direct support",
+        "text": "Questions before or after purchase? Reach me directly by WhatsApp or email."
+      }
+    ],
+    "products": [
+      {
+        "id": "blueprint-prompt-kelas-dunia",
+        "slug": "blueprint-prompt-kelas-dunia",
+        "status": "published",
+        "lang": "id",
+        "spotlight": true,
+        "featured": true,
+        "bestseller": false,
+        "releaseDate": "2026-10-31",
+        "category": "blueprints",
+        "name": "Blueprint Prompt yang Mengubah Pertanyaan Biasa Menjadi Jawaban Kelas Dunia",
+        "shortDescription": "Kerangka prompt siap pakai untuk mengubah pertanyaan sederhana menjadi jawaban AI yang tajam, terstruktur, dan berkualitas profesional.",
+        "description": "Kualitas jawaban AI sangat ditentukan oleh cara Anda bertanya. Blueprint ini memberi Anda kerangka prompt yang tinggal disalin dan disesuaikan, sehingga pertanyaan sehari-hari berubah menjadi instruksi yang jelas — dan jawaban yang Anda dapat menjadi jauh lebih berguna.",
+        "price": "98000",
+        "originalPrice": "2800000",
+        "currency": "IDR",
+        "checkoutUrl": "https://hamdaniharfan.myr.id/pl/blueprint-prompt-yang-mengubah-pertanyaan-biasa-menjadi-jawaban-kelas-dunia-78513",
+        "coverImage": "/assets/uploads/mvxfp9lf-gemini-generated-image-goxmbmgoxmbmgoxm.jpg",
+        "gallery": [],
+        "highlights": [
+          {
+            "icon": "bolt",
+            "title": "Akses Instan",
+            "text": "Produk langsung bisa diakses begitu pembayaran berhasil."
+          },
+          {
+            "icon": "target",
+            "title": "100% Praktis",
+            "text": "Kerangka yang tinggal disalin, disesuaikan, dan dipakai untuk kebutuhan Anda."
+          },
+          {
+            "icon": "file",
+            "title": "Format Siap Pakai",
+            "text": "Tersusun rapi sehingga bisa langsung digunakan tanpa perlu menyusun ulang."
+          }
+        ],
+        "guarantees": [
+          {
+            "icon": "shield",
+            "title": "Pembayaran aman & terenkripsi",
+            "text": "Transaksi diproses di halaman pembayaran terenkripsi. Website ini tidak menyimpan data pembayaran Anda."
+          },
+          {
+            "icon": "qr",
+            "title": "QRIS, VA bank & e-wallet",
+            "text": "Bayar dengan metode yang paling nyaman untuk Anda."
+          },
+          {
+            "icon": "bolt",
+            "title": "Akses instan",
+            "text": "Akses produk diberikan otomatis setelah pembayaran terkonfirmasi."
+          },
+          {
+            "icon": "infinity",
+            "title": "Akses seumur hidup",
+            "text": "Sekali beli, produk bisa Anda akses kapan saja."
+          }
+        ],
+        "problems": [],
+        "features": [],
+        "audience": [],
+        "curriculum": [],
+        "specifications": [
+          {
+            "label": "Format",
+            "value": "E-book digital (PDF)"
+          },
+          {
+            "label": "Bahasa",
+            "value": "Bahasa Indonesia"
+          },
+          {
+            "label": "Akses",
+            "value": "Seumur hidup"
+          }
+        ],
+        "testimonials": [],
+        "faq": [
+          {
+            "q": "Bagaimana cara akses file setelah pembayaran?",
+            "a": "Setelah pembayaran berhasil, akses produk diberikan otomatis. Pastikan email yang Anda isi saat checkout aktif agar detail akses bisa diterima. Jika ada kendala, hubungi saya lewat WhatsApp."
+          },
+          {
+            "q": "Format file apa yang didapat?",
+            "a": "E-book digital (PDF) yang bisa dibuka di HP, tablet, maupun laptop."
+          },
+          {
+            "q": "Metode pembayaran apa saja yang tersedia?",
+            "a": "Pembayaran mendukung QRIS, transfer Virtual Account bank, serta e-wallet."
+          },
+          {
+            "q": "Apakah aksesnya berlaku selamanya?",
+            "a": "Ya. Sekali beli, Anda bisa mengakses produk ini kapan saja tanpa biaya tambahan."
+          }
+        ]
+      },
+      {
+        "id": "demo-launch-playbook",
+        "slug": "demo-android-launch-playbook",
+        "status": "demo",
+        "featured": true,
+        "releaseDate": "2026-10-20",
+        "category": "ebooks",
+        "name": "Android App Launch Playbook (Demo)",
+        "shortDescription": "A step-by-step guide from closed testing to a public Google Play release.",
+        "description": "Demo product — shown only in preview mode to test the store layout. Not for sale.",
+        "problems": [
+          "Not sure which Play Console steps come first",
+          "Release rejected for missing policy items"
+        ],
+        "features": [
+          "Release checklist",
+          "Store listing worksheet",
+          "Testing track timeline"
+        ],
+        "audience": [
+          "First-time Android publishers",
+          "Solo developers"
+        ],
+        "specifications": [
+          {
+            "label": "Format",
+            "value": "PDF"
+          },
+          {
+            "label": "Language",
+            "value": "Bahasa Indonesia"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Is this a real product?",
+            "a": "No — this is demo data for previewing the store layout."
+          }
+        ],
+        "price": "149000",
+        "currency": "IDR",
+        "coverImage": "",
+        "gallery": [],
+        "checkoutUrl": ""
+      },
+      {
+        "id": "demo-pos-blueprint",
+        "slug": "demo-pos-app-blueprint",
+        "status": "demo",
+        "featured": true,
+        "releaseDate": "2026-09-15",
+        "category": "blueprints",
+        "name": "POS & Inventory App Blueprint (Demo)",
+        "shortDescription": "Screens, data model and feature specification for a small-business cashier app.",
+        "description": "Demo product — shown only in preview mode to test the store layout. Not for sale.",
+        "problems": [],
+        "features": [
+          "Feature specification",
+          "Database schema",
+          "User flow diagrams"
+        ],
+        "audience": [
+          "Founders planning a POS app"
+        ],
+        "specifications": [
+          {
+            "label": "Format",
+            "value": "PDF + Figma"
+          }
+        ],
+        "faq": [],
+        "price": "249000",
+        "currency": "IDR",
+        "coverImage": "",
+        "gallery": [],
+        "checkoutUrl": ""
+      },
+      {
+        "id": "demo-scanner-app",
+        "slug": "demo-document-scanner-app",
+        "status": "demo",
+        "featured": false,
+        "releaseDate": "2026-08-01",
+        "category": "apps",
+        "name": "Document Scanner Toolkit (Demo)",
+        "shortDescription": "A ready-to-use utility app package for scanning and exporting documents.",
+        "description": "Demo product — shown only in preview mode to test the store layout. Not for sale.",
+        "problems": [],
+        "features": [
+          "PDF export",
+          "Background removal"
+        ],
+        "audience": [],
+        "specifications": [
+          {
+            "label": "Platform",
+            "value": "Android 8.0+"
+          },
+          {
+            "label": "License",
+            "value": "Single user"
+          }
+        ],
+        "faq": [],
+        "price": "99000",
+        "currency": "IDR",
+        "coverImage": "",
+        "gallery": [],
+        "checkoutUrl": ""
+      },
+      {
+        "id": "demo-course",
+        "slug": "demo-ai-app-builder-course",
+        "status": "demo",
+        "featured": false,
+        "releaseDate": "2026-10-25",
+        "category": "courses",
+        "name": "Build Your First AI-Assisted App (Demo)",
+        "shortDescription": "An online course that walks through building and publishing an app with AI tools.",
+        "description": "Demo product — shown only in preview mode to test the store layout. Not for sale.",
+        "problems": [],
+        "features": [],
+        "audience": [
+          "Beginners with no coding background"
+        ],
+        "curriculum": [
+          "Module 1 — Planning the app",
+          "Module 2 — Building with AI",
+          "Module 3 — Publishing"
+        ],
+        "specifications": [
+          {
+            "label": "Format",
+            "value": "Video lessons"
+          },
+          {
+            "label": "Access",
+            "value": "Lifetime"
+          }
+        ],
+        "faq": [],
+        "price": "39",
+        "currency": "USD",
+        "coverImage": "",
+        "gallery": [],
+        "checkoutUrl": ""
+      },
+      {
+        "id": "demo-template",
+        "slug": "demo-portfolio-template",
+        "status": "demo",
+        "featured": false,
+        "releaseDate": "2026-07-10",
+        "category": "templates",
+        "name": "Developer Portfolio Template (Demo)",
+        "shortDescription": "React + Tailwind portfolio source code with an editable admin page.",
+        "description": "Demo product — shown only in preview mode to test the store layout. Not for sale.",
+        "problems": [],
+        "features": [
+          "React 19 + Vite",
+          "Tailwind CSS v4"
+        ],
+        "audience": [],
+        "specifications": [
+          {
+            "label": "Stack",
+            "value": "React, Vite, Tailwind"
+          },
+          {
+            "label": "License",
+            "value": "Personal use"
+          }
+        ],
+        "faq": [],
+        "price": "0",
+        "currency": "IDR",
+        "coverImage": "",
+        "gallery": [],
+        "checkoutUrl": ""
+      },
+      {
+        "name": "Hacked AI Prompting: Ubah Layar Kosong Jadi Banjir Orderan Meta Ads",
+        "status": "published",
+        "lang": "id",
+        "spotlight": true,
+        "category": "ebooks",
+        "slug": "hacked-ai-prompting-meta-ads",
+        "shortDescription": "Ubah ide sederhana menjadi copywriting persuasif dan visual iklan profesional dengan AI. Pelajari teknik prompt praktis untuk membuat materi Meta Ads lebih kreatif, terarah, dan siap dikembangkan menjadi kampanye pemasaran.",
+        "description": "HACKED AI PROMPTING\nUbah Layar Kosong Jadi Banjir Orderan Meta Ads\n\nBerhenti menebak-nebak cara kerja AI. Saatnya belajar memberikan instruksi yang lebih terarah untuk menghasilkan copywriting dan visual iklan yang profesional.\n\nAPA YANG AKAN ANDA PELAJARI?\n• Dasar hingga teknik prompting AI tingkat lanjut.\n• Formula prompt untuk menghasilkan headline dan copywriting iklan.\n• Teknik membuat hook yang menarik perhatian audiens.\n• Pembuatan konsep visual dan materi kreatif iklan berbasis AI.\n• Menyesuaikan gaya komunikasi dengan target pasar.\n• Mengembangkan variasi materi iklan untuk kebutuhan pengujian.\n• Workflow praktis untuk membantu mempercepat proses produksi konten pemasaran.\n\nCOCOK UNTUK SIAPA?\n• Pemilik bisnis dan UMKM.\n• Digital marketer dan pengelola Meta Ads.\n• Content creator dan freelancer.\n• Pemula yang ingin memanfaatkan AI untuk pemasaran.\n\nMANFAAT UTAMA\nBelajar bekerja lebih terstruktur, menghemat waktu dalam menyusun ide, dan menghasilkan alternatif materi iklan dengan lebih efisien. Tidak harus mahir menulis atau desain untuk mulai belajar.\n\nMULAI DARI NOL, KEMBANGKAN KREATIVITAS ANDA DENGAN AI.\n\nCatatan: AI membantu proses kreatif, tetapi hasil penjualan tetap dipengaruhi oleh produk, penawaran, target audiens, anggaran, dan optimasi kampanye.",
+        "price": "84000",
+        "originalPrice": "1500000",
+        "currency": "IDR",
+        "checkoutUrl": "https://hamdaniharfan.myr.id/pl/hacked-ai-prompting-ubah-layar-kosong-jadi-banjir-orderan-meta-ads",
+        "coverImage": "/assets/uploads/mw0toocr-hacked-ai-prompting-banjir-orderan.jpg",
+        "gallery": [],
+        "featured": true,
+        "bestseller": true,
+        "releaseDate": "2026-11-03",
+        "highlights": [
+          {
+            "icon": "check",
+            "title": "AI Prompting yang Terarah",
+            "text": ""
+          },
+          {
+            "icon": "check",
+            "title": "Copywriting & Visual Iklan Profesional",
+            "text": ""
+          },
+          {
+            "icon": "check",
+            "title": "Workflow Praktis untuk Produksi Materi Meta Ads",
+            "text": ""
+          }
+        ],
+        "guarantees": [
+          {
+            "icon": "file",
+            "title": "Akses Materi Digital — Setelah pembayaran berhasil, pembeli memperoleh akses ke materi digital sesuai produk yang dibeli. Pastikan tautan unduhan atau akses materi telah tersedia dan dapat digunakan.",
+            "text": ""
+          }
+        ],
+        "testimonials": [],
+        "problems": [
+          "Bingung menulis prompt yang tepat untuk AI.",
+          "Kesulitan membuat copywriting iklan yang menarik.",
+          "Kehabisan ide kreatif untuk kampanye Meta Ads.",
+          "Hasil gambar AI belum sesuai konsep iklan.",
+          "Membutuhkan waktu terlalu lama untuk menyusun materi pemasaran.",
+          "Belum memahami cara mengarahkan AI secara sistematis."
+        ],
+        "features": [
+          "Pengenalan AI Prompting dari dasar hingga mahir.",
+          "Framework menyusun prompt yang jelas, spesifik, dan terarah.",
+          "Teknik membuat copywriting iklan dengan bantuan AI.",
+          "Prompt untuk headline, hook, CTA, dan variasi teks iklan.",
+          "Teknik membuat konsep visual kreatif untuk Meta Ads.",
+          "Template prompt siap digunakan dan dimodifikasi.",
+          "Studi kasus dan latihan penerapan untuk kebutuhan pemasaran.",
+          "Panduan menyempurnakan hasil AI agar sesuai target audiens."
+        ],
+        "audience": [
+          "Pemilik UMKM dan bisnis online.",
+          "Digital marketer dan praktisi Meta Ads.",
+          "Freelancer di bidang pemasaran digital.",
+          "Content creator dan social media specialist.",
+          "Pemula yang ingin belajar AI untuk pemasaran.",
+          "Pebisnis yang ingin mempercepat produksi materi iklan."
+        ],
+        "curriculum": [],
+        "specifications": [
+          {
+            "label": "E-book / PDF digital",
+            "value": "57"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Apa itu Hacked AI Prompting?",
+            "a": "Hacked AI Prompting adalah panduan praktis untuk membantu Anda menyusun instruksi AI secara lebih terarah guna menghasilkan copywriting, ide kreatif, dan konsep visual iklan Meta Ads."
+          },
+          {
+            "q": "Apakah cocok untuk pemula?",
+            "a": "Ya. Materi dirancang untuk membantu pemula memahami dasar prompting dan menerapkannya secara bertahap dalam pembuatan materi pemasaran."
+          },
+          {
+            "q": "Apakah saya harus memiliki keahlian desain?",
+            "a": "Tidak harus. Anda dapat mempelajari cara menggunakan AI untuk mengembangkan konsep visual dan arahan desain. Hasil akhir tetap perlu diperiksa dan disesuaikan."
+          },
+          {
+            "q": "Apakah materi ini menjamin banjir orderan?",
+            "a": "Tidak. Materi membantu meningkatkan kualitas dan efisiensi proses pembuatan iklan, tetapi hasil penjualan dipengaruhi produk, penawaran, audiens, anggaran, dan strategi pemasaran."
+          },
+          {
+            "q": "Bagaimana cara mendapatkan materi?",
+            "a": "Setelah pembayaran berhasil, ikuti instruksi akses atau unduhan yang tersedia pada halaman pembelian. Pastikan tautan dan mekanisme pengiriman sudah dikonfigurasi sebelum produk dipublikasikan."
+          },
+          {
+            "q": "Apakah saya perlu berlangganan alat AI berbayar?",
+            "a": "Kebutuhannya bergantung pada alat dan fitur yang digunakan. Beberapa latihan dapat dilakukan menggunakan layanan AI yang tersedia secara gratis, dengan batasan tertentu."
+          }
+        ],
+        "id": "hacked-ai-prompting-meta-ads"
+      }
+    ],
+    "promptLibrary": {
+      "eyebrow": "Gratis · Free AI Prompts",
+      "title": "Prompt AI Siap Pakai",
+      "intro": "Lihat contoh hasilnya, salin prompt-nya dengan satu ketukan, lalu tempel di ChatGPT, Gemini, atau aplikasi AI favorit Anda.",
+      "ctaProduct": "blueprint-prompt-kelas-dunia",
+      "ctaKicker": "Mau hasil AI yang lebih tajam untuk kerja & bisnis?"
+    },
+    "prompts": [
+      {
+        "title": "AI Virtual Try-On — Coba Outfit Futuristik dengan Augmented Reality",
+        "status": "published",
+        "image": "/assets/uploads/mw0mfs9x-futuristic-holographic-suit-fitting.jpg",
+        "prompt": "A cinematic, ultra-realistic image showing a person (based on the uploaded photo) standing in front of a futuristic holographic display while trying on virtual clothes in augmented reality. The person’s body is surrounded by a glowing 3D hologram projection of fashionable outfits that shift and change in real time. Transparent holographic panels float around, showing fabric textures, colors, and size options. The environment looks like a modern smart home or minimalist shopping studio with neon-blue lighting and glass surfaces. The person’s expression shows curiosity and amazement as the holographic clothing fits perfectly on their digital reflection. The atmosphere is sleek, futuristic, and optimistic — symbolizing the future of online fashion. Ultra-detailed sci-fi lighting, volumetric glow, HDR reflections, realistic human skin tone, 8k render, cinematic composition, soft depth of field, high-tech retail aesthetic.",
+        "category": "AI Virtual Try-On — Coba Outfit Futuristik dengan Augmented Reality",
+        "tool": "ChatGPT / Gemini / Midjourney",
+        "note": "Gunakan foto referensi sebagai acuan identitas wajah. Untuk hasil terbaik, gunakan fitur edit gambar dengan foto sumber, bukan hanya membuat gambar baru dari teks. Detail pakaian holografik, panel AR, dan pencahayaan boleh berubah, tetapi identitas karakter harus tetap konsisten.",
+        "slug": "ai-virtual-try-on-augmented-reality",
+        "date": "2026-11-03",
+        "id": "ai-virtual-try-on-augmented-reality"
+      },
+      {
+        "title": "3D Cartoon Avatar — Ubah Foto Menjadi Karakter Kartun 3D Ekspresif",
+        "status": "published",
+        "image": "/assets/uploads/mw0mk0le-grumpy-pout-with-crossed-arms.jpg",
+        "prompt": "A cute, exaggerated 3D cartoon character in Pixar/Disney style, with a large round head, chubby cheeks, and smooth soft skin. The face is based on the uploaded photo, transformed into an adorable stylized version with expressive eyes and a pouty, annoyed facial expression. The character has short hair similar to the reference photo, and wears a simple T-shirt. The background is clean white, bright, and minimal. The art style is highly detailed, glossy, soft-lit, with realistic textures blended with cute animation proportions. The mood is fun, expressive, and charming. Ultra-detailed 3D cartoon rendering, Pixar-like lighting, high-quality character design, no text or watermarks.",
+        "category": "AI Image Editing / 3D Cartoon / Character Design / Avatar / Digital Art / Pixar-Inspired Style",
+        "tool": "ChatGPT / Gemini / Midjourney",
+        "note": "Unggah foto wajah yang jelas dan gunakan sebagai referensi saat menjalankan prompt. Untuk menjaga konsistensi karakter, pertahankan ciri wajah, gaya rambut, dan warna kulit. Ekspresi, pakaian, pose, serta gaya 3D dapat disesuaikan. Hasil dapat berbeda tergantung model AI yang digunakan.",
+        "slug": "3d-cartoon-avatar-ekspresif",
+        "date": "2026-11-03",
+        "id": "3d-cartoon-avatar-ekspresif"
+      },
+      {
+        "title": "Prompt Edit Foto Menjadi Karakter 3D Kartun Premium",
+        "status": "published",
+        "image": "/assets/uploads/mw0mo7jb-cozy-yellow-portrait-with-headphones.jpg",
+        "prompt": "Transform the uploaded photo into a cute 3D stylized character illustration. Keep the person’s facial features and pose recognizable, but render them in a soft Pixar-style 3D look.\n\nBig expressive eyes, smooth skin, rounded face, slightly oversized head, and simplified proportions. Clean pastel color palette with dominant warm yellow tones. Outfit in cozy casual style: striped sweater, relaxed pants, minimal details. Add cute oversized headphones and round glasses.\n\nSoft studio lighting with gentle shadows, bright cheerful mood. Minimalist solid background (warm yellow), smooth textures, high detail, ultra-clean render, high quality, 4K.",
+        "category": "AI Image Editing, 3D Cartoon, Character Design, Portrait, Digital Art",
+        "tool": "ChatGPT Image Generator, Gemini, AI Image Editor",
+        "note": "Unggah foto sumber terlebih dahulu. Gunakan prompt untuk mengubah foto menjadi karakter 3D kartun dengan mata ekspresif, kepala sedikit lebih besar, tekstur halus, dan pencahayaan studio. Pertahankan ciri wajah, gaya rambut, warna kulit, dan identitas visual dari foto referensi semirip mungkin. Hasil dapat berbeda tergantung model AI yang digunakan.",
+        "slug": "prompt-edit-foto-karakter-3d-kartun-premium",
+        "date": "2026-11-03",
+        "id": "prompt-edit-foto-karakter-3d-kartun-premium"
+      },
+      {
+        "title": "Prompt Edit Foto King of Diamonds — Royal Chess Edition",
+        "status": "published",
+        "image": "/assets/uploads/mw0mua8n-king-of-diamonds-chess-portrait.jpg",
+        "prompt": "Use the uploaded photo of the man as the subject. Don't change his original face. Create a stylized portrait of him designed like a “King” playing card. Place him in the center wearing a sporty jacket, standing against a clean red-themed background. The man should pose confidently while holding a single chess king piece toward the viewer. Frame the portrait inside a white playing-card border with red accents, minimalist royal symbols, and subtle text elements. Keep the vibe bold, regal, and iconic, with soft shadows, crisp lighting, and high-resolution detail.",
+        "category": "AI Image Editing, Playing Card, King Portrait, Chess, Royal Design, Digital Art",
+        "tool": "ChatGPT Image Generator, Gemini, Midjourney",
+        "note": "Unggah foto wajah sebagai referensi utama. Gunakan prompt untuk membuat potret bergaya kartu remi King of Diamonds dengan latar merah elegan, bingkai putih, aksen emas, jaket sporty, dan bidak raja catur. Pertahankan ciri wajah, gaya rambut, warna kulit, serta identitas orang pada foto sumber semirip mungkin. Untuk hasil terbaik, gunakan foto yang tajam dan pencahayaan wajah yang jelas.",
+        "slug": "prompt-edit-foto-king-of-diamonds-royal-chess",
+        "date": "2026-11-03",
+        "id": "prompt-edit-foto-king-of-diamonds-royal-chess"
+      },
+      {
+        "title": "Cinematic Night Camping with a Friendly Sun Bear",
+        "status": "draft",
+        "image": "/assets/uploads/mw0mxpvw-moonlit-camping-with-a-friendly-bear.jpg",
+        "prompt": "A cinematic, ultra-realistic night scene of a person camping deep in the forest. The person’s face is based on the uploaded photo, wearing outdoor camping clothes, sitting beside a warm glowing campfire. Next to them sits a friendly sun bear (beruang madu), calm and gentle, illuminated by the firelight. The camp is surrounded by tall pine trees, soft moonlight, fire sparks drifting upward, and warm orange-blue contrast lighting. A small tent, camping gear, and a kettle above the fire complete the scene. The mood is peaceful, magical, and adventurous. Firelight reflects on the character’s face, showing detail and emotion. Mist between trees, glowing embers, and subtle volumetric light add depth. Hyper-realistic texture, 8k cinematic detail, soft bokeh in the background, no text.",
+        "category": "AI Image Editing / Camping / Wildlife / Cinematic Photography / Adventure",
+        "tool": "ChatGPT Images / Gemini / Midjourney",
+        "note": "Gunakan foto referensi sebagai acuan wajah. Pertahankan ciri wajah, gaya rambut, dan warna kulit semirip mungkin. Sesuaikan pakaian, pencahayaan, dan latar dengan adegan camping. Beruang madu merupakan elemen visual ilustratif; hasil generatif bukan foto dokumentasi satwa asli.",
+        "slug": "cinematic-night-camping-friendly-sun-bear",
+        "date": "2026-11-03",
+        "id": "cinematic-night-camping-friendly-sun-bear"
+      },
+      {
+        "title": "AI Action Figure Starter Pack — Personal Edition",
+        "status": "published",
+        "image": "/assets/uploads/mw0n2fzx-tech-traveler-starter-kit.jpg",
+        "prompt": "A highly detailed, ultra-realistic human starter pack / action figure packaging concept. A full-body person is displayed inside a molded product box, lying flat in a custom-fit tray. The face is accurately taken from the uploaded reference photo, preserving natural facial features, skin texture, and identity without distortion. Neutral expression, clean hairstyle, realistic proportions.\n\nThe person wears simple modern casual clothing (oversized t-shirt, cargo shorts or pants, sneakers). The t-shirt contain short custom text \"AI Creator Labs\". Surrounding the person inside the box are neatly arranged personal items and accessories in separate molded compartments (headphones, smartphone, camera, smartwatch, jacket, water bottle, tech gadgets).\n\nThe packaging tray is a bold solid color (red or customizable), with soft studio lighting, minimal shadows, and perfectly aligned composition. Shot from a top-down flat lay angle, symmetrical layout, clean background. Hyper-realistic product photography style, sharp focus, cinematic clarity, 8K detail, no blur, no watermark, no extra text outside the packaging.",
+        "category": "AI Image Editing, Action Figure, Starter Pack, Character Design, Product Packaging, Personal Branding",
+        "tool": "ChatGPT Images, Gemini, AI Image Generator",
+        "note": "Unggah foto wajah sebagai referensi utama. Gunakan foto yang jelas dan menghadap kamera agar kemiripan wajah lebih akurat. Pertahankan identitas karakter, gunakan rasio vertikal 3:4, dan periksa ejaan teks “Hamdani Harfan” pada kaus. Hasil teks pada gambar AI mungkin perlu diperbaiki secara manual.",
+        "slug": "ai-action-figure-starter-pack-personal-edition",
+        "date": "2026-11-03",
+        "id": "ai-action-figure-starter-pack-personal-edition"
+      },
+      {
+        "title": "Extreme Skydiving Adventure — Cinematic AI Photo",
+        "status": "published",
+        "image": "/assets/uploads/mw0n70f9-skydiver-beneath-a-colorful-canopy.jpg",
+        "prompt": "A highly realistic and cinematic scene of a person skydiving with a parachute, captured mid-air above the clouds. The person’s face is accurately based on the uploaded reference photo, preserving facial identity, skin texture, and natural expression without distortion.\n\nThe person is wearing a professional skydiving harness and jumpsuit, arms spread wide in a dynamic freefall pose, conveying excitement, freedom, and adrenaline. Protective goggles are worn, slightly reflective, adding realism and depth.\n\nThe parachute canopy is fully deployed above, with detailed ropes and fabric tension visible. Below, a vast aerial landscape of fields, roads, and clouds stretches into the horizon under a bright blue sky.\n\nShot from a wide-angle action camera perspective, dramatic depth of field, natural daylight, realistic motion, cinematic composition.\n\nUltra-detailed, photorealistic style, 8K resolution, sharp focus, realistic proportions, dynamic movement, no cartoon style, no watermark, no text.",
+        "category": "AI Image Editing, Skydiving, Adventure, Extreme Sports, Cinematic Photography, Character Consistency",
+        "tool": "Unggah character reference sheet sebagai referensi wajah utama. Gunakan rasio vertikal 3:4 untuk hasil yang cocok bagi Instagram Reels cover, TikTok, dan Shorts. Periksa detail harness, tali parasut, tangan, dan wajah setelah gambar dihasilkan.",
+        "note": "Unggah character reference sheet sebagai referensi wajah utama. Gunakan rasio vertikal 3:4 untuk hasil yang cocok bagi Instagram Reels cover, TikTok, dan Shorts. Periksa detail harness, tali parasut, tangan, dan wajah setelah gambar dihasilkan.",
+        "slug": "extreme-skydiving-adventure-ai-photo",
+        "date": "2026-11-03",
+        "id": "extreme-skydiving-adventure-ai-photo"
+      },
+      {
+        "title": "Sonic Identity — Waveform Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw0nebvw-neon-soundwave-portrait-of-a-suited-man.jpg",
+        "prompt": "A conceptual and artistic portrait of a person, where the face and silhouette are accurately formed entirely from sound waves and audio waveforms.\n\nThe facial identity is clearly based on the uploaded reference photo, preserving the person’s facial structure, proportions, and recognizable features, but instead of solid skin, the face is constructed from flowing sound waves, frequency lines, and waveform patterns.\n\nThe sound waves vary in thickness and intensity, shaping the eyes, nose, lips, and jawline with precise detail. Some waves appear sharp and energetic, others smooth and calm, creating depth and emotion.\n\nThe background is dark and minimal, allowing the glowing sound waves to stand out. Subtle particles, light pulses, and audio-reactive effects surround the portrait, giving the impression that the image is alive with sound.\n\nColor palette uses neon blues, soft purples, cyan, and white highlights, with gentle glow effects.\n\nCinematic lighting, high contrast, ultra-detailed digital art, modern abstract realism, sharp focus, 8K quality, clean composition, no text, no watermark.",
+        "category": "AI Image Editing, Waveform Portrait, Sound Wave Art, Futuristic Portrait, Neon Art, Digital Art, Character Consistency",
+        "tool": "ChatGPT Images, Gemini, AI Image Generator",
+        "note": "Unggah foto wajah sebagai referensi utama. Gunakan pencahayaan neon biru, cyan, dan ungu dengan latar gelap untuk kontras maksimal. Pastikan garis gelombang membentuk fitur wajah, bukan sekadar menjadi dekorasi di sekelilingnya. Cocok untuk foto profil futuristik, poster kreatif, dan personal branding AI.",
+        "slug": "sonic-identity-waveform-portrait",
+        "date": "2026-11-03",
+        "id": "sonic-identity-waveform-portrait"
+      },
+      {
+        "title": "Neo-Expressionist Street Art Portrait — Bold Identity",
+        "status": "published",
+        "image": "/assets/uploads/mw0ni4lc-neo-expressionist-graffiti-portrait.jpg",
+        "prompt": "Create a bold neo-expressionist street-art portrait of the person in the uploaded reference photo. Preserve the person's recognizable facial identity, facial proportions, spiky black hairstyle, eyebrows, eyes, nose, lips, skin tone, and natural expression. Render the portrait with expressive hand-painted brushstrokes, rough black outlines, layered acrylic paint, chalk marks, crayon textures, distressed surfaces, and dramatic color blocking. Use vivid primary colors: electric blue, fiery red, bright yellow, black, and white. Dress the subject in a sharp navy-blue suit, white shirt, and burgundy patterned tie inspired by the reference photograph. Set the portrait against a weathered urban concrete wall filled with expressive graffiti, abstract symbols, crowns, stars, lightning bolts, skull illustrations, paint splashes, scribbles, and energetic brush marks. Create a powerful composition with confident expression, dynamic visual rhythm, imperfect handmade textures, strong contrast, and an iconic contemporary street-art aesthetic. Highly detailed facial features, tactile paint texture, dramatic lighting, sharp focus, premium art-poster quality, vertical 3:4 composition. Maintain character consistency with the reference image. No photorealistic skin rendering that removes the painted effect, no distorted facial anatomy, no extra limbs, no watermark, no unintended typography.",
+        "category": "Neo-Expressionism, Street Art, Graffiti Portrait, AI Image Editing, Acrylic Painting, Urban Art, Character Consistency",
+        "tool": "ChatGPT Images, Gemini, AI Image Generator",
+        "note": "Gunakan foto referensi wajah sebagai acuan utama. Pertahankan gaya rambut dan ciri wajah asli, tetapi gunakan sapuan cat kasar, outline hitam tegas, serta kombinasi merah, biru, kuning, hitam, dan putih. Cocok untuk poster personal branding, artwork profil, sampul digital, dan konten media sosial.",
+        "slug": "neo-expressionist-street-art-portrait",
+        "date": "2026-11-03",
+        "id": "neo-expressionist-street-art-portrait"
+      },
+      {
+        "title": "The Light of Ramadan — A Portrait of Peace",
+        "status": "published",
+        "image": "/assets/uploads/mw0o1b4l-warm-lantern-portrait-on-a-prayer-rug.jpg",
+        "prompt": "A realistic studio portrait of a man based on the uploaded reference photo. Don't change his original face. He is wearing white Middle Eastern traditional clothing, sitting cross-legged while holding a glowing Ramadan lantern. Warm soft lighting with the lantern as the main light source, creating a peaceful and spiritual Ramadan atmosphere. Clean minimal light background, professional photography, sharp facial details, realistic fabric texture, cinematic look, soft shadows, high resolution.",
+        "category": "Ramadan, spiritualitas, busana tradisional Timur Tengah, dan cinematic portrait photography.",
+        "tool": "chatgpt",
+        "note": "Potret realistis dengan wajah karakter tetap konsisten, mengenakan pakaian putih tradisional sambil memegang lentera Ramadan bercahaya keemasan.",
+        "slug": "the-light-of-ramadan",
+        "date": "2026-11-03",
+        "id": "app"
+      },
+      {
+        "title": "Luminous Wireframe Suit — Futuristic Urban Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw0o6uao-neon-wireframe-suit-in-the-city.jpg",
+        "prompt": "Create a highly realistic cinematic portrait using the uploaded reference photo as the main subject.\n\nThe person must be the exact same individual from the uploaded photo: keep the face, skin tone, facial structure, eye shape, hairstyle, and identity 100% accurate to the reference image.\n\nThe subject is standing confidently in an urban city street, centered in the frame, with buildings softly blurred in the background (shallow depth of field).\n\nThe clothing appears as a semi-transparent, glowing white line-art sketch, as if hand-drawn with fine luminous strokes, perfectly aligned with the body.\n\nThe sketch outlines blend seamlessly with the realistic photograph, creating a mixed-media effect where realism meets illustration.\n\nSubtle light reflections pass through the sketch lines, giving a futuristic and artistic feel.\n\nCinematic lighting, natural skin texture, soft highlights, gentle shadows, photorealistic face, ultra-detailed, high-resolution, 8K quality.\n\nNo text, no logos, no watermark, no face distortion, no extra people.",
+        "category": "AI Image Editing, Futuristic Fashion, Wireframe Art, Cinematic Portrait, Digital Art, Urban Photography",
+        "tool": "ChatGPT / Gemini / Midjourney",
+        "note": "Pertahankan wajah, identitas, warna kulit, bentuk mata, struktur wajah, dan gaya rambut sesuai foto referensi. Ubah pakaian menjadi sketsa wireframe putih bercahaya dengan garis artistik yang mengikuti bentuk tubuh secara realistis. Gunakan latar kota modern dengan gedung kaca, pencahayaan sinematik, efek bokeh, dan bayangan alami. Pertahankan wajah fotorealistis dengan detail kulit yang tajam, kontras antara garis bercahaya dan latar yang gelap, serta hasil akhir premium seperti poster film futuristik.",
+        "slug": "luminous-wireframe-suit-futuristic-urban-portrait",
+        "date": "2026-11-03",
+        "id": "luminous-wireframe-suit-futuristic-urban-portrait"
+      },
+      {
+        "title": "Abstract Scribble Ink Portrait — Artistic Identity",
+        "status": "published",
+        "image": "/assets/uploads/mw0ogl9i-confident-scribble-portrait-in-a-suit.jpg",
+        "prompt": "Create an abstract scribble line art portrait using the uploaded reference photo as the main subject.\n\nThe face, facial structure, skin tone, hairstyle, and identity must remain 100% accurate to the uploaded photo.\n\nThe portrait is drawn entirely using chaotic hand-drawn black ink lines, overlapping and tangled, forming the figure through dense sketch strokes and expressive scribbles.\n\nThe subject is shown from the waist up, standing confidently with arms crossed, calm and thoughtful expression.\n\nThe body, clothing, and shadows are all created using continuous abstract line work, with no solid fills, only layered lines suggesting form and depth.\n\nBlack ink on a pure white background, high contrast, minimalistic composition.\n\nArtistic style inspired by contemporary abstract sketch art, emotional, raw, and expressive.\n\nUltra-detailed line density on the face, slightly looser lines on the body for artistic balance.\n\nNo color, no text, no background elements, no realism rendering, no shading gradients, no watermark.",
+        "category": "Seni abstrak, black ink sketch, scribble art, portrait illustration, character consistency, monochrome art.",
+        "tool": "ChatGPT / Gemini / Midjourney   Salin",
+        "note": "Gunakan foto referensi asli untuk mempertahankan identitas wajah, bentuk mata, hidung, bibir, gaya rambut, dan struktur wajah. Seluruh potret dibuat dari coretan tinta hitam yang saling bertumpuk, dengan detail wajah rapat, jas formal, posisi tangan menyilang, dan latar putih bersih.",
+        "slug": "abstract-scribble-ink-portrait",
+        "date": "2026-11-03",
+        "id": "abstract-scribble-ink-portrait"
+      },
+      {
+        "title": "The Last Echo — Golden Energy Dissolution Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw0okb0b-golden-halo-disintegration.jpg",
+        "prompt": "Create an ultra-realistic cinematic image using the uploaded reference photo as the main subject.\n\nThe face, facial structure, skin tone, hairstyle, and identity must remain 100% accurate to the uploaded photo, no changes or stylization to the face.\n\nThe person is shown in a full-body side profile, standing still with a calm yet emotional posture, head slightly bowed, eyes looking downward, hands relaxed at the sides, conveying deep introspection and melancholy.\n\nThe subject wears simple modern casual clothing in neutral tones.\n\nNearly half of the body is dissolving into thick cinematic smoke, breaking apart into fine particles, dust, and mist, gradually fading into the surrounding air. Parts of the body appear semi-transparent as they disintegrate.\n\nBehind the subject is a massive glowing circular energy ring, shaped like a crescent or halo, emitting golden-white plasma light, acting as a powerful rim light and backlight that outlines the silhouette.\n\nSmoke particles are illuminated by the glowing aura, creating dramatic contrast and depth.\n\nThe environment is minimal and atmospheric: an empty ground with a cloudy, overcast sky, muted grey tones, monochrome color palette contrasted by warm golden highlights.\n\nCinematic lighting, volumetric smoke, shallow depth of field, ultra-detailed textures, high contrast, dramatic mood, emotional storytelling.\n\nNo text, no logo, no watermark, no extra people, no distortion of the face.",
+        "category": "Cinematic portrait, surreal photography, smoke disintegration, golden energy ring, fantasy effects, emotional storytelling, photorealistic art.",
+        "tool": "ChatGPT / Gemini / Midjourney",
+        "note": "Pertahankan identitas wajah, struktur wajah, warna kulit, dan gaya rambut dari foto referensi. Gunakan pose profil samping dengan kepala sedikit tertunduk. Buat separuh tubuh terurai menjadi asap, partikel, dan debu, dengan lingkaran energi emas bercahaya di belakang subjek. Gunakan pencahayaan sinematik, latar abu-abu berkabut, serta kontras emas dan abu-abu untuk menciptakan suasana dramatis dan emosional.",
+        "slug": "last-echo-golden-energy-dissolution",
+        "date": "2026-11-03",
+        "id": "last-echo-golden-energy-dissolution"
+      },
+      {
+        "title": "Custom Enamel Pin Portrait – Premium Character Merchandise",
+        "status": "published",
+        "image": "/assets/uploads/mw0ool0r-enamel-portrait-pin-on-canvas-tote.jpg",
+        "prompt": "Transform the person from the provided photo into a high-quality enamel pin design, keeping their facial identity recognizable but simplified into clean pin-style illustration. The enamel pin features bold outlines, smooth flat color fills, glossy hard-enamel finish, subtle metal borders, and minimal shading. The pin is securely attached to a fabric bag (tote bag or backpack), with visible pin clasp and realistic scale. Style: collectible enamel pin, modern merchandise aesthetic, cute but premium, polished and professional. Lighting: soft studio lighting highlighting the glossy enamel surface. Focus on the pin as the main subject, with shallow depth of field on the bag background. Ultra-detailed, clean edges, high resolution, product photography quality.",
+        "category": "Enamel Pin, Custom Portrait, Character Illustration, Collectible Merchandise, Product Photography, Premium Accessories.",
+        "tool": "ChatGPT / Gemini / Midjourney",
+        "note": "Gunakan foto referensi sebagai identitas utama. Pertahankan ciri wajah, bentuk mata, hidung, bibir, warna kulit, dan gaya rambut agar karakter tetap mudah dikenali. Ubah karakter menjadi ilustrasi enamel pin dengan garis tegas, warna solid, lapisan glossy, dan bingkai logam emas. Tempatkan pin pada tas kanvas dengan tekstur kain realistis, pencahayaan studio lembut, serta efek depth of field profesional.",
+        "slug": "custom-enamel-pin-portrait",
+        "date": "2026-11-03",
+        "id": "custom-enamel-pin-portrait"
+      },
+      {
+        "title": "Miniature Me – Surreal Denim Jacket Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw0orvws-miniature-clones-in-a-denim-jacket.jpg",
+        "prompt": "Use the provided photo of the man as the main reference. Create a surreal, playful portrait where the man appears multiple times at miniature scale, emerging from and interacting with the pockets of an oversized light-blue denim jacket worn by a larger version of himself. The main figure is centered, wearing a light blue denim jacket, white button-down shirt, and dark striped tie, hands gently clasped. The smaller versions of the man are peeking out of the jacket pockets and standing in front of the jacket, each with expressive gestures (looking surprised, questioning, or curious), maintaining the same face, hairstyle, glasses, and outfit as the original man. Style: photorealistic with a surreal twist, sharp focus, natural daylight, high detail fabric texture, realistic skin tones. Mood: whimsical, introspective, slightly humorous. Camera: medium close-up, straight-on angle, shallow depth of field. Background: soft, neutral, minimal distractions.",
+        "category": "ChatGPT / Gemini / Midjourney",
+        "tool": "ChatGPT / Gemini / Midjourney",
+        "note": "Gunakan foto referensi sebagai identitas karakter utama. Pertahankan wajah, bentuk mata, hidung, bibir, warna kulit, dan gaya rambut agar tetap konsisten. Buat beberapa versi miniatur dari karakter yang sama, muncul dari saku dan bahu jaket denim biru muda dengan ekspresi penasaran, terkejut, berpikir, dan tersenyum. Pertahankan pakaian yang serasi, tekstur denim realistis, pencahayaan alami, dan latar minimalis. Pastikan ukuran miniatur proporsional serta menyatu secara realistis dengan pakaian.",
+        "slug": "miniature-me-denim-jacket",
+        "date": "2026-11-03",
+        "id": "app"
+      },
+      {
+        "title": "Surreal Eggshell Portrait — Digital Lifestyle Edition",
+        "status": "published",
+        "image": "/assets/uploads/mw0ouuer-man-relaxing-inside-a-cracked-eggshell.jpg",
+        "prompt": "Create a hyper-realistic, ultra-detailed cinematic image using the uploaded reference photo as the main subject.\n\nThe face, facial features, skin tone, hairstyle, and identity must remain 100% accurate to the uploaded reference photo, with no alterations or stylization to the face.\n\nThe person is sitting inside a cracked egg shell in a cool, confident pose: one knee raised, the other leg relaxed, body slightly leaning back, shoulders relaxed, chin slightly lifted, conveying confidence and modern attitude.\n\nOne arm rests casually on the raised knee while the other hand loosely holds or rests near a smartphone, creating a natural, effortless pose.\n\nThe egg shell is broken open with realistic sharp edges and detailed texture, held gently by human fingers from the outside.\n\nInside the egg, instead of flowers, place a sleek modern laptop and a smartphone, arranged naturally as part of the environment, symbolizing technology, creativity, and digital lifestyle.\n\nA glossy, realistic egg yolk rests at the bottom of the shell with natural reflections and translucency.\n\nThe subject wears modern fashionable streetwear, clean silhouette, realistic fabric folds and textures, stylish yet natural.\n\nLighting is cinematic, soft but contrasty, with subtle rim light highlighting the face and egg shell, shallow depth of field, macro photography look.\n\nBackground is minimal and softly blurred, emphasizing the surreal concept and subject focus.\n\nUltra-realistic skin texture, photorealistic materials, cinematic composition, high-end editorial photography style, surreal yet believable.\n\nNo text, no logos, no watermark, no extra people, no distortion.",
+        "category": "Surreal Portrait, Cinematic Photography, AI Image Editing, Digital Lifestyle, Creative Concept Art",
+        "tool": "ChatGPT Images / Gemini / Midjourney",
+        "note": "Gunakan foto referensi wajah yang jelas untuk menjaga konsistensi identitas. Pertahankan struktur wajah, gaya rambut, warna kulit, dan proporsi tubuh. Gunakan pencahayaan sinematik, tekstur cangkang telur realistis, serta laptop dan smartphone tanpa logo.",
+        "slug": "surreal-eggshell-digital-lifestyle",
+        "date": "2026-11-03",
+        "id": "surreal-eggshell-digital-lifestyle"
+      },
+      {
+        "title": "Cinematic Anime Noir — Cyberpunk Elevator Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw0oxugf-cyberpunk-elevator-noir-portrait.jpg",
+        "prompt": "Create a stylized cinematic anime illustration of a man based on the provided reference photo.\nThe man is depicted as a cool, confident character standing inside a dimly lit elevator, viewed from a slightly high, dramatic angle.\nHe wears a dark suit jacket over a light shirt, hands in pockets, calm but intimidating expression.\nHis facial features, hairstyle, glasses, and body proportions closely resemble the reference photo, but rendered in high-quality anime realism.\n\nLighting: moody neon lighting, teal and green tones, strong overhead light casting shadows.\nAtmosphere: cinematic, noir, intense, with subtle smoke drifting from a cigarette or glowing ember near his face.\nEnvironment: metal elevator interior, worn textures, reflections on steel walls, floor littered with small details (shells, debris, or light reflections).\nStyle: anime cinematic realism, dramatic contrast, sharp focus, film-grain look, cyberpunk noir vibe.\nColor grading: teal & orange, high contrast.\nQuality: ultra-detailed, 4K illustration, sharp, polished, poster-worthy.",
+        "category": "Anime Realism, Cyberpunk, Cinematic Portrait, Dark Aesthetic, Neon Lighting, Character Consistency",
+        "tool": "ChatGPT Images / Gemini / Midjourney",
+        "note": "Unggah foto referensi yang jelas. Pertahankan ciri wajah, bentuk mata, warna kulit, dan gaya rambut agar karakter tetap konsisten. Gunakan sudut kamera high-angle, pencahayaan neon teal, aksen oranye, serta detail interior lift metal untuk hasil sinematik. Kacamata hanya ditambahkan jika ada pada foto referensi.",
+        "slug": "cinematic-anime-noir-cyberpunk-elevator",
+        "date": "2026-11-03",
+        "id": "cinematic-anime-noir-cyberpunk-elevator"
+      },
+      {
+        "title": "Premium Monochrome 3D Character Sculpt — ZBrush Style",
+        "status": "published",
+        "image": "/assets/uploads/mw0p34ur-monochrome-clay-bust-in-hoodie.jpg",
+        "prompt": "Create a cinematic, fashion-forward 3D bust derived from the provided reference photo. Interpret the subject using a refined, ZBrush-inspired sculpting style with smooth, matte surfaces and gently enhanced proportions. Present the model in a single neutral material (such as clay gray, warm stone, or slate), avoiding surface textures or color so the focus remains entirely on form, volume, and silhouette.\n\nFacial anatomy should stay true to the subject while being subtly idealized: highlighting the jawline, cheekbones, brow structure, and lips without drifting into caricature. Outfit the character in contemporary streetwear, such as a structured hoodie with thick fabric, clean construction, and believable seams and folds. Minimal accessories may be included, like a beanie or raised hood, if they support the look.\n\nIlluminate the sculpt with soft, neutral studio lighting around 6000K, using directional light to gently define planes and geometry through controlled shadows. Place the bust against a light, neutral background with a delicate gradient.\n\nFrame the shot using an 85mm lens at eye level or slightly below, with an f/4.5 aperture and shallow depth of field. The overall aesthetic should align with premium sculpt passes seen in cinematic character design for animated films and AAA games—minimal, polished, and editorial in tone. The final mood should feel confident, composed, modern, and digitally pristine.",
+        "category": "AI Portrait / 3D Sculpt / ZBrush Style / Character Design / Monochrome Art",
+        "tool": "ChatGPT / Gemini / Midjourney",
+        "note": "Upload foto referensi wajah yang jelas. Pertahankan identitas wajah, bentuk mata, hidung, bibir, dan gaya rambut. Gunakan material clay monokrom, pencahayaan studio lembut, serta detail hoodie yang realistis. Hasil akhir harus terlihat seperti sculpt karakter profesional, bukan foto berwarna.",
+        "slug": "premium-monochrome-3d-character-sculpt",
+        "date": "2026-11-03",
+        "id": "premium-monochrome-3d-character-sculpt"
+      },
+      {
+        "title": "Potret Psychedelic Neon – Seni Digital Abstrak Ultra-Realistis",
+        "status": "published",
+        "image": "/assets/uploads/mvzc67cd-psychedelic-portrait-in-swirling-neon-pa.jpg",
+        "prompt": "A vibrant, psychedelic portrait of a human based on the uploaded photo. The person’s face and features should be clearly recognizable, surrounded by a colorful, abstract background with fluid, swirling patterns in neon hues of blue, orange, pink, green, and yellow. The lighting is bright and glowing, with soft reflections on the skin and hair. The artwork style is detailed, vivid, and surreal — resembling an oil painting blended with digital neon art. The expression is calm and confident, with dreamy eyes and gentle lighting on the face. Ultra-detailed, high quality, 8k render, sharp focus, vivid saturation, intricate textures, fantasy style.",
+        "category": "Psychedelic Portrait, Neon Art, Digital Painting, Abstract Art, Fantasy Portrait, AI Image Editing",
+        "tool": "ChatGPT, Gemini, Midjourney",
+        "note": "Ubah foto asli menjadi potret psychedelic yang artistik dengan pola abstrak berputar dan warna neon biru, oranye, merah muda, hijau, dan kuning. Pertahankan identitas wajah, bentuk mata, hidung, bibir, gaya rambut, dan karakteristik utama subjek. Gunakan pencahayaan bercahaya, tekstur menyerupai lukisan minyak, detail digital art yang kompleks, saturasi warna tinggi, dan komposisi sinematik. Cocok untuk foto profil kreatif, poster seni, personal branding, dan konten media sosial. Unggah foto referensi terlebih dahulu agar hasil lebih konsisten.",
+        "slug": "potret-psychedelic-neon-digital-art",
+        "date": "2026-11-02",
+        "id": "potret-psychedelic-neon-digital-art"
+      },
+      {
+        "title": "AI Photo Transformation: Professional Portrait to Futuristic Cyberpunk | Cinematic 8K",
+        "status": "published",
+        "image": "/assets/uploads/mvzbz4x1-cyberpunk-portrait-with-neon-circuits.jpg",
+        "prompt": "A close-up portrait of a man inspired by the provided reference photo — don't change his original face. The lighting is cinematic with warm orange and cool blue tones highlighting the contours of his face. His jacket has a textured, futuristic design, and subtle digital circuitry patterns merge into his skin and surroundings, symbolizing the fusion between human and technology. The background features abstract geometric grids and data streams in glowing hues of red, blue, and orange, creating a cyberpunk-techno aesthetic. Render in ultra-realistic detail with smooth skin texture, soft depth of field, and high dynamic range — 8K resolution, Unreal Engine 5 realism, cinematic lighting, sharp focus on eyes, bokeh background.\n\n--ar 2:3 --v 6 --s 750 --style raw --q 2 --hd --uplight",
+        "category": "AI Photo Editing, Cyberpunk, Futuristic Portrait, Sci-Fi, Digital Art, Cinematic Photography",
+        "tool": "ChatGPT, Gemini, Midjourney",
+        "note": "Ubah foto formal menjadi potret futuristik bergaya cyberpunk dengan mempertahankan kemiripan wajah, gaya rambut, dan karakter utama dari foto referensi. Gunakan jaket teknologi futuristik bertekstur dengan detail sirkuit bercahaya, perpaduan pencahayaan oranye hangat dan biru elektrik, efek digital pada kulit yang halus, latar belakang berupa jaringan data, grid geometris, serta elemen holografik. Terapkan pencahayaan sinematik, fokus tajam pada mata, tekstur kulit realistis, depth of field lembut, dan kontras HDR. Cocok untuk foto profil AI, personal branding teknologi, avatar digital, dan konten media sosial. Gunakan foto referensi yang jelas untuk membantu menjaga konsistensi wajah.",
+        "slug": "professional-portrait-cyberpunk-ai",
+        "date": "2026-11-02",
+        "id": "professional-portrait-cyberpunk-ai"
+      },
+      {
+        "title": "Forbes 30 Under 30 — AI-Driven Creativity Magazine Cover",
+        "status": "published",
+        "image": "/assets/uploads/mvzckgz7-visionary-ai-s-next-innovator.jpg",
+        "prompt": "Transform the uploaded photo into a professional Forbes 30 Under 30 magazine cover portrait.\n\nThe person in the reference image should look confident, successful, and visionary — like a young entrepreneur or innovator featured in Forbes.\n\nPlace the subject in the center with professional studio lighting, soft shadows, and a clean neutral background (white, gray, or dark gradient).\n\nAdd realistic Forbes magazine layout details:\n\n“Forbes” logo on top (white or black depending on background)\n\nLarge headline text: “30 UNDER 30”\n\nSubtexts like “The Future of AI-Driven Creativity”, “Innovators Redefining Digital Media”\n\nMinimalist side text in fine sans-serif typography\n\nIn the bottom-left corner, vertically aligned text: “Innovation. Influence. Impact.”\n\nOptional barcode and edition text at the bottom corner\n\nThe image should look ultra-detailed, cinematic, elegant, and glossy — as if professionally shot for a Forbes cover.\n\nStyle keywords: ultra-realistic portrait photography, magazine cover, high-end editorial lighting, elegant composition, luxury aesthetic, 8K resolution.\n\nInstruction: adjust outfit and lighting to match Forbes 30 Under 30 vibe (business casual, blazer, confident posture). Maintain the person’s facial identity and likeness from the uploaded photo.",
+        "category": "AI Art / Portrait / Magazine Cover / Personal Branding / Business",
+        "tool": "ChatGPT Image Generation",
+        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan kemiripan karakter. Ubah pakaian menjadi blazer navy premium dengan kemeja putih, pencahayaan editorial profesional, dan latar abu-abu elegan. Tambahkan tipografi majalah bergaya Forbes, headline “30 UNDER 30”, serta teks “The Future of AI-Driven Creativity” dan “Innovators Redefining Digital Media”. Cocok untuk personal branding, profil entrepreneur, dan konten AI kreatif. Hasil ini merupakan konsep cover bergaya editorial, bukan sampul Forbes resmi atau pengakuan bahwa subjek benar-benar terpilih dalam Forbes 30 Under 30.",
+        "slug": "forbes-30-under-30-ai-creativity",
+        "date": "2026-11-02",
+        "id": "forbes-30-under-30-ai-creativity"
+      },
+      {
+        "title": "Low-Poly Geometric Portrait — Seni Potret 3D Futuristik",
+        "status": "published",
+        "image": "/assets/uploads/mvzdz7uk-faceted-geometric-portrait-in-blue.jpg",
+        "prompt": "A highly detailed low-poly geometric portrait based on Image 1. The face, hair, and body are recreated using sharp polygonal shapes and faceted surfaces in shades of blue, gray, and purple, similar to digital sculpture art. Lighting is dramatic, with strong contrast and cinematic highlights emphasizing the 3D geometry. The background features abstract angular patterns that complement the low-poly style. Ultra-detailed 3D low-poly illustration, digital painting, cinematic lighting, polygonal textures, 8k render.",
+        "category": "Digital Art, 3D Illustration, Portrait & Avatar",
+        "tool": "LOW-POLY 3D ART",
+        "note": "Gunakan foto referensi wajah yang jelas agar karakter utama tetap mudah dikenali. Ubah wajah, rambut, pakaian, dan latar menjadi bidang-bidang geometris berbentuk segitiga dengan gradasi biru, ungu, dan abu-abu. Tambahkan pencahayaan sinematik untuk menghasilkan efek pahatan digital 3D yang premium.",
+        "slug": "low-poly-geometric-portrait",
+        "date": "2026-11-02",
+        "id": "low-poly-geometric-portrait"
+      },
+      {
+        "title": "HOT NEWS — Cinematic Burning Newspaper Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mvzegj9r-man-holding-flaming-hot-news-newspaper.jpg",
+        "prompt": "A cinematic, ultra-realistic portrait of a person (based on the uploaded photo) holding an open newspaper titled “HOT NEWS” printed clearly across both pages. The newspaper is on fire from the edges, with vivid orange and yellow flames spreading along the top and sides. Sparks and ashes float through the air while the paper edges curl and burn. The warm light from the fire illuminates the person’s face dramatically, casting soft shadows on one side. Their expression is calm, confident, and slightly intense, symbolizing power and revelation. The background is dark and cinematic, with subtle smoke and glowing embers drifting around. The composition feels like a movie poster — powerful, mysterious, and modern. Ultra-detailed cinematic portrait, HDR lighting, volumetric smoke, realistic fire glow, 8k render, photo-realistic textures, dramatic contrast, color palette of orange, amber, and deep black.\n\n\"A hyper-realistic raw portrait of an Asian man, detailed natural skin texture, visible skin pores, subtle imperfections, vellus hairs, natural skin oils, no airbrushing. Soft natural window lighting, gentle shadows, depth of field. Shot on 85mm lens, f/2.8, professional photography, candid expression, sharp focus, 8k resolution, photorealistic masterpiece.",
+        "category": "Cinematic Portrait, AI Photo Editing, Dramatic Effects",
+        "tool": "HOT NEWS 🔥",
+        "note": "Gunakan foto referensi wajah agar identitas tetap konsisten. Tambahkan efek api realistis di tepi koran, bara beterbangan, asap dramatis, serta pencahayaan oranye dari api. Pertahankan tekstur kulit alami dan detail wajah. Pastikan tulisan “HOT NEWS” terlihat jelas.",
+        "slug": "hot-news-burning-newspaper",
+        "date": "2026-11-02",
+        "id": "hot-news-burning-newspaper"
+      },
+      {
+        "title": "Potret Sinematik Pemain Biliar – Elegant Black Suit",
+        "status": "published",
+        "image": "/assets/uploads/mvzcd6uh-confident-cue-at-the-pool-hall.jpg",
+        "prompt": "A cinematic portrait of a confident man preparing for a billiards game in a dimly lit pool hall. The man’s face and appearance should be based accurately on the uploaded photo. He wears a black suit jacket, white shirt, and black gloves, standing beside a billiard table under soft overhead lighting. The atmosphere is moody and dramatic, with warm tones, soft haze, and a focused light beam illuminating the subject. Background includes blurred pool tables and hanging lights, creating a cinematic depth of field. Ultra-detailed textures, shallow depth of field, realistic lighting, and photorealistic style with subtle film grain.\n\nStyle keywords:\n\ncinematic portrait, dramatic lighting, moody atmosphere, soft haze, 8k realism, shallow depth of field, realistic shadows, professional photography",
+        "category": "Cinematic Portrait, Billiards, Men Fashion, Black Suit, Dramatic Lighting, AI Photo Editing",
+        "tool": "ChatGPT, Gemini, Midjourney",
+        "note": "Ubah foto referensi menjadi potret sinematik seorang pria elegan di ruang biliar mewah. Pertahankan identitas wajah, gaya rambut, bentuk mata, hidung, dan karakteristik asli subjek. Kenakan jas hitam berpotongan rapi, kemeja putih, dan sarung tangan hitam sambil memegang tongkat biliar di samping meja berwarna hijau. Gunakan pencahayaan lampu gantung berwarna keemasan, latar belakang gelap dengan efek bokeh, bayangan realistis, tekstur kain detail, serta depth of field yang dramatis. Hasil akhir fotorealistis, mewah, dan profesional. Cocok untuk foto profil, poster personal branding, dan konten media sosial.",
+        "slug": "potret-sinematik-pemain-biliar",
+        "date": "2026-11-02",
+        "id": "potret-sinematik-pemain-biliar"
+      },
+      {
+        "title": "Cinematic AI Photo Prompt — Pria Berjalan di Pasar Asia dengan Pesawat Terbang Rendah",
+        "status": "published",
+        "image": "/assets/uploads/mvzb8vkl-market-street-beneath-a-low-flying-plane.jpg",
+        "prompt": "A cinematic, hyper-realistic photo of a young man confidently walking down a narrow Asian street market while a large airplane flies very low overhead, captured from a slightly low front angle. The man wears a khaki green hoodie, beige cargo pants, and white-black sneakers. The background shows crowded market stalls, old buildings with colorful vertical Chinese signboards, and a bright clear blue sky. The plane dominates the top frame, with dramatic scale contrast between the aircraft and the street. Golden-hour daylight with soft shadows, realistic lighting reflections on metal and glass surfaces, sharp focus on the subject, slightly blurred depth for background, ultra-detailed textures on clothes and pavement. Shot on 35mm lens, f/2.8, realistic skin tone, cinematic tone mapping, high dynamic range, —ar 9:16 —v 6 —s 800 —style raw.",
+        "category": "AI Photography, Cinematic, Street Photography, Travel, Surrealism",
+        "tool": "ChatGPT, Gemini, Midjourney",
+        "note": "Gunakan prompt ini untuk menghasilkan foto sinematik hiperrealistis dengan komposisi vertikal 9:16. Fokus pada karakter pria yang berjalan percaya diri di pasar Asia, pesawat penumpang yang terbang sangat rendah, pencahayaan golden hour, tekstur realistis, serta perspektif kamera low angle. Untuk hasil konsisten, gunakan foto referensi karakter sebagai acuan wajah. Sesuaikan prompt dengan kemampuan platform AI yang digunakan. Parameter Midjourney dapat dihapus jika digunakan di ChatGPT atau Gemini.",
+        "slug": "prompt-cinematic-pria-pasar-asia-pesawat",
+        "date": "2026-11-02",
+        "id": "prompt-cinematic-pria-pasar-asia-pesawat"
+      },
+      {
+        "title": "Digital Oil Painting Portrait — Cinematic Executive Style",
+        "status": "published",
+        "image": "/assets/uploads/mvzcp9nd-confident-gentleman-in-a-leather-armchai.jpg",
+        "prompt": "A full-body portrait of a man sitting confidently on a chair, based on the uploaded photo. The person wears a black suit, white shirt, and sunglasses, sitting with legs crossed and a calm, confident posture. The background is an expressive, abstract painting with bold brushstrokes of orange, blue, and beige tones, blending in an artistic painterly style. The image should look like a digital oil painting — textured, emotional, and cinematic. Use dramatic lighting and shadow to enhance depth and personality. The overall mood is stylish, modern, and mysterious. Ultra-detailed digital painting, expressive brushwork, 8k render, artistic composition, rich color palette, museum art style.",
+        "category": "AI Art / Digital Painting / Portrait / Fine Art / Personal Branding",
+        "tool": "ChatGPT Image Generation",
+        "note": "Gunakan foto referensi dengan wajah yang jelas untuk mempertahankan kemiripan karakter. Ubah potret menjadi lukisan cat minyak digital dengan pria mengenakan setelan hitam, kemeja putih, kacamata hitam, dan pose duduk bersilang kaki di kursi kulit klasik. Gunakan latar abstrak dengan sapuan kuas tebal berwarna oranye, biru kobalt, krem, dan hitam. Tambahkan pencahayaan sinematik, tekstur kanvas yang kaya, bayangan dramatis, serta detail artistik yang elegan. Cocok untuk potret personal, avatar premium, dan konten seni AI.",
+        "slug": "digital-oil-painting-executive-portrait",
+        "date": "2026-11-02",
+        "id": "digital-oil-painting-executive-portrait"
+      },
+      {
+        "title": "Kingpin Luxury Portrait — Raja Modern Bersama Cheetah",
+        "status": "published",
+        "image": "/assets/uploads/mvzd6if7-sunglasses-gold-chains-and-spotted-majes.jpg",
+        "prompt": "Create a striking and stylish portrait of the uploaded man, keeping his face completely accurate. He exudes the confident, dominant energy of a modern kingpin. Seated on a plush velvet sofa, he leans back in a relaxed yet commanding posture.\n\nAcross his lap rests a majestic cheetah draped in gold chains, its sleek form positioned naturally over him. The man looks slightly downward toward the animal with a calm, assertive expression, dark sunglasses amplifying his cool, powerful aura.\n\nOne hand rests confidently on the cheetah’s back while the other casually grips the sofa arm, blending elegance with authority. He wears luxurious dark fashion — either a tailored pinstripe suit or an open silk shirt complemented by bold gold accessories. The cheetah’s fierce, half-snarl expression mirrors the man’s energy, capturing a perfect balance of dominance, style, and raw power.",
+        "category": "AI Image Editing, Luxury Portrait, Cinematic, Animal Fantasy, Fashion Editorial",
+        "tool": "LUXURY KINGPIN",
+        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan kemiripan karakter. AI akan mengubah pakaian menjadi busana mewah, menambahkan kacamata hitam, sofa beludru, aksesori emas, dan cheetah dengan gaya sinematik. Hasil terbaik diperoleh menggunakan foto potret beresolusi tinggi dengan wajah terlihat jelas.",
+        "slug": "luxury-kingpin-cheetah",
+        "date": "2026-11-02",
+        "id": "luxury-kingpin-cheetah"
+      },
+      {
+        "title": "Cinematic Snow Mountain Portrait with Black Horse",
+        "status": "published",
+        "image": "/assets/uploads/mvzdb9oq-stylish-rider-and-black-horse-in-snowy-m.jpg",
+        "prompt": "Create an ultra-realistic, 8K cinematic portrait of a man crouching beside a majestic black horse in a serene, snow-covered mountain landscape. The man’s face should perfectly match the uploaded photo, preserving every facial feature and expression. He has slightly wavy hair and wears dark sunglasses, a warm black sweater, grey cargo pants, and black boots.\n\nHe crouches with one knee bent, holding the horse’s reins in a relaxed but confident stance. The horse stands tall and powerful, its sleek jet-black coat glistening under natural light, with a flowing mane and intelligent, expressive eyes. It wears a simple leather halter for a refined, minimal look.\n\nThe ground is blanketed in snow with subtle footprints and scattered rocks adding realism. Behind them, softly blurred pine trees and distant snow-capped peaks stretch under a clear blue sky. Gentle snowfall adds depth and motion, while soft, natural lighting accentuates the textures of the snow, fabric, and hair. The overall atmosphere feels calm, majestic, and adventurous — evoking freedom and a deep bond between human and nature.",
+        "category": "AI Image Editing, Cinematic Portrait, Animal Photography, Winter Landscape, Adventure, Fashion Editorial",
+        "tool": "WINTER HORSE PORTRAIT",
+        "note": "Gunakan foto referensi wajah yang tajam dan menghadap kamera untuk menjaga kemiripan karakter. Prompt ini mengubah pakaian menjadi sweater hitam, celana cargo abu-abu, sepatu boots, dan kacamata hitam, dengan kuda hitam gagah di lanskap pegunungan bersalju. Gunakan komposisi vertikal agar seluruh pose jongkok dan tubuh kuda terlihat proporsional.",
+        "slug": "winter-horse-portrait",
+        "date": "2026-11-02",
+        "id": "winter-horse-portrait"
+      },
+      {
+        "title": "Red Luxury Fashion Portrait — Potret Pria dengan Jas Merah Elegan",
+        "status": "published",
+        "image": "/assets/uploads/mvzdsa92-confident-man-amid-flowing-red-silk.jpg",
+        "prompt": "Create a high-fashion, ultra-realistic portrait of the uploaded man (keep his facial features and identity exactly the same). He stands confidently in front of a dynamic, flowing fabric backdrop in rich red and white tones, resembling elegant waves of silk.\n\nThe man wears a sharp, modern red suit with a white shirt underneath, styled with a slim fit and clean lines for a luxury editorial look. He also wears black sunglasses and polished black dress shoes, exuding charisma and confidence.\n\nThe background should have a minimalist studio setting with soft lighting that enhances the texture of the fabric and the smooth finish of the suit. The overall tone is cinematic and elegant, combining high-end fashion photography aesthetics with bold color contrast and stylish composition.\n\nStyle keywords: ultra-realistic portrait, fashion editorial, cinematic lighting, elegant composition, red and white color palette, luxury aesthetic, 8K resolution, studio photography.",
+        "category": "Fashion & Style, Portrait Photography, Luxury Editorial",
+        "tool": "RED LUXURY LOOK",
+        "note": "Gunakan foto referensi wajah yang jelas untuk menjaga konsistensi karakter. Jas merah dipadukan dengan kemeja putih, kacamata hitam, sepatu formal hitam, dan latar kain merah-putih yang dramatis. Cocok untuk portrait premium, personal branding, dan editorial fashion",
+        "slug": "red-luxury-fashion-portrait",
+        "date": "2026-11-02",
+        "id": "red-luxury-fashion-portrait"
+      },
+      {
+        "title": "Trapped Inside Spotify — Immersive Music Experience",
+        "status": "published",
+        "image": "/assets/uploads/mvzdvqap-neon-green-music-experience.jpg",
+        "prompt": "A man (in the photo) with closed eyes and headphones sitting on a glowing green Spotify logo in a dark, slightly green-lit room. Don't change his original face. Behind him, a large curved screen displays a futuristic Spotify interface with album art and artist names. Musical notes and abstract glowing green lines emanate from the man and around the Spotify logo, creating a dynamic and immersive feel. The overall aesthetic is dark, moody, and highlights the green brand colors of Spotify.",
+        "category": "AI Art, Futuristic Portrait, Music & Technology",
+        "tool": "SPOTIFY IMMERSIVE",
+        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan karakter asli. Tambahkan headphone, platform neon hijau, panel musik futuristik, gelombang suara holografis, dan pencahayaan sinematik bernuansa hijau. Cocok untuk konten kreatif bertema musik dan teknologi masa depan.",
+        "slug": "trapped-inside-spotify",
+        "date": "2026-11-02",
+        "id": "trapped-inside-spotify"
+      },
+      {
+        "title": "Hamdani Harfan — Premium Editorial Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mvzeblip-modern-editorial-portrait-with-vertical-.jpg",
+        "prompt": "Create a full-body, fashion-style portrait of the man from the provided photo. Position him standing in a confident pose, slightly turned to the side, looking toward the camera. Use a clean studio background with smooth grey gradients. Add large, bold vertical typography “HAMDANI HARFAN” behind him in a striking red color, similar to a modern magazine or poster design. Dress him in stylish casual wear: a bomber jacket, slim-fit pants, and clean sneakers, matched to the color palette of warm browns, beige, and white. Make the lighting soft, even, and professional, with crisp shadows and a polished editorial finish.\n\nhighly detailed skin texture, natural pores, subsurface scattering, soft studio lighting",
+        "category": "Personal Branding",
+        "tool": "Personal Branding, Portrait, Fashion Editorial",
+        "note": "Gunakan foto referensi untuk menjaga kemiripan wajah. Padukan outfit cokelat premium, latar abu-abu, dan tipografi merah vertikal agar terlihat profesional.",
+        "slug": "portrait-hamdani-harfan",
+        "date": "2026-11-02",
+        "id": "portrait-hamdani-harfan"
+      },
+      {
+        "title": "Creative Workspace — Melayang Sambil Bekerja dengan Laptop",
+        "status": "published",
+        "image": "/assets/uploads/mvzepazz-levitating-creative-workspace.jpg",
+        "prompt": "A stylish man (in the photo) floating in mid-air inside a minimal modern studio. Don't change his original face. He sits in a relaxed seated position while typing on a laptop, completely focused. Around him, various creative objects float realistically: notebooks, sketch papers, glasses, a DSLR camera, headphones, and pens. Soft natural lighting from the left creates gentle shadows and a calm atmosphere. The color palette is muted and professional—grey, black, and white tones. High-detail photorealism, shallow depth of field, crisp edges, dynamic levitation effect, clean background, creative workspace aesthetic, 8K, studio photography, cinematic composition.\n\n\"A hyper-realistic raw portrait of an Asian man, detailed natural skin texture, visible skin pores, subtle imperfections, vellus hairs, natural skin oils, no airbrushing. Soft natural window lighting, gentle shadows, depth of field. Shot on 85mm lens, f/2.8, professional photography, candid expression, sharp focus, 8k resolution, photorealistic masterpiece.",
+        "category": "AI Photography, Portrait, Cinematic, Creative Workspace, Professional",
+        "tool": "Creative Workspace",
+        "note": "Gunakan foto referensi untuk mempertahankan identitas wajah. Kenakan setelan navy profesional dengan kemeja putih dan dasi merah marun. Atur posisi tubuh duduk melayang secara natural sambil mengetik di laptop. Tambahkan kamera, headphone, buku, kacamata, pena, dan sketsa yang mengambang dengan perspektif realistis. Gunakan pencahayaan jendela yang lembut, latar abu-abu minimalis, tekstur kulit alami, dan bayangan sinematik.",
+        "slug": "creative-workspace-laptop",
+        "date": "2026-11-02",
+        "id": "creative-workspace-laptop"
+      },
+      {
+        "title": "Potret Cyberpunk Glitch Futuristik",
+        "status": "published",
+        "image": "/assets/uploads/mvzeuep4-cyberpunk-glitch-portrait-with-neon-echo.jpg",
+        "prompt": "A cinematic portrait of a person in a cool, stylish, dynamic pose, but with the face based on the uploaded photo. The body, stance, and lighting are dramatic and confident, like a futuristic movie poster. The image is heavily corrupted with intense glitch effects: extreme RGB separation, pixel fragmentation, horizontal tearing, frame skipping, duplicated ghost frames, CD/VHS error lines, blocky compression artifacts, digital noise bursts, and shredded data streaks. Parts of the hair, edges, and background appear broken into glitch shards as if the digital world is collapsing. The face remains recognizable but surrounded by violent distortion waves and chromatic distortion. The background is dark, minimal, and filled with flickering glitch particles and static. The overall mood is chaotic, stylish, and futuristic. Ultra-detailed glitch textures, heavy data-mosh aesthetic, dramatic lighting, 8k render, no text or captions.",
+        "category": "Digital Art, Cyberpunk, Glitch Effect, Portrait, Futuristic",
+        "tool": "CYBERPUNK GLITCH",
+        "note": "Gunakan foto referensi untuk mempertahankan wajah asli. Tambahkan efek RGB separation, digital distortion, scanlines, dan pixel fragmentation pada latar serta tepi tubuh. Pertahankan detail kulit alami agar wajah tetap realistis dan mudah dikenali.",
+        "slug": "cyberpunk-glitch",
+        "date": "2026-11-02",
+        "id": "cyberpunk-glitch"
+      },
+      {
+        "title": "Berdiri di Atas Smartphone Raksasa — Futuristic Tech Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mvzf2npm-young-man-on-giant-music-phone.jpg",
+        "prompt": "A sleek, modern, ultra-realistic photo of a person whose face is based on the uploaded photo, standing confidently on top of a giant smartphone screen. The smartphone appears massive beneath their feet, showing a clean music-player interface with soft gradient colors and smooth reflections. The person stands in a stylish, minimal pose, wearing modern casual clothing, such as an oversized hoodie, shorts, and crisp sneakers. Lighting is soft, bright, and studio-like, with no harsh shadows. The background is clean white or light gray, giving the scene a premium Apple-style aesthetic. Shot from a high top-down angle to emphasize the huge scale of the phone. The vibe is minimalistic, futuristic, stylish, and high-end. Ultra-detailed 8k render, soft shadows, perfect skin lighting, modern tech aesthetic, no text or captions.",
+        "category": "AI Image Editing, Futuristic, Technology, 3D Photography",
+        "tool": "Personal Branding, Instagram Feed, Poster Digital, Konten Teknologi",
+        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan identitas karakter. Pastikan smartphone terlihat berukuran raksasa dengan antarmuka pemutar musik yang minimalis, pakaian kasual modern, pencahayaan studio lembut, serta latar putih atau abu-abu terang. Gunakan komposisi vertikal dan bayangan realistis agar efek skala terlihat meyakinkan.",
+        "slug": "giant-smartphone-tech-portrait",
+        "date": "2026-11-02",
+        "id": "giant-smartphone-tech-portrait"
+      },
+      {
+        "title": "Giant Stone Statue — Patung Monumental di Tengah Kota",
+        "status": "published",
+        "image": "/assets/uploads/mvzfez9e-monumental-bust-under-construction.jpg",
+        "prompt": "A hyper-realistic scene of construction workers sculpting a giant stone statue in the middle of a city street. The statue is a massive bust of a person whose face is based on the uploaded photo, carved in rough stone with visible chisel marks and unfinished textures. The workers, wearing safety helmets and construction uniforms, stand on scaffolding around the giant sculpture, chiseling, smoothing, and shaping the stone surface. Crumbled rock and dust scatter on the ground below. The statue wears a suit and tie, appearing monumental and authoritative, but still partly incomplete and rough. The background shows urban buildings, traffic, and a hazy city atmosphere. The overall mood is realistic, gritty, and documentary-style. Ultra-detailed textures, soft overcast lighting, natural colors, 8k render, dramatic realism.",
+        "category": "Cinematic Photography, Surreal Realism, Monumental Art, Construction Scene",
+        "tool": "Giant Stone Sculpture",
+        "note": "Gunakan foto referensi untuk mempertahankan ciri wajah karakter. Buat patung berukuran raksasa dengan tekstur batu kasar, bekas pahatan yang realistis, dan bagian yang belum selesai. Tambahkan pekerja berskala kecil di atas perancah, serpihan batu, debu, serta latar gedung perkotaan untuk memperkuat kesan monumental. Gunakan pencahayaan mendung dan komposisi dokumenter agar hasil terlihat realistis",
+        "slug": "giant-stone-statue-konstruksi-kota",
+        "date": "2026-11-02",
+        "id": "giant-stone-statue-konstruksi-kota"
+      },
+      {
+        "title": "Fire & Water — Portrait Dua Elemen Sinematik",
+        "status": "published",
+        "image": "/assets/uploads/mvzf74pi-fire-and-water-suit-portrait.jpg",
+        "prompt": "Create a hyper-realistic portrait of the same man from the reference photo. Show him in a dramatic split-element scene: the left side surrounded by blazing orange flames and glowing embers, and the right side surrounded by cool blue water splashes and mist. His face should be wet from water on one side and illuminated by firelight on the other. Keep his curly hair, facial structure, and expression consistent with the reference. He wears a sharp suit and tie, partially soaked and partially singed. Use cinematic lighting, ultra-detailed textures, and high contrast for a powerful dual-element look.",
+        "category": "AI Image Editing, Cinematic Portrait, Fantasy, Fire & Water Effects",
+        "tool": "Instagram Feed, Poster Film, Personal Branding, Digital Art, Konten AI",
+        "note": "Gunakan foto referensi untuk mempertahankan identitas wajah, bentuk mata, hidung, bibir, dan gaya rambut. Padukan api oranye di sisi kiri dengan percikan air biru di sisi kanan. Gunakan pencahayaan kontras tinggi, tekstur kulit realistis, tetesan air, bara api, dan detail pakaian yang basah serta sedikit hangus untuk menghasilkan efek sinematik yang dramatis.",
+        "slug": "fire-water-dual-element-portrait",
+        "date": "2026-11-02",
+        "id": "fire-water-dual-element-portrait"
+      },
+      {
+        "title": "Break Through the Digital World — Keluar dari Layar Smartphone",
+        "status": "published",
+        "image": "/assets/uploads/mvzgczii-breaking-through-the-screen.jpg",
+        "prompt": "A highly detailed, ultra-realistic cinematic image of a person stepping out of a giant modern smartphone screen, shattering the glass as they walk forward confidently. The face is accurately taken from the uploaded reference photo, maintaining natural facial structure, skin texture, and identity without distortion. The pose is stylish and dynamic, one foot stepping forward through broken glass, arms slightly extended for balance, confident and modern attitude. The smartphone displays a clean social media interface in the background (generic UI, no readable brand text). Glass shards explode outward in mid-air with realistic reflections and motion blur. The person wears modern casual fashion (oversized shirt or hoodie, shorts or pants, sneakers, optional headphones). Studio lighting with soft shadows, reflective floor, futuristic minimal background with subtle neon accents. Hyper-realistic 3D composite, cinematic lighting, depth of field, ultra-sharp focus on the face, dramatic perspective, 8K quality, no text.",
+        "category": "AI Image Editing, Cinematic Portrait, 3D Composite, Social Media",
+        "tool": "Smartphone Breakthrough",
+        "note": "Unggah foto wajah sebagai referensi utama. Pertahankan identitas wajah, bentuk mata, hidung, rahang, warna kulit, dan gaya rambut. Gunakan efek pecahan kaca yang realistis, perspektif dramatis, pencahayaan biru sinematik, serta pose berjalan ke arah kamera. Pastikan wajah tetap tajam dan proporsi tubuh terlihat alami.",
+        "slug": "smartphone-breakthrough",
+        "date": "2026-11-02",
+        "id": "smartphone-breakthrough"
+      },
+      {
+        "title": "Pop Art Comic — Ekspresi Karakter dalam Panel Komik",
+        "status": "published",
+        "image": "/assets/uploads/mvzgo5ha-vibrant-comic-hero-action-collage.jpg",
+        "prompt": "A vibrant pop art comic-style illustration featuring multiple panels of the same person, with the face accurately based on the uploaded reference photo, preserving facial identity, skin tone, and natural features without distortion.\n\nThe main central panel shows the person in a confident pose with arms crossed, looking directly at the viewer. Surrounding panels display the same person with different expressions and gestures (smiling, laughing, pointing, winking), creating a dynamic comic layout.\n\nBright, bold pop-art colors with halftone textures, thick black outlines, clean vector-style shading, and high contrast. Comic-style speech bubbles (empty or minimal), and classic onomatopoeia text like “WOW!”, “COOL!”, “ACTION!”, “SLASH!” integrated naturally into the panels.\n\nBackgrounds use colorful radial bursts and dotted comic patterns. Lighting is clean and stylized, illustration-based (not photorealistic).\n\nUltra-detailed comic illustration, sharp lines, smooth gradients, high resolution, vibrant color palette, professional pop-art comic book style, no realism blur, no watermark.",
+        "category": "Pop Art, Comic Illustration, Cartoon, Character Design, Ekspresi Wajah, AI Photo Editing",
+        "tool": "POP ART COMIC",
+        "note": "Gunakan foto referensi wajah yang jelas agar identitas karakter tetap konsisten di setiap panel. Variasikan ekspresi dan pose tanpa mengubah bentuk wajah, warna kulit, atau gaya rambut. Gunakan garis hitam tebal, pola halftone, warna kontras, dan efek ledakan komik. Periksa kembali teks seperti “WOW!”, “COOL!”, dan “ACTION!” agar terbaca dengan benar.",
+        "slug": "pop-art-comic-ekspresi-karakter",
+        "date": "2026-11-02",
+        "id": "pop-art-comic-ekspresi-karakter"
+      },
+      {
+        "title": "Monochrome Elevator Portrait: Cinematic Black & White Fashion Editorial",
+        "status": "published",
+        "image": "/assets/uploads/mvy0ku3r-monochrome-elevator-portrait-1.jpg",
+        "prompt": "I will edit the photo so that I am standing inside an elevator with a black and white (monochrome) aesthetic. Utilize dramatic, high-contrast lighting to create an artistic vibe, reminiscent of a fashion editorial photoshoot. I am wearing a classic black suit, a white shirt, and a tie.",
+        "category": "AI Portrait / Fashion Editorial / Monochrome / Black and White / Professional Portrait",
+        "tool": "ChatGPT Images / AI Photo Editing",
+        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan identitas asli. Pilih pencahayaan dramatis dengan kontras hitam-putih yang seimbang agar hasil terlihat elegan, profesional, dan sinematik. Cocok untuk foto profil profesional, personal branding, LinkedIn, dan konten fashion editorial.",
+        "slug": "monochrome-elevator-fashion-portrait",
+        "date": "2026-11-01",
+        "id": "monochrome-elevator-fashion-portrait"
+      },
+      {
+        "title": "DANI #86 — Real Madrid Cinematic Football Poster",
+        "status": "published",
+        "image": "/assets/uploads/mvy08sk4-dani-86-real-madrid-storm-poster.jpg",
+        "prompt": "Buatlah sebuah poster sepak bola profesional bergaya sinematik yang menampilkan [gambar referensi].Pertahankan wajah, rambut, bentuk, dan sudut asli persis seperti pada gambar. Tampilkan orang tersebut dalam tiga perspektif:\n\nPotret close-up dengan jersey Real madrid 2025.\n\nTampak samping memakai jersey real madrid 2025 dengan nama punggung DANI.\n\nFoto tubuh penuh dengan perlengkapan sepak bola lengkap (jersey Real madrid 2025, celana pendek, kaus kaki, dan sepatu bola) beserta logo sponsor.\nTambahkan logo Real madrid di pojok kanan atas.\nDi bagian bawah, tampilkan adegan dinamis saat pemain melakukan aksi bicycle kick lompat tinggi dengan efek motion blur dan rumput beterbangan. Jersey harus jelas menampilkan nomor 86 di bagian depan, belakang, dan celana pendek.\n\nGunakan latar belakang stadion Old Trafford biru gelap navy dengan nomor besar 86 dan nama “DANI” yang menyala di belakang karakter.\n\nGaya keseluruhan harus ultra-realistis, resolusi tinggi, sinematik, dan bernuansa poster olahraga profesional.\nTambahkan logo Real Madrid di pojok kanan atas.",
+        "category": "Sepak Bola / Olahraga / Poster Pemain / Real Madrid / AI Art",
+        "tool": "ChatGPT Images / Gemini / AI Image Generator",
+        "note": "Unggah foto referensi wajah dengan pencahayaan jelas agar identitas karakter lebih konsisten. Gunakan rasio 4:5 untuk poster profesional. Periksa kembali nomor 86, nama DANI, dan logo klub karena teks serta lambang pada gambar AI mungkin perlu diperbaiki secara manual.",
+        "slug": "poster-sepak-bola-dani-86-real-madrid",
+        "date": "2026-11-01",
+        "id": "poster-sepak-bola-dani-86-real-madrid"
+      },
+      {
+        "title": "Cinematic Ferrari F1 Racing Poster — Custom Driver #69",
+        "status": "published",
+        "image": "/assets/uploads/mvy19nt5-ferrari-69-smoke-and-speed.jpg",
+        "prompt": "Buat poster sinematik formula 1 dengan menampilkan [refer image]. Pertahankan wajah, rambur, bentuk dan sudut asli persis seperti pada gambar. Tampilkan orang tersebut dalam tiga perspektif : potret close-up tanpa helm mengenakan racing suit Ferrari berwarna merah dengan logo sponsor, tampak samping dengan helm balap bergaya Ferrari, dan tampilan tubuh penuh mengenakan racing suit Ferrari berwarna merah dengan logo sponsor.\nDi bagian bawah, letakkan mobil Ferrari yang sedang melakukan burnout dengan asap sekitar ban. Mobil harus menampilkan nomor balap \"69\" dengan jelas di bagian hidung dan sisi. Gunakan latar belakang merah tegas dengan nomor balap besar \"69\" di belakang karakter. Gaya keseluruhan harus ultra-realistis, resolusi tinggi, sinematik, dengan nuansa poster olahraga propesional.",
+        "category": "AI Portrait / Formula 1 / Motorsport / Racing Poster / Ferrari / Cinematic",
+        "tool": "ChatGPT Image Generation",
+        "note": "Buat poster balap Formula 1 bergaya sinematik dengan mempertahankan karakter wajah dari foto referensi. Gunakan tiga perspektif karakter, racing suit Ferrari merah, helm balap, dan mobil balap bernomor 69. Untuk hasil terbaik, unggah foto referensi dengan wajah yang jelas. Cocok untuk poster personal, wallpaper, konten media sosial, dan desain bertema motorsport. Logo dan sponsor dapat disesuaikan.",
+        "slug": "cinematic-ferrari-f1-racing-poster-driver-69",
+        "date": "2026-11-01",
+        "id": "cinematic-ferrari-f1-racing-poster-driver-69"
+      },
+      {
+        "title": "Cinematic Vintage Portrait: Pria Elegan dengan Motor Yamaha RX100",
+        "status": "published",
+        "image": "/assets/uploads/mvy13z6m-vintage-yamaha-portrait-by-weathered-wal.jpg",
+        "prompt": "Generate a cinematic outdoor portrait of a fashionable young man posed confidently beside a black Yamaha RX100 motorcycle. He is dressed in a dark brown button-up shirt paired with light brown trousers and black loafers, complemented by a wristwatch, bracelet, and sunglasses. The setting should include wild greenery and an aged concrete wall to enhance a rustic urban feel. Use moody, warm vintage tones to evoke a retro aesthetic. His facial expression should remain serious and composed, suggesting mystery and rugged sophistication. Ensure the face exactly matches the provided reference selfie—keep the same eyes, nose, cheeks, and skin texture.",
+        "category": "Portrait Pria / Motorcycle Photography / Vintage Aesthetic / Fashion Editorial",
+        "tool": "ChatGPT / AI Photo Editing",
+        "note": "Gunakan foto referensi wajah untuk mempertahankan identitas subjek, termasuk bentuk mata, hidung, pipi, tekstur kulit, dan gaya rambut. Hasil terbaik menggunakan pencahayaan natural, pose santai tetapi percaya diri, serta nuansa vintage sinematik. Cocok untuk personal branding, foto profil profesional, dan konten media sosial. Gunakan foto motor klasik hitam sebagai referensi tambahan jika tersedia.",
+        "slug": "portrait-pria-motor-yamaha-rx100-vintage",
+        "date": "2026-11-01",
+        "id": "app"
+      },
+      {
+        "title": "The Poker Legend — Ultra-Realistic Cinematic Photography",
+        "status": "published",
+        "image": "/assets/uploads/mvxzor7w-cinematic-cardshark-in-a-warm-poker-room.jpg",
+        "prompt": "A dramatic cinematic portrait of a man sitting at a wooden table inside a dimly lit poker room with rustic wooden walls. Don't change the face of the man. His right hand extended forward as if commanding or tossing playing cards, while his left hand rests under his chin in a thoughtful gesture. Around him, dozens of playing cards float mid-air in dynamic motion blur, frozen in time, creating a sense of magic and mystery.\n\nThe background shows warm brown wooden panels, with a framed vintage photo slightly blurred behind him, enhancing the moody atmosphere. Lighting is warm, golden, and low-key, creating sharp contrast and shadows across his face, emphasizing his intense and focused expression.\n\nThe overall mood is dark, mysterious, and cinematic, with dramatic composition and shallow depth of field. The image is shot in hyper-realistic style, ultra-detailed textures on skin, hair, wood, and playing cards. The aesthetic is inspired by gritty poker-room vibes, like a mix of magician and gambler, captured with cinematic lighting, bokeh effect, and suspended motion.",
+        "category": "Cinematic Portrait / AI Photo Editing / Fantasy / Playing Cards",
+        "tool": "ChatGPT / Gemini / AI Image Generator",
+        "note": "Gunakan foto referensi dengan wajah yang terlihat jelas. Pertahankan identitas wajah, gaya rambut, dan proporsi asli. Hasil terbaik diperoleh dengan pencahayaan sinematik keemasan, kartu remi melayang yang realistis, serta latar ruangan kayu bernuansa misterius. Cocok untuk foto profil kreatif, konten media sosial, dan karya AI cinematic portrait.",
+        "slug": "the-master-of-cards-cinematic-portrait",
+        "date": "2026-11-01",
+        "id": "the-master-of-cards-cinematic-portrait"
+      },
+      {
+        "title": "Manchester City Football Star – Cinematic Locker Room Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mvy1whxe-manchester-city-locker-room-portrait.jpg",
+        "prompt": "Depict this man as a professional soccer player inside a locker room setting. He is dressed in the full Manchester City home kit—jersey, shorts, socks, and boots. A jersey with the name “HAMDANI HARFAN” and the number 86 should appear on a shirt hanging behind him on the locker wall. He sits with a UEFA Champions League ball placed on his lap, exuding a confident expression. The atmosphere should resemble a dramatic locker room scene, enhanced with cinematic lighting and rendered in an ultra-realistic, highly detailed photographic style.",
+        "category": "AI Portrait / Football / Manchester City / Sports Photography",
+        "tool": "ChatGPT / AI Image Generation",
+        "note": "Create an ultra-realistic cinematic portrait of a professional football player wearing the full Manchester City home kit, including jersey, shorts, socks, and football boots. Preserve the subject’s original facial identity and hairstyle. The player sits confidently in a dramatic professional locker room with a UEFA Champions League-style football resting on his lap. Behind him, display a Manchester City jersey with the name “HAMDANI HARFAN” and the number “86” clearly visible. Use premium cinematic lighting, realistic fabric textures, detailed locker room elements, dramatic shadows, and professional sports photography aesthetics. High resolution, sharp focus, realistic proportions, premium editorial quality.",
+        "slug": "manchester-city-football-star-86",
+        "date": "2026-11-01",
+        "id": "manchester-city-football-star-86"
+      },
+      {
+        "id": "bhinneka-tunggal-ika-bersatu-di-bawah-merah-putih",
+        "slug": "realistic-1-7-scale-action-figure",
+        "status": "published",
+        "title": "AI FIGURE STUDIO",
+        "category": "Realistic 1/7 Scale Action Figure Studio",
+        "tool": "Midjourney / DALL-E 3, Chat GPT",
+        "image": "/assets/uploads/mvxzeds6-zbrush-sculpting-studio-figure-showcase.jpg",
+        "note": "Prompt khusus untuk membuat figur action skala 1/7 dengan detail tekstur kulit yang hiper-realistis, lengkap dengan kotak kemasan dan latar studio ZBrush",
+        "date": "2026-11-01",
+        "prompt": "Generate a 1/7 scale collectible figurine of the characters from the provided image, designed in a realistic style and displayed within a real-life setting. The figurine should be positioned on a computer desk and mounted on a clear round acrylic base without any text or markings. On the computer screen, show the ZBrush sculpting process of this same figurine. Beside the monitor, place a toy packaging box in the style of BANDAI, printed with the original artwork. The packaging design should feature flat two-dimensional illustrations. Ensure all details remain consistent with the reference image."
+      },
+      {
+        "title": "Ultra-Realistic Jet Ski Adventure — Tropical Ocean Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mvy0ripk-jet-ski-adventure-along-tropical-shores.jpg",
+        "prompt": "Create a hyper-realistic photo of me riding a jet ski. I must appear exactly the same: sitting on a sleek black-and-orange jet ski, moving fast across the ocean. I’m dressed in a simple long-sleeved black shirt, black shorts, and an orange life vest. A watch is visible on my right wrist. My short black hair is slightly windblown, and I’m smiling naturally (not too wide) while looking toward the camera.\n\nMy left hand grips the handlebar, steering the jet ski, while my right hand stretches outward as if playfully reaching toward the seawater — capturing both energy and relaxation. The modern jet ski cuts powerfully through the waves, sending up dramatic splashes as it speeds over the surface.\n\nThe shot is taken from a medium-to-distant angle, showing my full body and the entire jet ski clearly. The backdrop is a wide expanse of sea with rolling waves, under a bright blue sky. In the distance, a tropical shoreline is faintly visible.\n\nThe style must be ultra-photorealistic, as if shot with a professional DSLR in 4K: crisp textures, realistic skin, natural sunlight, strong shadows, vivid ocean colors, and lifelike proportions. The atmosphere should feel bright, energetic, and immersive, filled with motion and vibrant tropical tones. Output in portrait orientation, 9:16 ratio.",
+        "category": "AI Portrait / Jet Ski / Adventure / Ocean / Lifestyle / Photorealistic",
+        "tool": "ChatGPT Image Generation / AI Photo Editing",
+        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan identitas, bentuk wajah, gaya rambut, dan proporsi tubuh. Untuk hasil terbaik, gunakan foto referensi berkualitas tinggi. Pastikan seluruh tubuh dan jet ski terlihat jelas, percikan air tampak realistis, serta tangan dan jari terbentuk secara natural. Format vertikal 9:16, cocok untuk Instagram Reels, TikTok, dan YouTube Shorts.",
+        "slug": "ultra-realistic-jet-ski-adventure-tropical-ocean-portrait",
+        "date": "2026-11-01",
+        "id": "ultra-realistic-jet-ski-adventure-tropical-ocean-portrait"
+      },
+      {
+        "title": "Lunar Coffee Experience: Menikmati Kopi di Bulan dengan Pemandangan Bumi",
+        "status": "published",
+        "image": "/assets/uploads/mvy012q0-lunar-coffee-under-earthrise.jpg",
+        "prompt": "A cinematic, ultra-realistic image of a man (use the uploaded face photo and don't change the original face) sitting relaxed on a folding chair placed on the Moon’s rocky surface. He’s dressed in casual streetwear — white shirt, dark pants, and sneakers — holding a cup of hot coffee, steam rising gently into the air. Next to him is an empty folding chair with a small hand coffee grinder resting on it, adding a playful, surreal vibe.\n\nThe background reveals a stunning view of Earth rising over the horizon, glowing with vivid blue oceans, green continents, and twinkling city lights visible against the darkness of space. Stars fill the sky, enhancing the otherworldly atmosphere.\n\nLighting is soft yet dramatic, highlighting the man’s calm expression and the textures of the lunar surface. The scene balances realism with dreamlike qualities — everyday coffee ritual meets cosmic scale. Shot in hyper-detailed, photorealistic style with cinematic depth, sharp textures, and HDR clarity.",
+        "category": "AI Art / Cinematic Portrait / Surreal Photography / Space",
+        "tool": "ChatGPT / AI Image Generation",
+        "note": "Ubah foto diri menjadi potret sinematik di permukaan Bulan dengan secangkir kopi dan pemandangan Bumi yang spektakuler. Unggah foto referensi wajah untuk menjaga kemiripan karakter. Cocok untuk konten AI kreatif, personal branding, dan Instagram.",
+        "slug": "ai-portrait-pria-di-bulan-sambil-minum-kopi",
+        "date": "2026-11-01",
+        "id": "ai-portrait-pria-di-bulan-sambil-minum-kopi"
+      },
+      {
+        "title": "From Photo to Collectible: The Ultimate AI Figure Studio",
+        "status": "published",
+        "image": "/assets/uploads/mvxzvnt8-sculptor-with-collectible-figure-and-box.jpg",
+        "prompt": "Create an ultra-realistic image of one of the people from the reference photo sitting at a computer desk in a real-world environment. The person is holding a 1/7 scale figurine of themselves that looks highly similar to them, crafted in a realistic style. The figurine is placed on a round, transparent acrylic base with no text or markings. On the computer screen in front of them, display the ZBrush modeling process of that same figurine, as if it is actively being sculpted in 3D. With their left hand, the person is also holding a toy packaging box styled like BANDAI products, printed with the original artwork of the character.\n\nThe overall scene should emphasize photorealistic textures: realistic skin details, reflections on the acrylic base, natural desk lighting, and authentic materials of the packaging box. The environment should look like a real modern workspace with accurate shadows, depth, and lighting, reinforcing the realism. The mood should feel professional yet creative, as if documenting the production of a high-quality collectible figure.",
+        "category": "AI Art / Action Figure / 3D Sculpting / Character Design / Collectible Toys / Photorealistic",
+        "tool": "ChatGPT Images / Gemini / AI Image Generator",
+        "note": "Ubah foto diri menjadi collectible action figure premium dengan detail wajah realistis, alas akrilik transparan, kemasan eksklusif, dan tampilan proses sculpting 3D di monitor. Gunakan foto referensi dengan wajah yang jelas untuk hasil yang lebih konsisten. Cocok untuk konten personal branding, kreator AI, kolektor figurine, dan portofolio digital.",
+        "slug": "ai-figure-studio-action-figure-koleksi-premium",
+        "date": "2026-11-01",
+        "id": "ai-figure-studio-action-figure-koleksi-premium"
+      },
+      {
+        "title": "Figurine 3D Premium PlayStation — Custom Collector Edition",
+        "status": "published",
+        "image": "/assets/uploads/mvy28bni-playstation-6-gaming-diorama-1.jpg",
+        "prompt": "Create a hyper-detailed 3D cartoon-style figurine displayed inside a premium glass showcase box. The figurine is modeled after the person in the reference photo (keep the same face features). He holds a realistic PlayStation 6 DualSense controller with both hands in front of him. Inside the display case, include a background setup inspired by PlayStation aesthetics: a glowing PlayStation 6 console standing vertically, illuminated with blue LED light; a stone pillar engraved with the iconic PlayStation symbols (△ ○ × □); a small futuristic robot mascot resembling Astro Bot standing on moss-covered rocks; and decorative gaming elements such as a glowing mushroom, wooden crate, and scattered stones with green plants growing around them.\n\nThe floor is designed like a mini diorama with natural moss, rocks, and soil textures, lit with subtle ambient lighting. The entire showcase base is sleek black with a glowing neon “PlayStation” logo on the front. Render with cinematic lighting, glowing reflections on the glass, soft blue navy LED highlights, and ultra-realistic 3D toy/collectible figurine style. Ensure the overall look is polished, vibrant, and stylized like a premium PlayStation collector’s edition display.",
+        "category": "PlayStation, Gaming, 3D Figurine, Collectible, AI Art, Diorama",
+        "tool": "ChatGPT Image Generation, AI Image Editing",
+        "note": "Ubah foto referensi menjadi figurine 3D bergaya collectible premium di dalam kotak kaca dengan pencahayaan neon biru khas PlayStation. Pertahankan ciri wajah, gaya rambut, dan identitas visual subjek. Tambahkan konsol PlayStation, controller DualSense, robot futuristik, pilar simbol PlayStation, batu berlumut, tanaman mini, dan alas hitam dengan logo bercahaya. Gunakan pencahayaan sinematik, tekstur realistis, refleksi kaca, detail tajam, serta komposisi profesional seperti produk koleksi eksklusif.",
+        "slug": "figurine-3d-playstation-collector-edition",
+        "date": "2026-11-01",
+        "id": "figurine-3d-playstation-collector-edition"
+      },
+      {
+        "title": "Cinematic Black Fashion Portrait – Golden Hour Studio",
+        "status": "published",
+        "image": "/assets/uploads/mvy1ndh4-cinematic-coffee-armchair-portrait.jpg",
+        "prompt": "Turn the uploaded photo into a high-quality, cinematic studio portrait. The subject is seated in a relaxed, casual position, captured from a side angle. The setting is a professional photo studio illuminated with warm, soft light that reflects the golden glow of sunset, creating dramatic highlights and shadows across the scene.\n\nThe subject wears an all-black outfit: an oversized black blazer paired with sleek black trousers. In one hand, they hold a takeaway coffee cup, which adds a modern, lifestyle element to the composition.\n\nThe overall mood should be elegant, edgy, and slightly mysterious, blending fashion-editorial aesthetics with cinematic tones. The environment must look realistic, with high detail in textures, lighting, and reflections.\n\n⚠️ Important: The face must remain exactly the same as in the reference photo. Do not change or alter the facial structure, skin, expression, or features in any way. Only adjust pose, clothing, and environment while keeping the original face intact.",
+        "category": "Cinematic Black Fashion Portrait – Golden Hour Studio",
+        "tool": "ChatGPT / AI Image Generation",
+        "note": "Ubah foto referensi menjadi potret fashion sinematik profesional dengan outfit serba hitam, blazer oversized, celana hitam elegan, dan gelas kopi takeaway. Gunakan pencahayaan hangat bernuansa golden hour, bayangan dramatis, sudut pengambilan gambar dari samping, serta detail tekstur kulit dan kain yang realistis. Pertahankan identitas wajah, bentuk mata, hidung, bibir, struktur wajah, dan tekstur kulit semirip mungkin dengan foto referensi. Cocok untuk personal branding, foto profil profesional, dan konten fashion media sosial.",
+        "slug": "cinematic-black-fashion-portrait-golden-hour-studio",
+        "date": "2026-11-01",
+        "id": "cinematic-black-fashion-portrait-golden-hour-studio"
+      },
+      {
+        "title": "Foto Pria di Kafe Modern Minimalis — Edit Foto AI Realistis",
+        "status": "published",
+        "image": "/assets/uploads/mvy2f6ih-relaxed-caf-portrait-with-red-velvet-cak.jpg",
+        "prompt": "Transformasikan foto ini menjadi seseorang yang sedang duduk santai di kursi kafe bergaya modern minimalis. Di meja depannya, ada segelas iced americano dan sepotong kue red velvet. Latar belakang menampilkan suasana kafe hangat dengan interior dominan kayu gelap, pencahayaan alami yang lembut, dan beberapa pengunjung lain di dalam ruangan. Angle pengambilan gambar setinggi mata (eye-level), menekankan ekspresi wajah sebagai fokus utama. Nuansa foto terasa natural seolah diambil dengan kamera smartphone. Pastikan detail wajah tetap sama tanpa perubahan.",
+        "category": "Edit Foto AI, Portrait Photography, Cafe Aesthetic, Lifestyle, Realistic Photo",
+        "tool": "ChatGPT / Gemini / AI Photo Editor",
+        "note": "Gunakan foto referensi dengan wajah yang terlihat jelas agar hasil edit lebih konsisten. Untuk hasil natural, pertahankan pencahayaan lembut, tekstur kulit asli, dan proporsi wajah. Cocok untuk foto profil, konten Instagram, dan personal branding.",
+        "slug": "foto-pria-kafe-modern-minimalis",
+        "date": "2026-11-01",
+        "id": "foto-pria-kafe-modern-minimalis"
+      },
+      {
+        "title": "Foto Profil 3D Instagram — Hamdani Harfan",
+        "status": "published",
+        "image": "/assets/uploads/mvy2mwfx-stylish-instagram-3d-portrait-mockup.jpg",
+        "prompt": "Turn this man sitting casually inside a 3D Instagram photo frame prop, making it look like he is coming out of a social media post. The man wears black sunglasses, and black sneakers, with a modern wristwatch on his left hand. He sits with one arm resting on his knee and the other hand casually posed forward, giving a confident, trendy look. The Instagram frame includes a username: @hamdaniharfan, 1000K likes, and caption area, designed in a minimalist, photorealistic style. Background is plain dark gray to make the subject pop. Hyper-detailed, cinematic lighting, sharp focus, ultra-realistic textures. Shot on Canon EOS R5 with RF 50mm f/1.2L lens, studio lighting setup, smooth shadows, depth of field effect. --ar 2:3 --s 1000",
+        "category": "AI Photo Editing / 3D Instagram Frame / Personal Branding / Social Media",
+        "tool": "ChatGPT / Midjourney / AI Image Generator",
+        "note": "Prompt untuk mengubah foto pribadi menjadi visual 3D Instagram yang realistis dan profesional. Pertahankan identitas wajah, bentuk mata, hidung, bibir, gaya rambut, dan karakter asli dari foto referensi. Tambahkan kacamata hitam, sneakers hitam, jam tangan modern, serta bingkai postingan Instagram 3D dengan username @hamdaniharfan dan 1000K likes. Gunakan latar abu-abu gelap, pencahayaan sinematik, tekstur detail, dan hasil akhir yang cocok untuk personal branding serta konten media sosial.",
+        "slug": "foto-profil-3d-instagram-hamdani-harfan",
+        "date": "2026-11-01",
+        "id": "foto-profil-3d-instagram-hamdani-harfan"
+      },
+      {
+        "title": "Foto Lucu Pria dan Kucing Oren — Ekspresi Kocak AI",
+        "status": "published",
+        "image": "/assets/uploads/mvy2qfuk-playful-tabby-paws-and-laughter.jpg",
+        "prompt": "A fun, photorealistic portrait of the man in the photo. Don't change the face structure of the man. A cheeky orange tabby cat perches on his shoulder, covering his eyes with both paws like playing peekaboo. The man’s face shows a squinting smile, caught between surprise and laughter. The cat winks with one eye and sticks its tongue out in a silly, mischievous way, stealing the spotlight. Shot against a clean black studio backdrop with crisp lighting and ultra-detailed textures on skin and fur. The overall mood is humorous, lighthearted, and perfect for a playful, comedic scene.",
+        "category": "AI Photo Editing / Funny Portrait / Cat Photography / Animal Interaction",
+        "tool": "ChatGPT / Midjourney / AI Image Generator",
+        "note": "Ubah foto referensi menjadi potret fotorealistis yang lucu dengan mempertahankan struktur wajah, ciri khas, dan gaya rambut pria. Tambahkan kucing oren berbulu tebal di bahu yang menutupi kedua mata pria dengan cakarnya, seolah sedang bermain cilukba. Buat pria tersenyum lebar dengan ekspresi terkejut sekaligus tertawa, sementara kucing mengedipkan satu mata dan menjulurkan lidah secara jenaka. Gunakan latar studio hitam, pencahayaan profesional, detail bulu dan kulit yang tajam, serta komposisi sinematik. Cocok untuk konten hiburan, foto profil kreatif, dan media sosial.",
+        "slug": "foto-lucu-pria-kucing-oren-ai",
+        "date": "2026-11-01",
+        "id": "foto-lucu-pria-kucing-oren-ai"
+      },
+      {
+        "title": "Foto 3D Instagram – AI Portrait dengan Efek Keluar dari Frame",
+        "status": "published",
+        "image": "/assets/uploads/mvy2wjip-instagram-3d-pop-out-portrait.jpg",
+        "prompt": "A hyper-realistic creative portrait of a stylish young man in the photo provided posed inside a giant Instagram post frame prop, designed to look like a real social media feed. The man has wears dark sunglasses and dark shoes. Don't change the face of the man.\n\nHe sits casually inside the Instagram frame with a confident, trendy vibe. His right elbow rests on his knee, while his left arm is relaxed. To create a striking 3D illusion, one of his legs extends outward, sticking out of the Instagram frame into the viewer’s space, making it appear as though he’s stepping out of the virtual world into reality.\n\nThe Instagram frame is highly realistic, complete with username (hamdaniharfan), verified checkmark, display name “AI generation,” caption text: \"Life Balance. #AIGeneration #HamdaniHarfan\", and bottom icons (heart, comment, share, save, profile). A hand is holding the lower right edge of the frame for added realism and perspective.\n\nThe background is a clean, minimalist dark gray studio backdrop with soft, balanced lighting, ensuring the man and the Instagram cut-out frame remain the focus. The lighting highlights the textures of his clothing and the 3D effect of the leg extending outside the frame.",
+        "category": "AI Portrait, Instagram, 3D Effect, Personal Branding, Social Media",
+        "tool": "ChatGPT Image Generation / DALL·E",
+        "note": "Gunakan foto referensi wajah untuk mempertahankan identitas karakter. Tambahkan kacamata hitam, outfit hitam modern, jam tangan, dan sepatu sneakers. Buat satu kaki keluar dari bingkai Instagram untuk menciptakan ilusi 3D yang realistis. Gunakan latar abu-abu gelap, pencahayaan studio sinematik, serta detail wajah dan pakaian yang tajam. Cocok untuk personal branding, konten Instagram, dan foto profil kreatif.",
+        "slug": "foto-3d-instagram-ai-portrait",
+        "date": "2026-11-01",
+        "id": "foto-3d-instagram-ai-portrait"
+      },
+      {
+        "title": "Peta 3D Indonesia – Keindahan Nusantara dalam Diorama Fotorealistik",
+        "status": "published",
+        "image": "/assets/uploads/mvy2zx2j-indonesia-in-miniature-islands-and-herit.jpg",
+        "prompt": "A photorealistic illustration of a map of Indonesia placed flat on a surface, with the word Indonesia prominently shown. From the map, a miniature 3D diorama rises up, showcasing detailed landscapes, iconic temples, cultural elements, and national landmarks that symbolize Indonesia. The scene should appear as if the paper itself transforms into a living terrain. Use soft studio lighting and a cinematic viewpoint to highlight the textures and depth.",
+        "category": "Indonesia, Nusantara, Budaya Indonesia, Landmark, 3D Diorama, Travel, Landscape",
+        "tool": "ChatGPT Image Generation / DALL·E",
+        "note": "Buat peta Indonesia tampak seperti diorama 3D yang hidup, muncul dari permukaan kertas. Tampilkan landmark ikonik seperti Candi Borobudur, Monas, pura Bali, rumah adat, gunung berapi, hutan tropis, komodo, orangutan, kapal phinisi, dan bendera Merah Putih. Gunakan pencahayaan studio lembut, tekstur realistis, detail lanskap yang kaya, serta sudut pandang sinematik. Tampilkan tulisan INDONESIA dengan jelas dan menonjol. Cocok untuk poster wisata, edukasi budaya, desain promosi, dan konten media sosial.",
+        "slug": "peta-3d-indonesia-diorama-nusantara",
+        "date": "2026-11-01",
+        "id": "peta-3d-indonesia-diorama-nusantara"
+      },
+      {
+        "title": "Potret Sinematik Dark Red Aura – Pria dalam Dunia Apokaliptik",
+        "status": "published",
+        "image": "/assets/uploads/mvy347km-bloodstained-gunslinger-beneath-the-red-.jpg",
+        "prompt": "A hyper-realistic cinematic portrait of a man in a blood-stained black suit and red tie, walking forward with two pistols in his hands. His face is intense, determined, and marked with cuts and blood. Behind him, a glowing red halo-like circle radiates dramatic light, with streaks of red energy and scattered sparks cutting through a dark smoky atmosphere. The scene feels apocalyptic, with mist and embers drifting around, illuminated by the fiery glow. Captured in ultra-detailed realism, with sharp contrast between the black suit, red tie, and glowing red background. Maintain original face identity and body proportions without alteration. Cinematic lighting, fine art action photography, dark and powerful mood.",
+        "category": "AI Portrait / Cinematic / Dark Aesthetic / Action Photography",
+        "tool": "ChatGPT / AI Image Generation",
+        "note": "Gunakan foto referensi wajah untuk menjaga konsistensi identitas. Fokus pada pencahayaan merah dramatis, detail jas, efek asap, dan komposisi sinematik. Cocok untuk poster karakter, artwork digital, dan konten media sosial.",
+        "slug": "potret-sinematik-dark-red-aura",
+        "date": "2026-11-01",
+        "id": "potret-sinematik-dark-red-aura"
+      },
+      {
+        "title": "Cinematic Neon Noir Portrait — Night Drive in a Classic Black Car",
+        "status": "published",
+        "image": "/assets/uploads/mvy38feg-neon-night-drive-in-a-classic-car.jpg",
+        "prompt": "Cinematic night shot of the same man (keep his real face) sitting in a sleek black vintage car, viewed from front-left window. He wears sunglasses, gripping the wheel calmly with an intense look. Dark leather interior reflects neon lights in blue, red, and pink from the city outside. Blurred downtown background, moody lighting, glossy reflections, filmic tone, ultra-realistic texture, soft bokeh, high contrast, cyber-noir style —ar 3:4 —v 6 —s 1000.",
+        "category": "AI Portrait / Cinematic Photography / Cyber Noir / Night City",
+        "tool": "ChatGPT / AI Image Generation",
+        "note": "Buat potret sinematik ultra-realistis seorang pria di dalam mobil klasik hitam pada malam hari. Pertahankan identitas wajah, struktur wajah, dan proporsi tubuh dari foto referensi. Gunakan kacamata hitam, jaket kulit hitam, pantulan lampu neon biru-merah-pink, suasana kota malam yang dramatis, efek bokeh, serta pencahayaan bergaya film noir. Cocok untuk personal branding, konten media sosial, dan foto profil premium.",
+        "slug": "cinematic-neon-noir-night-drive",
+        "date": "2026-11-01",
+        "id": "cinematic-neon-noir-night-drive"
+      },
+      {
+        "title": "Cinematic Prehistoric Adventure – Man vs. T-Rex",
+        "status": "published",
+        "image": "/assets/uploads/mvy3cyka-jungle-explorer-and-roaring-t-rex.jpg",
+        "prompt": "A cinematic ultra-realistic scene of a brave explorer (the man in the photo provided) standing confidently in front of a roaring Tyrannosaurus rex in a dense prehistoric jungle. The man wears an olive green shirt with rolled sleeves, khaki cargo pants, brown boots, and a brown leather vest. Don't change his original face. The massive T-Rex behind him roars menacingly, showing sharp teeth and detailed scales, towering over him. The jungle background is misty, filled with tall ancient trees, thick vines, and soft light beams filtering through the canopy. The atmosphere feels tense yet adventurous, with cinematic depth of field and dynamic lighting highlighting the man and the dinosaur.\n\nShot with a full-frame camera, 50mm lens, f/1.8, realistic skin texture, detailed lighting and shadows, volumetric mist, cinematic tone, 8K ultra-detailed, hyperrealistic —ar 3:4 —v 6 —s 1000",
+        "category": "AI Photo Editing / Cinematic / Prehistoric Adventure / Dinosaur / Fantasy",
+        "tool": "ChatGPT / Midjourney / AI Image Generator",
+        "note": "Gunakan foto referensi wajah yang jelas untuk menjaga konsistensi identitas karakter. Pastikan proporsi tubuh tetap realistis, ukuran T-Rex terlihat masif, dan pencahayaan menyatu secara alami. Cocok untuk poster film, konten media sosial, dan potret sinematik. Untuk hasil terbaik, gunakan rasio vertikal 3:4.",
+        "slug": "cinematic-prehistoric-adventure-trex",
+        "date": "2026-11-01",
+        "id": "cinematic-prehistoric-adventure-trex"
+      },
+      {
+        "title": "Dream Above the Clouds – Cinematic Coffee & Reading",
+        "status": "published",
+        "image": "/assets/uploads/mvy3gs1q-golden-hour-cloudside-explorer.jpg",
+        "prompt": "A cinematic photo of a this man in this picture lounging on a fluffy white cloud high above the sky, holding a cup of coffee in one hand and a book in the other. He wears casual clothes with sunglasses, reclining comfortably with warm sunlight hitting his face. The sky around him is clear with golden hour tones, creating a dreamy, peaceful atmosphere above the clouds. Ultra-realistic lighting, soft textures, cozy vibe, surreal realism. Don't change his original face.\n\n—ar 3:4 —style cinematic —lighting warm sunset —render ultra-realistic —v 6 —s 1000",
+        "category": "AI Photo Editing / Surreal Realism / Cinematic Portrait / Fantasy / Lifestyle",
+        "tool": "ChatGPT / Midjourney / AI Image Generator",
+        "note": "Gunakan foto referensi wajah asli untuk menjaga konsistensi karakter. Pilih pencahayaan golden hour, awan yang lembut dan realistis, serta pose santai yang natural. Cocok untuk konten media sosial, potret fantasi, dan fotografi kreatif. Gunakan rasio vertikal 3:4 untuk hasil optimal.",
+        "slug": "dream-above-the-clouds",
+        "date": "2026-11-01",
+        "id": "dream-above-the-clouds"
+      },
+      {
+        "title": "Padel Court Action – Ultra-Realistic Sports Photography",
+        "status": "draft",
+        "image": "/assets/uploads/mvy3kwc7-padel-player-in-mid-lunge.jpg",
+        "prompt": "A man with a serious expression, wearing glasses, a navy blue polo shirt, black athletic shorts, white socks, and black and white athletic shoes, is in motion on a blue padel court. He is holding a black padel racket with a yellow tennis ball just in front of it, as if he is about to hit it. The court has white lines. In the background, there's a fence made of wire mesh and glass panels, and green trees under a bright sky. Don't change the man's original face and hair.",
+        "category": "Olahraga / Padel / Sport Photography / AI Portrait",
+        "tool": "ChatGPT / AI Image Editing",
+        "note": "Pertahankan wajah, gaya rambut, dan proporsi tubuh asli. Gunakan jersey polo biru navy, celana olahraga hitam, kaus kaki putih, dan sepatu olahraga hitam-putih. Tampilkan aksi bermain padel secara realistis dengan raket hitam dan bola kuning, lapangan biru, pencahayaan alami, serta detail wajah dan tekstur pakaian yang tajam.",
+        "slug": "padel-court-action-ultra-realistic",
+        "date": "2026-11-01",
+        "id": "padel-court-action-ultra-realistic"
+      }
+    ]
+  }
+}
