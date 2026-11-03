@@ -1439,6 +1439,18 @@
         "slug": "miniature-me-denim-jacket",
         "date": "2026-11-03",
         "id": "app"
+      },
+      {
+        "title": "Surreal Eggshell Portrait — Digital Lifestyle Edition",
+        "status": "published",
+        "image": "/assets/uploads/mw0ouuer-man-relaxing-inside-a-cracked-eggshell.jpg",
+        "prompt": "Create a hyper-realistic, ultra-detailed cinematic image using the uploaded reference photo as the main subject.\n\nThe face, facial features, skin tone, hairstyle, and identity must remain 100% accurate to the uploaded reference photo, with no alterations or stylization to the face.\n\nThe person is sitting inside a cracked egg shell in a cool, confident pose: one knee raised, the other leg relaxed, body slightly leaning back, shoulders relaxed, chin slightly lifted, conveying confidence and modern attitude.\n\nOne arm rests casually on the raised knee while the other hand loosely holds or rests near a smartphone, creating a natural, effortless pose.\n\nThe egg shell is broken open with realistic sharp edges and detailed texture, held gently by human fingers from the outside.\n\nInside the egg, instead of flowers, place a sleek modern laptop and a smartphone, arranged naturally as part of the environment, symbolizing technology, creativity, and digital lifestyle.\n\nA glossy, realistic egg yolk rests at the bottom of the shell with natural reflections and translucency.\n\nThe subject wears modern fashionable streetwear, clean silhouette, realistic fabric folds and textures, stylish yet natural.\n\nLighting is cinematic, soft but contrasty, with subtle rim light highlighting the face and egg shell, shallow depth of field, macro photography look.\n\nBackground is minimal and softly blurred, emphasizing the surreal concept and subject focus.\n\nUltra-realistic skin texture, photorealistic materials, cinematic composition, high-end editorial photography style, surreal yet believable.\n\nNo text, no logos, no watermark, no extra people, no distortion.",
+        "category": "Surreal Portrait, Cinematic Photography, AI Image Editing, Digital Lifestyle, Creative Concept Art",
+        "tool": "ChatGPT Images / Gemini / Midjourney",
+        "note": "Gunakan foto referensi wajah yang jelas untuk menjaga konsistensi identitas. Pertahankan struktur wajah, gaya rambut, warna kulit, dan proporsi tubuh. Gunakan pencahayaan sinematik, tekstur cangkang telur realistis, serta laptop dan smartphone tanpa logo.",
+        "slug": "surreal-eggshell-digital-lifestyle",
+        "date": "2026-11-03",
+        "id": "surreal-eggshell-digital-lifestyle"
       }
     ]
   }
