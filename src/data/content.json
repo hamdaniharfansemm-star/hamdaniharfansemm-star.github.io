@@ -1271,6 +1271,18 @@
         "slug": "ai-virtual-try-on-augmented-reality",
         "date": "2026-11-03",
         "id": "ai-virtual-try-on-augmented-reality"
+      },
+      {
+        "title": "3D Cartoon Avatar — Ubah Foto Menjadi Karakter Kartun 3D Ekspresif",
+        "status": "published",
+        "image": "/assets/uploads/mw0mk0le-grumpy-pout-with-crossed-arms.jpg",
+        "prompt": "A cute, exaggerated 3D cartoon character in Pixar/Disney style, with a large round head, chubby cheeks, and smooth soft skin. The face is based on the uploaded photo, transformed into an adorable stylized version with expressive eyes and a pouty, annoyed facial expression. The character has short hair similar to the reference photo, and wears a simple T-shirt. The background is clean white, bright, and minimal. The art style is highly detailed, glossy, soft-lit, with realistic textures blended with cute animation proportions. The mood is fun, expressive, and charming. Ultra-detailed 3D cartoon rendering, Pixar-like lighting, high-quality character design, no text or watermarks.",
+        "category": "AI Image Editing / 3D Cartoon / Character Design / Avatar / Digital Art / Pixar-Inspired Style",
+        "tool": "ChatGPT / Gemini / Midjourney",
+        "note": "Unggah foto wajah yang jelas dan gunakan sebagai referensi saat menjalankan prompt. Untuk menjaga konsistensi karakter, pertahankan ciri wajah, gaya rambut, dan warna kulit. Ekspresi, pakaian, pose, serta gaya 3D dapat disesuaikan. Hasil dapat berbeda tergantung model AI yang digunakan.",
+        "slug": "3d-cartoon-avatar-ekspresif",
+        "date": "2026-11-03",
+        "id": "3d-cartoon-avatar-ekspresif"
       }
     ]
   }
