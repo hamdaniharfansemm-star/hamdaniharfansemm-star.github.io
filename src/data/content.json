@@ -757,18 +757,6 @@
     },
     "prompts": [
       {
-        "title": "Cinematic Ferrari F1 Racing Poster — Custom Driver #69",
-        "status": "published",
-        "image": "/assets/uploads/mvy19nt5-ferrari-69-smoke-and-speed.jpg",
-        "prompt": "Buat poster sinematik formula 1 dengan menampilkan [refer image]. Pertahankan wajah, rambur, bentuk dan sudut asli persis seperti pada gambar. Tampilkan orang tersebut dalam tiga perspektif : potret close-up tanpa helm mengenakan racing suit Ferrari berwarna merah dengan logo sponsor, tampak samping dengan helm balap bergaya Ferrari, dan tampilan tubuh penuh mengenakan racing suit Ferrari berwarna merah dengan logo sponsor.\nDi bagian bawah, letakkan mobil Ferrari yang sedang melakukan burnout dengan asap sekitar ban. Mobil harus menampilkan nomor balap \"69\" dengan jelas di bagian hidung dan sisi. Gunakan latar belakang merah tegas dengan nomor balap besar \"69\" di belakang karakter. Gaya keseluruhan harus ultra-realistis, resolusi tinggi, sinematik, dengan nuansa poster olahraga propesional.",
-        "category": "AI Portrait / Formula 1 / Motorsport / Racing Poster / Ferrari / Cinematic",
-        "tool": "ChatGPT Image Generation",
-        "note": "Buat poster balap Formula 1 bergaya sinematik dengan mempertahankan karakter wajah dari foto referensi. Gunakan tiga perspektif karakter, racing suit Ferrari merah, helm balap, dan mobil balap bernomor 69. Untuk hasil terbaik, unggah foto referensi dengan wajah yang jelas. Cocok untuk poster personal, wallpaper, konten media sosial, dan desain bertema motorsport. Logo dan sponsor dapat disesuaikan.",
-        "slug": "cinematic-ferrari-f1-racing-poster-driver-69",
-        "date": "2026-11-01",
-        "id": "cinematic-ferrari-f1-racing-poster-driver-69"
-      },
-      {
         "title": "Potret Psychedelic Neon – Seni Digital Abstrak Ultra-Realistis",
         "status": "published",
         "image": "/assets/uploads/mvzc67cd-psychedelic-portrait-in-swirling-neon-pa.jpg",
@@ -781,16 +769,16 @@
         "id": "potret-psychedelic-neon-digital-art"
       },
       {
-        "title": "DANI #86 — Real Madrid Cinematic Football Poster",
+        "title": "AI Photo Transformation: Professional Portrait to Futuristic Cyberpunk | Cinematic 8K",
         "status": "published",
-        "image": "/assets/uploads/mvy08sk4-dani-86-real-madrid-storm-poster.jpg",
-        "prompt": "Buatlah sebuah poster sepak bola profesional bergaya sinematik yang menampilkan [gambar referensi].Pertahankan wajah, rambut, bentuk, dan sudut asli persis seperti pada gambar. Tampilkan orang tersebut dalam tiga perspektif:\n\nPotret close-up dengan jersey Real madrid 2025.\n\nTampak samping memakai jersey real madrid 2025 dengan nama punggung DANI.\n\nFoto tubuh penuh dengan perlengkapan sepak bola lengkap (jersey Real madrid 2025, celana pendek, kaus kaki, dan sepatu bola) beserta logo sponsor.\nTambahkan logo Real madrid di pojok kanan atas.\nDi bagian bawah, tampilkan adegan dinamis saat pemain melakukan aksi bicycle kick lompat tinggi dengan efek motion blur dan rumput beterbangan. Jersey harus jelas menampilkan nomor 86 di bagian depan, belakang, dan celana pendek.\n\nGunakan latar belakang stadion Old Trafford biru gelap navy dengan nomor besar 86 dan nama “DANI” yang menyala di belakang karakter.\n\nGaya keseluruhan harus ultra-realistis, resolusi tinggi, sinematik, dan bernuansa poster olahraga profesional.\nTambahkan logo Real Madrid di pojok kanan atas.",
-        "category": "Sepak Bola / Olahraga / Poster Pemain / Real Madrid / AI Art",
-        "tool": "ChatGPT Images / Gemini / AI Image Generator",
-        "note": "Unggah foto referensi wajah dengan pencahayaan jelas agar identitas karakter lebih konsisten. Gunakan rasio 4:5 untuk poster profesional. Periksa kembali nomor 86, nama DANI, dan logo klub karena teks serta lambang pada gambar AI mungkin perlu diperbaiki secara manual.",
-        "slug": "poster-sepak-bola-dani-86-real-madrid",
-        "date": "2026-11-01",
-        "id": "poster-sepak-bola-dani-86-real-madrid"
+        "image": "/assets/uploads/mvzbz4x1-cyberpunk-portrait-with-neon-circuits.jpg",
+        "prompt": "A close-up portrait of a man inspired by the provided reference photo — don't change his original face. The lighting is cinematic with warm orange and cool blue tones highlighting the contours of his face. His jacket has a textured, futuristic design, and subtle digital circuitry patterns merge into his skin and surroundings, symbolizing the fusion between human and technology. The background features abstract geometric grids and data streams in glowing hues of red, blue, and orange, creating a cyberpunk-techno aesthetic. Render in ultra-realistic detail with smooth skin texture, soft depth of field, and high dynamic range — 8K resolution, Unreal Engine 5 realism, cinematic lighting, sharp focus on eyes, bokeh background.\n\n--ar 2:3 --v 6 --s 750 --style raw --q 2 --hd --uplight",
+        "category": "AI Photo Editing, Cyberpunk, Futuristic Portrait, Sci-Fi, Digital Art, Cinematic Photography",
+        "tool": "ChatGPT, Gemini, Midjourney",
+        "note": "Ubah foto formal menjadi potret futuristik bergaya cyberpunk dengan mempertahankan kemiripan wajah, gaya rambut, dan karakter utama dari foto referensi. Gunakan jaket teknologi futuristik bertekstur dengan detail sirkuit bercahaya, perpaduan pencahayaan oranye hangat dan biru elektrik, efek digital pada kulit yang halus, latar belakang berupa jaringan data, grid geometris, serta elemen holografik. Terapkan pencahayaan sinematik, fokus tajam pada mata, tekstur kulit realistis, depth of field lembut, dan kontras HDR. Cocok untuk foto profil AI, personal branding teknologi, avatar digital, dan konten media sosial. Gunakan foto referensi yang jelas untuk membantu menjaga konsistensi wajah.",
+        "slug": "professional-portrait-cyberpunk-ai",
+        "date": "2026-11-02",
+        "id": "professional-portrait-cyberpunk-ai"
       },
       {
         "title": "Monochrome Elevator Portrait: Cinematic Black & White Fashion Editorial",
@@ -805,6 +793,42 @@
         "id": "monochrome-elevator-fashion-portrait"
       },
       {
+        "title": "Forbes 30 Under 30 — AI-Driven Creativity Magazine Cover",
+        "status": "published",
+        "image": "/assets/uploads/mvzckgz7-visionary-ai-s-next-innovator.jpg",
+        "prompt": "Transform the uploaded photo into a professional Forbes 30 Under 30 magazine cover portrait.\n\nThe person in the reference image should look confident, successful, and visionary — like a young entrepreneur or innovator featured in Forbes.\n\nPlace the subject in the center with professional studio lighting, soft shadows, and a clean neutral background (white, gray, or dark gradient).\n\nAdd realistic Forbes magazine layout details:\n\n“Forbes” logo on top (white or black depending on background)\n\nLarge headline text: “30 UNDER 30”\n\nSubtexts like “The Future of AI-Driven Creativity”, “Innovators Redefining Digital Media”\n\nMinimalist side text in fine sans-serif typography\n\nIn the bottom-left corner, vertically aligned text: “Innovation. Influence. Impact.”\n\nOptional barcode and edition text at the bottom corner\n\nThe image should look ultra-detailed, cinematic, elegant, and glossy — as if professionally shot for a Forbes cover.\n\nStyle keywords: ultra-realistic portrait photography, magazine cover, high-end editorial lighting, elegant composition, luxury aesthetic, 8K resolution.\n\nInstruction: adjust outfit and lighting to match Forbes 30 Under 30 vibe (business casual, blazer, confident posture). Maintain the person’s facial identity and likeness from the uploaded photo.",
+        "category": "AI Art / Portrait / Magazine Cover / Personal Branding / Business",
+        "tool": "ChatGPT Image Generation",
+        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan kemiripan karakter. Ubah pakaian menjadi blazer navy premium dengan kemeja putih, pencahayaan editorial profesional, dan latar abu-abu elegan. Tambahkan tipografi majalah bergaya Forbes, headline “30 UNDER 30”, serta teks “The Future of AI-Driven Creativity” dan “Innovators Redefining Digital Media”. Cocok untuk personal branding, profil entrepreneur, dan konten AI kreatif. Hasil ini merupakan konsep cover bergaya editorial, bukan sampul Forbes resmi atau pengakuan bahwa subjek benar-benar terpilih dalam Forbes 30 Under 30.",
+        "slug": "forbes-30-under-30-ai-creativity",
+        "date": "2026-11-02",
+        "id": "forbes-30-under-30-ai-creativity"
+      },
+      {
+        "title": "DANI #86 — Real Madrid Cinematic Football Poster",
+        "status": "published",
+        "image": "/assets/uploads/mvy08sk4-dani-86-real-madrid-storm-poster.jpg",
+        "prompt": "Buatlah sebuah poster sepak bola profesional bergaya sinematik yang menampilkan [gambar referensi].Pertahankan wajah, rambut, bentuk, dan sudut asli persis seperti pada gambar. Tampilkan orang tersebut dalam tiga perspektif:\n\nPotret close-up dengan jersey Real madrid 2025.\n\nTampak samping memakai jersey real madrid 2025 dengan nama punggung DANI.\n\nFoto tubuh penuh dengan perlengkapan sepak bola lengkap (jersey Real madrid 2025, celana pendek, kaus kaki, dan sepatu bola) beserta logo sponsor.\nTambahkan logo Real madrid di pojok kanan atas.\nDi bagian bawah, tampilkan adegan dinamis saat pemain melakukan aksi bicycle kick lompat tinggi dengan efek motion blur dan rumput beterbangan. Jersey harus jelas menampilkan nomor 86 di bagian depan, belakang, dan celana pendek.\n\nGunakan latar belakang stadion Old Trafford biru gelap navy dengan nomor besar 86 dan nama “DANI” yang menyala di belakang karakter.\n\nGaya keseluruhan harus ultra-realistis, resolusi tinggi, sinematik, dan bernuansa poster olahraga profesional.\nTambahkan logo Real Madrid di pojok kanan atas.",
+        "category": "Sepak Bola / Olahraga / Poster Pemain / Real Madrid / AI Art",
+        "tool": "ChatGPT Images / Gemini / AI Image Generator",
+        "note": "Unggah foto referensi wajah dengan pencahayaan jelas agar identitas karakter lebih konsisten. Gunakan rasio 4:5 untuk poster profesional. Periksa kembali nomor 86, nama DANI, dan logo klub karena teks serta lambang pada gambar AI mungkin perlu diperbaiki secara manual.",
+        "slug": "poster-sepak-bola-dani-86-real-madrid",
+        "date": "2026-11-01",
+        "id": "poster-sepak-bola-dani-86-real-madrid"
+      },
+      {
+        "title": "Cinematic Ferrari F1 Racing Poster — Custom Driver #69",
+        "status": "published",
+        "image": "/assets/uploads/mvy19nt5-ferrari-69-smoke-and-speed.jpg",
+        "prompt": "Buat poster sinematik formula 1 dengan menampilkan [refer image]. Pertahankan wajah, rambur, bentuk dan sudut asli persis seperti pada gambar. Tampilkan orang tersebut dalam tiga perspektif : potret close-up tanpa helm mengenakan racing suit Ferrari berwarna merah dengan logo sponsor, tampak samping dengan helm balap bergaya Ferrari, dan tampilan tubuh penuh mengenakan racing suit Ferrari berwarna merah dengan logo sponsor.\nDi bagian bawah, letakkan mobil Ferrari yang sedang melakukan burnout dengan asap sekitar ban. Mobil harus menampilkan nomor balap \"69\" dengan jelas di bagian hidung dan sisi. Gunakan latar belakang merah tegas dengan nomor balap besar \"69\" di belakang karakter. Gaya keseluruhan harus ultra-realistis, resolusi tinggi, sinematik, dengan nuansa poster olahraga propesional.",
+        "category": "AI Portrait / Formula 1 / Motorsport / Racing Poster / Ferrari / Cinematic",
+        "tool": "ChatGPT Image Generation",
+        "note": "Buat poster balap Formula 1 bergaya sinematik dengan mempertahankan karakter wajah dari foto referensi. Gunakan tiga perspektif karakter, racing suit Ferrari merah, helm balap, dan mobil balap bernomor 69. Untuk hasil terbaik, unggah foto referensi dengan wajah yang jelas. Cocok untuk poster personal, wallpaper, konten media sosial, dan desain bertema motorsport. Logo dan sponsor dapat disesuaikan.",
+        "slug": "cinematic-ferrari-f1-racing-poster-driver-69",
+        "date": "2026-11-01",
+        "id": "cinematic-ferrari-f1-racing-poster-driver-69"
+      },
+      {
         "title": "Cinematic Vintage Portrait: Pria Elegan dengan Motor Yamaha RX100",
         "status": "published",
         "image": "/assets/uploads/mvy13z6m-vintage-yamaha-portrait-by-weathered-wal.jpg",
@@ -815,18 +839,6 @@
         "slug": "portrait-pria-motor-yamaha-rx100-vintage",
         "date": "2026-11-01",
         "id": "app"
-      },
-      {
-        "title": "Manchester City Football Star – Cinematic Locker Room Portrait",
-        "status": "published",
-        "image": "/assets/uploads/mvy1whxe-manchester-city-locker-room-portrait.jpg",
-        "prompt": "Depict this man as a professional soccer player inside a locker room setting. He is dressed in the full Manchester City home kit—jersey, shorts, socks, and boots. A jersey with the name “HAMDANI HARFAN” and the number 86 should appear on a shirt hanging behind him on the locker wall. He sits with a UEFA Champions League ball placed on his lap, exuding a confident expression. The atmosphere should resemble a dramatic locker room scene, enhanced with cinematic lighting and rendered in an ultra-realistic, highly detailed photographic style.",
-        "category": "AI Portrait / Football / Manchester City / Sports Photography",
-        "tool": "ChatGPT / AI Image Generation",
-        "note": "Create an ultra-realistic cinematic portrait of a professional football player wearing the full Manchester City home kit, including jersey, shorts, socks, and football boots. Preserve the subject’s original facial identity and hairstyle. The player sits confidently in a dramatic professional locker room with a UEFA Champions League-style football resting on his lap. Behind him, display a Manchester City jersey with the name “HAMDANI HARFAN” and the number “86” clearly visible. Use premium cinematic lighting, realistic fabric textures, detailed locker room elements, dramatic shadows, and professional sports photography aesthetics. High resolution, sharp focus, realistic proportions, premium editorial quality.",
-        "slug": "manchester-city-football-star-86",
-        "date": "2026-11-01",
-        "id": "manchester-city-football-star-86"
       },
       {
         "title": "The Poker Legend — Ultra-Realistic Cinematic Photography",
@@ -841,16 +853,16 @@
         "id": "the-master-of-cards-cinematic-portrait"
       },
       {
-        "title": "Ultra-Realistic Jet Ski Adventure — Tropical Ocean Portrait",
+        "title": "Manchester City Football Star – Cinematic Locker Room Portrait",
         "status": "published",
-        "image": "/assets/uploads/mvy0ripk-jet-ski-adventure-along-tropical-shores.jpg",
-        "prompt": "Create a hyper-realistic photo of me riding a jet ski. I must appear exactly the same: sitting on a sleek black-and-orange jet ski, moving fast across the ocean. I’m dressed in a simple long-sleeved black shirt, black shorts, and an orange life vest. A watch is visible on my right wrist. My short black hair is slightly windblown, and I’m smiling naturally (not too wide) while looking toward the camera.\n\nMy left hand grips the handlebar, steering the jet ski, while my right hand stretches outward as if playfully reaching toward the seawater — capturing both energy and relaxation. The modern jet ski cuts powerfully through the waves, sending up dramatic splashes as it speeds over the surface.\n\nThe shot is taken from a medium-to-distant angle, showing my full body and the entire jet ski clearly. The backdrop is a wide expanse of sea with rolling waves, under a bright blue sky. In the distance, a tropical shoreline is faintly visible.\n\nThe style must be ultra-photorealistic, as if shot with a professional DSLR in 4K: crisp textures, realistic skin, natural sunlight, strong shadows, vivid ocean colors, and lifelike proportions. The atmosphere should feel bright, energetic, and immersive, filled with motion and vibrant tropical tones. Output in portrait orientation, 9:16 ratio.",
-        "category": "AI Portrait / Jet Ski / Adventure / Ocean / Lifestyle / Photorealistic",
-        "tool": "ChatGPT Image Generation / AI Photo Editing",
-        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan identitas, bentuk wajah, gaya rambut, dan proporsi tubuh. Untuk hasil terbaik, gunakan foto referensi berkualitas tinggi. Pastikan seluruh tubuh dan jet ski terlihat jelas, percikan air tampak realistis, serta tangan dan jari terbentuk secara natural. Format vertikal 9:16, cocok untuk Instagram Reels, TikTok, dan YouTube Shorts.",
-        "slug": "ultra-realistic-jet-ski-adventure-tropical-ocean-portrait",
+        "image": "/assets/uploads/mvy1whxe-manchester-city-locker-room-portrait.jpg",
+        "prompt": "Depict this man as a professional soccer player inside a locker room setting. He is dressed in the full Manchester City home kit—jersey, shorts, socks, and boots. A jersey with the name “HAMDANI HARFAN” and the number 86 should appear on a shirt hanging behind him on the locker wall. He sits with a UEFA Champions League ball placed on his lap, exuding a confident expression. The atmosphere should resemble a dramatic locker room scene, enhanced with cinematic lighting and rendered in an ultra-realistic, highly detailed photographic style.",
+        "category": "AI Portrait / Football / Manchester City / Sports Photography",
+        "tool": "ChatGPT / AI Image Generation",
+        "note": "Create an ultra-realistic cinematic portrait of a professional football player wearing the full Manchester City home kit, including jersey, shorts, socks, and football boots. Preserve the subject’s original facial identity and hairstyle. The player sits confidently in a dramatic professional locker room with a UEFA Champions League-style football resting on his lap. Behind him, display a Manchester City jersey with the name “HAMDANI HARFAN” and the number “86” clearly visible. Use premium cinematic lighting, realistic fabric textures, detailed locker room elements, dramatic shadows, and professional sports photography aesthetics. High resolution, sharp focus, realistic proportions, premium editorial quality.",
+        "slug": "manchester-city-football-star-86",
         "date": "2026-11-01",
-        "id": "ultra-realistic-jet-ski-adventure-tropical-ocean-portrait"
+        "id": "manchester-city-football-star-86"
       },
       {
         "id": "bhinneka-tunggal-ika-bersatu-di-bawah-merah-putih",
@@ -863,6 +875,18 @@
         "note": "Prompt khusus untuk membuat figur action skala 1/7 dengan detail tekstur kulit yang hiper-realistis, lengkap dengan kotak kemasan dan latar studio ZBrush",
         "date": "2026-11-01",
         "prompt": "Generate a 1/7 scale collectible figurine of the characters from the provided image, designed in a realistic style and displayed within a real-life setting. The figurine should be positioned on a computer desk and mounted on a clear round acrylic base without any text or markings. On the computer screen, show the ZBrush sculpting process of this same figurine. Beside the monitor, place a toy packaging box in the style of BANDAI, printed with the original artwork. The packaging design should feature flat two-dimensional illustrations. Ensure all details remain consistent with the reference image."
+      },
+      {
+        "title": "Ultra-Realistic Jet Ski Adventure — Tropical Ocean Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mvy0ripk-jet-ski-adventure-along-tropical-shores.jpg",
+        "prompt": "Create a hyper-realistic photo of me riding a jet ski. I must appear exactly the same: sitting on a sleek black-and-orange jet ski, moving fast across the ocean. I’m dressed in a simple long-sleeved black shirt, black shorts, and an orange life vest. A watch is visible on my right wrist. My short black hair is slightly windblown, and I’m smiling naturally (not too wide) while looking toward the camera.\n\nMy left hand grips the handlebar, steering the jet ski, while my right hand stretches outward as if playfully reaching toward the seawater — capturing both energy and relaxation. The modern jet ski cuts powerfully through the waves, sending up dramatic splashes as it speeds over the surface.\n\nThe shot is taken from a medium-to-distant angle, showing my full body and the entire jet ski clearly. The backdrop is a wide expanse of sea with rolling waves, under a bright blue sky. In the distance, a tropical shoreline is faintly visible.\n\nThe style must be ultra-photorealistic, as if shot with a professional DSLR in 4K: crisp textures, realistic skin, natural sunlight, strong shadows, vivid ocean colors, and lifelike proportions. The atmosphere should feel bright, energetic, and immersive, filled with motion and vibrant tropical tones. Output in portrait orientation, 9:16 ratio.",
+        "category": "AI Portrait / Jet Ski / Adventure / Ocean / Lifestyle / Photorealistic",
+        "tool": "ChatGPT Image Generation / AI Photo Editing",
+        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan identitas, bentuk wajah, gaya rambut, dan proporsi tubuh. Untuk hasil terbaik, gunakan foto referensi berkualitas tinggi. Pastikan seluruh tubuh dan jet ski terlihat jelas, percikan air tampak realistis, serta tangan dan jari terbentuk secara natural. Format vertikal 9:16, cocok untuk Instagram Reels, TikTok, dan YouTube Shorts.",
+        "slug": "ultra-realistic-jet-ski-adventure-tropical-ocean-portrait",
+        "date": "2026-11-01",
+        "id": "ultra-realistic-jet-ski-adventure-tropical-ocean-portrait"
       },
       {
         "title": "Lunar Coffee Experience: Menikmati Kopi di Bulan dengan Pemandangan Bumi",
@@ -889,18 +913,6 @@
         "id": "ai-figure-studio-action-figure-koleksi-premium"
       },
       {
-        "title": "Cinematic Black Fashion Portrait – Golden Hour Studio",
-        "status": "published",
-        "image": "/assets/uploads/mvy1ndh4-cinematic-coffee-armchair-portrait.jpg",
-        "prompt": "Turn the uploaded photo into a high-quality, cinematic studio portrait. The subject is seated in a relaxed, casual position, captured from a side angle. The setting is a professional photo studio illuminated with warm, soft light that reflects the golden glow of sunset, creating dramatic highlights and shadows across the scene.\n\nThe subject wears an all-black outfit: an oversized black blazer paired with sleek black trousers. In one hand, they hold a takeaway coffee cup, which adds a modern, lifestyle element to the composition.\n\nThe overall mood should be elegant, edgy, and slightly mysterious, blending fashion-editorial aesthetics with cinematic tones. The environment must look realistic, with high detail in textures, lighting, and reflections.\n\n⚠️ Important: The face must remain exactly the same as in the reference photo. Do not change or alter the facial structure, skin, expression, or features in any way. Only adjust pose, clothing, and environment while keeping the original face intact.",
-        "category": "Cinematic Black Fashion Portrait – Golden Hour Studio",
-        "tool": "ChatGPT / AI Image Generation",
-        "note": "Ubah foto referensi menjadi potret fashion sinematik profesional dengan outfit serba hitam, blazer oversized, celana hitam elegan, dan gelas kopi takeaway. Gunakan pencahayaan hangat bernuansa golden hour, bayangan dramatis, sudut pengambilan gambar dari samping, serta detail tekstur kulit dan kain yang realistis. Pertahankan identitas wajah, bentuk mata, hidung, bibir, struktur wajah, dan tekstur kulit semirip mungkin dengan foto referensi. Cocok untuk personal branding, foto profil profesional, dan konten fashion media sosial.",
-        "slug": "cinematic-black-fashion-portrait-golden-hour-studio",
-        "date": "2026-11-01",
-        "id": "cinematic-black-fashion-portrait-golden-hour-studio"
-      },
-      {
         "title": "Figurine 3D Premium PlayStation — Custom Collector Edition",
         "status": "published",
         "image": "/assets/uploads/mvy28bni-playstation-6-gaming-diorama-1.jpg",
@@ -911,6 +923,18 @@
         "slug": "figurine-3d-playstation-collector-edition",
         "date": "2026-11-01",
         "id": "figurine-3d-playstation-collector-edition"
+      },
+      {
+        "title": "Cinematic Black Fashion Portrait – Golden Hour Studio",
+        "status": "published",
+        "image": "/assets/uploads/mvy1ndh4-cinematic-coffee-armchair-portrait.jpg",
+        "prompt": "Turn the uploaded photo into a high-quality, cinematic studio portrait. The subject is seated in a relaxed, casual position, captured from a side angle. The setting is a professional photo studio illuminated with warm, soft light that reflects the golden glow of sunset, creating dramatic highlights and shadows across the scene.\n\nThe subject wears an all-black outfit: an oversized black blazer paired with sleek black trousers. In one hand, they hold a takeaway coffee cup, which adds a modern, lifestyle element to the composition.\n\nThe overall mood should be elegant, edgy, and slightly mysterious, blending fashion-editorial aesthetics with cinematic tones. The environment must look realistic, with high detail in textures, lighting, and reflections.\n\n⚠️ Important: The face must remain exactly the same as in the reference photo. Do not change or alter the facial structure, skin, expression, or features in any way. Only adjust pose, clothing, and environment while keeping the original face intact.",
+        "category": "Cinematic Black Fashion Portrait – Golden Hour Studio",
+        "tool": "ChatGPT / AI Image Generation",
+        "note": "Ubah foto referensi menjadi potret fashion sinematik profesional dengan outfit serba hitam, blazer oversized, celana hitam elegan, dan gelas kopi takeaway. Gunakan pencahayaan hangat bernuansa golden hour, bayangan dramatis, sudut pengambilan gambar dari samping, serta detail tekstur kulit dan kain yang realistis. Pertahankan identitas wajah, bentuk mata, hidung, bibir, struktur wajah, dan tekstur kulit semirip mungkin dengan foto referensi. Cocok untuk personal branding, foto profil profesional, dan konten fashion media sosial.",
+        "slug": "cinematic-black-fashion-portrait-golden-hour-studio",
+        "date": "2026-11-01",
+        "id": "cinematic-black-fashion-portrait-golden-hour-studio"
       },
       {
         "title": "Foto Pria di Kafe Modern Minimalis — Edit Foto AI Realistis",
@@ -985,6 +1009,42 @@
         "id": "potret-sinematik-dark-red-aura"
       },
       {
+        "title": "Low-Poly Geometric Portrait — Seni Potret 3D Futuristik",
+        "status": "published",
+        "image": "/assets/uploads/mvzdz7uk-faceted-geometric-portrait-in-blue.jpg",
+        "prompt": "A highly detailed low-poly geometric portrait based on Image 1. The face, hair, and body are recreated using sharp polygonal shapes and faceted surfaces in shades of blue, gray, and purple, similar to digital sculpture art. Lighting is dramatic, with strong contrast and cinematic highlights emphasizing the 3D geometry. The background features abstract angular patterns that complement the low-poly style. Ultra-detailed 3D low-poly illustration, digital painting, cinematic lighting, polygonal textures, 8k render.",
+        "category": "Digital Art, 3D Illustration, Portrait & Avatar",
+        "tool": "LOW-POLY 3D ART",
+        "note": "Gunakan foto referensi wajah yang jelas agar karakter utama tetap mudah dikenali. Ubah wajah, rambut, pakaian, dan latar menjadi bidang-bidang geometris berbentuk segitiga dengan gradasi biru, ungu, dan abu-abu. Tambahkan pencahayaan sinematik untuk menghasilkan efek pahatan digital 3D yang premium.",
+        "slug": "low-poly-geometric-portrait",
+        "date": "2026-11-02",
+        "id": "low-poly-geometric-portrait"
+      },
+      {
+        "title": "HOT NEWS — Cinematic Burning Newspaper Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mvzegj9r-man-holding-flaming-hot-news-newspaper.jpg",
+        "prompt": "A cinematic, ultra-realistic portrait of a person (based on the uploaded photo) holding an open newspaper titled “HOT NEWS” printed clearly across both pages. The newspaper is on fire from the edges, with vivid orange and yellow flames spreading along the top and sides. Sparks and ashes float through the air while the paper edges curl and burn. The warm light from the fire illuminates the person’s face dramatically, casting soft shadows on one side. Their expression is calm, confident, and slightly intense, symbolizing power and revelation. The background is dark and cinematic, with subtle smoke and glowing embers drifting around. The composition feels like a movie poster — powerful, mysterious, and modern. Ultra-detailed cinematic portrait, HDR lighting, volumetric smoke, realistic fire glow, 8k render, photo-realistic textures, dramatic contrast, color palette of orange, amber, and deep black.\n\n\"A hyper-realistic raw portrait of an Asian man, detailed natural skin texture, visible skin pores, subtle imperfections, vellus hairs, natural skin oils, no airbrushing. Soft natural window lighting, gentle shadows, depth of field. Shot on 85mm lens, f/2.8, professional photography, candid expression, sharp focus, 8k resolution, photorealistic masterpiece.",
+        "category": "Cinematic Portrait, AI Photo Editing, Dramatic Effects",
+        "tool": "HOT NEWS 🔥",
+        "note": "Gunakan foto referensi wajah agar identitas tetap konsisten. Tambahkan efek api realistis di tepi koran, bara beterbangan, asap dramatis, serta pencahayaan oranye dari api. Pertahankan tekstur kulit alami dan detail wajah. Pastikan tulisan “HOT NEWS” terlihat jelas.",
+        "slug": "hot-news-burning-newspaper",
+        "date": "2026-11-02",
+        "id": "hot-news-burning-newspaper"
+      },
+      {
+        "title": "Potret Sinematik Pemain Biliar – Elegant Black Suit",
+        "status": "published",
+        "image": "/assets/uploads/mvzcd6uh-confident-cue-at-the-pool-hall.jpg",
+        "prompt": "A cinematic portrait of a confident man preparing for a billiards game in a dimly lit pool hall. The man’s face and appearance should be based accurately on the uploaded photo. He wears a black suit jacket, white shirt, and black gloves, standing beside a billiard table under soft overhead lighting. The atmosphere is moody and dramatic, with warm tones, soft haze, and a focused light beam illuminating the subject. Background includes blurred pool tables and hanging lights, creating a cinematic depth of field. Ultra-detailed textures, shallow depth of field, realistic lighting, and photorealistic style with subtle film grain.\n\nStyle keywords:\n\ncinematic portrait, dramatic lighting, moody atmosphere, soft haze, 8k realism, shallow depth of field, realistic shadows, professional photography",
+        "category": "Cinematic Portrait, Billiards, Men Fashion, Black Suit, Dramatic Lighting, AI Photo Editing",
+        "tool": "ChatGPT, Gemini, Midjourney",
+        "note": "Ubah foto referensi menjadi potret sinematik seorang pria elegan di ruang biliar mewah. Pertahankan identitas wajah, gaya rambut, bentuk mata, hidung, dan karakteristik asli subjek. Kenakan jas hitam berpotongan rapi, kemeja putih, dan sarung tangan hitam sambil memegang tongkat biliar di samping meja berwarna hijau. Gunakan pencahayaan lampu gantung berwarna keemasan, latar belakang gelap dengan efek bokeh, bayangan realistis, tekstur kain detail, serta depth of field yang dramatis. Hasil akhir fotorealistis, mewah, dan profesional. Cocok untuk foto profil, poster personal branding, dan konten media sosial.",
+        "slug": "potret-sinematik-pemain-biliar",
+        "date": "2026-11-02",
+        "id": "potret-sinematik-pemain-biliar"
+      },
+      {
         "title": "Cinematic Neon Noir Portrait — Night Drive in a Classic Black Car",
         "status": "published",
         "image": "/assets/uploads/mvy38feg-neon-night-drive-in-a-classic-car.jpg",
@@ -1043,42 +1103,6 @@
         "slug": "prompt-cinematic-pria-pasar-asia-pesawat",
         "date": "2026-11-02",
         "id": "prompt-cinematic-pria-pasar-asia-pesawat"
-      },
-      {
-        "title": "AI Photo Transformation: Professional Portrait to Futuristic Cyberpunk | Cinematic 8K",
-        "status": "published",
-        "image": "/assets/uploads/mvzbz4x1-cyberpunk-portrait-with-neon-circuits.jpg",
-        "prompt": "A close-up portrait of a man inspired by the provided reference photo — don't change his original face. The lighting is cinematic with warm orange and cool blue tones highlighting the contours of his face. His jacket has a textured, futuristic design, and subtle digital circuitry patterns merge into his skin and surroundings, symbolizing the fusion between human and technology. The background features abstract geometric grids and data streams in glowing hues of red, blue, and orange, creating a cyberpunk-techno aesthetic. Render in ultra-realistic detail with smooth skin texture, soft depth of field, and high dynamic range — 8K resolution, Unreal Engine 5 realism, cinematic lighting, sharp focus on eyes, bokeh background.\n\n--ar 2:3 --v 6 --s 750 --style raw --q 2 --hd --uplight",
-        "category": "AI Photo Editing, Cyberpunk, Futuristic Portrait, Sci-Fi, Digital Art, Cinematic Photography",
-        "tool": "ChatGPT, Gemini, Midjourney",
-        "note": "Ubah foto formal menjadi potret futuristik bergaya cyberpunk dengan mempertahankan kemiripan wajah, gaya rambut, dan karakter utama dari foto referensi. Gunakan jaket teknologi futuristik bertekstur dengan detail sirkuit bercahaya, perpaduan pencahayaan oranye hangat dan biru elektrik, efek digital pada kulit yang halus, latar belakang berupa jaringan data, grid geometris, serta elemen holografik. Terapkan pencahayaan sinematik, fokus tajam pada mata, tekstur kulit realistis, depth of field lembut, dan kontras HDR. Cocok untuk foto profil AI, personal branding teknologi, avatar digital, dan konten media sosial. Gunakan foto referensi yang jelas untuk membantu menjaga konsistensi wajah.",
-        "slug": "professional-portrait-cyberpunk-ai",
-        "date": "2026-11-02",
-        "id": "professional-portrait-cyberpunk-ai"
-      },
-      {
-        "title": "Potret Sinematik Pemain Biliar – Elegant Black Suit",
-        "status": "published",
-        "image": "/assets/uploads/mvzcd6uh-confident-cue-at-the-pool-hall.jpg",
-        "prompt": "A cinematic portrait of a confident man preparing for a billiards game in a dimly lit pool hall. The man’s face and appearance should be based accurately on the uploaded photo. He wears a black suit jacket, white shirt, and black gloves, standing beside a billiard table under soft overhead lighting. The atmosphere is moody and dramatic, with warm tones, soft haze, and a focused light beam illuminating the subject. Background includes blurred pool tables and hanging lights, creating a cinematic depth of field. Ultra-detailed textures, shallow depth of field, realistic lighting, and photorealistic style with subtle film grain.\n\nStyle keywords:\n\ncinematic portrait, dramatic lighting, moody atmosphere, soft haze, 8k realism, shallow depth of field, realistic shadows, professional photography",
-        "category": "Cinematic Portrait, Billiards, Men Fashion, Black Suit, Dramatic Lighting, AI Photo Editing",
-        "tool": "ChatGPT, Gemini, Midjourney",
-        "note": "Ubah foto referensi menjadi potret sinematik seorang pria elegan di ruang biliar mewah. Pertahankan identitas wajah, gaya rambut, bentuk mata, hidung, dan karakteristik asli subjek. Kenakan jas hitam berpotongan rapi, kemeja putih, dan sarung tangan hitam sambil memegang tongkat biliar di samping meja berwarna hijau. Gunakan pencahayaan lampu gantung berwarna keemasan, latar belakang gelap dengan efek bokeh, bayangan realistis, tekstur kain detail, serta depth of field yang dramatis. Hasil akhir fotorealistis, mewah, dan profesional. Cocok untuk foto profil, poster personal branding, dan konten media sosial.",
-        "slug": "potret-sinematik-pemain-biliar",
-        "date": "2026-11-02",
-        "id": "potret-sinematik-pemain-biliar"
-      },
-      {
-        "title": "Forbes 30 Under 30 — AI-Driven Creativity Magazine Cover",
-        "status": "published",
-        "image": "/assets/uploads/mvzckgz7-visionary-ai-s-next-innovator.jpg",
-        "prompt": "Transform the uploaded photo into a professional Forbes 30 Under 30 magazine cover portrait.\n\nThe person in the reference image should look confident, successful, and visionary — like a young entrepreneur or innovator featured in Forbes.\n\nPlace the subject in the center with professional studio lighting, soft shadows, and a clean neutral background (white, gray, or dark gradient).\n\nAdd realistic Forbes magazine layout details:\n\n“Forbes” logo on top (white or black depending on background)\n\nLarge headline text: “30 UNDER 30”\n\nSubtexts like “The Future of AI-Driven Creativity”, “Innovators Redefining Digital Media”\n\nMinimalist side text in fine sans-serif typography\n\nIn the bottom-left corner, vertically aligned text: “Innovation. Influence. Impact.”\n\nOptional barcode and edition text at the bottom corner\n\nThe image should look ultra-detailed, cinematic, elegant, and glossy — as if professionally shot for a Forbes cover.\n\nStyle keywords: ultra-realistic portrait photography, magazine cover, high-end editorial lighting, elegant composition, luxury aesthetic, 8K resolution.\n\nInstruction: adjust outfit and lighting to match Forbes 30 Under 30 vibe (business casual, blazer, confident posture). Maintain the person’s facial identity and likeness from the uploaded photo.",
-        "category": "AI Art / Portrait / Magazine Cover / Personal Branding / Business",
-        "tool": "ChatGPT Image Generation",
-        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan kemiripan karakter. Ubah pakaian menjadi blazer navy premium dengan kemeja putih, pencahayaan editorial profesional, dan latar abu-abu elegan. Tambahkan tipografi majalah bergaya Forbes, headline “30 UNDER 30”, serta teks “The Future of AI-Driven Creativity” dan “Innovators Redefining Digital Media”. Cocok untuk personal branding, profil entrepreneur, dan konten AI kreatif. Hasil ini merupakan konsep cover bergaya editorial, bukan sampul Forbes resmi atau pengakuan bahwa subjek benar-benar terpilih dalam Forbes 30 Under 30.",
-        "slug": "forbes-30-under-30-ai-creativity",
-        "date": "2026-11-02",
-        "id": "forbes-30-under-30-ai-creativity"
       },
       {
         "title": "Digital Oil Painting Portrait — Cinematic Executive Style",
@@ -1141,18 +1165,6 @@
         "id": "trapped-inside-spotify"
       },
       {
-        "title": "Low-Poly Geometric Portrait — Seni Potret 3D Futuristik",
-        "status": "published",
-        "image": "/assets/uploads/mvzdz7uk-faceted-geometric-portrait-in-blue.jpg",
-        "prompt": "A highly detailed low-poly geometric portrait based on Image 1. The face, hair, and body are recreated using sharp polygonal shapes and faceted surfaces in shades of blue, gray, and purple, similar to digital sculpture art. Lighting is dramatic, with strong contrast and cinematic highlights emphasizing the 3D geometry. The background features abstract angular patterns that complement the low-poly style. Ultra-detailed 3D low-poly illustration, digital painting, cinematic lighting, polygonal textures, 8k render.",
-        "category": "Digital Art, 3D Illustration, Portrait & Avatar",
-        "tool": "LOW-POLY 3D ART",
-        "note": "Gunakan foto referensi wajah yang jelas agar karakter utama tetap mudah dikenali. Ubah wajah, rambut, pakaian, dan latar menjadi bidang-bidang geometris berbentuk segitiga dengan gradasi biru, ungu, dan abu-abu. Tambahkan pencahayaan sinematik untuk menghasilkan efek pahatan digital 3D yang premium.",
-        "slug": "low-poly-geometric-portrait",
-        "date": "2026-11-02",
-        "id": "low-poly-geometric-portrait"
-      },
-      {
         "title": "Hamdani Harfan — Premium Editorial Portrait",
         "status": "published",
         "image": "/assets/uploads/mvzeblip-modern-editorial-portrait-with-vertical-.jpg",
@@ -1163,18 +1175,6 @@
         "slug": "portrait-hamdani-harfan",
         "date": "2026-11-02",
         "id": "portrait-hamdani-harfan"
-      },
-      {
-        "title": "HOT NEWS — Cinematic Burning Newspaper Portrait",
-        "status": "published",
-        "image": "/assets/uploads/mvzegj9r-man-holding-flaming-hot-news-newspaper.jpg",
-        "prompt": "A cinematic, ultra-realistic portrait of a person (based on the uploaded photo) holding an open newspaper titled “HOT NEWS” printed clearly across both pages. The newspaper is on fire from the edges, with vivid orange and yellow flames spreading along the top and sides. Sparks and ashes float through the air while the paper edges curl and burn. The warm light from the fire illuminates the person’s face dramatically, casting soft shadows on one side. Their expression is calm, confident, and slightly intense, symbolizing power and revelation. The background is dark and cinematic, with subtle smoke and glowing embers drifting around. The composition feels like a movie poster — powerful, mysterious, and modern. Ultra-detailed cinematic portrait, HDR lighting, volumetric smoke, realistic fire glow, 8k render, photo-realistic textures, dramatic contrast, color palette of orange, amber, and deep black.\n\n\"A hyper-realistic raw portrait of an Asian man, detailed natural skin texture, visible skin pores, subtle imperfections, vellus hairs, natural skin oils, no airbrushing. Soft natural window lighting, gentle shadows, depth of field. Shot on 85mm lens, f/2.8, professional photography, candid expression, sharp focus, 8k resolution, photorealistic masterpiece.",
-        "category": "Cinematic Portrait, AI Photo Editing, Dramatic Effects",
-        "tool": "HOT NEWS 🔥",
-        "note": "Gunakan foto referensi wajah agar identitas tetap konsisten. Tambahkan efek api realistis di tepi koran, bara beterbangan, asap dramatis, serta pencahayaan oranye dari api. Pertahankan tekstur kulit alami dan detail wajah. Pastikan tulisan “HOT NEWS” terlihat jelas.",
-        "slug": "hot-news-burning-newspaper",
-        "date": "2026-11-02",
-        "id": "hot-news-burning-newspaper"
       },
       {
         "title": "Creative Workspace — Melayang Sambil Bekerja dengan Laptop",
