@@ -1331,6 +1331,18 @@
         "slug": "ai-action-figure-starter-pack-personal-edition",
         "date": "2026-11-03",
         "id": "ai-action-figure-starter-pack-personal-edition"
+      },
+      {
+        "title": "Extreme Skydiving Adventure — Cinematic AI Photo",
+        "status": "published",
+        "image": "/assets/uploads/mw0n70f9-skydiver-beneath-a-colorful-canopy.jpg",
+        "prompt": "A highly realistic and cinematic scene of a person skydiving with a parachute, captured mid-air above the clouds. The person’s face is accurately based on the uploaded reference photo, preserving facial identity, skin texture, and natural expression without distortion.\n\nThe person is wearing a professional skydiving harness and jumpsuit, arms spread wide in a dynamic freefall pose, conveying excitement, freedom, and adrenaline. Protective goggles are worn, slightly reflective, adding realism and depth.\n\nThe parachute canopy is fully deployed above, with detailed ropes and fabric tension visible. Below, a vast aerial landscape of fields, roads, and clouds stretches into the horizon under a bright blue sky.\n\nShot from a wide-angle action camera perspective, dramatic depth of field, natural daylight, realistic motion, cinematic composition.\n\nUltra-detailed, photorealistic style, 8K resolution, sharp focus, realistic proportions, dynamic movement, no cartoon style, no watermark, no text.",
+        "category": "AI Image Editing, Skydiving, Adventure, Extreme Sports, Cinematic Photography, Character Consistency",
+        "tool": "Unggah character reference sheet sebagai referensi wajah utama. Gunakan rasio vertikal 3:4 untuk hasil yang cocok bagi Instagram Reels cover, TikTok, dan Shorts. Periksa detail harness, tali parasut, tangan, dan wajah setelah gambar dihasilkan.",
+        "note": "Unggah character reference sheet sebagai referensi wajah utama. Gunakan rasio vertikal 3:4 untuk hasil yang cocok bagi Instagram Reels cover, TikTok, dan Shorts. Periksa detail harness, tali parasut, tangan, dan wajah setelah gambar dihasilkan.",
+        "slug": "extreme-skydiving-adventure-ai-photo",
+        "date": "2026-11-03",
+        "id": "extreme-skydiving-adventure-ai-photo"
       }
     ]
   }
