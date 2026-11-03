@@ -1355,6 +1355,30 @@
         "slug": "sonic-identity-waveform-portrait",
         "date": "2026-11-03",
         "id": "sonic-identity-waveform-portrait"
+      },
+      {
+        "title": "Neo-Expressionist Street Art Portrait — Bold Identity",
+        "status": "published",
+        "image": "/assets/uploads/mw0ni4lc-neo-expressionist-graffiti-portrait.jpg",
+        "prompt": "Create a bold neo-expressionist street-art portrait of the person in the uploaded reference photo. Preserve the person's recognizable facial identity, facial proportions, spiky black hairstyle, eyebrows, eyes, nose, lips, skin tone, and natural expression. Render the portrait with expressive hand-painted brushstrokes, rough black outlines, layered acrylic paint, chalk marks, crayon textures, distressed surfaces, and dramatic color blocking. Use vivid primary colors: electric blue, fiery red, bright yellow, black, and white. Dress the subject in a sharp navy-blue suit, white shirt, and burgundy patterned tie inspired by the reference photograph. Set the portrait against a weathered urban concrete wall filled with expressive graffiti, abstract symbols, crowns, stars, lightning bolts, skull illustrations, paint splashes, scribbles, and energetic brush marks. Create a powerful composition with confident expression, dynamic visual rhythm, imperfect handmade textures, strong contrast, and an iconic contemporary street-art aesthetic. Highly detailed facial features, tactile paint texture, dramatic lighting, sharp focus, premium art-poster quality, vertical 3:4 composition. Maintain character consistency with the reference image. No photorealistic skin rendering that removes the painted effect, no distorted facial anatomy, no extra limbs, no watermark, no unintended typography.",
+        "category": "Neo-Expressionism, Street Art, Graffiti Portrait, AI Image Editing, Acrylic Painting, Urban Art, Character Consistency",
+        "tool": "ChatGPT Images, Gemini, AI Image Generator",
+        "note": "Gunakan foto referensi wajah sebagai acuan utama. Pertahankan gaya rambut dan ciri wajah asli, tetapi gunakan sapuan cat kasar, outline hitam tegas, serta kombinasi merah, biru, kuning, hitam, dan putih. Cocok untuk poster personal branding, artwork profil, sampul digital, dan konten media sosial.",
+        "slug": "neo-expressionist-street-art-portrait",
+        "date": "2026-11-03",
+        "id": "neo-expressionist-street-art-portrait"
+      },
+      {
+        "title": "",
+        "status": "draft",
+        "image": "",
+        "prompt": "",
+        "category": "",
+        "tool": "",
+        "note": "",
+        "slug": "app",
+        "date": "2026-11-03",
+        "id": "app"
       }
     ]
   }
