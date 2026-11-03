@@ -1259,6 +1259,18 @@
         "slug": "pop-art-comic-ekspresi-karakter",
         "date": "2026-11-02",
         "id": "pop-art-comic-ekspresi-karakter"
+      },
+      {
+        "title": "AI Virtual Try-On — Coba Outfit Futuristik dengan Augmented Reality",
+        "status": "published",
+        "image": "/assets/uploads/mw0mfs9x-futuristic-holographic-suit-fitting.jpg",
+        "prompt": "A cinematic, ultra-realistic image showing a person (based on the uploaded photo) standing in front of a futuristic holographic display while trying on virtual clothes in augmented reality. The person’s body is surrounded by a glowing 3D hologram projection of fashionable outfits that shift and change in real time. Transparent holographic panels float around, showing fabric textures, colors, and size options. The environment looks like a modern smart home or minimalist shopping studio with neon-blue lighting and glass surfaces. The person’s expression shows curiosity and amazement as the holographic clothing fits perfectly on their digital reflection. The atmosphere is sleek, futuristic, and optimistic — symbolizing the future of online fashion. Ultra-detailed sci-fi lighting, volumetric glow, HDR reflections, realistic human skin tone, 8k render, cinematic composition, soft depth of field, high-tech retail aesthetic.",
+        "category": "AI Virtual Try-On — Coba Outfit Futuristik dengan Augmented Reality",
+        "tool": "ChatGPT / Gemini / Midjourney",
+        "note": "Gunakan foto referensi sebagai acuan identitas wajah. Untuk hasil terbaik, gunakan fitur edit gambar dengan foto sumber, bukan hanya membuat gambar baru dari teks. Detail pakaian holografik, panel AR, dan pencahayaan boleh berubah, tetapi identitas karakter harus tetap konsisten.",
+        "slug": "ai-virtual-try-on-augmented-reality",
+        "date": "2026-11-03",
+        "id": "ai-virtual-try-on-augmented-reality"
       }
     ]
   }
