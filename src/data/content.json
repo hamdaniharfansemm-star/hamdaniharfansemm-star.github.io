@@ -1295,6 +1295,18 @@
         "slug": "prompt-edit-foto-karakter-3d-kartun-premium",
         "date": "2026-11-03",
         "id": "prompt-edit-foto-karakter-3d-kartun-premium"
+      },
+      {
+        "title": "Prompt Edit Foto King of Diamonds — Royal Chess Edition",
+        "status": "published",
+        "image": "/assets/uploads/mw0mua8n-king-of-diamonds-chess-portrait.jpg",
+        "prompt": "Use the uploaded photo of the man as the subject. Don't change his original face. Create a stylized portrait of him designed like a “King” playing card. Place him in the center wearing a sporty jacket, standing against a clean red-themed background. The man should pose confidently while holding a single chess king piece toward the viewer. Frame the portrait inside a white playing-card border with red accents, minimalist royal symbols, and subtle text elements. Keep the vibe bold, regal, and iconic, with soft shadows, crisp lighting, and high-resolution detail.",
+        "category": "AI Image Editing, Playing Card, King Portrait, Chess, Royal Design, Digital Art",
+        "tool": "ChatGPT Image Generator, Gemini, Midjourney",
+        "note": "Unggah foto wajah sebagai referensi utama. Gunakan prompt untuk membuat potret bergaya kartu remi King of Diamonds dengan latar merah elegan, bingkai putih, aksen emas, jaket sporty, dan bidak raja catur. Pertahankan ciri wajah, gaya rambut, warna kulit, serta identitas orang pada foto sumber semirip mungkin. Untuk hasil terbaik, gunakan foto yang tajam dan pencahayaan wajah yang jelas.",
+        "slug": "prompt-edit-foto-king-of-diamonds-royal-chess",
+        "date": "2026-11-03",
+        "id": "prompt-edit-foto-king-of-diamonds-royal-chess"
       }
     ]
   }
