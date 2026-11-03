@@ -1391,6 +1391,18 @@
         "slug": "luminous-wireframe-suit-futuristic-urban-portrait",
         "date": "2026-11-03",
         "id": "luminous-wireframe-suit-futuristic-urban-portrait"
+      },
+      {
+        "title": "Abstract Scribble Ink Portrait — Artistic Identity",
+        "status": "published",
+        "image": "/assets/uploads/mw0ogl9i-confident-scribble-portrait-in-a-suit.jpg",
+        "prompt": "Create an abstract scribble line art portrait using the uploaded reference photo as the main subject.\n\nThe face, facial structure, skin tone, hairstyle, and identity must remain 100% accurate to the uploaded photo.\n\nThe portrait is drawn entirely using chaotic hand-drawn black ink lines, overlapping and tangled, forming the figure through dense sketch strokes and expressive scribbles.\n\nThe subject is shown from the waist up, standing confidently with arms crossed, calm and thoughtful expression.\n\nThe body, clothing, and shadows are all created using continuous abstract line work, with no solid fills, only layered lines suggesting form and depth.\n\nBlack ink on a pure white background, high contrast, minimalistic composition.\n\nArtistic style inspired by contemporary abstract sketch art, emotional, raw, and expressive.\n\nUltra-detailed line density on the face, slightly looser lines on the body for artistic balance.\n\nNo color, no text, no background elements, no realism rendering, no shading gradients, no watermark.",
+        "category": "Seni abstrak, black ink sketch, scribble art, portrait illustration, character consistency, monochrome art.",
+        "tool": "ChatGPT / Gemini / Midjourney   Salin",
+        "note": "Gunakan foto referensi asli untuk mempertahankan identitas wajah, bentuk mata, hidung, bibir, gaya rambut, dan struktur wajah. Seluruh potret dibuat dari coretan tinta hitam yang saling bertumpuk, dengan detail wajah rapat, jas formal, posisi tangan menyilang, dan latar putih bersih.",
+        "slug": "abstract-scribble-ink-portrait",
+        "date": "2026-11-03",
+        "id": "abstract-scribble-ink-portrait"
       }
     ]
   }
