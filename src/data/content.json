@@ -1369,14 +1369,14 @@
         "id": "neo-expressionist-street-art-portrait"
       },
       {
-        "title": "",
-        "status": "draft",
-        "image": "",
-        "prompt": "",
-        "category": "",
-        "tool": "",
-        "note": "",
-        "slug": "app",
+        "title": "The Light of Ramadan — A Portrait of Peace",
+        "status": "published",
+        "image": "/assets/uploads/mw0o1b4l-warm-lantern-portrait-on-a-prayer-rug.jpg",
+        "prompt": "A realistic studio portrait of a man based on the uploaded reference photo. Don't change his original face. He is wearing white Middle Eastern traditional clothing, sitting cross-legged while holding a glowing Ramadan lantern. Warm soft lighting with the lantern as the main light source, creating a peaceful and spiritual Ramadan atmosphere. Clean minimal light background, professional photography, sharp facial details, realistic fabric texture, cinematic look, soft shadows, high resolution.",
+        "category": "Ramadan, spiritualitas, busana tradisional Timur Tengah, dan cinematic portrait photography.",
+        "tool": "chatgpt",
+        "note": "Potret realistis dengan wajah karakter tetap konsisten, mengenakan pakaian putih tradisional sambil memegang lentera Ramadan bercahaya keemasan.",
+        "slug": "the-light-of-ramadan",
         "date": "2026-11-03",
         "id": "app"
       }
