@@ -1307,6 +1307,18 @@
         "slug": "prompt-edit-foto-king-of-diamonds-royal-chess",
         "date": "2026-11-03",
         "id": "prompt-edit-foto-king-of-diamonds-royal-chess"
+      },
+      {
+        "title": "Cinematic Night Camping with a Friendly Sun Bear",
+        "status": "draft",
+        "image": "/assets/uploads/mw0mxpvw-moonlit-camping-with-a-friendly-bear.jpg",
+        "prompt": "A cinematic, ultra-realistic night scene of a person camping deep in the forest. The person’s face is based on the uploaded photo, wearing outdoor camping clothes, sitting beside a warm glowing campfire. Next to them sits a friendly sun bear (beruang madu), calm and gentle, illuminated by the firelight. The camp is surrounded by tall pine trees, soft moonlight, fire sparks drifting upward, and warm orange-blue contrast lighting. A small tent, camping gear, and a kettle above the fire complete the scene. The mood is peaceful, magical, and adventurous. Firelight reflects on the character’s face, showing detail and emotion. Mist between trees, glowing embers, and subtle volumetric light add depth. Hyper-realistic texture, 8k cinematic detail, soft bokeh in the background, no text.",
+        "category": "AI Image Editing / Camping / Wildlife / Cinematic Photography / Adventure",
+        "tool": "ChatGPT Images / Gemini / Midjourney",
+        "note": "Gunakan foto referensi sebagai acuan wajah. Pertahankan ciri wajah, gaya rambut, dan warna kulit semirip mungkin. Sesuaikan pakaian, pencahayaan, dan latar dengan adegan camping. Beruang madu merupakan elemen visual ilustratif; hasil generatif bukan foto dokumentasi satwa asli.",
+        "slug": "cinematic-night-camping-friendly-sun-bear",
+        "date": "2026-11-03",
+        "id": "cinematic-night-camping-friendly-sun-bear"
       }
     ]
   }
