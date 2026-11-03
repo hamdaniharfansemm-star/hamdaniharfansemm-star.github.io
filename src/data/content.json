@@ -1343,6 +1343,18 @@
         "slug": "extreme-skydiving-adventure-ai-photo",
         "date": "2026-11-03",
         "id": "extreme-skydiving-adventure-ai-photo"
+      },
+      {
+        "title": "Sonic Identity — Waveform Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw0nebvw-neon-soundwave-portrait-of-a-suited-man.jpg",
+        "prompt": "A conceptual and artistic portrait of a person, where the face and silhouette are accurately formed entirely from sound waves and audio waveforms.\n\nThe facial identity is clearly based on the uploaded reference photo, preserving the person’s facial structure, proportions, and recognizable features, but instead of solid skin, the face is constructed from flowing sound waves, frequency lines, and waveform patterns.\n\nThe sound waves vary in thickness and intensity, shaping the eyes, nose, lips, and jawline with precise detail. Some waves appear sharp and energetic, others smooth and calm, creating depth and emotion.\n\nThe background is dark and minimal, allowing the glowing sound waves to stand out. Subtle particles, light pulses, and audio-reactive effects surround the portrait, giving the impression that the image is alive with sound.\n\nColor palette uses neon blues, soft purples, cyan, and white highlights, with gentle glow effects.\n\nCinematic lighting, high contrast, ultra-detailed digital art, modern abstract realism, sharp focus, 8K quality, clean composition, no text, no watermark.",
+        "category": "AI Image Editing, Waveform Portrait, Sound Wave Art, Futuristic Portrait, Neon Art, Digital Art, Character Consistency",
+        "tool": "ChatGPT Images, Gemini, AI Image Generator",
+        "note": "Unggah foto wajah sebagai referensi utama. Gunakan pencahayaan neon biru, cyan, dan ungu dengan latar gelap untuk kontras maksimal. Pastikan garis gelombang membentuk fitur wajah, bukan sekadar menjadi dekorasi di sekelilingnya. Cocok untuk foto profil futuristik, poster kreatif, dan personal branding AI.",
+        "slug": "sonic-identity-waveform-portrait",
+        "date": "2026-11-03",
+        "id": "sonic-identity-waveform-portrait"
       }
     ]
   }
