@@ -1379,6 +1379,18 @@
         "slug": "the-light-of-ramadan",
         "date": "2026-11-03",
         "id": "app"
+      },
+      {
+        "title": "Luminous Wireframe Suit — Futuristic Urban Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw0o6uao-neon-wireframe-suit-in-the-city.jpg",
+        "prompt": "Create a highly realistic cinematic portrait using the uploaded reference photo as the main subject.\n\nThe person must be the exact same individual from the uploaded photo: keep the face, skin tone, facial structure, eye shape, hairstyle, and identity 100% accurate to the reference image.\n\nThe subject is standing confidently in an urban city street, centered in the frame, with buildings softly blurred in the background (shallow depth of field).\n\nThe clothing appears as a semi-transparent, glowing white line-art sketch, as if hand-drawn with fine luminous strokes, perfectly aligned with the body.\n\nThe sketch outlines blend seamlessly with the realistic photograph, creating a mixed-media effect where realism meets illustration.\n\nSubtle light reflections pass through the sketch lines, giving a futuristic and artistic feel.\n\nCinematic lighting, natural skin texture, soft highlights, gentle shadows, photorealistic face, ultra-detailed, high-resolution, 8K quality.\n\nNo text, no logos, no watermark, no face distortion, no extra people.",
+        "category": "AI Image Editing, Futuristic Fashion, Wireframe Art, Cinematic Portrait, Digital Art, Urban Photography",
+        "tool": "ChatGPT / Gemini / Midjourney",
+        "note": "Pertahankan wajah, identitas, warna kulit, bentuk mata, struktur wajah, dan gaya rambut sesuai foto referensi. Ubah pakaian menjadi sketsa wireframe putih bercahaya dengan garis artistik yang mengikuti bentuk tubuh secara realistis. Gunakan latar kota modern dengan gedung kaca, pencahayaan sinematik, efek bokeh, dan bayangan alami. Pertahankan wajah fotorealistis dengan detail kulit yang tajam, kontras antara garis bercahaya dan latar yang gelap, serta hasil akhir premium seperti poster film futuristik.",
+        "slug": "luminous-wireframe-suit-futuristic-urban-portrait",
+        "date": "2026-11-03",
+        "id": "luminous-wireframe-suit-futuristic-urban-portrait"
       }
     ]
   }
