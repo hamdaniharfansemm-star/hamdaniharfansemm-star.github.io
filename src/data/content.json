@@ -1415,6 +1415,30 @@
         "slug": "last-echo-golden-energy-dissolution",
         "date": "2026-11-03",
         "id": "last-echo-golden-energy-dissolution"
+      },
+      {
+        "title": "Custom Enamel Pin Portrait – Premium Character Merchandise",
+        "status": "published",
+        "image": "/assets/uploads/mw0ool0r-enamel-portrait-pin-on-canvas-tote.jpg",
+        "prompt": "Transform the person from the provided photo into a high-quality enamel pin design, keeping their facial identity recognizable but simplified into clean pin-style illustration. The enamel pin features bold outlines, smooth flat color fills, glossy hard-enamel finish, subtle metal borders, and minimal shading. The pin is securely attached to a fabric bag (tote bag or backpack), with visible pin clasp and realistic scale. Style: collectible enamel pin, modern merchandise aesthetic, cute but premium, polished and professional. Lighting: soft studio lighting highlighting the glossy enamel surface. Focus on the pin as the main subject, with shallow depth of field on the bag background. Ultra-detailed, clean edges, high resolution, product photography quality.",
+        "category": "Enamel Pin, Custom Portrait, Character Illustration, Collectible Merchandise, Product Photography, Premium Accessories.",
+        "tool": "ChatGPT / Gemini / Midjourney",
+        "note": "Gunakan foto referensi sebagai identitas utama. Pertahankan ciri wajah, bentuk mata, hidung, bibir, warna kulit, dan gaya rambut agar karakter tetap mudah dikenali. Ubah karakter menjadi ilustrasi enamel pin dengan garis tegas, warna solid, lapisan glossy, dan bingkai logam emas. Tempatkan pin pada tas kanvas dengan tekstur kain realistis, pencahayaan studio lembut, serta efek depth of field profesional.",
+        "slug": "custom-enamel-pin-portrait",
+        "date": "2026-11-03",
+        "id": "custom-enamel-pin-portrait"
+      },
+      {
+        "title": "",
+        "status": "draft",
+        "image": "",
+        "prompt": "",
+        "category": "",
+        "tool": "",
+        "note": "",
+        "slug": "app",
+        "date": "2026-11-03",
+        "id": "app"
       }
     ]
   }
