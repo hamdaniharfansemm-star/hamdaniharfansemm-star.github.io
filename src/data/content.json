@@ -1579,6 +1579,18 @@
         "slug": "premium-monochrome-3d-character-sculpt",
         "date": "2026-11-03",
         "id": "premium-monochrome-3d-character-sculpt"
+      },
+      {
+        "title": "Foto Realistis & Sketsa Pensil – Creative Notebook Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw2av38s-half-photo-half-pencil-portrait.jpg",
+        "prompt": "Create a high-resolution creative portrait using the uploaded reference photo as the main subject.\n\nThe face, facial features, hairstyle, skin tone, age, and identity must remain 100% accurate and clearly recognizable from the uploaded photo, with no alteration to facial structure.\n\nThe subject is wearing the same outfit style as shown in the reference concept image: a soft pastel two-tone hoodie (light blue and pink tones) and round eyeglasses. Clothing must remain consistent with this style.\n\nThe image is split vertically down the center:\n\nThe left half is a realistic photograph of the person holding a pen near their face. The right half is a clean black-and-white hand-drawn sketch version of the same person, matching perfectly in position and expression.\n\nBackground: lined notebook paper texture (like school notebook pages) with light blue horizontal lines and a red margin line on the left.\n\nAround the subject, add cute doodle elements in black ink such as hearts, stars, smiley faces, arrows, paper airplanes, and simple Korean handwritten words like “안녕” and “사랑해”.\n\nLighting: soft studio lighting, bright and clean, natural skin tones.\n\nStyle: ultra-clean, creative social media aesthetic, sharp detail, high resolution, modern minimal composition.\n\nMood: playful, artistic, youthful, cute.\n\nNo watermark, no extra logos.",
+        "category": "AI Portrait / Creative Photography / Sketch Art / Notebook Design",
+        "tool": "ChatGPT / Gemini / AI Image Generator",
+        "note": "Upload foto wajah dari depan dengan pencahayaan yang baik. Gunakan foto referensi yang jelas agar karakter tetap konsisten. Hasil terbaik menggunakan foto beresolusi tinggi. Cocok untuk foto profil, konten Instagram, dan personal branding.",
+        "slug": "creative-notebook-split-portrait-sketch",
+        "date": "2026-11-04",
+        "id": "creative-notebook-split-portrait-sketch"
       }
     ]
   }
