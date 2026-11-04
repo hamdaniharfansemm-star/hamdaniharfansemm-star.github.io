@@ -1663,6 +1663,18 @@
         "slug": "cinematic-gambler-red-noir-luxury-portrait",
         "date": "2026-11-04",
         "id": "cinematic-gambler-red-noir-luxury-portrait"
+      },
+      {
+        "title": "Perfect Reflection – Luxury Symmetrical Editorial Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw2c22fx-mirrored-gentleman-with-card-suits.jpg",
+        "prompt": "Create a minimalist, high-fashion portrait using the provided photo of the man as the subject. The composition features the man seated at a reflective surface, wearing a tailored neutral-toned suit (brown or beige) with a tie, styled in a modern editorial look.\n\nThe image should have a perfectly symmetrical reflection beneath him, as if mirrored on a glossy black surface or flipped vertically, creating a dual composition (top and inverted bottom reflection aligned seamlessly).\n\nBackground should be clean, soft beige or off-white, with a minimal aesthetic. Add subtle graphic elements like small black playing card symbols (spade and heart) placed in opposite corners to enhance the concept.\n\nEnsure:\n\nThe subject’s face matches the provided photo exactly\n\nStrong symmetry and centered composition\n\nSharp focus, ultra-realistic detail\n\nSoft studio lighting with gentle shadows\n\nEditorial fashion photography style (magazine quality)\n\nCalm, confident facial expression\n\nClean color palette (earth tones, black accents)\n\nAspect ratio: 4:5 or 9:16\nStyle: photorealistic, minimalist, luxury editorial, symmetrical composition\n\nAI Tool:\nChatGPT-Image",
+        "category": "Perfect Reflection – Luxury Symmetrical Editorial Portrait",
+        "tool": "ChatGPT-Image / GPT-Image / Gemini / AI Image Generator",
+        "note": "Gunakan foto portrait dari depan dengan wajah terlihat jelas. Pilih foto dengan pencahayaan baik untuk mendapatkan kemiripan wajah yang optimal. Prompt ini menciptakan portrait editorial premium dengan jas elegan, pantulan simetris, meja reflektif hitam, dan simbol kartu minimalis. Cocok untuk personal branding, foto profil profesional, fashion poster, dan konten media sosial.",
+        "slug": "perfect-reflection-luxury-symmetrical-editorial-portrait",
+        "date": "2026-11-04",
+        "id": "perfect-reflection-luxury-symmetrical-editorial-portrait"
       }
     ]
   }
