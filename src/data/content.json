@@ -1639,6 +1639,18 @@
         "slug": "cinematic-fashion-editorial-9-angle-portrait",
         "date": "2026-11-04",
         "id": "cinematic-fashion-editorial-9-angle-portrait"
+      },
+      {
+        "title": "Eid Mubarak – Luxury Emerald & Gold Greeting Portrait",
+        "status": "draft",
+        "image": "/assets/uploads/mw2boied-elegant-eid-greeting-with-golden-lantern.jpg",
+        "prompt": "Create a beautiful and heartwarming Eid al-Fitr greeting scene using the uploaded reference photo as the main subject.\n\nThe face, facial features, skin tone, hairstyle, age, and identity must remain 100% identical and clearly recognizable from the uploaded photo.\n\nThe subject is standing gracefully, smiling warmly, with hands gently placed in front in a respectful greeting gesture (slightly bowing), conveying sincerity and kindness.\n\nOutfit: elegant modest Eid clothing, such as a traditional baju koko or kurta for men, or a graceful muslim dress for women, with soft luxurious fabrics and subtle embroidery.\n\nEnvironment: a magical Eid atmosphere with glowing lanterns, crescent moon, mosque silhouettes, and soft golden lights in the background.\n\nAdd decorative Islamic ornaments such as geometric patterns, arabesque details, and hanging lights.\n\nLighting: warm golden hour lighting mixed with soft glowing lights, creating a peaceful and spiritual ambiance.\n\nMood: warm, joyful, forgiving, peaceful, and festive.\n\nInclude elegant text in the scene:\n\n\"Selamat Hari Raya Idul Fitri\"\n\n\"Mohon Maaf Lahir dan Batin\"\n\nStyle: cinematic, soft focus, slightly dreamy, luxury greeting card style.\n\nQuality: ultra-detailed, 8K resolution, sharp focus on subject, beautiful composition.\n\nAI Tool:\nChatGPT-Image",
+        "category": "Eid Mubarak / Islamic Greeting / Religious Celebration / Greeting Card / Muslim Fashion / Luxury Poster",
+        "tool": "ChatGPT-Image / GPT-Image / Gemini / AI Image Generator",
+        "note": "Upload foto portrait dengan wajah terlihat jelas dan pencahayaan yang baik. Gunakan foto dari depan untuk mempertahankan konsistensi wajah. Salin prompt ini ke AI Image Generator untuk membuat kartu ucapan Idul Fitri personal dengan busana Muslim elegan, ornamen Islami, masjid, lentera, dan tipografi emas. Cocok untuk ucapan keluarga, kolega, klien, personal branding, dan konten media sosial.",
+        "slug": "eid-mubarak-luxury-emerald-gold-portrait",
+        "date": "2026-11-04",
+        "id": "eid-mubarak-luxury-emerald-gold-portrait"
       }
     ]
   }
