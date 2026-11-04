@@ -1591,6 +1591,18 @@
         "slug": "creative-notebook-split-portrait-sketch",
         "date": "2026-11-04",
         "id": "creative-notebook-split-portrait-sketch"
+      },
+      {
+        "title": "Cinematic High-Speed Train Portrait – Professional Motion Photography",
+        "status": "published",
+        "image": "/assets/uploads/mw2b7umg-confident-traveler-at-a-modern-station.jpg",
+        "prompt": "A cinematic portrait of a man standing confidently on a train platform while a high-speed train rushes past behind him. The train appears as strong motion blur streaks, emphasizing speed and energy, while the man remains sharp and in focus. His clothes move slightly in the wind created by the passing train. Dramatic lighting, urban atmosphere, shallow depth of field, dynamic motion blur, modern train station environment, cinematic photography, ultra realistic, high detail, 85mm lens, soft background bokeh.\n\nAI Tool:\nGPT-Image",
+        "category": "AI Portrait / Cinematic Photography / Motion Blur / Professional Portrait / Urban Lifestyle",
+        "tool": "GPT-Image / ChatGPT / Gemini / Midjourney",
+        "note": "Gunakan foto referensi dengan wajah terlihat jelas dan pencahayaan baik. Foto formal atau portrait dari depan sangat direkomendasikan. AI akan mengubah suasana menjadi cinematic train station dengan efek kereta berkecepatan tinggi dan motion blur, sementara karakter utama tetap menjadi fokus gambar. Cocok untuk personal branding, foto profil profesional, dan konten media sosial.",
+        "slug": "2026-11-04",
+        "date": "2026-11-04",
+        "id": "2026-11-04"
       }
     ]
   }
