@@ -35,7 +35,27 @@ function readRoute() {
   };
 }
 
+/** Adds html.is-scrolling while the page scrolls (pauses hover effects → no glow trails). */
+function useScrollingClass() {
+  useEffect(() => {
+    const root = document.documentElement;
+    let t = 0;
+    const on = () => {
+      if (!root.classList.contains("is-scrolling")) root.classList.add("is-scrolling");
+      clearTimeout(t);
+      t = setTimeout(() => root.classList.remove("is-scrolling"), 160);
+    };
+    window.addEventListener("scroll", on, { passive: true });
+    return () => {
+      clearTimeout(t);
+      window.removeEventListener("scroll", on);
+      root.classList.remove("is-scrolling");
+    };
+  }, []);
+}
+
 export default function StoreApp() {
+  useScrollingClass();
   const route = useMemo(readRoute, []);
   const products = useMemo(() => visibleProducts(store.products, route.preview), [route.preview]);
   const product = route.slug ? products.find((p) => p.slug === route.slug) : null;
@@ -791,8 +811,8 @@ function ProductDetail({ product: p, all, preview }) {
             {/* Mockup (first on mobile) */}
             <div className="lg:order-2">
               <div className="relative mx-auto max-w-xl">
+                <Badges product={p} className="mb-5 justify-center" />
                 <DeviceMockup product={p} src={images[active] || ""} />
-                <Badges product={p} className="absolute -top-3 left-4 z-10" />
               </div>
               {images.length > 1 && (
                 <ul className="mx-auto mt-6 flex max-w-xl justify-center gap-3 overflow-x-auto pb-1" aria-label="Product images">

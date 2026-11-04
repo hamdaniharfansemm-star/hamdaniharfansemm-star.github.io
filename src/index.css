@@ -389,3 +389,54 @@ input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; appe
 .prompt-track.is-dragging { cursor: grabbing; scroll-snap-type: none; scroll-behavior: auto; user-select: none; }
 .prompt-track.is-dragging * { pointer-events: none; }
 @media (prefers-reduced-motion: reduce) { .prompt-track { scroll-behavior: auto; } }
+
+/* ═════════════ v9 — scroll-safe gold buttons ═════════════
+   1) No live backdrop blur on in-page panels: Firefox repaints blurred glass late while
+      scrolling, so the gold button's glow appeared to "follow"/smear. Panels are now
+      solid navy glass (same look, no blur). Overlays/menus keep their blur.
+   2) While the page scrolls, hover effects are paused, so the button never lights up
+      or keeps glowing just because the cursor passed over it. */
+.glass {
+  backdrop-filter: none; -webkit-backdrop-filter: none;
+  background: linear-gradient(160deg, rgba(23,32,56,.92), rgba(10,16,34,.94));
+}
+.glass-strong {
+  backdrop-filter: none; -webkit-backdrop-filter: none;
+  background: linear-gradient(160deg, rgba(12,19,38,.97), rgba(4,8,22,.97));
+}
+.cta-gold { will-change: auto; }
+html.is-scrolling .cta-gold,
+html.is-scrolling .cta-gold::after,
+html.is-scrolling .cta-glow,
+html.is-scrolling .tilt { transition: none !important; }
+html.is-scrolling .cta-gold:hover { transform: none; filter: none; box-shadow: 0 10px 30px -12px rgba(212,160,23,.55), inset 0 1px 0 rgba(255,255,255,.55); }
+html.is-scrolling .cta-gold:hover::after { transform: translateX(-130%); }
+
+/* ═════════════ v10 — mobile-safe prompt pages ═════════════ */
+/* Safety net: nothing may ever make the page wider than the phone screen
+   (a wide element makes mobile browsers zoom the whole page out). */
+html, body { max-width: 100%; }
+body { overflow-x: hidden; }
+@supports (overflow: clip) { body { overflow-x: clip; } }
+
+/* Prompt sheet transitions (pure CSS — no drag physics that could get stuck) */
+@keyframes prompt-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes prompt-in-right { from { opacity: 0; transform: translate3d(28px,0,0); } to { opacity: 1; transform: none; } }
+@keyframes prompt-in-left { from { opacity: 0; transform: translate3d(-28px,0,0); } to { opacity: 1; transform: none; } }
+@keyframes prompt-sheet-up { from { opacity: 0; transform: translate3d(0,24px,0); } to { opacity: 1; transform: none; } }
+.prompt-fade { animation: prompt-fade .3s cubic-bezier(.22,1,.36,1) both; }
+.prompt-in-right { animation: prompt-in-right .38s cubic-bezier(.22,1,.36,1) both; }
+.prompt-in-left { animation: prompt-in-left .38s cubic-bezier(.22,1,.36,1) both; }
+.prompt-sheet { animation: prompt-sheet-up .4s cubic-bezier(.22,1,.36,1) both; }
+/* Hero collage gently floats */
+@keyframes prompt-float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -6px; } }
+.prompt-float { animation: prompt-float 6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .prompt-fade, .prompt-in-right, .prompt-in-left, .prompt-sheet, .prompt-float { animation: none; }
+}
+
+/* E-book 3D mockup on the product page */
+.book-3d { transform-style: preserve-3d; }
+.book-3d.tilt { transform: perspective(1600px) rotateY(calc(-10deg + var(--ry))) rotateX(calc(3deg + var(--rx))) translate3d(0, var(--lift), 0); }
+@media (hover: none), (pointer: coarse) { .book-3d.tilt { transform: perspective(1600px) rotateY(-8deg) rotateX(2deg) !important; } }
+@media (prefers-reduced-motion: reduce) { .book-3d.tilt { transform: none !important; } }

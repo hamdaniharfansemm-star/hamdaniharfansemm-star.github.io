@@ -27,19 +27,22 @@ const stage = {
   courses: "radial-gradient(90% 80% at 20% 0%, rgba(99,102,241,.40), transparent 60%), radial-gradient(70% 70% at 100% 100%, rgba(34,211,238,.22), transparent 60%)",
 };
 
+/**
+ * Shows the WHOLE image in any frame (portrait, square or landscape) — no cropping.
+ * Empty space is filled with a soft blurred copy of the same image.
+ */
+export function FitImage({ src, alt = "", eager = false, className = "" }) {
+  return (
+    <span className={`relative block h-full w-full overflow-hidden bg-[#0b1224] ${className}`}>
+      <img src={src} alt="" aria-hidden loading={eager ? "eager" : "lazy"} decoding="async" draggable="false" className="pointer-events-none absolute inset-0 h-full w-full scale-125 object-cover opacity-55 blur-2xl" />
+      <img src={src} alt={alt} loading={eager ? "eager" : "lazy"} decoding="async" draggable="false" className="relative h-full w-full object-contain" />
+    </span>
+  );
+}
+
 /** Real cover image when provided; otherwise a clean designed placeholder (never a fake product shot). */
 export function Cover({ product: p, className = "", eager = false, compact = false }) {
-  if (p.coverImage) {
-    return (
-      <img
-        src={p.coverImage}
-        alt={`${p.name} cover`}
-        loading={eager ? "eager" : "lazy"}
-        decoding="async"
-        className={`h-full w-full object-cover ${className}`}
-      />
-    );
-  }
+  if (p.coverImage) return <FitImage src={p.coverImage} alt={`${p.name} cover`} eager={eager} className={className} />;
   const [a, b] = tints[p.category] || tints.templates;
   const Icon = categoryIcon[p.category] || categoryIcon.templates;
   return (
@@ -217,7 +220,7 @@ export function DeviceArt({ product: p }) {
   const screen = <Cover product={p} compact />;
   if (device === "book") {
     return (
-      <div className="device-3d device-book relative h-[74%] aspect-[3/4]">
+      <div className="device-3d device-book relative h-[88%] aspect-[3/4]">
         <div className="absolute inset-y-[3%] -right-[5%] w-[8%] rounded-r-md bg-[repeating-linear-gradient(180deg,#e2e8f0_0_2px,#cbd5e1_2px_3px)] shadow-inner" />
         <div className="relative h-full w-full overflow-hidden rounded-r-lg rounded-l-sm shadow-[12px_18px_40px_-12px_rgba(0,0,0,0.8)] ring-1 ring-white/10">
           {screen}
@@ -229,7 +232,7 @@ export function DeviceArt({ product: p }) {
   }
   if (device === "phone") {
     return (
-      <div className="device-3d relative h-[84%] aspect-[9/19] rounded-[1.6rem] border border-white/15 bg-gradient-to-b from-slate-700 to-slate-950 p-[5px] shadow-[14px_22px_44px_-14px_rgba(0,0,0,0.85)]">
+      <div className="device-3d relative h-[96%] aspect-[9/19] rounded-[1.6rem] border border-white/15 bg-gradient-to-b from-slate-700 to-slate-950 p-[5px] shadow-[14px_22px_44px_-14px_rgba(0,0,0,0.85)]">
         <div className="relative h-full w-full overflow-hidden rounded-[1.25rem] bg-slate-950">
           {screen}
           <span className="absolute left-1/2 top-1.5 h-1.5 w-10 -translate-x-1/2 rounded-full bg-black/80" />
@@ -309,7 +312,7 @@ export function ProductCard({ product: p, index = 0, preview = false, inView = t
           <a href={href} tabIndex={-1} aria-hidden className="relative block aspect-[5/4] overflow-hidden rounded-t-[1.75rem]" style={{ background: `${stage[p.category] || stage.blueprints}, #0b1224` }}>
             <div className="bg-code-grid absolute inset-0 opacity-40 [mask-image:radial-gradient(ellipse_at_center,black_10%,transparent_70%)]" />
             <div className="absolute inset-x-[18%] bottom-[8%] h-[10%] rounded-[50%] bg-black/50 blur-xl" />
-            <div className="absolute inset-0 grid place-items-center">
+            <div className="absolute inset-x-0 bottom-[6%] top-[14%] flex items-center justify-center">
               <DeviceArt product={p} />
             </div>
             <Badges product={p} className="absolute left-4 top-4 max-w-[60%]" />

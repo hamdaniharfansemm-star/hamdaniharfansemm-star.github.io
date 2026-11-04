@@ -30,6 +30,11 @@ const ShareIcon = (p) => (
     <path d="M5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5" />
   </svg>
 );
+const ExpandIcon = (p) => (
+  <svg width="14" height="14" {...ico} {...p}>
+    <path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7" />
+  </svg>
+);
 const GridIcon = (p) => (
   <svg width="15" height="15" {...ico} {...p}>
     <rect x="4" y="4" width="7" height="7" rx="1.5" />
@@ -136,7 +141,7 @@ export function PromptMiniCard({ prompt: p, onOpen, onToast, focused = false, ea
             loading={eager ? "eager" : "lazy"}
             decoding="async"
             draggable="false"
-            className="h-full w-full object-cover transition-transform duration-[1.2s] ease-[cubic-bezier(.22,1,.36,1)] [@media(hover:hover)]:group-hover:scale-[1.04]"
+            className="h-full w-full object-cover object-[50%_20%] transition-transform duration-[1.2s] ease-[cubic-bezier(.22,1,.36,1)] [@media(hover:hover)]:group-hover:scale-[1.04]"
           />
         ) : (
           <div className="grid h-full w-full place-items-center bg-[radial-gradient(circle_at_30%_20%,rgba(124,58,237,.35),transparent_55%),radial-gradient(circle_at_75%_80%,rgba(245,196,81,.18),transparent_50%)]">
@@ -285,7 +290,7 @@ export function PromptCarousel({ title, kicker, items, onOpen, onToast, focusSlu
   const showNav = !(state.start && state.end);
 
   return (
-    <div className="relative">
+    <div className="relative min-w-0 max-w-full">
       <div className="mb-4 flex items-end justify-between gap-3">
         <div className="min-w-0">
           {kicker && <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-amber-300/90">{kicker}</p>}
@@ -317,7 +322,7 @@ export function PromptCarousel({ title, kicker, items, onOpen, onToast, focusSlu
         onPointerUp={endDrag}
         onPointerLeave={endDrag}
         aria-label={title || "Prompt"}
-        className="prompt-track no-scrollbar -mx-5 flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-px-5 px-5 pb-2 sm:mx-0 sm:gap-4 sm:scroll-px-0 sm:px-0 lg:gap-5"
+        className="prompt-track no-scrollbar -mx-5 flex min-w-0 snap-x snap-mandatory gap-3 overflow-x-auto scroll-px-5 px-5 pb-2 sm:mx-0 sm:gap-4 sm:scroll-px-0 sm:px-0 lg:gap-5"
       >
         {items.map((p, i) => (
           <li key={p.slug} className="w-[calc((100%-0.75rem)/2.2)] shrink-0 snap-start sm:w-[calc((100%-2rem)/3)] lg:w-[calc((100%-3.75rem)/4)]">
@@ -341,40 +346,96 @@ export function PromptCarousel({ title, kicker, items, onOpen, onToast, focusSlu
   );
 }
 
-/* ───────── Detail sheet (full prompt, swipe to next/prev) ───────── */
+/* ───────── Detail sheet: full-screen on phones, centred dialog on desktop ─────────
+   Built without drag physics or absolute pop-layout tricks so it can never end up
+   off-screen. Swipe = plain touch events; image tap = full-screen zoom view. */
+function useSwipe(onLeft, onRight) {
+  const start = useRef(null);
+  return {
+    onTouchStart: (e) => {
+      const t = e.touches[0];
+      start.current = { x: t.clientX, y: t.clientY, at: Date.now() };
+    },
+    onTouchEnd: (e) => {
+      const s0 = start.current;
+      start.current = null;
+      if (!s0) return;
+      const t = e.changedTouches[0];
+      const dx = t.clientX - s0.x;
+      const dy = t.clientY - s0.y;
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.4 && Date.now() - s0.at < 800) (dx < 0 ? onLeft : onRight)();
+    },
+  };
+}
+
+function ZoomView({ prompt: p, onClose }) {
+  useEffect(() => {
+    const onKey = (e) => e.key === "Escape" && (e.stopPropagation(), onClose());
+    window.addEventListener("keydown", onKey, true);
+    return () => window.removeEventListener("keydown", onKey, true);
+  }, [onClose]);
+  return (
+    <div role="dialog" aria-modal="true" aria-label={`Gambar penuh: ${p.title}`} className="prompt-fade fixed inset-0 z-[100] flex flex-col bg-black" onClick={onClose}>
+      <div className="flex shrink-0 items-center justify-between gap-3 px-4 py-3 text-white">
+        <p className="min-w-0 truncate text-sm font-semibold">{p.title}</p>
+        <button type="button" onClick={onClose} aria-label="Tutup gambar" className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white/10 hover:bg-white/20">
+          <CloseSmall />
+        </button>
+      </div>
+      <div className="flex min-h-0 flex-1 items-center justify-center p-2 [touch-action:pinch-zoom]">
+        <img src={p.image} alt={`Contoh hasil: ${p.title}`} className="max-h-full max-w-full object-contain" onClick={(e) => e.stopPropagation()} />
+      </div>
+      <p className="shrink-0 pb-[max(1rem,env(safe-area-inset-bottom))] text-center text-xs text-slate-400">Cubit untuk memperbesar · ketuk area gelap untuk menutup</p>
+    </div>
+  );
+}
+
 function PromptSheet({ list, index, onIndex, onClose, onToast, syncUrl = false }) {
   const p = index >= 0 ? list[index] : null;
   const preRef = useRef(null);
   const closeRef = useRef(null);
+  const scrollRef = useRef(null);
   const [copyState, copy] = useCopy();
+  const [zoom, setZoom] = useState(false);
   const [dir, setDir] = useState(0);
   const open = !!p;
+  const many = list.length > 1;
 
   const go = useCallback(
     (d) => {
       if (!list.length) return;
       setDir(d);
+      setZoom(false);
       onIndex((index + d + list.length) % list.length);
     },
     [index, list.length, onIndex]
   );
+  const swipe = useSwipe(() => many && go(1), () => many && go(-1));
 
   useEffect(() => {
     if (!open) return;
+    const html = document.documentElement;
+    const prev = [document.body.style.overflow, html.style.overflow];
     document.body.style.overflow = "hidden";
-    const t = setTimeout(() => closeRef.current?.focus(), 50);
+    html.style.overflow = "hidden";
+    const t = setTimeout(() => closeRef.current?.focus({ preventScroll: true }), 60);
     const onKey = (e) => {
       if (e.key === "Escape") onClose();
-      if (e.key === "ArrowRight") go(1);
-      if (e.key === "ArrowLeft") go(-1);
+      if (e.key === "ArrowRight" && many) go(1);
+      if (e.key === "ArrowLeft" && many) go(-1);
     };
     window.addEventListener("keydown", onKey);
     return () => {
       clearTimeout(t);
-      document.body.style.overflow = "";
+      [document.body.style.overflow, html.style.overflow] = prev;
       window.removeEventListener("keydown", onKey);
     };
-  }, [open, go, onClose]);
+  }, [open, go, onClose, many]);
+
+  // new prompt → back to the top of the sheet
+  useEffect(() => {
+    scrollRef.current?.scrollTo({ top: 0 });
+  }, [p?.slug]);
 
   // keep the address bar shareable: /products/prompts/<slug>/
   useEffect(() => {
@@ -384,139 +445,210 @@ function PromptSheet({ list, index, onIndex, onClose, onToast, syncUrl = false }
     document.title = p ? `${p.title} · Prompt AI · Hamdani Harfan` : `${lib.title || "Prompt AI Siap Pakai"} · Hamdani Harfan`;
   }, [p, syncUrl]);
 
+  if (!open) return null;
+
   const doCopy = async () => onToast(copiedMsg(await copy(p.prompt, preRef.current)));
   const doShare = async () => {
     const r = await sharePrompt(p);
     if (r === "link") onToast("Link prompt tersalin — bagikan ke teman Anda.");
     if (r === "fail") onToast("Link tidak bisa disalin di browser ini.");
   };
-
-  const tags = p ? splitList(p.category) : [];
-  const tools = p ? splitList(p.tool) : [];
+  const tags = splitList(p.category);
+  const tools = splitList(p.tool);
+  const words = wordCount(p.prompt);
+  const anim = dir > 0 ? "prompt-in-right" : dir < 0 ? "prompt-in-left" : "prompt-fade";
 
   return (
-    <AnimatePresence>
-      {open && (
-        <motion.div className="fixed inset-0 z-[90] flex items-end justify-center sm:items-center sm:p-6" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }}>
-          <button type="button" tabIndex={-1} aria-label="Tutup" onClick={onClose} className="absolute inset-0 h-full w-full cursor-default bg-[#020617]/85 backdrop-blur-sm" />
-          <motion.div
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="prompt-sheet-title"
-            initial={{ y: 40, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: 30, opacity: 0 }}
-            transition={{ duration: 0.45, ease: EASE_OUT }}
-            className="relative flex max-h-[94svh] w-full max-w-5xl flex-col overflow-hidden rounded-t-[1.75rem] border border-white/10 bg-[#070c1d] shadow-2xl sm:rounded-[1.75rem] md:grid md:max-h-[88vh] md:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)]"
-          >
-            {/* Image + swipe area */}
-            <div className="relative shrink-0 bg-black md:h-full md:min-h-0">
-              <AnimatePresence initial={false} custom={dir} mode="popLayout">
-                <motion.div
-                  key={p.slug}
-                  custom={dir}
-                  initial={{ opacity: 0, x: dir * 60 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: dir * -60 }}
-                  transition={{ duration: 0.4, ease: EASE_OUT }}
-                  drag={list.length > 1 ? "x" : false}
-                  dragConstraints={{ left: 0, right: 0 }}
-                  dragElastic={0.25}
-                  onDragEnd={(_, info) => {
-                    if (info.offset.x < -60 || info.velocity.x < -400) go(1);
-                    else if (info.offset.x > 60 || info.velocity.x > 400) go(-1);
-                  }}
-                  className="h-[38svh] touch-pan-y sm:h-[46svh] md:h-full"
-                >
-                  {p.image ? (
-                    <img src={p.image} alt={`Contoh hasil: ${p.title}`} draggable="false" className="pointer-events-none h-full w-full select-none object-contain" />
-                  ) : (
-                    <div className="grid h-full place-items-center text-amber-200">
-                      <SparkIcon width={40} height={40} />
-                    </div>
-                  )}
-                </motion.div>
-              </AnimatePresence>
-              {list.length > 1 && (
-                <>
-                  <button type="button" onClick={() => go(-1)} aria-label="Prompt sebelumnya" className="absolute left-3 top-1/2 grid h-10 w-10 -translate-y-1/2 place-items-center rounded-full bg-black/55 text-white backdrop-blur-sm hover:bg-black/75">
-                    <ChevronLeft width={18} height={18} />
-                  </button>
-                  <button type="button" onClick={() => go(1)} aria-label="Prompt berikutnya" className="absolute right-3 top-1/2 grid h-10 w-10 -translate-y-1/2 place-items-center rounded-full bg-black/55 text-white backdrop-blur-sm hover:bg-black/75">
-                    <ChevronIcon width={18} height={18} />
-                  </button>
-                  <span className="absolute bottom-3 left-1/2 -translate-x-1/2 rounded-full bg-black/60 px-3 py-1 font-mono text-[11px] text-white backdrop-blur-sm">
-                    {index + 1} / {list.length}
-                  </span>
-                </>
-              )}
-              <button ref={closeRef} type="button" onClick={onClose} aria-label="Tutup detail" className="absolute right-3 top-3 grid h-10 w-10 place-items-center rounded-full bg-black/60 text-white backdrop-blur-sm hover:bg-black/80">
-                <CloseSmall />
-              </button>
-            </div>
+    <div className="fixed inset-0 z-[90] flex items-stretch justify-center md:items-center md:p-6">
+      <button type="button" tabIndex={-1} aria-label="Tutup" onClick={onClose} className="prompt-fade absolute inset-0 hidden h-full w-full cursor-default bg-[#020617]/85 md:block" />
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="prompt-sheet-title"
+        className="prompt-sheet relative flex h-screen w-full supports-[height:1dvh]:h-[100dvh] flex-col overflow-hidden bg-[#070c1d] md:grid md:h-[88vh] md:max-h-[52rem] md:max-w-5xl md:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] md:grid-rows-[minmax(0,1fr)] md:rounded-[1.75rem] md:border md:border-white/10 md:shadow-2xl"
+      >
+        {/* Top bar (phones) */}
+        <div className="flex shrink-0 items-center justify-between gap-2 border-b border-white/10 bg-[#070c1d]/95 px-3 py-2.5 md:hidden">
+          <button ref={closeRef} type="button" onClick={onClose} className="inline-flex items-center gap-1.5 rounded-full px-3 py-2 text-sm font-semibold text-slate-200 hover:bg-white/10">
+            <ChevronLeft width={16} height={16} /> Kembali
+          </button>
+          {many && (
+            <span className="font-mono text-xs text-slate-400">
+              {index + 1} / {list.length}
+            </span>
+          )}
+          <button type="button" onClick={doShare} aria-label="Bagikan prompt" className="grid h-10 w-10 place-items-center rounded-full text-slate-200 hover:bg-white/10">
+            <ShareIcon />
+          </button>
+        </div>
 
-            {/* Details */}
-            <div className="flex min-h-0 flex-1 flex-col">
-              <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-5 pb-4 pt-5 sm:px-7 sm:pt-7">
-                {tags.length > 0 && (
-                  <ul className="flex flex-wrap gap-1.5" aria-label="Topik">
-                    {tags.map((t) => (
-                      <li key={t} className="rounded-full border border-amber-300/25 bg-amber-300/10 px-2.5 py-1 text-[10.5px] font-semibold text-amber-100">
-                        {t}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-                <h2 id="prompt-sheet-title" className="mt-3 font-display text-2xl font-bold leading-tight text-white sm:text-[1.7rem]">
-                  {p.title}
-                </h2>
-                <dl className="mt-3 grid grid-cols-2 gap-2 text-xs">
-                  <div className="rounded-xl border border-white/[0.07] bg-white/[0.03] px-3 py-2">
-                    <dt className="text-slate-500">Dipakai di</dt>
-                    <dd className="mt-0.5 font-semibold text-slate-200">{tools.length ? tools.join(", ") : "AI apa saja"}</dd>
-                  </div>
-                  <div className="rounded-xl border border-white/[0.07] bg-white/[0.03] px-3 py-2">
-                    <dt className="text-slate-500">Panjang prompt</dt>
-                    <dd className="mt-0.5 font-semibold text-slate-200">
-                      {wordCount(p.prompt)} kata · {String(p.prompt).length} karakter
-                    </dd>
-                  </div>
-                </dl>
-                {p.note && <p className="mt-3 text-sm leading-relaxed text-slate-400">{p.note}</p>}
-                <div className="mt-4 overflow-hidden rounded-2xl border border-white/10 bg-[#030611]">
-                  <div className="flex items-center justify-between border-b border-white/5 px-4 py-2">
-                    <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500">Prompt lengkap</span>
-                    <button type="button" onClick={doCopy} className={`inline-flex items-center gap-1.5 rounded-lg px-2 py-1 text-[11px] font-semibold ${copyState === "done" ? "text-emerald-300" : "text-slate-300 hover:bg-white/5 hover:text-white"}`}>
-                      {copyState === "done" ? <CheckIcon width={14} height={14} /> : <CopyIcon width={14} height={14} />}
-                      {copyState === "done" ? "Tersalin" : "Salin"}
-                    </button>
-                  </div>
-                  <pre ref={preRef} className="whitespace-pre-wrap break-words px-4 py-3 font-mono text-[12.5px] leading-relaxed text-slate-200 selection:bg-amber-300/30">
-                    {p.prompt}
-                  </pre>
-                </div>
-              </div>
-              {/* sticky actions */}
-              <div className="grid shrink-0 grid-cols-[1fr_auto] gap-2.5 border-t border-white/10 bg-[#070c1d] px-5 py-3.5 pb-[max(0.875rem,env(safe-area-inset-bottom))] sm:px-7">
-                <button
-                  type="button"
-                  onClick={doCopy}
-                  className={`inline-flex items-center justify-center gap-2 rounded-full px-5 py-3.5 text-sm font-bold transition-[background,box-shadow] duration-300 ${copyState === "done" ? "bg-emerald-400 text-slate-950" : "cta-gold text-slate-950"}`}
-                >
-                  <span className="relative z-10 inline-flex items-center gap-2">
-                    {copyState === "done" ? <CheckIcon /> : <CopyIcon />}
-                    {copyState === "done" ? "Tersalin!" : copyState === "manual" ? "Tekan lama teks untuk salin" : "Copy Prompt"}
-                  </span>
-                </button>
-                <button type="button" onClick={doShare} aria-label="Bagikan prompt" className="grid w-12 place-items-center rounded-full border border-white/15 text-slate-200 hover:border-white/40 hover:text-white">
-                  <ShareIcon />
-                </button>
-              </div>
+        {/* Image */}
+        <div className="relative hidden bg-black md:block md:h-full md:min-h-0">
+          <SheetImage p={p} anim={anim} onZoom={() => setZoom(true)} swipe={swipe} many={many} go={go} index={index} total={list.length} desktop />
+          <button type="button" onClick={onClose} aria-label="Tutup detail" className="absolute right-3 top-3 grid h-10 w-10 place-items-center rounded-full bg-black/60 text-white hover:bg-black/80">
+            <CloseSmall />
+          </button>
+        </div>
+
+        {/* Scrollable content */}
+        <div className="flex min-h-0 flex-1 flex-col md:h-full">
+          <div ref={scrollRef} className="min-h-0 flex-1 overflow-y-auto overscroll-contain">
+            <div className="bg-black md:hidden">
+              <SheetImage p={p} anim={anim} onZoom={() => setZoom(true)} swipe={swipe} many={many} go={go} index={index} total={list.length} />
             </div>
-          </motion.div>
-        </motion.div>
+            <div key={p.slug} className={`${anim} px-5 pb-6 pt-5 sm:px-7 sm:pt-7`}>
+              {tags.length > 0 && (
+                <ul className="flex flex-wrap gap-1.5" aria-label="Topik">
+                  {tags.map((t) => (
+                    <li key={t} className="rounded-full border border-amber-300/25 bg-amber-300/10 px-2.5 py-1 text-[10.5px] font-semibold text-amber-100">
+                      {t}
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <h2 id="prompt-sheet-title" className="mt-3 font-display text-[1.6rem] font-bold leading-tight text-white sm:text-[1.75rem]">
+                {p.title}
+              </h2>
+              <dl className="mt-4 grid grid-cols-3 gap-2 text-[11px]">
+                <div className="rounded-xl border border-white/[0.07] bg-white/[0.03] px-3 py-2.5">
+                  <dt className="text-slate-500">Dipakai di</dt>
+                  <dd className="mt-0.5 line-clamp-2 font-semibold text-slate-200">{tools.length ? tools.join(", ") : "AI apa saja"}</dd>
+                </div>
+                <div className="rounded-xl border border-white/[0.07] bg-white/[0.03] px-3 py-2.5">
+                  <dt className="text-slate-500">Panjang</dt>
+                  <dd className="mt-0.5 font-semibold text-slate-200">{words} kata</dd>
+                </div>
+                <div className="rounded-xl border border-emerald-300/20 bg-emerald-300/[0.06] px-3 py-2.5">
+                  <dt className="text-emerald-300/80">Harga</dt>
+                  <dd className="mt-0.5 font-semibold text-emerald-200">Gratis</dd>
+                </div>
+              </dl>
+              {p.note && <p className="mt-4 text-sm leading-relaxed text-slate-400">{p.note}</p>}
+
+              <div className="mt-5 overflow-hidden rounded-2xl border border-white/10 bg-[#030611]">
+                <div className="flex items-center justify-between border-b border-white/5 px-4 py-2">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500">Prompt lengkap</span>
+                  <button type="button" onClick={doCopy} className={`inline-flex items-center gap-1.5 rounded-lg px-2 py-1 text-[11px] font-semibold ${copyState === "done" ? "text-emerald-300" : "text-slate-300 hover:bg-white/5 hover:text-white"}`}>
+                    {copyState === "done" ? <CheckIcon width={14} height={14} /> : <CopyIcon width={14} height={14} />}
+                    {copyState === "done" ? "Tersalin" : "Salin"}
+                  </button>
+                </div>
+                <pre ref={preRef} className="whitespace-pre-wrap break-words px-4 py-3 font-mono text-[12.5px] leading-relaxed text-slate-200 selection:bg-amber-300/30">
+                  {p.prompt}
+                </pre>
+              </div>
+
+              <ol className="mt-5 grid gap-2 text-xs text-slate-400 sm:grid-cols-3">
+                {["Ketuk Copy Prompt", "Buka ChatGPT / Gemini (unggah foto bila diminta)", "Tempel prompt, kirim, selesai"].map((t, k) => (
+                  <li key={t} className="flex items-start gap-2 rounded-xl bg-white/[0.03] px-3 py-2.5">
+                    <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-amber-300 text-[10px] font-bold text-slate-950">{k + 1}</span>
+                    {t}
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
+
+          {/* Sticky actions */}
+          <div className="grid shrink-0 grid-cols-[1fr_auto] gap-2.5 border-t border-white/10 bg-[#070c1d] px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-7">
+            <button
+              type="button"
+              onClick={doCopy}
+              className={`inline-flex items-center justify-center gap-2 rounded-full px-5 py-3.5 text-sm font-bold transition-[background,box-shadow] duration-300 ${copyState === "done" ? "bg-emerald-400 text-slate-950" : "cta-gold text-slate-950"}`}
+            >
+              <span className="relative z-10 inline-flex items-center gap-2">
+                {copyState === "done" ? <CheckIcon /> : <CopyIcon />}
+                {copyState === "done" ? "Tersalin!" : copyState === "manual" ? "Tekan lama teks untuk salin" : "Copy Prompt"}
+              </span>
+            </button>
+            {many ? (
+              <button type="button" onClick={() => go(1)} aria-label="Prompt berikutnya" className="inline-flex items-center gap-1 rounded-full border border-white/15 px-4 text-sm font-semibold text-slate-200 hover:border-white/40 hover:text-white">
+                <span className="hidden sm:inline">Berikutnya</span>
+                <ChevronIcon width={16} height={16} />
+              </button>
+            ) : (
+              <button type="button" onClick={doShare} aria-label="Bagikan prompt" className="grid w-12 place-items-center rounded-full border border-white/15 text-slate-200 hover:border-white/40 hover:text-white">
+                <ShareIcon />
+              </button>
+            )}
+          </div>
+        </div>
+      </div>
+      {zoom && p.image && <ZoomView prompt={p} onClose={() => setZoom(false)} />}
+    </div>
+  );
+}
+
+function SheetImage({ p, anim, onZoom, swipe, many, go, index, total, desktop = false }) {
+  return (
+    <div className={`relative overflow-hidden ${desktop ? "h-full" : ""}`} {...swipe}>
+      {p.image ? (
+        <button type="button" onClick={onZoom} aria-label="Lihat gambar penuh" className={`group block w-full ${desktop ? "absolute inset-0 flex items-center justify-center" : "relative"}`}>
+          <img key={p.slug} src={p.image} alt="" aria-hidden className="pointer-events-none absolute inset-0 h-full w-full scale-125 object-cover opacity-40 blur-2xl" />
+          <img
+            key={`${p.slug}-main`}
+            src={p.image}
+            alt={`Contoh hasil: ${p.title}`}
+            draggable="false"
+            className={`${anim} relative mx-auto block w-auto max-w-full select-none object-contain ${desktop ? "max-h-full" : "max-h-[62vh] supports-[height:1svh]:max-h-[62svh]"}`}
+          />
+          <span className="absolute bottom-3 right-3 inline-flex items-center gap-1.5 rounded-full bg-black/60 px-2.5 py-1.5 text-[11px] font-semibold text-white">
+            <ExpandIcon /> Perbesar
+          </span>
+        </button>
+      ) : (
+        <div className="grid h-56 place-items-center text-amber-200">
+          <SparkIcon width={40} height={40} />
+        </div>
       )}
-    </AnimatePresence>
+      {many && (
+        <>
+          <button type="button" onClick={() => go(-1)} aria-label="Prompt sebelumnya" className="absolute left-2 top-1/2 grid h-10 w-10 -translate-y-1/2 place-items-center rounded-full bg-black/55 text-white hover:bg-black/75">
+            <ChevronLeft width={18} height={18} />
+          </button>
+          <button type="button" onClick={() => go(1)} aria-label="Prompt berikutnya" className="absolute right-2 top-1/2 grid h-10 w-10 -translate-y-1/2 place-items-center rounded-full bg-black/55 text-white hover:bg-black/75">
+            <ChevronIcon width={18} height={18} />
+          </button>
+          {desktop && (
+            <span className="absolute bottom-3 left-3 rounded-full bg-black/60 px-3 py-1 font-mono text-[11px] text-white">
+              {index + 1} / {total}
+            </span>
+          )}
+        </>
+      )}
+    </div>
+  );
+}
+
+/* ───────── Hero collage of the latest results ───────── */
+function HeroCollage({ items, onOpen }) {
+  if (!items.length) return null;
+  // centre card on top, side cards fanned out behind it
+  const order = items.length === 1 ? [items[0]] : items.length === 2 ? [items[1], items[0]] : [items[1], items[0], items[2]];
+  const look = (k) => {
+    if (order.length === 1) return { x: 0, r: 0, z: 30 };
+    if (order.length === 2) return k === 0 ? { x: -38, r: -6, z: 10 } : { x: 18, r: 3, z: 30 };
+    return [{ x: -56, r: -7, z: 10 }, { x: 0, r: 0, z: 30 }, { x: 56, r: 7, z: 20 }][k];
+  };
+  return (
+    <div className="relative mx-auto h-48 w-full max-w-sm shrink-0 overflow-x-clip sm:h-60 md:mx-0 md:h-64 md:w-[22rem] md:overflow-visible" aria-label="Contoh hasil terbaru">
+      {order.map((p, k) => {
+        const { x, r, z } = look(k);
+        return (
+          <span key={p.slug} className="absolute inset-y-[4%] left-1/2 aspect-[4/5]" style={{ zIndex: z, transform: `translateX(calc(-50% + ${x}%)) rotate(${r}deg)` }}>
+            <button
+              type="button"
+              onClick={() => onOpen(p)}
+              aria-label={`Lihat prompt: ${p.title}`}
+              className="prompt-float block h-full w-full overflow-hidden rounded-2xl border border-white/15 bg-[#0b1224] shadow-[0_24px_50px_-18px_rgba(0,0,0,.9)] transition-[border-color] duration-500 hover:border-amber-200/60"
+              style={{ animationDelay: `${k * 0.7}s` }}
+            >
+              <img src={p.image} alt="" loading="eager" decoding="async" className="h-full w-full object-cover object-[50%_20%]" />
+            </button>
+          </span>
+        );
+      })}
+    </div>
   );
 }
 
@@ -527,7 +659,7 @@ function PromptUpsell({ preview }) {
   if (!p || (!preview && !isPublished(p))) return null;
   return (
     <motion.aside {...fade()} aria-label="Produk rekomendasi" className="card-navy mx-auto mt-16 grid max-w-5xl items-center gap-6 overflow-hidden rounded-[2rem] p-5 sm:p-7 md:grid-cols-[minmax(0,15rem)_1fr]">
-      <a href={productPath(p)} className="block aspect-[4/3] overflow-hidden rounded-2xl">
+      <a href={productPath(p)} aria-label={p.name} className="block aspect-[4/3] overflow-hidden rounded-2xl">
         <Cover product={p} />
       </a>
       <div className="min-w-0">
@@ -586,7 +718,7 @@ export function PromptLibraryPage({ preview = false, focusSlug = "", source = ""
         ["slide", SlidesIcon, "Geser"],
         ["grid", GridIcon, "Grid"],
       ].map(([v, Icon, label]) => (
-        <button key={v} type="button" onClick={() => setView(v)} aria-pressed={view === v} className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold transition-colors ${view === v ? "bg-white text-slate-950" : "text-slate-400 hover:text-white"}`}>
+        <button key={v} type="button" onClick={() => setView(v)} aria-pressed={view === v} aria-label={`Tampilan ${label}`} className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold transition-colors ${view === v ? "bg-white text-slate-950" : "text-slate-400 hover:text-white"}`}>
           <Icon /> <span className="hidden sm:inline">{label}</span>
         </button>
       ))}
@@ -626,13 +758,16 @@ export function PromptLibraryPage({ preview = false, focusSlug = "", source = ""
                 {lib.intro || "Lihat contoh hasilnya, salin prompt-nya dengan satu ketukan, lalu tempel di ChatGPT, Gemini, atau aplikasi AI favorit Anda."}
               </motion.p>
             </div>
-            {all.length > 0 && (
-              <p className="font-mono text-xs text-slate-500 md:text-right">
-                <span className="font-display text-3xl font-bold text-white">{all.length}</span> prompt
-                <br className="hidden md:block" /> {tags.length > 0 && <>· {tags.length} topik</>}
-              </p>
-            )}
+            {all.length > 0 && <HeroCollage items={all.filter((x) => x.image).slice(0, 3)} onOpen={openFrom(all)} />}
           </div>
+
+          {all.length > 0 && (
+            <ul className="mt-6 flex flex-wrap gap-2 text-xs" aria-label="Ringkasan">
+              <li className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-slate-300"><b className="text-white">{all.length}</b> prompt</li>
+              {tags.length > 0 && <li className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-slate-300"><b className="text-white">{tags.length}</b> topik</li>}
+              <li className="rounded-full border border-emerald-300/25 bg-emerald-300/[0.07] px-3 py-1.5 font-semibold text-emerald-200">100% gratis · tanpa daftar</li>
+            </ul>
+          )}
 
           {fromIG && (
             <p className="mt-6 rounded-2xl border border-cyan-300/20 bg-cyan-300/5 px-4 py-3 text-sm text-cyan-50">
@@ -708,7 +843,7 @@ export function PromptLibraryPage({ preview = false, focusSlug = "", source = ""
               {grid(all)}
             </>
           ) : (
-            <div className="grid gap-12">
+            <div className="grid grid-cols-[minmax(0,1fr)] gap-12">
               <PromptCarousel kicker="Terbaru" title="Semua prompt" items={all} onOpen={openFrom(all)} onToast={showToast} focusSlug={focusSlug} action={viewToggle} />
               {rows.map((r) => (
                 <PromptCarousel key={r.tag} kicker="Topik" title={r.tag} items={r.items} onOpen={openFrom(r.items)} onToast={showToast} />

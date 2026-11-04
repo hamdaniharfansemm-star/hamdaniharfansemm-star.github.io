@@ -20,12 +20,11 @@ export function safeSlug(s = "") {
   return (cut.includes("-") ? cut.slice(0, cut.lastIndexOf("-")) : cut).replace(/-+$/g, "");
 }
 
-/** Published prompts (or every prompt in ?preview=1), newest first. Slugs are normalised. */
+/** Published prompts (or every prompt in ?preview=1) in the order set in the admin. Slugs are normalised. */
 export function visiblePrompts(list = [], preview = false) {
   return (Array.isArray(list) ? list : [])
     .map((p) => (p && (p.slug || p.title) ? { ...p, slug: safeSlug(p.slug || p.title) } : p))
-    .filter((p) => p && p.slug && p.title && (preview || isPromptPublished(p)))
-    .sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")));
+    .filter((p) => p && p.slug && p.title && (preview || isPromptPublished(p))); // order = admin order
 }
 
 /** "AI Art / Cinematic Portrait, Space" → ["AI Art", "Cinematic Portrait", "Space"]; "1/7 Scale" stays whole */

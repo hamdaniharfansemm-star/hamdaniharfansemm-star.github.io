@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { fadeUp, spring } from "../lib/motion.js";
-import { checkoutUrlOf, isPublished } from "./catalog.js";
+import { categoryById, checkoutUrlOf, isPublished } from "./catalog.js";
 import { smooth, useTilt } from "./effects.js";
-import { BuyButton, Cover, Price } from "./ProductParts.jsx";
+import { BuyButton, Cover, FitImage, Price } from "./ProductParts.jsx";
 
 export { tFor } from "./i18n.js";
 
@@ -75,11 +75,58 @@ export function Glyph({ name, size = 22, className = "", filled = false }) {
 }
 
 /* ───────── 3D tablet mockup for the product cover ───────── */
+/** Screen shape follows the image (portrait / square / landscape) so nothing gets cropped. */
+function useImageRatio(url) {
+  const [ratio, setRatio] = useState(4 / 3);
+  useEffect(() => {
+    if (!url) return setRatio(4 / 3);
+    let live = true;
+    const img = new Image();
+    img.onload = () => live && img.naturalWidth && setRatio(Math.min(16 / 9, Math.max(3 / 4, img.naturalWidth / img.naturalHeight)));
+    img.src = url;
+    return () => {
+      live = false;
+    };
+  }, [url]);
+  return ratio;
+}
+
+/** E-books: the cover shown as a real 3D book (spine, page edges, shadow) — never cropped. */
+function BookMockup({ product: p, src, className, ratio }) {
+  const ref = useRef(null);
+  useTilt(ref, 4, 0);
+  const img = src || p.coverImage;
+  const r = Math.min(0.85, Math.max(0.6, ratio)); // book proportions
+  return (
+    <div className={`relative mx-auto w-full ${className}`} style={{ maxWidth: `${Math.round(r * 30)}rem`, perspective: "1600px" }}>
+      <div aria-hidden className="absolute inset-x-[4%] bottom-[-4%] h-[12%] rounded-[50%] bg-black/70 blur-2xl" />
+      <div aria-hidden className="absolute inset-[6%] rounded-[2rem] bg-[radial-gradient(closest-side,rgba(245,196,81,0.35),rgba(124,58,237,0.22),transparent)] blur-3xl" />
+      <motion.div initial={{ opacity: 0, y: 32, rotateY: -28 }} animate={{ opacity: 1, y: 0, rotateY: 0 }} transition={smooth(0.15, 1.2)} className="float-soft" style={{ transformStyle: "preserve-3d" }}>
+        <div ref={ref} className="tilt book-3d relative mr-[5%]">
+          {/* page block on the right edge */}
+          <span aria-hidden className="absolute inset-y-[1.2%] -right-[4.5%] w-[5%] rounded-r-[6px] bg-[repeating-linear-gradient(180deg,#f8fafc_0_1.5px,#cbd5e1_1.5px_3px)] shadow-[inset_4px_0_6px_-2px_rgba(0,0,0,.35)]" />
+          <span aria-hidden className="absolute inset-x-[2%] -bottom-[1.6%] h-[2%] rounded-b-[6px] bg-[repeating-linear-gradient(90deg,#e2e8f0_0_1.5px,#cbd5e1_1.5px_3px)]" />
+          <div className="relative overflow-hidden rounded-l-[4px] rounded-r-[10px] shadow-[0_40px_80px_-25px_rgba(0,0,0,.9),0_0_0_1px_rgba(255,255,255,.06)]" style={{ aspectRatio: r }}>
+            {img ? <FitImage src={img} alt={`${p.name} cover`} eager /> : <Cover product={p} eager />}
+            {/* spine & gloss */}
+            <span aria-hidden className="pointer-events-none absolute inset-y-0 left-0 w-[7%] bg-gradient-to-r from-black/55 via-white/15 to-transparent" />
+            <span aria-hidden className="pointer-events-none absolute inset-y-0 left-[7%] w-px bg-black/30" />
+            <span aria-hidden className="pointer-events-none absolute inset-0 bg-[linear-gradient(115deg,rgba(255,255,255,.22)_0%,transparent_30%,transparent_70%,rgba(255,255,255,.06)_100%)]" />
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  );
+}
+
 export function DeviceMockup({ product: p, src = "", className = "" }) {
   const ref = useRef(null);
   useTilt(ref, 3, 0);
+  const ratio = useImageRatio(src || p.coverImage);
+  if (categoryById(p.category)?.device === "book" && (src || p.coverImage)) return <BookMockup product={p} src={src} className={className} ratio={ratio} />;
+  const portrait = ratio < 0.95;
   return (
-    <div className={`relative ${className}`} style={{ perspective: "1400px" }}>
+    <div className={`relative mx-auto w-full ${className}`} style={{ perspective: "1400px", maxWidth: portrait ? `${Math.round(ratio * 36)}rem` : undefined }}>
       {/* glow */}
       <div aria-hidden className="absolute inset-x-[8%] bottom-[-6%] top-[12%] rounded-[3rem] bg-[radial-gradient(closest-side,rgba(245,196,81,0.28),rgba(59,130,246,0.18),transparent)] blur-2xl" />
       <motion.div
@@ -93,10 +140,10 @@ export function DeviceMockup({ product: p, src = "", className = "" }) {
           {/* camera */}
           <span aria-hidden className="absolute left-1/2 top-1.5 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-slate-600 sm:top-[7px]" />
           {/* screen */}
-          <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem] bg-slate-950 ring-1 ring-black/60">
+          <div className="relative overflow-hidden rounded-[1.5rem] bg-slate-950 ring-1 ring-black/60 transition-[aspect-ratio] duration-500" style={{ aspectRatio: ratio }}>
             <AnimatePresence mode="wait">
               <motion.div key={src || "cover"} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.25 }} className="h-full w-full">
-                {src ? <img src={src} alt={`${p.name} preview`} className="h-full w-full object-cover" decoding="async" /> : <Cover product={p} eager />}
+                {src ? <FitImage src={src} alt={`${p.name} preview`} eager /> : <Cover product={p} eager />}
               </motion.div>
             </AnimatePresence>
             <div aria-hidden className="pointer-events-none absolute inset-0 bg-[linear-gradient(115deg,rgba(255,255,255,0.14)_0%,transparent_32%,transparent_70%,rgba(255,255,255,0.05)_100%)]" />

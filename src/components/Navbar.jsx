@@ -49,7 +49,7 @@ export default function Navbar({ page = "home", actions = null }) {
         transition={spring}
         aria-label="Primary"
         className={`mx-auto flex max-w-6xl items-center justify-between gap-3 rounded-full border px-4 py-2.5 backdrop-blur-xl transition-colors duration-300 sm:px-5 ${
-          scrolled || open ? "border-white/10 bg-slate-950/80 shadow-2xl shadow-black/40" : "border-white/10 bg-slate-950/60"
+          scrolled || open ? "border-white/10 bg-[#050916]/[0.96] shadow-2xl shadow-black/40" : "border-white/10 bg-[#050916]/80"
         }`}
       >
         <a href={homeHref} className="group flex min-w-0 items-center gap-2.5" onClick={() => setOpen(false)}>
