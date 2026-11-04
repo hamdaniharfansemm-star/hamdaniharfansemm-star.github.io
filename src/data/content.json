@@ -1723,6 +1723,18 @@
         "slug": "3d-paper-breakthrough-illusion",
         "date": "2026-11-04",
         "id": "3d-paper-breakthrough-illusion"
+      },
+      {
+        "title": "I AM A CREATOR – Luxury Entrepreneur Motivational Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw2d060n-i-am-a-creator-vision-discipline-legacy.jpg",
+        "prompt": "Using the uploaded photo as the facial reference, create a premium cinematic motivational poster while preserving the person's recognizable identity. Reconstruct the face naturally with approximately 90–95% facial resemblance. Preserve the hairstyle, eyebrows, eyes, nose, lips, jawline, skin tone, facial hair, and expression. The face must be seamlessly integrated with the body using identical lighting, skin texture, perspective, shadows, and color grading. Do not paste or transplant the face—repaint it naturally so the entire image looks like one professionally photographed portrait.\n\nDepict the person sitting confidently in a luxurious black leather armchair with one leg crossed over the other. One hand rests thoughtfully beneath the chin while the other relaxes on the armrest. He wears a premium monochromatic dark-brown outfit consisting of a tailored overshirt, fitted T-shirt, slim trousers, minimalist luxury sneakers, and an elegant wristwatch. His expression is calm, focused, confident, and authoritative, looking directly into the camera with the aura of a successful entrepreneur and visionary leader.\n\nThe background is a luxurious matte-black studio with subtle cinematic lighting. Behind him, giant metallic gold typography dominates the composition reading \"I AM A CREATOR\", with a small gold crown above the word \"I\". On both sides, elegant motivational headings read: \"VISION – I SEE BEYOND THE ORDINARY\", \"DISCIPLINE – I BUILD IN SILENCE\", \"AMBITION – I TURN DREAMS INTO REALITY\", and \"LEGACY – I DON'T CHASE, I LEAVE.\" At the bottom, include  phrase \"CREATE • INSPIRE • LEAVE A LEGACY.\" Everything should feel like a premium Forbes, GQ, or luxury entrepreneur magazine cover.\n\nUltra-realistic luxury editorial photography, Hollywood cinematic lighting, premium studio portrait, dramatic shadows, gold and black luxury aesthetic, perfectly symmetrical composition, sharp focus, realistic leather textures, premium typography, high-end branding design, photorealistic skin, seamless facial integration, anatomically correct proportions, 85mm lens, shallow depth of field, HDR, 8K, masterpiece, luxury magazine cover quality, award-winning composition, no watermark, no logo distortion, no extra fingers, no anatomy errors, no face-swap appearance, no mismatched lighting, vertical 4:5. \n\nAI Tool:\nChatGPT Image",
+        "category": "AI Portrait / Luxury Editorial / Motivational Poster / Entrepreneur / Personal Branding",
+        "tool": "ChatGPT Image",
+        "note": "Gunakan foto referensi wajah dengan pencahayaan yang jelas. Pertahankan identitas wajah, gaya rambut, dan proporsi alami. Gunakan kombinasi warna hitam dan emas untuk menghasilkan kesan mewah. Pastikan pose duduk, kursi kulit, tipografi emas, dan seluruh teks motivasi tersusun simetris. Cocok untuk personal branding, poster motivasi, dan konten media sosial.",
+        "slug": "i-am-a-creator-luxury-entrepreneur-poster",
+        "date": "2026-11-04",
+        "id": "i-am-a-creator-luxury-entrepreneur-poster"
       }
     ]
   }
