@@ -400,7 +400,24 @@ function ListField({ field, path, value, set }) {
           {field.label} <span className="font-mono text-xs text-slate-500">({items.length})</span>
         </p>
       </div>
-      {items.length > 1 && <p className="mb-2 text-xs text-slate-500">Tarik ⠿ untuk mengubah urutan{field.orderHelp ? ` — ${field.orderHelp}` : ""}.</p>}
+      {items.length > 1 && (
+        <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
+          <p className="text-xs text-slate-500">Tarik ⠿ untuk mengubah urutan (⤒ = pindah ke paling atas){field.orderHelp ? ` — ${field.orderHelp}` : ""}.</p>
+          {field.sortByDate && (
+            <button
+              type="button"
+              onClick={() => {
+                const order = items.map((_, k) => k).sort((a, b) => String(items[b][field.sortByDate] || "").localeCompare(String(items[a][field.sortByDate] || "")) || a - b);
+                set(order.map((k) => items[k]));
+                setOpen(new Set());
+              }}
+              className="rounded-full border border-white/15 px-3 py-1.5 text-xs font-semibold text-slate-200 transition-colors hover:border-cream/60 hover:text-cream"
+            >
+              ↓ Urutkan: terbaru di atas
+            </button>
+          )}
+        </div>
+      )}
       {field.addToTop && (
         <button
           type="button"
@@ -454,6 +471,7 @@ function ListField({ field, path, value, set }) {
                   </span>
                 </button>
                 <div className="flex shrink-0 items-center">
+                  <IconBtn label="Pindah ke paling atas" onClick={() => moveTo(i, 0)} disabled={i === 0}>⤒</IconBtn>
                   <IconBtn label="Naik" onClick={() => move(i, -1)} disabled={i === 0}>↑</IconBtn>
                   <IconBtn label="Turun" onClick={() => move(i, 1)} disabled={i === items.length - 1}>↓</IconBtn>
                   <IconBtn label="Hapus" onClick={() => remove(i)} danger>✕</IconBtn>

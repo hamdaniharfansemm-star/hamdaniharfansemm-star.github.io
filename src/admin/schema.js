@@ -478,6 +478,7 @@ export const tabs = [
         type: "list",
         label: "Daftar prompt",
         addToTop: true,
+        sortByDate: "date",
         orderHelp: "urutan ini = urutan tampil di website (paling atas tampil pertama)",
         itemTitle: (it) => it.title || "Prompt baru",
         itemSubtitle: (it) => [it.status === "published" ? "Dipublikasi" : "Draft", it.slug ? `/products/prompts/${it.slug}/` : "", it.image ? "" : "belum ada gambar"].filter(Boolean).join(" · "),
