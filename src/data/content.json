@@ -1603,6 +1603,18 @@
         "slug": "2026-11-04",
         "date": "2026-11-04",
         "id": "2026-11-04"
+      },
+      {
+        "title": "Red Cyberpunk Warrior – Cinematic Baseball Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw2bb9qa-gritty-red-halo-bat-portrait.jpg",
+        "prompt": "A stylized cinematic portrait of a person using the uploaded reference photo as the main subject. \nThe face, facial features, skin tone, hairstyle, age, and identity must remain 100% identical and clearly recognizable from the uploaded photo.\nThe subject stands confidently holding a baseball bat resting over the shoulder, with a strong, rebellious and confident expression.\nHair style should follow the uploaded photo naturally. \nThe subject wears a modern casual jacket and shirt in contemporary street style.\nBackground features a bold red circular graphic behind the subject, combined with abstract glitch textures, paint splashes, digital blueprint elements, and cyberpunk.\n\nAI tool:\nGemini",
+        "category": "Cyberpunk / Urban Portrait / Cinematic Photography / Baseball / Streetwear / Glitch Art",
+        "tool": "Gemini / ChatGPT / GPT-Image / Midjourney",
+        "note": "Gunakan foto portrait dengan wajah terlihat jelas dan pencahayaan yang baik. Foto dari depan sangat direkomendasikan untuk menjaga konsistensi karakter. Upload foto referensi, kemudian salin prompt ini ke AI Image Generator. Hasil terbaik diperoleh dengan foto resolusi tinggi. Cocok untuk poster personal branding, profil media sosial, konten kreatif, dan desain cinematic urban.",
+        "slug": "red-cyberpunk-warrior-baseball-portrait",
+        "date": "2026-11-04",
+        "id": "red-cyberpunk-warrior-baseball-portrait"
       }
     ]
   }
