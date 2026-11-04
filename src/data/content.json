@@ -1675,6 +1675,42 @@
         "slug": "perfect-reflection-luxury-symmetrical-editorial-portrait",
         "date": "2026-11-04",
         "id": "perfect-reflection-luxury-symmetrical-editorial-portrait"
+      },
+      {
+        "title": "The AI Creator – Futuristic Digital Creator Studio Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw2cmreq-ai-creator-command-center.jpg",
+        "prompt": "Create a cinematic, ultra-detailed digital artwork featuring a stylized confident man based on the provided reference photo (maintain facial features and likeness). He is sitting relaxed in a modern chair, wearing trendy casual clothing, sunglasses, and holding a coffee cup, exuding confidence and calm dominance. The character should have a slightly stylized, semi-3D cartoon-realism look (similar to high-end animated figurines).\n\nBackground: Replace financial/trading elements with a futuristic AI and content creation environment:\n\nMultiple floating holographic screens showing AI interfaces, neural networks, and prompt-based tools\n\nVisuals of video editing timelines, social media dashboards, and content analytics\n\nAbstract glowing circuits, data streams, and digital brain/AI motifs\n\nSubtle references to creativity: cameras, microphones, editing software UI\n\nNeon lighting in blue, purple, and teal tones\n\nComposition & Style:\n\nCentered subject, slightly low-angle perspective for a powerful look\n\nDepth of field with blurred background elements\n\nDramatic lighting with soft glow and reflections\n\nAdd subtle motivational text in background like: \"CREATE • AUTOMATE • SCALE\" or \"TRUST THE PROCESS\"\n\nClean, premium, modern aesthetic\n\nExtra details:\n\nAdd luxury/creator lifestyle elements (laptop, camera gear, clean workspace)\n\nHigh contrast, sharp details, 8K resolution feel\n\nProfessional, inspirational, and futuristic tone\n\nStyle keywords: cinematic lighting, ultra-detailed, futuristic, AI theme, content creator lifestyle, digital art, volumetric light, high-end render, sharp focus\n\nAI Tool:\nChatGPT-Image",
+        "category": "AI Creator / Artificial Intelligence / Futuristic Portrait / Digital Creator / Technology / Personal Branding / Content Creation",
+        "tool": "ChatGPT-Image / GPT-Image / Gemini / AI Image Generator",
+        "note": "Gunakan foto wajah asli dengan pencahayaan yang jelas untuk mempertahankan kemiripan karakter. Prompt ini mengubah foto menjadi portrait futuristik seorang AI Content Creator dengan studio digital, hologram AI, dashboard analytics, video editing interface, laptop, dan perlengkapan kreator profesional. Cocok untuk personal branding developer, AI enthusiast, content creator, dan digital entrepreneur.",
+        "slug": "the-ai-creator-futuristic-digital-creator-studio",
+        "date": "2026-11-04",
+        "id": "the-ai-creator-futuristic-digital-creator-studio"
+      },
+      {
+        "title": "Fragmented Identity – Creative Mosaic Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw2cotzf-ideas-in-the-making.jpg",
+        "prompt": "Create a modern conceptual portrait of a man using the provided photo as the central subject. The image should be composed as a grid of slightly separated square tiles, forming a fragmented mosaic effect. Some tiles should be slightly lifted or curled at the edges to add depth and realism.\n\nThe background should be a neutral textured wall (like concrete or plaster). Around the mosaic, place several colorful sticky notes with short, original motivational or pop-culture-inspired phrases (avoid famous quotes). Examples of tone: witty, reflective, or futuristic.\n\nWrite subtle handwritten-style words across a few tiles of the face, blending into the portrait without overpowering it.\n\nStyle:\n\nPhotorealistic with soft, balanced lighting\n\nSlight shadows under lifted tiles for depth\n\nClean, minimal, modern aesthetic\n\nHigh detail and sharp focus\n\nMood:\n\nThought-provoking, creative identity theme\n\nSlightly mysterious but approachable\n\nDo not replicate any existing quotes or layouts exactly. Keep all text original and unique.\n\nAI Tool:\nChatGPT-Image",
+        "category": "AI Portrait / Creative Mosaic / Photo Manipulation / Mixed Media / Editorial Design / Artistic Portrait",
+        "tool": "ChatGPT-Image / GPT-Image / Gemini / AI Image Generator",
+        "note": "Gunakan foto portrait asli dengan wajah terlihat jelas. AI akan mengubah foto menjadi karya seni mosaic dengan potongan kotak geometris, efek kertas terangkat, bayangan realistis, dan sticky notes berisi pesan kreatif. Cocok untuk personal branding, konten Instagram, poster artistik, dan foto profil unik. Pastikan susunan tile tetap rapi dan wajah tidak terdistorsi.",
+        "slug": "fragmented-identity-creative-mosaic-portrait",
+        "date": "2026-11-04",
+        "id": "fragmented-identity-creative-mosaic-portrait"
+      },
+      {
+        "title": "The AI Creator Multitasker – Future of Content Creation",
+        "status": "published",
+        "image": "/assets/uploads/mw2cq2ok-multitasking-ai-creator-studio.jpg",
+        "prompt": "Create a surreal, high-detail studio portrait using the provided photo of the man as the main subject. He is seated on a modern chair in a clean, minimal studio environment with a soft solid-color background (warm beige, gradient, or muted tech-inspired tone).\n\nThe man should appear with multiple extra arms (like a multitasking effect), radiating outward in a balanced composition. Each arm is engaged in a different task related to AI-powered content creation, such as:\n\nholding a smartphone with a social media interface\n\ntyping on a laptop with a glowing AI dashboard\n\noperating a camera or filming device\n\nadjusting studio lighting equipment\n\ninteracting with a holographic UI or floating digital interface\n\nholding a microphone or podcast gear\n\nAdd subtle futuristic elements:\n\nsoft holographic overlays\n\nfloating icons (text, video, audio, AI symbols)\n\nfaint data streams or UI panels around him\n\nStyle:\n\nhyper-realistic, professional studio lighting\n\ncrisp shadows and depth\n\nslightly cinematic look\n\nclean and modern composition\n\nMood:\n\nbusy but controlled\n\ninnovative, forward-thinking\n\ncreative + tech-driven energy\n\nImportant:\n\nDo not replicate any existing composition exactly\n\nKeep arm positions and props varied and original\n\nEnsure the face from the provided image remains recognizable and realistic\n\nAI Tool:\nChatGPT-Image",
+        "category": "AI Creator / Multitasking / Artificial Intelligence / Content Creation / Futuristic Portrait / Digital Lifestyle",
+        "tool": "ChatGPT-Image / GPT-Image / Gemini / AI Image Generator",
+        "note": "Gunakan foto wajah asli dengan kualitas tinggi sebagai referensi utama. Prompt ini menghasilkan konsep portrait futuristik yang menggambarkan seorang AI Content Creator dengan banyak tangan yang melakukan berbagai aktivitas sekaligus.\n\nCocok untuk personal branding AI Developer, content creator, digital marketer, entrepreneur, dan profesional teknologi.\n\nTips: Gunakan foto wajah menghadap kamera agar hasil identitas lebih konsisten. Jika hasil tangan kurang sempurna, lakukan regenerasi atau editing pada bagian tangan.",
+        "slug": "ai-creator-multitasking-futuristic-portrait",
+        "date": "2026-11-04",
+        "id": "ai-creator-multitasking-futuristic-portrait"
       }
     ]
   }
