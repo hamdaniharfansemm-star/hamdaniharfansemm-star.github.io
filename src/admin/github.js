@@ -130,7 +130,15 @@ export async function commitFiles(token, files, message) {
 export async function deployRunFor(token, commitSha) {
   try {
     const res = await gh(token, `${R}/actions/runs?head_sha=${commitSha}&per_page=1`);
-    return res.workflow_runs?.[0] || { status: "queued" };
+    const run = res.workflow_runs?.[0];
+    if (!run) return { status: "queued" };
+    // A newer save replaced this run (cancelled) → follow the newest deploy instead:
+    // it contains everything, including this save.
+    if (run.conclusion === "cancelled") {
+      const latest = (await gh(token, `${R}/actions/runs?branch=main&event=push&per_page=1`)).workflow_runs?.[0];
+      if (latest && latest.id !== run.id) return { ...latest, superseded: true };
+    }
+    return run;
   } catch {
     return null;
   }

@@ -361,7 +361,7 @@ function Editor({ token, user, onLogout }) {
       const run = await deployRunFor(token, deploy.sha);
       if (id !== pollRef.current) return;
       if (!run) return setDeploy((d) => ({ ...d, unknown: true }));
-      setDeploy((d) => ({ ...d, status: run.status, conclusion: run.conclusion, url: run.html_url }));
+      setDeploy((d) => ({ ...d, status: run.status, conclusion: run.conclusion, url: run.html_url, superseded: !!run.superseded || d.superseded }));
     }, 5000);
     return () => clearTimeout(t);
   }, [deploy, token]);
@@ -531,8 +531,8 @@ function StatusLine({ dirty, uploads, notice, deploy }) {
     if (deploy.status !== "completed")
       return (
         <p className="flex items-center gap-2 text-sky-300">
-          <span className="h-3.5 w-3.5 animate-spin rounded-full border-2 border-sky-300 border-t-transparent" />
-          Tersimpan. Website sedang diperbarui… (±1–2 menit)
+          <span className="h-3.5 w-3.5 shrink-0 animate-spin rounded-full border-2 border-sky-300 border-t-transparent" />
+          {deploy.superseded ? "Tersimpan. Website diperbarui bersama simpanan terbaru…" : "Tersimpan. Website sedang diperbarui… (biasanya 1–3 menit)"}
         </p>
       );
     if (deploy.conclusion === "success")
@@ -542,9 +542,16 @@ function StatusLine({ dirty, uploads, notice, deploy }) {
           <a href={links.site} target="_blank" rel="noopener noreferrer" className="underline">Buka</a> lalu tekan Ctrl+F5.
         </p>
       );
+    if (deploy.conclusion === "cancelled")
+      return (
+        <p className="text-amber-200">
+          Tersimpan. Proses ini digantikan oleh simpanan yang lebih baru — website memakai versi terbaru.{" "}
+          <a href={links.actions} target="_blank" rel="noopener noreferrer" className="underline">Cek progres</a>.
+        </p>
+      );
     return (
       <p className="text-rose-300">
-        Update website gagal.{" "}
+        Data tersimpan, tetapi update website gagal.{" "}
         <a href={deploy.url || links.actions} target="_blank" rel="noopener noreferrer" className="underline">Lihat detail</a>.
       </p>
     );
