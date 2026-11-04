@@ -1711,6 +1711,18 @@
         "slug": "ai-creator-multitasking-futuristic-portrait",
         "date": "2026-11-04",
         "id": "ai-creator-multitasking-futuristic-portrait"
+      },
+      {
+        "title": "3D Paper Breakthrough Illusion – Keluar dari Halaman Notebook",
+        "status": "published",
+        "image": "/assets/uploads/mw2cw7mg-man-emerging-from-torn-notebook-page.jpg",
+        "prompt": "Create a hyper-realistic 3D illusion scene using the uploaded reference photo as the main subject.\n\nThe face, facial features, skin tone, hairstyle, age, and identity must remain 100% identical and clearly recognizable from the uploaded photo.\n\nThe subject appears to be emerging out of a torn notebook page, creating a realistic “breaking through paper” effect.\n\nPose:\n\n- Upper body coming out from a hole in the notebook\n\n- Arms resting naturally on the torn paper edges\n\n- Relaxed, friendly expression with slight smile\n\n- Looking directly at the camera\n\nEnvironment:\n\n- open notebook placed on a wooden desk\n\n- visible pencil in a hand drawing or sketching near the hole\n\n- pen holder or desk items in the background\n\nPaper Effect:\n\n- torn paper edges with realistic depth and shadows\n\n- crumpled and ripped texture around the hole\n\n- strong 3D illusion as if the subject is coming out of the page\n\nOutfit:\n\n- casual cozy outfit (sweater or knitwear)\n\n- natural and warm appearance\n\nLighting:\n\n- soft natural indoor lighting (from window side)\n\n- warm tones with gentle shadows\n\n- realistic highlights on paper and skin\n\nStyle:\n\n- ultra realistic, 3D illusion art\n\n- mix of photography and hyper-realistic digital art\n\nMood:\n\n- creative, magical, calm, slightly playful\n\nComposition:\n\n- top-down or slight angle view of notebook\n\n- subject centered inside torn paper hole\n\n- hand with pencil visible in foreground\n\nQuality:\n\n- ultra detailed, 8K, sharp focus, realistic textures, depth of field\n\nAI Tool:\nChatGPT-Image",
+        "category": "AI Photo Editing / 3D Illusion / Creative Portrait / Paper Art",
+        "tool": "ChatGPT Image",
+        "note": "Gunakan foto wajah sebagai reference image. Pertahankan identitas wajah dan detail rambut. Pastikan efek kertas sobek terlihat realistis, kedua tangan memiliki anatomi normal, dan tubuh terlihat benar-benar keluar dari halaman notebook. Cocok untuk eksperimen AI photo editing dan konten media sosial.",
+        "slug": "3d-paper-breakthrough-illusion",
+        "date": "2026-11-04",
+        "id": "3d-paper-breakthrough-illusion"
       }
     ]
   }
