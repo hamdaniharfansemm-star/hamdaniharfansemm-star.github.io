@@ -1615,6 +1615,18 @@
         "slug": "red-cyberpunk-warrior-baseball-portrait",
         "date": "2026-11-04",
         "id": "red-cyberpunk-warrior-baseball-portrait"
+      },
+      {
+        "title": "Inner Chaos – Psychological Emotional Portrait Art",
+        "status": "published",
+        "image": "/assets/uploads/mw2bg0yx-overwhelmed-by-inner-turmoil.jpg",
+        "prompt": "Create a dramatic conceptual portrait using the uploaded reference photo as the main subject. The face, facial features, skin tone, hairstyle, age, and identity must remain 100% identical and clearly recognizable from the uploaded photo. The subject stands in the center, slightly hunched, holding their head with both hands as if overwhelmed by intense thoughts and emotions. Behind the subject appear multiple large sketch-style drawings of the same person expressing different emotions such as screaming, frustration, anxiety, and inner turmoil. The sketches look like rough charcoal or pencil drawings on textured paper, representing the subject’s inner emotional chaos.\nComposition: the real person is in the foreground in realistic style, while the emotional figures behind are large expressive hand-drawn sketches.\nLighting: soft dramatic lighting focused on the subject, with slightly darker edges to create a moody psychological atmosphere.\nStyle: mixed media concept, photorealistic person combined with expressive pencil sketch illustration.\nMood: psychological, emotional, introspective, artistic.\nQuality: ultra-detailed, textured paper background, cinematic composition, high resolution.\n\nAI Tool:\nChatGPT-Image",
+        "category": "Psychological Art / Emotional Portrait / Mixed Media / Charcoal Sketch / Conceptual Photography",
+        "tool": "ChatGPT-Image / GPT-Image / Gemini / AI Image Generator",
+        "note": "Gunakan foto portrait dengan wajah terlihat jelas dan pencahayaan yang baik. Foto formal atau foto dari depan sangat direkomendasikan. Upload foto referensi, kemudian salin prompt ini ke AI Image Generator. Untuk hasil terbaik, pertahankan foto referensi yang sama agar karakter utama dan sketsa emosional memiliki identitas wajah yang konsisten. Cocok untuk karya seni konseptual, konten storytelling, personal branding, dan postingan media sosial.",
+        "slug": "inner-chaos-psychological-emotional-portrait",
+        "date": "2026-11-04",
+        "id": "inner-chaos-psychological-emotional-portrait"
       }
     ]
   }
