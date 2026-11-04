@@ -1627,6 +1627,18 @@
         "slug": "inner-chaos-psychological-emotional-portrait",
         "date": "2026-11-04",
         "id": "inner-chaos-psychological-emotional-portrait"
+      },
+      {
+        "title": "Cinematic Fashion Editorial – 9 Angles Professional Portrait Collection",
+        "status": "draft",
+        "image": "/assets/uploads/mw2bkoab-cinematic-nine-pose-studio-portrait-grid.jpg",
+        "prompt": "Use the provided photo of the man as the identity reference. Generate a cinematic fashion editorial portrait series with the same person, preserving facial features and likeness. Style: dramatic studio lighting, dark moody background, high-contrast fashion photography, sharp details, editorial magazine look, ultra realistic skin texture. Clothing: fitted gray turtleneck sweater, minimalist fashion styling. Lighting: directional studio lighting with deep shadows, Rembrandt lighting, glossy skin highlights, dark gradient background. Camera & composition: professional fashion photography, 85mm lens, shallow depth of field, high resolution, crisp focus. Generate a 3x3 grid portrait sheet showing the same man in multiple angles: 1. front medium portrait 2. extreme close-up 3. three-quarter angle 4. side profile 5. low angle full body 6. high angle portrait 7. over-the-shoulder look 8. dutch tilt portrait 9. mid-walk editorial pose Mood: serious expression, confident masculine model look. color grading: cinematic, slightly desaturated, high contrast. ultra realistic, studio photography, 8k detail.\n\nAI Tool:\nChatGPT-Image",
+        "category": "Fashion Editorial / Cinematic Portrait / Professional Photography / 3x3 Portrait Grid / Character Consistency / Studio Photography",
+        "tool": "ChatGPT-Image / GPT-Image / Gemini / AI Image Generator",
+        "note": "Upload satu foto referensi wajah dengan kualitas tinggi dan pencahayaan yang jelas. Gunakan foto yang memperlihatkan wajah dari depan untuk mendapatkan konsistensi karakter terbaik. Salin prompt ini ke AI Image Generator untuk menghasilkan sembilan variasi foto fashion editorial dalam satu lembar 3x3. Cocok untuk portfolio profesional, personal branding, model photography, dan konten media sosial.",
+        "slug": "cinematic-fashion-editorial-9-angle-portrait",
+        "date": "2026-11-04",
+        "id": "cinematic-fashion-editorial-9-angle-portrait"
       }
     ]
   }
