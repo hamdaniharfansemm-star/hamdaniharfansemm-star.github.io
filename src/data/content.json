@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Urban Minimalist Fashion – Golden Hour Cinematic Editorial AI Photo Prompt",
+        "status": "published",
+        "image": "/assets/uploads/mw7iqiko-golden-hour-moss-green-street-style.png",
+        "prompt": "Use the uploaded photo as the facial identity reference. Recreate the scene with the person leaning casually against a dark stone planter, holding an iced coffee, wearing an olive-green outfit, white sneakers, and stylish sunglasses. Preserve the original composition, relaxed crossed-leg pose, lush greenery, modern glass buildings, and three floating color palette panels labeled “Moss Green,” “Charcoal,” and “Lime Zest.” Maintain the person's exact facial identity, natural facial proportions, realistic skin texture, and authentic expression. Ensure the face is naturally aligned, not tilted or distorted. Warm golden-hour sunlight, premium editorial fashion photography, ultra-photorealistic, sharp details, professional DSLR quality, 4K resolution.",
+        "category": "AI Photo Editing / Fashion Photography / Urban Lifestyle / Minimalist Style / Golden Hour / Editorial Portrait / Color Palette",
+        "tool": "ChatGPT / GPT Image / Gemini / Midjourney",
+        "note": "Gunakan foto pribadi sebagai referensi identitas wajah utama. Pertahankan bentuk wajah, mata, hidung, bibir, rahang, warna kulit, dan karakteristik rambut. Buat karakter bersandar santai pada planter batu berwarna gelap, memegang iced coffee, mengenakan sunglasses, outfit olive green, kaus putih, dan sneakers putih. Pertahankan pose kaki menyilang dan komposisi editorial. Tambahkan lingkungan perkotaan modern dengan gedung kaca, tanaman hijau, serta pencahayaan golden hour. Sertakan tiga panel floating color palette dengan label Moss Green, Charcoal, dan Lime Zest. Pastikan warna, teks, dan komposisi terlihat rapi, premium, dan proporsional. Gunakan rasio vertikal 4:5 atau 9:16.",
+        "slug": "urban-minimalist-fashion-golden-hour-editorial-ai-prompt",
+        "date": "2026-11-08",
+        "id": "urban-minimalist-fashion-golden-hour-editorial-ai-prompt"
+      },
+      {
         "title": "Indonesian Youth Pledge Day – Cinematic Red White Patriotic AI Poster",
         "status": "published",
         "image": "/assets/uploads/mw7iksin-indonesian-youth-pledge-rally.png",
