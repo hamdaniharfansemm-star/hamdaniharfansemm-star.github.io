@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Into The Wild – Surreal Double Exposure Wood Engraving Portrait",
+        "status": "draft",
+        "image": "/assets/uploads/mw7kcfk6-engraved-forest-wanderer-with-stag.png",
+        "prompt": "Create a surreal double-exposure artwork using the uploaded photo as the silhouette base of the person. Keep the body shape and posture recognizable from the uploaded photo, shown from the back walking forward. Inside the silhouette, blend a mysterious pine forest landscape with tall trees, foggy atmosphere, and a deer standing in the middle of a forest path. Add subtle birds flying around the upper area for a peaceful wilderness mood.\n\nStyle: monochrome wood-burn engraving illustration on a light wooden texture background. Mood: calm, mysterious, adventurous, nature-inspired. Details: intricate line art, realistic forest depth, smooth double exposure blending, roots and branches subtly merging into the lower body. Composition: centered vertical composition with clean negative space around the artwork. Lighting: soft ambient forest glow with misty depth. Quality: ultra-detailed, 8K, premium engraving art style, elegant wall-art aesthetic.\n\nAI Tool:\nChatGPT-Image",
+        "category": "Surreal Art / Double Exposure / Nature & Wildlife / Wood Burn Engraving / Artistic Portrait",
+        "tool": "ChatGPT Image / Gemini / Midjourney",
+        "note": "Ubah foto seseorang menjadi karya seni surreal double exposure dengan ilustrasi hutan pinus yang menyatu di dalam siluet tubuh.\n\nMenampilkan rusa di tengah jalan hutan berkabut, pepohonan tinggi, burung terbang, serta akar pohon yang menyatu dengan bagian kaki.\n\nMenggunakan teknik visual wood-burn engraving dengan tekstur kayu alami, garis ukiran detail, dan nuansa monokrom sepia.\n\nKarya ini melambangkan perjalanan hidup, kebebasan, ketenangan, dan hubungan manusia dengan alam.",
+        "slug": "into-the-wild-surreal-double-exposure-wood-engraving",
+        "date": "2026-11-08",
+        "id": "into-the-wild-surreal-double-exposure-wood-engraving"
+      },
+      {
         "title": "Geometric Soul – Colorful Stained Glass Polygon Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7k9gnm-geometric-stained-glass-portrait.png",
