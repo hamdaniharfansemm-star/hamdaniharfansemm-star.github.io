@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "PEACE WALK – Artistic Streetwear Freedom Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7madqr-teal-peace-streetwear-portrait.png",
+        "prompt": "Create a modern artistic streetwear portrait using the uploaded photo as the main subject.\n\nKeep the exact facial structure, hairstyle, expression, body proportions, and recognizable identity from the uploaded person while transforming the image into a high-end contemporary fashion artwork.\n\nThe subject is shown in a relaxed side-profile walking pose, wearing oversized urban streetwear including a loose t-shirt, cargo pants, sneakers, layered accessories, and modern fashion styling.\n\nThe pose should feel natural, confident, stylish, and introspective.\n\nBehind the subject, create a large minimalist peace symbol integrated into the composition, surrounded by dynamic artistic splashes, floating petals, abstract paint bursts, smoke textures, and elegant graphic elements.\n\nAdd several white doves flying around the subject to symbolize peace, freedom, and hope.\n\nBlend realistic portrait photography with abstract mixed-media design, where parts of the clothing and body subtly dissolve into artistic paint splashes, particles, and flowing graphic fragments.\n\nUse a clean gallery-style background with plenty of negative space for a premium poster aesthetic.\n\nColor palette should focus on soft turquoise, teal, aqua blue, white, light gray, and subtle pastel accents.\n\nThe artwork should feel calm, modern, creative, and emotionally expressive.\n\nStyle: contemporary mixed-media portrait, luxury fashion poster, abstract streetwear artwork, graphic design illustration, urban art, editorial magazine aesthetic, paint splash effects, modern collage composition, high-end advertising campaign, ultra detailed, masterpiece quality.\n\nLighting should be soft and professional with smooth shadows, subtle rim lighting, and realistic skin textures.\n\nThe overall mood should communicate peace, freedom, self-expression, creativity, and modern youth culture.\n\nUltra-detailed, vertical composition, 8K resolution, clean minimalist background, premium visual design, gallery-quality artwork.\n\nAI Tool:\nGrok AI",
+        "category": "Streetwear, Peace & Freedom, Abstract Art, Mixed Media.",
+        "tool": "ChatGPT",
+        "note": "Grok AI (sesuai label yang ingin digunakan pada katalog).",
+        "slug": "peace-walk-artistic-streetwear-freedom-portrait",
+        "date": "2026-11-08",
+        "id": "peace-walk-artistic-streetwear-freedom-portrait"
+      },
+      {
         "title": "MAFIA BOSS – Cinematic Luxury Underworld Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7m43um-mafia-boss-in-a-smoke-filled-study.png",
