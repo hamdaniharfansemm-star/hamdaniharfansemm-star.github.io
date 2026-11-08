@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Back to the 90s – Windows 95 Retro Fashion Portrait AI Photo Prompt",
+        "status": "published",
+        "image": "/assets/uploads/mw7ium18-windows-95-denim-street-portrait.png",
+        "prompt": "Use the foto Reference, Create a photorealistic 4K retro editorial portrait using the uploaded reference photo as the exact facial identity. Preserve the person's original facial features, face shape, skin tone, and natural proportions with maximum accuracy. Show him wearing an oversized vintage blue denim jacket and matching jeans, a white shirt, and a navy striped tie, with stylish glasses. Pose him confidently while adjusting his glasses and looking slightly upward. Place him inside a classic Windows 95 MS Paint interface with authentic retro menus, pixelated toolbar icons, color palette, and a floating name tag reading \"[YOUR NAME]\". Use a palm-lined urban street as the background, with natural daylight and nostalgic 90s aesthetics. Ultra-realistic skin texture, detailed fabric, professional composition, sharp focus, 4K quality. Do not alter his facial identity. Size 9:16.",
+        "category": "Retro & Vintage / Digital Nostalgia / Fashion Photography / Windows 95",
+        "tool": "ChatGPT Image Generation / Gemini / Midjourney",
+        "note": "Gunakan foto wajah sebagai referensi utama untuk menjaga konsistensi identitas karakter. Gunakan rasio 9:16 untuk hasil portrait vertikal. Pertahankan elemen antarmuka Windows 95, MS Paint, fashion denim vintage, dan nuansa fotografi era 90-an. Untuk hasil terbaik, gunakan foto wajah yang jelas dari depan.",
+        "slug": "back-to-the-90s-windows-95-retro-fashion-portrait",
+        "date": "2026-11-08",
+        "id": "back-to-the-90s-windows-95-retro-fashion-portrait"
+      },
+      {
         "title": "Urban Minimalist Fashion – Golden Hour Cinematic Editorial AI Photo Prompt",
         "status": "published",
         "image": "/assets/uploads/mw7iqiko-golden-hour-moss-green-street-style.png",
