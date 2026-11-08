@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Rainy Night Luxury – Cinematic Urban Fashion Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7kqx63-rainy-urban-elegance.png",
+        "prompt": "Use the uploaded photo as the primary facial reference, preserving the person's exact identity, facial structure, natural skin tone, hairstyle, and realistic facial details. Create an ultra-realistic 4K cinematic fashion portrait of him walking confidently through a rainy city street, holding a large black umbrella and wearing a tailored black-and-gray houndstooth overcoat, black turtleneck, dark trousers, and stylish eyeglasses. Add realistic raindrops on the umbrella, wet reflective pavement, softly blurred modern buildings, warm golden bokeh lights, and atmospheric rainfall. Moody luxury editorial photography, natural skin texture, sharp facial details, realistic lighting and shadows, sophisticated masculine aesthetic, shallow depth of field, photorealistic, ultra-detailed, vertical 4:5 composition, 4K quality. Do not alter the person's facial identity.",
+        "category": "Luxury Fashion, Rainy City Photography, Cinematic Portrait, Urban Lifestyle",
+        "tool": "ChatGPT Image / Gemini / Midjourney",
+        "note": "Ubah foto pribadi menjadi potret fashion sinematik di tengah suasana kota pada malam hari saat hujan. Subjek berjalan percaya diri menggunakan mantel houndstooth hitam-abu-abu, turtleneck hitam, celana formal, dan kacamata elegan sambil memegang payung hitam besar.\n\nHadirkan suasana kota modern dengan pantulan cahaya keemasan di jalan basah, tetesan hujan realistis, gedung-gedung yang blur, serta pencahayaan cinematic yang dramatis.\n\nHasil akhir memberikan kesan elegan, maskulin, profesional, dan eksklusif seperti pemotretan majalah fashion internasional.\n\nPertahankan identitas wajah, struktur wajah, warna kulit, dan karakteristik asli dari foto referensi.",
+        "slug": "rainy-night-luxury-cinematic-urban-fashion",
+        "date": "2026-11-08",
+        "id": "rainy-night-luxury-cinematic-urban-fashion"
+      },
+      {
         "title": "Luxury Blue Smoke Portrait – Cinematic Executive Style",
         "status": "published",
         "image": "/assets/uploads/mw7knfu1-cinematic-blue-smoke-chair-portrait.png",
