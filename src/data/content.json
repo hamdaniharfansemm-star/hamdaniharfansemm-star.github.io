@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "MISTY MOUNTAIN – The Quiet Wanderer",
+        "status": "published",
+        "image": "/assets/uploads/mw7leis5-misty-mountain-contemplation.png",
+        "prompt": "Use the provided reference photo to Create an ultra-realistic 4K cinematic outdoor portrait using the provided reference photo. Preserve the person's exact facial identity, skin tone, hairstyle, and distinctive features. Dress him in an oversized textured navy-blue sweater layered over a white T-shirt and black trousers, standing naturally with both hands in his pockets while gazing thoughtfully to the side. Set the scene in a quiet mountain meadow with soft-focus green shrubs, misty mountains, and a moody blue-green atmosphere. Use natural diffused lighting, cinematic color grading, realistic skin texture, detailed fabric knit, shallow depth of field, and professional editorial photography. Maintain accurate anatomy, natural proportions, and consistent facial details. No facial distortion, extra fingers, artificial skin, text, or watermarks.",
+        "category": "Cinematic Portrait / Outdoor Photography / Fashion Editorial / Nature",
+        "tool": "ChatGPT Image",
+        "note": "Transform your reference photo into an ultra-realistic cinematic outdoor fashion portrait. Preserve the exact facial identity, natural skin tone, hairstyle, facial proportions, and distinctive features. The subject stands naturally with both hands in his pockets, wearing an oversized textured navy-blue sweater layered over a white T-shirt and black trousers. Set in a peaceful mountain meadow surrounded by misty mountains, soft-focus green shrubs, and a beautiful blue-green atmosphere. Natural diffused lighting, cinematic color grading, realistic skin texture, detailed knit fabric, shallow depth of field, premium editorial photography, professional DSLR quality, ultra-detailed 4K.",
+        "slug": "misty-mountain-quiet-wanderer",
+        "date": "2026-11-08",
+        "id": "misty-mountain-quiet-wanderer"
+      },
+      {
         "title": "ORANGE REBEL – Urban Comic Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7l6d25-graffiti-king-in-orange-shades.png",
