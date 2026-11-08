@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "CYBER EYE – AI Surveillance Identity Detection",
+        "status": "published",
+        "image": "/assets/uploads/mw7na7jh-cyberpunk-crosswalk-surveillance-hud.png",
+        "prompt": "Ultra-detailed cinematic cyberpunk surveillance scene of a modern stylish man, using the provided man’s face as identity reference, walking confidently across a city crosswalk in a futuristic urban environment. Wearing a black leather jacket, fitted dark jeans, black sneakers, minimalist streetwear, and dark sunglasses. Holding a coffee cup while casually walking with calm confident body language.\n\nThe entire scene viewed through an advanced AI-powered CCTV surveillance system interface. Futuristic holographic HUD overlays surrounding the man with facial recognition scans, biometric analysis, identity verification panels, object detection labels, gait analysis, eye scan interface, tracking boxes, and real-time data visualization.\n\nFloating transparent blue neon UI elements displaying futuristic security information such as:\n “FACIAL MATCH: 99.8%”\n “IDENTITY VERIFIED”\n “GAIT ANALYSIS”\n “HEART RATE”\n “MULTI-FACTOR VERIFICATION ACTIVE”\n “OBJECT DETECTED: LEATHER JACKET / COFFEE CUP / SNEAKERS”\n\nModern glass buildings in the background, clean dystopian city atmosphere, realistic street perspective, cinematic composition, high-tech surveillance aesthetic inspired by Blade Runner, Watch Dogs, and sci-fi thriller movies.\n\nCool cyan holographic lighting, ultra realistic textures, photorealistic skin, subtle reflections, shallow depth of field, security camera perspective, realistic AR interface graphics, cinematic color grading, highly detailed futuristic UI design, 8k, immersive cyberpunk realism.\n\nNegative prompt: blurry image, distorted anatomy, bad hands, low resolution, extra limbs, cartoon, unrealistic UI, messy overlays, oversaturated neon, duplicate person, text artifacts, watermark, low quality.\n\nAI Tool:\nChatGPT-Image",
+        "category": "Cyberpunk / AI Technology / CCTV / Futuristic Portrait",
+        "tool": "ChatGPT Image",
+        "note": "Gunakan foto wajah sebagai referensi utama dan pertahankan identitas asli. Tambahkan suasana kota futuristik, jaket kulit hitam, kacamata hitam, CCTV AI, hologram cyan, facial recognition, eye scan, gait analysis, object detection, dan real-time tracking.",
+        "slug": "cyber-eye-ai-surveillance-identity-detection",
+        "date": "2026-11-08",
+        "id": "cyber-eye-ai-surveillance-identity-detection"
+      },
+      {
         "title": "FREEDOM OF THE SOUL – Surreal Blue Swallow Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7n6l01-shattered-serenity-and-rising-swallows.png",
