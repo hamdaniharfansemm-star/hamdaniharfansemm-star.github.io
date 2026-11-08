@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "INDONESIAN SPIRIT – Cinematic National Hero Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7mgdru-red-and-white-rising.png",
+        "prompt": "Create an ultra-realistic, cinematic, high-impact image using the uploaded reference photo as the main subject.\n\nThe face, facial features, skin tone, hairstyle, age, and identity must remain clearly recognizable and accurately match the uploaded photo, with no stylization or face alteration.\n\nThe subject is an adult person, depicted as a heroic figure standing powerfully on top of a massive Indonesian national flag (red and white) flowing beneath their feet.\n\nThe person raises one fist upward in a strong, defiant pose, mouth slightly open as if shouting or rallying, expressing courage, resistance, pride, and determination.\n\nClothing appears torn, weathered, and battle-worn, wrapped partially with the Indonesian flag like a cape or cloth, symbolizing national spirit and struggle.\n\nEnvironment: a dramatic urban city street filled with a massive crowd in the background, flags waving, dust and smoke in the air, cinematic depth of field.\n\nLighting: epic cinematic lighting, strong rim light, volumetric light rays, dramatic shadows, high contrast.\n\nAtmosphere: emotional, powerful, heroic, revolutionary tone.\n\nCamera angle: low-angle shot to emphasize strength and dominance.\n\nStyle: ultra-realistic, photoreal, cinematic movie poster quality, 8K detail, sharp focus on the subject.\n\nNo text, no watermark, no logos, no extra characters, no cartoon style.\n\nAI Tool:\nChatGPT-Image",
+        "category": "Indonesian Independence / National Pride / Heroic Portrait / Cinematic Photography / Patriotic Poster",
+        "tool": "ChatGPT-Image",
+        "note": "Gunakan foto pribadi sebagai referensi identitas wajah. Pertahankan bentuk wajah, mata, hidung, bibir, rahang, warna kulit, dan gaya rambut. Gunakan pose mengepalkan tangan ke atas, bendera Merah Putih sebagai jubah, sudut kamera low-angle, pencahayaan dramatis, serta suasana heroik dan sinematik. Pastikan anatomi tangan dan tubuh tetap realistis.",
+        "slug": "indonesian-spirit-cinematic-national-hero-portrait",
+        "date": "2026-11-08",
+        "id": "indonesian-spirit-cinematic-national-hero-portrait"
+      },
+      {
         "title": "PEACE WALK – Artistic Streetwear Freedom Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7madqr-teal-peace-streetwear-portrait.png",
