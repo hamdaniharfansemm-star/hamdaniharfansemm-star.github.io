@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "ORANGE REBEL – Urban Comic Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7l6d25-graffiti-king-in-orange-shades.png",
+        "prompt": "Use the photo reference, Create a highly detailed comic-style vector portrait using the reference photo as the exact facial identity. Preserve 100% of the person's original facial features, face shape, skin tone, and proportions. Apply bold orange-tinted glasses, an orange patterned jacket, a chunky gold chain, dramatic cel shading, thick black outlines, and sharp highlights. Use a vibrant orange circular paint-splash background on a dark textured surface. Maintain a confident expression and polished graffiti-inspired poster aesthetic. Ultra-detailed, crisp vector artwork, 4K quality. Do not distort or change the person's facial identity. Size 9:16.",
+        "category": "Comic Art • Urban Fashion • Graffiti Portrait",
+        "tool": "ChatGPT",
+        "note": "\"Ubah foto biasa menjadi karya seni urban yang penuh karakter! Perpaduan gaya komik, graffiti, dan warna oranye menciptakan potret yang berani dan berbeda.\"",
+        "slug": "orange-rebel-urban-comic-portrait",
+        "date": "2026-11-08",
+        "id": "orange-rebel-urban-comic-portrait"
+      },
+      {
         "title": "Rainy Night Luxury – Cinematic Urban Fashion Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7kqx63-rainy-urban-elegance.png",
