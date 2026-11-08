@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Golden Aura – The Power Within | Cinematic Neon Energy Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7k3ce6-golden-aura-on-a-night-street.png",
+        "prompt": "Create a cinematic, photorealistic image using the uploaded photo as the main subject, keep the face exactly recognizable.\n\nThe subject is standing confidently in the middle of a city street at night, casual outfit (jacket, shorts, sneakers, cap), relaxed pose with hands in pockets, slight smile.\n\nAdd a glowing energy outline around the entire body in bright golden-orange light, with sparks, embers, and particle effects floating around.\n\nThe glow should trace the body shape and clothing edges, giving a magical neon aura effect.\n\nBackground: night city street with palm trees and bokeh lights, slightly blurred (shallow depth of field).\n\nLighting: strong warm glow from the aura illuminating the body, mixed with soft ambient street lighting.\n\nMood: stylish, confident, modern, slightly futuristic.\n\nDetails: glowing particles, light trails, soft bloom, realistic skin texture, high contrast.\n\nCamera: full body shot, centered composition, cinematic framing.\n\nQuality: ultra-detailed, 8K, HDR, sharp focus, professional photography style.\n\nAI Tool:\nChatGPT-Image",
+        "category": "Cinematic Photography / Fantasy Portrait / Neon Effect / AI Photo Editing",
+        "tool": "ChatGPT Image / Gemini / Midjourney",
+        "note": "Gunakan foto referensi wajah asli untuk mempertahankan identitas. Pastikan seluruh tubuh terlihat dari kepala hingga kaki. Gunakan efek golden-orange glow mengikuti kontur tubuh, percikan api realistis, refleksi cahaya pada jalan basah, dan latar kota malam dengan depth of field. Cocok untuk portrait profesional, personal branding, dan konten media sosial.",
+        "slug": "golden-aura-power-within-cinematic-portrait",
+        "date": "2026-11-08",
+        "id": "golden-aura-power-within-cinematic-portrait"
+      },
+      {
         "title": "Fire Within My Hands – Cinematic AI Fire Doppelgänger Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7jwide-fiery-miniature-in-an-open-palm.png",
