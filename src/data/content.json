@@ -861,30 +861,6 @@
     },
     "prompts": [
       {
-        "title": "CYBER EYE – AI Surveillance Identity Detection",
-        "status": "published",
-        "image": "/assets/uploads/mw7na7jh-cyberpunk-crosswalk-surveillance-hud.png",
-        "prompt": "Ultra-detailed cinematic cyberpunk surveillance scene of a modern stylish man, using the provided man’s face as identity reference, walking confidently across a city crosswalk in a futuristic urban environment. Wearing a black leather jacket, fitted dark jeans, black sneakers, minimalist streetwear, and dark sunglasses. Holding a coffee cup while casually walking with calm confident body language.\n\nThe entire scene viewed through an advanced AI-powered CCTV surveillance system interface. Futuristic holographic HUD overlays surrounding the man with facial recognition scans, biometric analysis, identity verification panels, object detection labels, gait analysis, eye scan interface, tracking boxes, and real-time data visualization.\n\nFloating transparent blue neon UI elements displaying futuristic security information such as:\n “FACIAL MATCH: 99.8%”\n “IDENTITY VERIFIED”\n “GAIT ANALYSIS”\n “HEART RATE”\n “MULTI-FACTOR VERIFICATION ACTIVE”\n “OBJECT DETECTED: LEATHER JACKET / COFFEE CUP / SNEAKERS”\n\nModern glass buildings in the background, clean dystopian city atmosphere, realistic street perspective, cinematic composition, high-tech surveillance aesthetic inspired by Blade Runner, Watch Dogs, and sci-fi thriller movies.\n\nCool cyan holographic lighting, ultra realistic textures, photorealistic skin, subtle reflections, shallow depth of field, security camera perspective, realistic AR interface graphics, cinematic color grading, highly detailed futuristic UI design, 8k, immersive cyberpunk realism.\n\nNegative prompt: blurry image, distorted anatomy, bad hands, low resolution, extra limbs, cartoon, unrealistic UI, messy overlays, oversaturated neon, duplicate person, text artifacts, watermark, low quality.\n\nAI Tool:\nChatGPT-Image",
-        "category": "Cyberpunk / AI Technology / CCTV / Futuristic Portrait",
-        "tool": "ChatGPT Image",
-        "note": "Gunakan foto wajah sebagai referensi utama dan pertahankan identitas asli. Tambahkan suasana kota futuristik, jaket kulit hitam, kacamata hitam, CCTV AI, hologram cyan, facial recognition, eye scan, gait analysis, object detection, dan real-time tracking.",
-        "slug": "cyber-eye-ai-surveillance-identity-detection",
-        "date": "2026-11-08",
-        "id": "cyber-eye-ai-surveillance-identity-detection"
-      },
-      {
-        "title": "FREEDOM OF THE SOUL – Surreal Blue Swallow Portrait",
-        "status": "published",
-        "image": "/assets/uploads/mw7n6l01-shattered-serenity-and-rising-swallows.png",
-        "prompt": "Use the uploaded photo as the main subject and preserve the exact facial features, hairstyle, skin tone, expression, and recognizable identity. Create an emotional surreal oil painting with rich impasto brush textures and fine artistic details. The person is shown in a three-quarter portrait, wearing a slightly open white shirt, head tilted upward with closed eyes and a peaceful expression.\n\nThe skin and face are beautifully cracked like ancient porcelain and gradually disintegrating into hundreds of tiny fragments. From the shattered area, a flock of elegant blue swallows emerges and flies upward, carrying pieces of the face and soul into the air. Additional birds are flying around the subject, creating a sense of transformation, freedom, and rebirth.\n\nThe background consists of textured beige canvas with expressive palette-knife strokes and warm earthy colors. Small fragments and feathers float around the scene. Dramatic soft lighting illuminates the face, creating depth and emotion. Highly detailed oil painting, masterpiece, surreal symbolism, cinematic composition, museum-quality artwork, ultra realistic textures, soft shadows, harmonious color palette, 8k.\n\nAI Tool:\nChatGPT Image",
-        "category": "Surreal Art / Oil Painting / Emotional Portrait / Transformation",
-        "tool": "ChatGPT Image",
-        "note": "Gunakan foto referensi wajah asli. Pertahankan identitas, struktur wajah, rambut, dan warna kulit. Efek retakan porselen, serpihan wajah, burung walet biru, tekstur impasto, dan latar kanvas beige menciptakan simbol kebebasan dan kelahiran kembali.",
-        "slug": "freedom-of-the-soul-surreal-blue-swallow",
-        "date": "2026-11-08",
-        "id": "freedom-of-the-soul-surreal-blue-swallow"
-      },
-      {
         "title": "RED SHADOW – The Masked Antihero",
         "status": "published",
         "image": "/assets/uploads/mw7n36u6-hooded-figure-with-weathered-mask.png",
@@ -897,18 +873,6 @@
         "id": "red-shadow-masked-antihero"
       },
       {
-        "title": "GOLDEN HOUR – Luxury G-Class Adventure Portrait",
-        "status": "published",
-        "image": "/assets/uploads/mw7mzs21-golden-hour-g-class-adventure.png",
-        "prompt": "Use the uploaded reference photo as the primary basis for the face. Accurately preserve the original facial features, including face shape, eyes, nose, lips, skin tone, hairstyle, and body proportions. Create an ultra-realistic, cinematic portrait of a man sitting in a relaxed pose with his legs crossed on a black folding chair. He is dressed in an elegant black blazer, a white t-shirt, beige trousers, and white sneakers, and is wearing stylish glasses—his hand confidently touching the frame. In the background, a luxurious black off-road SUV, styled like a Mercedes-Benz G-Class, is captured mid-air, surrounded by a dramatic spray of dust, rocks, and flying earth. The setting is a dry grassland with mountains in the distance, under a golden-orange sunset sky. Incorporate \"golden hour\" lighting, realistic shadows, natural light reflections on the vehicle, highly detailed skin and fabric textures, a premium automotive advertisement composition, a low-angle camera perspective, cinematic color grading, photorealistic execution, ultra-sharp details, 4K quality, and a 4:5 vertical aspect ratio. Do not alter the facial identity from the reference photo.",
-        "category": "Cinematic Portrait / Luxury Lifestyle / Automotive / Fashion",
-        "tool": "ChatGPT Image",
-        "note": "Gunakan foto wajah dan character reference sebagai referensi utama. Pertahankan identitas wajah, rambut, warna kulit, dan proporsi tubuh. Gunakan pose duduk santai dengan kacamata, blazer hitam, celana beige, dan sneakers putih. Tambahkan SUV off-road hitam yang melompat dengan efek debu, bebatuan, pegunungan, serta pencahayaan sunset keemasan.",
-        "slug": "golden-hour-g-class-adventure-portrait",
-        "date": "2026-11-08",
-        "id": "golden-hour-g-class-adventure-portrait"
-      },
-      {
         "title": "HAMDANI HARFAN – Geometric Sliced Typography Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7mvj4d-fragmented-portrait-hamdani-harfan.png",
@@ -919,18 +883,6 @@
         "slug": "hamdani-harfan-geometric-sliced-portrait",
         "date": "2026-11-08",
         "id": "hamdani-harfan-geometric-sliced-portrait"
-      },
-      {
-        "title": "REALITY MEETS CHIBI – Futuristic Music Player Streetwear Portrait",
-        "status": "published",
-        "image": "/assets/uploads/mw7mne7z-urban-music-plaza-portrait.png",
-        "prompt": "Ultra-detailed cinematic lifestyle portrait of a modern stylish man, using the provided man’s face as identity reference, standing casually beside a sleek urban streetlight in a modern city plaza. Relaxed confident pose, fashionable expression, leaning against the pole with effortless cool energy.\n\nBeside him stands a cute chibi cartoon version of himself, perfectly matching his hairstyle, facial features, outfit, accessories, and attitude. The chibi character mirrors the same pose against the pole, creating a playful real-world-meets-animation interaction.\n\nBehind them floats an oversized futuristic music player interface inspired by modern streaming apps, displaying album artwork, playback controls, progress bar, and elegant glassmorphism UI design. The music card appears as a giant augmented reality object integrated naturally into the environment.\n\nThe man wears a premium leather jacket, stylish shirt and tie, tailored trousers, fashionable sunglasses, luxury accessories, and contemporary streetwear styling. Bright daylight, clean architectural background with glass buildings, minimalist urban aesthetic.\n\nPhotorealistic human subject combined with high-quality 2D/3D animated chibi character, seamless integration between reality and illustration, whimsical storytelling, social-media-worthy composition, vibrant yet natural colors, soft shadows, ultra realistic details, cinematic depth of field, luxury editorial photography, highly detailed character design, 8k masterpiece.\n\nNegative prompt: blurry image, low quality, distorted face, bad anatomy, extra limbs, duplicate character, poorly drawn cartoon, mismatched clothing, cluttered background, text artifacts, watermark, oversaturated colors, unrealistic proportions.\n\nAI Tool:\nChatGPT-Image",
-        "category": "AI Portrait / Chibi Character / Streetwear Fashion / Music Player UI / Futuristic Design / Urban Lifestyle",
-        "tool": "ChatGPT-Image",
-        "note": "Gunakan foto wajah sebagai referensi utama untuk menjaga konsistensi identitas. Buat karakter manusia realistis dan versi chibi dengan pakaian, gaya rambut, kacamata, dan aksesori yang sama. Tambahkan interface pemutar musik futuristik berbahan kaca transparan dengan efek glassmorphism. Pastikan komposisi seimbang, karakter chibi terlihat jelas, dan detail wajah tetap natural.",
-        "slug": "reality-meets-chibi-futuristic-music-player-portrait",
-        "date": "2026-11-08",
-        "id": "reality-meets-chibi-futuristic-music-player-portrait"
       },
       {
         "title": "Transformasi AI Creator – Futuristic Instagram Profile Cinematic Portrait",
@@ -991,6 +943,54 @@
         "slug": "cinematic-gambler-red-noir-luxury-portrait",
         "date": "2026-11-04",
         "id": "cinematic-gambler-red-noir-luxury-portrait"
+      },
+      {
+        "title": "FREEDOM OF THE SOUL – Surreal Blue Swallow Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7n6l01-shattered-serenity-and-rising-swallows.png",
+        "prompt": "Use the uploaded photo as the main subject and preserve the exact facial features, hairstyle, skin tone, expression, and recognizable identity. Create an emotional surreal oil painting with rich impasto brush textures and fine artistic details. The person is shown in a three-quarter portrait, wearing a slightly open white shirt, head tilted upward with closed eyes and a peaceful expression.\n\nThe skin and face are beautifully cracked like ancient porcelain and gradually disintegrating into hundreds of tiny fragments. From the shattered area, a flock of elegant blue swallows emerges and flies upward, carrying pieces of the face and soul into the air. Additional birds are flying around the subject, creating a sense of transformation, freedom, and rebirth.\n\nThe background consists of textured beige canvas with expressive palette-knife strokes and warm earthy colors. Small fragments and feathers float around the scene. Dramatic soft lighting illuminates the face, creating depth and emotion. Highly detailed oil painting, masterpiece, surreal symbolism, cinematic composition, museum-quality artwork, ultra realistic textures, soft shadows, harmonious color palette, 8k.\n\nAI Tool:\nChatGPT Image",
+        "category": "Surreal Art / Oil Painting / Emotional Portrait / Transformation",
+        "tool": "ChatGPT Image",
+        "note": "Gunakan foto referensi wajah asli. Pertahankan identitas, struktur wajah, rambut, dan warna kulit. Efek retakan porselen, serpihan wajah, burung walet biru, tekstur impasto, dan latar kanvas beige menciptakan simbol kebebasan dan kelahiran kembali.",
+        "slug": "freedom-of-the-soul-surreal-blue-swallow",
+        "date": "2026-11-08",
+        "id": "freedom-of-the-soul-surreal-blue-swallow"
+      },
+      {
+        "title": "CYBER EYE – AI Surveillance Identity Detection",
+        "status": "published",
+        "image": "/assets/uploads/mw7na7jh-cyberpunk-crosswalk-surveillance-hud.png",
+        "prompt": "Ultra-detailed cinematic cyberpunk surveillance scene of a modern stylish man, using the provided man’s face as identity reference, walking confidently across a city crosswalk in a futuristic urban environment. Wearing a black leather jacket, fitted dark jeans, black sneakers, minimalist streetwear, and dark sunglasses. Holding a coffee cup while casually walking with calm confident body language.\n\nThe entire scene viewed through an advanced AI-powered CCTV surveillance system interface. Futuristic holographic HUD overlays surrounding the man with facial recognition scans, biometric analysis, identity verification panels, object detection labels, gait analysis, eye scan interface, tracking boxes, and real-time data visualization.\n\nFloating transparent blue neon UI elements displaying futuristic security information such as:\n “FACIAL MATCH: 99.8%”\n “IDENTITY VERIFIED”\n “GAIT ANALYSIS”\n “HEART RATE”\n “MULTI-FACTOR VERIFICATION ACTIVE”\n “OBJECT DETECTED: LEATHER JACKET / COFFEE CUP / SNEAKERS”\n\nModern glass buildings in the background, clean dystopian city atmosphere, realistic street perspective, cinematic composition, high-tech surveillance aesthetic inspired by Blade Runner, Watch Dogs, and sci-fi thriller movies.\n\nCool cyan holographic lighting, ultra realistic textures, photorealistic skin, subtle reflections, shallow depth of field, security camera perspective, realistic AR interface graphics, cinematic color grading, highly detailed futuristic UI design, 8k, immersive cyberpunk realism.\n\nNegative prompt: blurry image, distorted anatomy, bad hands, low resolution, extra limbs, cartoon, unrealistic UI, messy overlays, oversaturated neon, duplicate person, text artifacts, watermark, low quality.\n\nAI Tool:\nChatGPT-Image",
+        "category": "Cyberpunk / AI Technology / CCTV / Futuristic Portrait",
+        "tool": "ChatGPT Image",
+        "note": "Gunakan foto wajah sebagai referensi utama dan pertahankan identitas asli. Tambahkan suasana kota futuristik, jaket kulit hitam, kacamata hitam, CCTV AI, hologram cyan, facial recognition, eye scan, gait analysis, object detection, dan real-time tracking.",
+        "slug": "cyber-eye-ai-surveillance-identity-detection",
+        "date": "2026-11-08",
+        "id": "cyber-eye-ai-surveillance-identity-detection"
+      },
+      {
+        "title": "REALITY MEETS CHIBI – Futuristic Music Player Streetwear Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7mne7z-urban-music-plaza-portrait.png",
+        "prompt": "Ultra-detailed cinematic lifestyle portrait of a modern stylish man, using the provided man’s face as identity reference, standing casually beside a sleek urban streetlight in a modern city plaza. Relaxed confident pose, fashionable expression, leaning against the pole with effortless cool energy.\n\nBeside him stands a cute chibi cartoon version of himself, perfectly matching his hairstyle, facial features, outfit, accessories, and attitude. The chibi character mirrors the same pose against the pole, creating a playful real-world-meets-animation interaction.\n\nBehind them floats an oversized futuristic music player interface inspired by modern streaming apps, displaying album artwork, playback controls, progress bar, and elegant glassmorphism UI design. The music card appears as a giant augmented reality object integrated naturally into the environment.\n\nThe man wears a premium leather jacket, stylish shirt and tie, tailored trousers, fashionable sunglasses, luxury accessories, and contemporary streetwear styling. Bright daylight, clean architectural background with glass buildings, minimalist urban aesthetic.\n\nPhotorealistic human subject combined with high-quality 2D/3D animated chibi character, seamless integration between reality and illustration, whimsical storytelling, social-media-worthy composition, vibrant yet natural colors, soft shadows, ultra realistic details, cinematic depth of field, luxury editorial photography, highly detailed character design, 8k masterpiece.\n\nNegative prompt: blurry image, low quality, distorted face, bad anatomy, extra limbs, duplicate character, poorly drawn cartoon, mismatched clothing, cluttered background, text artifacts, watermark, oversaturated colors, unrealistic proportions.\n\nAI Tool:\nChatGPT-Image",
+        "category": "AI Portrait / Chibi Character / Streetwear Fashion / Music Player UI / Futuristic Design / Urban Lifestyle",
+        "tool": "ChatGPT-Image",
+        "note": "Gunakan foto wajah sebagai referensi utama untuk menjaga konsistensi identitas. Buat karakter manusia realistis dan versi chibi dengan pakaian, gaya rambut, kacamata, dan aksesori yang sama. Tambahkan interface pemutar musik futuristik berbahan kaca transparan dengan efek glassmorphism. Pastikan komposisi seimbang, karakter chibi terlihat jelas, dan detail wajah tetap natural.",
+        "slug": "reality-meets-chibi-futuristic-music-player-portrait",
+        "date": "2026-11-08",
+        "id": "reality-meets-chibi-futuristic-music-player-portrait"
+      },
+      {
+        "title": "GOLDEN HOUR – Luxury G-Class Adventure Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7mzs21-golden-hour-g-class-adventure.png",
+        "prompt": "Use the uploaded reference photo as the primary basis for the face. Accurately preserve the original facial features, including face shape, eyes, nose, lips, skin tone, hairstyle, and body proportions. Create an ultra-realistic, cinematic portrait of a man sitting in a relaxed pose with his legs crossed on a black folding chair. He is dressed in an elegant black blazer, a white t-shirt, beige trousers, and white sneakers, and is wearing stylish glasses—his hand confidently touching the frame. In the background, a luxurious black off-road SUV, styled like a Mercedes-Benz G-Class, is captured mid-air, surrounded by a dramatic spray of dust, rocks, and flying earth. The setting is a dry grassland with mountains in the distance, under a golden-orange sunset sky. Incorporate \"golden hour\" lighting, realistic shadows, natural light reflections on the vehicle, highly detailed skin and fabric textures, a premium automotive advertisement composition, a low-angle camera perspective, cinematic color grading, photorealistic execution, ultra-sharp details, 4K quality, and a 4:5 vertical aspect ratio. Do not alter the facial identity from the reference photo.",
+        "category": "Cinematic Portrait / Luxury Lifestyle / Automotive / Fashion",
+        "tool": "ChatGPT Image",
+        "note": "Gunakan foto wajah dan character reference sebagai referensi utama. Pertahankan identitas wajah, rambut, warna kulit, dan proporsi tubuh. Gunakan pose duduk santai dengan kacamata, blazer hitam, celana beige, dan sneakers putih. Tambahkan SUV off-road hitam yang melompat dengan efek debu, bebatuan, pegunungan, serta pencahayaan sunset keemasan.",
+        "slug": "golden-hour-g-class-adventure-portrait",
+        "date": "2026-11-08",
+        "id": "golden-hour-g-class-adventure-portrait"
       },
       {
         "title": "Perfect Reflection – Luxury Symmetrical Editorial Portrait",
