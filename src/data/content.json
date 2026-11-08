@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Indonesian Youth Pledge Day – Cinematic Red White Patriotic AI Poster",
+        "status": "published",
+        "image": "/assets/uploads/mw7iksin-indonesian-youth-pledge-rally.png",
+        "prompt": "Use the photo reference, Create a highly realistic, cinematic 4K Indonesian Youth Pledge Day (Sumpah Pemuda) patriotic poster. Use the uploaded reference photo as the exact facial identity, preserving the person's original facial features, proportions, skin tone, and natural expression. Show him wearing a detailed red-and-white Indonesian-inspired jacket with black tactical straps, raising one fist confidently in the air. Surround him with a passionate crowd, waving Indonesian flags, and iconic national monuments. Use dramatic daylight, powerful red-and-white color grading, realistic skin texture, and professional poster composition. Add elegant bold typography: \"SELAMAT HARI SUMPAH PEMUDA\" and \"BERSATU, BERKARYA, UNTUK INDONESIA YANG LEBIH MAJU\". Ultra-photorealistic, sharp details, natural proportions, 4K quality. Do not alter the person's identity or make the face look like someone else. Size 9:16.",
+        "category": "AI Photo Editing / Patriotic Poster / Indonesian National Day / Sumpah Pemuda / Cinematic Photography / National Celebration",
+        "tool": "ChatGPT / GPT Image / Gemini / Midjourney",
+        "note": "Gunakan foto pribadi sebagai referensi identitas wajah utama. Pertahankan bentuk wajah, mata, hidung, bibir, rahang, warna kulit, dan gaya rambut agar tetap mudah dikenali. Buat karakter mengenakan jaket patriotik merah putih dengan tactical straps, mengangkat satu tangan mengepal sebagai simbol semangat pemuda. Tambahkan kerumunan pemuda, bendera Merah Putih, Monumen Nasional (Monas), dan langit cerah. Gunakan pencahayaan dramatis, warna merah putih yang kuat, serta komposisi poster profesional. Sertakan tulisan \"SELAMAT HARI SUMPAH PEMUDA\" dan \"BERSATU, BERKARYA, UNTUK INDONESIA YANG LEBIH MAJU\". Gunakan rasio vertikal 9:16.",
+        "slug": "indonesian-youth-pledge-day-cinematic-patriotic-poster",
+        "date": "2026-11-08",
+        "id": "indonesian-youth-pledge-day-cinematic-patriotic-poster"
+      },
+      {
         "title": "Futuristic Digital Creator Workspace – Cinematic AI Professional Portrait Prompt",
         "status": "published",
         "image": "/assets/uploads/mw7ih58o-futuristic-creative-director-in-a-digita.png",
