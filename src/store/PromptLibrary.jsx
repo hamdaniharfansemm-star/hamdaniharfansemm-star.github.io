@@ -6,7 +6,7 @@ import { isPublished, productPath, visibleProducts } from "./catalog.js";
 import { BuyButton, Cover, GoldPrice } from "./ProductParts.jsx";
 import { PROMPTS_BASE, copyText, hasTag, matchesPrompt, promptPath, promptTags, selectElementText, splitList, visiblePrompts, wordCount } from "./prompts.js";
 import { ChevronIcon, CloseSmall, EyeIcon, SearchIcon, SparkIcon } from "./StoreIcons.jsx";
-import { DownloadIcon, LikeButton, PromptGateProvider, usePromptGate } from "./promptGate.jsx";
+import { DownloadIcon, LikeButton, PromptGateProvider, TotalLikes, usePromptGate } from "./promptGate.jsx";
 
 const store = content.store || {};
 const lib = store.promptLibrary || {};
@@ -190,17 +190,19 @@ export function PromptMiniCard({ prompt: p, onOpen, focused = false, eager = fal
         <button type="button" onClick={() => onOpen?.(p)} className="block rounded-xl border border-white/[0.07] bg-[#040816] px-2.5 py-2 text-left transition-colors hover:border-white/15" aria-label={`Baca prompt lengkap: ${p.title}`}>
           <span className="line-clamp-3 font-mono text-[10.5px] leading-[1.55] text-slate-300 @[240px]:text-[11px]">{p.prompt}</span>
         </button>
-        <p className="flex min-w-0 items-center gap-1.5 text-[10px] text-slate-500">
-          <span className="shrink-0 whitespace-nowrap">{words} kata</span>
-          {tags.length > 1 && (
-            <>
-              <span aria-hidden>·</span>
-              <span className="truncate">{tags.slice(1, 3).join(", ")}{tags.length > 3 ? "…" : ""}</span>
-            </>
-          )}
-        </p>
-        <div className="mt-auto grid grid-cols-[auto_1fr_auto] gap-1.5">
-          <LikeButton prompt={p} compact />
+        <div className="flex min-w-0 items-center justify-between gap-2">
+          <p className="flex min-w-0 items-center gap-1.5 text-[10px] text-slate-500">
+            <span className="shrink-0 whitespace-nowrap">{words} kata</span>
+            {tags.length > 1 && (
+              <>
+                <span aria-hidden className="hidden @[220px]:inline">·</span>
+                <span className="hidden truncate @[220px]:inline">{tags.slice(1, 3).join(", ")}{tags.length > 3 ? "…" : ""}</span>
+              </>
+            )}
+          </p>
+          <LikeButton prompt={p} size="mini" className="shrink-0" />
+        </div>
+        <div className="mt-auto grid grid-cols-[1fr_auto] gap-1.5">
           <button
             type="button"
             onClick={doCopy}
@@ -347,7 +349,7 @@ export function PromptCarousel({ title, kicker, items, onOpen, onToast, focusSlu
         className="prompt-track no-scrollbar -mx-5 flex min-w-0 snap-x snap-mandatory gap-3 overflow-x-auto scroll-px-5 px-5 pb-2 sm:mx-0 sm:gap-4 sm:scroll-px-0 sm:px-0 lg:gap-5"
       >
         {items.map((p, i) => (
-          <li key={p.slug} className="w-[calc((100%-0.75rem)/2.2)] shrink-0 snap-start sm:w-[calc((100%-2rem)/3)] lg:w-[calc((100%-3.75rem)/4)]">
+          <li key={p.slug} className="w-[calc((100%-0.75rem)/1.7)] min-[380px]:w-[calc((100%-0.75rem)/2.2)] shrink-0 snap-start sm:w-[calc((100%-2rem)/3)] lg:w-[calc((100%-3.75rem)/4)]">
             <PromptMiniCard prompt={p} onOpen={onOpen} onToast={onToast} focused={p.slug === focusSlug} eager={i < 4} />
           </li>
         ))}
@@ -651,6 +653,21 @@ function SheetImage({ p, anim, onZoom, swipe, many, go, index, total, desktop = 
   );
 }
 
+/* ───────── "Paling disukai" — appears once public like totals are available ───────── */
+function PopularRow({ all, openFrom, onToast }) {
+  const g = usePromptGate();
+  const counts = g?.counts;
+  const items = useMemo(() => {
+    if (!counts) return [];
+    return all
+      .filter((p) => (counts[p.slug] || 0) > 0)
+      .sort((a, b) => (counts[b.slug] || 0) - (counts[a.slug] || 0))
+      .slice(0, 12);
+  }, [all, counts]);
+  if (items.length < 3) return null;
+  return <PromptCarousel kicker="Favorit pengunjung" title="Paling disukai" items={items} onOpen={openFrom(items)} onToast={onToast} />;
+}
+
 /* ───────── Hero collage of the latest results ───────── */
 function HeroCollage({ items, onOpen }) {
   if (!items.length) return null;
@@ -796,6 +813,7 @@ export function PromptLibraryPage({ preview = false, focusSlug = "", source = ""
             <ul className="mt-6 flex flex-wrap gap-2 text-xs" aria-label="Ringkasan">
               <li className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-slate-300"><b className="text-white">{all.length}</b> prompt</li>
               {tags.length > 0 && <li className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-slate-300"><b className="text-white">{tags.length}</b> topik</li>}
+              <TotalLikes />
               <li className="rounded-full border border-emerald-300/25 bg-emerald-300/[0.07] px-3 py-1.5 font-semibold text-emerald-200">100% gratis · tanpa daftar</li>
             </ul>
           )}
@@ -876,6 +894,7 @@ export function PromptLibraryPage({ preview = false, focusSlug = "", source = ""
           ) : (
             <div className="grid grid-cols-[minmax(0,1fr)] gap-12">
               <PromptCarousel kicker="Terbaru" title="Semua prompt" items={all} onOpen={openFrom(all)} onToast={showToast} focusSlug={focusSlug} action={viewToggle} />
+              <PopularRow all={all} openFrom={openFrom} onToast={showToast} />
               {rows.map((r) => (
                 <PromptCarousel key={r.tag} kicker="Topik" title={r.tag} items={r.items} onOpen={openFrom(r.items)} onToast={showToast} />
               ))}

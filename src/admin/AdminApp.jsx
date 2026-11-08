@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { isSecretKey } from "../store/keyCheck.js";
 import { EditorCtx, FieldList } from "./Fields.jsx";
 import { tabs } from "./schema.js";
 import {
@@ -275,6 +276,19 @@ function prepareForSave(data) {
     if (!p.image) warnings.push(`Prompt "${t}" belum punya gambar contoh.`);
     if (JSON.stringify(p).includes("[ISI")) warnings.push(`Prompt "${t}" masih berisi teks [ISI: …].`);
   });
+  // Supabase (total like): never publish a secret key on the public website
+  const lib = d.store?.promptLibrary;
+  if (lib) {
+    lib.supabaseUrl = String(lib.supabaseUrl || "").trim().replace(/\/+$/, "").replace(/\/rest\/v1$/, "");
+    lib.supabaseKey = String(lib.supabaseKey || "").trim();
+    if (lib.supabaseKey && isSecretKey(lib.supabaseKey)) {
+      lib.supabaseKey = "";
+      warnings.push("Supabase: yang ditempel adalah SECRET key — demi keamanan dikosongkan. Pakai Publishable key (sb_publishable_…).");
+    }
+    if (lib.supabaseUrl && !/^https:\/\/[a-z0-9-]+\.supabase\.(co|in)$/i.test(lib.supabaseUrl))
+      warnings.push("Supabase: Project URL harus seperti https://xxxxxxxx.supabase.co");
+    if (!!lib.supabaseUrl !== !!lib.supabaseKey) warnings.push("Supabase: isi Project URL dan Publishable key keduanya agar total like aktif.");
+  }
   if (!d.profile?.name?.trim()) warnings.push("Nama di Profil kosong.");
   return { data: d, warnings };
 }

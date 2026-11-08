@@ -4,10 +4,12 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
 import content from "../data/content.json";
 import { copyText, promptPath, selectElementText } from "./prompts.js";
+import { fetchLikeCounts, formatLikes, likesEnabled, sendLike, visitorId } from "./likesApi.js";
 
 const LIKES_KEY = "hh-prompt-likes-v1";
 const EMAIL_KEY = "hh-prompt-email-v1";
 const SENT_KEY = "hh-prompt-leads-v1";
+const SYNC_KEY = "hh-prompt-likes-synced-v1";
 const FORM_TARGET = String(content.contact?.formEmail || content.profile?.email || "").trim();
 const ENDPOINT = FORM_TARGET ? `https://formsubmit.co/ajax/${encodeURIComponent(FORM_TARGET)}` : "";
 
@@ -94,8 +96,39 @@ const LockIcon = (p) => (
 /* ── provider ── */
 export function PromptGateProvider({ children, onToast }) {
   const [likes, setLikes] = useState(() => read(LIKES_KEY, {}));
+  const likesRef = useRef(likes);
+  likesRef.current = likes;
   const [email, setEmail] = useState(() => read(EMAIL_KEY, ""));
   const [gate, setGate] = useState(null); // { p, action: "copy" | "download", selectEl }
+  const [counts, setCounts] = useState(null); // { slug: total } from Supabase, or null
+
+  // Public totals (Supabase). Likes made before Supabase was connected are synced once.
+  useEffect(() => {
+    if (!likesEnabled) return;
+    let live = true;
+    (async () => {
+      try {
+        const map = await fetchLikeCounts();
+        if (!live || !map) return;
+        setCounts(map);
+        const vid = visitorId();
+        const synced = read(SYNC_KEY, {});
+        const pending = Object.keys(read(LIKES_KEY, {})).filter((slug) => !synced[slug]).slice(0, 40);
+        for (const slug of pending) {
+          const n = await sendLike(slug, vid, true).catch(() => null);
+          if (n === null) break;
+          synced[slug] = 1;
+          write(SYNC_KEY, synced);
+          if (live) setCounts((c) => ({ ...(c || {}), [slug]: n }));
+        }
+      } catch {
+        /* offline / not set up yet → device-only likes */
+      }
+    })();
+    return () => {
+      live = false;
+    };
+  }, []);
 
   // keep tabs/components in sync
   useEffect(() => {
@@ -109,13 +142,25 @@ export function PromptGateProvider({ children, onToast }) {
 
   const isLiked = useCallback((slug) => !!likes[slug], [likes]);
   const setLike = useCallback((slug, on) => {
-    setLikes((cur) => {
-      const next = { ...cur };
-      if (on) next[slug] = Date.now();
-      else delete next[slug];
-      write(LIKES_KEY, next);
-      return next;
-    });
+    if (!!likesRef.current[slug] === on) return;
+    const next = { ...likesRef.current };
+    if (on) next[slug] = Date.now();
+    else delete next[slug];
+    likesRef.current = next;
+    write(LIKES_KEY, next);
+    setLikes(next);
+    if (!likesEnabled) return;
+    // optimistic total, then the exact number from the database
+    setCounts((c) => (c ? { ...c, [slug]: Math.max(0, (c[slug] || 0) + (on ? 1 : -1)) } : c));
+    sendLike(slug, visitorId(), on)
+      .then((n) => {
+        const synced = read(SYNC_KEY, {});
+        if (on) synced[slug] = 1;
+        else delete synced[slug];
+        write(SYNC_KEY, synced);
+        setCounts((c) => ({ ...(c || {}), [slug]: n }));
+      })
+      .catch(() => {});
   }, []);
 
   const doCopy = useCallback(
@@ -136,9 +181,14 @@ export function PromptGateProvider({ children, onToast }) {
     [onToast]
   );
 
+  const total = useMemo(() => (counts ? Object.values(counts).reduce((a, b) => a + b, 0) : null), [counts]);
   const api = useMemo(
     () => ({
       isLiked,
+      /** Public total for a prompt, or null when Supabase is not connected / not loaded. */
+      countOf: (slug) => (counts ? counts[slug] || 0 : null),
+      counts,
+      totalLikes: total,
       toggleLike: (p) => {
         const on = !likes[p.slug];
         setLike(p.slug, on);
@@ -162,7 +212,7 @@ export function PromptGateProvider({ children, onToast }) {
         return doDownload(p, email);
       },
     }),
-    [isLiked, likes, email, setLike, doCopy, doDownload, onToast]
+    [isLiked, likes, email, setLike, doCopy, doDownload, onToast, counts, total]
   );
 
   return (
@@ -312,12 +362,25 @@ function GateModal({ gate, liked, knownEmail, onClose, onLike, onCopy, onEmail, 
   );
 }
 
+/** Total likes across all prompts (hero summary). Hidden until Supabase answers. */
+export function TotalLikes({ className = "" }) {
+  const g = usePromptGate();
+  if (!g || g.totalLikes === null) return null;
+  return (
+    <li className={`inline-flex items-center gap-1.5 rounded-full border border-rose-400/30 bg-rose-500/10 px-3 py-1.5 text-rose-200 ${className}`}>
+      <HeartIcon filled width={13} height={13} /> <b className="tabular-nums text-white">{formatLikes(g.totalLikes)}</b> suka
+    </li>
+  );
+}
+
 /** Like button used under each photo and in the detail panel. */
-export function LikeButton({ prompt: p, compact = false, className = "" }) {
+export function LikeButton({ prompt: p, compact = false, size = "", className = "" }) {
+  const mini = size === "mini";
   const g = usePromptGate();
   const liked = g?.isLiked(p.slug);
   const [pop, setPop] = useState(0);
   if (!g) return null;
+  const n = g.countOf(p.slug);
   return (
     <button
       type="button"
@@ -330,10 +393,18 @@ export function LikeButton({ prompt: p, compact = false, className = "" }) {
       aria-label={liked ? `Batal suka: ${p.title}` : `Suka foto: ${p.title}`}
       className={`inline-flex items-center justify-center gap-1.5 rounded-full border font-semibold transition-colors ${
         liked ? "border-rose-400/50 bg-rose-500/15 text-rose-300" : "border-white/15 text-slate-200 hover:border-rose-300/60 hover:text-rose-200"
-      } ${compact ? "h-9 px-3 text-xs" : "h-full px-4 text-sm"} ${className}`}
+      } ${mini ? "h-7 px-2.5 text-[11px]" : compact ? "h-9 px-3 text-xs" : "h-full px-4 text-sm"} ${className}`}
     >
-      <HeartIcon key={pop} filled={liked} width={compact ? 15 : 17} height={compact ? 15 : 17} className={pop ? "like-pop" : ""} />
-      {compact ? <span className="hidden @[230px]:inline">{liked ? "Disukai" : "Suka"}</span> : <span className="hidden sm:inline">{liked ? "Disukai" : "Suka"}</span>}
+      <HeartIcon key={pop} filled={liked} width={mini ? 13 : compact ? 15 : 17} height={mini ? 13 : compact ? 15 : 17} className={pop ? "like-pop" : ""} />
+      {n !== null ? (
+        <span className="tabular-nums" aria-label={`${n} suka`}>{formatLikes(n)}</span>
+      ) : mini ? (
+        <span>{liked ? "Disukai" : "Suka"}</span>
+      ) : compact ? (
+        <span className="hidden @[230px]:inline">{liked ? "Disukai" : "Suka"}</span>
+      ) : (
+        <span className="hidden sm:inline">{liked ? "Disukai" : "Suka"}</span>
+      )}
     </button>
   );
 }

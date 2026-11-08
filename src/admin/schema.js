@@ -471,6 +471,20 @@ export const tabs = [
             options: (data) => [{ value: "", label: "— Tidak ada —" }, ...((data?.store?.products || []).map((p) => ({ value: p.slug, label: p.name || p.slug })))],
           },
           { key: "ctaKicker", type: "text", label: "Teks kecil di atas produk", placeholder: "Mau hasil yang lebih tajam?" },
+          {
+            key: "supabaseUrl",
+            type: "text",
+            label: "Supabase — Project URL (untuk total like)",
+            placeholder: "https://xxxxxxxx.supabase.co",
+            help: "Opsional. Kosongkan bila belum memakai Supabase (like hanya tersimpan di perangkat pengunjung).",
+          },
+          {
+            key: "supabaseKey",
+            type: "text",
+            label: "Supabase — Publishable key",
+            placeholder: "sb_publishable_…",
+            help: "Pakai PUBLISHABLE key (sb_publishable_…) atau anon key lama. JANGAN memakai secret / service_role key — admin akan menolaknya.",
+          },
         ],
       },
       {
