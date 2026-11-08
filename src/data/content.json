@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "FREEDOM OF THE SOUL – Surreal Blue Swallow Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7n6l01-shattered-serenity-and-rising-swallows.png",
+        "prompt": "Use the uploaded photo as the main subject and preserve the exact facial features, hairstyle, skin tone, expression, and recognizable identity. Create an emotional surreal oil painting with rich impasto brush textures and fine artistic details. The person is shown in a three-quarter portrait, wearing a slightly open white shirt, head tilted upward with closed eyes and a peaceful expression.\n\nThe skin and face are beautifully cracked like ancient porcelain and gradually disintegrating into hundreds of tiny fragments. From the shattered area, a flock of elegant blue swallows emerges and flies upward, carrying pieces of the face and soul into the air. Additional birds are flying around the subject, creating a sense of transformation, freedom, and rebirth.\n\nThe background consists of textured beige canvas with expressive palette-knife strokes and warm earthy colors. Small fragments and feathers float around the scene. Dramatic soft lighting illuminates the face, creating depth and emotion. Highly detailed oil painting, masterpiece, surreal symbolism, cinematic composition, museum-quality artwork, ultra realistic textures, soft shadows, harmonious color palette, 8k.\n\nAI Tool:\nChatGPT Image",
+        "category": "Surreal Art / Oil Painting / Emotional Portrait / Transformation",
+        "tool": "ChatGPT Image",
+        "note": "Gunakan foto referensi wajah asli. Pertahankan identitas, struktur wajah, rambut, dan warna kulit. Efek retakan porselen, serpihan wajah, burung walet biru, tekstur impasto, dan latar kanvas beige menciptakan simbol kebebasan dan kelahiran kembali.",
+        "slug": "freedom-of-the-soul-surreal-blue-swallow",
+        "date": "2026-11-08",
+        "id": "freedom-of-the-soul-surreal-blue-swallow"
+      },
+      {
         "title": "RED SHADOW – The Masked Antihero",
         "status": "published",
         "image": "/assets/uploads/mw7n36u6-hooded-figure-with-weathered-mask.png",
