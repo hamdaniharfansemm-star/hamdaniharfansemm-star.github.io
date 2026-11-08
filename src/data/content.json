@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "HAMDANI HARFAN – Geometric Sliced Typography Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7mvj4d-fragmented-portrait-hamdani-harfan.png",
+        "prompt": "Create a modern minimalist typography portrait poster using the uploaded photo as the main subject.\n\nPreserve the exact facial structure, hairstyle, expression, skin tone, body proportions, and recognizable identity from the uploaded person. The face must remain realistic, sharp, and highly recognizable.\n\nDesign the portrait using multiple diagonal geometric slices floating with subtle depth and soft shadows, creating a fragmented layered photo effect. Each slice should align perfectly to reconstruct the full portrait while maintaining a premium contemporary graphic design aesthetic.\n\nReplace all displayed names and text with:\n\nSEPRIANSAH\n\nMain headline:\n\nACL\n\nTop title:\n\nHALO AKU SEPRI\n\nAdd elegant modern typography elements, including oversized transparent outline text \"SEPRI\" integrated into the background. Include small minimalist decorative text and subtle Japanese-style typography accents for a trendy editorial poster look.\n\nUse a clean light gray background with soft shadows and professional spacing. The overall composition should resemble a high-end fashion magazine cover or modern social media branding poster.\n\nStyle: modern graphic design, editorial fashion poster, geometric sliced portrait, minimalist typography art, premium branding design, contemporary social media poster, clean luxury aesthetic, magazine cover style, ultra detailed, professional layout.\n\nColor palette: light gray background, white accents, soft teal typography, subtle shadows, clean neutral tones.\n\nLighting should be soft, natural, and flattering with realistic skin texture and sharp facial details.\n\nUltra HD, 8K resolution, vertical composition, masterpiece quality, highly detailed, modern premium poster design, elegant and visually balanced.\n\nAI Tool:\nChatGPT Image",
+        "category": "Personal Branding / Geometric Portrait / Typography Art / Editorial Poster",
+        "tool": "ChatGPT Image",
+        "note": "Gunakan foto referensi sebagai identitas utama. Pertahankan wajah, rambut, warna kulit, dan karakter asli. Buat efek foto terpotong diagonal dengan layer geometris, bayangan realistis, dan tipografi modern. Gunakan nama HAMDANI HARFAN sebagai teks utama di seluruh desain, termasuk outline background. Pastikan tidak ada nama orang lain.",
+        "slug": "hamdani-harfan-geometric-sliced-portrait",
+        "date": "2026-11-08",
+        "id": "hamdani-harfan-geometric-sliced-portrait"
+      },
+      {
         "title": "REALITY MEETS CHIBI – Futuristic Music Player Streetwear Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7mne7z-urban-music-plaza-portrait.png",
