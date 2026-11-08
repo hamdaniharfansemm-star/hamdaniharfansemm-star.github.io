@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Luxury Blue Smoke Portrait – Cinematic Executive Style",
+        "status": "published",
+        "image": "/assets/uploads/mw7knfu1-cinematic-blue-smoke-chair-portrait.png",
+        "prompt": "Use the uploaded photo as the exact facial reference. Create an ultra-realistic 4K cinematic editorial portrait of the same person sitting confidently in a luxurious dark leather armchair, legs crossed, wearing a black turtleneck, elegant textured black overcoat, tailored trousers, and polished black boots. One hand adjusts his stylish glasses while the other rests naturally on the armchair. Preserve his exact facial identity, natural skin tone, face shape, hairstyle, and distinctive features. Surround him with swirling blue smoke, dramatic overhead spotlight, cool blue rim lighting, deep cinematic shadows, and a glossy reflective floor. Photorealistic skin texture, intricate fabric details, anatomically accurate hands, realistic lighting, luxury fashion campaign aesthetic, sharp facial focus, professional photography, ultra-detailed, 4K UHD, vertical 9:16 composition.",
+        "category": "Cinematic Portrait, Luxury Fashion Photography, Personal Branding, Executive Portrait",
+        "tool": "ChatGPT Image, Gemini, Midjourney",
+        "note": "Transformasikan foto pribadi menjadi potret sinematik bergaya eksekutif mewah. Subjek duduk percaya diri di kursi kulit premium dengan kaki bersilang, mengenakan turtleneck hitam, mantel elegan, celana formal, sepatu boots hitam, dan kacamata stylish.\n\nDikelilingi asap biru dramatis, pencahayaan spotlight dari atas, bayangan sinematik, serta lantai reflektif yang memberikan kesan eksklusif.\n\nCocok untuk personal branding, profil profesional, konten media sosial, foto CEO, entrepreneur, developer, dan creative professional.",
+        "slug": "luxury-blue-smoke-cinematic-executive-portrait",
+        "date": "2026-11-08",
+        "id": "luxury-blue-smoke-cinematic-executive-portrait"
+      },
+      {
         "title": "Geometric Soul – Colorful Stained Glass Polygon Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7k9gnm-geometric-stained-glass-portrait.png",
