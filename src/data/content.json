@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Futuristic Digital Creator Workspace – Cinematic AI Professional Portrait Prompt",
+        "status": "published",
+        "image": "/assets/uploads/mw7ih58o-futuristic-creative-director-in-a-digita.png",
+        "prompt": "Use the uploaded photo as the exact facial reference. Create an ultra-realistic 4K cinematic fashion editorial using the person in the reference photo, preserving their exact facial identity, natural skin tone, facial features, and realistic proportions. Depict them walking confidently through a futuristic creative digital workspace, wearing an elegant all-black outfit with a long tailored coat, black trousers, and polished leather boots. Surround them with floating blue folders, translucent interface panels, creative project boards, photography previews, and oversized digital icons in a sophisticated white-and-electric-blue environment. Low-angle full-body composition, dynamic perspective, premium minimalist aesthetic, soft cinematic lighting, realistic shadows, intricate fabric textures, sharp facial details, professional photography, HDR, photorealistic, 4K resolution. Keep the person's face and identity consistent with the reference photo; do not alter their facial structure or make them look like a different person.",
+        "category": "AI Photo Editing / Futuristic Photography / Digital Creator / Creative Workspace / Technology / Personal Branding",
+        "tool": "ChatGPT / GPT Image / Gemini / Midjourney",
+        "note": "Gunakan foto pribadi sebagai referensi identitas wajah utama. Pertahankan bentuk wajah, mata, hidung, bibir, rahang, warna kulit, dan gaya rambut agar karakter tetap konsisten. Buat karakter berjalan percaya diri mengenakan long black tailored coat, black trousers, dan polished leather boots. Tempatkan karakter di dalam studio digital futuristik dengan floating blue folders, translucent interface panels, creative project boards, photography previews, serta ikon aplikasi kreatif. Gunakan kombinasi warna putih, navy, dan electric blue dengan pencahayaan cinematic dan lantai reflektif. Cocok untuk personal branding AI Creator, Software Engineer, dan Digital Innovator. Gunakan rasio vertikal 4:5 atau 9:16.",
+        "slug": "futuristic-digital-creator-workspace-cinematic-ai-portrait",
+        "date": "2026-11-08",
+        "id": "futuristic-digital-creator-workspace-cinematic-ai-portrait"
+      },
+      {
         "title": "Mystic Shadow Dragon – Futuristic Silver Cinematic Fashion Portrait AI Prompt",
         "status": "published",
         "image": "/assets/uploads/mw7icd6q-cyberpunk-dragon-guardian-portrait.png",
