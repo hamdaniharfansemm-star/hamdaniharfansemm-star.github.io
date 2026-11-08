@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Cosmic Fantasy Library – Cinematic Magical Book Universe AI Photo Prompt",
+        "status": "published",
+        "image": "/assets/uploads/mw7ej7z9-cosmic-library-wanderer.png",
+        "prompt": "Create a cinematic fantasy image using the uploaded photo as the main subject, keep the face 100% identical.\nThe subject is walking confidently toward the camera inside a विशाल magical library with tall bookshelves.\nBooks are floating and flying around, pages glowing and scattering in the air.\nAbove, a cosmic galaxy sky is visible through the ceiling, with colorful nebula and stars swirling.\nLighting is warm golden mixed with magical blue-purple glow, reflections on the floor, dramatic cinematic shadows.\nOutfit: casual modern (dark hoodie, jacket, cargo pants, sneakers).\nExpression: calm, confident, slightly mysterious.\nEffects: floating particles, glowing sparks, depth of field, motion blur on flying books.\nStyle: hyperrealistic, ultra-detailed, cinematic, 8K, wide-angle lens, epic atmosphere.\n\nAI Tool:\nChatGPT-Image",
+        "category": "AI Photo Editing / Fantasy Photography / Cinematic Portrait / Magical Library / Surreal Art",
+        "tool": "ChatGPT Image / GPT-Image / Gemini",
+        "note": "Gunakan foto asli sebagai referensi utama. Pertahankan identitas wajah, bentuk wajah, mata, hidung, bibir, warna kulit, dan gaya rambut semirip mungkin dengan foto sumber. Buat subjek berjalan percaya diri ke arah kamera di dalam perpustakaan fantasi megah dengan rak buku menjulang tinggi. Tambahkan buku dan halaman yang melayang, partikel cahaya, percikan magis, serta langit galaksi penuh nebula di langit-langit. Gunakan outfit casual modern berupa hoodie gelap, jaket, celana cargo, dan sneakers. Kombinasikan cahaya emas hangat dengan efek biru-ungu magis, refleksi lantai, cinematic shadows, depth of field, dan perspektif wide-angle. Pastikan anatomi natural dan detail realistis.",
+        "slug": "cosmic-fantasy-library-cinematic-magical-ai-prompt",
+        "date": "2026-11-08",
+        "id": "cosmic-fantasy-library-cinematic-magical-ai-prompt"
+      },
+      {
         "title": "Cinematic Urban Portrait with German Shepherd – Low Angle AI Photo Prompt",
         "status": "published",
         "image": "/assets/uploads/mw7ef8b2-urban-guardian-man-and-shepherd-in-graff.png",
