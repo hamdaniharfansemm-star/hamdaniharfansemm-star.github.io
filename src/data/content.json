@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "REALITY MEETS CHIBI – Futuristic Music Player Streetwear Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7mne7z-urban-music-plaza-portrait.png",
+        "prompt": "Ultra-detailed cinematic lifestyle portrait of a modern stylish man, using the provided man’s face as identity reference, standing casually beside a sleek urban streetlight in a modern city plaza. Relaxed confident pose, fashionable expression, leaning against the pole with effortless cool energy.\n\nBeside him stands a cute chibi cartoon version of himself, perfectly matching his hairstyle, facial features, outfit, accessories, and attitude. The chibi character mirrors the same pose against the pole, creating a playful real-world-meets-animation interaction.\n\nBehind them floats an oversized futuristic music player interface inspired by modern streaming apps, displaying album artwork, playback controls, progress bar, and elegant glassmorphism UI design. The music card appears as a giant augmented reality object integrated naturally into the environment.\n\nThe man wears a premium leather jacket, stylish shirt and tie, tailored trousers, fashionable sunglasses, luxury accessories, and contemporary streetwear styling. Bright daylight, clean architectural background with glass buildings, minimalist urban aesthetic.\n\nPhotorealistic human subject combined with high-quality 2D/3D animated chibi character, seamless integration between reality and illustration, whimsical storytelling, social-media-worthy composition, vibrant yet natural colors, soft shadows, ultra realistic details, cinematic depth of field, luxury editorial photography, highly detailed character design, 8k masterpiece.\n\nNegative prompt: blurry image, low quality, distorted face, bad anatomy, extra limbs, duplicate character, poorly drawn cartoon, mismatched clothing, cluttered background, text artifacts, watermark, oversaturated colors, unrealistic proportions.\n\nAI Tool:\nChatGPT-Image",
+        "category": "AI Portrait / Chibi Character / Streetwear Fashion / Music Player UI / Futuristic Design / Urban Lifestyle",
+        "tool": "ChatGPT-Image",
+        "note": "Gunakan foto wajah sebagai referensi utama untuk menjaga konsistensi identitas. Buat karakter manusia realistis dan versi chibi dengan pakaian, gaya rambut, kacamata, dan aksesori yang sama. Tambahkan interface pemutar musik futuristik berbahan kaca transparan dengan efek glassmorphism. Pastikan komposisi seimbang, karakter chibi terlihat jelas, dan detail wajah tetap natural.",
+        "slug": "reality-meets-chibi-futuristic-music-player-portrait",
+        "date": "2026-11-08",
+        "id": "reality-meets-chibi-futuristic-music-player-portrait"
+      },
+      {
         "title": "Transformasi AI Creator – Futuristic Instagram Profile Cinematic Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7joun8-hamdani-harfan-neon-ai-creator-profile.png",
