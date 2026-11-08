@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Street Photography with Chibi Mini Me – Realistic Urban Portrait AI Prompt",
+        "status": "published",
+        "image": "/assets/uploads/mw7df2mc-daily-vibes-at-the-station-1.png",
+        "prompt": "Create a stylish street photo using the uploaded photo as the main subject. Keep the face 100% identical. Full body pose, standing casually (hoodie, pants, sneakers, holding a bag). Add several small chibi mini versions of the subject around them (on shoulder, leg, bag), cute and playful.\nBackground: urban setting (train station or city), with hand-drawn doodles (stars, arrows, lightning, text, sketches) around the subject.\nStyle: mix of realistic photography and 2D doodle illustration.\nLighting: natural cinematic lighting.\nMood: fun, trendy, Gen Z vibes.\nQuality: high detail, clean, sharp.\n\nAI Tool:\nChatGPT-Image",
+        "category": "AI Photo Editing / Street Photography / Chibi Character / Digital Art",
+        "tool": "ChatGPT Image / Gemini / Midjourney",
+        "note": "Gunakan foto asli sebagai referensi utama. Pertahankan wajah, identitas, bentuk wajah, warna kulit, dan karakteristik asli 100%. Buat full-body street photography dengan outfit casual modern, background stasiun atau perkotaan, serta beberapa karakter chibi mini yang menyerupai subjek. Kombinasikan fotografi realistis dengan ilustrasi doodle 2D. Pastikan proporsi tubuh natural, pencahayaan cinematic, dan hasil tajam berkualitas tinggi.",
+        "slug": "street-photography-chibi-mini-me-ai-prompt",
+        "date": "2026-11-08",
+        "id": "street-photography-chibi-mini-me-ai-prompt"
+      },
+      {
         "title": "Potret Psychedelic Neon – Seni Digital Abstrak Ultra-Realistis",
         "status": "published",
         "image": "/assets/uploads/mvzc67cd-psychedelic-portrait-in-swirling-neon-pa.jpg",
