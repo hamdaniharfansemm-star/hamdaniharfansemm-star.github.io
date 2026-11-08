@@ -857,7 +857,9 @@
       "title": "Prompt AI Siap Pakai",
       "intro": "Lihat contoh hasilnya, salin prompt-nya dengan satu ketukan, lalu tempel di ChatGPT, Gemini, atau aplikasi AI favorit Anda.",
       "ctaProduct": "blueprint-prompt-kelas-dunia",
-      "ctaKicker": "Mau hasil AI yang lebih tajam untuk kerja & bisnis?"
+      "ctaKicker": "Mau hasil AI yang lebih tajam untuk kerja & bisnis?",
+      "supabaseUrl": "https://pqotarewwaizgdnbdwtx.supabase.co",
+      "supabaseKey": "1VnqNeNHNrm1jFVg"
     },
     "prompts": [
       {
