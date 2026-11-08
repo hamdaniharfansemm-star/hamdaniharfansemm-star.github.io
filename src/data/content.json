@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "RAINY TAXI NIGHT – Cinematic Neon Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7lmza2-rainy-neon-taxi-portrait.png",
+        "prompt": "Use the reference image for the exact composition and setting, and the second reference image as the facial identity. Replace the original face with the reference person's face, preserving 100% of their natural facial features, face shape, skin tone, and proportions. Keep the beige shirt, seated position inside the yellow taxi, rain-covered window, cinematic red-orange neon lighting, and blurred city reflections. Ensure seamless face blending, realistic skin texture, natural lighting, and consistent shadows. Ultra-photorealistic, cinematic photography, sharp details, 4K quality. Do not alter the original composition or introduce unnecessary elements. Size 9:16.",
+        "category": "Cinematic Portrait / Night Photography / Neon City / Rainy Aesthetic",
+        "tool": "ChatGPT Image",
+        "note": "Gunakan foto wajah sebagai referensi utama. Efek hujan dan neon merah-oranye memberikan kesan cinematic urban photography. Cocok untuk foto profil, personal branding, dan konten media sosial.",
+        "slug": "rainy-taxi-night-cinematic-neon-portrait",
+        "date": "2026-11-08",
+        "id": "rainy-taxi-night-cinematic-neon-portrait"
+      },
+      {
         "title": "WARM RUSTIC COURTYARD – Golden Hour Editorial Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7ljg5s-golden-courtyard-portrait.png",
