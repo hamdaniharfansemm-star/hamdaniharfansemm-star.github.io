@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "GOLDEN HOUR – Luxury G-Class Adventure Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7mzs21-golden-hour-g-class-adventure.png",
+        "prompt": "Use the uploaded reference photo as the primary basis for the face. Accurately preserve the original facial features, including face shape, eyes, nose, lips, skin tone, hairstyle, and body proportions. Create an ultra-realistic, cinematic portrait of a man sitting in a relaxed pose with his legs crossed on a black folding chair. He is dressed in an elegant black blazer, a white t-shirt, beige trousers, and white sneakers, and is wearing stylish glasses—his hand confidently touching the frame. In the background, a luxurious black off-road SUV, styled like a Mercedes-Benz G-Class, is captured mid-air, surrounded by a dramatic spray of dust, rocks, and flying earth. The setting is a dry grassland with mountains in the distance, under a golden-orange sunset sky. Incorporate \"golden hour\" lighting, realistic shadows, natural light reflections on the vehicle, highly detailed skin and fabric textures, a premium automotive advertisement composition, a low-angle camera perspective, cinematic color grading, photorealistic execution, ultra-sharp details, 4K quality, and a 4:5 vertical aspect ratio. Do not alter the facial identity from the reference photo.",
+        "category": "Cinematic Portrait / Luxury Lifestyle / Automotive / Fashion",
+        "tool": "ChatGPT Image",
+        "note": "Gunakan foto wajah dan character reference sebagai referensi utama. Pertahankan identitas wajah, rambut, warna kulit, dan proporsi tubuh. Gunakan pose duduk santai dengan kacamata, blazer hitam, celana beige, dan sneakers putih. Tambahkan SUV off-road hitam yang melompat dengan efek debu, bebatuan, pegunungan, serta pencahayaan sunset keemasan.",
+        "slug": "golden-hour-g-class-adventure-portrait",
+        "date": "2026-11-08",
+        "id": "golden-hour-g-class-adventure-portrait"
+      },
+      {
         "title": "HAMDANI HARFAN – Geometric Sliced Typography Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7mvj4d-fragmented-portrait-hamdani-harfan.png",
