@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Lonely in the Crowd – Cinematic Urban Street Portrait AI Photo Prompt",
+        "status": "published",
+        "image": "/assets/uploads/mw7j2ehq-calm-amid-the-city-rush.png",
+        "prompt": "Use the photo reference as the main composition reference and the second image as the facial identity reference. Replace the original person's face with the face from the reference photo, preserving exact facial features, natural proportions, skin texture, and identity. Keep the original blue hoodie, “lonely” text, pose, expression, and cinematic urban atmosphere. Maintain a perfectly natural head alignment, realistic lighting, soft blue tones, and blurred people surrounding the subject. Ultra-photorealistic, professionally shot editorial fashion photography, sharp facial details, natural skin texture, 4K quality. Do not distort, tilt, or alter the facial structure. Size 9:16",
+        "category": "AI Photography / Cinematic Portrait / Urban Streetwear / Fashion Editorial / Moody Aesthetic",
+        "tool": "ChatGPT / Gemini / Midjourney",
+        "note": "Gunakan foto referensi wajah dengan tampilan frontal atau 3/4 untuk menjaga konsistensi identitas. Pertahankan wajah asli, gaya rambut, dan proporsi tubuh. Gunakan rasio 9:16 untuk hasil portrait vertikal. Cocok untuk konsep cinematic urban photography, streetwear, dan konten media sosial.",
+        "slug": "lonely-in-the-crowd-cinematic-urban-portrait",
+        "date": "2026-11-08",
+        "id": "lonely-in-the-crowd-cinematic-urban-portrait"
+      },
+      {
         "title": "Back to the 90s – Windows 95 Retro Fashion Portrait AI Photo Prompt",
         "status": "published",
         "image": "/assets/uploads/mw7ium18-windows-95-denim-street-portrait.png",
