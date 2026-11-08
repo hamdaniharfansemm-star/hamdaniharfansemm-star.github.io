@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Fire Within My Hands – Cinematic AI Fire Doppelgänger Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7jwide-fiery-miniature-in-an-open-palm.png",
+        "prompt": "Create a cinematic, photorealistic image using the uploaded photo as the main subject, keep the face exactly recognizable.\n\nThe subject is standing confidently, wearing a dark leather jacket, neutral expression, looking directly at the camera.\n\nPose: one hand extended forward, palm open.\n\nFrom the palm, a small human-like figure made entirely of fire is emerging, shaped like the same person (mini version), with detailed glowing flames, sparks, and embers.\n\nThe fire figure should look elegant, semi-realistic, and dynamic, with smooth flame flow and warm glow.\n\nBackground: indoor setting with soft blur (depth of field), warm cinematic lighting.\n\nLighting: strong warm orange glow from the fire illuminating the subject’s face and hand, creating dramatic highlights and shadows.\n\nMood: powerful, mystical, magical, slightly surreal.\n\nDetails: high realism, volumetric light, glowing particles, sharp facial detail, natural skin texture.\n\nCamera: medium shot, shallow depth of field, cinematic composition.\n\nQuality: ultra-detailed, 8K, HDR, sharp focus, professional photography style.\n\nAI Tool:\nChatGPT-Image",
+        "category": "AI Portrait / Fantasy Photography / Fire Effect / Cinematic Art / Surreal Portrait",
+        "tool": "ChatGPT Image / Gemini / Midjourney",
+        "note": "Gunakan foto referensi wajah tampak depan dengan pencahayaan jelas. Pertahankan identitas wajah, gaya rambut, dan proporsi tubuh. Gunakan foto berkualitas tinggi agar detail wajah tetap realistis. Cocok untuk konsep fantasy portrait, personal branding, dan konten media sosial.",
+        "slug": "fire-within-my-hands-cinematic-ai-portrait",
+        "date": "2026-11-08",
+        "id": "fire-within-my-hands-cinematic-ai-portrait"
+      },
+      {
         "title": "Transformasi AI Creator – Futuristic Instagram Profile Cinematic Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7joun8-hamdani-harfan-neon-ai-creator-profile.png",
