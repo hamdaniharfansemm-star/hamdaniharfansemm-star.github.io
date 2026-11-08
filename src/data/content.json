@@ -861,18 +861,6 @@
     },
     "prompts": [
       {
-        "title": "Modern Editorial Scrapbook – Premium Personal Portrait Collage",
-        "status": "published",
-        "image": "/assets/uploads/mw7kihpz-hamdani-harfan-a-day-in-my-life.png",
-        "prompt": "Create a modern minimalist aesthetic collage poster using the uploaded photo as the main subject.\n\nKeep the exact facial structure, hairstyle, expression, and recognizable identity from the uploaded person while transforming the design into a trendy editorial-style scrapbook composition.\n\nThe layout should feature multiple cutout photo frames arranged in an artistic geometric grid style with clean white spacing.\n\nInclude one large central portrait, one full-body standing pose, and several smaller black-and-white candid photo panels using the same person from the uploaded image.\n\nThe person should wear casual stylish streetwear with glasses and a cap, posing naturally with a soft confident expression.\n\nUse a modern fashion magazine aesthetic with minimal monochrome tones mixed with soft pastel accents like light blue, cream, and muted yellow.\n\nAdd bold vertical typography elements such as numbers, dates, or stylish minimal text placements beside the collage.\n\nUse a textured paper background with subtle grain, dust effects, thin black border frames, and clean editorial spacing for a premium poster appearance.\n\nStyle: minimalist collage art, editorial fashion poster, scrapbook aesthetic, Korean-inspired layout design, modern magazine composition, clean typography, aesthetic social media poster, ultra detailed, soft cinematic lighting, trendy graphic design, high-end visual identity, masterpiece quality.\n\nLighting should be soft and clean with subtle shadows and smooth skin tones.\n\nThe overall mood should feel stylish, youthful, modern, elegant, and visually balanced.\n\nColor palette: white, black, soft gray, pastel blue, muted yellow, soft beige.\n\nVertical composition, ultra HD, clean modern aesthetic, highly detailed poster artwork.\n\nAI Tool:\nChatGPT Image",
-        "category": "Editorial Photography, Fashion Magazine, Minimalist Collage, Scrapbook Art, Personal Branding, Aesthetic Portrait",
-        "tool": "ChatGPT Image, Gemini, Midjourney",
-        "note": "Ubah foto pribadi menjadi poster editorial premium bergaya majalah fashion modern. Menggabungkan satu potret utama, foto full-body, dan beberapa foto candid hitam putih dalam komposisi scrapbook artistik.\n\nMenggunakan perpaduan warna putih, hitam, abu-abu, pastel blue, cream, dan muted yellow. Dilengkapi tipografi vertikal, tekstur kertas, frame geometris, serta detail dekoratif minimalis.\n\nCocok untuk personal branding, foto profil kreatif, poster Instagram, dan konten media sosial profesional.",
-        "slug": "modern-editorial-scrapbook-personal-portrait-collage",
-        "date": "2026-11-08",
-        "id": "modern-editorial-scrapbook-personal-portrait-collage"
-      },
-      {
         "title": "Geometric Soul – Colorful Stained Glass Polygon Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7k9gnm-geometric-stained-glass-portrait.png",
@@ -993,18 +981,6 @@
         "id": "urban-minimalist-fashion-golden-hour-editorial-ai-prompt"
       },
       {
-        "title": "Golden Aura – The Power Within | Cinematic Neon Energy Portrait",
-        "status": "published",
-        "image": "/assets/uploads/mw7k3ce6-golden-aura-on-a-night-street.png",
-        "prompt": "Create a cinematic, photorealistic image using the uploaded photo as the main subject, keep the face exactly recognizable.\n\nThe subject is standing confidently in the middle of a city street at night, casual outfit (jacket, shorts, sneakers, cap), relaxed pose with hands in pockets, slight smile.\n\nAdd a glowing energy outline around the entire body in bright golden-orange light, with sparks, embers, and particle effects floating around.\n\nThe glow should trace the body shape and clothing edges, giving a magical neon aura effect.\n\nBackground: night city street with palm trees and bokeh lights, slightly blurred (shallow depth of field).\n\nLighting: strong warm glow from the aura illuminating the body, mixed with soft ambient street lighting.\n\nMood: stylish, confident, modern, slightly futuristic.\n\nDetails: glowing particles, light trails, soft bloom, realistic skin texture, high contrast.\n\nCamera: full body shot, centered composition, cinematic framing.\n\nQuality: ultra-detailed, 8K, HDR, sharp focus, professional photography style.\n\nAI Tool:\nChatGPT-Image",
-        "category": "Cinematic Photography / Fantasy Portrait / Neon Effect / AI Photo Editing",
-        "tool": "ChatGPT Image / Gemini / Midjourney",
-        "note": "Gunakan foto referensi wajah asli untuk mempertahankan identitas. Pastikan seluruh tubuh terlihat dari kepala hingga kaki. Gunakan efek golden-orange glow mengikuti kontur tubuh, percikan api realistis, refleksi cahaya pada jalan basah, dan latar kota malam dengan depth of field. Cocok untuk portrait profesional, personal branding, dan konten media sosial.",
-        "slug": "golden-aura-power-within-cinematic-portrait",
-        "date": "2026-11-08",
-        "id": "golden-aura-power-within-cinematic-portrait"
-      },
-      {
         "title": "Indonesian Youth Pledge Day – Cinematic Red White Patriotic AI Poster",
         "status": "published",
         "image": "/assets/uploads/mw7iksin-indonesian-youth-pledge-rally.png",
@@ -1015,6 +991,42 @@
         "slug": "indonesian-youth-pledge-day-cinematic-patriotic-poster",
         "date": "2026-11-08",
         "id": "indonesian-youth-pledge-day-cinematic-patriotic-poster"
+      },
+      {
+        "title": "Vibrant Geometric Pop Art Portrait – Premium Vector AI Photo Editing Prompt",
+        "status": "published",
+        "image": "/assets/uploads/mw7hfcvt-pop-art-portrait-in-colorful-windbreaker.png",
+        "prompt": "Create a high-quality stylized vector pop-art portrait based on the provided reference photo of the person. Preserve the person’s facial identity, facial proportions, hairstyle, skin tone, glasses, and recognizable features as accurately as possible. Transform the person into a bold modern pop-art illustration with clean geometric shapes, sharp angular facial planes, simplified yet highly recognizable facial details, strong graphic outlines, and vibrant contrasting colors.\n\nUse a similar composition to the reference artwork: close-up portrait from the chest upward, facing slightly toward the camera, confident and relaxed expression, centered subject, colorful contemporary jacket over a dark shirt, and oversized eyeglasses. Use a bright solid yellow background with a clean minimal composition.\n\nThe illustration should feel like premium editorial pop art, combining modern vector illustration with subtle realistic facial proportions. Preserve natural asymmetry and distinctive characteristics of the reference person instead of creating a generic face. Crisp edges, sophisticated color blocking, smooth vector shapes, detailed eyes and facial structure, balanced highlights and shadows, polished professional artwork, high visual fidelity, ultra-sharp details, 4K resolution.\n\nImportant: The person’s identity must come primarily from the provided face reference, while the first image is only a reference for the artistic style, composition, color treatment, and overall visual direction. Do not copy the original person’s identity from the style reference.",
+        "category": "AI Photo Editing / Pop Art / Vector Illustration / Geometric Portrait / Digital Art",
+        "tool": "ChatGPT / GPT Image / Gemini / Midjourney",
+        "note": "Gunakan foto wajah sebagai referensi identitas utama. Pertahankan bentuk wajah, mata, hidung, bibir, rahang, warna kulit, gaya rambut, dan ciri khas wajah agar karakter tetap mudah dikenali. Ubah foto menjadi ilustrasi pop-art vector dengan bidang geometris, outline tegas, kombinasi warna kontras, dan latar kuning cerah. Gunakan komposisi close-up dari dada ke atas. Pastikan detail wajah tetap proporsional dan tidak menjadi karakter generik. Cocok untuk foto profil, avatar digital, poster, dan personal branding.",
+        "slug": "vibrant-geometric-pop-art-portrait-vector-ai-prompt",
+        "date": "2026-11-08",
+        "id": "vibrant-geometric-pop-art-portrait-vector-ai-prompt"
+      },
+      {
+        "title": "Modern Editorial Scrapbook – Premium Personal Portrait Collage",
+        "status": "published",
+        "image": "/assets/uploads/mw7kihpz-hamdani-harfan-a-day-in-my-life.png",
+        "prompt": "Create a modern minimalist aesthetic collage poster using the uploaded photo as the main subject.\n\nKeep the exact facial structure, hairstyle, expression, and recognizable identity from the uploaded person while transforming the design into a trendy editorial-style scrapbook composition.\n\nThe layout should feature multiple cutout photo frames arranged in an artistic geometric grid style with clean white spacing.\n\nInclude one large central portrait, one full-body standing pose, and several smaller black-and-white candid photo panels using the same person from the uploaded image.\n\nThe person should wear casual stylish streetwear with glasses and a cap, posing naturally with a soft confident expression.\n\nUse a modern fashion magazine aesthetic with minimal monochrome tones mixed with soft pastel accents like light blue, cream, and muted yellow.\n\nAdd bold vertical typography elements such as numbers, dates, or stylish minimal text placements beside the collage.\n\nUse a textured paper background with subtle grain, dust effects, thin black border frames, and clean editorial spacing for a premium poster appearance.\n\nStyle: minimalist collage art, editorial fashion poster, scrapbook aesthetic, Korean-inspired layout design, modern magazine composition, clean typography, aesthetic social media poster, ultra detailed, soft cinematic lighting, trendy graphic design, high-end visual identity, masterpiece quality.\n\nLighting should be soft and clean with subtle shadows and smooth skin tones.\n\nThe overall mood should feel stylish, youthful, modern, elegant, and visually balanced.\n\nColor palette: white, black, soft gray, pastel blue, muted yellow, soft beige.\n\nVertical composition, ultra HD, clean modern aesthetic, highly detailed poster artwork.\n\nAI Tool:\nChatGPT Image",
+        "category": "Editorial Photography, Fashion Magazine, Minimalist Collage, Scrapbook Art, Personal Branding, Aesthetic Portrait",
+        "tool": "ChatGPT Image, Gemini, Midjourney",
+        "note": "Ubah foto pribadi menjadi poster editorial premium bergaya majalah fashion modern. Menggabungkan satu potret utama, foto full-body, dan beberapa foto candid hitam putih dalam komposisi scrapbook artistik.\n\nMenggunakan perpaduan warna putih, hitam, abu-abu, pastel blue, cream, dan muted yellow. Dilengkapi tipografi vertikal, tekstur kertas, frame geometris, serta detail dekoratif minimalis.\n\nCocok untuk personal branding, foto profil kreatif, poster Instagram, dan konten media sosial profesional.",
+        "slug": "modern-editorial-scrapbook-personal-portrait-collage",
+        "date": "2026-11-08",
+        "id": "modern-editorial-scrapbook-personal-portrait-collage"
+      },
+      {
+        "title": "Golden Aura – The Power Within | Cinematic Neon Energy Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7k3ce6-golden-aura-on-a-night-street.png",
+        "prompt": "Create a cinematic, photorealistic image using the uploaded photo as the main subject, keep the face exactly recognizable.\n\nThe subject is standing confidently in the middle of a city street at night, casual outfit (jacket, shorts, sneakers, cap), relaxed pose with hands in pockets, slight smile.\n\nAdd a glowing energy outline around the entire body in bright golden-orange light, with sparks, embers, and particle effects floating around.\n\nThe glow should trace the body shape and clothing edges, giving a magical neon aura effect.\n\nBackground: night city street with palm trees and bokeh lights, slightly blurred (shallow depth of field).\n\nLighting: strong warm glow from the aura illuminating the body, mixed with soft ambient street lighting.\n\nMood: stylish, confident, modern, slightly futuristic.\n\nDetails: glowing particles, light trails, soft bloom, realistic skin texture, high contrast.\n\nCamera: full body shot, centered composition, cinematic framing.\n\nQuality: ultra-detailed, 8K, HDR, sharp focus, professional photography style.\n\nAI Tool:\nChatGPT-Image",
+        "category": "Cinematic Photography / Fantasy Portrait / Neon Effect / AI Photo Editing",
+        "tool": "ChatGPT Image / Gemini / Midjourney",
+        "note": "Gunakan foto referensi wajah asli untuk mempertahankan identitas. Pastikan seluruh tubuh terlihat dari kepala hingga kaki. Gunakan efek golden-orange glow mengikuti kontur tubuh, percikan api realistis, refleksi cahaya pada jalan basah, dan latar kota malam dengan depth of field. Cocok untuk portrait profesional, personal branding, dan konten media sosial.",
+        "slug": "golden-aura-power-within-cinematic-portrait",
+        "date": "2026-11-08",
+        "id": "golden-aura-power-within-cinematic-portrait"
       },
       {
         "title": "Futuristic Digital Creator Workspace – Cinematic AI Professional Portrait Prompt",
@@ -1039,18 +1051,6 @@
         "slug": "mystic-shadow-dragon-futuristic-silver-fashion-ai-prompt",
         "date": "2026-11-08",
         "id": "mystic-shadow-dragon-futuristic-silver-fashion-ai-prompt"
-      },
-      {
-        "title": "Vibrant Geometric Pop Art Portrait – Premium Vector AI Photo Editing Prompt",
-        "status": "published",
-        "image": "/assets/uploads/mw7hfcvt-pop-art-portrait-in-colorful-windbreaker.png",
-        "prompt": "Create a high-quality stylized vector pop-art portrait based on the provided reference photo of the person. Preserve the person’s facial identity, facial proportions, hairstyle, skin tone, glasses, and recognizable features as accurately as possible. Transform the person into a bold modern pop-art illustration with clean geometric shapes, sharp angular facial planes, simplified yet highly recognizable facial details, strong graphic outlines, and vibrant contrasting colors.\n\nUse a similar composition to the reference artwork: close-up portrait from the chest upward, facing slightly toward the camera, confident and relaxed expression, centered subject, colorful contemporary jacket over a dark shirt, and oversized eyeglasses. Use a bright solid yellow background with a clean minimal composition.\n\nThe illustration should feel like premium editorial pop art, combining modern vector illustration with subtle realistic facial proportions. Preserve natural asymmetry and distinctive characteristics of the reference person instead of creating a generic face. Crisp edges, sophisticated color blocking, smooth vector shapes, detailed eyes and facial structure, balanced highlights and shadows, polished professional artwork, high visual fidelity, ultra-sharp details, 4K resolution.\n\nImportant: The person’s identity must come primarily from the provided face reference, while the first image is only a reference for the artistic style, composition, color treatment, and overall visual direction. Do not copy the original person’s identity from the style reference.",
-        "category": "AI Photo Editing / Pop Art / Vector Illustration / Geometric Portrait / Digital Art",
-        "tool": "ChatGPT / GPT Image / Gemini / Midjourney",
-        "note": "Gunakan foto wajah sebagai referensi identitas utama. Pertahankan bentuk wajah, mata, hidung, bibir, rahang, warna kulit, gaya rambut, dan ciri khas wajah agar karakter tetap mudah dikenali. Ubah foto menjadi ilustrasi pop-art vector dengan bidang geometris, outline tegas, kombinasi warna kontras, dan latar kuning cerah. Gunakan komposisi close-up dari dada ke atas. Pastikan detail wajah tetap proporsional dan tidak menjadi karakter generik. Cocok untuk foto profil, avatar digital, poster, dan personal branding.",
-        "slug": "vibrant-geometric-pop-art-portrait-vector-ai-prompt",
-        "date": "2026-11-08",
-        "id": "vibrant-geometric-pop-art-portrait-vector-ai-prompt"
       },
       {
         "title": "Purple Thunderstorm Cinematic Portrait – Ultra Realistic AI Fashion Photography Prompt",
