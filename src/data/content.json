@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Modern Editorial Scrapbook – Premium Personal Portrait Collage",
+        "status": "published",
+        "image": "/assets/uploads/mw7kihpz-hamdani-harfan-a-day-in-my-life.png",
+        "prompt": "Create a modern minimalist aesthetic collage poster using the uploaded photo as the main subject.\n\nKeep the exact facial structure, hairstyle, expression, and recognizable identity from the uploaded person while transforming the design into a trendy editorial-style scrapbook composition.\n\nThe layout should feature multiple cutout photo frames arranged in an artistic geometric grid style with clean white spacing.\n\nInclude one large central portrait, one full-body standing pose, and several smaller black-and-white candid photo panels using the same person from the uploaded image.\n\nThe person should wear casual stylish streetwear with glasses and a cap, posing naturally with a soft confident expression.\n\nUse a modern fashion magazine aesthetic with minimal monochrome tones mixed with soft pastel accents like light blue, cream, and muted yellow.\n\nAdd bold vertical typography elements such as numbers, dates, or stylish minimal text placements beside the collage.\n\nUse a textured paper background with subtle grain, dust effects, thin black border frames, and clean editorial spacing for a premium poster appearance.\n\nStyle: minimalist collage art, editorial fashion poster, scrapbook aesthetic, Korean-inspired layout design, modern magazine composition, clean typography, aesthetic social media poster, ultra detailed, soft cinematic lighting, trendy graphic design, high-end visual identity, masterpiece quality.\n\nLighting should be soft and clean with subtle shadows and smooth skin tones.\n\nThe overall mood should feel stylish, youthful, modern, elegant, and visually balanced.\n\nColor palette: white, black, soft gray, pastel blue, muted yellow, soft beige.\n\nVertical composition, ultra HD, clean modern aesthetic, highly detailed poster artwork.\n\nAI Tool:\nChatGPT Image",
+        "category": "Editorial Photography, Fashion Magazine, Minimalist Collage, Scrapbook Art, Personal Branding, Aesthetic Portrait",
+        "tool": "ChatGPT Image, Gemini, Midjourney",
+        "note": "Ubah foto pribadi menjadi poster editorial premium bergaya majalah fashion modern. Menggabungkan satu potret utama, foto full-body, dan beberapa foto candid hitam putih dalam komposisi scrapbook artistik.\n\nMenggunakan perpaduan warna putih, hitam, abu-abu, pastel blue, cream, dan muted yellow. Dilengkapi tipografi vertikal, tekstur kertas, frame geometris, serta detail dekoratif minimalis.\n\nCocok untuk personal branding, foto profil kreatif, poster Instagram, dan konten media sosial profesional.",
+        "slug": "modern-editorial-scrapbook-personal-portrait-collage",
+        "date": "2026-11-08",
+        "id": "modern-editorial-scrapbook-personal-portrait-collage"
+      },
+      {
         "title": "Geometric Soul – Colorful Stained Glass Polygon Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7k9gnm-geometric-stained-glass-portrait.png",
