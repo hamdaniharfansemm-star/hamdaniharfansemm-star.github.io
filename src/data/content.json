@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "RED SHADOW – The Masked Antihero",
+        "status": "published",
+        "image": "/assets/uploads/mw7n36u6-hooded-figure-with-weathered-mask.png",
+        "prompt": "Use the uploaded reference photo as the exact facial identity, preserving the person's distinctive facial features, skin tone, hairstyle, and natural proportions. Create an ultra-photorealistic 4K cinematic close-up portrait of the person wearing a black hoodie and black leather gloves, holding a weathered white theatrical mask with narrow black eye openings near the lower face. Maintain an intense, mysterious gaze toward the camera. Use dramatic crimson-red rim lighting, deep black shadows, subtle smoky textures, and a dark, atmospheric background. Emphasize realistic skin pores, fine facial hair, detailed hair strands, authentic leather textures, and natural lighting transitions. Ensure seamless facial integration, accurate anatomy, sharp focus on the eyes, cinematic color grading, and a dark cyberpunk antihero aesthetic. Vertical 9:16 composition, premium cinematic photography, ultra-detailed 4K quality.",
+        "category": "Dark Cinematic / Cyberpunk / Antihero / Mystery Portrait",
+        "tool": "ChatGPT Image",
+        "note": "Pertahankan identitas wajah, bentuk mata, hidung, rambut, warna kulit, dan karakter asli. Gunakan hoodie hitam, sarung tangan kulit, topeng putih usang, pencahayaan merah dramatis, asap merah, dan latar belakang hitam.",
+        "slug": "red-shadow-masked-antihero",
+        "date": "2026-11-08",
+        "id": "red-shadow-masked-antihero"
+      },
+      {
         "title": "GOLDEN HOUR – Luxury G-Class Adventure Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7mzs21-golden-hour-g-class-adventure.png",
