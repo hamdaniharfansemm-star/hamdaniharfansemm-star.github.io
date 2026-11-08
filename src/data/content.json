@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Geometric Soul – Colorful Stained Glass Polygon Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7k9gnm-geometric-stained-glass-portrait.png",
+        "prompt": "Create a highly detailed geometric mosaic portrait using the face from the uploaded photo as the main subject. Keep the facial structure, hairstyle, eyes, expression, and identity exactly the same as the uploaded person.\n\nStyle the portrait in a modern abstract polygonal / hexagonal art style with layered geometric patterns covering the face and clothing. Blend colorful stained-glass textures with clean line art, featuring vibrant gradients of orange, purple, blue, teal, red, and white.\n\nThe face should be partially fragmented into artistic hexagon and contour shapes while still remaining recognizable and realistic. Add flowing geometric lines around the hair and shoulders for a futuristic artistic effect.\n\nMake the portrait symmetrical, centered, and ultra clean with smooth shading and crisp edges. Background should be minimal textured off-white canvas or paper texture to enhance the colorful artwork.\n\nLighting soft and artistic, with vivid contrast and premium gallery-style aesthetics.\n\nStyle: abstract geometric portrait, polygon art, stained glass effect, modern digital illustration, colorful linework, ultra detailed, sharp focus, elegant composition, high quality, 8k resolution.\n\nAI Tool:\nChatGPT-Image",
+        "category": "Abstract Geometric Art / Polygon Portrait / Stained Glass Effect / Creative AI Photography / Digital Illustration",
+        "tool": "ChatGPT Image / Gemini / Midjourney",
+        "note": "Ubah foto wajah menjadi karya seni geometric mosaic portrait dengan perpaduan pola polygon, hexagon, dan stained glass berwarna-warni.\n\nPertahankan identitas wajah, bentuk mata, hidung, bibir, gaya rambut, dan ekspresi asli.\n\nMenggunakan kombinasi warna orange, purple, blue, teal, red, dan white dengan detail garis geometris futuristik.\n\nHasil akhir menyerupai karya seni digital premium yang layak dipajang di galeri modern.",
+        "slug": "geometric-soul-stained-glass-polygon-portrait",
+        "date": "2026-11-08",
+        "id": "geometric-soul-stained-glass-polygon-portrait"
+      },
+      {
         "title": "Shattered Reality – Break Through the Limits | Cinematic Glass Punch Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7k6owk-shattered-glass-punch-portrait.png",
