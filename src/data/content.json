@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Shattered Reality – Break Through the Limits | Cinematic Glass Punch Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7k6owk-shattered-glass-punch-portrait.png",
+        "prompt": "Create a cinematic, photorealistic image using the uploaded photo as the main subject, keep the face exactly recognizable.\n\nThe subject is standing facing the camera, wearing a dark hoodie and black outfit, with one fist punching directly toward the camera through shattered glass.\n\nThe broken glass effect should spread realistically from the center impact point, with detailed cracks and sharp fragments surrounding the fist.\n\nExpression: calm but intense, confident and powerful eye contact.\n\nBackground: minimal dark grey studio background with soft blur.\n\nLighting: soft cinematic lighting with subtle highlights on the face and glass shards, moody atmosphere.\n\nPerspective: close-up shot with strong depth effect, fist closest to camera, face slightly behind in focus.\n\nStyle: dramatic, realistic, modern cinematic photography.\n\nDetails: ultra-detailed glass cracks, realistic skin texture, sharp focus, depth of field, HDR.\n\nQuality: 8K, highly detailed, professional photography style.\n\nAI Tool:\nChatGPT-Image",
+        "category": "Cinematic Photography / Action Portrait / Shattered Glass Effect / Dramatic AI Photo Editing",
+        "tool": "ChatGPT Image / Gemini / Midjourney",
+        "note": "Gunakan foto referensi wajah asli untuk menjaga konsistensi identitas. Fokuskan komposisi pada wajah dan kepalan tangan yang diarahkan ke kamera. Gunakan perspektif forced perspective, efek kaca pecah dengan retakan realistis, serpihan kaca transparan, serta pencahayaan cinematic bernuansa gelap. Pastikan wajah tetap tajam dan tangan memiliki anatomi natural.",
+        "slug": "shattered-reality-break-through-cinematic-glass-punch",
+        "date": "2026-11-08",
+        "id": "shattered-reality-break-through-cinematic-glass-punch"
+      },
+      {
         "title": "Golden Aura – The Power Within | Cinematic Neon Energy Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7k3ce6-golden-aura-on-a-night-street.png",
