@@ -364,7 +364,7 @@ export const tabs = [
             help: "Salin dari dashboard Mayar (halaman produk → Bagikan/Link). Kosong = tombol beli tampil 'Not available yet'.",
           },
           { key: "coverImage", type: "image", label: "Gambar sampul (rasio 4:3, mis. 1600×1200)" },
-          { key: "gallery", type: "list", label: "Galeri tambahan", compact: true, itemTitle: (it) => it.image?.split("/").pop() || "Gambar", fields: [{ key: "image", type: "image", label: "Gambar" }] },
+          { key: "gallery", type: "list", label: "Galeri tambahan", compact: true, itemTitle: (it) => it.image?.split("/").pop() || "Gambar", itemImage: (it) => it.image, fields: [{ key: "image", type: "image", label: "Gambar" }] },
           { key: "featured", type: "checkbox", label: "Tampilkan sebagai produk unggulan (Featured)" },
           { key: "bestseller", type: "checkbox", label: "Tandai 'Bestseller' (hanya jika memang terlaris menurut data penjualan Mayar)" },
           { key: "releaseDate", type: "text", inputType: "date", label: "Tanggal rilis", help: "Label 'New' otomatis tampil 45 hari sejak tanggal ini." },
