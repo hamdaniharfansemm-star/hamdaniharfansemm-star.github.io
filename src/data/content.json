@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Vibrant Geometric Pop Art Portrait – Premium Vector AI Photo Editing Prompt",
+        "status": "published",
+        "image": "/assets/uploads/mw7hfcvt-pop-art-portrait-in-colorful-windbreaker.png",
+        "prompt": "Create a high-quality stylized vector pop-art portrait based on the provided reference photo of the person. Preserve the person’s facial identity, facial proportions, hairstyle, skin tone, glasses, and recognizable features as accurately as possible. Transform the person into a bold modern pop-art illustration with clean geometric shapes, sharp angular facial planes, simplified yet highly recognizable facial details, strong graphic outlines, and vibrant contrasting colors.\n\nUse a similar composition to the reference artwork: close-up portrait from the chest upward, facing slightly toward the camera, confident and relaxed expression, centered subject, colorful contemporary jacket over a dark shirt, and oversized eyeglasses. Use a bright solid yellow background with a clean minimal composition.\n\nThe illustration should feel like premium editorial pop art, combining modern vector illustration with subtle realistic facial proportions. Preserve natural asymmetry and distinctive characteristics of the reference person instead of creating a generic face. Crisp edges, sophisticated color blocking, smooth vector shapes, detailed eyes and facial structure, balanced highlights and shadows, polished professional artwork, high visual fidelity, ultra-sharp details, 4K resolution.\n\nImportant: The person’s identity must come primarily from the provided face reference, while the first image is only a reference for the artistic style, composition, color treatment, and overall visual direction. Do not copy the original person’s identity from the style reference.",
+        "category": "AI Photo Editing / Pop Art / Vector Illustration / Geometric Portrait / Digital Art",
+        "tool": "ChatGPT / GPT Image / Gemini / Midjourney",
+        "note": "Gunakan foto wajah sebagai referensi identitas utama. Pertahankan bentuk wajah, mata, hidung, bibir, rahang, warna kulit, gaya rambut, dan ciri khas wajah agar karakter tetap mudah dikenali. Ubah foto menjadi ilustrasi pop-art vector dengan bidang geometris, outline tegas, kombinasi warna kontras, dan latar kuning cerah. Gunakan komposisi close-up dari dada ke atas. Pastikan detail wajah tetap proporsional dan tidak menjadi karakter generik. Cocok untuk foto profil, avatar digital, poster, dan personal branding.",
+        "slug": "vibrant-geometric-pop-art-portrait-vector-ai-prompt",
+        "date": "2026-11-08",
+        "id": "vibrant-geometric-pop-art-portrait-vector-ai-prompt"
+      },
+      {
         "title": "Purple Thunderstorm Cinematic Portrait – Ultra Realistic AI Fashion Photography Prompt",
         "status": "published",
         "image": "/assets/uploads/mw7hb0wu-stormlit-wanderer-in-the-rain.png",
