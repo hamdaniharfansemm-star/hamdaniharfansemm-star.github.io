@@ -6,6 +6,7 @@ import { isPublished, productPath, visibleProducts } from "./catalog.js";
 import { BuyButton, Cover, GoldPrice } from "./ProductParts.jsx";
 import { PROMPTS_BASE, copyText, hasTag, matchesPrompt, promptPath, promptTags, selectElementText, splitList, visiblePrompts, wordCount } from "./prompts.js";
 import { ChevronIcon, CloseSmall, EyeIcon, SearchIcon, SparkIcon } from "./StoreIcons.jsx";
+import { DownloadIcon, LikeButton, PromptGateProvider, usePromptGate } from "./promptGate.jsx";
 
 const store = content.store || {};
 const lib = store.promptLibrary || {};
@@ -89,7 +90,7 @@ function useToast() {
     timer.current = setTimeout(() => setMsg(""), 3200);
   }, []);
   const node = (
-    <div aria-live="polite" className="pointer-events-none fixed inset-x-0 bottom-5 z-[95] flex justify-center px-4">
+    <div aria-live="polite" className="pointer-events-none fixed inset-x-0 bottom-[calc(5.5rem+env(safe-area-inset-bottom))] z-[115] flex justify-center px-4 md:bottom-36">
       <AnimatePresence>
         {msg && (
           <motion.p
@@ -116,16 +117,23 @@ const firstTool = (tool) => {
 };
 
 /* ───────── Compact card (4 per row on desktop) ───────── */
-export function PromptMiniCard({ prompt: p, onOpen, onToast, focused = false, eager = false }) {
-  const [copyState, copy] = useCopy();
+export function PromptMiniCard({ prompt: p, onOpen, focused = false, eager = false }) {
+  const gate = usePromptGate();
+  const [copyState, setCopyState] = useState("idle");
+  const timer = useRef(0);
+  useEffect(() => () => clearTimeout(timer.current), []);
   const tags = splitList(p.category);
   const tool = firstTool(p.tool);
   const words = wordCount(p.prompt);
   const doCopy = async (e) => {
     e.stopPropagation();
-    const ok = await copy(p.prompt, null);
-    if (!ok) onOpen?.(p); // show the full text so it can be long-pressed
-    onToast?.(copiedMsg(ok));
+    const r = await gate.copy(p, null);
+    if (r === "manual") onOpen?.(p); // show the full text so it can be long-pressed
+    if (r === "done") {
+      setCopyState("done");
+      clearTimeout(timer.current);
+      timer.current = setTimeout(() => setCopyState("idle"), 2200);
+    }
   };
 
   return (
@@ -133,6 +141,7 @@ export function PromptMiniCard({ prompt: p, onOpen, onToast, focused = false, ea
       id={`prompt-${p.slug}`}
       className={`card-navy group @container relative flex h-full flex-col overflow-hidden rounded-2xl transition-[border-color,box-shadow] duration-500 [@media(hover:hover)]:hover:border-amber-200/30 ${focused ? "prompt-focus" : ""}`}
     >
+      <div className="relative">
       <button type="button" onClick={() => onOpen?.(p)} className="relative block aspect-[4/5] w-full overflow-hidden bg-[#0b1224] text-left" aria-label={`Buka detail prompt: ${p.title}`}>
         {p.image ? (
           <img
@@ -149,7 +158,7 @@ export function PromptMiniCard({ prompt: p, onOpen, onToast, focused = false, ea
           </div>
         )}
         <span aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-[#060a19] via-[#060a19]/50 to-transparent" />
-        <span className="absolute left-2 top-2 flex max-w-[calc(100%-1rem)] flex-wrap gap-1">
+        <span className="absolute left-2 top-2 flex max-w-[calc(100%-3.5rem)] flex-wrap gap-1">
           {p.status !== "published" && <span className="rounded-full bg-amber-400 px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-slate-950">Draft</span>}
           {tool && (
             <span className="truncate rounded-full border border-white/15 bg-black/60 px-2 py-0.5 text-[9.5px] font-semibold text-white backdrop-blur-sm">
@@ -164,6 +173,18 @@ export function PromptMiniCard({ prompt: p, onOpen, onToast, focused = false, ea
           <span className="mt-0.5 line-clamp-2 font-display text-[15px] font-bold leading-snug text-white @[240px]:text-base">{p.title}</span>
         </span>
       </button>
+      {p.image && (
+        <button
+          type="button"
+          onClick={(e) => (e.stopPropagation(), gate.download(p))}
+          aria-label={`Unduh gambar: ${p.title}`}
+          title="Unduh gambar"
+          className="absolute right-2 top-2 grid h-9 w-9 place-items-center rounded-full border border-white/20 bg-black/60 text-white shadow-lg backdrop-blur-sm transition-colors hover:bg-black/80"
+        >
+          <DownloadIcon width={16} height={16} />
+        </button>
+      )}
+      </div>
 
       <div className="flex flex-1 flex-col gap-2.5 p-3">
         <button type="button" onClick={() => onOpen?.(p)} className="block rounded-xl border border-white/[0.07] bg-[#040816] px-2.5 py-2 text-left transition-colors hover:border-white/15" aria-label={`Baca prompt lengkap: ${p.title}`}>
@@ -178,7 +199,8 @@ export function PromptMiniCard({ prompt: p, onOpen, onToast, focused = false, ea
             </>
           )}
         </p>
-        <div className="mt-auto grid grid-cols-[1fr_auto] gap-2">
+        <div className="mt-auto grid grid-cols-[auto_1fr_auto] gap-1.5">
+          <LikeButton prompt={p} compact />
           <button
             type="button"
             onClick={doCopy}
@@ -190,7 +212,7 @@ export function PromptMiniCard({ prompt: p, onOpen, onToast, focused = false, ea
               {copyState === "done" ? <CheckIcon width={14} height={14} /> : <CopyIcon width={14} height={14} />}
               {copyState === "done" ? "Tersalin" : (
                 <>
-                  Copy<span className="hidden @[200px]:inline"> Prompt</span>
+                  Copy<span className="hidden @[250px]:inline"> Prompt</span>
                 </>
               )}
             </span>
@@ -395,7 +417,10 @@ function PromptSheet({ list, index, onIndex, onClose, onToast, syncUrl = false }
   const preRef = useRef(null);
   const closeRef = useRef(null);
   const scrollRef = useRef(null);
-  const [copyState, copy] = useCopy();
+  const gate = usePromptGate();
+  const [copyState, setCopyState] = useState("idle");
+  const copyTimer = useRef(0);
+  useEffect(() => () => clearTimeout(copyTimer.current), []);
   const [zoom, setZoom] = useState(false);
   const [dir, setDir] = useState(0);
   const open = !!p;
@@ -447,7 +472,13 @@ function PromptSheet({ list, index, onIndex, onClose, onToast, syncUrl = false }
 
   if (!open) return null;
 
-  const doCopy = async () => onToast(copiedMsg(await copy(p.prompt, preRef.current)));
+  const doCopy = async () => {
+    const r = await gate.copy(p, preRef.current);
+    if (r === "gated") return;
+    setCopyState(r);
+    clearTimeout(copyTimer.current);
+    copyTimer.current = setTimeout(() => setCopyState("idle"), r === "done" ? 2200 : 5000);
+  };
   const doShare = async () => {
     const r = await sharePrompt(p);
     if (r === "link") onToast("Link prompt tersalin — bagikan ke teman Anda.");
@@ -550,7 +581,7 @@ function PromptSheet({ list, index, onIndex, onClose, onToast, syncUrl = false }
           </div>
 
           {/* Sticky actions */}
-          <div className="grid shrink-0 grid-cols-[1fr_auto] gap-2.5 border-t border-white/10 bg-[#070c1d] px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-7">
+          <div className="grid shrink-0 grid-cols-[1fr_auto_auto] gap-2 border-t border-white/10 bg-[#070c1d] px-4 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-7">
             <button
               type="button"
               onClick={doCopy}
@@ -561,10 +592,10 @@ function PromptSheet({ list, index, onIndex, onClose, onToast, syncUrl = false }
                 {copyState === "done" ? "Tersalin!" : copyState === "manual" ? "Tekan lama teks untuk salin" : "Copy Prompt"}
               </span>
             </button>
-            {many ? (
-              <button type="button" onClick={() => go(1)} aria-label="Prompt berikutnya" className="inline-flex items-center gap-1 rounded-full border border-white/15 px-4 text-sm font-semibold text-slate-200 hover:border-white/40 hover:text-white">
-                <span className="hidden sm:inline">Berikutnya</span>
-                <ChevronIcon width={16} height={16} />
+            <LikeButton prompt={p} />
+            {p.image ? (
+              <button type="button" onClick={() => gate.download(p)} aria-label="Unduh gambar" title="Unduh gambar" className="inline-flex items-center gap-1.5 rounded-full border border-white/15 px-4 text-sm font-semibold text-slate-200 hover:border-white/40 hover:text-white">
+                <DownloadIcon width={17} height={17} /> <span className="hidden sm:inline">Unduh</span>
               </button>
             ) : (
               <button type="button" onClick={doShare} aria-label="Bagikan prompt" className="grid w-12 place-items-center rounded-full border border-white/15 text-slate-200 hover:border-white/40 hover:text-white">
@@ -736,7 +767,7 @@ export function PromptLibraryPage({ preview = false, focusSlug = "", source = ""
   );
 
   return (
-    <>
+    <PromptGateProvider onToast={showToast}>
       <section className="relative px-5 pb-6 pt-28 sm:px-8 md:pt-36">
         <div className="mx-auto max-w-6xl">
           <nav aria-label="Breadcrumb" className="text-xs text-slate-500">
@@ -856,7 +887,7 @@ export function PromptLibraryPage({ preview = false, focusSlug = "", source = ""
 
       <PromptSheet list={sheet.list} index={sheet.index} onIndex={(i) => setSheet((s) => ({ ...s, index: i }))} onClose={() => setSheet((s) => ({ ...s, index: -1 }))} onToast={showToast} syncUrl />
       {toast}
-    </>
+    </PromptGateProvider>
   );
 }
 
@@ -868,6 +899,7 @@ export function PromptTeaser({ preview = false }) {
   if (!all.length) return null;
   const items = all.slice(0, 12);
   return (
+    <PromptGateProvider onToast={showToast}>
     <section id="prompts" aria-label="Prompt AI gratis" className="scroll-mt-24 px-5 py-16 sm:px-8 md:py-20">
       <div className="mx-auto max-w-6xl">
         <PromptCarousel
@@ -889,5 +921,6 @@ export function PromptTeaser({ preview = false }) {
       <PromptSheet list={items} index={index} onIndex={setIndex} onClose={() => setIndex(-1)} onToast={showToast} />
       {toast}
     </section>
+    </PromptGateProvider>
   );
 }

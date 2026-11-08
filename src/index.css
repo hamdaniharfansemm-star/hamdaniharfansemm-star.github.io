@@ -440,3 +440,8 @@ body { overflow-x: hidden; }
 .book-3d.tilt { transform: perspective(1600px) rotateY(calc(-10deg + var(--ry))) rotateX(calc(3deg + var(--rx))) translate3d(0, var(--lift), 0); }
 @media (hover: none), (pointer: coarse) { .book-3d.tilt { transform: perspective(1600px) rotateY(-8deg) rotateX(2deg) !important; } }
 @media (prefers-reduced-motion: reduce) { .book-3d.tilt { transform: none !important; } }
+
+/* Like heart pop */
+@keyframes like-pop { 0% { transform: scale(1); } 35% { transform: scale(1.35); } 70% { transform: scale(.92); } 100% { transform: scale(1); } }
+.like-pop { animation: like-pop .45s cubic-bezier(.22,1,.36,1); }
+@media (prefers-reduced-motion: reduce) { .like-pop { animation: none; } }
