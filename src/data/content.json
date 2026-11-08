@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "MAFIA BOSS – Cinematic Luxury Underworld Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7m43um-mafia-boss-in-a-smoke-filled-study.png",
+        "prompt": "Use the uploaded photo as the facial identity reference. Create a highly realistic cinematic portrait of the same person as a powerful mafia-style boss, seated confidently at the center of a dark wooden table inside a luxurious, dimly lit private room. Preserve the exact facial identity, facial structure, skin tone, eyes, nose, lips, jawline, hairstyle, and natural characteristics from the reference photo, keeping the person clearly recognizable.\n\nThe person wears a perfectly tailored black suit with a white dress shirt, sitting in an ornate vintage wooden chair with a serious, intimidating expression. One hand rests near a clear glass on the table while the other holds a cigarette, with subtle smoke drifting upward. Surround him with several intimidating bodyguards in matching black suits standing symmetrically behind him.\n\nWarm dramatic backlighting creates a subtle halo behind the main subject, combined with deep shadows, dark brown tones, cinematic contrast, atmospheric smoke, realistic reflections on the wooden table, and shallow depth of field. Powerful composition, centered subject, professional cinematic photography, realistic skin texture, natural facial details, detailed clothing fabric, realistic hands and fingers, photorealistic lighting, dramatic movie-poster aesthetic, ultra-detailed, sharp focus, 4K quality, vertical 4:5 composition.",
+        "category": "Mafia / Gangster / Luxury Lifestyle / Dark Cinematic / Movie Poster",
+        "tool": "ChatGPT Image / Gemini / Midjourney",
+        "note": "Gunakan foto wajah asli sebagai referensi utama. Pertahankan identitas wajah, rambut, warna kulit, dan karakteristik asli. Gunakan pencahayaan dramatis, interior mewah bernuansa gelap, jas hitam elegan, bodyguard simetris, dan atmosfer film gangster Hollywood.",
+        "slug": "mafia-boss-cinematic-luxury-underworld-portrait",
+        "date": "2026-11-08",
+        "id": "mafia-boss-cinematic-luxury-underworld-portrait"
+      },
+      {
         "title": "VINTAGE EXECUTIVE – 1990s New York Business Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7lsitf-vintage-executive-on-the-phone.png",
