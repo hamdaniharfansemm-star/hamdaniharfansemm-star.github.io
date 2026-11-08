@@ -861,16 +861,208 @@
     },
     "prompts": [
       {
-        "title": "INDONESIAN SPIRIT – Cinematic National Hero Portrait",
+        "title": "Transformasi AI Creator – Futuristic Instagram Profile Cinematic Portrait",
         "status": "published",
-        "image": "/assets/uploads/mw7mgdru-red-and-white-rising.png",
-        "prompt": "Create an ultra-realistic, cinematic, high-impact image using the uploaded reference photo as the main subject.\n\nThe face, facial features, skin tone, hairstyle, age, and identity must remain clearly recognizable and accurately match the uploaded photo, with no stylization or face alteration.\n\nThe subject is an adult person, depicted as a heroic figure standing powerfully on top of a massive Indonesian national flag (red and white) flowing beneath their feet.\n\nThe person raises one fist upward in a strong, defiant pose, mouth slightly open as if shouting or rallying, expressing courage, resistance, pride, and determination.\n\nClothing appears torn, weathered, and battle-worn, wrapped partially with the Indonesian flag like a cape or cloth, symbolizing national spirit and struggle.\n\nEnvironment: a dramatic urban city street filled with a massive crowd in the background, flags waving, dust and smoke in the air, cinematic depth of field.\n\nLighting: epic cinematic lighting, strong rim light, volumetric light rays, dramatic shadows, high contrast.\n\nAtmosphere: emotional, powerful, heroic, revolutionary tone.\n\nCamera angle: low-angle shot to emphasize strength and dominance.\n\nStyle: ultra-realistic, photoreal, cinematic movie poster quality, 8K detail, sharp focus on the subject.\n\nNo text, no watermark, no logos, no extra characters, no cartoon style.\n\nAI Tool:\nChatGPT-Image",
-        "category": "Indonesian Independence / National Pride / Heroic Portrait / Cinematic Photography / Patriotic Poster",
-        "tool": "ChatGPT-Image",
-        "note": "Gunakan foto pribadi sebagai referensi identitas wajah. Pertahankan bentuk wajah, mata, hidung, bibir, rahang, warna kulit, dan gaya rambut. Gunakan pose mengepalkan tangan ke atas, bendera Merah Putih sebagai jubah, sudut kamera low-angle, pencahayaan dramatis, serta suasana heroik dan sinematik. Pastikan anatomi tangan dan tubuh tetap realistis.",
-        "slug": "indonesian-spirit-cinematic-national-hero-portrait",
+        "image": "/assets/uploads/mw7joun8-hamdani-harfan-neon-ai-creator-profile.png",
+        "prompt": "Create an ultra-detailed, cinematic social media portrait using the provided reference photo to accurately preserve the man's facial features, hairstyle, glasses, body proportions, and overall identity.\n\nThe subject is confidently walking toward the camera with a relaxed yet powerful stride, wearing a modern black long coat over a simple white t-shirt, tailored black pants, and clean white sneakers. His expression is calm, ambitious, and self-assured, embodying the image of a successful AI entrepreneur and digital creator.\n\nBehind him stands a gigantic, hyper-realistic smartphone displaying an Instagram profile interface in dark mode. The profile should faithfully resemble the real @ruangsepri account, featuring:\n\nUsername: @ruangsepri with verified badge.\n\nDisplay name: Sepriansah | AI-Driven Konten Kreator\n\nProfile picture matching the provided reference.\n\nApproximately 397 posts, 193K followers, and 819 following.\n\nBio inspired by the real account, emphasizing AI content creation, entrepreneurship, and community building.\n\nPurple-themed Story Highlights.\n\nA realistic Instagram grid filled with AI, creator, business, podcast, and lifestyle content in a dark aesthetic.\n\nThe entire scene is immersed in a black and deep-purple color palette, with glowing neon accents. One side of the subject's body gradually transforms into an explosion of luminous purple particles, crystalline fragments, digital dust, and energy shards, as though he is emerging from the digital world into reality.\n\nThe background is dark, futuristic, and minimalistic, filled with subtle smoke, volumetric lighting, floating geometric fragments, and soft reflections on the glossy floor. Purple ambient light wraps around the character and the phone, creating a premium cyber-luxury atmosphere.\n\nThe composition should feel like a high-end movie poster or an advertising campaign for a modern AI creator brand, combining realism with subtle sci-fi elements.\n\nStyle: hyperrealistic, cinematic photography, ultra-detailed, luxury editorial, futuristic branding, cyber aesthetic, 8K resolution, HDR lighting, dramatic rim light, realistic skin texture, realistic fabric physics, shallow depth of field, sharp focus, balanced composition.\n\nNegative Prompt: low quality, blurry, cartoon, anime, distorted anatomy, extra limbs, duplicated body parts, incorrect hands, text artifacts, random UI elements, watermark, logo, low resolution, oversaturated colors, unrealistic face, deformed eyes, bad proportions.\n\nAI Tool:\nChatGPT-Image",
+        "category": "AI Portrait / Personal Branding / Futuristic Photography / Social Media",
+        "tool": "ChatGPT Image / Gemini / AI Image Generator",
+        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan identitas. Unggah foto wajah dan foto profil Instagram sebagai referensi. Hasil terbaik menggunakan foto full-body atau setengah badan dengan pencahayaan yang baik. Cocok untuk personal branding AI Developer, Content Creator, dan profesional digital.",
+        "slug": "futuristic-instagram-ai-creator-portrait",
         "date": "2026-11-08",
-        "id": "indonesian-spirit-cinematic-national-hero-portrait"
+        "id": "futuristic-instagram-ai-creator-portrait"
+      },
+      {
+        "title": "Fire Within My Hands – Cinematic AI Fire Doppelgänger Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7jwide-fiery-miniature-in-an-open-palm.png",
+        "prompt": "Create a cinematic, photorealistic image using the uploaded photo as the main subject, keep the face exactly recognizable.\n\nThe subject is standing confidently, wearing a dark leather jacket, neutral expression, looking directly at the camera.\n\nPose: one hand extended forward, palm open.\n\nFrom the palm, a small human-like figure made entirely of fire is emerging, shaped like the same person (mini version), with detailed glowing flames, sparks, and embers.\n\nThe fire figure should look elegant, semi-realistic, and dynamic, with smooth flame flow and warm glow.\n\nBackground: indoor setting with soft blur (depth of field), warm cinematic lighting.\n\nLighting: strong warm orange glow from the fire illuminating the subject’s face and hand, creating dramatic highlights and shadows.\n\nMood: powerful, mystical, magical, slightly surreal.\n\nDetails: high realism, volumetric light, glowing particles, sharp facial detail, natural skin texture.\n\nCamera: medium shot, shallow depth of field, cinematic composition.\n\nQuality: ultra-detailed, 8K, HDR, sharp focus, professional photography style.\n\nAI Tool:\nChatGPT-Image",
+        "category": "AI Portrait / Fantasy Photography / Fire Effect / Cinematic Art / Surreal Portrait",
+        "tool": "ChatGPT Image / Gemini / Midjourney",
+        "note": "Gunakan foto referensi wajah tampak depan dengan pencahayaan jelas. Pertahankan identitas wajah, gaya rambut, dan proporsi tubuh. Gunakan foto berkualitas tinggi agar detail wajah tetap realistis. Cocok untuk konsep fantasy portrait, personal branding, dan konten media sosial.",
+        "slug": "fire-within-my-hands-cinematic-ai-portrait",
+        "date": "2026-11-08",
+        "id": "fire-within-my-hands-cinematic-ai-portrait"
+      },
+      {
+        "title": "Shattered Reality – Break Through the Limits | Cinematic Glass Punch Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7k6owk-shattered-glass-punch-portrait.png",
+        "prompt": "Create a cinematic, photorealistic image using the uploaded photo as the main subject, keep the face exactly recognizable.\n\nThe subject is standing facing the camera, wearing a dark hoodie and black outfit, with one fist punching directly toward the camera through shattered glass.\n\nThe broken glass effect should spread realistically from the center impact point, with detailed cracks and sharp fragments surrounding the fist.\n\nExpression: calm but intense, confident and powerful eye contact.\n\nBackground: minimal dark grey studio background with soft blur.\n\nLighting: soft cinematic lighting with subtle highlights on the face and glass shards, moody atmosphere.\n\nPerspective: close-up shot with strong depth effect, fist closest to camera, face slightly behind in focus.\n\nStyle: dramatic, realistic, modern cinematic photography.\n\nDetails: ultra-detailed glass cracks, realistic skin texture, sharp focus, depth of field, HDR.\n\nQuality: 8K, highly detailed, professional photography style.\n\nAI Tool:\nChatGPT-Image",
+        "category": "Cinematic Photography / Action Portrait / Shattered Glass Effect / Dramatic AI Photo Editing",
+        "tool": "ChatGPT Image / Gemini / Midjourney",
+        "note": "Gunakan foto referensi wajah asli untuk menjaga konsistensi identitas. Fokuskan komposisi pada wajah dan kepalan tangan yang diarahkan ke kamera. Gunakan perspektif forced perspective, efek kaca pecah dengan retakan realistis, serpihan kaca transparan, serta pencahayaan cinematic bernuansa gelap. Pastikan wajah tetap tajam dan tangan memiliki anatomi natural.",
+        "slug": "shattered-reality-break-through-cinematic-glass-punch",
+        "date": "2026-11-08",
+        "id": "shattered-reality-break-through-cinematic-glass-punch"
+      },
+      {
+        "title": "Geometric Soul – Colorful Stained Glass Polygon Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7k9gnm-geometric-stained-glass-portrait.png",
+        "prompt": "Create a highly detailed geometric mosaic portrait using the face from the uploaded photo as the main subject. Keep the facial structure, hairstyle, eyes, expression, and identity exactly the same as the uploaded person.\n\nStyle the portrait in a modern abstract polygonal / hexagonal art style with layered geometric patterns covering the face and clothing. Blend colorful stained-glass textures with clean line art, featuring vibrant gradients of orange, purple, blue, teal, red, and white.\n\nThe face should be partially fragmented into artistic hexagon and contour shapes while still remaining recognizable and realistic. Add flowing geometric lines around the hair and shoulders for a futuristic artistic effect.\n\nMake the portrait symmetrical, centered, and ultra clean with smooth shading and crisp edges. Background should be minimal textured off-white canvas or paper texture to enhance the colorful artwork.\n\nLighting soft and artistic, with vivid contrast and premium gallery-style aesthetics.\n\nStyle: abstract geometric portrait, polygon art, stained glass effect, modern digital illustration, colorful linework, ultra detailed, sharp focus, elegant composition, high quality, 8k resolution.\n\nAI Tool:\nChatGPT-Image",
+        "category": "Abstract Geometric Art / Polygon Portrait / Stained Glass Effect / Creative AI Photography / Digital Illustration",
+        "tool": "ChatGPT Image / Gemini / Midjourney",
+        "note": "Ubah foto wajah menjadi karya seni geometric mosaic portrait dengan perpaduan pola polygon, hexagon, dan stained glass berwarna-warni.\n\nPertahankan identitas wajah, bentuk mata, hidung, bibir, gaya rambut, dan ekspresi asli.\n\nMenggunakan kombinasi warna orange, purple, blue, teal, red, dan white dengan detail garis geometris futuristik.\n\nHasil akhir menyerupai karya seni digital premium yang layak dipajang di galeri modern.",
+        "slug": "geometric-soul-stained-glass-polygon-portrait",
+        "date": "2026-11-08",
+        "id": "geometric-soul-stained-glass-polygon-portrait"
+      },
+      {
+        "title": "Cinematic Gambler – Red Noir Luxury Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw2bw8y9-noir-casino-red-dice-and-silver-rings.jpg",
+        "prompt": "Ultra-realistic cinematic portrait of a man styled like a futuristic gambler, wearing a bold red jacket, black sunglasses, and multiple silver rings. He is reaching forward toward a set of scattered dice on a reflective surface, with his hand in sharp focus (forced perspective), while his face is slightly behind. The scene is framed through a circular metallic or glass opening, creating a tunnel-like composition.\n\nMoody, dramatic lighting with cool tones and soft fog, high contrast shadows, shallow depth of field, sharp details on skin texture and accessories. Wet reflective floor, dice glowing subtly.\n\nExpression: confident, intense, mysterious.\n\nUse the provided reference image for the face and identity of the man.\n\nShot on 85mm lens, f/1.8, cinematic color grading, ultra-detailed, 8K, photorealistic, studio lighting, volumetric light.\n\nAI Tool:\nChatGPT-Image",
+        "category": "Cinematic Portrait / Luxury Fashion / Red Noir / Gambler Style / Editorial Photography / Forced Perspective / Creative AI Portrait",
+        "tool": "ChatGPT-Image / GPT-Image / Gemini / AI Image Generator",
+        "note": "Upload foto wajah dengan pencahayaan yang jelas untuk mendapatkan kemiripan karakter yang optimal. Gunakan foto referensi berkualitas tinggi. Prompt ini menghasilkan portrait sinematik bergaya luxury gambler dengan jas merah, kacamata hitam, cincin perak, dadu merah, dan efek forced perspective. Cocok untuk personal branding, poster fashion, foto profil kreatif, dan konten media sosial.",
+        "slug": "cinematic-gambler-red-noir-luxury-portrait",
+        "date": "2026-11-04",
+        "id": "cinematic-gambler-red-noir-luxury-portrait"
+      },
+      {
+        "title": "Perfect Reflection – Luxury Symmetrical Editorial Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw2c22fx-mirrored-gentleman-with-card-suits.jpg",
+        "prompt": "Create a minimalist, high-fashion portrait using the provided photo of the man as the subject. The composition features the man seated at a reflective surface, wearing a tailored neutral-toned suit (brown or beige) with a tie, styled in a modern editorial look.\n\nThe image should have a perfectly symmetrical reflection beneath him, as if mirrored on a glossy black surface or flipped vertically, creating a dual composition (top and inverted bottom reflection aligned seamlessly).\n\nBackground should be clean, soft beige or off-white, with a minimal aesthetic. Add subtle graphic elements like small black playing card symbols (spade and heart) placed in opposite corners to enhance the concept.\n\nEnsure:\n\nThe subject’s face matches the provided photo exactly\n\nStrong symmetry and centered composition\n\nSharp focus, ultra-realistic detail\n\nSoft studio lighting with gentle shadows\n\nEditorial fashion photography style (magazine quality)\n\nCalm, confident facial expression\n\nClean color palette (earth tones, black accents)\n\nAspect ratio: 4:5 or 9:16\nStyle: photorealistic, minimalist, luxury editorial, symmetrical composition\n\nAI Tool:\nChatGPT-Image",
+        "category": "Perfect Reflection – Luxury Symmetrical Editorial Portrait",
+        "tool": "ChatGPT-Image / GPT-Image / Gemini / AI Image Generator",
+        "note": "Gunakan foto portrait dari depan dengan wajah terlihat jelas. Pilih foto dengan pencahayaan baik untuk mendapatkan kemiripan wajah yang optimal. Prompt ini menciptakan portrait editorial premium dengan jas elegan, pantulan simetris, meja reflektif hitam, dan simbol kartu minimalis. Cocok untuk personal branding, foto profil profesional, fashion poster, dan konten media sosial.",
+        "slug": "perfect-reflection-luxury-symmetrical-editorial-portrait",
+        "date": "2026-11-04",
+        "id": "perfect-reflection-luxury-symmetrical-editorial-portrait"
+      },
+      {
+        "title": "Fragmented Identity – Creative Mosaic Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw2cotzf-ideas-in-the-making.jpg",
+        "prompt": "Create a modern conceptual portrait of a man using the provided photo as the central subject. The image should be composed as a grid of slightly separated square tiles, forming a fragmented mosaic effect. Some tiles should be slightly lifted or curled at the edges to add depth and realism.\n\nThe background should be a neutral textured wall (like concrete or plaster). Around the mosaic, place several colorful sticky notes with short, original motivational or pop-culture-inspired phrases (avoid famous quotes). Examples of tone: witty, reflective, or futuristic.\n\nWrite subtle handwritten-style words across a few tiles of the face, blending into the portrait without overpowering it.\n\nStyle:\n\nPhotorealistic with soft, balanced lighting\n\nSlight shadows under lifted tiles for depth\n\nClean, minimal, modern aesthetic\n\nHigh detail and sharp focus\n\nMood:\n\nThought-provoking, creative identity theme\n\nSlightly mysterious but approachable\n\nDo not replicate any existing quotes or layouts exactly. Keep all text original and unique.\n\nAI Tool:\nChatGPT-Image",
+        "category": "AI Portrait / Creative Mosaic / Photo Manipulation / Mixed Media / Editorial Design / Artistic Portrait",
+        "tool": "ChatGPT-Image / GPT-Image / Gemini / AI Image Generator",
+        "note": "Gunakan foto portrait asli dengan wajah terlihat jelas. AI akan mengubah foto menjadi karya seni mosaic dengan potongan kotak geometris, efek kertas terangkat, bayangan realistis, dan sticky notes berisi pesan kreatif. Cocok untuk personal branding, konten Instagram, poster artistik, dan foto profil unik. Pastikan susunan tile tetap rapi dan wajah tidak terdistorsi.",
+        "slug": "fragmented-identity-creative-mosaic-portrait",
+        "date": "2026-11-04",
+        "id": "fragmented-identity-creative-mosaic-portrait"
+      },
+      {
+        "title": "Hamdani Harfan – Purple Neon Name Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw2dagda-neon-portrait-with-hamdani-harfan.jpg",
+        "prompt": "Create a cinematic neon portrait using the uploaded photo as the main subject.\n\nPreserve the exact facial structure, hairstyle, expression, skin tone, body proportions, and recognizable identity from the uploaded person. The face must remain highly realistic, sharp, and instantly recognizable.\n\nThe subject is standing against a completely black background, illuminated only by a soft purple neon glow. The person extends one hand forward with the palm facing upward, as if holding a floating light source.\n\nAbove the open palm, generate a glowing neon handwritten script displaying the name:\n\n\"Hamdani Harfan\"\n\nThe neon text should appear as realistic floating light made from luminous purple-violet tubing, emitting soft bloom, glow, reflections, and subtle light rays onto the person's face, hand, and clothing.\n\nThe subject should wear simple elegant clothing in light neutral tones, allowing the neon glow to become the main visual focus. Expression should be calm, confident, mysterious, and captivating.\n\nUse dramatic low-key lighting with strong contrast between the dark background and the glowing neon text. The purple light should softly illuminate the face and create cinematic shadows.\n\nStyle: cinematic portrait photography, neon typography art, futuristic minimalism, glowing light effects, dark aesthetic, premium social media artwork, realistic photography, ultra detailed, masterpiece quality.\n\nColor palette: deep black background, glowing purple neon, soft violet highlights, subtle magenta reflections, realistic skin tones.\n\nUltra realistic, shallow depth of field, professional studio lighting, HDR, 8K resolution, highly detailed facial features, premium visual quality, vertical composition.",
+        "category": "Neon Portrait / Purple Neon Effect / Glowing Typography / Cinematic Photography / Personal Branding / AI Portrait",
+        "tool": "ChatGPT Image",
+        "note": "Gunakan foto wajah sendiri sebagai referensi utama. Ganti tulisan \"Hamdani Harfan\" dengan nama yang diinginkan. Gunakan latar belakang hitam pekat agar efek neon ungu terlihat lebih menonjol. Pastikan pencahayaan neon memantul secara natural pada wajah dan tangan.\n\nTips: Gunakan foto portrait dengan wajah menghadap kamera agar hasil identitas lebih konsisten. Cocok untuk foto profil, personal branding, poster digital, dan konten media sosial.",
+        "slug": "hamdani-harfan-purple-neon-name-portrait",
+        "date": "2026-11-04",
+        "id": "hamdani-harfan-purple-neon-name-portrait"
+      },
+      {
+        "title": "Sonic Identity — Waveform Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw0nebvw-neon-soundwave-portrait-of-a-suited-man.jpg",
+        "prompt": "A conceptual and artistic portrait of a person, where the face and silhouette are accurately formed entirely from sound waves and audio waveforms.\n\nThe facial identity is clearly based on the uploaded reference photo, preserving the person’s facial structure, proportions, and recognizable features, but instead of solid skin, the face is constructed from flowing sound waves, frequency lines, and waveform patterns.\n\nThe sound waves vary in thickness and intensity, shaping the eyes, nose, lips, and jawline with precise detail. Some waves appear sharp and energetic, others smooth and calm, creating depth and emotion.\n\nThe background is dark and minimal, allowing the glowing sound waves to stand out. Subtle particles, light pulses, and audio-reactive effects surround the portrait, giving the impression that the image is alive with sound.\n\nColor palette uses neon blues, soft purples, cyan, and white highlights, with gentle glow effects.\n\nCinematic lighting, high contrast, ultra-detailed digital art, modern abstract realism, sharp focus, 8K quality, clean composition, no text, no watermark.",
+        "category": "AI Image Editing, Waveform Portrait, Sound Wave Art, Futuristic Portrait, Neon Art, Digital Art, Character Consistency",
+        "tool": "ChatGPT Images, Gemini, AI Image Generator",
+        "note": "Unggah foto wajah sebagai referensi utama. Gunakan pencahayaan neon biru, cyan, dan ungu dengan latar gelap untuk kontras maksimal. Pastikan garis gelombang membentuk fitur wajah, bukan sekadar menjadi dekorasi di sekelilingnya. Cocok untuk foto profil futuristik, poster kreatif, dan personal branding AI.",
+        "slug": "sonic-identity-waveform-portrait",
+        "date": "2026-11-03",
+        "id": "sonic-identity-waveform-portrait"
+      },
+      {
+        "title": "Neo-Expressionist Street Art Portrait — Bold Identity",
+        "status": "published",
+        "image": "/assets/uploads/mw0ni4lc-neo-expressionist-graffiti-portrait.jpg",
+        "prompt": "Create a bold neo-expressionist street-art portrait of the person in the uploaded reference photo. Preserve the person's recognizable facial identity, facial proportions, spiky black hairstyle, eyebrows, eyes, nose, lips, skin tone, and natural expression. Render the portrait with expressive hand-painted brushstrokes, rough black outlines, layered acrylic paint, chalk marks, crayon textures, distressed surfaces, and dramatic color blocking. Use vivid primary colors: electric blue, fiery red, bright yellow, black, and white. Dress the subject in a sharp navy-blue suit, white shirt, and burgundy patterned tie inspired by the reference photograph. Set the portrait against a weathered urban concrete wall filled with expressive graffiti, abstract symbols, crowns, stars, lightning bolts, skull illustrations, paint splashes, scribbles, and energetic brush marks. Create a powerful composition with confident expression, dynamic visual rhythm, imperfect handmade textures, strong contrast, and an iconic contemporary street-art aesthetic. Highly detailed facial features, tactile paint texture, dramatic lighting, sharp focus, premium art-poster quality, vertical 3:4 composition. Maintain character consistency with the reference image. No photorealistic skin rendering that removes the painted effect, no distorted facial anatomy, no extra limbs, no watermark, no unintended typography.",
+        "category": "Neo-Expressionism, Street Art, Graffiti Portrait, AI Image Editing, Acrylic Painting, Urban Art, Character Consistency",
+        "tool": "ChatGPT Images, Gemini, AI Image Generator",
+        "note": "Gunakan foto referensi wajah sebagai acuan utama. Pertahankan gaya rambut dan ciri wajah asli, tetapi gunakan sapuan cat kasar, outline hitam tegas, serta kombinasi merah, biru, kuning, hitam, dan putih. Cocok untuk poster personal branding, artwork profil, sampul digital, dan konten media sosial.",
+        "slug": "neo-expressionist-street-art-portrait",
+        "date": "2026-11-03",
+        "id": "neo-expressionist-street-art-portrait"
+      },
+      {
+        "title": "Abstract Scribble Ink Portrait — Artistic Identity",
+        "status": "published",
+        "image": "/assets/uploads/mw0ogl9i-confident-scribble-portrait-in-a-suit.jpg",
+        "prompt": "Create an abstract scribble line art portrait using the uploaded reference photo as the main subject.\n\nThe face, facial structure, skin tone, hairstyle, and identity must remain 100% accurate to the uploaded photo.\n\nThe portrait is drawn entirely using chaotic hand-drawn black ink lines, overlapping and tangled, forming the figure through dense sketch strokes and expressive scribbles.\n\nThe subject is shown from the waist up, standing confidently with arms crossed, calm and thoughtful expression.\n\nThe body, clothing, and shadows are all created using continuous abstract line work, with no solid fills, only layered lines suggesting form and depth.\n\nBlack ink on a pure white background, high contrast, minimalistic composition.\n\nArtistic style inspired by contemporary abstract sketch art, emotional, raw, and expressive.\n\nUltra-detailed line density on the face, slightly looser lines on the body for artistic balance.\n\nNo color, no text, no background elements, no realism rendering, no shading gradients, no watermark.",
+        "category": "Seni abstrak, black ink sketch, scribble art, portrait illustration, character consistency, monochrome art.",
+        "tool": "ChatGPT / Gemini / Midjourney   Salin",
+        "note": "Gunakan foto referensi asli untuk mempertahankan identitas wajah, bentuk mata, hidung, bibir, gaya rambut, dan struktur wajah. Seluruh potret dibuat dari coretan tinta hitam yang saling bertumpuk, dengan detail wajah rapat, jas formal, posisi tangan menyilang, dan latar putih bersih.",
+        "slug": "abstract-scribble-ink-portrait",
+        "date": "2026-11-03",
+        "id": "abstract-scribble-ink-portrait"
+      },
+      {
+        "title": "Premium Monochrome 3D Character Sculpt — ZBrush Style",
+        "status": "published",
+        "image": "/assets/uploads/mw0p34ur-monochrome-clay-bust-in-hoodie.jpg",
+        "prompt": "Create a cinematic, fashion-forward 3D bust derived from the provided reference photo. Interpret the subject using a refined, ZBrush-inspired sculpting style with smooth, matte surfaces and gently enhanced proportions. Present the model in a single neutral material (such as clay gray, warm stone, or slate), avoiding surface textures or color so the focus remains entirely on form, volume, and silhouette.\n\nFacial anatomy should stay true to the subject while being subtly idealized: highlighting the jawline, cheekbones, brow structure, and lips without drifting into caricature. Outfit the character in contemporary streetwear, such as a structured hoodie with thick fabric, clean construction, and believable seams and folds. Minimal accessories may be included, like a beanie or raised hood, if they support the look.\n\nIlluminate the sculpt with soft, neutral studio lighting around 6000K, using directional light to gently define planes and geometry through controlled shadows. Place the bust against a light, neutral background with a delicate gradient.\n\nFrame the shot using an 85mm lens at eye level or slightly below, with an f/4.5 aperture and shallow depth of field. The overall aesthetic should align with premium sculpt passes seen in cinematic character design for animated films and AAA games—minimal, polished, and editorial in tone. The final mood should feel confident, composed, modern, and digitally pristine.",
+        "category": "AI Portrait / 3D Sculpt / ZBrush Style / Character Design / Monochrome Art",
+        "tool": "ChatGPT / Gemini / Midjourney",
+        "note": "Upload foto referensi wajah yang jelas. Pertahankan identitas wajah, bentuk mata, hidung, bibir, dan gaya rambut. Gunakan material clay monokrom, pencahayaan studio lembut, serta detail hoodie yang realistis. Hasil akhir harus terlihat seperti sculpt karakter profesional, bukan foto berwarna.",
+        "slug": "premium-monochrome-3d-character-sculpt",
+        "date": "2026-11-03",
+        "id": "premium-monochrome-3d-character-sculpt"
+      },
+      {
+        "title": "Potret Psychedelic Neon – Seni Digital Abstrak Ultra-Realistis",
+        "status": "published",
+        "image": "/assets/uploads/mvzc67cd-psychedelic-portrait-in-swirling-neon-pa.jpg",
+        "prompt": "A vibrant, psychedelic portrait of a human based on the uploaded photo. The person’s face and features should be clearly recognizable, surrounded by a colorful, abstract background with fluid, swirling patterns in neon hues of blue, orange, pink, green, and yellow. The lighting is bright and glowing, with soft reflections on the skin and hair. The artwork style is detailed, vivid, and surreal — resembling an oil painting blended with digital neon art. The expression is calm and confident, with dreamy eyes and gentle lighting on the face. Ultra-detailed, high quality, 8k render, sharp focus, vivid saturation, intricate textures, fantasy style.",
+        "category": "Psychedelic Portrait, Neon Art, Digital Painting, Abstract Art, Fantasy Portrait, AI Image Editing",
+        "tool": "ChatGPT, Gemini, Midjourney",
+        "note": "Ubah foto asli menjadi potret psychedelic yang artistik dengan pola abstrak berputar dan warna neon biru, oranye, merah muda, hijau, dan kuning. Pertahankan identitas wajah, bentuk mata, hidung, bibir, gaya rambut, dan karakteristik utama subjek. Gunakan pencahayaan bercahaya, tekstur menyerupai lukisan minyak, detail digital art yang kompleks, saturasi warna tinggi, dan komposisi sinematik. Cocok untuk foto profil kreatif, poster seni, personal branding, dan konten media sosial. Unggah foto referensi terlebih dahulu agar hasil lebih konsisten.",
+        "slug": "potret-psychedelic-neon-digital-art",
+        "date": "2026-11-02",
+        "id": "potret-psychedelic-neon-digital-art"
+      },
+      {
+        "title": "AI Photo Transformation: Professional Portrait to Futuristic Cyberpunk | Cinematic 8K",
+        "status": "published",
+        "image": "/assets/uploads/mvzbz4x1-cyberpunk-portrait-with-neon-circuits.jpg",
+        "prompt": "A close-up portrait of a man inspired by the provided reference photo — don't change his original face. The lighting is cinematic with warm orange and cool blue tones highlighting the contours of his face. His jacket has a textured, futuristic design, and subtle digital circuitry patterns merge into his skin and surroundings, symbolizing the fusion between human and technology. The background features abstract geometric grids and data streams in glowing hues of red, blue, and orange, creating a cyberpunk-techno aesthetic. Render in ultra-realistic detail with smooth skin texture, soft depth of field, and high dynamic range — 8K resolution, Unreal Engine 5 realism, cinematic lighting, sharp focus on eyes, bokeh background.\n\n--ar 2:3 --v 6 --s 750 --style raw --q 2 --hd --uplight",
+        "category": "AI Photo Editing, Cyberpunk, Futuristic Portrait, Sci-Fi, Digital Art, Cinematic Photography",
+        "tool": "ChatGPT, Gemini, Midjourney",
+        "note": "Ubah foto formal menjadi potret futuristik bergaya cyberpunk dengan mempertahankan kemiripan wajah, gaya rambut, dan karakter utama dari foto referensi. Gunakan jaket teknologi futuristik bertekstur dengan detail sirkuit bercahaya, perpaduan pencahayaan oranye hangat dan biru elektrik, efek digital pada kulit yang halus, latar belakang berupa jaringan data, grid geometris, serta elemen holografik. Terapkan pencahayaan sinematik, fokus tajam pada mata, tekstur kulit realistis, depth of field lembut, dan kontras HDR. Cocok untuk foto profil AI, personal branding teknologi, avatar digital, dan konten media sosial. Gunakan foto referensi yang jelas untuk membantu menjaga konsistensi wajah.",
+        "slug": "professional-portrait-cyberpunk-ai",
+        "date": "2026-11-02",
+        "id": "professional-portrait-cyberpunk-ai"
+      },
+      {
+        "title": "Low-Poly Geometric Portrait — Seni Potret 3D Futuristik",
+        "status": "published",
+        "image": "/assets/uploads/mvzdz7uk-faceted-geometric-portrait-in-blue.jpg",
+        "prompt": "A highly detailed low-poly geometric portrait based on Image 1. The face, hair, and body are recreated using sharp polygonal shapes and faceted surfaces in shades of blue, gray, and purple, similar to digital sculpture art. Lighting is dramatic, with strong contrast and cinematic highlights emphasizing the 3D geometry. The background features abstract angular patterns that complement the low-poly style. Ultra-detailed 3D low-poly illustration, digital painting, cinematic lighting, polygonal textures, 8k render.",
+        "category": "Digital Art, 3D Illustration, Portrait & Avatar",
+        "tool": "LOW-POLY 3D ART",
+        "note": "Gunakan foto referensi wajah yang jelas agar karakter utama tetap mudah dikenali. Ubah wajah, rambut, pakaian, dan latar menjadi bidang-bidang geometris berbentuk segitiga dengan gradasi biru, ungu, dan abu-abu. Tambahkan pencahayaan sinematik untuk menghasilkan efek pahatan digital 3D yang premium.",
+        "slug": "low-poly-geometric-portrait",
+        "date": "2026-11-02",
+        "id": "low-poly-geometric-portrait"
+      },
+      {
+        "title": "HOT NEWS — Cinematic Burning Newspaper Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mvzegj9r-man-holding-flaming-hot-news-newspaper.jpg",
+        "prompt": "A cinematic, ultra-realistic portrait of a person (based on the uploaded photo) holding an open newspaper titled “HOT NEWS” printed clearly across both pages. The newspaper is on fire from the edges, with vivid orange and yellow flames spreading along the top and sides. Sparks and ashes float through the air while the paper edges curl and burn. The warm light from the fire illuminates the person’s face dramatically, casting soft shadows on one side. Their expression is calm, confident, and slightly intense, symbolizing power and revelation. The background is dark and cinematic, with subtle smoke and glowing embers drifting around. The composition feels like a movie poster — powerful, mysterious, and modern. Ultra-detailed cinematic portrait, HDR lighting, volumetric smoke, realistic fire glow, 8k render, photo-realistic textures, dramatic contrast, color palette of orange, amber, and deep black.\n\n\"A hyper-realistic raw portrait of an Asian man, detailed natural skin texture, visible skin pores, subtle imperfections, vellus hairs, natural skin oils, no airbrushing. Soft natural window lighting, gentle shadows, depth of field. Shot on 85mm lens, f/2.8, professional photography, candid expression, sharp focus, 8k resolution, photorealistic masterpiece.",
+        "category": "Cinematic Portrait, AI Photo Editing, Dramatic Effects",
+        "tool": "HOT NEWS 🔥",
+        "note": "Gunakan foto referensi wajah agar identitas tetap konsisten. Tambahkan efek api realistis di tepi koran, bara beterbangan, asap dramatis, serta pencahayaan oranye dari api. Pertahankan tekstur kulit alami dan detail wajah. Pastikan tulisan “HOT NEWS” terlihat jelas.",
+        "slug": "hot-news-burning-newspaper",
+        "date": "2026-11-02",
+        "id": "hot-news-burning-newspaper"
+      },
+      {
+        "title": "Potret Sinematik Pemain Biliar – Elegant Black Suit",
+        "status": "published",
+        "image": "/assets/uploads/mvzcd6uh-confident-cue-at-the-pool-hall.jpg",
+        "prompt": "A cinematic portrait of a confident man preparing for a billiards game in a dimly lit pool hall. The man’s face and appearance should be based accurately on the uploaded photo. He wears a black suit jacket, white shirt, and black gloves, standing beside a billiard table under soft overhead lighting. The atmosphere is moody and dramatic, with warm tones, soft haze, and a focused light beam illuminating the subject. Background includes blurred pool tables and hanging lights, creating a cinematic depth of field. Ultra-detailed textures, shallow depth of field, realistic lighting, and photorealistic style with subtle film grain.\n\nStyle keywords:\n\ncinematic portrait, dramatic lighting, moody atmosphere, soft haze, 8k realism, shallow depth of field, realistic shadows, professional photography",
+        "category": "Cinematic Portrait, Billiards, Men Fashion, Black Suit, Dramatic Lighting, AI Photo Editing",
+        "tool": "ChatGPT, Gemini, Midjourney",
+        "note": "Ubah foto referensi menjadi potret sinematik seorang pria elegan di ruang biliar mewah. Pertahankan identitas wajah, gaya rambut, bentuk mata, hidung, dan karakteristik asli subjek. Kenakan jas hitam berpotongan rapi, kemeja putih, dan sarung tangan hitam sambil memegang tongkat biliar di samping meja berwarna hijau. Gunakan pencahayaan lampu gantung berwarna keemasan, latar belakang gelap dengan efek bokeh, bayangan realistis, tekstur kain detail, serta depth of field yang dramatis. Hasil akhir fotorealistis, mewah, dan profesional. Cocok untuk foto profil, poster personal branding, dan konten media sosial.",
+        "slug": "potret-sinematik-pemain-biliar",
+        "date": "2026-11-02",
+        "id": "potret-sinematik-pemain-biliar"
       },
       {
         "title": "PEACE WALK – Artistic Streetwear Freedom Portrait",
@@ -895,6 +1087,66 @@
         "slug": "mafia-boss-cinematic-luxury-underworld-portrait",
         "date": "2026-11-08",
         "id": "mafia-boss-cinematic-luxury-underworld-portrait"
+      },
+      {
+        "title": "Fire & Water — Portrait Dua Elemen Sinematik",
+        "status": "published",
+        "image": "/assets/uploads/mvzf74pi-fire-and-water-suit-portrait.jpg",
+        "prompt": "Create a hyper-realistic portrait of the same man from the reference photo. Show him in a dramatic split-element scene: the left side surrounded by blazing orange flames and glowing embers, and the right side surrounded by cool blue water splashes and mist. His face should be wet from water on one side and illuminated by firelight on the other. Keep his curly hair, facial structure, and expression consistent with the reference. He wears a sharp suit and tie, partially soaked and partially singed. Use cinematic lighting, ultra-detailed textures, and high contrast for a powerful dual-element look.",
+        "category": "AI Image Editing, Cinematic Portrait, Fantasy, Fire & Water Effects",
+        "tool": "Instagram Feed, Poster Film, Personal Branding, Digital Art, Konten AI",
+        "note": "Gunakan foto referensi untuk mempertahankan identitas wajah, bentuk mata, hidung, bibir, dan gaya rambut. Padukan api oranye di sisi kiri dengan percikan air biru di sisi kanan. Gunakan pencahayaan kontras tinggi, tekstur kulit realistis, tetesan air, bara api, dan detail pakaian yang basah serta sedikit hangus untuk menghasilkan efek sinematik yang dramatis.",
+        "slug": "fire-water-dual-element-portrait",
+        "date": "2026-11-02",
+        "id": "fire-water-dual-element-portrait"
+      },
+      {
+        "title": "Monochrome Elevator Portrait: Cinematic Black & White Fashion Editorial",
+        "status": "published",
+        "image": "/assets/uploads/mvy0ku3r-monochrome-elevator-portrait-1.jpg",
+        "prompt": "I will edit the photo so that I am standing inside an elevator with a black and white (monochrome) aesthetic. Utilize dramatic, high-contrast lighting to create an artistic vibe, reminiscent of a fashion editorial photoshoot. I am wearing a classic black suit, a white shirt, and a tie.",
+        "category": "AI Portrait / Fashion Editorial / Monochrome / Black and White / Professional Portrait",
+        "tool": "ChatGPT Images / AI Photo Editing",
+        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan identitas asli. Pilih pencahayaan dramatis dengan kontras hitam-putih yang seimbang agar hasil terlihat elegan, profesional, dan sinematik. Cocok untuk foto profil profesional, personal branding, LinkedIn, dan konten fashion editorial.",
+        "slug": "monochrome-elevator-fashion-portrait",
+        "date": "2026-11-01",
+        "id": "monochrome-elevator-fashion-portrait"
+      },
+      {
+        "title": "Cinematic Vintage Portrait: Pria Elegan dengan Motor Yamaha RX100",
+        "status": "published",
+        "image": "/assets/uploads/mvy13z6m-vintage-yamaha-portrait-by-weathered-wal.jpg",
+        "prompt": "Generate a cinematic outdoor portrait of a fashionable young man posed confidently beside a black Yamaha RX100 motorcycle. He is dressed in a dark brown button-up shirt paired with light brown trousers and black loafers, complemented by a wristwatch, bracelet, and sunglasses. The setting should include wild greenery and an aged concrete wall to enhance a rustic urban feel. Use moody, warm vintage tones to evoke a retro aesthetic. His facial expression should remain serious and composed, suggesting mystery and rugged sophistication. Ensure the face exactly matches the provided reference selfie—keep the same eyes, nose, cheeks, and skin texture.",
+        "category": "Portrait Pria / Motorcycle Photography / Vintage Aesthetic / Fashion Editorial",
+        "tool": "ChatGPT / AI Photo Editing",
+        "note": "Gunakan foto referensi wajah untuk mempertahankan identitas subjek, termasuk bentuk mata, hidung, pipi, tekstur kulit, dan gaya rambut. Hasil terbaik menggunakan pencahayaan natural, pose santai tetapi percaya diri, serta nuansa vintage sinematik. Cocok untuk personal branding, foto profil profesional, dan konten media sosial. Gunakan foto motor klasik hitam sebagai referensi tambahan jika tersedia.",
+        "slug": "portrait-pria-motor-yamaha-rx100-vintage",
+        "date": "2026-11-01",
+        "id": "app"
+      },
+      {
+        "title": "Padel Court Action – Ultra-Realistic Sports Photography",
+        "status": "draft",
+        "image": "/assets/uploads/mvy3kwc7-padel-player-in-mid-lunge.jpg",
+        "prompt": "A man with a serious expression, wearing glasses, a navy blue polo shirt, black athletic shorts, white socks, and black and white athletic shoes, is in motion on a blue padel court. He is holding a black padel racket with a yellow tennis ball just in front of it, as if he is about to hit it. The court has white lines. In the background, there's a fence made of wire mesh and glass panels, and green trees under a bright sky. Don't change the man's original face and hair.",
+        "category": "Olahraga / Padel / Sport Photography / AI Portrait",
+        "tool": "ChatGPT / AI Image Editing",
+        "note": "Pertahankan wajah, gaya rambut, dan proporsi tubuh asli. Gunakan jersey polo biru navy, celana olahraga hitam, kaus kaki putih, dan sepatu olahraga hitam-putih. Tampilkan aksi bermain padel secara realistis dengan raket hitam dan bola kuning, lapangan biru, pencahayaan alami, serta detail wajah dan tekstur pakaian yang tajam.",
+        "slug": "padel-court-action-ultra-realistic",
+        "date": "2026-11-01",
+        "id": "padel-court-action-ultra-realistic"
+      },
+      {
+        "title": "INDONESIAN SPIRIT – Cinematic National Hero Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7mgdru-red-and-white-rising.png",
+        "prompt": "Create an ultra-realistic, cinematic, high-impact image using the uploaded reference photo as the main subject.\n\nThe face, facial features, skin tone, hairstyle, age, and identity must remain clearly recognizable and accurately match the uploaded photo, with no stylization or face alteration.\n\nThe subject is an adult person, depicted as a heroic figure standing powerfully on top of a massive Indonesian national flag (red and white) flowing beneath their feet.\n\nThe person raises one fist upward in a strong, defiant pose, mouth slightly open as if shouting or rallying, expressing courage, resistance, pride, and determination.\n\nClothing appears torn, weathered, and battle-worn, wrapped partially with the Indonesian flag like a cape or cloth, symbolizing national spirit and struggle.\n\nEnvironment: a dramatic urban city street filled with a massive crowd in the background, flags waving, dust and smoke in the air, cinematic depth of field.\n\nLighting: epic cinematic lighting, strong rim light, volumetric light rays, dramatic shadows, high contrast.\n\nAtmosphere: emotional, powerful, heroic, revolutionary tone.\n\nCamera angle: low-angle shot to emphasize strength and dominance.\n\nStyle: ultra-realistic, photoreal, cinematic movie poster quality, 8K detail, sharp focus on the subject.\n\nNo text, no watermark, no logos, no extra characters, no cartoon style.\n\nAI Tool:\nChatGPT-Image",
+        "category": "Indonesian Independence / National Pride / Heroic Portrait / Cinematic Photography / Patriotic Poster",
+        "tool": "ChatGPT-Image",
+        "note": "Gunakan foto pribadi sebagai referensi identitas wajah. Pertahankan bentuk wajah, mata, hidung, bibir, rahang, warna kulit, dan gaya rambut. Gunakan pose mengepalkan tangan ke atas, bendera Merah Putih sebagai jubah, sudut kamera low-angle, pencahayaan dramatis, serta suasana heroik dan sinematik. Pastikan anatomi tangan dan tubuh tetap realistis.",
+        "slug": "indonesian-spirit-cinematic-national-hero-portrait",
+        "date": "2026-11-08",
+        "id": "indonesian-spirit-cinematic-national-hero-portrait"
       },
       {
         "title": "VINTAGE EXECUTIVE – 1990s New York Business Portrait",
@@ -979,54 +1231,6 @@
         "slug": "luxury-blue-smoke-cinematic-executive-portrait",
         "date": "2026-11-08",
         "id": "luxury-blue-smoke-cinematic-executive-portrait"
-      },
-      {
-        "title": "Geometric Soul – Colorful Stained Glass Polygon Portrait",
-        "status": "published",
-        "image": "/assets/uploads/mw7k9gnm-geometric-stained-glass-portrait.png",
-        "prompt": "Create a highly detailed geometric mosaic portrait using the face from the uploaded photo as the main subject. Keep the facial structure, hairstyle, eyes, expression, and identity exactly the same as the uploaded person.\n\nStyle the portrait in a modern abstract polygonal / hexagonal art style with layered geometric patterns covering the face and clothing. Blend colorful stained-glass textures with clean line art, featuring vibrant gradients of orange, purple, blue, teal, red, and white.\n\nThe face should be partially fragmented into artistic hexagon and contour shapes while still remaining recognizable and realistic. Add flowing geometric lines around the hair and shoulders for a futuristic artistic effect.\n\nMake the portrait symmetrical, centered, and ultra clean with smooth shading and crisp edges. Background should be minimal textured off-white canvas or paper texture to enhance the colorful artwork.\n\nLighting soft and artistic, with vivid contrast and premium gallery-style aesthetics.\n\nStyle: abstract geometric portrait, polygon art, stained glass effect, modern digital illustration, colorful linework, ultra detailed, sharp focus, elegant composition, high quality, 8k resolution.\n\nAI Tool:\nChatGPT-Image",
-        "category": "Abstract Geometric Art / Polygon Portrait / Stained Glass Effect / Creative AI Photography / Digital Illustration",
-        "tool": "ChatGPT Image / Gemini / Midjourney",
-        "note": "Ubah foto wajah menjadi karya seni geometric mosaic portrait dengan perpaduan pola polygon, hexagon, dan stained glass berwarna-warni.\n\nPertahankan identitas wajah, bentuk mata, hidung, bibir, gaya rambut, dan ekspresi asli.\n\nMenggunakan kombinasi warna orange, purple, blue, teal, red, dan white dengan detail garis geometris futuristik.\n\nHasil akhir menyerupai karya seni digital premium yang layak dipajang di galeri modern.",
-        "slug": "geometric-soul-stained-glass-polygon-portrait",
-        "date": "2026-11-08",
-        "id": "geometric-soul-stained-glass-polygon-portrait"
-      },
-      {
-        "title": "Shattered Reality – Break Through the Limits | Cinematic Glass Punch Portrait",
-        "status": "published",
-        "image": "/assets/uploads/mw7k6owk-shattered-glass-punch-portrait.png",
-        "prompt": "Create a cinematic, photorealistic image using the uploaded photo as the main subject, keep the face exactly recognizable.\n\nThe subject is standing facing the camera, wearing a dark hoodie and black outfit, with one fist punching directly toward the camera through shattered glass.\n\nThe broken glass effect should spread realistically from the center impact point, with detailed cracks and sharp fragments surrounding the fist.\n\nExpression: calm but intense, confident and powerful eye contact.\n\nBackground: minimal dark grey studio background with soft blur.\n\nLighting: soft cinematic lighting with subtle highlights on the face and glass shards, moody atmosphere.\n\nPerspective: close-up shot with strong depth effect, fist closest to camera, face slightly behind in focus.\n\nStyle: dramatic, realistic, modern cinematic photography.\n\nDetails: ultra-detailed glass cracks, realistic skin texture, sharp focus, depth of field, HDR.\n\nQuality: 8K, highly detailed, professional photography style.\n\nAI Tool:\nChatGPT-Image",
-        "category": "Cinematic Photography / Action Portrait / Shattered Glass Effect / Dramatic AI Photo Editing",
-        "tool": "ChatGPT Image / Gemini / Midjourney",
-        "note": "Gunakan foto referensi wajah asli untuk menjaga konsistensi identitas. Fokuskan komposisi pada wajah dan kepalan tangan yang diarahkan ke kamera. Gunakan perspektif forced perspective, efek kaca pecah dengan retakan realistis, serpihan kaca transparan, serta pencahayaan cinematic bernuansa gelap. Pastikan wajah tetap tajam dan tangan memiliki anatomi natural.",
-        "slug": "shattered-reality-break-through-cinematic-glass-punch",
-        "date": "2026-11-08",
-        "id": "shattered-reality-break-through-cinematic-glass-punch"
-      },
-      {
-        "title": "Fire Within My Hands – Cinematic AI Fire Doppelgänger Portrait",
-        "status": "published",
-        "image": "/assets/uploads/mw7jwide-fiery-miniature-in-an-open-palm.png",
-        "prompt": "Create a cinematic, photorealistic image using the uploaded photo as the main subject, keep the face exactly recognizable.\n\nThe subject is standing confidently, wearing a dark leather jacket, neutral expression, looking directly at the camera.\n\nPose: one hand extended forward, palm open.\n\nFrom the palm, a small human-like figure made entirely of fire is emerging, shaped like the same person (mini version), with detailed glowing flames, sparks, and embers.\n\nThe fire figure should look elegant, semi-realistic, and dynamic, with smooth flame flow and warm glow.\n\nBackground: indoor setting with soft blur (depth of field), warm cinematic lighting.\n\nLighting: strong warm orange glow from the fire illuminating the subject’s face and hand, creating dramatic highlights and shadows.\n\nMood: powerful, mystical, magical, slightly surreal.\n\nDetails: high realism, volumetric light, glowing particles, sharp facial detail, natural skin texture.\n\nCamera: medium shot, shallow depth of field, cinematic composition.\n\nQuality: ultra-detailed, 8K, HDR, sharp focus, professional photography style.\n\nAI Tool:\nChatGPT-Image",
-        "category": "AI Portrait / Fantasy Photography / Fire Effect / Cinematic Art / Surreal Portrait",
-        "tool": "ChatGPT Image / Gemini / Midjourney",
-        "note": "Gunakan foto referensi wajah tampak depan dengan pencahayaan jelas. Pertahankan identitas wajah, gaya rambut, dan proporsi tubuh. Gunakan foto berkualitas tinggi agar detail wajah tetap realistis. Cocok untuk konsep fantasy portrait, personal branding, dan konten media sosial.",
-        "slug": "fire-within-my-hands-cinematic-ai-portrait",
-        "date": "2026-11-08",
-        "id": "fire-within-my-hands-cinematic-ai-portrait"
-      },
-      {
-        "title": "Transformasi AI Creator – Futuristic Instagram Profile Cinematic Portrait",
-        "status": "published",
-        "image": "/assets/uploads/mw7joun8-hamdani-harfan-neon-ai-creator-profile.png",
-        "prompt": "Create an ultra-detailed, cinematic social media portrait using the provided reference photo to accurately preserve the man's facial features, hairstyle, glasses, body proportions, and overall identity.\n\nThe subject is confidently walking toward the camera with a relaxed yet powerful stride, wearing a modern black long coat over a simple white t-shirt, tailored black pants, and clean white sneakers. His expression is calm, ambitious, and self-assured, embodying the image of a successful AI entrepreneur and digital creator.\n\nBehind him stands a gigantic, hyper-realistic smartphone displaying an Instagram profile interface in dark mode. The profile should faithfully resemble the real @ruangsepri account, featuring:\n\nUsername: @ruangsepri with verified badge.\n\nDisplay name: Sepriansah | AI-Driven Konten Kreator\n\nProfile picture matching the provided reference.\n\nApproximately 397 posts, 193K followers, and 819 following.\n\nBio inspired by the real account, emphasizing AI content creation, entrepreneurship, and community building.\n\nPurple-themed Story Highlights.\n\nA realistic Instagram grid filled with AI, creator, business, podcast, and lifestyle content in a dark aesthetic.\n\nThe entire scene is immersed in a black and deep-purple color palette, with glowing neon accents. One side of the subject's body gradually transforms into an explosion of luminous purple particles, crystalline fragments, digital dust, and energy shards, as though he is emerging from the digital world into reality.\n\nThe background is dark, futuristic, and minimalistic, filled with subtle smoke, volumetric lighting, floating geometric fragments, and soft reflections on the glossy floor. Purple ambient light wraps around the character and the phone, creating a premium cyber-luxury atmosphere.\n\nThe composition should feel like a high-end movie poster or an advertising campaign for a modern AI creator brand, combining realism with subtle sci-fi elements.\n\nStyle: hyperrealistic, cinematic photography, ultra-detailed, luxury editorial, futuristic branding, cyber aesthetic, 8K resolution, HDR lighting, dramatic rim light, realistic skin texture, realistic fabric physics, shallow depth of field, sharp focus, balanced composition.\n\nNegative Prompt: low quality, blurry, cartoon, anime, distorted anatomy, extra limbs, duplicated body parts, incorrect hands, text artifacts, random UI elements, watermark, logo, low resolution, oversaturated colors, unrealistic face, deformed eyes, bad proportions.\n\nAI Tool:\nChatGPT-Image",
-        "category": "AI Portrait / Personal Branding / Futuristic Photography / Social Media",
-        "tool": "ChatGPT Image / Gemini / AI Image Generator",
-        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan identitas. Unggah foto wajah dan foto profil Instagram sebagai referensi. Hasil terbaik menggunakan foto full-body atau setengah badan dengan pencahayaan yang baik. Cocok untuk personal branding AI Developer, Content Creator, dan profesional digital.",
-        "slug": "futuristic-instagram-ai-creator-portrait",
-        "date": "2026-11-08",
-        "id": "futuristic-instagram-ai-creator-portrait"
       },
       {
         "title": "Into The Wild – Surreal Double Exposure Wood Engraving Portrait",
@@ -1305,30 +1509,6 @@
         "id": "eid-mubarak-luxury-emerald-gold-portrait"
       },
       {
-        "title": "Cinematic Gambler – Red Noir Luxury Portrait",
-        "status": "published",
-        "image": "/assets/uploads/mw2bw8y9-noir-casino-red-dice-and-silver-rings.jpg",
-        "prompt": "Ultra-realistic cinematic portrait of a man styled like a futuristic gambler, wearing a bold red jacket, black sunglasses, and multiple silver rings. He is reaching forward toward a set of scattered dice on a reflective surface, with his hand in sharp focus (forced perspective), while his face is slightly behind. The scene is framed through a circular metallic or glass opening, creating a tunnel-like composition.\n\nMoody, dramatic lighting with cool tones and soft fog, high contrast shadows, shallow depth of field, sharp details on skin texture and accessories. Wet reflective floor, dice glowing subtly.\n\nExpression: confident, intense, mysterious.\n\nUse the provided reference image for the face and identity of the man.\n\nShot on 85mm lens, f/1.8, cinematic color grading, ultra-detailed, 8K, photorealistic, studio lighting, volumetric light.\n\nAI Tool:\nChatGPT-Image",
-        "category": "Cinematic Portrait / Luxury Fashion / Red Noir / Gambler Style / Editorial Photography / Forced Perspective / Creative AI Portrait",
-        "tool": "ChatGPT-Image / GPT-Image / Gemini / AI Image Generator",
-        "note": "Upload foto wajah dengan pencahayaan yang jelas untuk mendapatkan kemiripan karakter yang optimal. Gunakan foto referensi berkualitas tinggi. Prompt ini menghasilkan portrait sinematik bergaya luxury gambler dengan jas merah, kacamata hitam, cincin perak, dadu merah, dan efek forced perspective. Cocok untuk personal branding, poster fashion, foto profil kreatif, dan konten media sosial.",
-        "slug": "cinematic-gambler-red-noir-luxury-portrait",
-        "date": "2026-11-04",
-        "id": "cinematic-gambler-red-noir-luxury-portrait"
-      },
-      {
-        "title": "Perfect Reflection – Luxury Symmetrical Editorial Portrait",
-        "status": "published",
-        "image": "/assets/uploads/mw2c22fx-mirrored-gentleman-with-card-suits.jpg",
-        "prompt": "Create a minimalist, high-fashion portrait using the provided photo of the man as the subject. The composition features the man seated at a reflective surface, wearing a tailored neutral-toned suit (brown or beige) with a tie, styled in a modern editorial look.\n\nThe image should have a perfectly symmetrical reflection beneath him, as if mirrored on a glossy black surface or flipped vertically, creating a dual composition (top and inverted bottom reflection aligned seamlessly).\n\nBackground should be clean, soft beige or off-white, with a minimal aesthetic. Add subtle graphic elements like small black playing card symbols (spade and heart) placed in opposite corners to enhance the concept.\n\nEnsure:\n\nThe subject’s face matches the provided photo exactly\n\nStrong symmetry and centered composition\n\nSharp focus, ultra-realistic detail\n\nSoft studio lighting with gentle shadows\n\nEditorial fashion photography style (magazine quality)\n\nCalm, confident facial expression\n\nClean color palette (earth tones, black accents)\n\nAspect ratio: 4:5 or 9:16\nStyle: photorealistic, minimalist, luxury editorial, symmetrical composition\n\nAI Tool:\nChatGPT-Image",
-        "category": "Perfect Reflection – Luxury Symmetrical Editorial Portrait",
-        "tool": "ChatGPT-Image / GPT-Image / Gemini / AI Image Generator",
-        "note": "Gunakan foto portrait dari depan dengan wajah terlihat jelas. Pilih foto dengan pencahayaan baik untuk mendapatkan kemiripan wajah yang optimal. Prompt ini menciptakan portrait editorial premium dengan jas elegan, pantulan simetris, meja reflektif hitam, dan simbol kartu minimalis. Cocok untuk personal branding, foto profil profesional, fashion poster, dan konten media sosial.",
-        "slug": "perfect-reflection-luxury-symmetrical-editorial-portrait",
-        "date": "2026-11-04",
-        "id": "perfect-reflection-luxury-symmetrical-editorial-portrait"
-      },
-      {
         "title": "The AI Creator – Futuristic Digital Creator Studio Portrait",
         "status": "published",
         "image": "/assets/uploads/mw2cmreq-ai-creator-command-center.jpg",
@@ -1339,18 +1519,6 @@
         "slug": "the-ai-creator-futuristic-digital-creator-studio",
         "date": "2026-11-04",
         "id": "the-ai-creator-futuristic-digital-creator-studio"
-      },
-      {
-        "title": "Fragmented Identity – Creative Mosaic Portrait",
-        "status": "published",
-        "image": "/assets/uploads/mw2cotzf-ideas-in-the-making.jpg",
-        "prompt": "Create a modern conceptual portrait of a man using the provided photo as the central subject. The image should be composed as a grid of slightly separated square tiles, forming a fragmented mosaic effect. Some tiles should be slightly lifted or curled at the edges to add depth and realism.\n\nThe background should be a neutral textured wall (like concrete or plaster). Around the mosaic, place several colorful sticky notes with short, original motivational or pop-culture-inspired phrases (avoid famous quotes). Examples of tone: witty, reflective, or futuristic.\n\nWrite subtle handwritten-style words across a few tiles of the face, blending into the portrait without overpowering it.\n\nStyle:\n\nPhotorealistic with soft, balanced lighting\n\nSlight shadows under lifted tiles for depth\n\nClean, minimal, modern aesthetic\n\nHigh detail and sharp focus\n\nMood:\n\nThought-provoking, creative identity theme\n\nSlightly mysterious but approachable\n\nDo not replicate any existing quotes or layouts exactly. Keep all text original and unique.\n\nAI Tool:\nChatGPT-Image",
-        "category": "AI Portrait / Creative Mosaic / Photo Manipulation / Mixed Media / Editorial Design / Artistic Portrait",
-        "tool": "ChatGPT-Image / GPT-Image / Gemini / AI Image Generator",
-        "note": "Gunakan foto portrait asli dengan wajah terlihat jelas. AI akan mengubah foto menjadi karya seni mosaic dengan potongan kotak geometris, efek kertas terangkat, bayangan realistis, dan sticky notes berisi pesan kreatif. Cocok untuk personal branding, konten Instagram, poster artistik, dan foto profil unik. Pastikan susunan tile tetap rapi dan wajah tidak terdistorsi.",
-        "slug": "fragmented-identity-creative-mosaic-portrait",
-        "date": "2026-11-04",
-        "id": "fragmented-identity-creative-mosaic-portrait"
       },
       {
         "title": "The AI Creator Multitasker – Future of Content Creation",
@@ -1399,18 +1567,6 @@
         "slug": "cinematic-particle-disintegration-rise-beyond-limits",
         "date": "2026-11-04",
         "id": "cinematic-particle-disintegration-rise-beyond-limits"
-      },
-      {
-        "title": "Hamdani Harfan – Purple Neon Name Portrait",
-        "status": "published",
-        "image": "/assets/uploads/mw2dagda-neon-portrait-with-hamdani-harfan.jpg",
-        "prompt": "Create a cinematic neon portrait using the uploaded photo as the main subject.\n\nPreserve the exact facial structure, hairstyle, expression, skin tone, body proportions, and recognizable identity from the uploaded person. The face must remain highly realistic, sharp, and instantly recognizable.\n\nThe subject is standing against a completely black background, illuminated only by a soft purple neon glow. The person extends one hand forward with the palm facing upward, as if holding a floating light source.\n\nAbove the open palm, generate a glowing neon handwritten script displaying the name:\n\n\"Hamdani Harfan\"\n\nThe neon text should appear as realistic floating light made from luminous purple-violet tubing, emitting soft bloom, glow, reflections, and subtle light rays onto the person's face, hand, and clothing.\n\nThe subject should wear simple elegant clothing in light neutral tones, allowing the neon glow to become the main visual focus. Expression should be calm, confident, mysterious, and captivating.\n\nUse dramatic low-key lighting with strong contrast between the dark background and the glowing neon text. The purple light should softly illuminate the face and create cinematic shadows.\n\nStyle: cinematic portrait photography, neon typography art, futuristic minimalism, glowing light effects, dark aesthetic, premium social media artwork, realistic photography, ultra detailed, masterpiece quality.\n\nColor palette: deep black background, glowing purple neon, soft violet highlights, subtle magenta reflections, realistic skin tones.\n\nUltra realistic, shallow depth of field, professional studio lighting, HDR, 8K resolution, highly detailed facial features, premium visual quality, vertical composition.",
-        "category": "Neon Portrait / Purple Neon Effect / Glowing Typography / Cinematic Photography / Personal Branding / AI Portrait",
-        "tool": "ChatGPT Image",
-        "note": "Gunakan foto wajah sendiri sebagai referensi utama. Ganti tulisan \"Hamdani Harfan\" dengan nama yang diinginkan. Gunakan latar belakang hitam pekat agar efek neon ungu terlihat lebih menonjol. Pastikan pencahayaan neon memantul secara natural pada wajah dan tangan.\n\nTips: Gunakan foto portrait dengan wajah menghadap kamera agar hasil identitas lebih konsisten. Cocok untuk foto profil, personal branding, poster digital, dan konten media sosial.",
-        "slug": "hamdani-harfan-purple-neon-name-portrait",
-        "date": "2026-11-04",
-        "id": "hamdani-harfan-purple-neon-name-portrait"
       },
       {
         "title": "AI Virtual Try-On — Coba Outfit Futuristik dengan Augmented Reality",
@@ -1497,30 +1653,6 @@
         "id": "extreme-skydiving-adventure-ai-photo"
       },
       {
-        "title": "Sonic Identity — Waveform Portrait",
-        "status": "published",
-        "image": "/assets/uploads/mw0nebvw-neon-soundwave-portrait-of-a-suited-man.jpg",
-        "prompt": "A conceptual and artistic portrait of a person, where the face and silhouette are accurately formed entirely from sound waves and audio waveforms.\n\nThe facial identity is clearly based on the uploaded reference photo, preserving the person’s facial structure, proportions, and recognizable features, but instead of solid skin, the face is constructed from flowing sound waves, frequency lines, and waveform patterns.\n\nThe sound waves vary in thickness and intensity, shaping the eyes, nose, lips, and jawline with precise detail. Some waves appear sharp and energetic, others smooth and calm, creating depth and emotion.\n\nThe background is dark and minimal, allowing the glowing sound waves to stand out. Subtle particles, light pulses, and audio-reactive effects surround the portrait, giving the impression that the image is alive with sound.\n\nColor palette uses neon blues, soft purples, cyan, and white highlights, with gentle glow effects.\n\nCinematic lighting, high contrast, ultra-detailed digital art, modern abstract realism, sharp focus, 8K quality, clean composition, no text, no watermark.",
-        "category": "AI Image Editing, Waveform Portrait, Sound Wave Art, Futuristic Portrait, Neon Art, Digital Art, Character Consistency",
-        "tool": "ChatGPT Images, Gemini, AI Image Generator",
-        "note": "Unggah foto wajah sebagai referensi utama. Gunakan pencahayaan neon biru, cyan, dan ungu dengan latar gelap untuk kontras maksimal. Pastikan garis gelombang membentuk fitur wajah, bukan sekadar menjadi dekorasi di sekelilingnya. Cocok untuk foto profil futuristik, poster kreatif, dan personal branding AI.",
-        "slug": "sonic-identity-waveform-portrait",
-        "date": "2026-11-03",
-        "id": "sonic-identity-waveform-portrait"
-      },
-      {
-        "title": "Neo-Expressionist Street Art Portrait — Bold Identity",
-        "status": "published",
-        "image": "/assets/uploads/mw0ni4lc-neo-expressionist-graffiti-portrait.jpg",
-        "prompt": "Create a bold neo-expressionist street-art portrait of the person in the uploaded reference photo. Preserve the person's recognizable facial identity, facial proportions, spiky black hairstyle, eyebrows, eyes, nose, lips, skin tone, and natural expression. Render the portrait with expressive hand-painted brushstrokes, rough black outlines, layered acrylic paint, chalk marks, crayon textures, distressed surfaces, and dramatic color blocking. Use vivid primary colors: electric blue, fiery red, bright yellow, black, and white. Dress the subject in a sharp navy-blue suit, white shirt, and burgundy patterned tie inspired by the reference photograph. Set the portrait against a weathered urban concrete wall filled with expressive graffiti, abstract symbols, crowns, stars, lightning bolts, skull illustrations, paint splashes, scribbles, and energetic brush marks. Create a powerful composition with confident expression, dynamic visual rhythm, imperfect handmade textures, strong contrast, and an iconic contemporary street-art aesthetic. Highly detailed facial features, tactile paint texture, dramatic lighting, sharp focus, premium art-poster quality, vertical 3:4 composition. Maintain character consistency with the reference image. No photorealistic skin rendering that removes the painted effect, no distorted facial anatomy, no extra limbs, no watermark, no unintended typography.",
-        "category": "Neo-Expressionism, Street Art, Graffiti Portrait, AI Image Editing, Acrylic Painting, Urban Art, Character Consistency",
-        "tool": "ChatGPT Images, Gemini, AI Image Generator",
-        "note": "Gunakan foto referensi wajah sebagai acuan utama. Pertahankan gaya rambut dan ciri wajah asli, tetapi gunakan sapuan cat kasar, outline hitam tegas, serta kombinasi merah, biru, kuning, hitam, dan putih. Cocok untuk poster personal branding, artwork profil, sampul digital, dan konten media sosial.",
-        "slug": "neo-expressionist-street-art-portrait",
-        "date": "2026-11-03",
-        "id": "neo-expressionist-street-art-portrait"
-      },
-      {
         "title": "The Light of Ramadan — A Portrait of Peace",
         "status": "published",
         "image": "/assets/uploads/mw0o1b4l-warm-lantern-portrait-on-a-prayer-rug.jpg",
@@ -1543,18 +1675,6 @@
         "slug": "luminous-wireframe-suit-futuristic-urban-portrait",
         "date": "2026-11-03",
         "id": "luminous-wireframe-suit-futuristic-urban-portrait"
-      },
-      {
-        "title": "Abstract Scribble Ink Portrait — Artistic Identity",
-        "status": "published",
-        "image": "/assets/uploads/mw0ogl9i-confident-scribble-portrait-in-a-suit.jpg",
-        "prompt": "Create an abstract scribble line art portrait using the uploaded reference photo as the main subject.\n\nThe face, facial structure, skin tone, hairstyle, and identity must remain 100% accurate to the uploaded photo.\n\nThe portrait is drawn entirely using chaotic hand-drawn black ink lines, overlapping and tangled, forming the figure through dense sketch strokes and expressive scribbles.\n\nThe subject is shown from the waist up, standing confidently with arms crossed, calm and thoughtful expression.\n\nThe body, clothing, and shadows are all created using continuous abstract line work, with no solid fills, only layered lines suggesting form and depth.\n\nBlack ink on a pure white background, high contrast, minimalistic composition.\n\nArtistic style inspired by contemporary abstract sketch art, emotional, raw, and expressive.\n\nUltra-detailed line density on the face, slightly looser lines on the body for artistic balance.\n\nNo color, no text, no background elements, no realism rendering, no shading gradients, no watermark.",
-        "category": "Seni abstrak, black ink sketch, scribble art, portrait illustration, character consistency, monochrome art.",
-        "tool": "ChatGPT / Gemini / Midjourney   Salin",
-        "note": "Gunakan foto referensi asli untuk mempertahankan identitas wajah, bentuk mata, hidung, bibir, gaya rambut, dan struktur wajah. Seluruh potret dibuat dari coretan tinta hitam yang saling bertumpuk, dengan detail wajah rapat, jas formal, posisi tangan menyilang, dan latar putih bersih.",
-        "slug": "abstract-scribble-ink-portrait",
-        "date": "2026-11-03",
-        "id": "abstract-scribble-ink-portrait"
       },
       {
         "title": "The Last Echo — Golden Energy Dissolution Portrait",
@@ -1617,42 +1737,6 @@
         "id": "cinematic-anime-noir-cyberpunk-elevator"
       },
       {
-        "title": "Premium Monochrome 3D Character Sculpt — ZBrush Style",
-        "status": "published",
-        "image": "/assets/uploads/mw0p34ur-monochrome-clay-bust-in-hoodie.jpg",
-        "prompt": "Create a cinematic, fashion-forward 3D bust derived from the provided reference photo. Interpret the subject using a refined, ZBrush-inspired sculpting style with smooth, matte surfaces and gently enhanced proportions. Present the model in a single neutral material (such as clay gray, warm stone, or slate), avoiding surface textures or color so the focus remains entirely on form, volume, and silhouette.\n\nFacial anatomy should stay true to the subject while being subtly idealized: highlighting the jawline, cheekbones, brow structure, and lips without drifting into caricature. Outfit the character in contemporary streetwear, such as a structured hoodie with thick fabric, clean construction, and believable seams and folds. Minimal accessories may be included, like a beanie or raised hood, if they support the look.\n\nIlluminate the sculpt with soft, neutral studio lighting around 6000K, using directional light to gently define planes and geometry through controlled shadows. Place the bust against a light, neutral background with a delicate gradient.\n\nFrame the shot using an 85mm lens at eye level or slightly below, with an f/4.5 aperture and shallow depth of field. The overall aesthetic should align with premium sculpt passes seen in cinematic character design for animated films and AAA games—minimal, polished, and editorial in tone. The final mood should feel confident, composed, modern, and digitally pristine.",
-        "category": "AI Portrait / 3D Sculpt / ZBrush Style / Character Design / Monochrome Art",
-        "tool": "ChatGPT / Gemini / Midjourney",
-        "note": "Upload foto referensi wajah yang jelas. Pertahankan identitas wajah, bentuk mata, hidung, bibir, dan gaya rambut. Gunakan material clay monokrom, pencahayaan studio lembut, serta detail hoodie yang realistis. Hasil akhir harus terlihat seperti sculpt karakter profesional, bukan foto berwarna.",
-        "slug": "premium-monochrome-3d-character-sculpt",
-        "date": "2026-11-03",
-        "id": "premium-monochrome-3d-character-sculpt"
-      },
-      {
-        "title": "Potret Psychedelic Neon – Seni Digital Abstrak Ultra-Realistis",
-        "status": "published",
-        "image": "/assets/uploads/mvzc67cd-psychedelic-portrait-in-swirling-neon-pa.jpg",
-        "prompt": "A vibrant, psychedelic portrait of a human based on the uploaded photo. The person’s face and features should be clearly recognizable, surrounded by a colorful, abstract background with fluid, swirling patterns in neon hues of blue, orange, pink, green, and yellow. The lighting is bright and glowing, with soft reflections on the skin and hair. The artwork style is detailed, vivid, and surreal — resembling an oil painting blended with digital neon art. The expression is calm and confident, with dreamy eyes and gentle lighting on the face. Ultra-detailed, high quality, 8k render, sharp focus, vivid saturation, intricate textures, fantasy style.",
-        "category": "Psychedelic Portrait, Neon Art, Digital Painting, Abstract Art, Fantasy Portrait, AI Image Editing",
-        "tool": "ChatGPT, Gemini, Midjourney",
-        "note": "Ubah foto asli menjadi potret psychedelic yang artistik dengan pola abstrak berputar dan warna neon biru, oranye, merah muda, hijau, dan kuning. Pertahankan identitas wajah, bentuk mata, hidung, bibir, gaya rambut, dan karakteristik utama subjek. Gunakan pencahayaan bercahaya, tekstur menyerupai lukisan minyak, detail digital art yang kompleks, saturasi warna tinggi, dan komposisi sinematik. Cocok untuk foto profil kreatif, poster seni, personal branding, dan konten media sosial. Unggah foto referensi terlebih dahulu agar hasil lebih konsisten.",
-        "slug": "potret-psychedelic-neon-digital-art",
-        "date": "2026-11-02",
-        "id": "potret-psychedelic-neon-digital-art"
-      },
-      {
-        "title": "AI Photo Transformation: Professional Portrait to Futuristic Cyberpunk | Cinematic 8K",
-        "status": "published",
-        "image": "/assets/uploads/mvzbz4x1-cyberpunk-portrait-with-neon-circuits.jpg",
-        "prompt": "A close-up portrait of a man inspired by the provided reference photo — don't change his original face. The lighting is cinematic with warm orange and cool blue tones highlighting the contours of his face. His jacket has a textured, futuristic design, and subtle digital circuitry patterns merge into his skin and surroundings, symbolizing the fusion between human and technology. The background features abstract geometric grids and data streams in glowing hues of red, blue, and orange, creating a cyberpunk-techno aesthetic. Render in ultra-realistic detail with smooth skin texture, soft depth of field, and high dynamic range — 8K resolution, Unreal Engine 5 realism, cinematic lighting, sharp focus on eyes, bokeh background.\n\n--ar 2:3 --v 6 --s 750 --style raw --q 2 --hd --uplight",
-        "category": "AI Photo Editing, Cyberpunk, Futuristic Portrait, Sci-Fi, Digital Art, Cinematic Photography",
-        "tool": "ChatGPT, Gemini, Midjourney",
-        "note": "Ubah foto formal menjadi potret futuristik bergaya cyberpunk dengan mempertahankan kemiripan wajah, gaya rambut, dan karakter utama dari foto referensi. Gunakan jaket teknologi futuristik bertekstur dengan detail sirkuit bercahaya, perpaduan pencahayaan oranye hangat dan biru elektrik, efek digital pada kulit yang halus, latar belakang berupa jaringan data, grid geometris, serta elemen holografik. Terapkan pencahayaan sinematik, fokus tajam pada mata, tekstur kulit realistis, depth of field lembut, dan kontras HDR. Cocok untuk foto profil AI, personal branding teknologi, avatar digital, dan konten media sosial. Gunakan foto referensi yang jelas untuk membantu menjaga konsistensi wajah.",
-        "slug": "professional-portrait-cyberpunk-ai",
-        "date": "2026-11-02",
-        "id": "professional-portrait-cyberpunk-ai"
-      },
-      {
         "title": "Forbes 30 Under 30 — AI-Driven Creativity Magazine Cover",
         "status": "published",
         "image": "/assets/uploads/mvzckgz7-visionary-ai-s-next-innovator.jpg",
@@ -1663,42 +1747,6 @@
         "slug": "forbes-30-under-30-ai-creativity",
         "date": "2026-11-02",
         "id": "forbes-30-under-30-ai-creativity"
-      },
-      {
-        "title": "Low-Poly Geometric Portrait — Seni Potret 3D Futuristik",
-        "status": "published",
-        "image": "/assets/uploads/mvzdz7uk-faceted-geometric-portrait-in-blue.jpg",
-        "prompt": "A highly detailed low-poly geometric portrait based on Image 1. The face, hair, and body are recreated using sharp polygonal shapes and faceted surfaces in shades of blue, gray, and purple, similar to digital sculpture art. Lighting is dramatic, with strong contrast and cinematic highlights emphasizing the 3D geometry. The background features abstract angular patterns that complement the low-poly style. Ultra-detailed 3D low-poly illustration, digital painting, cinematic lighting, polygonal textures, 8k render.",
-        "category": "Digital Art, 3D Illustration, Portrait & Avatar",
-        "tool": "LOW-POLY 3D ART",
-        "note": "Gunakan foto referensi wajah yang jelas agar karakter utama tetap mudah dikenali. Ubah wajah, rambut, pakaian, dan latar menjadi bidang-bidang geometris berbentuk segitiga dengan gradasi biru, ungu, dan abu-abu. Tambahkan pencahayaan sinematik untuk menghasilkan efek pahatan digital 3D yang premium.",
-        "slug": "low-poly-geometric-portrait",
-        "date": "2026-11-02",
-        "id": "low-poly-geometric-portrait"
-      },
-      {
-        "title": "HOT NEWS — Cinematic Burning Newspaper Portrait",
-        "status": "published",
-        "image": "/assets/uploads/mvzegj9r-man-holding-flaming-hot-news-newspaper.jpg",
-        "prompt": "A cinematic, ultra-realistic portrait of a person (based on the uploaded photo) holding an open newspaper titled “HOT NEWS” printed clearly across both pages. The newspaper is on fire from the edges, with vivid orange and yellow flames spreading along the top and sides. Sparks and ashes float through the air while the paper edges curl and burn. The warm light from the fire illuminates the person’s face dramatically, casting soft shadows on one side. Their expression is calm, confident, and slightly intense, symbolizing power and revelation. The background is dark and cinematic, with subtle smoke and glowing embers drifting around. The composition feels like a movie poster — powerful, mysterious, and modern. Ultra-detailed cinematic portrait, HDR lighting, volumetric smoke, realistic fire glow, 8k render, photo-realistic textures, dramatic contrast, color palette of orange, amber, and deep black.\n\n\"A hyper-realistic raw portrait of an Asian man, detailed natural skin texture, visible skin pores, subtle imperfections, vellus hairs, natural skin oils, no airbrushing. Soft natural window lighting, gentle shadows, depth of field. Shot on 85mm lens, f/2.8, professional photography, candid expression, sharp focus, 8k resolution, photorealistic masterpiece.",
-        "category": "Cinematic Portrait, AI Photo Editing, Dramatic Effects",
-        "tool": "HOT NEWS 🔥",
-        "note": "Gunakan foto referensi wajah agar identitas tetap konsisten. Tambahkan efek api realistis di tepi koran, bara beterbangan, asap dramatis, serta pencahayaan oranye dari api. Pertahankan tekstur kulit alami dan detail wajah. Pastikan tulisan “HOT NEWS” terlihat jelas.",
-        "slug": "hot-news-burning-newspaper",
-        "date": "2026-11-02",
-        "id": "hot-news-burning-newspaper"
-      },
-      {
-        "title": "Potret Sinematik Pemain Biliar – Elegant Black Suit",
-        "status": "published",
-        "image": "/assets/uploads/mvzcd6uh-confident-cue-at-the-pool-hall.jpg",
-        "prompt": "A cinematic portrait of a confident man preparing for a billiards game in a dimly lit pool hall. The man’s face and appearance should be based accurately on the uploaded photo. He wears a black suit jacket, white shirt, and black gloves, standing beside a billiard table under soft overhead lighting. The atmosphere is moody and dramatic, with warm tones, soft haze, and a focused light beam illuminating the subject. Background includes blurred pool tables and hanging lights, creating a cinematic depth of field. Ultra-detailed textures, shallow depth of field, realistic lighting, and photorealistic style with subtle film grain.\n\nStyle keywords:\n\ncinematic portrait, dramatic lighting, moody atmosphere, soft haze, 8k realism, shallow depth of field, realistic shadows, professional photography",
-        "category": "Cinematic Portrait, Billiards, Men Fashion, Black Suit, Dramatic Lighting, AI Photo Editing",
-        "tool": "ChatGPT, Gemini, Midjourney",
-        "note": "Ubah foto referensi menjadi potret sinematik seorang pria elegan di ruang biliar mewah. Pertahankan identitas wajah, gaya rambut, bentuk mata, hidung, dan karakteristik asli subjek. Kenakan jas hitam berpotongan rapi, kemeja putih, dan sarung tangan hitam sambil memegang tongkat biliar di samping meja berwarna hijau. Gunakan pencahayaan lampu gantung berwarna keemasan, latar belakang gelap dengan efek bokeh, bayangan realistis, tekstur kain detail, serta depth of field yang dramatis. Hasil akhir fotorealistis, mewah, dan profesional. Cocok untuk foto profil, poster personal branding, dan konten media sosial.",
-        "slug": "potret-sinematik-pemain-biliar",
-        "date": "2026-11-02",
-        "id": "potret-sinematik-pemain-biliar"
       },
       {
         "title": "Cinematic AI Photo Prompt — Pria Berjalan di Pasar Asia dengan Pesawat Terbang Rendah",
@@ -1833,18 +1881,6 @@
         "id": "giant-stone-statue-konstruksi-kota"
       },
       {
-        "title": "Fire & Water — Portrait Dua Elemen Sinematik",
-        "status": "published",
-        "image": "/assets/uploads/mvzf74pi-fire-and-water-suit-portrait.jpg",
-        "prompt": "Create a hyper-realistic portrait of the same man from the reference photo. Show him in a dramatic split-element scene: the left side surrounded by blazing orange flames and glowing embers, and the right side surrounded by cool blue water splashes and mist. His face should be wet from water on one side and illuminated by firelight on the other. Keep his curly hair, facial structure, and expression consistent with the reference. He wears a sharp suit and tie, partially soaked and partially singed. Use cinematic lighting, ultra-detailed textures, and high contrast for a powerful dual-element look.",
-        "category": "AI Image Editing, Cinematic Portrait, Fantasy, Fire & Water Effects",
-        "tool": "Instagram Feed, Poster Film, Personal Branding, Digital Art, Konten AI",
-        "note": "Gunakan foto referensi untuk mempertahankan identitas wajah, bentuk mata, hidung, bibir, dan gaya rambut. Padukan api oranye di sisi kiri dengan percikan air biru di sisi kanan. Gunakan pencahayaan kontras tinggi, tekstur kulit realistis, tetesan air, bara api, dan detail pakaian yang basah serta sedikit hangus untuk menghasilkan efek sinematik yang dramatis.",
-        "slug": "fire-water-dual-element-portrait",
-        "date": "2026-11-02",
-        "id": "fire-water-dual-element-portrait"
-      },
-      {
         "title": "Break Through the Digital World — Keluar dari Layar Smartphone",
         "status": "published",
         "image": "/assets/uploads/mvzgczii-breaking-through-the-screen.jpg",
@@ -1869,18 +1905,6 @@
         "id": "pop-art-comic-ekspresi-karakter"
       },
       {
-        "title": "Monochrome Elevator Portrait: Cinematic Black & White Fashion Editorial",
-        "status": "published",
-        "image": "/assets/uploads/mvy0ku3r-monochrome-elevator-portrait-1.jpg",
-        "prompt": "I will edit the photo so that I am standing inside an elevator with a black and white (monochrome) aesthetic. Utilize dramatic, high-contrast lighting to create an artistic vibe, reminiscent of a fashion editorial photoshoot. I am wearing a classic black suit, a white shirt, and a tie.",
-        "category": "AI Portrait / Fashion Editorial / Monochrome / Black and White / Professional Portrait",
-        "tool": "ChatGPT Images / AI Photo Editing",
-        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan identitas asli. Pilih pencahayaan dramatis dengan kontras hitam-putih yang seimbang agar hasil terlihat elegan, profesional, dan sinematik. Cocok untuk foto profil profesional, personal branding, LinkedIn, dan konten fashion editorial.",
-        "slug": "monochrome-elevator-fashion-portrait",
-        "date": "2026-11-01",
-        "id": "monochrome-elevator-fashion-portrait"
-      },
-      {
         "title": "DANI #86 — Real Madrid Cinematic Football Poster",
         "status": "published",
         "image": "/assets/uploads/mvy08sk4-dani-86-real-madrid-storm-poster.jpg",
@@ -1903,18 +1927,6 @@
         "slug": "cinematic-ferrari-f1-racing-poster-driver-69",
         "date": "2026-11-01",
         "id": "cinematic-ferrari-f1-racing-poster-driver-69"
-      },
-      {
-        "title": "Cinematic Vintage Portrait: Pria Elegan dengan Motor Yamaha RX100",
-        "status": "published",
-        "image": "/assets/uploads/mvy13z6m-vintage-yamaha-portrait-by-weathered-wal.jpg",
-        "prompt": "Generate a cinematic outdoor portrait of a fashionable young man posed confidently beside a black Yamaha RX100 motorcycle. He is dressed in a dark brown button-up shirt paired with light brown trousers and black loafers, complemented by a wristwatch, bracelet, and sunglasses. The setting should include wild greenery and an aged concrete wall to enhance a rustic urban feel. Use moody, warm vintage tones to evoke a retro aesthetic. His facial expression should remain serious and composed, suggesting mystery and rugged sophistication. Ensure the face exactly matches the provided reference selfie—keep the same eyes, nose, cheeks, and skin texture.",
-        "category": "Portrait Pria / Motorcycle Photography / Vintage Aesthetic / Fashion Editorial",
-        "tool": "ChatGPT / AI Photo Editing",
-        "note": "Gunakan foto referensi wajah untuk mempertahankan identitas subjek, termasuk bentuk mata, hidung, pipi, tekstur kulit, dan gaya rambut. Hasil terbaik menggunakan pencahayaan natural, pose santai tetapi percaya diri, serta nuansa vintage sinematik. Cocok untuk personal branding, foto profil profesional, dan konten media sosial. Gunakan foto motor klasik hitam sebagai referensi tambahan jika tersedia.",
-        "slug": "portrait-pria-motor-yamaha-rx100-vintage",
-        "date": "2026-11-01",
-        "id": "app"
       },
       {
         "title": "The Poker Legend — Ultra-Realistic Cinematic Photography",
@@ -2119,18 +2131,6 @@
         "slug": "dream-above-the-clouds",
         "date": "2026-11-01",
         "id": "dream-above-the-clouds"
-      },
-      {
-        "title": "Padel Court Action – Ultra-Realistic Sports Photography",
-        "status": "draft",
-        "image": "/assets/uploads/mvy3kwc7-padel-player-in-mid-lunge.jpg",
-        "prompt": "A man with a serious expression, wearing glasses, a navy blue polo shirt, black athletic shorts, white socks, and black and white athletic shoes, is in motion on a blue padel court. He is holding a black padel racket with a yellow tennis ball just in front of it, as if he is about to hit it. The court has white lines. In the background, there's a fence made of wire mesh and glass panels, and green trees under a bright sky. Don't change the man's original face and hair.",
-        "category": "Olahraga / Padel / Sport Photography / AI Portrait",
-        "tool": "ChatGPT / AI Image Editing",
-        "note": "Pertahankan wajah, gaya rambut, dan proporsi tubuh asli. Gunakan jersey polo biru navy, celana olahraga hitam, kaus kaki putih, dan sepatu olahraga hitam-putih. Tampilkan aksi bermain padel secara realistis dengan raket hitam dan bola kuning, lapangan biru, pencahayaan alami, serta detail wajah dan tekstur pakaian yang tajam.",
-        "slug": "padel-court-action-ultra-realistic",
-        "date": "2026-11-01",
-        "id": "padel-court-action-ultra-realistic"
       }
     ]
   }
