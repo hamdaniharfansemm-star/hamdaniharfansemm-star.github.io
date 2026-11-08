@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "VINTAGE EXECUTIVE – 1990s New York Business Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7lsitf-vintage-executive-on-the-phone.png",
+        "prompt": "Use the provided reference photo, Create an ultra-realistic 4K vintage editorial portrait using the uploaded photo as the face reference. Preserve the person’s exact facial identity, natural skin tone, facial structure, and distinctive features. Depict him seated confidently behind an office desk, wearing a charcoal pinstripe suit, white dress shirt, and gray striped tie, holding a black vintage corded telephone receiver to his ear while looking directly at the camera with a serious expression. Add a large window overlooking a classic New York City skyline with the Chrysler Building, an open ledger, and an old-fashioned telephone base. Use muted gray tones, subtle film grain, soft natural window lighting, authentic 1990s corporate atmosphere, realistic textures, cinematic composition, sharp facial details, and professional 4K photography. Maintain natural head alignment and body proportions; avoid facial distortion and artificial-looking skin.",
+        "category": "Vintage Photography / Business Portrait / Executive Lifestyle / Retro Cinematic",
+        "tool": "ChatGPT Image / Gemini",
+        "note": "Gunakan foto wajah sebagai referensi utama. Pertahankan identitas wajah, ekspresi serius, dan gaya rambut. Cocok untuk konsep foto eksekutif klasik, profesional, dan vintage.",
+        "slug": "vintage-executive-1990s-new-york-business-portrait",
+        "date": "2026-11-08",
+        "id": "vintage-executive-1990s-new-york-business-portrait"
+      },
+      {
         "title": "RAINY TAXI NIGHT – Cinematic Neon Portrait",
         "status": "published",
         "image": "/assets/uploads/mw7lmza2-rainy-neon-taxi-portrait.png",
