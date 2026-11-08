@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Transformasi AI Creator – Futuristic Instagram Profile Cinematic Portrait",
+        "status": "published",
+        "image": "/assets/uploads/mw7joun8-hamdani-harfan-neon-ai-creator-profile.png",
+        "prompt": "Create an ultra-detailed, cinematic social media portrait using the provided reference photo to accurately preserve the man's facial features, hairstyle, glasses, body proportions, and overall identity.\n\nThe subject is confidently walking toward the camera with a relaxed yet powerful stride, wearing a modern black long coat over a simple white t-shirt, tailored black pants, and clean white sneakers. His expression is calm, ambitious, and self-assured, embodying the image of a successful AI entrepreneur and digital creator.\n\nBehind him stands a gigantic, hyper-realistic smartphone displaying an Instagram profile interface in dark mode. The profile should faithfully resemble the real @ruangsepri account, featuring:\n\nUsername: @ruangsepri with verified badge.\n\nDisplay name: Sepriansah | AI-Driven Konten Kreator\n\nProfile picture matching the provided reference.\n\nApproximately 397 posts, 193K followers, and 819 following.\n\nBio inspired by the real account, emphasizing AI content creation, entrepreneurship, and community building.\n\nPurple-themed Story Highlights.\n\nA realistic Instagram grid filled with AI, creator, business, podcast, and lifestyle content in a dark aesthetic.\n\nThe entire scene is immersed in a black and deep-purple color palette, with glowing neon accents. One side of the subject's body gradually transforms into an explosion of luminous purple particles, crystalline fragments, digital dust, and energy shards, as though he is emerging from the digital world into reality.\n\nThe background is dark, futuristic, and minimalistic, filled with subtle smoke, volumetric lighting, floating geometric fragments, and soft reflections on the glossy floor. Purple ambient light wraps around the character and the phone, creating a premium cyber-luxury atmosphere.\n\nThe composition should feel like a high-end movie poster or an advertising campaign for a modern AI creator brand, combining realism with subtle sci-fi elements.\n\nStyle: hyperrealistic, cinematic photography, ultra-detailed, luxury editorial, futuristic branding, cyber aesthetic, 8K resolution, HDR lighting, dramatic rim light, realistic skin texture, realistic fabric physics, shallow depth of field, sharp focus, balanced composition.\n\nNegative Prompt: low quality, blurry, cartoon, anime, distorted anatomy, extra limbs, duplicated body parts, incorrect hands, text artifacts, random UI elements, watermark, logo, low resolution, oversaturated colors, unrealistic face, deformed eyes, bad proportions.\n\nAI Tool:\nChatGPT-Image",
+        "category": "AI Portrait / Personal Branding / Futuristic Photography / Social Media",
+        "tool": "ChatGPT Image / Gemini / AI Image Generator",
+        "note": "Gunakan foto referensi wajah yang jelas untuk mempertahankan identitas. Unggah foto wajah dan foto profil Instagram sebagai referensi. Hasil terbaik menggunakan foto full-body atau setengah badan dengan pencahayaan yang baik. Cocok untuk personal branding AI Developer, Content Creator, dan profesional digital.",
+        "slug": "futuristic-instagram-ai-creator-portrait",
+        "date": "2026-11-08",
+        "id": "futuristic-instagram-ai-creator-portrait"
+      },
+      {
         "title": "Lonely in the Crowd – Cinematic Urban Street Portrait AI Photo Prompt 2",
         "status": "published",
         "image": "/assets/uploads/mw7j9aiq-lonely-in-the-city-crowd.png",
