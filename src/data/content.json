@@ -861,6 +861,18 @@
     },
     "prompts": [
       {
+        "title": "Cinematic Urban Portrait with German Shepherd – Low Angle AI Photo Prompt",
+        "status": "published",
+        "image": "/assets/uploads/mw7ef8b2-urban-guardian-man-and-shepherd-in-graff.png",
+        "prompt": "Create a cinematic street portrait using the uploaded photo as the main subject, keep the face 100% identical.\nScene: night urban alley with graffiti wall, gritty atmosphere.\nComposition: extreme low-angle (worm’s-eye view), strong perspective.\nForeground: an aggressive German Shepherd wearing a black tactical harness, growling, highly detailed fur.\nBackground: the subject stands confidently behind the dog, one foot forward, one hand in pocket, the other holding a leash.\nOutfit: oversized vintage windbreaker (black/beige tones), dark pants, sunglasses with amber tint.\nMood: calm but dominant, powerful presence.\nLighting: harsh flash, high contrast, cinematic shadows.\nStyle: editorial photography, film grain, vignette, ultra-detailed, 8K, sharp focus.\n\nAI Tool : \nGPT-Image",
+        "category": "AI Photo Editing / Cinematic Photography / Urban Street Portrait / Dog Photography",
+        "tool": "ChatGPT Image / GPT-Image / Gemini",
+        "note": "Gunakan foto asli sebagai referensi utama. Pertahankan identitas wajah, bentuk wajah, mata, hidung, bibir, warna kulit, dan gaya rambut semirip mungkin dengan foto sumber. Buat pose full-body dengan sudut kamera worm's-eye view. Tambahkan German Shepherd dengan tactical harness di foreground, memegang tali anjing, outfit vintage black-beige windbreaker, celana gelap, dan kacamata amber. Gunakan latar gang perkotaan malam hari dengan graffiti, pencahayaan flash dramatis, bayangan cinematic, film grain, dan detail realistis. Pastikan anatomi manusia dan anjing terlihat natural.",
+        "slug": "cinematic-urban-portrait-german-shepherd-ai-prompt",
+        "date": "2026-11-08",
+        "id": "cinematic-urban-portrait-german-shepherd-ai-prompt"
+      },
+      {
         "title": "Street Photography with Chibi Mini Me – Realistic Urban Portrait AI Prompt",
         "status": "published",
         "image": "/assets/uploads/mw7eb7ba-daily-vibes-at-the-station-1.png",
